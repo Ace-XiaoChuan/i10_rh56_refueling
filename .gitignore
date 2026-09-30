@@ -25,3 +25,31 @@ htmlcov/
 # OS metadata
 .DS_Store
 Thumbs.db
+
+# Disposable build, packaging and test output
+*.egg-info/
+.eggs/
+dist/
+.tox/
+.nox/
+coverage.xml
+.coverage.*
+
+# Temporary files, editor swap files and runtime diagnostics
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+*.log
+MUJOCO_LOG.TXT
+MJMODEL.TXT
+core
+core.[0-9]*
+/tmp/
+/temp/
+/artifacts/tmp/
+/artifacts/scratch/
+
+# Keep selected candidates, validation reports/views, source assets and
+# current generated models tracked: they are reproducibility evidence.
