@@ -1,0 +1,63 @@
+Panels:
+  - Class: rviz_common/Displays
+    Help Height: 78
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /RobotModel1
+      Splitter Ratio: 0.5
+    Tree Height: 660
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 0.1
+      Class: rviz_default_plugins/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.03
+        Value: Lines
+      Name: Grid
+      Plane: XY
+      Plane Cell Count: 20
+      Reference Frame: fr3_link0
+    - Class: rviz_default_plugins/RobotModel
+      Collision Enabled: false
+      Description File: ""
+      Description Source: Topic
+      Description Topic:
+        Depth: 5
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /adapter_preview/robot_description
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Tree: false
+      Name: RobotModel
+      TF Prefix: ""
+      Update Interval: 0
+      Visual Enabled: true
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Default Light: true
+    Fixed Frame: fr3_link0
+  Name: root
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 1.4
+      Focal Point:
+        X: 0.0
+        Y: 0.0
+        Z: 0.25
+      Name: Current View
+      Pitch: 0.6
+      Yaw: 0.8

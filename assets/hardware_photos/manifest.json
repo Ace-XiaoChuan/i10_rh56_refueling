@@ -1,0 +1,83 @@
+{
+  "organized_date": "2026-09-15",
+  "source": "user-provided photos in workspace root",
+  "image_edits": "none; bytes preserved",
+  "files": [
+    {
+      "original_root_filename": "adapter正面近似.jpg",
+      "file": "adapter/front_reference.jpg",
+      "caption": "adapter 正面近似外观",
+      "destination": "assets/hardware_photos/adapter/front_reference.jpg",
+      "bytes": 511358,
+      "sha256": "10e0d3670f556ccb9d36546bafd938d37a2230c1e0238a564aaf4c1def7811f9"
+    },
+    {
+      "original_root_filename": "adapter反面近似.jpg",
+      "file": "adapter/back_reference.jpg",
+      "caption": "adapter 反面近似外观",
+      "destination": "assets/hardware_photos/adapter/back_reference.jpg",
+      "bytes": 513524,
+      "sha256": "b351f37fab3a0da9e2d84e5ab4c74359e9d4f5339ff19d2a0827cf3fa727ec2c"
+    },
+    {
+      "original_root_filename": "油箱盖正面.jpg",
+      "file": "fuel_cap/front.jpg",
+      "caption": "油箱盖正面",
+      "destination": "assets/hardware_photos/fuel_cap/front.jpg",
+      "bytes": 308020,
+      "sha256": "085b247d05013ebf20834012ff102d0d1941dd8b1e4eac08d3acea3df266c2a8"
+    },
+    {
+      "original_root_filename": "油箱盖反面.jpg",
+      "file": "fuel_cap/back.jpg",
+      "caption": "油箱盖反面",
+      "destination": "assets/hardware_photos/fuel_cap/back.jpg",
+      "bytes": 454804,
+      "sha256": "7b4b2ed882ca1f09144091ea7f2d95fbbaa37c204693d1413195674041abad7d"
+    },
+    {
+      "original_root_filename": "油箱——灵巧手——油管一体展示.jpg",
+      "file": "fuel_nozzle/hand_nozzle_overview.jpg",
+      "caption": "油枪、灵巧手与软管整体外观",
+      "destination": "assets/hardware_photos/fuel_nozzle/hand_nozzle_overview.jpg",
+      "bytes": 143096,
+      "sha256": "90c8da8a5f378dc43d8b4044c6ce85c7b97ab8523553298dc4e424eea55d8e59",
+      "width_px": 1279,
+      "height_px": 1706,
+      "batch": 2
+    },
+    {
+      "original_root_filename": "油箱口.jpg",
+      "file": "fuel_tank/filler_opening.jpg",
+      "caption": "敞开油箱口及周边外形",
+      "destination": "assets/hardware_photos/fuel_tank/filler_opening.jpg",
+      "bytes": 150643,
+      "sha256": "2a23e5385ec11073f444fc0503e340585b07b055fb6e109610050591a1e0e8e5",
+      "width_px": 1706,
+      "height_px": 1279,
+      "batch": 2
+    },
+    {
+      "original_root_filename": "理想加油姿势.jpg",
+      "file": "reference_poses/refueling_pose.jpg",
+      "caption": "用户提供的理想加油姿势参考",
+      "destination": "assets/hardware_photos/reference_poses/refueling_pose.jpg",
+      "bytes": 407633,
+      "sha256": "1f7d59463f873fd04c5884cbc691418ee20063f45fa8b68cda25dc189f52850e",
+      "width_px": 810,
+      "height_px": 1440,
+      "batch": 2
+    },
+    {
+      "original_root_filename": "理想手部抓握姿势.jpg",
+      "file": "reference_poses/hand_grasp_pose.jpg",
+      "caption": "用户提供的理想手部抓握姿势参考",
+      "destination": "assets/hardware_photos/reference_poses/hand_grasp_pose.jpg",
+      "bytes": 114888,
+      "sha256": "10d263490f09d053ebb0cd491c3fe777416561433e6b212bd82f6a65b930fe5a",
+      "width_px": 1279,
+      "height_px": 1706,
+      "batch": 2
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!-- Simplified inspection model of a threaded fuel filler cap.
+     Dimensions are provisional and are not a manufacturing model. Units: m. -->
+<robot name="fuel_cap_inspection">
+
+  <!-- Reference frame only, not an additional physical cylinder.
+       The single white lower section is defined in cap_body. -->
+  <link name="filler_neck"/>
+
+  <!-- The cap rotates about the vertical z axis. Real helical thread is intentionally omitted. -->
+  <joint name="cap_twist" type="revolute">
+    <parent link="filler_neck"/><child link="cap_body"/>
+    <origin xyz="0 0 0.030" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-6.283" upper="6.283" effort="20" velocity="2"/>
+    <dynamics damping="0.15" friction="0.3"/>
+  </joint>
+
+  <link name="cap_body">
+    <!-- middle gray cylinder: diameter 75 mm, height 20 mm -->
+    <visual name="cap_middle"><origin xyz="0 0 0.010"/><geometry><cylinder radius="0.0375" length="0.020"/></geometry><material name="cap_middle_gray"><color rgba="0.6 0.6 0.6 1"/></material></visual>
+    <collision><origin xyz="0 0 0.010"/><geometry><cylinder radius="0.0375" length="0.020"/></geometry></collision>
+    <!-- lower white threaded cylinder: diameter 40 mm per user specification; height 20 mm provisional -->
+    <visual name="cap_lower"><origin xyz="0 0 -0.010"/><geometry><cylinder radius="0.020" length="0.020"/></geometry><material name="cap_lower_white"><color rgba="1 1 1 1"/></material></visual>
+    <collision><origin xyz="0 0 -0.010"/><geometry><cylinder radius="0.020" length="0.020"/></geometry></collision>
+    <!-- top gray grip bar, approximated by a rounded rectangular block -->
+    <visual name="cap_grip"><origin xyz="0 0 0.030"/><geometry><box size="0.019 0.060 0.017"/></geometry><material name="cap_grip_gray"><color rgba="0.6 0.6 0.6 1"/></material></visual>
+    <collision><origin xyz="0 0 0.030"/><geometry><box size="0.019 0.060 0.017"/></geometry></collision>
+  </link>
+  <!-- Reference frames derived from the current provisional geometry (meters).
+       All axes match cap_body: +Z upward, +Y along the grip's 60 mm side.
+       Fixed children follow cap_twist together with the cap. -->
+  <link name="cap_grip_center"/>
+  <joint name="cap_grip_center_joint" type="fixed">
+    <parent link="cap_body"/><child link="cap_grip_center"/>
+    <origin xyz="0 0 0.030" rpy="0 0 0"/>
+  </joint>
+
+  <link name="cap_grip_top_center"/>
+  <joint name="cap_grip_top_center_joint" type="fixed">
+    <parent link="cap_body"/><child link="cap_grip_top_center"/>
+    <!-- Grip center Z + half of its 17 mm height. -->
+    <origin xyz="0 0 0.0385" rpy="0 0 0"/>
+  </joint>
+
+  <link name="cap_bottom_center"/>
+  <joint name="cap_bottom_center_joint" type="fixed">
+    <parent link="cap_body"/><child link="cap_bottom_center"/>
+    <!-- White cylinder center Z - half of its 20 mm height. -->
+    <origin xyz="0 0 -0.020" rpy="0 0 0"/>
+  </joint>
+</robot>

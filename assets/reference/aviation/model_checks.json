@@ -1,0 +1,35 @@
+{
+  "mujoco_version": "3.8.1",
+  "checks": [
+    {
+      "file": "derived/fr3_rh56_right/fr3_rh56_right.xml",
+      "nq": 19,
+      "nv": 19,
+      "njnt": 19,
+      "nu": 13,
+      "nmesh": 71,
+      "load": "passed",
+      "forward": "finite"
+    },
+    {
+      "file": "third_party/correlllab_rh56_controller_h12/mujoco_inspire/inspire_left.xml",
+      "nq": 12,
+      "nv": 12,
+      "njnt": 12,
+      "nu": 6,
+      "nmesh": 17,
+      "load": "passed",
+      "forward": "finite"
+    },
+    {
+      "file": "third_party/correlllab_rh56_controller_h12/mujoco_inspire/inspire_right.xml",
+      "nq": 12,
+      "nv": 12,
+      "njnt": 12,
+      "nu": 6,
+      "nmesh": 17,
+      "load": "passed",
+      "forward": "finite"
+    }
+  ]
+}

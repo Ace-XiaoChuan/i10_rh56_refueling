@@ -1,0 +1,56 @@
+# R1 FR3 -> adapter -> RH56 model-collision mount contract.
+#
+# This is the sole editable source for the fixed transforms used by the RViz
+# preview and the MVP-3 MoveIt collision model.  It is intentionally
+# provisional: values inferred from mesh layout or a visual check must not be
+# used for contact simulation or real hardware.
+
+schema_version: 1
+status: provisional_r1_model_collision
+
+frames:
+  flange_link: fr3_link8
+  adapter_1_link: adapter_1_link
+  adapter_2_link: adapter_2_link
+  palm_link: rh56_right_base_link
+  grasp_tcp_link: rh56_grasp_tcp
+
+segments:
+  adapter_1:
+    parent: fr3_link8
+    child: adapter_1_link
+    xyz_m: [0.0, 0.0, 0.0]
+    rpy_rad: [0.7853981633974483, 1.5707963267948966, 0.0]
+    # The mesh's local frame is SolidWorks "坐标系1" at the flange mating
+    # surface. The transform from fr3_link8 remains a provisional RViz result.
+    source: solidworks_coord_system_1_mesh + rviz_orientation_check
+    confidence: model_collision_only
+  adapter_2:
+    parent: adapter_1_link
+    child: adapter_2_link
+    xyz_m: [0.0, 0.0725, 0.0]
+    rpy_rad: [0.0, 0.0, 0.0]
+    source: mesh_extent_estimate
+    confidence: model_collision_only
+  rh56_palm:
+    parent: adapter_2_link
+    child: rh56_right_base_link
+    xyz_m: [0.0, 0.01, 0.0]
+    rpy_rad: [0.0, 0.0, 0.0]
+    source: mesh_extent_estimate
+    confidence: model_collision_only
+  grasp_tcp:
+    parent: rh56_right_base_link
+    child: rh56_grasp_tcp
+    # MuJoCo closed-hand collision scan: centre of the RH56 finger-pad
+    # enclosure.  It is a simulation baseline, not a measured hardware TCP.
+    xyz_m: [-0.058, 0.105, 0.024]
+    rpy_rad: [0.0, 0.0, 0.0]
+    source: mujoco_closed_hand_geometry_scan
+    confidence: model_collision_only
+
+preview:
+  # Set both false to inspect FR3 + adapter_1.  RH56 requires adapter_2,
+  # because its fixed joint is parented to adapter_2_link.
+  show_adapter_2: true
+  show_rh56: true

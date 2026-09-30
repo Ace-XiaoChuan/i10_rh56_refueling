@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!-- The planning group remains seven-joint but has the RH56 grasp TCP as tip. -->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="fr3_rh56_mvp3">
+  <xacro:arg name="mujoco_direct_mount" default="false"/>
+  <group name="fr3_arm">
+    <chain base_link="fr3_link0" tip_link="rh56_grasp_tcp"/>
+  </group>
+  <group_state name="ready" group="fr3_arm">
+    <joint name="fr3_joint1" value="0"/>
+    <joint name="fr3_joint2" value="${-pi / 4}"/>
+    <joint name="fr3_joint3" value="0"/>
+    <joint name="fr3_joint4" value="${-3 * pi / 4}"/>
+    <joint name="fr3_joint5" value="0"/>
+    <joint name="fr3_joint6" value="${pi / 2}"/>
+    <joint name="fr3_joint7" value="${pi / 4}"/>
+  </group_state>
+  <group_state name="extended" group="fr3_arm">
+    <joint name="fr3_joint1" value="0"/>
+    <joint name="fr3_joint2" value="0"/>
+    <joint name="fr3_joint3" value="0"/>
+    <joint name="fr3_joint4" value="-0.1"/>
+    <joint name="fr3_joint5" value="0"/>
+    <joint name="fr3_joint6" value="${pi / 2}"/>
+    <joint name="fr3_joint7" value="${pi / 4}"/>
+  </group_state>
+  <virtual_joint name="virtual_joint" type="fixed" parent_frame="world" child_link="base"/>
+
+  <disable_collisions link1="fr3_link0" link2="fr3_link1" reason="Adjacent"/>
+  <disable_collisions link1="fr3_link0" link2="fr3_link2" reason="Never"/>
+  <disable_collisions link1="fr3_link0" link2="fr3_link3" reason="Never"/>
+  <disable_collisions link1="fr3_link0" link2="fr3_link4" reason="Never"/>
+  <disable_collisions link1="fr3_link1" link2="fr3_link2" reason="Adjacent"/>
+  <disable_collisions link1="fr3_link1" link2="fr3_link3" reason="Never"/>
+  <disable_collisions link1="fr3_link1" link2="fr3_link4" reason="Never"/>
+  <disable_collisions link1="fr3_link2" link2="fr3_link3" reason="Adjacent"/>
+  <disable_collisions link1="fr3_link2" link2="fr3_link4" reason="Never"/>
+  <disable_collisions link1="fr3_link2" link2="fr3_link6" reason="Never"/>
+  <disable_collisions link1="fr3_link3" link2="fr3_link4" reason="Adjacent"/>
+  <disable_collisions link1="fr3_link3" link2="fr3_link5" reason="Never"/>
+  <disable_collisions link1="fr3_link3" link2="fr3_link6" reason="Never"/>
+  <disable_collisions link1="fr3_link3" link2="fr3_link7" reason="Never"/>
+  <disable_collisions link1="fr3_link4" link2="fr3_link5" reason="Adjacent"/>
+  <disable_collisions link1="fr3_link4" link2="fr3_link6" reason="Never"/>
+  <disable_collisions link1="fr3_link4" link2="fr3_link7" reason="Never"/>
+  <disable_collisions link1="fr3_link4" link2="fr3_link8" reason="Never"/>
+  <disable_collisions link1="fr3_link5" link2="fr3_link6" reason="Adjacent"/>
+  <disable_collisions link1="fr3_link5" link2="fr3_link7" reason="Never"/>
+  <disable_collisions link1="fr3_link6" link2="fr3_link7" reason="Adjacent"/>
+  <disable_collisions link1="fr3_link6" link2="fr3_link8" reason="Default"/>
+  <disable_collisions link1="fr3_link7" link2="fr3_link8" reason="Adjacent"/>
+
+  <!-- Fixed neighbours are allowed to touch at their designed interfaces. -->
+  <!-- The mounted hand envelope overlaps link7 at the wrist interface.  This is
+       the RH56 equivalent of Franka Hand's link7/hand adjacency exemption. -->
+  <disable_collisions link1="fr3_link7" link2="rh56_right_base_link" reason="Adjacent"/>
+  <xacro:unless value="$(arg mujoco_direct_mount)">
+  <disable_collisions link1="fr3_link8" link2="adapter_1_link" reason="Adjacent"/>
+  <disable_collisions link1="adapter_1_link" link2="adapter_2_link" reason="Adjacent"/>
+  <disable_collisions link1="adapter_2_link" link2="rh56_right_base_link" reason="Adjacent"/>
+  </xacro:unless>
+  <disable_collisions link1="rh56_right_base_link" link2="rh56_grasp_tcp" reason="Adjacent"/>
+</robot>

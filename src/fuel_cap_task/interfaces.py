@@ -1,0 +1,127 @@
+"""Task-level requests and feedback; no joint commands or simulator objects."""
+
+from dataclasses import dataclass
+from typing import Protocol
+
+
+class TaskFailure(Exception):
+    """An expected execution failure, with a reason suitable for the operator."""
+
+
+@dataclass(frozen=True)
+class Pose:
+    frame_id: str
+    position_m: tuple[float, float, float]
+    orientation_xyzw: tuple[float, float, float, float]
+
+
+@dataclass(frozen=True)
+class CapEstimate:
+    # Cap-local +Z points out of the opening toward the hand; +X follows the
+    # grip beam. The provider resolves symmetry and transforms into frame_id.
+    pose: Pose
+    timestamp_s: float
+    source: str  # e.g. mock, simulation_ground_truth, vision
+    valid: bool
+    confidence: float | None = None
+    timestamp_clock: str = "unix"
+
+
+@dataclass(frozen=True)
+class TaskParameters:
+    # User-confirmed values, mirrored from doc/assembly_contract.md.
+    grasp_channels: tuple[int, int, int, int, int, int] = (0, 0, 440, 390, 660, 0)
+    # Positive about cap-local outward +Z: CCW viewed from the hand.
+    unlock_angle_deg: float = 225.0
+    # Unconfirmed physical inputs stay unset. Real executors must check the
+    # inputs they need in check_ready(), before starting any motion.
+    thread_lead_m_per_turn: float | None = None
+    thread_travel_m: float | None = None
+    grasp_pose_in_cap: Pose | None = None
+    approach_channels: tuple[int, int, int, int, int, int] | None = None
+    retreat_distance_m: float | None = None
+    hold_duration_s: float | None = None
+    rotation_tolerance_deg: float | None = None
+
+
+@dataclass(frozen=True)
+class ApproachFeedback:
+    at_grasp_pose: bool
+    arm_stopped: bool
+    local_control_acquired: bool
+
+
+@dataclass(frozen=True)
+class GraspFeedback:
+    stable: bool
+
+
+@dataclass(frozen=True)
+class TwistFeedback:
+    # Measured/estimated cap motion, not commanded wrist motion.
+    cap_rotation_deg: float
+    rotation_reached: bool
+    thread_released: bool
+    grasp_stable: bool
+    axial_progress_m: float | None = None
+
+
+@dataclass(frozen=True)
+class RetreatFeedback:
+    clear_of_opening: bool
+    grasp_stable: bool
+
+
+@dataclass(frozen=True)
+class HoldFeedback:
+    stable: bool
+
+
+@dataclass(frozen=True)
+class StopFeedback:
+    # None means unknown/unconfirmed, never assumed successful.
+    motion_stopped: bool | None
+    grasp_held: bool | None
+    detail: str = ""
+
+
+class CapEstimator(Protocol):
+    async def estimate(self) -> CapEstimate:
+        """Return an estimate with explicit source, timestamp and validity."""
+        ...
+
+
+class Executor(Protocol):
+    """Operations must yield to asyncio and support cancellation.
+
+    Cancellation ends the operation coroutine; stop_and_hold then requests and
+    confirms controller stop. Controller ownership lives here, not in the task.
+    Successful hold() leaves holding control active after the task returns.
+    """
+
+    name: str
+
+    async def check_ready(self, parameters: TaskParameters) -> None:
+        """Check parameters, scene and controllers; raise TaskFailure if unready.
+
+        Physical adapters must reject missing required motion/contact inputs.
+        """
+        ...
+
+    async def approach(self, cap: CapEstimate, parameters: TaskParameters) -> ApproachFeedback:
+        """Plan/approach, stop coarse motion and hand over to local control."""
+        ...
+
+    async def grasp(self, parameters: TaskParameters) -> GraspFeedback: ...
+
+    async def twist(self, cap: CapEstimate, parameters: TaskParameters) -> TwistFeedback: ...
+
+    async def retreat(self, cap: CapEstimate, parameters: TaskParameters) -> RetreatFeedback: ...
+
+    async def hold(self, parameters: TaskParameters) -> HoldFeedback:
+        """Observe stable holding for the configured physical acceptance period."""
+        ...
+
+    async def stop_and_hold(self) -> StopFeedback:
+        """Stop further motion, preserve existing grasp; never close or release anew."""
+        ...

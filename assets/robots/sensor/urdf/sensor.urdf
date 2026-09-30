@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="sensor">
+  <!-- Visual inspection only. Meters; bottom center origin, +Z toward adapter. Provisional mounting direction. No calibrated mass, inertia, collision or sensing model. -->
+  <mujoco>
+    <compiler strippath="false" discardvisual="false" fusestatic="false" />
+  </mujoco>
+  <link name="sensor_link">
+    <visual name="sensor_visual">
+      <geometry>
+        <mesh filename="../meshes/sensor.stl" />
+      </geometry>
+      <material name="sensor_silver">
+        <color rgba=".65 .70 .76 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="sensor_output_frame" />
+  <joint name="sensor_output_fixed" type="fixed">
+    <parent link="sensor_link" />
+    <child link="sensor_output_frame" />
+    <origin xyz="0 0 .0335" rpy="0 0 0" />
+  </joint>
+</robot>

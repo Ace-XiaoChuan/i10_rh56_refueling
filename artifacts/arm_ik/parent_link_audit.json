@@ -1,0 +1,117 @@
+[
+  {
+    "parent": "base_link",
+    "child": "shoulder_Link",
+    "filter": "explicit_exclude"
+  },
+  {
+    "parent": "shoulder_Link",
+    "child": "upperArm_Link",
+    "filter": "explicit_exclude"
+  },
+  {
+    "parent": "upperArm_Link",
+    "child": "foreArm_Link",
+    "filter": "explicit_exclude"
+  },
+  {
+    "parent": "foreArm_Link",
+    "child": "wrist1_Link",
+    "filter": "explicit_exclude"
+  },
+  {
+    "parent": "wrist1_Link",
+    "child": "wrist2_Link",
+    "filter": "explicit_exclude"
+  },
+  {
+    "parent": "wrist2_Link",
+    "child": "wrist3_Link",
+    "filter": "explicit_exclude"
+  },
+  {
+    "parent": "wrist3_Link",
+    "child": "sensor_link",
+    "filter": "one_or_both_have_no_collision_geom"
+  },
+  {
+    "parent": "sensor_link",
+    "child": "sensor_output_frame",
+    "filter": "one_or_both_have_no_collision_geom"
+  },
+  {
+    "parent": "sensor_output_frame",
+    "child": "adapter",
+    "filter": "one_or_both_have_no_collision_geom"
+  },
+  {
+    "parent": "adapter",
+    "child": "rh56_provisional_mount",
+    "filter": "one_or_both_have_no_collision_geom"
+  },
+  {
+    "parent": "rh56_provisional_mount",
+    "child": "base",
+    "filter": "one_or_both_have_no_collision_geom"
+  },
+  {
+    "parent": "base",
+    "child": "thumb_proximal_base",
+    "filter": "explicit_exclude"
+  },
+  {
+    "parent": "thumb_proximal_base",
+    "child": "thumb_proximal",
+    "filter": "default_parent_filter"
+  },
+  {
+    "parent": "thumb_proximal",
+    "child": "thumb_intermediate",
+    "filter": "explicit_exclude"
+  },
+  {
+    "parent": "thumb_intermediate",
+    "child": "thumb_distal",
+    "filter": "explicit_exclude"
+  },
+  {
+    "parent": "base",
+    "child": "index_proximal",
+    "filter": "explicit_exclude"
+  },
+  {
+    "parent": "index_proximal",
+    "child": "index_intermediate",
+    "filter": "explicit_exclude"
+  },
+  {
+    "parent": "base",
+    "child": "middle_proximal",
+    "filter": "explicit_exclude"
+  },
+  {
+    "parent": "middle_proximal",
+    "child": "middle_intermediate",
+    "filter": "explicit_exclude"
+  },
+  {
+    "parent": "base",
+    "child": "ring_proximal",
+    "filter": "explicit_exclude"
+  },
+  {
+    "parent": "ring_proximal",
+    "child": "ring_intermediate",
+    "filter": "explicit_exclude"
+  },
+  {
+    "parent": "base",
+    "child": "pinky_proximal",
+    "filter": "explicit_exclude"
+  },
+  {
+    "parent": "pinky_proximal",
+    "child": "pinky_intermediate",
+    "filter": "explicit_exclude"
+  }
+]

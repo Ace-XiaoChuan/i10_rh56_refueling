@@ -1,0 +1,4 @@
+# M3-06 reproducible MuJoCo Python runtime. Install in the selected ROS Python
+# environment before building or running assembly_mujoco.
+mujoco==3.8.1
+PyYAML==6.0.3

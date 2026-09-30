@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="fr3_rh56_visual_preview">
+  <xacro:include filename="$(find franka_description)/robots/common/franka_robot.xacro"/>
+
+  <!-- Values are supplied by config/fr3_rh56_mount_provisional.yaml through
+       the preview launch. The same YAML drives the separate MVP-3 MoveIt
+       collision model, but this preview itself does not start MoveIt. -->
+  <xacro:arg name="adapter_1_xyz" default="0 0 0"/>
+  <xacro:arg name="adapter_1_rpy" default="1.5707963267948966 3.141592653589793 0.7853981633974483"/>
+  <xacro:arg name="show_adapter_2" default="true"/>
+  <xacro:arg name="show_rh56" default="true"/>
+  <xacro:arg name="adapter_2_xyz" default="0 0.0725 0"/>
+  <xacro:arg name="adapter_2_rpy" default="0 0 0"/>
+  <xacro:arg name="rh56_xyz" default="0 0.01 0"/>
+  <xacro:arg name="rh56_rpy" default="0 0 0"/>
+  <xacro:arg name="rh56_grasp_tcp_xyz" default="-0.058 0.105 0.024"/>
+  <xacro:arg name="rh56_grasp_tcp_rpy" default="0 0 0"/>
+
+  <xacro:franka_robot robot_type="fr3"
+                      joint_limits="${xacro.load_yaml('$(find franka_description)/robots/fr3/joint_limits.yaml')}"
+                      inertials="${xacro.load_yaml('$(find franka_description)/robots/fr3/inertials.yaml')}"
+                      kinematics="${xacro.load_yaml('$(find franka_description)/robots/fr3/kinematics.yaml')}"
+                      accelerometer_config="${xacro.load_yaml('$(find franka_description)/robots/fr3/accelerometers.yaml')}"
+                      dynamics="${xacro.load_yaml('$(find franka_description)/robots/fr3/dynamics.yaml')}"
+                      hand="false"
+                      ee_id="none"
+                      no_prefix="false"/>
+
+  <link name="adapter_1_link">
+    <visual>
+      <geometry>
+        <!-- Exported from the SolidWorks flange coordinate system in metres. -->
+        <mesh filename="package://fr3_rh56_adapter_description/meshes/adapter_1_flange_frame.stl"/>
+      </geometry>
+      <material name="adapter_gray">
+        <color rgba="0.35 0.38 0.42 1"/>
+      </material>
+    </visual>
+    <!-- MVP-3 uses the same coarse mesh for its first collision baseline. -->
+    <collision>
+      <geometry>
+        <mesh filename="package://fr3_rh56_adapter_description/meshes/adapter_1_flange_frame.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fr3_link8_to_adapter_1" type="fixed">
+    <parent link="fr3_link8"/>
+    <child link="adapter_1_link"/>
+    <origin xyz="$(arg adapter_1_xyz)" rpy="$(arg adapter_1_rpy)"/>
+  </joint>
+
+  <xacro:if value="$(arg show_adapter_2)">
+    <link name="adapter_2_link">
+      <visual>
+        <geometry>
+          <mesh filename="package://fr3_rh56_adapter_description/meshes/adapter_2.stl"/>
+        </geometry>
+        <material name="adapter_silver">
+          <color rgba="0.62 0.64 0.67 1"/>
+        </material>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://fr3_rh56_adapter_description/meshes/adapter_2.stl"/>
+        </geometry>
+      </collision>
+    </link>
+    <joint name="adapter_1_to_adapter_2" type="fixed">
+      <parent link="adapter_1_link"/>
+      <child link="adapter_2_link"/>
+      <origin xyz="$(arg adapter_2_xyz)" rpy="$(arg adapter_2_rpy)"/>
+    </joint>
+
+    <xacro:if value="$(arg show_rh56)">
+      <link name="rh56_right_base_link">
+        <visual>
+          <geometry>
+            <mesh filename="package://fr3_rh56_adapter_description/meshes/rh56_right_open_preview.stl"/>
+          </geometry>
+          <material name="rh56_black">
+            <color rgba="0.08 0.09 0.10 1"/>
+          </material>
+        </visual>
+        <!-- This is a frozen open-pose whole-hand mesh, not an articulated hand model. -->
+        <collision>
+          <geometry>
+            <mesh filename="package://fr3_rh56_adapter_description/meshes/rh56_right_open_preview.stl"/>
+          </geometry>
+        </collision>
+      </link>
+      <joint name="adapter_2_to_rh56_right" type="fixed">
+        <parent link="adapter_2_link"/>
+        <child link="rh56_right_base_link"/>
+        <origin xyz="$(arg rh56_xyz)" rpy="$(arg rh56_rpy)"/>
+      </joint>
+
+      <link name="rh56_grasp_tcp"/>
+      <joint name="rh56_right_to_grasp_tcp" type="fixed">
+        <parent link="rh56_right_base_link"/>
+        <child link="rh56_grasp_tcp"/>
+        <origin xyz="$(arg rh56_grasp_tcp_xyz)" rpy="$(arg rh56_grasp_tcp_rpy)"/>
+      </joint>
+    </xacro:if>
+  </xacro:if>
+</robot>

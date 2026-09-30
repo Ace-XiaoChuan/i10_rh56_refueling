@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<!--
+  MVP-3 MoveIt model: official FR3 arm/ros2_control plus the fixed adapter and
+  RH56 collision chain.  The hand collision is an aggregate of the supplied
+  RH56 palm/finger meshes at the commanded open pose. It has no hand joints:
+  MTC uses it only for the free-space path ending at the handoff boundary.
+-->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="fr3_rh56_mvp3">
+  <xacro:include filename="$(find franka_bringup)/urdf/franka_arm.urdf.xacro"/>
+
+  <xacro:arg name="adapter_1_xyz" default="0 0 0"/>
+  <xacro:arg name="adapter_1_rpy" default="0.7853981633974483 1.5707963267948966 0"/>
+  <xacro:arg name="adapter_2_xyz" default="0 0.0725 0"/>
+  <xacro:arg name="adapter_2_rpy" default="0 0 0"/>
+  <xacro:arg name="rh56_xyz" default="0 0.01 0"/>
+  <xacro:arg name="rh56_rpy" default="0 0 0"/>
+  <xacro:arg name="rh56_grasp_tcp_xyz" default="-0.058 0.105 0.024"/>
+  <xacro:arg name="rh56_grasp_tcp_rpy" default="0 0 0"/>
+
+  <!-- Continuous mode follows the actual direct-mounted MuJoCo hand.
+       The provisional adapter preview remains available in the legacy launch. -->
+  <xacro:arg name="mujoco_direct_mount" default="false"/>
+  <xacro:arg name="hand_mesh" default="rh56_right_open_preview.stl"/>
+  <xacro:arg name="mujoco_hand_xyz" default="0 0 0"/>
+  <xacro:arg name="mujoco_hand_rpy" default="0 0 0"/>
+  <xacro:unless value="$(arg mujoco_direct_mount)">
+  <link name="adapter_1_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://fr3_rh56_adapter_description/meshes/adapter_1_flange_frame.stl"/>
+      </geometry>
+      <material name="adapter_gray">
+        <color rgba="0.35 0.38 0.42 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://fr3_rh56_adapter_description/meshes/adapter_1_flange_frame.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="fr3_link8_to_adapter_1" type="fixed">
+    <parent link="fr3_link8"/>
+    <child link="adapter_1_link"/>
+    <origin xyz="$(arg adapter_1_xyz)" rpy="$(arg adapter_1_rpy)"/>
+  </joint>
+
+  <link name="adapter_2_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://fr3_rh56_adapter_description/meshes/adapter_2.stl"/>
+      </geometry>
+      <material name="adapter_silver">
+        <color rgba="0.62 0.64 0.67 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://fr3_rh56_adapter_description/meshes/adapter_2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="adapter_1_to_adapter_2" type="fixed">
+    <parent link="adapter_1_link"/>
+    <child link="adapter_2_link"/>
+    <origin xyz="$(arg adapter_2_xyz)" rpy="$(arg adapter_2_rpy)"/>
+  </joint>
+
+  </xacro:unless>
+
+  <link name="rh56_right_base_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://fr3_rh56_adapter_description/meshes/$(arg hand_mesh)"/>
+      </geometry>
+      <material name="rh56_black">
+        <color rgba="0.08 0.09 0.10 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://fr3_rh56_adapter_description/meshes/$(arg hand_mesh)"/>
+      </geometry>
+    </collision>
+  </link>
+  <xacro:unless value="$(arg mujoco_direct_mount)">
+  <joint name="adapter_2_to_rh56_right" type="fixed">
+    <parent link="adapter_2_link"/>
+    <child link="rh56_right_base_link"/>
+    <origin xyz="$(arg rh56_xyz)" rpy="$(arg rh56_rpy)"/>
+  </joint>
+
+  </xacro:unless>
+  <xacro:if value="$(arg mujoco_direct_mount)">
+    <joint name="fr3_link8_to_rh56_mujoco" type="fixed">
+      <parent link="fr3_link8"/>
+      <child link="rh56_right_base_link"/>
+      <origin xyz="$(arg mujoco_hand_xyz)" rpy="$(arg mujoco_hand_rpy)"/>
+    </joint>
+  </xacro:if>
+
+  <link name="rh56_grasp_tcp"/>
+  <joint name="rh56_right_to_grasp_tcp" type="fixed">
+    <parent link="rh56_right_base_link"/>
+    <child link="rh56_grasp_tcp"/>
+    <origin xyz="$(arg rh56_grasp_tcp_xyz)" rpy="$(arg rh56_grasp_tcp_rpy)"/>
+  </joint>
+</robot>

@@ -1,0 +1,27 @@
+build/
+install/
+log/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+
+# Local editor state and caches
+.vscode/
+.idea/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local credentials and environment overrides
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+
+# OS metadata
+.DS_Store
+Thumbs.db

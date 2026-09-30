@@ -1,0 +1,1426 @@
+{
+  "schema_version": 1,
+  "source_workspace": "/home/ace/bimanual_dexterous_mvp_ws",
+  "source_head": "ffc7ff0dbdddff0ef73a8586001ef6ab3e28a996",
+  "source_state": "working-tree snapshot; includes uncommitted files; per-file hashes are authoritative",
+  "franka_description_head": "2c4610f4df7e736b44882483598856819cd6b6f6",
+  "purpose": "Reference assets only; not integrated refueling runtime packages",
+  "files": [
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/fr3_rh56_adapter_description/CMakeLists.txt",
+      "destination": "assets/reference/aviation/src/fr3_rh56_adapter_description/CMakeLists.txt",
+      "source_sha256": "63f4df593b9782cc50a25842e23cfac84ee1a53da2bbe394d49e32838b98062f",
+      "sha256": "63f4df593b9782cc50a25842e23cfac84ee1a53da2bbe394d49e32838b98062f",
+      "bytes": 445,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/fr3_rh56_adapter_description/README.md",
+      "destination": "assets/reference/aviation/src/fr3_rh56_adapter_description/README.md",
+      "source_sha256": "4569de84130dd38420633bef1d2a1821cde9a89ef8491f40aa70bc289bc839bb",
+      "sha256": "4569de84130dd38420633bef1d2a1821cde9a89ef8491f40aa70bc289bc839bb",
+      "bytes": 4389,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/fr3_rh56_adapter_description/config/fr3_rh56_mount_provisional.yaml",
+      "destination": "assets/reference/aviation/src/fr3_rh56_adapter_description/config/fr3_rh56_mount_provisional.yaml",
+      "source_sha256": "50e2d1d3cdba469921516ac212140717b0c801a9b54dc83bb71906c1e7e8e706",
+      "sha256": "50e2d1d3cdba469921516ac212140717b0c801a9b54dc83bb71906c1e7e8e706",
+      "bytes": 1919,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/fr3_rh56_adapter_description/launch/fr3_rh56_visual_preview.launch.py",
+      "destination": "assets/reference/aviation/src/fr3_rh56_adapter_description/launch/fr3_rh56_visual_preview.launch.py",
+      "source_sha256": "957b3b72a814c9b1540202632d8af7a9c7540e51cab3ff849695f0b32649a1f9",
+      "sha256": "957b3b72a814c9b1540202632d8af7a9c7540e51cab3ff849695f0b32649a1f9",
+      "bytes": 7246,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/fr3_rh56_adapter_description/meshes/adapter_1_flange_frame.stl",
+      "destination": "assets/reference/aviation/src/fr3_rh56_adapter_description/meshes/adapter_1_flange_frame.stl",
+      "source_sha256": "e08fa0f0e96ba835ff18a80bd6ee7433693ba60b9cf3ab5db6be7071ec1266ff",
+      "sha256": "e08fa0f0e96ba835ff18a80bd6ee7433693ba60b9cf3ab5db6be7071ec1266ff",
+      "bytes": 361884,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/fr3_rh56_adapter_description/meshes/adapter_2.stl",
+      "destination": "assets/reference/aviation/src/fr3_rh56_adapter_description/meshes/adapter_2.stl",
+      "source_sha256": "0f2e1c45e1b8aab3cb37245532eaf48dbd50744b780551b7734841606f358fd6",
+      "sha256": "0f2e1c45e1b8aab3cb37245532eaf48dbd50744b780551b7734841606f358fd6",
+      "bytes": 24784,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/fr3_rh56_adapter_description/meshes/rh56_mujoco_open_collision.stl",
+      "destination": "assets/reference/aviation/src/fr3_rh56_adapter_description/meshes/rh56_mujoco_open_collision.stl",
+      "source_sha256": "4af89fe48795b321e68e1f7d55f67d07bef3e288fe24c894152a7c3c413dbb02",
+      "sha256": "4af89fe48795b321e68e1f7d55f67d07bef3e288fe24c894152a7c3c413dbb02",
+      "bytes": 1802584,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/fr3_rh56_adapter_description/meshes/rh56_right_open_preview.stl",
+      "destination": "assets/reference/aviation/src/fr3_rh56_adapter_description/meshes/rh56_right_open_preview.stl",
+      "source_sha256": "e99ba7202c2f212831c537781ba93423063e7103644856412f827edda7629f71",
+      "sha256": "e99ba7202c2f212831c537781ba93423063e7103644856412f827edda7629f71",
+      "bytes": 4481434,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/fr3_rh56_adapter_description/package.xml",
+      "destination": "assets/reference/aviation/src/fr3_rh56_adapter_description/package.xml",
+      "source_sha256": "5f03eb294a9a808c5b8ab9c9412f3180668b9b56ad9c4979581d1f4d0c350983",
+      "sha256": "5f03eb294a9a808c5b8ab9c9412f3180668b9b56ad9c4979581d1f4d0c350983",
+      "bytes": 953,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/fr3_rh56_adapter_description/rviz/fr3_rh56_visual_preview.rviz",
+      "destination": "assets/reference/aviation/src/fr3_rh56_adapter_description/rviz/fr3_rh56_visual_preview.rviz",
+      "source_sha256": "247c1434a29ea38fea8404086276ffc51f32c2b358d4edd1cf615e2997c2696f",
+      "sha256": "247c1434a29ea38fea8404086276ffc51f32c2b358d4edd1cf615e2997c2696f",
+      "bytes": 1520,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/fr3_rh56_adapter_description/tools/build_rh56_open_preview.py",
+      "destination": "assets/reference/aviation/src/fr3_rh56_adapter_description/tools/build_rh56_open_preview.py",
+      "source_sha256": "1ff318c32203e6a6d5597a39cd1a2fa234d83f159c4949d641acf4e810981fb1",
+      "sha256": "1ff318c32203e6a6d5597a39cd1a2fa234d83f159c4949d641acf4e810981fb1",
+      "bytes": 5149,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/fr3_rh56_adapter_description/urdf/fr3_rh56_moveit.srdf.xacro",
+      "destination": "assets/reference/aviation/src/fr3_rh56_adapter_description/urdf/fr3_rh56_moveit.srdf.xacro",
+      "source_sha256": "7d425524e533cc26a68e299145cafde3cb6c0d25aa671c3b07e0799d8d02011c",
+      "sha256": "7d425524e533cc26a68e299145cafde3cb6c0d25aa671c3b07e0799d8d02011c",
+      "bytes": 3703,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/fr3_rh56_adapter_description/urdf/fr3_rh56_moveit.urdf.xacro",
+      "destination": "assets/reference/aviation/src/fr3_rh56_adapter_description/urdf/fr3_rh56_moveit.urdf.xacro",
+      "source_sha256": "320c65c3796d9061630a2dfea95431c372d67e4ae83ba41ed92479fdd1cdddd5",
+      "sha256": "320c65c3796d9061630a2dfea95431c372d67e4ae83ba41ed92479fdd1cdddd5",
+      "bytes": 4003,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/fr3_rh56_adapter_description/urdf/fr3_rh56_visual_preview.urdf.xacro",
+      "destination": "assets/reference/aviation/src/fr3_rh56_adapter_description/urdf/fr3_rh56_visual_preview.urdf.xacro",
+      "source_sha256": "c61787124e162ff54183809e39fa183d8e7a297234b7d25387f2322f20bf4a45",
+      "sha256": "c61787124e162ff54183809e39fa183d8e7a297234b7d25387f2322f20bf4a45",
+      "bytes": 4486,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/third_party/franka_description/robots/fr3/accelerometers.yaml",
+      "destination": "assets/reference/aviation/src/third_party/franka_description/robots/fr3/accelerometers.yaml",
+      "source_sha256": "40fb78a7082e4fb7fc565b5ee3f3be15a4db4a07895cdbadda46c251980320ab",
+      "sha256": "40fb78a7082e4fb7fc565b5ee3f3be15a4db4a07895cdbadda46c251980320ab",
+      "bytes": 1597,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/third_party/franka_description/robots/fr3/dynamics.yaml",
+      "destination": "assets/reference/aviation/src/third_party/franka_description/robots/fr3/dynamics.yaml",
+      "source_sha256": "e65e145114b431bd17cdebc58b88c43505f0658472cca6ffbc9c32b7a198f79b",
+      "sha256": "e65e145114b431bd17cdebc58b88c43505f0658472cca6ffbc9c32b7a198f79b",
+      "bytes": 1283,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/third_party/franka_description/robots/fr3/fr3.srdf.xacro",
+      "destination": "assets/reference/aviation/src/third_party/franka_description/robots/fr3/fr3.srdf.xacro",
+      "source_sha256": "4351fe2a301be007ae89291578e68f639e61a8d76c25cefc455e413898b43b20",
+      "sha256": "4351fe2a301be007ae89291578e68f639e61a8d76c25cefc455e413898b43b20",
+      "bytes": 1212,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/third_party/franka_description/robots/fr3/fr3.urdf.xacro",
+      "destination": "assets/reference/aviation/src/third_party/franka_description/robots/fr3/fr3.urdf.xacro",
+      "source_sha256": "5b299f018e358eeef6689bcc895db510b31f79441179793600b574d541c7f608",
+      "sha256": "5b299f018e358eeef6689bcc895db510b31f79441179793600b574d541c7f608",
+      "bytes": 4844,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/third_party/franka_description/robots/fr3/inertials.yaml",
+      "destination": "assets/reference/aviation/src/third_party/franka_description/robots/fr3/inertials.yaml",
+      "source_sha256": "02a39046b36303f748c9755b48610b7600fb819d54828475514c36915ae54a89",
+      "sha256": "02a39046b36303f748c9755b48610b7600fb819d54828475514c36915ae54a89",
+      "bytes": 2212,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/third_party/franka_description/robots/fr3/joint_limits.yaml",
+      "destination": "assets/reference/aviation/src/third_party/franka_description/robots/fr3/joint_limits.yaml",
+      "source_sha256": "42e999184f37689568b58f320d062859053f03c62c8b49bf00a00d69f20d7a65",
+      "sha256": "42e999184f37689568b58f320d062859053f03c62c8b49bf00a00d69f20d7a65",
+      "bytes": 1374,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/third_party/franka_description/robots/fr3/kinematics.yaml",
+      "destination": "assets/reference/aviation/src/third_party/franka_description/robots/fr3/kinematics.yaml",
+      "source_sha256": "44326830a6773dd6611cdf9947045eeb3276ea4e3ca47a05272816c862c8e386",
+      "sha256": "44326830a6773dd6611cdf9947045eeb3276ea4e3ca47a05272816c862c8e386",
+      "bytes": 831,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/third_party/franka_description/robots/common/franka_arm.ros2_control.xacro",
+      "destination": "assets/reference/aviation/src/third_party/franka_description/robots/common/franka_arm.ros2_control.xacro",
+      "source_sha256": "147b01aca0281c0ba1a5c697fd7fcc854bd3198325e5e6ffff20e08e158c0438",
+      "sha256": "147b01aca0281c0ba1a5c697fd7fcc854bd3198325e5e6ffff20e08e158c0438",
+      "bytes": 5234,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/third_party/franka_description/robots/common/franka_arm.srdf.xacro",
+      "destination": "assets/reference/aviation/src/third_party/franka_description/robots/common/franka_arm.srdf.xacro",
+      "source_sha256": "378698aefe1ce9510835ce22aa8450494e8b8ecce59cb7d9ba94b94fafba0c29",
+      "sha256": "378698aefe1ce9510835ce22aa8450494e8b8ecce59cb7d9ba94b94fafba0c29",
+      "bytes": 3217,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/third_party/franka_description/robots/common/franka_arm.xacro",
+      "destination": "assets/reference/aviation/src/third_party/franka_description/robots/common/franka_arm.xacro",
+      "source_sha256": "6426916fbbeb2a09631e0da5ed570f31c3876da1a8463cdeee5bd4e9a6fbe3a4",
+      "sha256": "6426916fbbeb2a09631e0da5ed570f31c3876da1a8463cdeee5bd4e9a6fbe3a4",
+      "bytes": 8107,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/third_party/franka_description/robots/common/franka_robot.xacro",
+      "destination": "assets/reference/aviation/src/third_party/franka_description/robots/common/franka_robot.xacro",
+      "source_sha256": "c973f0880c7252486c6cfc2108ae40a78406d0f30b5f386d8f9ffdf1ab2f64d7",
+      "sha256": "c973f0880c7252486c6cfc2108ae40a78406d0f30b5f386d8f9ffdf1ab2f64d7",
+      "bytes": 8414,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/third_party/franka_description/robots/common/group_definition.xacro",
+      "destination": "assets/reference/aviation/src/third_party/franka_description/robots/common/group_definition.xacro",
+      "source_sha256": "5a8c3957a2a9622df0c6116126450e69f3b769a336392a226049196ab19173ca",
+      "sha256": "5a8c3957a2a9622df0c6116126450e69f3b769a336392a226049196ab19173ca",
+      "bytes": 1191,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/third_party/franka_description/robots/common/utils.xacro",
+      "destination": "assets/reference/aviation/src/third_party/franka_description/robots/common/utils.xacro",
+      "source_sha256": "20c9670a47e3ac0541b7e101e3afdd1a6585152c45a569abe19a0b637d73f7ef",
+      "sha256": "20c9670a47e3ac0541b7e101e3afdd1a6585152c45a569abe19a0b637d73f7ef",
+      "bytes": 17322,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/third_party/franka_description/meshes/robots/fr3/collision/link0.stl",
+      "destination": "assets/reference/aviation/src/third_party/franka_description/meshes/robots/fr3/collision/link0.stl",
+      "source_sha256": "56990396d712b2ebb89f7d29083973c823babd3bfa605f2d2863bd1069d29788",
+      "sha256": "56990396d712b2ebb89f7d29083973c823babd3bfa605f2d2863bd1069d29788",
+      "bytes": 18784,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/third_party/franka_description/meshes/robots/fr3/collision/link1.stl",
+      "destination": "assets/reference/aviation/src/third_party/franka_description/meshes/robots/fr3/collision/link1.stl",
+      "source_sha256": "e023cf1db282e07f38597d4e7f9edae03cd0dc338974677b31639f677411dc18",
+      "sha256": "e023cf1db282e07f38597d4e7f9edae03cd0dc338974677b31639f677411dc18",
+      "bytes": 11884,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/third_party/franka_description/meshes/robots/fr3/collision/link2.stl",
+      "destination": "assets/reference/aviation/src/third_party/franka_description/meshes/robots/fr3/collision/link2.stl",
+      "source_sha256": "3117fd3aea238c07fc1bf678784d38497bfdd603a7760bf36b7fb31b15f0624e",
+      "sha256": "3117fd3aea238c07fc1bf678784d38497bfdd603a7760bf36b7fb31b15f0624e",
+      "bytes": 11484,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/third_party/franka_description/meshes/robots/fr3/collision/link3.stl",
+      "destination": "assets/reference/aviation/src/third_party/franka_description/meshes/robots/fr3/collision/link3.stl",
+      "source_sha256": "1f21215bdb62892271a263969c92dc1be15c409ec8fc96b6bdec3c28d77f0e6e",
+      "sha256": "1f21215bdb62892271a263969c92dc1be15c409ec8fc96b6bdec3c28d77f0e6e",
+      "bytes": 13584,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/third_party/franka_description/meshes/robots/fr3/collision/link4.stl",
+      "destination": "assets/reference/aviation/src/third_party/franka_description/meshes/robots/fr3/collision/link4.stl",
+      "source_sha256": "b9574ef02cdf234dff9f12359e00f6c11a4b062cf73d1db20894c57f5a9d716a",
+      "sha256": "b9574ef02cdf234dff9f12359e00f6c11a4b062cf73d1db20894c57f5a9d716a",
+      "bytes": 13184,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/third_party/franka_description/meshes/robots/fr3/collision/link5.stl",
+      "destination": "assets/reference/aviation/src/third_party/franka_description/meshes/robots/fr3/collision/link5.stl",
+      "source_sha256": "c174872b06547dc6acdd027679e476d4cddffe0224cb048763bdbf4f68fe7542",
+      "sha256": "c174872b06547dc6acdd027679e476d4cddffe0224cb048763bdbf4f68fe7542",
+      "bytes": 13384,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/third_party/franka_description/meshes/robots/fr3/collision/link6.stl",
+      "destination": "assets/reference/aviation/src/third_party/franka_description/meshes/robots/fr3/collision/link6.stl",
+      "source_sha256": "9ad5c4698aed204cd505e74356adfbb955196913d0b75a616c3865b319d39e6b",
+      "sha256": "9ad5c4698aed204cd505e74356adfbb955196913d0b75a616c3865b319d39e6b",
+      "bytes": 16234,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/third_party/franka_description/meshes/robots/fr3/collision/link7.stl",
+      "destination": "assets/reference/aviation/src/third_party/franka_description/meshes/robots/fr3/collision/link7.stl",
+      "source_sha256": "c48646a72ed0264e5f90b221327fd2b72163935ec7bc1cde9612ac1dcf23eabf",
+      "sha256": "c48646a72ed0264e5f90b221327fd2b72163935ec7bc1cde9612ac1dcf23eabf",
+      "bytes": 15784,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/third_party/franka_description/meshes/robots/fr3/visual/link0.dae",
+      "destination": "assets/reference/aviation/src/third_party/franka_description/meshes/robots/fr3/visual/link0.dae",
+      "source_sha256": "3c52a112d1610d645934945b80ea8d9bb3d1635f345098480a33a537bd43224e",
+      "sha256": "3c52a112d1610d645934945b80ea8d9bb3d1635f345098480a33a537bd43224e",
+      "bytes": 7079719,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/third_party/franka_description/meshes/robots/fr3/visual/link1.dae",
+      "destination": "assets/reference/aviation/src/third_party/franka_description/meshes/robots/fr3/visual/link1.dae",
+      "source_sha256": "5c5846eabc714aefc82ef051a4d09c4fc1c092bca6258b1290227345dd217fcb",
+      "sha256": "5c5846eabc714aefc82ef051a4d09c4fc1c092bca6258b1290227345dd217fcb",
+      "bytes": 906843,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/third_party/franka_description/meshes/robots/fr3/visual/link2.dae",
+      "destination": "assets/reference/aviation/src/third_party/franka_description/meshes/robots/fr3/visual/link2.dae",
+      "source_sha256": "90a1bd38abdc53d0141719cd8e040f788db337b768a845bb6d53c5c52590498f",
+      "sha256": "90a1bd38abdc53d0141719cd8e040f788db337b768a845bb6d53c5c52590498f",
+      "bytes": 921715,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/third_party/franka_description/meshes/robots/fr3/visual/link3.dae",
+      "destination": "assets/reference/aviation/src/third_party/franka_description/meshes/robots/fr3/visual/link3.dae",
+      "source_sha256": "1c7a2a8124e39ad07096c0cce8461b0e650f6752900cfd777bf87c181e81749b",
+      "sha256": "1c7a2a8124e39ad07096c0cce8461b0e650f6752900cfd777bf87c181e81749b",
+      "bytes": 2475274,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/third_party/franka_description/meshes/robots/fr3/visual/link4.dae",
+      "destination": "assets/reference/aviation/src/third_party/franka_description/meshes/robots/fr3/visual/link4.dae",
+      "source_sha256": "dd134cf13cdaced2b67739e4d9fe2ca011cc533936397d9f6303fc740424e2a2",
+      "sha256": "dd134cf13cdaced2b67739e4d9fe2ca011cc533936397d9f6303fc740424e2a2",
+      "bytes": 2533228,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/third_party/franka_description/meshes/robots/fr3/visual/link5.dae",
+      "destination": "assets/reference/aviation/src/third_party/franka_description/meshes/robots/fr3/visual/link5.dae",
+      "source_sha256": "cbcabd369e044eba3f1c2cab84b9ed2ebc1b2f424c6104ad9c5d7410e92fabfe",
+      "sha256": "cbcabd369e044eba3f1c2cab84b9ed2ebc1b2f424c6104ad9c5d7410e92fabfe",
+      "bytes": 3259292,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/third_party/franka_description/meshes/robots/fr3/visual/link6.dae",
+      "destination": "assets/reference/aviation/src/third_party/franka_description/meshes/robots/fr3/visual/link6.dae",
+      "source_sha256": "907b16fea84931f4881174234065bb647700abf105b432c3ff65360e0ad5cf8b",
+      "sha256": "907b16fea84931f4881174234065bb647700abf105b432c3ff65360e0ad5cf8b",
+      "bytes": 5252660,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/third_party/franka_description/meshes/robots/fr3/visual/link7.dae",
+      "destination": "assets/reference/aviation/src/third_party/franka_description/meshes/robots/fr3/visual/link7.dae",
+      "source_sha256": "b9d05ac502ff269b1323705de811d07a8eb9920ce711b32ee0497bf16b74989b",
+      "sha256": "b9d05ac502ff269b1323705de811d07a8eb9920ce711b32ee0497bf16b74989b",
+      "bytes": 4243523,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/third_party/franka_description/LICENSE",
+      "destination": "assets/reference/aviation/src/third_party/franka_description/LICENSE",
+      "source_sha256": "4b25434e6ec2012e28a484f1d7924a0fd1a8bf232c2be2d50d584d299d04d6d6",
+      "sha256": "4b25434e6ec2012e28a484f1d7924a0fd1a8bf232c2be2d50d584d299d04d6d6",
+      "bytes": 12926,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/third_party/franka_description/NOTICE",
+      "destination": "assets/reference/aviation/src/third_party/franka_description/NOTICE",
+      "source_sha256": "13991525876741e3dc94c46e0afce111dc0a5c6156c89bbbefd06547b84738fd",
+      "sha256": "13991525876741e3dc94c46e0afce111dc0a5c6156c89bbbefd06547b84738fd",
+      "bytes": 581,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/third_party/franka_description/README.md",
+      "destination": "assets/reference/aviation/src/third_party/franka_description/README.md",
+      "source_sha256": "1dc3fe9e770a6d9964fa75a60e3661d8e7c8b75c96ad72b590313397fd6bf792",
+      "sha256": "1dc3fe9e770a6d9964fa75a60e3661d8e7c8b75c96ad72b590313397fd6bf792",
+      "bytes": 3945,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/fr3_rh56_adapter_assets/meshes/adapter_2.stl",
+      "destination": "assets/reference/aviation/third_party/fr3_rh56_adapter_assets/meshes/adapter_2.stl",
+      "source_sha256": "0f2e1c45e1b8aab3cb37245532eaf48dbd50744b780551b7734841606f358fd6",
+      "sha256": "0f2e1c45e1b8aab3cb37245532eaf48dbd50744b780551b7734841606f358fd6",
+      "bytes": 24784,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/fr3_rh56_adapter_assets/source_metadata/adapter_2_export.urdf",
+      "destination": "assets/reference/aviation/third_party/fr3_rh56_adapter_assets/source_metadata/adapter_2_export.urdf",
+      "source_sha256": "950bca8ac8a011bed7c2c03d5c6131e025290739e7dbe63409741d1df1c0078c",
+      "sha256": "950bca8ac8a011bed7c2c03d5c6131e025290739e7dbe63409741d1df1c0078c",
+      "bytes": 1280,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/fr3_rh56_adapter_assets/source_metadata/adapter_2_export.csv",
+      "destination": "assets/reference/aviation/third_party/fr3_rh56_adapter_assets/source_metadata/adapter_2_export.csv",
+      "source_sha256": "47bb08b98c459e14901442efef04a7a100adb561e53d4abf35cf1fb3b25df698",
+      "sha256": "47bb08b98c459e14901442efef04a7a100adb561e53d4abf35cf1fb3b25df698",
+      "bytes": 1161,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/fr3_rh56_adapter_assets/solidworks_exports/adapter_1_flange_frame/meshes/base_link.STL",
+      "destination": "assets/reference/aviation/third_party/fr3_rh56_adapter_assets/solidworks_exports/adapter_1_flange_frame/meshes/base_link.STL",
+      "source_sha256": "e08fa0f0e96ba835ff18a80bd6ee7433693ba60b9cf3ab5db6be7071ec1266ff",
+      "sha256": "e08fa0f0e96ba835ff18a80bd6ee7433693ba60b9cf3ab5db6be7071ec1266ff",
+      "bytes": 361884,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/fr3_rh56_adapter_assets/solidworks_exports/adapter_1_flange_frame/urdf/装配体2.csv",
+      "destination": "assets/reference/aviation/third_party/fr3_rh56_adapter_assets/solidworks_exports/adapter_1_flange_frame/urdf/装配体2.csv",
+      "source_sha256": "df79a7237769c9badd934afc2354ef9f605dcb689f61c5a535212a8d46493bd8",
+      "sha256": "df79a7237769c9badd934afc2354ef9f605dcb689f61c5a535212a8d46493bd8",
+      "bytes": 1161,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/fr3_rh56_adapter_assets/solidworks_exports/adapter_1_flange_frame/urdf/装配体2.urdf",
+      "destination": "assets/reference/aviation/third_party/fr3_rh56_adapter_assets/solidworks_exports/adapter_1_flange_frame/urdf/装配体2.urdf",
+      "source_sha256": "d2eedc99ebf56cd6356410bcab5a887f4e0ba01730f98935ec8d54e9973dfe9a",
+      "sha256": "d2eedc99ebf56cd6356410bcab5a887f4e0ba01730f98935ec8d54e9973dfe9a",
+      "bytes": 1262,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/doc/hardware/hardware_baseline.md",
+      "destination": "assets/reference/aviation/doc/hardware/hardware_baseline.md",
+      "source_sha256": "32b8d9781bf99728a312202f681464afc08ab727bb56f0ba286e31964a015956",
+      "sha256": "32b8d9781bf99728a312202f681464afc08ab727bb56f0ba286e31964a015956",
+      "bytes": 8720,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/doc/hardware/fr3_rh56_api_integration.md",
+      "destination": "assets/reference/aviation/doc/hardware/fr3_rh56_api_integration.md",
+      "source_sha256": "68aaae778660995420b63fe71dbb235dff5332c9d0675cfe2541cb9b6215cb18",
+      "sha256": "68aaae778660995420b63fe71dbb235dff5332c9d0675cfe2541cb9b6215cb18",
+      "bytes": 9736,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/doc/hardware/fr3_rh56_adapter_interface_coordinate_request.md",
+      "destination": "assets/reference/aviation/doc/hardware/fr3_rh56_adapter_interface_coordinate_request.md",
+      "source_sha256": "156199e19285c399f65902951e89a09e7969ac0f35d4aaeb3798ec12c2b0936a",
+      "sha256": "156199e19285c399f65902951e89a09e7969ac0f35d4aaeb3798ec12c2b0936a",
+      "bytes": 2228,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/doc/hardware/fr3_rh56_model_resource_inventory.md",
+      "destination": "assets/reference/aviation/doc/hardware/fr3_rh56_model_resource_inventory.md",
+      "source_sha256": "74ca6fc3fb28ad133775d7bcccd8fe2427829cd296dc2ed6ba0f3580b15d1c3f",
+      "sha256": "74ca6fc3fb28ad133775d7bcccd8fe2427829cd296dc2ed6ba0f3580b15d1c3f",
+      "bytes": 8137,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/doc/hardware/rh56_mujoco_position_torque.md",
+      "destination": "assets/reference/aviation/doc/hardware/rh56_mujoco_position_torque.md",
+      "source_sha256": "54d38d90c39f8d667ab47373a3d3dd4f5262a6c6bbee183f4e296ff29b7e029e",
+      "sha256": "54d38d90c39f8d667ab47373a3d3dd4f5262a6c6bbee183f4e296ff29b7e029e",
+      "bytes": 6054,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/doc/hand/README.md",
+      "destination": "assets/reference/aviation/doc/hand/README.md",
+      "source_sha256": "179c3c3e7212eb8259ef4708fa0e6f337fb24aa026f479b78651b68b17b8862b",
+      "sha256": "179c3c3e7212eb8259ef4708fa0e6f337fb24aa026f479b78651b68b17b8862b",
+      "bytes": 11684,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/doc/hand/rh56_angle_cmd.py",
+      "destination": "assets/reference/aviation/doc/hand/rh56_angle_cmd.py",
+      "source_sha256": "c4cf29f4b5792eef865aac7e3fd48b8a8bf50d9e0d224894e2b9db53cc478cb1",
+      "sha256": "c4cf29f4b5792eef865aac7e3fd48b8a8bf50d9e0d224894e2b9db53cc478cb1",
+      "bytes": 4508,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/doc/hand/rh56_watch.py",
+      "destination": "assets/reference/aviation/doc/hand/rh56_watch.py",
+      "source_sha256": "16e79811802a6d4c63f890b940193e28fc39829d0ab1eb1a39e23f049a9b4d6d",
+      "sha256": "16e79811802a6d4c63f890b940193e28fc39829d0ab1eb1a39e23f049a9b4d6d",
+      "bytes": 4105,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/doc/hand/fr3_rh56dfx_rviz_visualization.md",
+      "destination": "assets/reference/aviation/doc/hand/fr3_rh56dfx_rviz_visualization.md",
+      "source_sha256": "d5820e7b4156a7657512a525fe7c009a8abebdcb2e444acc9ce52d271e0ba158",
+      "sha256": "d5820e7b4156a7657512a525fe7c009a8abebdcb2e444acc9ce52d271e0ba158",
+      "bytes": 3476,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/MODEL_PROVENANCE.md",
+      "destination": "assets/reference/aviation/src/assembly_mujoco/mjcf/MODEL_PROVENANCE.md",
+      "source_sha256": "9280a0df7a9fd1a8e709510922c777eeb26f90cf7e593238c4cbd423623ad72d",
+      "sha256": "9280a0df7a9fd1a8e709510922c777eeb26f90cf7e593238c4cbd423623ad72d",
+      "bytes": 3777,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/requirements.txt",
+      "destination": "assets/reference/aviation/src/assembly_mujoco/requirements.txt",
+      "source_sha256": "e10025115c00ddd1cad302571f2d51321ac4bf05ec0f11f5728b2d2fd2d54176",
+      "sha256": "e10025115c00ddd1cad302571f2d51321ac4bf05ec0f11f5728b2d2fd2d54176",
+      "bytes": 165,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/licenses/FRANKA_DESCRIPTION_APACHE-2.0.txt",
+      "destination": "assets/reference/aviation/src/assembly_mujoco/licenses/FRANKA_DESCRIPTION_APACHE-2.0.txt",
+      "source_sha256": "4b25434e6ec2012e28a484f1d7924a0fd1a8bf232c2be2d50d584d299d04d6d6",
+      "sha256": "4b25434e6ec2012e28a484f1d7924a0fd1a8bf232c2be2d50d584d299d04d6d6",
+      "bytes": 12926,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/licenses/RH56DFX_DESCRIPTION_MIT.txt",
+      "destination": "assets/reference/aviation/src/assembly_mujoco/licenses/RH56DFX_DESCRIPTION_MIT.txt",
+      "source_sha256": "ef4e0d4163598b0a5719dc0b230ce834e952f3aaa7e8ed45e772099d98cec08b",
+      "sha256": "ef4e0d4163598b0a5719dc0b230ce834e952f3aaa7e8ed45e772099d98cec08b",
+      "bytes": 1085,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/dependencies/franka_ros2_humble.repos",
+      "destination": "assets/reference/aviation/dependencies/franka_ros2_humble.repos",
+      "source_sha256": "17d01aff8774de9cf800ed8fb143430b26afce4c5f20e85116663590c7d5678e",
+      "sha256": "17d01aff8774de9cf800ed8fb143430b26afce4c5f20e85116663590c7d5678e",
+      "bytes": 268,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/README.md",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/README.md",
+      "source_sha256": "7a38cce9a4461237d8505d4c714f2835f86146c2578d77625a92b2eb10f8285d",
+      "sha256": "7a38cce9a4461237d8505d4c714f2835f86146c2578d77625a92b2eb10f8285d",
+      "bytes": 3124,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/h1_mujoco/LICENSE",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/h1_mujoco/LICENSE",
+      "source_sha256": "c4d3b6dbdaefe543453dbe120092aff2ce7adbecd4cc1b72092e56d661c24198",
+      "sha256": "c4d3b6dbdaefe543453dbe120092aff2ce7adbecd4cc1b72092e56d661c24198",
+      "bytes": 1109,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/h1_mujoco/README.md",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/h1_mujoco/README.md",
+      "source_sha256": "074a71ac197d173c3fdb0fb68a1b079942fbcd837197c8205923b6c537eb06c3",
+      "sha256": "074a71ac197d173c3fdb0fb68a1b079942fbcd837197c8205923b6c537eb06c3",
+      "bytes": 1491,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/inspire_left.xml",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/inspire_left.xml",
+      "source_sha256": "6f8c888c25062568e66d10831555a6bfc3ad6723d73ebd15fe4a78f3504f26eb",
+      "sha256": "6f8c888c25062568e66d10831555a6bfc3ad6723d73ebd15fe4a78f3504f26eb",
+      "bytes": 16180,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/inspire_right.xml",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/inspire_right.xml",
+      "source_sha256": "08a2d74b57a7fd52a83fb00f4575be9fcbf674863784300a63fa1bb9eb4fdc8a",
+      "sha256": "08a2d74b57a7fd52a83fb00f4575be9fcbf674863784300a63fa1bb9eb4fdc8a",
+      "bytes": 16346,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/left_index_intermediate.stl",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/left_index_intermediate.stl",
+      "source_sha256": "4816cd7ce368567ccebf260c6f3ce1d4fee437d2873be1b34d0ab000704a09ae",
+      "sha256": "4816cd7ce368567ccebf260c6f3ce1d4fee437d2873be1b34d0ab000704a09ae",
+      "bytes": 169884,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/left_index_proximal.stl",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/left_index_proximal.stl",
+      "source_sha256": "92d149849631cb5c2629521ce9786a29b33fe8923682117a3352409f2bce3fd1",
+      "sha256": "92d149849631cb5c2629521ce9786a29b33fe8923682117a3352409f2bce3fd1",
+      "bytes": 72484,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/left_middle_intermediate.stl",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/left_middle_intermediate.stl",
+      "source_sha256": "0517dcb5df5c56e36d14568ed2fb8bbbeca4b3dd64807e64722d0ea7a524416a",
+      "sha256": "0517dcb5df5c56e36d14568ed2fb8bbbeca4b3dd64807e64722d0ea7a524416a",
+      "bytes": 71784,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/left_pinky_intermediate.stl",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/left_pinky_intermediate.stl",
+      "source_sha256": "4f907a324fa2002bfee286c311c9dce616645b8fa7e8d3b7982f9f39c9208bf0",
+      "sha256": "4f907a324fa2002bfee286c311c9dce616645b8fa7e8d3b7982f9f39c9208bf0",
+      "bytes": 115184,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/left_thumb_distal.stl",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/left_thumb_distal.stl",
+      "source_sha256": "94d07807d722877a7fc0732b967b479a6f5f465c9aad4ed6d8fdf351912f6bec",
+      "sha256": "94d07807d722877a7fc0732b967b479a6f5f465c9aad4ed6d8fdf351912f6bec",
+      "bytes": 119784,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/left_thumb_intermediate.stl",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/left_thumb_intermediate.stl",
+      "source_sha256": "af8774fce8d8e5301dba909b6fe1efa1f57167f051c7c69ff194a665ff935d7f",
+      "sha256": "af8774fce8d8e5301dba909b6fe1efa1f57167f051c7c69ff194a665ff935d7f",
+      "bytes": 77584,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/left_thumb_proximal.stl",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/left_thumb_proximal.stl",
+      "source_sha256": "b768652982406150f098a599f1580c59b742766be778eb576b368fb119dbba31",
+      "sha256": "b768652982406150f098a599f1580c59b742766be778eb576b368fb119dbba31",
+      "bytes": 101284,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/left_thumb_proximal_base.stl",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/left_thumb_proximal_base.stl",
+      "source_sha256": "6f7d876303e20249a0e32bc38a0b74157625da9a03d8867ab05926723b361a93",
+      "sha256": "6f7d876303e20249a0e32bc38a0b74157625da9a03d8867ab05926723b361a93",
+      "bytes": 10084,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_index_intermediate.stl",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_index_intermediate.stl",
+      "source_sha256": "cb5f9967afe55faed1e213fde5fd7e8df64fe7baa3e558b19c269662fe70a414",
+      "sha256": "cb5f9967afe55faed1e213fde5fd7e8df64fe7baa3e558b19c269662fe70a414",
+      "bytes": 169884,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_index_proximal.stl",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_index_proximal.stl",
+      "source_sha256": "45f93c17388a4c5f8f771a88d92ea2fd34dbbaf77d8477963a24261c49a0a627",
+      "sha256": "45f93c17388a4c5f8f771a88d92ea2fd34dbbaf77d8477963a24261c49a0a627",
+      "bytes": 72484,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_middle_intermediate.stl",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_middle_intermediate.stl",
+      "source_sha256": "a2fd03681008487e240d7f9934d652d53668bb92430413fea5eca06ad9a9a5c3",
+      "sha256": "a2fd03681008487e240d7f9934d652d53668bb92430413fea5eca06ad9a9a5c3",
+      "bytes": 71784,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_pinky_intermediate.stl",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_pinky_intermediate.stl",
+      "source_sha256": "c39e9b99aa99b2f7ad9620cb263ab3b42e04f536cb919959a2bd9ccef3ee55ef",
+      "sha256": "c39e9b99aa99b2f7ad9620cb263ab3b42e04f536cb919959a2bd9ccef3ee55ef",
+      "bytes": 115184,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_thumb_distal.stl",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_thumb_distal.stl",
+      "source_sha256": "e2b9cdaeb1040324090e09eb9e4c5bc3564e0caed57b4df08ab139cc2b612742",
+      "sha256": "e2b9cdaeb1040324090e09eb9e4c5bc3564e0caed57b4df08ab139cc2b612742",
+      "bytes": 119784,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_thumb_intermediate.stl",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_thumb_intermediate.stl",
+      "source_sha256": "ea968025b1f65856df24f5b259932718ade5002af1b890024ee020e365976829",
+      "sha256": "ea968025b1f65856df24f5b259932718ade5002af1b890024ee020e365976829",
+      "bytes": 77584,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_thumb_proximal.stl",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_thumb_proximal.stl",
+      "source_sha256": "0ba9999aaf8ef936fd1f636639419fd07f960226cd30c185ea946fec36837bac",
+      "sha256": "0ba9999aaf8ef936fd1f636639419fd07f960226cd30c185ea946fec36837bac",
+      "bytes": 101284,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_thumb_proximal_base.stl",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_thumb_proximal_base.stl",
+      "source_sha256": "9ee662ae36cd0203f3b2517a9057b86a7d3345e8586abb3a449866e03a050b0a",
+      "sha256": "9ee662ae36cd0203f3b2517a9057b86a7d3345e8586abb3a449866e03a050b0a",
+      "bytes": 10084,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/L_hand_base_link.STL",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/L_hand_base_link.STL",
+      "source_sha256": "33ab4e97801bd5421903a78f5977a44e477ae8653eaf32358d35633e465411e0",
+      "sha256": "33ab4e97801bd5421903a78f5977a44e477ae8653eaf32358d35633e465411e0",
+      "bytes": 1448084,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/R_hand_base_link.STL",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/R_hand_base_link.STL",
+      "source_sha256": "b4d84504242a99fa915c4ed5195ce4724c67cb94d9217cd4c254cfb5937ecf5c",
+      "sha256": "b4d84504242a99fa915c4ed5195ce4724c67cb94d9217cd4c254cfb5937ecf5c",
+      "bytes": 1472384,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/left_index_intermediate_visual.stl",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/left_index_intermediate_visual.stl",
+      "source_sha256": "176e2c953291222b048fe65173964f41717b860fc965b78212af3316914ebedc",
+      "sha256": "176e2c953291222b048fe65173964f41717b860fc965b78212af3316914ebedc",
+      "bytes": 286384,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/left_index_proximal_visual.stl",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/left_index_proximal_visual.stl",
+      "source_sha256": "a261d604f34cce54de71ed3e385d3691eb61bb9b18be8fcde8ea49b228041768",
+      "sha256": "a261d604f34cce54de71ed3e385d3691eb61bb9b18be8fcde8ea49b228041768",
+      "bytes": 349084,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/left_middle_intermediate_visual.stl",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/left_middle_intermediate_visual.stl",
+      "source_sha256": "c9214094d58f52b514e7017d6192af91173c7a5642f715b5a794c67e2b0ff96d",
+      "sha256": "c9214094d58f52b514e7017d6192af91173c7a5642f715b5a794c67e2b0ff96d",
+      "bytes": 274084,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/left_pinky_intermediate_visual.stl",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/left_pinky_intermediate_visual.stl",
+      "source_sha256": "903b8d9d8c828f3b13111192d81e4f3277a9bd6c17dbd125917720d177e0dc2a",
+      "sha256": "903b8d9d8c828f3b13111192d81e4f3277a9bd6c17dbd125917720d177e0dc2a",
+      "bytes": 351884,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/left_thumb_distal_visual.stl",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/left_thumb_distal_visual.stl",
+      "source_sha256": "a66ba6e3c9f53d2002e3d6a470c9e902a0ece4c35fdea1f9d09caffbd289c67c",
+      "sha256": "a66ba6e3c9f53d2002e3d6a470c9e902a0ece4c35fdea1f9d09caffbd289c67c",
+      "bytes": 76484,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/left_thumb_intermediate_visual.stl",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/left_thumb_intermediate_visual.stl",
+      "source_sha256": "abc5399ebe61fc4e4ea39e36cadc32a348abe16b8d81e76d04113b7943163102",
+      "sha256": "abc5399ebe61fc4e4ea39e36cadc32a348abe16b8d81e76d04113b7943163102",
+      "bytes": 149284,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/left_thumb_proximal_base_visual.stl",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/left_thumb_proximal_base_visual.stl",
+      "source_sha256": "4d0e8fcf19ddb9f70470bfe05d7c75ded058e07a8c0adb2233ca95cf2833e0c2",
+      "sha256": "4d0e8fcf19ddb9f70470bfe05d7c75ded058e07a8c0adb2233ca95cf2833e0c2",
+      "bytes": 61884,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/left_thumb_proximal_visual.stl",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/left_thumb_proximal_visual.stl",
+      "source_sha256": "1c581f41b5b7ff39c0bd5aff7977859d702697d5e0e5d990eadc9f73a413b1c1",
+      "sha256": "1c581f41b5b7ff39c0bd5aff7977859d702697d5e0e5d990eadc9f73a413b1c1",
+      "bytes": 79984,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_index_intermediate_visual.stl",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_index_intermediate_visual.stl",
+      "source_sha256": "f8990e2fd197c02a040f803daa0212e4fe63bf53f90083716b54de42bb959a40",
+      "sha256": "f8990e2fd197c02a040f803daa0212e4fe63bf53f90083716b54de42bb959a40",
+      "bytes": 287684,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_index_proximal_visual.stl",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_index_proximal_visual.stl",
+      "source_sha256": "fa3bc3e5ed7503b54d004075a513e5b1bfb4ea7e8a9b5aea748d73811e8b2a27",
+      "sha256": "fa3bc3e5ed7503b54d004075a513e5b1bfb4ea7e8a9b5aea748d73811e8b2a27",
+      "bytes": 368834,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_middle_intermediate_visual.stl",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_middle_intermediate_visual.stl",
+      "source_sha256": "4b2a8a0c7f3c7c3cea295af5c5ba4b4eb08d5e4b77b96b1bb1f9c53685e715df",
+      "sha256": "4b2a8a0c7f3c7c3cea295af5c5ba4b4eb08d5e4b77b96b1bb1f9c53685e715df",
+      "bytes": 238684,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_pinky_intermediate_visual.stl",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_pinky_intermediate_visual.stl",
+      "source_sha256": "0177537f2f33747e4c2e48efa457ea93d3efb3bbe76f8d556bc2beafa8676189",
+      "sha256": "0177537f2f33747e4c2e48efa457ea93d3efb3bbe76f8d556bc2beafa8676189",
+      "bytes": 352134,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_thumb_distal_visual.stl",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_thumb_distal_visual.stl",
+      "source_sha256": "26e2c18a3af02598fa43401736bba919846f082546fa786208500e679267777e",
+      "sha256": "26e2c18a3af02598fa43401736bba919846f082546fa786208500e679267777e",
+      "bytes": 76284,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_thumb_intermediate_visual.stl",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_thumb_intermediate_visual.stl",
+      "source_sha256": "a1148e5e4092f58cc4121e96231107ad8cce0c8fcd4c48314f2d5b3596beab8a",
+      "sha256": "a1148e5e4092f58cc4121e96231107ad8cce0c8fcd4c48314f2d5b3596beab8a",
+      "bytes": 149884,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_thumb_proximal_base_visual.stl",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_thumb_proximal_base_visual.stl",
+      "source_sha256": "d28d68945bdcbcd4e1014f3697e40e23998542c87bf0bd4d9c6d7df39928f5df",
+      "sha256": "d28d68945bdcbcd4e1014f3697e40e23998542c87bf0bd4d9c6d7df39928f5df",
+      "bytes": 62084,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_thumb_proximal_visual.stl",
+      "destination": "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_thumb_proximal_visual.stl",
+      "source_sha256": "2be9bf3251ab6d1dc61403e49152e1544c47640b7aa9c2bcb4cb6a7296ca0b48",
+      "sha256": "2be9bf3251ab6d1dc61403e49152e1544c47640b7aa9c2bcb4cb6a7296ca0b48",
+      "bytes": 80284,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link0_0.obj",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link0_0.obj",
+      "source_sha256": "c830c25874a8a5736580cfce6f247fd145782d0b050fa424b00dd8194d8b2872",
+      "sha256": "c830c25874a8a5736580cfce6f247fd145782d0b050fa424b00dd8194d8b2872",
+      "bytes": 1444419,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link0_1.obj",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link0_1.obj",
+      "source_sha256": "12f0affb9b540574f28ddf579413455a4728a093498457c9408539c31e2efcb8",
+      "sha256": "12f0affb9b540574f28ddf579413455a4728a093498457c9408539c31e2efcb8",
+      "bytes": 134554,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link0_2.obj",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link0_2.obj",
+      "source_sha256": "19a4d2fd6fef4fa09e109349bdaa315a00a00b17c814392902665bd92217f94c",
+      "sha256": "19a4d2fd6fef4fa09e109349bdaa315a00a00b17c814392902665bd92217f94c",
+      "bytes": 949120,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link0_3.obj",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link0_3.obj",
+      "source_sha256": "ed22c0de7adbc10618321715e047d1d9a36acca3260bc9497acd3ebda998e4e0",
+      "sha256": "ed22c0de7adbc10618321715e047d1d9a36acca3260bc9497acd3ebda998e4e0",
+      "bytes": 2281227,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link0_4.obj",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link0_4.obj",
+      "source_sha256": "bc99c6e6b4752daa010ec2ac4ab38457eca0a1b75fcb4a60139b8200e186454d",
+      "sha256": "bc99c6e6b4752daa010ec2ac4ab38457eca0a1b75fcb4a60139b8200e186454d",
+      "bytes": 291361,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link0_5.obj",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link0_5.obj",
+      "source_sha256": "dbccb46d8a3bfd602cd110a0bf69036e42661ec89c0074f18dc10dbdd2c0325e",
+      "sha256": "dbccb46d8a3bfd602cd110a0bf69036e42661ec89c0074f18dc10dbdd2c0325e",
+      "bytes": 2729951,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link0_6.obj",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link0_6.obj",
+      "source_sha256": "9205596427463353249ab5acc7c7b4f5eb8be358527cd9e229b656b16f5bd1fe",
+      "sha256": "9205596427463353249ab5acc7c7b4f5eb8be358527cd9e229b656b16f5bd1fe",
+      "bytes": 1448529,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link1.obj",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link1.obj",
+      "source_sha256": "a9e73987b774f3fb76ec640c2f6e172b128736363792f1697a13d7795f745663",
+      "sha256": "a9e73987b774f3fb76ec640c2f6e172b128736363792f1697a13d7795f745663",
+      "bytes": 862466,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link2.obj",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link2.obj",
+      "source_sha256": "1818f1eed57552d006a3e9353a670a39c271ac67833274efcee2403db7e4fa92",
+      "sha256": "1818f1eed57552d006a3e9353a670a39c271ac67833274efcee2403db7e4fa92",
+      "bytes": 853861,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link3_0.obj",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link3_0.obj",
+      "source_sha256": "d15c6360be859d55ed1e0d5b08317c4c26d5b3a2a4743c04faf4cc07080f5c9a",
+      "sha256": "d15c6360be859d55ed1e0d5b08317c4c26d5b3a2a4743c04faf4cc07080f5c9a",
+      "bytes": 954393,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link3_1.obj",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link3_1.obj",
+      "source_sha256": "89c2c02bdb1c5175d42c5181b4dcc0bb282fab1c5a0c2f99183c156ad45c2f6d",
+      "sha256": "89c2c02bdb1c5175d42c5181b4dcc0bb282fab1c5a0c2f99183c156ad45c2f6d",
+      "bytes": 2148256,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link4_0.obj",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link4_0.obj",
+      "source_sha256": "8da93d2b65258890be3dfaa39f3cef5acd3d85e7e4e515eb6eb7e1284c3af795",
+      "sha256": "8da93d2b65258890be3dfaa39f3cef5acd3d85e7e4e515eb6eb7e1284c3af795",
+      "bytes": 957444,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link4_1.obj",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link4_1.obj",
+      "source_sha256": "0428a185f74edb3a23c81d71adc9269c8b63f73805f9d210960a5d425fee060d",
+      "sha256": "0428a185f74edb3a23c81d71adc9269c8b63f73805f9d210960a5d425fee060d",
+      "bytes": 2145586,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link5_0.obj",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link5_0.obj",
+      "source_sha256": "bcc32346b6558d8a1c42594b6988d4f6f68ece2e0a769c28b0242d5b398e1f86",
+      "sha256": "bcc32346b6558d8a1c42594b6988d4f6f68ece2e0a769c28b0242d5b398e1f86",
+      "bytes": 1235806,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link5_1.obj",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link5_1.obj",
+      "source_sha256": "d2ef3af3be96ebb7c3f78cf3cedbdfb36b375db8dc32068c5dca613d9086e5e5",
+      "sha256": "d2ef3af3be96ebb7c3f78cf3cedbdfb36b375db8dc32068c5dca613d9086e5e5",
+      "bytes": 186395,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link5_2.obj",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link5_2.obj",
+      "source_sha256": "a897831482eed642e5d441d1a1abf0ede89d37672f8168ce2cd40d620e25daca",
+      "sha256": "a897831482eed642e5d441d1a1abf0ede89d37672f8168ce2cd40d620e25daca",
+      "bytes": 2847962,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link6_0.obj",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link6_0.obj",
+      "source_sha256": "f2a77f8890b3c24de62c6f23c2c63e59cb95b0e3986741d00ac12ec733156635",
+      "sha256": "f2a77f8890b3c24de62c6f23c2c63e59cb95b0e3986741d00ac12ec733156635",
+      "bytes": 544,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link6_1.obj",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link6_1.obj",
+      "source_sha256": "4165ccedf27ec576c8fe3ec86702a43cbdacfb2a25328f6762721a92d22ca8fc",
+      "sha256": "4165ccedf27ec576c8fe3ec86702a43cbdacfb2a25328f6762721a92d22ca8fc",
+      "bytes": 15225,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link6_2.obj",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link6_2.obj",
+      "source_sha256": "1111395c7a1c4a1c803e35969fb4cdd5a183a21292a0da5f0519f6d684083445",
+      "sha256": "1111395c7a1c4a1c803e35969fb4cdd5a183a21292a0da5f0519f6d684083445",
+      "bytes": 2447199,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link6_3.obj",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link6_3.obj",
+      "source_sha256": "86fc49381273ccc0079b1f7ce5a77ce363e85ef4df5ebcf2b07c1ae6173043e6",
+      "sha256": "86fc49381273ccc0079b1f7ce5a77ce363e85ef4df5ebcf2b07c1ae6173043e6",
+      "bytes": 23993,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link6_4.obj",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link6_4.obj",
+      "source_sha256": "ed3f2d2a05b7d7704f4d04f38b99ce59792a8ef79e2f989567a0319a9f029599",
+      "sha256": "ed3f2d2a05b7d7704f4d04f38b99ce59792a8ef79e2f989567a0319a9f029599",
+      "bytes": 1378,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link6_5.obj",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link6_5.obj",
+      "source_sha256": "435abeff7bded0c6e9af1e3f98857413fd3964a65c138efc9d99703d9dfffbbb",
+      "sha256": "435abeff7bded0c6e9af1e3f98857413fd3964a65c138efc9d99703d9dfffbbb",
+      "bytes": 345691,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link6_6.obj",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link6_6.obj",
+      "source_sha256": "b76323550be892e32482f5dee5ca0631b080cf6543404495961834de19f89e71",
+      "sha256": "b76323550be892e32482f5dee5ca0631b080cf6543404495961834de19f89e71",
+      "bytes": 3762367,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link6_7.obj",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link6_7.obj",
+      "source_sha256": "5189566a36197a91792e8704f9dd0097e63a1141c5aca72427fb977d4389c72a",
+      "sha256": "5189566a36197a91792e8704f9dd0097e63a1141c5aca72427fb977d4389c72a",
+      "bytes": 13910,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link7_0.obj",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link7_0.obj",
+      "source_sha256": "bc0953056e78a063c0de7c81f7ba320b74f7957ee5e7da0786e678be64769ab2",
+      "sha256": "bc0953056e78a063c0de7c81f7ba320b74f7957ee5e7da0786e678be64769ab2",
+      "bytes": 887197,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link7_1.obj",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link7_1.obj",
+      "source_sha256": "bab975d59b724a0fac020d80c4483b77d29b9217485f0aae0b866a1b70b56fad",
+      "sha256": "bab975d59b724a0fac020d80c4483b77d29b9217485f0aae0b866a1b70b56fad",
+      "bytes": 933413,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link7_2.obj",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link7_2.obj",
+      "source_sha256": "7f7b27bab891757731d78c0b717a1da3fc48cebb6db5d3cd37994d768ce9b509",
+      "sha256": "7f7b27bab891757731d78c0b717a1da3fc48cebb6db5d3cd37994d768ce9b509",
+      "bytes": 2409912,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link7_3.obj",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link7_3.obj",
+      "source_sha256": "3ccfdcf6043602577da37969244a660ebd72bc4bd172b7fbeb542809b62dccff",
+      "sha256": "3ccfdcf6043602577da37969244a660ebd72bc4bd172b7fbeb542809b62dccff",
+      "bytes": 1310980,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link0.stl",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link0.stl",
+      "source_sha256": "dfc6d94330de8ddb005b311bfdba9f3b8e1aa7c256b71592ee7ff32cb9a9a5aa",
+      "sha256": "dfc6d94330de8ddb005b311bfdba9f3b8e1aa7c256b71592ee7ff32cb9a9a5aa",
+      "bytes": 10084,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link1.stl",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link1.stl",
+      "source_sha256": "e41a39a94108fcf56aacff603fc91ec80541f4c1af17b51a0de5617f5566e6d2",
+      "sha256": "e41a39a94108fcf56aacff603fc91ec80541f4c1af17b51a0de5617f5566e6d2",
+      "bytes": 15084,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link2.stl",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link2.stl",
+      "source_sha256": "370f7605a0fae3529db169ded50f52f171024aa792d4d773bc84197301f6a039",
+      "sha256": "370f7605a0fae3529db169ded50f52f171024aa792d4d773bc84197301f6a039",
+      "bytes": 15084,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link3.stl",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link3.stl",
+      "source_sha256": "0a8d638b9349c6c0eefc4e888636ac4838c4b27170f18a51699321118af709c1",
+      "sha256": "0a8d638b9349c6c0eefc4e888636ac4838c4b27170f18a51699321118af709c1",
+      "bytes": 15084,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link4.stl",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link4.stl",
+      "source_sha256": "0180ebb5772ec9840cb049750cffb29a9ddc90311752a16ea34757782ef9e48d",
+      "sha256": "0180ebb5772ec9840cb049750cffb29a9ddc90311752a16ea34757782ef9e48d",
+      "bytes": 15084,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link5.stl",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link5.stl",
+      "source_sha256": "dd17e688c7870e722283525879643d53a74c0024d328b0e14b034b54c8b6c31a",
+      "sha256": "dd17e688c7870e722283525879643d53a74c0024d328b0e14b034b54c8b6c31a",
+      "bytes": 15084,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link6.stl",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link6.stl",
+      "source_sha256": "20b768e99a0e0440b5754dcca108016434e57937cc356acd9c352ccd3cb27f77",
+      "sha256": "20b768e99a0e0440b5754dcca108016434e57937cc356acd9c352ccd3cb27f77",
+      "bytes": 10084,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/link7.stl",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/link7.stl",
+      "source_sha256": "92ac6afcf7574c034d3170d8a68e95ac9048ab9d0dd5bbd8311b86e551b9ab1c",
+      "sha256": "92ac6afcf7574c034d3170d8a68e95ac9048ab9d0dd5bbd8311b86e551b9ab1c",
+      "bytes": 10084,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_hand_base.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_hand_base.STL",
+      "source_sha256": "60c4c14373b0616daaf2c2ba68f04a34389b10ce2260932d6a6eaf1e3c0143b6",
+      "sha256": "60c4c14373b0616daaf2c2ba68f04a34389b10ce2260932d6a6eaf1e3c0143b6",
+      "bytes": 861734,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_thumb_1.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_thumb_1.STL",
+      "source_sha256": "ac32ce8c0d91e09fe5b44d1ffb25cfb4de0a4686ca810c2753a98e7108c86a5c",
+      "sha256": "ac32ce8c0d91e09fe5b44d1ffb25cfb4de0a4686ca810c2753a98e7108c86a5c",
+      "bytes": 14584,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_thumb_2.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_thumb_2.STL",
+      "source_sha256": "bd4ad45f5d13ef049de95f9005e38a71ff6e21fdda503f3718a409cfd6ced052",
+      "sha256": "bd4ad45f5d13ef049de95f9005e38a71ff6e21fdda503f3718a409cfd6ced052",
+      "bytes": 515634,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_thumb_rubber_1.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_thumb_rubber_1.STL",
+      "source_sha256": "ebfd04b5d11a1677b5631e2ab21691ff6d2871a2594e5ee58035601ed5b54234",
+      "sha256": "ebfd04b5d11a1677b5631e2ab21691ff6d2871a2594e5ee58035601ed5b54234",
+      "bytes": 113634,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_thumb_3.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_thumb_3.STL",
+      "source_sha256": "2d2863e3e88b8454960d9f748636ee570a06f34bfdee7c6dbcecaddbe938dca9",
+      "sha256": "2d2863e3e88b8454960d9f748636ee570a06f34bfdee7c6dbcecaddbe938dca9",
+      "bytes": 334584,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_thumb_rubber_2.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_thumb_rubber_2.STL",
+      "source_sha256": "866dc96c7354a7088c7fab0ff8fb06e554aeaa2fcb6ca35d3bfd669c3b0172a0",
+      "sha256": "866dc96c7354a7088c7fab0ff8fb06e554aeaa2fcb6ca35d3bfd669c3b0172a0",
+      "bytes": 166984,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_thumb_4.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_thumb_4.STL",
+      "source_sha256": "8c30617dc7b227d1eb981958a49fa53ebfa6fc43e7723479dc9e3cb8a9592e88",
+      "sha256": "8c30617dc7b227d1eb981958a49fa53ebfa6fc43e7723479dc9e3cb8a9592e88",
+      "bytes": 8984,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_thumb_rubber_3.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_thumb_rubber_3.STL",
+      "source_sha256": "3c21aea80fdaf84d946d204af1dab3c3d1f8ff812917127d0ef3997da7cf4f7b",
+      "sha256": "3c21aea80fdaf84d946d204af1dab3c3d1f8ff812917127d0ef3997da7cf4f7b",
+      "bytes": 95584,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_thumb_pad.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_thumb_pad.STL",
+      "source_sha256": "017527ea236831d08833565a0a5332ad19b75ef21bc043ebbf641c642b16af4c",
+      "sha256": "017527ea236831d08833565a0a5332ad19b75ef21bc043ebbf641c642b16af4c",
+      "bytes": 20784,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_thumb_tip.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_thumb_tip.STL",
+      "source_sha256": "22abc171a8aa840a317acd2dc2108afec264df9bc6cab449a10a60577dd94b3e",
+      "sha256": "22abc171a8aa840a317acd2dc2108afec264df9bc6cab449a10a60577dd94b3e",
+      "bytes": 7234,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_index_1.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_index_1.STL",
+      "source_sha256": "188479145916f20ba8e375ce22b354ecab8987a1a1daff7ee97852a3050babb0",
+      "sha256": "188479145916f20ba8e375ce22b354ecab8987a1a1daff7ee97852a3050babb0",
+      "bytes": 281534,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_index_rubber_1.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_index_rubber_1.STL",
+      "source_sha256": "3b7db12ad7586e41b87ae373ad6c17906712c84ef1b9a0d641b6a8661b835941",
+      "sha256": "3b7db12ad7586e41b87ae373ad6c17906712c84ef1b9a0d641b6a8661b835941",
+      "bytes": 269684,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_index_2.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_index_2.STL",
+      "source_sha256": "2b8ec38094ae4364551ddc5555921846f3b02e50eb18b49e3b8881639e2c4645",
+      "sha256": "2b8ec38094ae4364551ddc5555921846f3b02e50eb18b49e3b8881639e2c4645",
+      "bytes": 94284,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_index_rubber_2.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_index_rubber_2.STL",
+      "source_sha256": "89a7b39087a38d86576bb06382ca62eb3d62f7ee7d0c1d0d59f6b2c9dfc8c77c",
+      "sha256": "89a7b39087a38d86576bb06382ca62eb3d62f7ee7d0c1d0d59f6b2c9dfc8c77c",
+      "bytes": 203834,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_index_pad.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_index_pad.STL",
+      "source_sha256": "c8e158759bca5796401079ade08e701a0cfb8ae62eeef56ac9acd65ed718ca4b",
+      "sha256": "c8e158759bca5796401079ade08e701a0cfb8ae62eeef56ac9acd65ed718ca4b",
+      "bytes": 20584,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_index_tip.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_index_tip.STL",
+      "source_sha256": "0d5152eb677c5b4ece001c8530376e6d9aa1b117927d81d98e4b6ac65f1ce54d",
+      "sha256": "0d5152eb677c5b4ece001c8530376e6d9aa1b117927d81d98e4b6ac65f1ce54d",
+      "bytes": 9934,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_middle_1.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_middle_1.STL",
+      "source_sha256": "78f3c2c515378bcac008e9fbd859dd03fd4503fc58f54558b0023a14fce4954a",
+      "sha256": "78f3c2c515378bcac008e9fbd859dd03fd4503fc58f54558b0023a14fce4954a",
+      "bytes": 281534,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_middle_rubber_1.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_middle_rubber_1.STL",
+      "source_sha256": "3df67e5f5d5d5c6763d276086c5c30ca1fd0b6c30b7b57ab96ba7a421a6abb3f",
+      "sha256": "3df67e5f5d5d5c6763d276086c5c30ca1fd0b6c30b7b57ab96ba7a421a6abb3f",
+      "bytes": 269534,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_middle_2.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_middle_2.STL",
+      "source_sha256": "7ae816f512614b217a0737df0fdd1641e6a86fdd361c65c09c691f93849cf30f",
+      "sha256": "7ae816f512614b217a0737df0fdd1641e6a86fdd361c65c09c691f93849cf30f",
+      "bytes": 85884,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_middle_rubber_2.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_middle_rubber_2.STL",
+      "source_sha256": "c7f5345d5de16b42998d668cc7435ce89d102ed8355e98ecadf617ec0935c401",
+      "sha256": "c7f5345d5de16b42998d668cc7435ce89d102ed8355e98ecadf617ec0935c401",
+      "bytes": 209534,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_middle_pad.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_middle_pad.STL",
+      "source_sha256": "1eaf80f5c3070157edf85d0f6fe435ada9835a7c5969ff4696bd36bde3c5d140",
+      "sha256": "1eaf80f5c3070157edf85d0f6fe435ada9835a7c5969ff4696bd36bde3c5d140",
+      "bytes": 20884,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_middle_tip.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_middle_tip.STL",
+      "source_sha256": "e74d2f8fa4e48bcef69c6033ea7333d21d3a05cc65d7fb3a9ee8915463587422",
+      "sha256": "e74d2f8fa4e48bcef69c6033ea7333d21d3a05cc65d7fb3a9ee8915463587422",
+      "bytes": 10034,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_ring_1.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_ring_1.STL",
+      "source_sha256": "3bf50594a3b17aae28e06928eb78d90317a88e6fe0ccb0bfb85148b625e3aa30",
+      "sha256": "3bf50594a3b17aae28e06928eb78d90317a88e6fe0ccb0bfb85148b625e3aa30",
+      "bytes": 281534,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_ring_rubber_1.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_ring_rubber_1.STL",
+      "source_sha256": "6b4755553716f0c3877e8013c97f262c873942517eb78e892e236f715b85c785",
+      "sha256": "6b4755553716f0c3877e8013c97f262c873942517eb78e892e236f715b85c785",
+      "bytes": 269434,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_ring_2.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_ring_2.STL",
+      "source_sha256": "2b8ec38094ae4364551ddc5555921846f3b02e50eb18b49e3b8881639e2c4645",
+      "sha256": "2b8ec38094ae4364551ddc5555921846f3b02e50eb18b49e3b8881639e2c4645",
+      "bytes": 94284,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_ring_rubber_2.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_ring_rubber_2.STL",
+      "source_sha256": "4f186e6d6e7b686762e262d7ae6608650e0beab284cfaaf0377058227c1cff66",
+      "sha256": "4f186e6d6e7b686762e262d7ae6608650e0beab284cfaaf0377058227c1cff66",
+      "bytes": 203484,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_ring_pad.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_ring_pad.STL",
+      "source_sha256": "9ca1b1d7b52705ee010f30f2048939507b53214da6494bf3d697edf2a0d15c5d",
+      "sha256": "9ca1b1d7b52705ee010f30f2048939507b53214da6494bf3d697edf2a0d15c5d",
+      "bytes": 20584,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_ring_tip.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_ring_tip.STL",
+      "source_sha256": "3528d64a618f296f4f8bcd5f34d8f4ca32dbb6d37231baa0f41ab2e874b5f67e",
+      "sha256": "3528d64a618f296f4f8bcd5f34d8f4ca32dbb6d37231baa0f41ab2e874b5f67e",
+      "bytes": 9934,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_little_1.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_little_1.STL",
+      "source_sha256": "9004a67aefad3150ba5d9366941cb13e5db327e4b1c32665332702e4eec4911c",
+      "sha256": "9004a67aefad3150ba5d9366941cb13e5db327e4b1c32665332702e4eec4911c",
+      "bytes": 281534,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_little_rubber_1.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_little_rubber_1.STL",
+      "source_sha256": "2270e56d401dd27667d93ba392746349d5a9393eb784df5355a7b13f7c56874d",
+      "sha256": "2270e56d401dd27667d93ba392746349d5a9393eb784df5355a7b13f7c56874d",
+      "bytes": 268484,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_little_2.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_little_2.STL",
+      "source_sha256": "981b018b83a94e01b159b8407c9cd5641e3782de67d01347f41150dc0eb6b93c",
+      "sha256": "981b018b83a94e01b159b8407c9cd5641e3782de67d01347f41150dc0eb6b93c",
+      "bytes": 89784,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_little_rubber_2.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_little_rubber_2.STL",
+      "source_sha256": "cb7e6df9f768a014d001c12ff4e3b465415807a31e662860e042f3a805738814",
+      "sha256": "cb7e6df9f768a014d001c12ff4e3b465415807a31e662860e042f3a805738814",
+      "bytes": 179384,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_little_pad.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_little_pad.STL",
+      "source_sha256": "ac5f6ccd3f46b40ca174667fa5c39bad588f5e09b2d1e4f1514576d6f9118173",
+      "sha256": "ac5f6ccd3f46b40ca174667fa5c39bad588f5e09b2d1e4f1514576d6f9118173",
+      "bytes": 17184,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_little_tip.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_little_tip.STL",
+      "source_sha256": "405999f03d109686cc78645be033b19077a8dd0fbf8050f8d9dd330fa6976b6b",
+      "sha256": "405999f03d109686cc78645be033b19077a8dd0fbf8050f8d9dd330fa6976b6b",
+      "bytes": 7884,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/meshes/rh56dfx_description__meshes__right__collision__right_palm.STL",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/meshes/rh56dfx_description__meshes__right__collision__right_palm.STL",
+      "source_sha256": "644734ca8afcd96952060cebcd5a2001f11aa076a44ceb00b72a1b2a8f93a4f8",
+      "sha256": "644734ca8afcd96952060cebcd5a2001f11aa076a44ceb00b72a1b2a8f93a4f8",
+      "bytes": 144134,
+      "role": "unchanged_copy"
+    },
+    {
+      "source": "/home/ace/bimanual_dexterous_mvp_ws/src/assembly_mujoco/mjcf/mvp3_connector_assembly.xml",
+      "destination": "assets/reference/aviation/derived/fr3_rh56_right/fr3_rh56_right.xml",
+      "source_sha256": "b511af21a964a06cf7b71897e54cd9649adfb5d1cbf61df7f1e3269c6f205fdf",
+      "sha256": "58c017a6071304b6bf3c94f7a652812bfd473b834587388d6e9d7be21de13821",
+      "bytes": 39220,
+      "role": "derived_robot_only"
+    }
+  ]
+}
