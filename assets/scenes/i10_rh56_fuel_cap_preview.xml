@@ -412,7 +412,7 @@
       </body>
     </body>
     <body name="inspection_tank_mount" pos="0 1.2 0">
-      <body name="fuel_tank_body" pos="0 0.2 0.4" quat="0.707107 0.707107 0 0">
+      <body name="fuel_tank_body" pos="0 0.2 0.6" quat="0.707107 0.707107 0 0">
         <geom name="body_00" type="mesh" mesh="body_00" />
         <geom name="body_01" type="mesh" mesh="body_01" />
         <geom name="body_02" type="mesh" mesh="body_02" />
@@ -607,6 +607,9 @@
         <geom name="neck_63" type="mesh" mesh="neck_63" />
         <geom name="tank" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.65 0.68 0.72 1" density="0" mesh="tank_visual" />
         <geom name="neck" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.3 0.32 0.35 1" density="0" mesh="neck_visual" />
+        <geom name="tank_lower_extension_collision" size="0.4 0.1 0.2" pos="0 -0.5 0.2" type="box" rgba="0.3 0.32 0.35 1" />
+        <geom name="tank_lower_extension_visual" size="0.4 0.1 0.2" pos="0 -0.5 0.2" type="box" contype="0" conaffinity="0" group="1" rgba="0.65 0.68 0.72 1" density="0" />
+        <body name="tank_body_center" pos="0 -0.1 0.2" />
         <body name="tank_opening_center" pos="0 0 0.4">
           <site name="tank_opening_center" size=".002" rgba="1 .5 0 1" />
         </body>
@@ -686,5 +689,5 @@
     <position class="inspire" name="thumb_proximal" joint="thumb_proximal_pitch_joint" ctrlrange="0.1 0.57" />
     <position class="inspire" name="thumb_yaw" joint="thumb_proximal_yaw_joint" ctrlrange="0 1.308" />
   </actuator>
-  <!-- Tank source and mesh SHA256: 11b6ef00b39c3c8b7753540a516df0333b747d43f5fda56f08206faf9de86198 -->
+  <!-- Tank source and mesh SHA256: 955cacf482eebac13763a1621be705fd227f3d22029b29046abd2a08a1071527 -->
 </mujoco>

@@ -17,8 +17,10 @@ import numpy as np
 from fuel_cap_task.arm_ik import ArmIKPreview
 
 
-def camera(cam, near=False):
+def camera(cam, near=False, cap_position=None):
     cam.lookat[:] = [0, .86, .42] if near else [0, .42, .5]
+    if cap_position is not None:
+        cam.lookat[2] += float(cap_position[2]) - .4
     cam.distance = .65 if near else 2.3
     cam.azimuth, cam.elevation = (90 if near else 135), -20
 
@@ -51,7 +53,7 @@ def render(preview, report, directory):
         for name,closed in states:
             preview.show(report['solutions'][0],closed)
             for near in (False,True):
-                camera(cam,near)
+                camera(cam,near,preview.world_from_cap[:3,3])
                 renderer.update_scene(d,camera=cam,scene_option=opt)
                 target_marker(preview,renderer.scene)
                 write_png(directory/f'{name}_{"near" if near else "full"}.png',renderer.render())
@@ -78,7 +80,7 @@ def view(preview, report):
                                          show_left_ui=False,show_right_ui=False) as viewer:
             threads=[t for t in threading.enumerate() if t not in before and '_launch_internal' in t.name]
             with viewer.lock():
-                camera(viewer.cam)
+                camera(viewer.cam,cap_position=preview.world_from_cap[:3,3])
                 viewer.opt.geomgroup[0]=viewer.opt.geomgroup[3]=0
             while viewer.is_running():
                 with viewer.lock():
@@ -95,7 +97,7 @@ def view(preview, report):
                             viewer.opt.geomgroup[3]=1-viewer.opt.geomgroup[3]
                         elif key==ord('F'):
                             near=not near
-                            camera(viewer.cam,near)
+                            camera(viewer.cam,near,preview.world_from_cap[:3,3])
                         changed=True
                     if changed:
                         preview.show(report['solutions'][index],closed)

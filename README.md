@@ -10,7 +10,9 @@
 | [项目架构合同](doc/assembly_contract.md#项目架构合同) | 已确认的四模块架构与开发边界 |
 | [长期目标与近期工作计划](doc/assembly_contract.md#长期研究目标与近期工作计划) | 暂定最终路线、规划优先的里程碑和验证条件 |
 | [合作方路线原文](doc/research_route_reference.md) | 用户提供的第五、六章参考提纲；项目采用方式以合同为准 |
+| [当前技术路线](doc/current_technical_route.md) | 已确认的 RGB-D 感知、MTC 规划与 MuJoCo 仿真方向；与总体路线同级归档 |
 | [模型预览与排障](doc/mjcf_inspection.md) | 启动、重建、验证边界及窗口排障 |
+| [MoveIt 规划模型](src/i10_rh56_moveit_config/README.md) | 模型审计、MTC 接近规划与 MuJoCo 回放 |
 | [资产索引](assets/README.md) | CAD/网格、照片和来源说明 |
 | [i10 官方来源](doc/hardware/aubo_i10_sources.md) | 官方模型、驱动及版本边界 |
 
@@ -30,6 +32,21 @@ bash tools/view_i10_fuel_cap_rviz.sh
 ```
 
 已有模型加载、前向计算和渲染检查。当前组合仅运行 `mj_forward`。任务状态机与 mock 后端已实现；拧盖动力学、MTC 执行和图像识别尚未接入，已确认参数尚未用于物理动作验收。
+
+## MoveIt 规划与回放
+
+已建立完整臂手 URDF/SRDF、KDL 配置与规划碰撞场景，并实现当前候选的 MTC 抓取前运动及轴向接近规划；实际轨迹可在 MuJoCo 中运动学回放。动力学执行尚未接入。入口和构建命令见 [配置包说明](src/i10_rh56_moveit_config/README.md)，实际结果见 [项目合同](doc/assembly_contract.md)。
+
+```bash
+# 回放当前已验证的 MTC 接近轨迹
+.venv/bin/python tools/replay_cap_approach.py --view
+```
+
+Space 暂停/继续，R 显式重播，F 全景/近景，C 碰撞几何；结束保持末态。
+[回放动画](artifacts/planning/views/index.html)和[验证报告](artifacts/planning/replay_validation.json)已保存。
+回放仅运行 `mj_forward`，不代表抓稳、动力学执行或完整取盖通过。
+
+模型派生使用项目 `.venv`，与当前候选记录版本一致；`~/mujoco-env/bin/activate` 是另一套环境，版本区别见合同。模型变更后先运行 `python3 tools/check_moveit_model_sources.py`，失效时重新生成并构建；RViz 不是依赖。
 
 ## 状态机演示
 

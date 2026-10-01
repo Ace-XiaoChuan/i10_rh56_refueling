@@ -1,0 +1,374 @@
+mode: moveit_model_audit_not_execution
+coverage: planning
+arm_joints:
+  - shoulder_joint
+  - upperArm_joint
+  - foreArm_joint
+  - wrist1_joint
+  - wrist2_joint
+  - wrist3_joint
+mimic_count: 6
+world_object_count: 197
+cases:
+  - name: initial_pregrasp
+    fk_max_abs_error: 1.3322676295501878e-15
+    collision: false
+    contacts:
+      []
+    moveit_diagnostic_pairs:
+      []
+    mujoco_diagnostic_pairs:
+      []
+    source_pair_match: true
+    kdl_known_target_found: true
+    kdl_target_max_abs_error: 3.2884936995714042e-09
+  - name: ik_00
+    fk_max_abs_error: 1.4432899320127035e-15
+    collision: false
+    contacts:
+      []
+    moveit_diagnostic_pairs:
+      []
+    mujoco_diagnostic_pairs:
+      []
+    source_pair_match: true
+    kdl_known_target_found: true
+    kdl_target_max_abs_error: 3.1398235477201296e-08
+  - name: ik_01
+    fk_max_abs_error: 1.3322676295501878e-15
+    collision: false
+    contacts:
+      []
+    moveit_diagnostic_pairs:
+      []
+    mujoco_diagnostic_pairs:
+      []
+    source_pair_match: true
+    kdl_known_target_found: true
+    kdl_target_max_abs_error: 3.1403087550805307e-08
+  - name: ik_02
+    fk_max_abs_error: 1.1102230246251565e-15
+    collision: true
+    contacts:
+      - a: foreArm_Link
+        b: scene_geom_0
+        max_depth_m: 0.26653836489580357
+      - a: scene_geom_0
+        b: upperArm_Link
+        max_depth_m: 0.22792473622620629
+    moveit_diagnostic_pairs:
+      -
+        - foreArm_Link
+        - world
+      -
+        - upperArm_Link
+        - world
+    mujoco_diagnostic_pairs:
+      []
+    source_pair_match: false
+    kdl_known_target_found: true
+    kdl_target_max_abs_error: 3.8336858142239486e-08
+  - name: ik_03
+    fk_max_abs_error: 1.1102230246251565e-15
+    collision: true
+    contacts:
+      - a: foreArm_Link
+        b: scene_geom_0
+        max_depth_m: 0.26651586749878303
+      - a: scene_geom_0
+        b: upperArm_Link
+        max_depth_m: 0.22792519724209695
+    moveit_diagnostic_pairs:
+      -
+        - foreArm_Link
+        - world
+      -
+        - upperArm_Link
+        - world
+    mujoco_diagnostic_pairs:
+      []
+    source_pair_match: false
+    kdl_known_target_found: true
+    kdl_target_max_abs_error: 6.9848991035570407e-09
+  - name: ik_04
+    fk_max_abs_error: 1.2490009027033011e-15
+    collision: false
+    contacts:
+      []
+    moveit_diagnostic_pairs:
+      []
+    mujoco_diagnostic_pairs:
+      []
+    source_pair_match: true
+    kdl_known_target_found: true
+    kdl_target_max_abs_error: 1.0617481919531919e-08
+  - name: ik_05
+    fk_max_abs_error: 1.6237011735142914e-15
+    collision: false
+    contacts:
+      []
+    moveit_diagnostic_pairs:
+      []
+    mujoco_diagnostic_pairs:
+      []
+    source_pair_match: true
+    kdl_known_target_found: true
+    kdl_target_max_abs_error: 1.0617391150720656e-08
+  - name: ik_06
+    fk_max_abs_error: 1.4432899320127035e-15
+    collision: true
+    contacts:
+      - a: foreArm_Link
+        b: wrist2_Link
+        max_depth_m: 0.01719284574063959
+    moveit_diagnostic_pairs:
+      -
+        - foreArm_Link
+        - wrist2_Link
+    mujoco_diagnostic_pairs:
+      -
+        - foreArm_Link
+        - wrist2_Link
+    source_pair_match: true
+    kdl_known_target_found: true
+    kdl_target_max_abs_error: 2.1772660043021521e-08
+  - name: ik_07
+    fk_max_abs_error: 1.1164334701944251e-15
+    collision: true
+    contacts:
+      - a: foreArm_Link
+        b: wrist2_Link
+        max_depth_m: 0.027175988880870278
+    moveit_diagnostic_pairs:
+      -
+        - foreArm_Link
+        - wrist2_Link
+    mujoco_diagnostic_pairs:
+      -
+        - foreArm_Link
+        - wrist2_Link
+    source_pair_match: true
+    kdl_known_target_found: true
+    kdl_target_max_abs_error: 2.0692824175848999e-08
+  - name: ik_08
+    fk_max_abs_error: 1.4432899320127035e-15
+    collision: true
+    contacts:
+      - a: foreArm_Link
+        b: scene_geom_0
+        max_depth_m: 0.14117822476485242
+      - a: foreArm_Link
+        b: wrist2_Link
+        max_depth_m: 0.022546445843764043
+      - a: scene_geom_0
+        b: upperArm_Link
+        max_depth_m: 0.12539866092323593
+    moveit_diagnostic_pairs:
+      -
+        - foreArm_Link
+        - world
+      -
+        - foreArm_Link
+        - wrist2_Link
+      -
+        - upperArm_Link
+        - world
+    mujoco_diagnostic_pairs:
+      -
+        - foreArm_Link
+        - wrist2_Link
+    source_pair_match: false
+    kdl_known_target_found: true
+    kdl_target_max_abs_error: 2.5882966706017503e-08
+  - name: ik_09
+    fk_max_abs_error: 1.3322676295501878e-15
+    collision: true
+    contacts:
+      - a: foreArm_Link
+        b: scene_geom_0
+        max_depth_m: 0.14116924464123126
+      - a: foreArm_Link
+        b: wrist2_Link
+        max_depth_m: 0.022546765217900958
+      - a: scene_geom_0
+        b: upperArm_Link
+        max_depth_m: 0.12539948173411128
+    moveit_diagnostic_pairs:
+      -
+        - foreArm_Link
+        - world
+      -
+        - foreArm_Link
+        - wrist2_Link
+      -
+        - upperArm_Link
+        - world
+    mujoco_diagnostic_pairs:
+      -
+        - foreArm_Link
+        - wrist2_Link
+    source_pair_match: false
+    kdl_known_target_found: true
+    kdl_target_max_abs_error: 2.5880645145874348e-08
+  - name: ik_10
+    fk_max_abs_error: 1.2212453270876722e-15
+    collision: true
+    contacts:
+      - a: foreArm_Link
+        b: scene_geom_0
+        max_depth_m: 0.14052847923054418
+      - a: foreArm_Link
+        b: wrist2_Link
+        max_depth_m: 0.078116427805584587
+      - a: foreArm_Link
+        b: wrist3_Link
+        max_depth_m: 0.0095584516726993501
+      - a: scene_geom_0
+        b: upperArm_Link
+        max_depth_m: 0.12539875699473552
+    moveit_diagnostic_pairs:
+      -
+        - foreArm_Link
+        - world
+      -
+        - foreArm_Link
+        - wrist2_Link
+      -
+        - foreArm_Link
+        - wrist3_Link
+      -
+        - upperArm_Link
+        - world
+    mujoco_diagnostic_pairs:
+      -
+        - foreArm_Link
+        - wrist2_Link
+      -
+        - foreArm_Link
+        - wrist3_Link
+    source_pair_match: false
+    kdl_known_target_found: true
+    kdl_target_max_abs_error: 5.9447196054662754e-09
+  - name: ik_11
+    fk_max_abs_error: 1.6653345369377348e-15
+    collision: true
+    contacts:
+      - a: foreArm_Link
+        b: scene_geom_0
+        max_depth_m: 0.14052239394540544
+      - a: foreArm_Link
+        b: wrist2_Link
+        max_depth_m: 0.078125309199937015
+      - a: foreArm_Link
+        b: wrist3_Link
+        max_depth_m: 0.0095651928717390144
+      - a: scene_geom_0
+        b: upperArm_Link
+        max_depth_m: 0.1253993150701713
+    moveit_diagnostic_pairs:
+      -
+        - foreArm_Link
+        - world
+      -
+        - foreArm_Link
+        - wrist2_Link
+      -
+        - foreArm_Link
+        - wrist3_Link
+      -
+        - upperArm_Link
+        - world
+    mujoco_diagnostic_pairs:
+      -
+        - foreArm_Link
+        - wrist2_Link
+      -
+        - foreArm_Link
+        - wrist3_Link
+    source_pair_match: false
+    kdl_known_target_found: true
+    kdl_target_max_abs_error: 5.9446437217225423e-09
+  - name: kinematic_sample_0
+    fk_max_abs_error: 1.3322676295501878e-15
+    collision: false
+    contacts:
+      []
+    moveit_diagnostic_pairs:
+      []
+    mujoco_diagnostic_pairs:
+      []
+    source_pair_match: true
+    kdl_known_target_found: true
+    kdl_target_max_abs_error: 2.4124833464256312e-08
+  - name: kinematic_sample_1
+    fk_max_abs_error: 2.1094237467877974e-15
+    collision: false
+    contacts:
+      []
+    moveit_diagnostic_pairs:
+      []
+    mujoco_diagnostic_pairs:
+      []
+    source_pair_match: true
+    kdl_known_target_found: true
+    kdl_target_max_abs_error: 5.5335307919124332e-08
+  - name: kinematic_sample_2
+    fk_max_abs_error: 2.1094237467877974e-15
+    collision: false
+    contacts:
+      []
+    moveit_diagnostic_pairs:
+      []
+    mujoco_diagnostic_pairs:
+      []
+    source_pair_match: true
+    kdl_known_target_found: true
+    kdl_target_max_abs_error: 1.7244492722667815e-08
+  - name: kinematic_sample_3
+    fk_max_abs_error: 1.3322676295501878e-15
+    collision: false
+    contacts:
+      []
+    moveit_diagnostic_pairs:
+      []
+    mujoco_diagnostic_pairs:
+      []
+    source_pair_match: true
+    kdl_known_target_found: true
+    kdl_target_max_abs_error: 1.4239990342446163e-07
+  - name: kinematic_sample_4
+    fk_max_abs_error: 9.9920072216264089e-16
+    collision: false
+    contacts:
+      []
+    moveit_diagnostic_pairs:
+      []
+    mujoco_diagnostic_pairs:
+      []
+    source_pair_match: true
+    kdl_known_target_found: true
+    kdl_target_max_abs_error: 1.7266154728190486e-08
+  - name: kinematic_sample_5
+    fk_max_abs_error: 1.609823385706477e-15
+    collision: false
+    contacts:
+      []
+    moveit_diagnostic_pairs:
+      []
+    mujoco_diagnostic_pairs:
+      []
+    source_pair_match: true
+    kdl_known_target_found: true
+    kdl_target_max_abs_error: 4.1152055074711313e-07
+added_geometry_obstacle_tests:
+  sensor_link: true
+  adapter: true
+fk_max_abs_error: 2.1094237467877974e-15
+fk_pass: true
+bounds_and_mimic_pass: true
+kdl_recovered_cases: 19
+source_pair_mismatch_cases: 6
+path_verified: false
+dynamics_verified: false
+sources: {artifacts/arm_ik/current_candidate.json: c216ff6b60b8fe928a3ca2d77f4e52a13831dd9ac3669ea7cb5875553787d514, artifacts/manual_grasp/user_selected_20260930.json: 3ebc2a36706543304e9f0309656bb8a8a97d2ced35c75beb5e122fdd626c36da, assets/objects/fuel_tank/meshes/body_00.stl: 07997de9277191ade181d5fecac27f27ae098b5324fd7844582296b8242b53b2, assets/objects/fuel_tank/meshes/body_01.stl: 62e90414f4a8ed930d5709493853206c90e9b0d339091e946e5f9aaece452b35, assets/objects/fuel_tank/meshes/body_02.stl: 9fae6bd8c697c18538b0b01cda9471dd33e8e3e747c982da044994a4540f5ac8, assets/objects/fuel_tank/meshes/body_03.stl: c18370f2a75facc6a7b8cbff0adc3112b30d9d424662dda3f186bd39559257ac, assets/objects/fuel_tank/meshes/body_04.stl: 1e1ca20f0459a38386a8fe63507bb617c23a16b05d57f84b891c7b524722274c, assets/objects/fuel_tank/meshes/body_05.stl: 5906df2df872d272ef63feab30736c827a53e11d1f841b30ba4afb990f494513, assets/objects/fuel_tank/meshes/body_06.stl: acea88debaae4ca740bd7b298b29e3e71381ed1b93c58d0927c0cc66ec80eb8a, assets/objects/fuel_tank/meshes/body_07.stl: 9829e7f76ee3c2e863c4f4c69f1b38da2604aa71c7df6665883f60b15543569b, assets/objects/fuel_tank/meshes/body_08.stl: c81fee6a723eaed2ce27b0d710fd75923f7229e8e5b4c37c33d89f21e1adc54f, assets/objects/fuel_tank/meshes/body_09.stl: 70da5fd34acf2ad6bf732327c9337b299168ae2fe4ac417eb18c2edf485884d4, assets/objects/fuel_tank/meshes/body_10.stl: 0fe2301310bed42f8b675442c274569976e85b7323be0bab86caf46652a16d8c, assets/objects/fuel_tank/meshes/body_11.stl: dd3e2a3f5aabfa40aaec3f75f2ec0edec8faccf2cbd698e2c1610d33d5d3046d, assets/objects/fuel_tank/meshes/body_12.stl: 60d13a7f2c82008c917d35a69e4d51f48c78bdb49328af42e3ffb5c6525ff66d, assets/objects/fuel_tank/meshes/body_13.stl: 7380b976a8d1002e9c8412ec8e243d9f9f03c0a1e6d2dac9cabad4b624c38323, assets/objects/fuel_tank/meshes/body_14.stl: 74880698f5bafa1c43d19040a212db894afc6843838b3314f60b25783f88fb68, assets/objects/fuel_tank/meshes/body_15.stl: 79d2644f4b99fadb136e74586e4c7d7e547d2fd0492cf5e115fdb2874ac5d777, assets/objects/fuel_tank/meshes/body_16.stl: 8360e74fa5ee3a0d7a42422fc85b575600f9f621c1297c015797856f03836361, assets/objects/fuel_tank/meshes/body_17.stl: 7e8586d0e9feec2afaa4cbaefc8eb0bb4299e2eafd68beadd4c2e64f96f6649a, assets/objects/fuel_tank/meshes/body_18.stl: 30b73625db5b82d51b3db9bc607ac92b92ffbf6fb5b770cce2de5a1dfe8fa315, assets/objects/fuel_tank/meshes/body_19.stl: 47c59ae364cc98a4c4901464da3290ddf5f5623d05ee384bfc5f823598e9f2da, assets/objects/fuel_tank/meshes/body_20.stl: 3a0bab86255b30882a7844628d906ce2649f237f533c3ab368ee0cef77ffcc4c, assets/objects/fuel_tank/meshes/body_21.stl: 96c603aa9de140356412d7b8dfc4914bf8873f774fdc629a29cbd209af2ba9cd, assets/objects/fuel_tank/meshes/body_22.stl: 925e78f2755ae07496e113ec431640cefb363e1e3d44ce85512ec87176729d2a, assets/objects/fuel_tank/meshes/body_23.stl: c46a3f64a4a1bb4a6ff22cd951c3e8e94dd9a6a9dba89b2ea271cc6962a85db3, assets/objects/fuel_tank/meshes/body_24.stl: e1687801b714b495b7de7fb023a9ea054c31dbf20f70a7ca2a9d44e1a6af1a96, assets/objects/fuel_tank/meshes/body_25.stl: a588f6f1332a70a71d212c7eee0c6c5793be1103b574aa93fd24ef6c895db9d4, assets/objects/fuel_tank/meshes/body_26.stl: c3ae68b099c828555215dd8105f17bc138f0cd9dc05e54bd043f042219e019d3, assets/objects/fuel_tank/meshes/body_27.stl: 2b5cd9a9023d6039afb8707143f2619c25888e20464bd09af1e4e9d6f58a3753, assets/objects/fuel_tank/meshes/body_28.stl: f51b8b95c1dd4545b37f8400fe0376374c2bd1a197644ed18005d7e9b2e874a6, assets/objects/fuel_tank/meshes/body_29.stl: 1b0288945667bdeaaaa773e53475d8ea157af20be65cddda4c0529cc92a530d0, assets/objects/fuel_tank/meshes/body_30.stl: e6039f0573261a90af0adffa69a8a9e3bd6bad32fc195d7bddff09ea0d115dee, assets/objects/fuel_tank/meshes/body_31.stl: 3b6d3aa93a7ceea0a45261be949d6c250930810e75f18ef3091f18d84733aaff, assets/objects/fuel_tank/meshes/body_32.stl: d242f90c1e3eb6e79d584b6488bc9d21f9466f6fdd49c529074b762f62626251, assets/objects/fuel_tank/meshes/body_33.stl: e8fc5a4046aced6e565b343d5ad4d0871e966182dbd0da8e89c1a149068bec69, assets/objects/fuel_tank/meshes/body_34.stl: 0a83972117489cbe46654c0947c2c852f47b8fd0397f2e693a9d279ff5ffcf2a, assets/objects/fuel_tank/meshes/body_35.stl: be3b35670a77e30d85c3251e44cfe46d969ca5b81e6b4d4f721648f36a24b005, assets/objects/fuel_tank/meshes/body_36.stl: cae709e0fc156bf7e2a68785b2279b66dcf7e5745c7888c77565f8424ad0d0d1, assets/objects/fuel_tank/meshes/body_37.stl: 2a3dc690caca2f79bb2a60895e3888e11a2a79606a1b41b0d3b30c13c754417d, assets/objects/fuel_tank/meshes/body_38.stl: a6bcdb4cb0edc70d8ad396e7a983a1791f8a298fc303984d6fbf05b1b24991a1, assets/objects/fuel_tank/meshes/body_39.stl: 3ea383b5027c5ed9d35837d567fe11071dcf050ae470affc0b5df3d8f01716d9, assets/objects/fuel_tank/meshes/body_40.stl: eec7bad33a2da69ff49ce038ddac9f72a40c03c253d711299528e6d392bc3edb, assets/objects/fuel_tank/meshes/body_41.stl: c254abdd1adf8c05f38f0abb869fe1c9202a2146559989764c18e92e7e7a1a03, assets/objects/fuel_tank/meshes/body_42.stl: e98388dc13f8d39cfaf143a3e5a23bf1342ace719016cab612868aecc5d0ee35, assets/objects/fuel_tank/meshes/body_43.stl: 8f99f2499a4f40d9a7d81430613ce909b187209b777aaea82792da6b31e11dda, assets/objects/fuel_tank/meshes/body_44.stl: 78931f4b4baf8c432dad8a02fc672c374ded361a31369329875ee07cb4ff6c2c, assets/objects/fuel_tank/meshes/body_45.stl: 368ef4d502099f419f1c68bccdcdb7e7b7a1163009a23fbe3648ffae011368fc, assets/objects/fuel_tank/meshes/body_46.stl: 09ecb139cfa9175acc4914c8507f99045690dd3955f02ff3ed1418328cc285c5, assets/objects/fuel_tank/meshes/body_47.stl: e007f493d5c66d8d91376737ce85c56765e41df0e37f7ede75a48930ec13a1a0, assets/objects/fuel_tank/meshes/body_48.stl: a4101e08aecfa0dbf463f69a6333371171a7a739e99b9707fb8e6a7a68c41366, assets/objects/fuel_tank/meshes/body_49.stl: 55c48acf71b329eb21aee0e66c57af06e8b5ed8412dfb217d66e9f27c7dbdfdf, assets/objects/fuel_tank/meshes/body_50.stl: 44134c305db9fc8ccc566bb14865efbfc4640789e87efeeb2fb3a1f030792243, assets/objects/fuel_tank/meshes/body_51.stl: 1dc4f2864f3428d77b169fdca6576c6ab447d8a58990ef211a9b155afbd98bf4, assets/objects/fuel_tank/meshes/body_52.stl: 84b5a232b00051d9802da3106b49ec5fd805956899a81e09a5db85c859d1a0ca, assets/objects/fuel_tank/meshes/body_53.stl: 59d9d3e09ddbc27e538769bcf808bbea17cff64c64ac0b723e1406590b232951, assets/objects/fuel_tank/meshes/body_54.stl: dcafe5318ebb863c8a0abc89c05ffc35c9031e2f4f32a7ad4a300186b41f9ec7, assets/objects/fuel_tank/meshes/body_55.stl: c8e6552f2d7f0acedf7df2db9711044fec1299ad3dbe44926bb39c01cf1e1b11, assets/objects/fuel_tank/meshes/body_56.stl: e06eeebd1d760c25dab717c2f08136e121b79aa42239b203dad7b8226b2de757, assets/objects/fuel_tank/meshes/body_57.stl: 979f74763706de7d13dd18379c90c5f2983629e6855722c53888abdc225e8328, assets/objects/fuel_tank/meshes/body_58.stl: 6c0c91aa3a4d46e7ee7f413a410a5bd34a4e976bb13527e9899211f64796f888, assets/objects/fuel_tank/meshes/body_59.stl: 1aef7c98728897f65653dbb0c3583d7beb2f24f5c9a74adffb46397168a64beb, assets/objects/fuel_tank/meshes/body_60.stl: 3fd1f3a3d50efeb157948d7432cf9a66d518b3a900788ef1423d264fe349c1ef, assets/objects/fuel_tank/meshes/body_61.stl: 57b77f15a1bfb90032718413a5fc659d7cb2b0184c9d21ceca915386acda02f1, assets/objects/fuel_tank/meshes/body_62.stl: e32f86be95621808776c0c8888640e9f2602c8343c34187ad98a1c1ad4c5b367, assets/objects/fuel_tank/meshes/body_63.stl: 704284d0fe59d222ff5a38dddbafeaa8d6a5f179490322791c9f52c90d1e9f20, assets/objects/fuel_tank/meshes/neck_00.stl: b0d45ca94fba61325188d87d7f4ed7ecdf37a633901322ea36cebe8d4b376b0c, assets/objects/fuel_tank/meshes/neck_01.stl: c2b134808d2b362d1b4cdded78923f21c59a4a4a2df83adf1752e59b2027ccf7, assets/objects/fuel_tank/meshes/neck_02.stl: 9673547303920984cc3e2deccb0819d282691167c79c66f65ccca1367a9af53b, assets/objects/fuel_tank/meshes/neck_03.stl: b2730c280d10c9edb1e59a2178e4da5e6df5a81be0042c493b50a70961e255f8, assets/objects/fuel_tank/meshes/neck_04.stl: ad1b6093953df4a6e5ccefd7a60f115efaa94bfa13fe1970d4c628e663df030b, assets/objects/fuel_tank/meshes/neck_05.stl: cc7c669e10c36ca72d0ba340be8b66fee4bd998e96aa2785451552a0f89b7a02, assets/objects/fuel_tank/meshes/neck_06.stl: ac222b46639a5202b7967e5dd99776eaf4d6d86a73775f5d02b489caa7716d3a, assets/objects/fuel_tank/meshes/neck_07.stl: 38676302f182dc09519c66775bcd04295a9ececf9a8f3250550d1f6f8471976f, assets/objects/fuel_tank/meshes/neck_08.stl: cac67c09565b4b5c95bb550c26c6209b612215836a48b3843ff07b81e69b0da5, assets/objects/fuel_tank/meshes/neck_09.stl: 65ddb44e629966cd648aab7e7b2435b32cefac57c61bdaeaa5e8b1b936428fce, assets/objects/fuel_tank/meshes/neck_10.stl: a614e1a7e64ad19cf213a3c952dab1854e2a8066cebbacd9996995bc0a1febda, assets/objects/fuel_tank/meshes/neck_11.stl: 1e0d4ca25f8788f5465cae2838127cbef0504552dca425c657d57d1f50837990, assets/objects/fuel_tank/meshes/neck_12.stl: 588bbf9f5161857706d085048fc0a24e8af2fd9534d1ff12bb86d016977134a7, assets/objects/fuel_tank/meshes/neck_13.stl: a916365352f52ee52aed475b5fab1adff99e3867a1d2bbdf83cf20594543ca33, assets/objects/fuel_tank/meshes/neck_14.stl: 8c30c7e054f91f7450d2653eab71d577ee3d7d5c6d04192b40f80ac93c7dbf62, assets/objects/fuel_tank/meshes/neck_15.stl: af93f9d2c2cb2a5422a8546d18e3073a5030cd0cfb6642ca5358855ec6dc0c12, assets/objects/fuel_tank/meshes/neck_16.stl: 81cef78aa37a640442ff126c34651acf868c7d8c994af05749bb68a3b3c14c3e, assets/objects/fuel_tank/meshes/neck_17.stl: 80e9bf9a6bd17d40a866638ce6cd779bd7926e37b664cc8a6032fd4bdfc36dd4, assets/objects/fuel_tank/meshes/neck_18.stl: ee90c7fe4e90c3943b3a24fbd8a4e31cf7e4afaa68ec2860844d88a893b4c46a, assets/objects/fuel_tank/meshes/neck_19.stl: f0af448047ad7277ea1ad4abaeccb3eb64963bc04631a06766dde60bcd0d5126, assets/objects/fuel_tank/meshes/neck_20.stl: 8e4f1ca5d19511c20b082eafbf48d21034a380792114f077368d905b62254f80, assets/objects/fuel_tank/meshes/neck_21.stl: 6581b27224915080cf3f8a939b2b810da7394940bff00dd763efd4324bd3f558, assets/objects/fuel_tank/meshes/neck_22.stl: 89c51bbc659f26f476643d4871f80615877f33b9e7f8a7e8a9c7d11740f0022a, assets/objects/fuel_tank/meshes/neck_23.stl: 4a2b222f991bbb1e80bd63a0ac2da41b96aacdfc5a7c50185214b3561af15f45, assets/objects/fuel_tank/meshes/neck_24.stl: 888cf9ae00cf348d89056101a02176aed1dff7d8c1a3832515024386e39f0cd0, assets/objects/fuel_tank/meshes/neck_25.stl: b86bd671e85c105c7251182aac15592d0be136944320347427e7918ae0d40a45, assets/objects/fuel_tank/meshes/neck_26.stl: 8a7d8ffb9e7660951fd0eb08cdc8648ed415bea69f75231b62f29303a9eec795, assets/objects/fuel_tank/meshes/neck_27.stl: ed9f6bb05a2f255e4ceab6d48d310ff80f65602a41bb97b6be4b63744062b28a, assets/objects/fuel_tank/meshes/neck_28.stl: 5e2da8d5861b6ba2bb46b6c3bff3e2842542b23260e7b38f9e1b16ac4db5757f, assets/objects/fuel_tank/meshes/neck_29.stl: 8b7908c2000ea88f2edd9abee5e7d4ad088ba1f90255665f35fd15b0e0d75737, assets/objects/fuel_tank/meshes/neck_30.stl: 7cc52dcff162029420c926efbc6e2ec69f2fe2f0ed8303d10cb5f00869163e72, assets/objects/fuel_tank/meshes/neck_31.stl: fd2d65cd4618a8d0e1c343a5b53105382b9e331b9fb1924bb606f7b3478b0b25, assets/objects/fuel_tank/meshes/neck_32.stl: d25abfb681673464c9fa0c3ac399f0d03d339e76981339dcc69fde08a2668784, assets/objects/fuel_tank/meshes/neck_33.stl: cbf794a014ad10a3c7e249bf8f32a80caa66bdf8054b93eac955e450204fa0b9, assets/objects/fuel_tank/meshes/neck_34.stl: df6e57d72c1b56d073b7aa0860ff1d19c63d99747de2ad2f36a713586ea76e8b, assets/objects/fuel_tank/meshes/neck_35.stl: 24a63f632cdefa410528ddd2a3e46538384758c5edb93028696f9d21550361e5, assets/objects/fuel_tank/meshes/neck_36.stl: 0d73053799d2d233953ad5c2d1cc6a86715aa94c0ed3e256bee757b578aa7cf3, assets/objects/fuel_tank/meshes/neck_37.stl: 47be7cdf96cefe0a06b12caf0cc8abd60ef0f294a4455fa571fcb6a0c20994bc, assets/objects/fuel_tank/meshes/neck_38.stl: aa1a2d8df66a64db5a279771a216e813fdb0fe24e5009b87956ec8cf0ae8fecd, assets/objects/fuel_tank/meshes/neck_39.stl: 87eeade8447ab0b54d4246ba1de5c9493e5322f00ffda4769d7af39406fe6c40, assets/objects/fuel_tank/meshes/neck_40.stl: ad13a15d4d4e57714445cc6ae7f008f44a17e5e631e05a240ce941e97a3e3d41, assets/objects/fuel_tank/meshes/neck_41.stl: d1cda86ee1e4c0b53d29d7a7486da8f131359d00f0b6f04ff811348958a918a0, assets/objects/fuel_tank/meshes/neck_42.stl: 936c7f56db57f5e0ee9207b1f4583bd718c7ced72a7b04cfa0d3aab8678bcf34, assets/objects/fuel_tank/meshes/neck_43.stl: 52012145678032381f9212d8f4d9b30b7582df1f9ce372987e97b306fab66f9f, assets/objects/fuel_tank/meshes/neck_44.stl: bbe4ba86473c7e9bf8c4f7d22f9e9f9fb6661b84e4c4bb3f7adaf091716276b1, assets/objects/fuel_tank/meshes/neck_45.stl: d25e4a140729b0228e1a002b4d2a0ae44f5685049e51de42d0c69050900beec5, assets/objects/fuel_tank/meshes/neck_46.stl: 32bf38a869d177e332383c4fdd0fa710ffc0761ad6c063a317e9bc65131bab05, assets/objects/fuel_tank/meshes/neck_47.stl: d20d771225a32d575d518dc4344289a397cbcc7a3f9e051c3c1843e63850760b, assets/objects/fuel_tank/meshes/neck_48.stl: f8e1b16ca10126978867bd928cbf6847680f18ad7f77c8a0f5b90ae82624d71c, assets/objects/fuel_tank/meshes/neck_49.stl: 8e90164ae50d56c3fce7196415e41c16ced45a03fce1eb177f25ad3cdc429115, assets/objects/fuel_tank/meshes/neck_50.stl: d669be3d015bab684769d747df9c364db6e1b09870f1b74182895be1fbf758bb, assets/objects/fuel_tank/meshes/neck_51.stl: ecd3c208a08bdd4c677cccf12d018a9ecdac91a7d5cf9bc7babaa5ee3eb4ad70, assets/objects/fuel_tank/meshes/neck_52.stl: 968838eae584bd51aaf77d6ed66fbcfa350a484894128ce068e8b16fe84a0410, assets/objects/fuel_tank/meshes/neck_53.stl: 0d67ab47b1d85f9e79604bc9e0aaa047b830e3d11b3795a3ebacce7c881598c7, assets/objects/fuel_tank/meshes/neck_54.stl: 01c51b0ad7b290f521452759e06cbafdb9636c339219e54f866e82de8a42e2e0, assets/objects/fuel_tank/meshes/neck_55.stl: 0717ad01bd94003b9c3de9ee53b0023e8059f99ebd4c75e0a5c1786ad42f97f7, assets/objects/fuel_tank/meshes/neck_56.stl: 7dbf9efe95d152bead6c52ef93948024f30ff7db76e10239a176d30a50f97ccf, assets/objects/fuel_tank/meshes/neck_57.stl: 4928540aeef3c422b0bb28b3a72f6fa0189e1e4f72252f2d53b95125dd4ec763, assets/objects/fuel_tank/meshes/neck_58.stl: cc6e34067105d01ad9cf33f0284a86785d2c28545ec767ced5ade3f39f8926fe, assets/objects/fuel_tank/meshes/neck_59.stl: ddde95b81fae68b472cb6424bad2d9e784a9ce76261ba250a19bafc77780dc9a, assets/objects/fuel_tank/meshes/neck_60.stl: bc4427d33656ab267594126030d046ef3a07b1e177da33ce2b22931dbadee61b, assets/objects/fuel_tank/meshes/neck_61.stl: e2a1c6f2ba8170e41d9fc17e923827efd3b68ce1e3e33aceb31459f61e7833b7, assets/objects/fuel_tank/meshes/neck_62.stl: 0321bfa3f1871437aff54064dc4d80a04bb65bad78234bfbe83b4ffb82a90e5a, assets/objects/fuel_tank/meshes/neck_63.stl: 6de9a680057480951c2788e3d0dcb016c0a7d3a6a41214991dfce3f3bb159498, assets/objects/fuel_tank/meshes/recess_00.stl: f7852aafcc5190d2cb04345521ced7bc7c855c05341c26d8aabf7e1eaa22a8f0, assets/objects/fuel_tank/meshes/recess_01.stl: 4a340939b043c9243196d78f7df38fff0e7ba66299ff1016a140f4915427fb8a, assets/objects/fuel_tank/meshes/recess_02.stl: 9180734ef848c49c293ecf96ec9f8e49a25bfc3b7c9581fbb81ee1bc86fc7bf4, assets/objects/fuel_tank/meshes/recess_03.stl: 950aab0f5a695520cc2b3b8e5aa75780b62f0d583e55a2c17f8ead533945398d, assets/objects/fuel_tank/meshes/recess_04.stl: 1904f5ec61a6641d5e25604f136161d77a5dd06a85722f4d137d1d36cd47ff10, assets/objects/fuel_tank/meshes/recess_05.stl: 169a75ca814cfd8d4582ca50f4a9ef6ca38d635818d816dd2dbf853a2e782567, assets/objects/fuel_tank/meshes/recess_06.stl: 066cf786f1a8aac90ca3153fe4b87207b78f4cffce8033ab853157c25a4c8b35, assets/objects/fuel_tank/meshes/recess_07.stl: 9804fb2e7d1bcb70509855e2788e09e109add243e2ff14780541570422fca845, assets/objects/fuel_tank/meshes/recess_08.stl: e51168d9876640f58f0cf2478972793120184a6cbbe5f01dc447b5308dfcbcd2, assets/objects/fuel_tank/meshes/recess_09.stl: 3d1f7c321dcc68d10d7923a9bde2cd26e4ae3c5adde9a43c6420355d49e303f5, assets/objects/fuel_tank/meshes/recess_10.stl: 180660097f70925c8e2e87e4df2a6573d261f0d336b34eef22f0c37fa33be154, assets/objects/fuel_tank/meshes/recess_11.stl: 308a0bd98e654d4ef23cb347fcfbd188678118f7e85a996623138acd7bf2fc7b, assets/objects/fuel_tank/meshes/recess_12.stl: ad1086feaf64bb19bbf9a735fdf08b75001595df8181782255788ca0f0765753, assets/objects/fuel_tank/meshes/recess_13.stl: 6978960fdefdef42892b03cb14c028a7b52ec2123869b332b16a2b0e3ef22f9f, assets/objects/fuel_tank/meshes/recess_14.stl: d769fcb5901946be0f9c1aa8d6aa3dc198c5e4e19e250d967fabee3c00a387ba, assets/objects/fuel_tank/meshes/recess_15.stl: 24f12c97e0c1e994ef2f420e5e3da47a3964aa176c637bc5153ac11f50693ad2, assets/objects/fuel_tank/meshes/recess_16.stl: df0682640b03ae672ee6eea7b1bc2a88fb1fb8b9bff7254295c626459432e87c, assets/objects/fuel_tank/meshes/recess_17.stl: bf6e2987e74ca19d2457f27789e19e6622bd049ed4d0fc1e61fab414d65a379d, assets/objects/fuel_tank/meshes/recess_18.stl: 0458bc4352869fd45646d8484e0291513da3d52137794594f946eac9b41872c8, assets/objects/fuel_tank/meshes/recess_19.stl: aef1c32716e033cec10e320557200dae8e1d36759760ed88ce0f4579eb82fb33, assets/objects/fuel_tank/meshes/recess_20.stl: 983b56c4ebfb394d3b6424a2fc91bbb5312b9710142921520d3ad8b220628116, assets/objects/fuel_tank/meshes/recess_21.stl: b5c41da736f62d148ad59abaa21fad5675f1dc57ee403404accee57f83f6ecbf, assets/objects/fuel_tank/meshes/recess_22.stl: 974467c7d13ddf80e092cb80a12a5b3797ca4c73d904a0e2e6cf26e47af5ead7, assets/objects/fuel_tank/meshes/recess_23.stl: 24e5aa6206eaca4758d963aa0ec70c21f2841985cbded152dc3442601fb447c4, assets/objects/fuel_tank/meshes/recess_24.stl: 3521246af390f4a45781c6925ae3956fa19df3e480c1b39e2ac09bba93667938, assets/objects/fuel_tank/meshes/recess_25.stl: e3a8111f2afb9ee41cf72fd49bccb516641a8080fab4720928a38721ccba3216, assets/objects/fuel_tank/meshes/recess_26.stl: f069f30c97064f5258b1e2aad76ac4a641c332952bce886fbb50f972c4a3e5b5, assets/objects/fuel_tank/meshes/recess_27.stl: d3affda56d03380baec168012205d2e9e1b4d88444290381c513ad5d1391330a, assets/objects/fuel_tank/meshes/recess_28.stl: 32e7ef206ad8981144e1cdd8bc34e8e5032ad9baf228d3625ecb0f97d7717211, assets/objects/fuel_tank/meshes/recess_29.stl: 21811c779599739320277705506e7464ddd3411f89396af3c132d07dadc56dc4, assets/objects/fuel_tank/meshes/recess_30.stl: 3c6bd56fd59bdf7795c78b1b7a91f086eae88c592dc824b0b260e5d155a54be4, assets/objects/fuel_tank/meshes/recess_31.stl: 273db9c51ec5fa6ee4d4be756f676b969aceb039bf14708b064b65c6f00c46b6, assets/objects/fuel_tank/meshes/recess_32.stl: 7e4b2982e6ba445a58ffbba054bce4629511185bbdbd9ae05aa3bd406f935f91, assets/objects/fuel_tank/meshes/recess_33.stl: 6f393edce5ccd6f9a8d2fae3fb6164eb6647ae426e528036c6fb253729b91ae5, assets/objects/fuel_tank/meshes/recess_34.stl: d1c5c09812df107a85f5c40ab1b6f1d7686af855792d681cef391aa08e304045, assets/objects/fuel_tank/meshes/recess_35.stl: 542637290c5cfd44d35e230820e7cdb2f1f76893f440cc3dbf35ad8461d6083a, assets/objects/fuel_tank/meshes/recess_36.stl: c6f1f7125cba1ff859d8da81e2a823ec3bca781860eb71de3513b598654b1ec1, assets/objects/fuel_tank/meshes/recess_37.stl: a00e010d3a26afb8b0bced3d45b629b75ed5af17a0dbe39840864f7b19635513, assets/objects/fuel_tank/meshes/recess_38.stl: 23cf9a55d0a5fe331b9a120197693e5fcb595ecaad7d457b498ac3c08bc7398c, assets/objects/fuel_tank/meshes/recess_39.stl: f161b2ffec33e370d2aff42b407b016461953ba5d5a61be92306245c960eef16, assets/objects/fuel_tank/meshes/recess_40.stl: 9cc4e251de5fca48f17d760a7e901e444151e98e3e0b4ed92c0fffba0f9940fa, assets/objects/fuel_tank/meshes/recess_41.stl: 90748bc0e0298a8d87d7b13934e997231cb1b3a9e012d31eacb60c1691f11a72, assets/objects/fuel_tank/meshes/recess_42.stl: cb2ca7a81cdb0b5565708b551796e1bee7be173cdd186ae2f045050ea7483b24, assets/objects/fuel_tank/meshes/recess_43.stl: 90381cab385d591773142e72e44c5067f764b2ced07afbf7ed20faa94a9eff89, assets/objects/fuel_tank/meshes/recess_44.stl: da6fb9cd1ee4c0cf374d4b123a02f3a7a85828b53aad9650db8a92f9b176898f, assets/objects/fuel_tank/meshes/recess_45.stl: 8640416edcfaff0255798517c7b984af29f6ab381c89db01c9222c22bdfa199a, assets/objects/fuel_tank/meshes/recess_46.stl: efa75a208da546f8bc2804e5f59a1f72116fe1d7612be54df1609495c2bcb3dd, assets/objects/fuel_tank/meshes/recess_47.stl: afa2e4cb990d18815640279ba847bca954512dc5ef499a3b6cfafa32c7c5b627, assets/objects/fuel_tank/meshes/recess_48.stl: 61d1f7f86ae8a050c00808210b113f36e115111b9a94aaf6043bc8041ebe0a70, assets/objects/fuel_tank/meshes/recess_49.stl: 9ec5096cbb8ef0dc16ac63aeaf81a25b505e642b14728634271665e23eb41240, assets/objects/fuel_tank/meshes/recess_50.stl: b50d094baaee1d9e20009590f846d0b530689e70bd08a62223d032a18f3409b6, assets/objects/fuel_tank/meshes/recess_51.stl: 51cf6a5ea27447c80798e96a9b059d1c1593c449ceb958ea7e0c59505d4d3a0f, assets/objects/fuel_tank/meshes/recess_52.stl: d399f8b93676daaaae35d70f2637ddab6bb0ba7c084a28e418d4257964f96ce8, assets/objects/fuel_tank/meshes/recess_53.stl: 58bb95f50790695f187cb8abcb6f6a2b680eee55cc1afce2e6a9932fe6b0a48b, assets/objects/fuel_tank/meshes/recess_54.stl: 6db6cafdf5d8874055d2725f14ccf4a6395b58233e590006033d113ab8a0f762, assets/objects/fuel_tank/meshes/recess_55.stl: ec08d4c05d5cfa981bd2f56803b00490e4d3af5160026d25a4ae6b0e5b33c420, assets/objects/fuel_tank/meshes/recess_56.stl: 485fd40febfcff2cbbc776163bb026050663c92a2e00bd5cc3f3c62407a1955b, assets/objects/fuel_tank/meshes/recess_57.stl: cc00583bec063acafc2c693b7be29d64c91c6756bfa37d879d8f56f3247acf0e, assets/objects/fuel_tank/meshes/recess_58.stl: e621559a66a05eea2d1a857d8be8e2bddac8c56c42877745e4f748543a4dff25, assets/objects/fuel_tank/meshes/recess_59.stl: 8f1327d6e972241879290d3a74a5e830f612f9b33634ad9f49037d472ec28c0e, assets/objects/fuel_tank/meshes/recess_60.stl: 8c1aa5de6d2396546d0407191fb035edfcd482dc274b746cbc0bfd2e8ddaad9e, assets/objects/fuel_tank/meshes/recess_61.stl: 70d99fc6fa87d73438de5624ac6eb7b2c3a19b985b54ad8215a99630ba2ad13e, assets/objects/fuel_tank/meshes/recess_62.stl: 8c794f723d43dcbd86a1030d5cb9cd5125c0936f29e4366668583c5df2d637c6, assets/objects/fuel_tank/meshes/recess_63.stl: b3cb7a8d5fd09f6b3ee061ee8566c2fe92438cb6bce9af30882f57a0f6b7ddad, assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_index_intermediate.stl: cb5f9967afe55faed1e213fde5fd7e8df64fe7baa3e558b19c269662fe70a414, assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_index_proximal.stl: 45f93c17388a4c5f8f771a88d92ea2fd34dbbaf77d8477963a24261c49a0a627, assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_middle_intermediate.stl: a2fd03681008487e240d7f9934d652d53668bb92430413fea5eca06ad9a9a5c3, assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_pinky_intermediate.stl: c39e9b99aa99b2f7ad9620cb263ab3b42e04f536cb919959a2bd9ccef3ee55ef, assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_thumb_distal.stl: e2b9cdaeb1040324090e09eb9e4c5bc3564e0caed57b4df08ab139cc2b612742, assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_thumb_intermediate.stl: ea968025b1f65856df24f5b259932718ade5002af1b890024ee020e365976829, assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_thumb_proximal.stl: 0ba9999aaf8ef936fd1f636639419fd07f960226cd30c185ea946fec36837bac, assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_thumb_proximal_base.stl: 9ee662ae36cd0203f3b2517a9057b86a7d3345e8586abb3a449866e03a050b0a, assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/R_hand_base_link.STL: b4d84504242a99fa915c4ed5195ce4724c67cb94d9217cd4c254cfb5937ecf5c, assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_index_intermediate_visual.stl: f8990e2fd197c02a040f803daa0212e4fe63bf53f90083716b54de42bb959a40, assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_index_proximal_visual.stl: fa3bc3e5ed7503b54d004075a513e5b1bfb4ea7e8a9b5aea748d73811e8b2a27, assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_middle_intermediate_visual.stl: 4b2a8a0c7f3c7c3cea295af5c5ba4b4eb08d5e4b77b96b1bb1f9c53685e715df, assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_pinky_intermediate_visual.stl: 0177537f2f33747e4c2e48efa457ea93d3efb3bbe76f8d556bc2beafa8676189, assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_thumb_distal_visual.stl: 26e2c18a3af02598fa43401736bba919846f082546fa786208500e679267777e, assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_thumb_intermediate_visual.stl: a1148e5e4092f58cc4121e96231107ad8cce0c8fcd4c48314f2d5b3596beab8a, assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_thumb_proximal_base_visual.stl: d28d68945bdcbcd4e1014f3697e40e23998542c87bf0bd4d9c6d7df39928f5df, assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_thumb_proximal_visual.stl: 2be9bf3251ab6d1dc61403e49152e1544c47640b7aa9c2bcb4cb6a7296ca0b48, assets/robots/adapter/meshes/adapter.stl: 6c84b57f1c439dee38598484554c1e7f47a119b1e3b651b58f1a562a39a67aa2, assets/robots/aubo_i10/meshes/aubo_i10_JY/collision/link0.STL: d0b4eab7e1e4e7be3ce71b0339b14802745a1da70c82f8cfa9ade1b13251da09, assets/robots/aubo_i10/meshes/aubo_i10_JY/collision/link1.STL: 5d7fa8b0edc29e5ff2183fe2fb1c3846c721cd7fd3ba34bd782c3e09feae1462, assets/robots/aubo_i10/meshes/aubo_i10_JY/collision/link2.STL: 46e451a71e0f7d1878c67205e66532d1fe988212b97117cae39166b5424f0bef, assets/robots/aubo_i10/meshes/aubo_i10_JY/collision/link3.STL: 097bc4a8745e79f84b3b4cbc06a9490fb6dde3500f94ebe8d88adb8269eef5ce, assets/robots/aubo_i10/meshes/aubo_i10_JY/collision/link4.STL: 2ec0bcdf779439e298d560fbc2679a0fd631a7853e83d31c07c2517502c041ef, assets/robots/aubo_i10/meshes/aubo_i10_JY/collision/link5.STL: 5876088d6ab33c3efe89a86f4945710bc9c686724bc46f8ead4e4b741baaeae5, assets/robots/aubo_i10/meshes/aubo_i10_JY/collision/link6.STL: 63606bd8dd02709e8140f1d10c6e52747c9508a3fb8a76eef26af7f2cce3e73a, assets/robots/aubo_i10/mjcf/meshes/visual_link0.obj: 9aa256c7a9534c2ad38b34caa095d6950f95a56c5e1fbfd0d6222fcaec8f77aa, assets/robots/aubo_i10/mjcf/meshes/visual_link1.obj: f3ead3251100ad57f2620dbb66680111d53b05c5206f5c3aa0ca24da972ed092, assets/robots/aubo_i10/mjcf/meshes/visual_link2.obj: 31e436de5eb628a27b7b299b329b37378004ee658f3e6fe459e7be26877deb7f, assets/robots/aubo_i10/mjcf/meshes/visual_link3.obj: 3dae5b1a9c2897929258ecf6241608b090fa5826934c93286d45404e43c071d6, assets/robots/aubo_i10/mjcf/meshes/visual_link4.obj: 23523163b8909119500aed5ecad1529280d9622e9ec34b963690ebe7067ee58b, assets/robots/aubo_i10/mjcf/meshes/visual_link5.obj: c955c09f8538550b47e8d4c2028ed873860ce58f1c484295d6b013b40d120fc1, assets/robots/aubo_i10/mjcf/meshes/visual_link6.obj: 26e66016f547e820c5857684b3c40b6d72c0c4bf9f41a3044ac35b78287fac70, assets/robots/aubo_i10/urdf/aubo_i10_JY.urdf: 5722135ce4a2abb8549e92c43ea6802b7d06a0fa7f207beb35f7994e57e5baa2, assets/robots/sensor/meshes/sensor.stl: 4aa8d4dd99ed5c74449843db9c796428305341960267cc88c0386623a5658b37, assets/scenes/i10_rh56_fuel_cap_preview.xml: 84e03b73dc4261b27caf2d832eaa14fa7dd3c8080b16308be5d02942f719755c, src/fuel_cap_task/arm_ik.py: 87c379edba746000b7c819358e988ea4afe98699974bf5554c4cf33846d3bc84, src/fuel_cap_task/grasp_search.py: 9639f45c8c8c6cdda93bf52a60a192634f07a2a7385f3b2c8ba5a9cab4f58c58, src/fuel_cap_task/interfaces.py: 9fde75fbc8034c0d40a883f9ea222c7f917b78f6ceb604b47a761c8b585e5387, src/fuel_cap_task/mujoco_scene.py: 7f4678dac166de830f5c6525bfe45b9299dab2f1e0e34a0f169b94b675f0b124, tools/build_moveit_model.py: af4fe0c4c177d3c40263c7d40747c75b672e9f839dbf3d2c5113deca58345966}
+generated_files: {config/audit_reference.json: 5fd98a7cfd2096641f597432564df094c918765536e1feba9bca2c2dc927d448, config/kinematics.json: e7f57774641f6886a7d82172a676b5d3b225df07974394d089f4a807fa6664cf, config/provenance.json: 9ff0b1b9a4ba0436efbea4dc90c86e62f13226232f5efa5887a482bb7d6d45be, config/robot.srdf: a76234f908dacc4d4c38119f2e282ec0dc317e502112717d2bf31776c4d4685f, config/robot.urdf: 3e781ded72bd8b2388e10d7960f3b12c155e12d787b50849a052063e6a0101da, config/robot_source_coverage.srdf: 4422777e315f5d3345d775ddcc79f5bf0f9a12c4cafde3a3e2d0bf84f3fae7d2, config/robot_source_coverage.urdf: 0f5b26ac3280f5209c4d2455d35cefcbe3249ef9f7d619f36ffd6bccfa487161, config/scene.json: 22f046238053997e068ddf8bf909c1e198b434d62b6b2f9d2d85b50c4446cf45, meshes/mesh_000_surface.stl: 80926b6b5e7318f1d5a3f2990e33632a99cbbb69ebd5663fb99dafff5c084c46, meshes/mesh_001_hull.stl: 69d87aa74bae878089e93a6e4eb60fd48598fc4a0e5d70ff14e504af34c51ad8, meshes/mesh_002_surface.stl: d4872ec01929e41593f33e2ce90dd8a4d4b3d53f7b93b79372b43017a1ea78bc, meshes/mesh_003_hull.stl: ae56978f52f6e392960ea8b71d5436ad5395118abeddca68c21f2079e6de40f9, meshes/mesh_004_surface.stl: 8349dac317975036e1f1fd2c876b3ee1aa3a57b25b4b92ea1858355972da34ab, meshes/mesh_005_hull.stl: 4f6eac47c33d22948487d8cf1769d90f8759c78fb217c4f9b323de397db569fb, meshes/mesh_006_surface.stl: c399e9dba76a474f00c270cd9cee6ff6fd395310510590b903fc95f25db59189, meshes/mesh_007_hull.stl: 8e5f7c7deb137111a541776b3d7830a200881719bd49d9c641d243ad8435815c, meshes/mesh_008_surface.stl: 2b01ae69418351314099dedabb967b13f7cccb607993889686f4fd11efebbd51, meshes/mesh_009_hull.stl: ec45aad710792607ec63ff8a1b7755a505c738194618693cfe319d7b8b1f5813, meshes/mesh_010_surface.stl: e5c7fc2b25cf18cb21fb02400dd0df57b4461a7c44845e88837675bd8e87ad0e, meshes/mesh_011_hull.stl: 91984282fc1f061263dbfa271007b3fde262400d850ff4d6e0adec4f6759358c, meshes/mesh_012_surface.stl: e649b86fd4cc60e1448f48180f0004e89e652f3b8828b778fc8ff03346fb95b4, meshes/mesh_013_hull.stl: d079ae74fa757eb62b21063642a390f9d086771d8df455a5591080ee05bd46e7, meshes/mesh_014_hull.stl: a2a9c7b10b22af092ae3b0d0901744530e3d84838d379fbc5d4687215ab0154b, meshes/mesh_015_hull.stl: 1b4ce574bf5f0fc65ae53b2c3afa177e1d0d408ae22718ff9064f09d4dda89e8, meshes/mesh_016_hull.stl: 97cd07776e00785148b9aa6c92eef27b952bb79e981752a05f024ca0c020f583, meshes/mesh_017_hull.stl: ea60417bcc975cfdf25804c3067d8425b967a88d8999a6d19d067539b4f362a5, meshes/mesh_018_hull.stl: 01a76bd864a72bd18cd88e91e651b170ece3ef718f06de1860174f5b7464614c, meshes/mesh_019_hull.stl: 9a328e80284af8467c6442103638eb4a5f3df2bcc4549143b80c5ede7c7000f8, meshes/mesh_020_hull.stl: e454a8d344001136a3986f271781bac75d071369eab33b1b4189ca4f8508214b, meshes/mesh_021_hull.stl: 1f5f170ec8e98b2d94f559ebd29b40544669b9c85a02403dd0c4e619975fff11, meshes/mesh_022_surface.stl: a947e49ab4871239a85eccefb822c6d5357958ba4d9073da47d8c4822dc1fc19, meshes/mesh_023_surface.stl: eab3e36e3d81a8178fc645e08255712e93c82218692425365c6dd9e2b5d5933f, meshes/mesh_024_surface.stl: 8e7a354a21e0fde0f5fe0982ee041326023a11afda8bfc1b167104bbd5bb7122, meshes/mesh_025_surface.stl: f37321627acb735f23ce7a8523435c1c32561b78c195dc3edb7d46885c3b3e27, meshes/mesh_026_surface.stl: 0bc5cf3a86eaa65e6106d7bcf7d468867d5c64ace1621e5dc7447a49e4a8c37f, meshes/mesh_027_surface.stl: df79578e81a62b58912289279c1586f32ba341f6da103d01be5ca4a36dc8b4a4, meshes/mesh_028_surface.stl: e1b4092ec3cc128ced6b28f3ffe521226529f0a8ba241cb80a9763b03a67e872, meshes/mesh_029_surface.stl: 31015b5d3cc407e88deac45406b144e0c1c3a09dc2b5b0e63ac8e41e132dabcd, meshes/mesh_030_surface.stl: 4f715fed51944914c902bc7d15fbe6c4079049f7c5c6cd8b2db4208c78c4ca34, meshes/mesh_031_hull.stl: 1bbcfefa49fac114e102af1378158bef5fe74de155496e2e7eb916a0561dfcee, meshes/mesh_032_hull.stl: d9ed922119164bc2ddb7994c3f49fe9ea3959b9290d0dee18aafdfbbcf562085, meshes/mesh_033_hull.stl: e5ac594e4822ebc8c99c32af4c44170b30531e6ea0024c6b6f48328731829a69, meshes/mesh_034_hull.stl: 95dac196a27323720b688abaf57a49b451c4e5a40572606348e36548ecf7e8b3, meshes/mesh_035_hull.stl: 4d3d52af899e8ff0aeccb848e0bd3d8fb0b730028562ba26529ea6c46567d8bf, meshes/mesh_036_hull.stl: 34a4ede19b1a46f78aad46d8a88dea30b769c55ee7a203aceac61354769f1c10, meshes/mesh_037_hull.stl: d6a69a5e23f16ceb99a3bb9b25fabd286c770885570bc5b2ace873a64b948297, meshes/mesh_038_hull.stl: 2b351a67501eccc35913abae99d813f853d9abb8a02e1b49c25e2b06322b79c6, meshes/mesh_039_hull.stl: 2fa4c82d9af2c2ee0ebbc13775cf4511b679dba5be82b5d65303d88d92a79bb3, meshes/mesh_040_hull.stl: 78a8520125220471d848551ded32510f3f43fe4f5b7c352786918e5668f79c1d, meshes/mesh_041_hull.stl: 88cc72b2d0fd9925e4568e4c83530637ae8b5cf3b9d42636f301db6c4a4afadf, meshes/mesh_042_hull.stl: 0cc5d16b0b51ea0c3657c0df8c8dece76cac0619de3e9204964b9267c7e71743, meshes/mesh_043_hull.stl: e0f9eafdfbfb1c0c0e583461dc9c4198738a6b7a6e8df02c93aeef02e58fb6db, meshes/mesh_044_hull.stl: 54a4c7426e059b175b730e531337dd54ca6a5b350732cef9eafb7dcb5d02d4f8, meshes/mesh_045_hull.stl: cc64b162b90ef8a09aec1872d5622b2cdfd17b0c2a123373ea1b7b1de9a35ca6, meshes/mesh_046_hull.stl: b7f5701cac0f7190986ae002ad1e9f512f0a00663f253647f9573740dac04c9b, meshes/mesh_047_hull.stl: 8d3120168ba83c456b03bed34b73dd8b12d3d1555e3fbcfb0d6e015f45f5f1e0, meshes/mesh_048_hull.stl: 70f482e460610d28e9c87f9c3b968dfd2dd2dcc159f52fd573834228e2cd9ab6, meshes/mesh_049_hull.stl: f85bc1fd91100ec6190e3a0ccf694e7de1fd1c02374c93c5b81e0b1adf981df7, meshes/mesh_050_hull.stl: b22a86ea61a9cee81909a7ad696b338f2f42764076ab09f0d7acaaa8591e047e, meshes/mesh_051_hull.stl: e7e35e93e04000cdf1ae994579e9ee8b52ee6f73dc4be6f6de11729a2a0de3ce, meshes/mesh_052_hull.stl: d28a79220f7e7c0f427d710fffc098c45e51da1db5717d5769ef3cd1d40378af, meshes/mesh_053_hull.stl: 91cb906221145e6241d3fd6b90102917365991f1672c437d28dbd6e17aa7e936, meshes/mesh_054_hull.stl: 186b0ae5a4860f11e99879923e1bde996061280653901a83c6ef0ddb50414a7e, meshes/mesh_055_hull.stl: 2fa4c82d9af2c2ee0ebbc13775cf4511b679dba5be82b5d65303d88d92a79bb3, meshes/mesh_056_hull.stl: 78a8520125220471d848551ded32510f3f43fe4f5b7c352786918e5668f79c1d, meshes/mesh_057_hull.stl: 88cc72b2d0fd9925e4568e4c83530637ae8b5cf3b9d42636f301db6c4a4afadf, meshes/mesh_058_hull.stl: 0cc5d16b0b51ea0c3657c0df8c8dece76cac0619de3e9204964b9267c7e71743, meshes/mesh_059_hull.stl: e0f9eafdfbfb1c0c0e583461dc9c4198738a6b7a6e8df02c93aeef02e58fb6db, meshes/mesh_060_hull.stl: 54a4c7426e059b175b730e531337dd54ca6a5b350732cef9eafb7dcb5d02d4f8, meshes/mesh_061_hull.stl: cc64b162b90ef8a09aec1872d5622b2cdfd17b0c2a123373ea1b7b1de9a35ca6, meshes/mesh_062_hull.stl: b7f5701cac0f7190986ae002ad1e9f512f0a00663f253647f9573740dac04c9b, meshes/mesh_063_hull.stl: 8d3120168ba83c456b03bed34b73dd8b12d3d1555e3fbcfb0d6e015f45f5f1e0, meshes/mesh_064_hull.stl: 70f482e460610d28e9c87f9c3b968dfd2dd2dcc159f52fd573834228e2cd9ab6, meshes/mesh_065_hull.stl: f85bc1fd91100ec6190e3a0ccf694e7de1fd1c02374c93c5b81e0b1adf981df7, meshes/mesh_066_hull.stl: b22a86ea61a9cee81909a7ad696b338f2f42764076ab09f0d7acaaa8591e047e, meshes/mesh_067_hull.stl: e7e35e93e04000cdf1ae994579e9ee8b52ee6f73dc4be6f6de11729a2a0de3ce, meshes/mesh_068_hull.stl: d28a79220f7e7c0f427d710fffc098c45e51da1db5717d5769ef3cd1d40378af, meshes/mesh_069_hull.stl: 91cb906221145e6241d3fd6b90102917365991f1672c437d28dbd6e17aa7e936, meshes/mesh_070_hull.stl: 186b0ae5a4860f11e99879923e1bde996061280653901a83c6ef0ddb50414a7e, meshes/mesh_071_hull.stl: ba2527459b44df515fca68723d08d61af44afc8a51737ee0a1c7e72df10fd8a6, meshes/mesh_072_hull.stl: 7968e00b3b59d182cb636d14f51a3767da7dbe9c7df0665b6370b6dec8b023d4, meshes/mesh_073_hull.stl: 0582e44a384f715603eb70dd84d1f04417eb614c8e9d21b0f5f09339f161aa4a, meshes/mesh_074_hull.stl: 584404abcd88355e2a428f300de1f4d9e7e7b11621d97c3efec914850157e848, meshes/mesh_075_hull.stl: 01c00d7178b3cb1d4ec19a4a1c70cc5f6fb189a820b37cdac8b18bc919eda2f9, meshes/mesh_076_hull.stl: 96d10221790e85550e5ce7358533b0541469d815a8597594d4971e3d7ac84e03, meshes/mesh_077_hull.stl: 7abed6683971a469b81eca212a1b2b19240841f8683aa149e84945f5e5c5bb07, meshes/mesh_078_hull.stl: d7fa7e3bfc15f2dc28428d794ed5671be9cde97ec5c5c23827a14689507688a2, meshes/mesh_079_hull.stl: 1bbcfefa49fac114e102af1378158bef5fe74de155496e2e7eb916a0561dfcee, meshes/mesh_080_hull.stl: d9ed922119164bc2ddb7994c3f49fe9ea3959b9290d0dee18aafdfbbcf562085, meshes/mesh_081_hull.stl: e5ac594e4822ebc8c99c32af4c44170b30531e6ea0024c6b6f48328731829a69, meshes/mesh_082_hull.stl: 95dac196a27323720b688abaf57a49b451c4e5a40572606348e36548ecf7e8b3, meshes/mesh_083_hull.stl: 4d3d52af899e8ff0aeccb848e0bd3d8fb0b730028562ba26529ea6c46567d8bf, meshes/mesh_084_hull.stl: 34a4ede19b1a46f78aad46d8a88dea30b769c55ee7a203aceac61354769f1c10, meshes/mesh_085_hull.stl: d6a69a5e23f16ceb99a3bb9b25fabd286c770885570bc5b2ace873a64b948297, meshes/mesh_086_hull.stl: 2b351a67501eccc35913abae99d813f853d9abb8a02e1b49c25e2b06322b79c6, meshes/mesh_087_hull.stl: ba2527459b44df515fca68723d08d61af44afc8a51737ee0a1c7e72df10fd8a6, meshes/mesh_088_hull.stl: 7968e00b3b59d182cb636d14f51a3767da7dbe9c7df0665b6370b6dec8b023d4, meshes/mesh_089_hull.stl: 0582e44a384f715603eb70dd84d1f04417eb614c8e9d21b0f5f09339f161aa4a, meshes/mesh_090_hull.stl: 584404abcd88355e2a428f300de1f4d9e7e7b11621d97c3efec914850157e848, meshes/mesh_091_hull.stl: 01c00d7178b3cb1d4ec19a4a1c70cc5f6fb189a820b37cdac8b18bc919eda2f9, meshes/mesh_092_hull.stl: 96d10221790e85550e5ce7358533b0541469d815a8597594d4971e3d7ac84e03, meshes/mesh_093_hull.stl: 7abed6683971a469b81eca212a1b2b19240841f8683aa149e84945f5e5c5bb07, meshes/mesh_094_hull.stl: d7fa7e3bfc15f2dc28428d794ed5671be9cde97ec5c5c23827a14689507688a2, meshes/mesh_095_hull.stl: 6b701dbf6f10c7e594962f6e6c6a96dc946ff587d41b73203989c30f2160e669, meshes/mesh_096_hull.stl: cb872706faea1e35f16c244b8489c0cef5ce53177f0e9313584ef25d482b4544, meshes/mesh_097_hull.stl: c8502f1fef05a9e8606c7312c958656df696e039ca6e3788751682ee7b635857, meshes/mesh_098_hull.stl: c1b5f2a68926b5ed5c3f38127a3a99dcf459995c05fd12b7ba485132ca0e3ea8, meshes/mesh_099_hull.stl: 06106d4c61dcd8f3bedad86b5f96c01fd8935163a6c804a1d8cbf4911d667096, meshes/mesh_100_hull.stl: 04477bca13703cbe58ef7787985f96a413f6705a243d3290a4cb48e3fee7ac15, meshes/mesh_101_hull.stl: 93822e6d0918f931959306bc92b001fe98e3d57ae8e50505ec7463248fb05ffc, meshes/mesh_102_hull.stl: fb4833daa4b8f9a52ee21d8ddb01078be4a4ef4f99144a227e15423d172db936, meshes/mesh_103_hull.stl: 7d021328ea2eaff4184b7e4daa1176015374200e9da823bfc0a2582be1ebf5ce, meshes/mesh_104_hull.stl: f4914dc6034cf6c723f79a0e27916ea304f289e22af091e0a3d4e9b352e8d66a, meshes/mesh_105_hull.stl: e6ccabaebcb9c7b1dc85205a9c4ea3d264ed622ec7755f0296fdd84d52f3b279, meshes/mesh_106_hull.stl: 2a2fca759dbdfb66ceb37fea5d81866afaedbf91e99abf42e5a2833da1eae3c7, meshes/mesh_107_hull.stl: af73ac030298e739bb453d804a82e7fe3a6a156e20163b14ec8b2713e88bdeaf, meshes/mesh_108_hull.stl: 62b6b2cf3a9bf4cdd18fe1b1f5127b7a627f8e1c8bf047c15153adf542290d45, meshes/mesh_109_hull.stl: 44ccd38df8510e24259ca7a53002dbf3da72ac7a4d0c5974989cbb9fd773ca31, meshes/mesh_110_hull.stl: 46e944f18350a2918b0b7d8c3e305af1ccd49f383cf73691f64bdbf9b0b07f7e, meshes/mesh_111_hull.stl: 6d1219dd4b8c8ab0052a506aecdaeddf4ee9445830694ddaa800d09e270eb1ef, meshes/mesh_112_hull.stl: e9f604d4d7b9ac42d00336e5ac4b7ffbeb62eabadfbbfde60c8b0443c428bb2b, meshes/mesh_113_hull.stl: 0a3869bfa2a13e6d427f2cb69239cd604dddc23dc9130bc81ec7479337553fb3, meshes/mesh_114_hull.stl: 751e54e9e2b90ff299a67a944daee13859d55b1790913aa2ee1995aa26a27b1d, meshes/mesh_115_hull.stl: 822965b773b811dca0a35116a9921c00b2b489d416a0e5b86e7d5fe04aa62167, meshes/mesh_116_hull.stl: 6f5838ce7db1dcf42999d4a2aa96efe551dc775a943051f0b45cbf28ffd33c58, meshes/mesh_117_hull.stl: 58921cc1daa3d1b93773e2932f61ba624394d2983831e0a90b757bcb0b28a7d1, meshes/mesh_118_hull.stl: 202b2ea126db567f55e6f01c9dc8d620ae94f58b64a94820707f54b94103220e, meshes/mesh_119_hull.stl: 7d021328ea2eaff4184b7e4daa1176015374200e9da823bfc0a2582be1ebf5ce, meshes/mesh_120_hull.stl: f4914dc6034cf6c723f79a0e27916ea304f289e22af091e0a3d4e9b352e8d66a, meshes/mesh_121_hull.stl: e6ccabaebcb9c7b1dc85205a9c4ea3d264ed622ec7755f0296fdd84d52f3b279, meshes/mesh_122_hull.stl: 2a2fca759dbdfb66ceb37fea5d81866afaedbf91e99abf42e5a2833da1eae3c7, meshes/mesh_123_hull.stl: af73ac030298e739bb453d804a82e7fe3a6a156e20163b14ec8b2713e88bdeaf, meshes/mesh_124_hull.stl: 62b6b2cf3a9bf4cdd18fe1b1f5127b7a627f8e1c8bf047c15153adf542290d45, meshes/mesh_125_hull.stl: 44ccd38df8510e24259ca7a53002dbf3da72ac7a4d0c5974989cbb9fd773ca31, meshes/mesh_126_hull.stl: 46e944f18350a2918b0b7d8c3e305af1ccd49f383cf73691f64bdbf9b0b07f7e, meshes/mesh_127_hull.stl: 6d1219dd4b8c8ab0052a506aecdaeddf4ee9445830694ddaa800d09e270eb1ef, meshes/mesh_128_hull.stl: e9f604d4d7b9ac42d00336e5ac4b7ffbeb62eabadfbbfde60c8b0443c428bb2b, meshes/mesh_129_hull.stl: 0a3869bfa2a13e6d427f2cb69239cd604dddc23dc9130bc81ec7479337553fb3, meshes/mesh_130_hull.stl: 751e54e9e2b90ff299a67a944daee13859d55b1790913aa2ee1995aa26a27b1d, meshes/mesh_131_hull.stl: 822965b773b811dca0a35116a9921c00b2b489d416a0e5b86e7d5fe04aa62167, meshes/mesh_132_hull.stl: 6f5838ce7db1dcf42999d4a2aa96efe551dc775a943051f0b45cbf28ffd33c58, meshes/mesh_133_hull.stl: 58921cc1daa3d1b93773e2932f61ba624394d2983831e0a90b757bcb0b28a7d1, meshes/mesh_134_hull.stl: 202b2ea126db567f55e6f01c9dc8d620ae94f58b64a94820707f54b94103220e, meshes/mesh_135_hull.stl: c3bea094999b7d635c5745cca46ffdf31ce5f1b833e005b865d040c2fc5e7e05, meshes/mesh_136_hull.stl: 989583db874d2cc64581065cf7894b6d5ea8ef66336619c182b9e6d39394780f, meshes/mesh_137_hull.stl: 8cddb21c1c969bbb3c496f4f5b039964cadc798219eaf9bbe96f1b53542adc68, meshes/mesh_138_hull.stl: 23592ec8d20d3d32a023352eaf17e153c42f5828baa6a767bbb615d308ca42c9, meshes/mesh_139_hull.stl: 51ce0731dce9586be7f5bf84e9d401a068e6115cf6400d49f4f4407d0cfade65, meshes/mesh_140_hull.stl: b92714b544690e6117cfe785c70b810981fc15a5cf9e8470096023735b5d2577, meshes/mesh_141_hull.stl: 5b29dbc6d5c60e7da5b80e79de6ccdc6a36973715591a2cda6bd574300bac8d3, meshes/mesh_142_hull.stl: a1afc0233c719c3ddb351a989f928eb90009a709de32ef888de0ecd5fbfcf04b, meshes/mesh_143_hull.stl: 6b701dbf6f10c7e594962f6e6c6a96dc946ff587d41b73203989c30f2160e669, meshes/mesh_144_hull.stl: cb872706faea1e35f16c244b8489c0cef5ce53177f0e9313584ef25d482b4544, meshes/mesh_145_hull.stl: c8502f1fef05a9e8606c7312c958656df696e039ca6e3788751682ee7b635857, meshes/mesh_146_hull.stl: c1b5f2a68926b5ed5c3f38127a3a99dcf459995c05fd12b7ba485132ca0e3ea8, meshes/mesh_147_hull.stl: 06106d4c61dcd8f3bedad86b5f96c01fd8935163a6c804a1d8cbf4911d667096, meshes/mesh_148_hull.stl: 04477bca13703cbe58ef7787985f96a413f6705a243d3290a4cb48e3fee7ac15, meshes/mesh_149_hull.stl: 93822e6d0918f931959306bc92b001fe98e3d57ae8e50505ec7463248fb05ffc, meshes/mesh_150_hull.stl: fb4833daa4b8f9a52ee21d8ddb01078be4a4ef4f99144a227e15423d172db936, meshes/mesh_151_hull.stl: c3bea094999b7d635c5745cca46ffdf31ce5f1b833e005b865d040c2fc5e7e05, meshes/mesh_152_hull.stl: 989583db874d2cc64581065cf7894b6d5ea8ef66336619c182b9e6d39394780f, meshes/mesh_153_hull.stl: 8cddb21c1c969bbb3c496f4f5b039964cadc798219eaf9bbe96f1b53542adc68, meshes/mesh_154_hull.stl: 23592ec8d20d3d32a023352eaf17e153c42f5828baa6a767bbb615d308ca42c9, meshes/mesh_155_hull.stl: 51ce0731dce9586be7f5bf84e9d401a068e6115cf6400d49f4f4407d0cfade65, meshes/mesh_156_hull.stl: b92714b544690e6117cfe785c70b810981fc15a5cf9e8470096023735b5d2577, meshes/mesh_157_hull.stl: 5b29dbc6d5c60e7da5b80e79de6ccdc6a36973715591a2cda6bd574300bac8d3, meshes/mesh_158_hull.stl: a1afc0233c719c3ddb351a989f928eb90009a709de32ef888de0ecd5fbfcf04b, meshes/mesh_159_hull.stl: 53887b2e9dd695a28f08707b891d4f1be6cc88216b1b14b811a37d490f844082, meshes/mesh_160_hull.stl: be86c30c406a7e52c781ae18dc4eaf7c679a3a6cdbf55655f4554fe82beeaaac, meshes/mesh_161_hull.stl: e30708479356229c8e9e98518003d656b4a9e6bf69af001ea1c4a8eeed95a638, meshes/mesh_162_hull.stl: e5d53596dfecb6d3298032a5956fa29e7acf8c3e15e37c5d52d7cf3b6850679e, meshes/mesh_163_hull.stl: a89155fe8faef887dabe33dc286598965ca85cf848ebf2051c387e607f6086eb, meshes/mesh_164_hull.stl: b972564977f5319a772d2eff70e2a0872afaa6949184532e01f6d68bfd3098b8, meshes/mesh_165_hull.stl: 9c120bcc6183683f6ef50be084c5db4dac8401baef70ed9bb157809e244f0811, meshes/mesh_166_hull.stl: ea6e886708fb0e770ceefbec115f6e051017b759e7f8c6d654b5f7ad1f910993, meshes/mesh_167_hull.stl: 612e1c089447eee0d5fc9dbb08c3a1bc4ff954f39b23a7e766d77e41d510f981, meshes/mesh_168_hull.stl: 5de504dfa24468d1f8782225f4baf5e977267e97474b5547d67ef98afe37448c, meshes/mesh_169_hull.stl: 15b0b628f5a1eaf2fda0c0c47ed2c36915a7afae0225eefd510fe1ad91c165d3, meshes/mesh_170_hull.stl: 4341f9b889503c5874147a1e417a5eb920f6fa0a6416a5b7c40a4a2b9232d5fb, meshes/mesh_171_hull.stl: ae5bf3083e5a1b5303f97961c426e78a92070a6f90bbd8832021348c5da5b931, meshes/mesh_172_hull.stl: ab9e056c8259e59f3944be9a82f72874cc73fa914bcc34d225da8702240095cb, meshes/mesh_173_hull.stl: d77fd9f5c68d4e75177e965ccca93424229102562b77ff725282552d409f6a4f, meshes/mesh_174_hull.stl: 34e7fb485865e58021f202640319daa800b89e5ab080909b08b8206e21d4806f, meshes/mesh_175_hull.stl: 21403686ebb0739dcc75664eba91203a8418320129c09d520eca43ac19c2f94b, meshes/mesh_176_hull.stl: 23ff9b01bfad52d00134cd30d939cf3334652ee8ce8d4a23bc12867fca4db8b5, meshes/mesh_177_hull.stl: 55706ae589bae709a00b9e1f9533618fe11e96683270b9abe921977cadc90fee, meshes/mesh_178_hull.stl: c8403a9d58ccca022f979dbf9354c203c02f927c1c6871d6c0731a5eeb858da9, meshes/mesh_179_hull.stl: 9884b90f7910209cc81d6723f345f9f999f657e4d4e6f52804e9e916ef686cf4, meshes/mesh_180_hull.stl: a912a2049a627c9ebc22ac52b90c8da99f9476bb18590ff1ae5ce1d63c007ead, meshes/mesh_181_hull.stl: dcdc8303d4e67e7503634dae760a2be9dbc2674959755788314d0ece21989ef4, meshes/mesh_182_hull.stl: 030596ea352fea70035abe5050e91ed5d2f2c11c54438fa9d1c76546b7e35734, meshes/mesh_183_hull.stl: 1a3899e82bd359cb6800c5cb297f66ff4b2476b65404b45df8fcbebf126a41d9, meshes/mesh_184_hull.stl: bdf2cad36fa8879800e61e67ed34df469145ddc9cd69267bc8c135c2038c33f3, meshes/mesh_185_hull.stl: dbc05dc59f1ae316f75cbca1123ed72e3236ca6437e2347c094a33576757c916, meshes/mesh_186_hull.stl: 406aa33f31bd614570b4703d2b86325addf7e829a55e77e801a97a41c13da8d7, meshes/mesh_187_hull.stl: 36e87bd720f08d8eedc378f29fc5b9de15104f1ebcc4d884b2b6c5e4557ebc8b, meshes/mesh_188_hull.stl: de3c6f47ea5465485f2a5182012636a583072caa67de973ac3391e00b870b14b, meshes/mesh_189_hull.stl: 7c07febc52991a6aa555ef60457d098353aade8b5366e321870b2af1a86302a9, meshes/mesh_190_hull.stl: a5b7c7b84f69f9b8bed3ef533a5fdbb2dc7e9d6f63dfec9de134fe2b552b3143, meshes/mesh_191_hull.stl: 46eaba6c117c54f556cbdc043bf3da78489805b25668d57bb0bbae41a8418956, meshes/mesh_192_hull.stl: 0b1e7465f7e327168b6aa891c0ce34e3c5153e785d500baac8982ec8a62d7cc6, meshes/mesh_193_hull.stl: 91bd7532710cb050243b657c886064f3dbf53e84dbc44caea5fecfba53c202a5, meshes/mesh_194_hull.stl: 7503d4e60784cb0738c1e3dd2ae671b64821097307ff4c7a32f82edfe645b4b6, meshes/mesh_195_hull.stl: 9b4ceb2df330cd23ff5679fbb0b9efed23fcd19faddd3e5fd38fbaec5113cd9a, meshes/mesh_196_hull.stl: d98de7e57ff373ba28c29668c177ad927d497f9aeb3f403c2bd6cd2ce7c69528, meshes/mesh_197_hull.stl: 15af126f4e83346d465b72513624b3f34ec8cbf11d6b82681dd90077f9b247fc, meshes/mesh_198_hull.stl: a89fcab9add94ddb244338a72d46ab9fe717ff7d2ec9adbbadbc766703355e90, meshes/mesh_199_hull.stl: 0a3c728be1a4abe956e93751d6ff57d50058c18087bed0142d3423a7f8aba2f2, meshes/mesh_200_hull.stl: e3eb7c8925b520534cd1255364e5a03722707d7aa818bd8b26b12953b7bb5731, meshes/mesh_201_hull.stl: e6c48dd4d6855d53ddd255bd4b2aa1c4bf9226ececcfef67c65f6f79bb994042, meshes/mesh_202_hull.stl: f5a373f70ef6519164044e635fe83af5e74234260d40aa150a74c80ecb01cbbf, meshes/mesh_203_hull.stl: 5a1095e46a150a7b2033c48ad9a27b931ce4da9696c1191fe24bbf134a7a1cd5, meshes/mesh_204_hull.stl: 383f58965bbc7218ba1f0fb90ed805963405bd9f868c73de3c1a2340e92006b6, meshes/mesh_205_hull.stl: 42060cb42af3bb6c1426231c45e9e702785edfe5667eacbc5220ed41f8e67b3e, meshes/mesh_206_hull.stl: 2f0976f6a89f53595bf78be4fa18392b5e3a3331733544a8daa3d7c642fc69ad, meshes/mesh_207_hull.stl: 6a0c3cbe2e818f5a97a758f14b7e930d99853c06e910348aa816bc3719d652c0, meshes/mesh_208_hull.stl: fd5cf9a143096e7f6c90ab74dd1f5d5a7841e6765b1796ade90c176570b23248, meshes/mesh_209_hull.stl: fee0b4278a12dc0476b4233f99817d1cff703771e14ba61e06390d37f5ccc31d, meshes/mesh_210_hull.stl: a55bcab6f1d2e6949b0e0d13ddd13abcbd2f9e42fbf0588f696c92382c118669, meshes/mesh_211_hull.stl: 44b0e24767dcc12d0ca52d80ffab9c86054b21a715674792b87842fa97a051b9, meshes/mesh_212_hull.stl: 26c880b7efdd0ff162811f963fe47231339f39f5e7ab072b8ccccfeffc7b810c, meshes/mesh_213_hull.stl: fbb58fe0bcc511415be34e8616ece18c4d9c8957dd8bc9c42a78ef82fb45072c, meshes/mesh_214_hull.stl: 23829fb8f25aba76e3317bb6c18cefdb18ff9fd53be57fc04c2386d680cc044d, meshes/mesh_215_hull.stl: 3aa27232dbbff87fa78567e42ecfa64188189cf96b3692a1a8c69e9a47bd005c, meshes/mesh_216_hull.stl: 4b13ad99fb10f40d6842ece28329dd869cbeb3f398e4feea1266ac1e3929a98c, meshes/mesh_217_hull.stl: 5e2512a0364a3e2643d45cbf0682dfc3b5bbf6c21bb33c412609039fcce6d8c1, meshes/mesh_218_hull.stl: 81d815139f82855e26ef359974cebc11ed972e7a31a6fe88a093b31837b7fa7f, meshes/mesh_219_hull.stl: 116dd426e274e207373bcd245d34de6b64cce0144d6c37730dfc9205b1f7c5c5, meshes/mesh_220_hull.stl: 45d7e94b0d1e022ab40dae71e872429cb0f0480e335a4695aaca387160a7729c, meshes/mesh_221_hull.stl: 4a5b77fc4e3906bba783a10f0a561d93632d35ff50e65a22a906e52f885d5aca, meshes/mesh_222_hull.stl: 27e3878985d691c26640916dc961b085e93e2c60b7c53e11f3391738d41e3d05, meshes/mesh_225_surface.stl: 4e751d48eceb1321b26addae30cc36099f68cd1a5065b74eae7ba58c95ad8627, meshes/mesh_226_surface.stl: 45e1af0a8d45f40c2d973a55d08bad42f79e1ec7f0e9dd49c6665000b67d87d3}

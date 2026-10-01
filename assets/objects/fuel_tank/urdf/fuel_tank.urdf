@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <robot name="fuel_tank">
-  <!-- Units: meters. User dimensions: 0.8 x 0.8 x 0.4; recess diameter 0.22 to 0.08; neck OD/ID 0.06/0.05, height 0.003. PROVISIONAL recess depth: 0.04. Bore continues through bottom as an internal-cavity simplification. Static fixture; no calibrated mass, inertia or contact parameters. -->
+  <!-- Units: meters. User dimensions: upright width/height/thickness 0.8 x 1.0 x 0.4; opening height 0.6; recess diameter 0.22 to 0.08; neck OD/ID 0.06/0.05, height 0.003. PROVISIONAL recess depth: 0.04. Bore continues through bottom as an internal-cavity simplification. Static fixture; no calibrated mass, inertia or contact parameters. -->
   <link name="world" />
   <link name="fuel_tank_body">
     <collision name="body_00">
@@ -979,11 +979,32 @@
         <color rgba="0.3 0.32 0.35 1" />
       </material>
     </visual>
+    <collision name="tank_lower_extension_collision">
+      <origin xyz="0 -0.5 0.2" rpy="0 0 0" />
+      <geometry>
+        <box size="0.8 0.19999999999999996 0.4" />
+      </geometry>
+    </collision>
+    <visual name="tank_lower_extension_visual">
+      <origin xyz="0 -0.5 0.2" rpy="0 0 0" />
+      <geometry>
+        <box size="0.8 0.19999999999999996 0.4" />
+      </geometry>
+      <material name="tank_gray">
+        <color rgba="0.65 0.68 0.72 1" />
+      </material>
+    </visual>
   </link>
   <joint name="fuel_tank_fixed" type="fixed">
     <parent link="world" />
     <child link="fuel_tank_body" />
-    <origin xyz="0 0.2 0.4" rpy="1.570796326794897 0 0" />
+    <origin xyz="0 0.2 0.6" rpy="1.570796326794897 0 0" />
+  </joint>
+  <link name="tank_body_center" />
+  <joint name="tank_body_center_fixed" type="fixed">
+    <parent link="fuel_tank_body" />
+    <child link="tank_body_center" />
+    <origin xyz="0 -0.099999999999999978 0.2" rpy="0 0 0" />
   </joint>
   <link name="tank_opening_center" />
   <joint name="tank_opening_center_fixed" type="fixed">

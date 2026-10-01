@@ -8,7 +8,7 @@
 | `robots/aubo_i10/meshes/` | i10 DAE、STL、3DS 网格，迁自 `aaa/aubo_description-main/meshes/` |
 | `robots/aubo_i10/source/urdf/` | 原下载目录中的 URDF/SRDF，保留原件，不作为预览入口 |
 | `objects/fuel_cap/urdf/fuel_cap.urdf` | 当前油箱盖模型，含灰色握条、灰色中部圆柱、直径 40 mm 的白色下部圆柱及三个参考坐标系 |
-| `objects/fuel_tank/urdf/fuel_tank.urdf` | 0.8 × 0.8 × 0.4 m 油箱粗模，含收缩凹槽与环形油箱口；假设与生成方式见[说明](objects/fuel_tank/README.md) |
+| `objects/fuel_tank/urdf/fuel_tank.urdf` | 油箱占位粗模，当前尺寸见项目合同，含收缩凹槽与环形油箱口；假设与生成方式见[说明](objects/fuel_tank/README.md) |
 | `robots/aubo_i10/mjcf/` | 由当前 URDF 生成的 i10 MJCF 和外观 OBJ |
 | `objects/fuel_cap/mjcf/fuel_cap.xml` | 油箱盖 MJCF，含三个参考 site |
 | `scenes/i10_fuel_cap.xml` | MuJoCo 组合展示场景 |

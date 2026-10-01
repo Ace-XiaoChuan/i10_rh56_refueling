@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="i10_rh56">
+  <group name="arm">
+    <chain base_link="base_link" tip_link="base" />
+  </group>
+  <group name="hand">
+    <joint name="pinky_proximal_joint" />
+    <joint name="ring_proximal_joint" />
+    <joint name="middle_proximal_joint" />
+    <joint name="index_proximal_joint" />
+    <joint name="thumb_proximal_pitch_joint" />
+    <joint name="thumb_proximal_yaw_joint" />
+  </group>
+  <end_effector name="rh56" parent_link="base" group="hand" parent_group="arm" />
+  <group_state name="candidate_pregrasp" group="hand">
+    <joint name="pinky_proximal_joint" value="1.53102336825141" />
+    <joint name="ring_proximal_joint" value="1.53102336825141" />
+    <joint name="middle_proximal_joint" value="0.3748858447488584" />
+    <joint name="index_proximal_joint" value="0.3537201181842599" />
+    <joint name="thumb_proximal_pitch_joint" value="0.1388721804511278" />
+    <joint name="thumb_proximal_yaw_joint" value="1.308" />
+  </group_state>
+  <disable_collisions link1="adapter" link2="base" reason="Fixed mounting interface; internal fit unverified" />
+  <disable_collisions link1="adapter" link2="sensor_link" reason="Fixed mounting interface; internal fit unverified" />
+  <disable_collisions link1="base" link2="index_proximal" reason="Source explicit body exclusion" />
+  <disable_collisions link1="base" link2="middle_proximal" reason="Source explicit body exclusion" />
+  <disable_collisions link1="base" link2="pinky_proximal" reason="Source explicit body exclusion" />
+  <disable_collisions link1="base" link2="ring_proximal" reason="Source explicit body exclusion" />
+  <disable_collisions link1="base" link2="thumb_proximal" reason="Source explicit body exclusion" />
+  <disable_collisions link1="base" link2="thumb_proximal_base" reason="Source explicit body exclusion" />
+  <disable_collisions link1="base" link2="wrist2_Link" reason="Source parent-body filter" />
+  <disable_collisions link1="base" link2="wrist3_Link" reason="Source welded-body filter" />
+  <disable_collisions link1="base_link" link2="shoulder_Link" reason="Source explicit body exclusion" />
+  <disable_collisions link1="foreArm_Link" link2="upperArm_Link" reason="Source explicit body exclusion" />
+  <disable_collisions link1="foreArm_Link" link2="wrist1_Link" reason="Source explicit body exclusion" />
+  <disable_collisions link1="index_intermediate" link2="index_proximal" reason="Source explicit body exclusion" />
+  <disable_collisions link1="index_proximal" link2="middle_proximal" reason="Source explicit body exclusion" />
+  <disable_collisions link1="index_proximal" link2="thumb_proximal_base" reason="Source explicit body exclusion" />
+  <disable_collisions link1="index_proximal" link2="wrist3_Link" reason="Source parent-body filter" />
+  <disable_collisions link1="middle_intermediate" link2="middle_proximal" reason="Source explicit body exclusion" />
+  <disable_collisions link1="middle_proximal" link2="ring_proximal" reason="Source explicit body exclusion" />
+  <disable_collisions link1="middle_proximal" link2="wrist3_Link" reason="Source parent-body filter" />
+  <disable_collisions link1="pinky_intermediate" link2="pinky_proximal" reason="Source explicit body exclusion" />
+  <disable_collisions link1="pinky_proximal" link2="ring_proximal" reason="Source explicit body exclusion" />
+  <disable_collisions link1="pinky_proximal" link2="wrist3_Link" reason="Source parent-body filter" />
+  <disable_collisions link1="ring_intermediate" link2="ring_proximal" reason="Source explicit body exclusion" />
+  <disable_collisions link1="ring_proximal" link2="wrist3_Link" reason="Source parent-body filter" />
+  <disable_collisions link1="sensor_link" link2="wrist3_Link" reason="Fixed mounting interface; internal fit unverified" />
+  <disable_collisions link1="shoulder_Link" link2="upperArm_Link" reason="Source explicit body exclusion" />
+  <disable_collisions link1="thumb_distal" link2="thumb_intermediate" reason="Source explicit body exclusion" />
+  <disable_collisions link1="thumb_intermediate" link2="thumb_proximal" reason="Source explicit body exclusion" />
+  <disable_collisions link1="thumb_intermediate" link2="thumb_proximal_base" reason="Source explicit body exclusion" />
+  <disable_collisions link1="thumb_proximal" link2="thumb_proximal_base" reason="Source parent-body filter" />
+  <disable_collisions link1="thumb_proximal_base" link2="wrist3_Link" reason="Source parent-body filter" />
+  <disable_collisions link1="wrist1_Link" link2="wrist2_Link" reason="Source explicit body exclusion" />
+  <disable_collisions link1="wrist2_Link" link2="wrist3_Link" reason="Source explicit body exclusion" />
+</robot>

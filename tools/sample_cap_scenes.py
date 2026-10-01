@@ -45,7 +45,7 @@ def view(sampler,report):
                                              show_left_ui=False,show_right_ui=False) as viewer:
                 threads=[t for t in threading.enumerate() if t not in before and '_launch_internal' in t.name]
                 with viewer.lock():
-                    camera(viewer.cam)
+                    camera(viewer.cam,cap_position=p.world_from_cap[:3,3])
                     viewer.opt.geomgroup[0]=viewer.opt.geomgroup[3]=0
                 while viewer.is_running() and next_index is None:
                     with viewer.lock():
@@ -61,7 +61,7 @@ def view(sampler,report):
                                 viewer.opt.geomgroup[0]=1-viewer.opt.geomgroup[0]
                                 viewer.opt.geomgroup[3]=1-viewer.opt.geomgroup[3]
                             elif key==ord('F'):
-                                near=not near;camera(viewer.cam,near)
+                                near=not near;camera(viewer.cam,near,p.world_from_cap[:3,3])
                                 if near:viewer.cam.lookat[:]=p.world_from_cap[:3,3]
                         viewer.user_scn.ngeom=0;target_marker(p,viewer.user_scn)
                     viewer.sync();time.sleep(1/60)
@@ -80,7 +80,7 @@ def render(sampler,report,folder):
         p=select(sampler,row)
         p.model.vis.global_.offwidth=800;p.model.vis.global_.offheight=640
         opt,cam=mujoco.MjvOption(),mujoco.MjvCamera()
-        opt.geomgroup[0]=opt.geomgroup[3]=0;camera(cam)
+        opt.geomgroup[0]=opt.geomgroup[3]=0;camera(cam,cap_position=p.world_from_cap[:3,3])
         name=f"sample_{row['sample']['id']:03d}.png"
         with mujoco.Renderer(p.model,height=640,width=800) as renderer:
             renderer.update_scene(p.data,camera=cam,scene_option=opt)

@@ -21,7 +21,7 @@ class SamplingSettings:
     x_max_m: float = .2
     y_min_m: float = -1.
     y_max_m: float = -.8
-    height_m: float = .4
+    height_m: float | None = None
     max_horizontal_distance_m: float = 1.
     tank_yaw_limit_deg: float = 30.
     cap_yaw_limit_deg: float = 30.
@@ -31,7 +31,7 @@ class SamplingSettings:
             raise ValueError('per_group must be a positive integer')
         if type(self.random_seed) is not int or self.random_seed < 0:
             raise ValueError('random_seed must be a nonnegative integer')
-        vals=[v for k,v in asdict(self).items() if k not in ('per_group','random_seed')]
+        vals=[v for k,v in asdict(self).items() if k not in ('per_group','random_seed') and v is not None]
         if not np.isfinite(vals).all(): raise ValueError('Nonfinite sampling bound')
         if not (0 <= self.x_min_m < self.x_max_m and self.y_min_m < self.y_max_m):
             raise ValueError('Invalid position bounds')
@@ -51,16 +51,14 @@ class SceneSampler:
         self.world_from_base=body_transform(d,'base_link')
         self.mount=body_transform(d,'inspection_tank_mount')
         self.opening=d.body('tank_opening_center').xpos.copy()
-        tank=body_transform(d,'fuel_tank_body')
-        # Current tank slab is 0.4 m along its native Z; derive its center
-        # from the outer-face origin in this model rather than the mount origin.
-        local_face=tank[:3,:3].T@(self.opening-tank[:3,3])
-        self.center=tank[:3,3]+tank[:3,:3]@(local_face/2)
+        # The raised opening is no longer the body-height midpoint.
+        self.center=d.body('tank_body_center').xpos.copy()
         self.base_opening=self.world_from_base[:3,:3].T@(self.opening-self.world_from_base[:3,3])
         self.cap_initial=float(d.joint('cap_twist').qpos[0])
 
     def samples(self):
         cfg=self.settings;rng=np.random.default_rng(cfg.random_seed)
+        height=self.base_opening[2] if cfg.height_m is None else cfg.height_m
         rows=[{'id':0,'group':'baseline','opening_base_m':self.base_opening.tolist(),
                'tank_yaw_deg':0.,'cap_yaw_deg':0.}]
         for group in ('position','tank_yaw','cap_yaw','mixed'):
@@ -68,7 +66,7 @@ class SceneSampler:
                 p=self.base_opening.copy()
                 if group in ('position','mixed'):
                     for attempt in range(10000):
-                        p=np.array([rng.uniform(cfg.x_min_m,cfg.x_max_m),rng.uniform(cfg.y_min_m,cfg.y_max_m),cfg.height_m])
+                        p=np.array([rng.uniform(cfg.x_min_m,cfg.x_max_m),rng.uniform(cfg.y_min_m,cfg.y_max_m),height])
                         if np.linalg.norm(p[:2])<=cfg.max_horizontal_distance_m:break
                     else:raise ValueError('Unable to sample within configured bounds')
                 rows.append({'id':len(rows),'group':group,'opening_base_m':p.tolist(),

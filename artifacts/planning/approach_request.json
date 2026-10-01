@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "arm_joints": [
+    "shoulder_joint",
+    "upperArm_joint",
+    "foreArm_joint",
+    "wrist1_joint",
+    "wrist2_joint",
+    "wrist3_joint"
+  ],
+  "initial_joint_positions": {
+    "shoulder_joint": 0.0,
+    "upperArm_joint": -0.5,
+    "foreArm_joint": 1.2,
+    "wrist1_joint": 0.0,
+    "wrist2_joint": 0.0,
+    "wrist3_joint": 0.0,
+    "thumb_proximal_yaw_joint": 1.308,
+    "thumb_proximal_pitch_joint": 0.1388721804511278,
+    "thumb_intermediate_joint": 0.3347,
+    "thumb_distal_joint": 0.24165563909774435,
+    "index_proximal_joint": 0.3537201181842599,
+    "index_intermediate_joint": 0.34506999999999993,
+    "middle_proximal_joint": 0.3748858447488584,
+    "middle_intermediate_joint": 0.2687099999999999,
+    "ring_proximal_joint": 1.53102336825141,
+    "ring_intermediate_joint": 1.56,
+    "pinky_proximal_joint": 1.53102336825141,
+    "pinky_intermediate_joint": 1.56
+  },
+  "pregrasp_position": [
+    -0.07499999999999994,
+    0.747,
+    0.58
+  ],
+  "hand_position": [
+    -0.07499999999999996,
+    0.847,
+    0.58
+  ],
+  "hand_orientation_xyzw": [
+    0.2988362387301197,
+    0.6408563820557885,
+    0.6408563820557883,
+    0.29883623873011983
+  ],
+  "outward_axis_world": [
+    1.1102230246251565e-16,
+    -0.9999999999999997,
+    1.1102230246251565e-16
+  ],
+  "approach_distance_m": 0.1,
+  "pregrasp_channels": [
+    0,
+    0,
+    800,
+    800,
+    900,
+    0
+  ],
+  "cap_estimate": {
+    "pose": {
+      "frame_id": "world",
+      "position_m": [
+        0.0,
+        1.007,
+        0.6
+      ],
+      "orientation_xyzw": [
+        0.4999999999999999,
+        -0.4999999999999999,
+        0.5,
+        0.4999999999999999
+      ]
+    },
+    "timestamp_s": 0.0,
+    "source": "simulation_ground_truth",
+    "valid": true,
+    "confidence": null,
+    "timestamp_clock": "simulation"
+  },
+  "source_hashes": {
+    "assets/scenes/i10_rh56_fuel_cap_preview.xml": "5154349867b0bc2dae0039c68fe4eb4aafa3d75fe2321a22baa093c6b98d12db",
+    "artifacts/manual_grasp/user_selected_20260930.json": "f0ad6a80fbb8fe666f93675818b0656281466a5abd3ce834c22227a069ef6610",
+    "src/i10_rh56_moveit_config/config/generated_hashes.json": "867416caca6bca58a3e89a485bebdc8761def9d5ee1755462072afc65304fb90",
+    "src/i10_rh56_moveit_config/config/provenance.json": "6101a7a6a38f56f4a2b96c5f735358376bed27424f6858c38f86337b73432468"
+  }
+}

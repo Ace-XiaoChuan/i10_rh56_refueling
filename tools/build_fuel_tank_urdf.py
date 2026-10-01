@@ -11,6 +11,9 @@ DEST = ROOT / 'assets/objects/fuel_tank'
 SEGMENTS = 64
 # User-confirmed 2026-09-30 entrance widening; see assembly_contract.md.
 RECESS_ENTRANCE_RADIUS_M = .11
+# User-confirmed 2026-10-01: raise the opening and extend the body to ground.
+OPENING_HEIGHT_M = .60
+ORIGINAL_HALF_HEIGHT_M = .40
 
 
 def sub(a, b):
@@ -67,7 +70,7 @@ def main():
     (DEST / 'urdf').mkdir(exist_ok=True)
     robot = ET.Element('robot', name='fuel_tank')
     robot.append(ET.Comment(
-        ' Units: meters. User dimensions: 0.8 x 0.8 x 0.4; recess diameter '
+        ' Units: meters. User dimensions: upright width/height/thickness 0.8 x 1.0 x 0.4; opening height 0.6; recess diameter '
         f'{2 * RECESS_ENTRANCE_RADIUS_M:g} to 0.08; neck OD/ID 0.06/0.05, height 0.003. '
         f'PROVISIONAL recess depth: {args.recess_depth:g}. '
         'Bore continues through bottom as an internal-cavity simplification. '
@@ -78,7 +81,7 @@ def main():
     ET.SubElement(joint, 'parent', link='world')
     ET.SubElement(joint, 'child', link='fuel_tank_body')
     # Stand the original slab on its edge: opening faces world -Y, bottom Z=0.
-    ET.SubElement(joint, 'origin', xyz='0 0.2 0.4', rpy=f'{math.pi / 2:.16g} 0 0')
+    ET.SubElement(joint, 'origin', xyz=f'0 0.2 {OPENING_HEIGHT_M:g}', rpy=f'{math.pi / 2:.16g} 0 0')
     groups = (
         ('body', 0, floor, .025, .025, None),
         ('recess', floor, .4, .04, RECESS_ENTRANCE_RADIUS_M, None),
@@ -101,6 +104,25 @@ def main():
         ET.SubElement(geometry, 'mesh', filename=f'../meshes/{name}_visual.stl')
         material = ET.SubElement(visual, 'material', name=f'{name}_gray')
         ET.SubElement(material, 'color', rgba='0.65 0.68 0.72 1' if name == 'tank' else '0.3 0.32 0.35 1')
+    # Preserve all cavity meshes, extend the lower solid face to Z=0 after
+    # raising the original body. The union is one rectangular outer envelope.
+    extension = OPENING_HEIGHT_M - ORIGINAL_HALF_HEIGHT_M
+    if extension < 0:
+        raise ValueError('Opening below original half-height requires a different body construction')
+    if extension > 0:
+        for role in ('collision', 'visual'):
+            element = ET.SubElement(body, role, name=f'tank_lower_extension_{role}')
+            ET.SubElement(element, 'origin', xyz=f'0 {-ORIGINAL_HALF_HEIGHT_M-extension/2:.17g} 0.2', rpy='0 0 0')
+            geometry = ET.SubElement(element, 'geometry')
+            ET.SubElement(geometry, 'box', size=f'0.8 {extension:.17g} 0.4')
+            if role == 'visual':
+                material = ET.SubElement(element, 'material', name='tank_gray')
+                ET.SubElement(material, 'color', rgba='0.65 0.68 0.72 1')
+    ET.SubElement(robot, 'link', name='tank_body_center')
+    joint = ET.SubElement(robot, 'joint', name='tank_body_center_fixed', type='fixed')
+    ET.SubElement(joint, 'parent', link='fuel_tank_body')
+    ET.SubElement(joint, 'child', link='tank_body_center')
+    ET.SubElement(joint, 'origin', xyz=f'0 {-extension/2:.17g} 0.2', rpy='0 0 0')
     # Outer face center, before the recess: local +Z points out of the tank.
     for name, z in (('tank_opening_center', .4),
                     ('tank_recess_floor', floor), ('tank_filler_top', floor+.003)):

@@ -92,7 +92,7 @@ def main():
                 viewer.cam.distance = 3.2
                 viewer.cam.azimuth = -110
             if args.tank_only:
-                viewer.cam.lookat[:] = [0, -.16, .4]
+                viewer.cam.lookat[:] = data.site('tank_opening_center').xpos
                 viewer.cam.distance = 1.5
                 viewer.cam.azimuth = -90
                 viewer.cam.elevation = -15

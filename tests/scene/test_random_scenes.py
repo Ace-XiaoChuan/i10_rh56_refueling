@@ -18,7 +18,7 @@ class RandomSceneTests(unittest.TestCase):
         self.assertEqual(len(samples),81)
         for row in samples:
             x,y,z=row['opening_base_m']
-            self.assertTrue(-1e-12<=x<=.2 and -1<=y<=-.8 and abs(z-.4)<1e-12)
+            self.assertTrue(-1e-12<=x<=.2 and -1<=y<=-.8 and abs(z-.6)<1e-12)
             self.assertLessEqual(np.hypot(x,y),1+1e-12)
             self.assertLessEqual(abs(row['tank_yaw_deg']),30)
             self.assertLessEqual(abs(row['cap_yaw_deg']),30)
@@ -29,7 +29,7 @@ class RandomSceneTests(unittest.TestCase):
     def test_rigid_tank_door_and_coaxial_cap(self):
         sampler=SceneSampler(CANDIDATE)
         a=sampler.reference
-        sample={'opening_base_m':[.12,-.9,.4],'tank_yaw_deg':25.,'cap_yaw_deg':-20.}
+        sample={'opening_base_m':[.12,-.9,.6],'tank_yaw_deg':25.,'cap_yaw_deg':-20.}
         b=sampler.preview(sample)
         br=sampler.world_from_base[:3,:3]
         np.testing.assert_allclose(br.T@(b.data.body('tank_opening_center').xpos-sampler.world_from_base[:3,3]),sample['opening_base_m'],atol=1e-12)

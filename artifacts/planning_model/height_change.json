@@ -1,0 +1,30 @@
+{
+  "mode": "geometry_and_fixed_fixture_check_not_task_execution",
+  "source_scene_sha256": "5154349867b0bc2dae0039c68fe4eb4aafa3d75fe2321a22baa093c6b98d12db",
+  "tank_outer_bounds_world_m": [
+    [
+      -0.40000001179283934,
+      0.9999999904195416,
+      1.1102230246251565e-16
+    ],
+    [
+      0.4000000117928394,
+      1.4000000000000004,
+      1.0000000117928391
+    ]
+  ],
+  "opening_world_m": [
+    0.0,
+    1.0,
+    0.6
+  ],
+  "tank_center_world_m": [
+    0.0,
+    1.2,
+    0.5
+  ],
+  "related_frames_rigid_shift_verified": true,
+  "original_tank_mesh_hashes_preserved": true,
+  "fixed_fixture_status": "triple_contact_observed",
+  "physical_grasp_verified": false
+}

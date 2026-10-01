@@ -1,8 +1,8 @@
 {
   "mode": "current_model_endpoint_ik_no_execution",
-  "source_scene_sha256": "84e03b73dc4261b27caf2d832eaa14fa7dd3c8080b16308be5d02942f719755c",
+  "source_scene_sha256": "5154349867b0bc2dae0039c68fe4eb4aafa3d75fe2321a22baa093c6b98d12db",
   "candidate_path": "/home/ace/i10_rh56_refueling_ws/artifacts/manual_grasp/user_selected_20260930.json",
-  "candidate_sha256": "3ebc2a36706543304e9f0309656bb8a8a97d2ced35c75beb5e122fdd626c36da",
+  "candidate_sha256": "f0ad6a80fbb8fe666f93675818b0656281466a5abd3ce834c22227a069ef6610",
   "settings": {
     "seeds": 24,
     "iterations": 250,
@@ -54,7 +54,7 @@
       "position_m": [
         0.0,
         1.007,
-        0.4
+        0.6
       ],
       "orientation_xyzw": [
         0.4999999999999999,
@@ -112,7 +112,7 @@
       -1.7028956609327543e-16,
       0.9999999999999997,
       1.368425744190814e-17,
-      0.38000000000000006
+      0.58
     ],
     [
       0.0,
@@ -138,7 +138,7 @@
       -1.7028956609327543e-16,
       0.9999999999999997,
       1.368425744190814e-17,
-      0.38000000000000006
+      0.58
     ],
     [
       0.0,
@@ -164,7 +164,7 @@
       -1.6442382686277174e-16,
       0.9999999999999984,
       1.3684257441908122e-17,
-      0.38000000000000006
+      0.58
     ],
     [
       0.0,
@@ -190,7 +190,7 @@
       -1.6442382686277174e-16,
       0.9999999999999984,
       1.3684257441908122e-17,
-      0.38000000000000006
+      0.58
     ],
     [
       0.0,
@@ -203,364 +203,313 @@
   "solutions": [
     {
       "arm_qpos_rad": [
-        -1.0763235438879415,
-        -0.34970105936091905,
-        1.7129215540481872,
-        -1.0772369309089833,
-        -0.20363050969231225,
-        3.139865065586328
-      ],
-      "seed_index": 0,
-      "hand_position_error_m": 1.6525096356576755e-05,
-      "hand_orientation_error_rad": 0.00035295570711861416,
-      "contacts": [],
-      "interference_count": 0
-    },
-    {
-      "arm_qpos_rad": [
-        -1.076324692618218,
-        -0.3501242832353745,
-        1.7121931285720535,
-        -1.0804222732292548,
-        -0.2036468287837278,
-        -3.1404492707307456
-      ],
-      "seed_index": 22,
-      "hand_position_error_m": 4.191215599010309e-06,
-      "hand_orientation_error_rad": 0.00023322682241565495,
-      "contacts": [],
-      "interference_count": 0
-    },
-    {
-      "arm_qpos_rad": [
-        -1.0763244755539978,
-        -2.323763590541676,
-        -1.8405178282627719,
-        0.4825168038017158,
-        0.20365837378130758,
-        0.0007261902837971332
-      ],
-      "seed_index": 2,
-      "hand_position_error_m": 7.454863305008815e-06,
-      "hand_orientation_error_rad": 0.00014795419266072188,
-      "contacts": [],
-      "interference_count": 0
-    },
-    {
-      "arm_qpos_rad": [
-        1.5673061792466731,
-        2.3237546019544064,
-        1.8403948789261602,
-        -0.48328581894915373,
-        -2.4399624546009937,
-        5.742365207712062e-05
-      ],
-      "seed_index": 4,
-      "hand_position_error_m": 2.437100194947039e-05,
-      "hand_orientation_error_rad": 4.843740819211829e-05,
-      "contacts": [],
-      "interference_count": 0
-    },
-    {
-      "arm_qpos_rad": [
-        1.5673026162367267,
-        0.34995373710667116,
-        -1.7124951859144288,
-        1.0791187810316076,
-        2.439965653817047,
-        3.1415724889817653
-      ],
-      "seed_index": 23,
-      "hand_position_error_m": 1.873855211202607e-06,
-      "hand_orientation_error_rad": 1.62200009638305e-05,
-      "contacts": [],
-      "interference_count": 0
-    },
-    {
-      "arm_qpos_rad": [
-        1.5673065039698293,
-        0.349962846676621,
-        -1.7124640937141933,
-        1.0792129554489593,
-        2.439992954478188,
-        -3.141550560257849
-      ],
-      "seed_index": 7,
-      "hand_position_error_m": 3.943659994081518e-06,
-      "hand_orientation_error_rad": 3.7976482552899146e-05,
-      "contacts": [],
-      "interference_count": 0
-    },
-    {
-      "arm_qpos_rad": [
-        -1.0763229435189487,
-        -0.5810510680418451,
-        1.8406703900382837,
-        2.42073037425705,
-        0.20366939892237,
-        0.0009956332776278245
+        -1.0763246077933735,
+        -0.377056439730315,
+        1.740554301841652,
+        2.117207855635809,
+        0.2036599241432043,
+        0.0004056169915673605
       ],
       "seed_index": 1,
-      "hand_position_error_m": 4.899526100237508e-05,
-      "hand_orientation_error_rad": 0.00020231616772089318,
-      "contacts": [
-        {
-          "geoms": [
-            "foreArm_Link_collision_0",
-            "wrist2_Link_collision_0"
-          ],
-          "penetration_m": 0.016451417146350573
-        }
-      ],
-      "interference_count": 1
+      "hand_position_error_m": 4.787360825577093e-06,
+      "hand_orientation_error_rad": 8.223253780669422e-05,
+      "contacts": [],
+      "interference_count": 0
     },
     {
       "arm_qpos_rad": [
-        1.5673029552103768,
-        0.581227212092018,
-        -1.8403535064788907,
-        -2.421557698631867,
-        -2.4399688388856724,
-        2.257540877987404e-05
+        -1.0763242831884607,
+        -2.0292656187429308,
+        -1.7406548321859945,
+        0.2877322095158403,
+        0.20365744115724937,
+        0.0008749351129472074
+      ],
+      "seed_index": 2,
+      "hand_position_error_m": 9.795208791739588e-06,
+      "hand_orientation_error_rad": 0.00017830102790605655,
+      "contacts": [],
+      "interference_count": 0
+    },
+    {
+      "arm_qpos_rad": [
+        -1.0763234904806724,
+        -0.248932334357163,
+        1.493881706510418,
+        -1.3973834894453876,
+        -0.2036400019937635,
+        3.140201643691019
+      ],
+      "seed_index": 0,
+      "hand_position_error_m": 1.1864196843258556e-05,
+      "hand_orientation_error_rad": 0.0002838641623121336,
+      "contacts": [],
+      "interference_count": 0
+    },
+    {
+      "arm_qpos_rad": [
+        -1.0763245764683544,
+        -0.24926456951683937,
+        1.493385308217759,
+        -1.3994459926939522,
+        -0.2036540827229376,
+        -3.1410877551744094
+      ],
+      "seed_index": 15,
+      "hand_position_error_m": 2.2703978581488474e-06,
+      "hand_orientation_error_rad": 0.00010265904159657581,
+      "contacts": [],
+      "interference_count": 0
+    },
+    {
+      "arm_qpos_rad": [
+        1.5673049159470498,
+        2.0292643308517224,
+        1.7404964070290165,
+        -0.2887066888998378,
+        -2.4399623369694483,
+        4.797320295701207e-05
+      ],
+      "seed_index": 4,
+      "hand_position_error_m": 1.6713329663003568e-05,
+      "hand_orientation_error_rad": 4.019407516472602e-05,
+      "contacts": [],
+      "interference_count": 0
+    },
+    {
+      "arm_qpos_rad": [
+        1.5673029652797488,
+        0.377118103271844,
+        -1.7404867890909042,
+        -2.117549163504176,
+        -2.439975650435549,
+        5.4523265839825745e-05
       ],
       "seed_index": 19,
-      "hand_position_error_m": 1.406106096670744e-06,
-      "hand_orientation_error_rad": 1.5725261881672153e-05,
+      "hand_position_error_m": 1.0446358514895544e-05,
+      "hand_orientation_error_rad": 3.875330918679526e-05,
+      "contacts": [],
+      "interference_count": 0
+    },
+    {
+      "arm_qpos_rad": [
+        1.5673022887043904,
+        0.24915679736892934,
+        -1.493551644397786,
+        1.3988292926253694,
+        2.4399633774872527,
+        3.141548572296076
+      ],
+      "seed_index": 23,
+      "hand_position_error_m": 7.828010870020868e-06,
+      "hand_orientation_error_rad": 3.5688162066266516e-05,
+      "contacts": [],
+      "interference_count": 0
+    },
+    {
+      "arm_qpos_rad": [
+        1.5673059419602826,
+        0.24918616619845343,
+        -1.4934958271651362,
+        1.3989545679319069,
+        2.43998847055579,
+        -3.141553333057377
+      ],
+      "seed_index": 7,
+      "hand_position_error_m": 2.79735288317298e-06,
+      "hand_orientation_error_rad": 3.401653758404445e-05,
+      "contacts": [],
+      "interference_count": 0
+    },
+    {
+      "arm_qpos_rad": [
+        -1.0763246680184686,
+        -1.6737487617999542,
+        -1.493620949843625,
+        -2.9610536570330734,
+        -0.20365316158634095,
+        3.1411790488036693
+      ],
+      "seed_index": 9,
+      "hand_position_error_m": 4.1161862529709346e-06,
+      "hand_orientation_error_rad": 8.415812575157661e-05,
       "contacts": [
         {
           "geoms": [
             "foreArm_Link_collision_0",
             "wrist2_Link_collision_0"
           ],
-          "penetration_m": 0.0039087584989749135
+          "penetration_m": 0.022876192316478663
         },
         {
           "geoms": [
             "foreArm_Link_collision_0",
             "wrist2_Link_collision_0"
           ],
-          "penetration_m": 0.004031216434531358
+          "penetration_m": 0.02284615622469377
         }
       ],
       "interference_count": 2
     },
     {
       "arm_qpos_rad": [
-        -1.0763249445200709,
-        -1.9765627257490364,
-        -1.7124966353307567,
-        -2.8774777376670335,
-        -0.20366047578786542,
-        3.1415433719743686
+        -1.076324639202714,
+        -1.6736998142895367,
+        -1.4934312324776133,
+        -2.961654841570641,
+        -0.20365711072185164,
+        -3.1412611381120263
       ],
-      "seed_index": 13,
-      "hand_position_error_m": 3.456493592456076e-07,
-      "hand_orientation_error_rad": 9.984566449608163e-06,
+      "seed_index": 11,
+      "hand_position_error_m": 1.8863087778180998e-06,
+      "hand_orientation_error_rad": 6.739016374569524e-05,
       "contacts": [
         {
           "geoms": [
             "foreArm_Link_collision_0",
             "wrist2_Link_collision_0"
           ],
-          "penetration_m": 0.021978312344721654
+          "penetration_m": 0.02288266510046008
         },
         {
           "geoms": [
             "foreArm_Link_collision_0",
             "wrist2_Link_collision_0"
           ],
-          "penetration_m": 0.021986168257821063
-        },
-        {
-          "geoms": [
-            "foreArm_Link_collision_0",
-            "wrist2_Link_collision_0"
-          ],
-          "penetration_m": 0.016147432930837712
-        },
-        {
-          "geoms": [
-            "foreArm_Link_collision_0",
-            "wrist2_Link_collision_0"
-          ],
-          "penetration_m": 0.016230438917637542
+          "penetration_m": 0.02285320365591003
         }
       ],
-      "interference_count": 4
+      "interference_count": 2
     },
     {
       "arm_qpos_rad": [
-        -1.0763248850268814,
-        -1.9765476677167848,
-        -1.7124513506292711,
-        -2.877629145736813,
-        -0.20365978387466166,
-        -3.1414597346565913
-      ],
-      "seed_index": 9,
-      "hand_position_error_m": 9.096199371857686e-07,
-      "hand_orientation_error_rad": 2.701676131066078e-05,
-      "contacts": [
-        {
-          "geoms": [
-            "foreArm_Link_collision_0",
-            "wrist2_Link_collision_0"
-          ],
-          "penetration_m": 0.02197979497614904
-        },
-        {
-          "geoms": [
-            "foreArm_Link_collision_0",
-            "wrist2_Link_collision_0"
-          ],
-          "penetration_m": 0.02198764704754646
-        },
-        {
-          "geoms": [
-            "foreArm_Link_collision_0",
-            "wrist2_Link_collision_0"
-          ],
-          "penetration_m": 0.01615290829039213
-        },
-        {
-          "geoms": [
-            "foreArm_Link_collision_0",
-            "wrist2_Link_collision_0"
-          ],
-          "penetration_m": 0.01623588540519484
-        }
-      ],
-      "interference_count": 4
-    },
-    {
-      "arm_qpos_rad": [
-        1.567303659029244,
-        1.9765609656527958,
-        1.712487788615328,
-        2.8775050182068314,
-        2.4399730438702116,
-        3.1415776949354255
+        1.5673040410180112,
+        1.6737263041843218,
+        1.4935235540347525,
+        2.9613700090652313,
+        2.4399766078087133,
+        3.1415720190501317
       ],
       "seed_index": 8,
-      "hand_position_error_m": 3.5877544948015804e-07,
-      "hand_orientation_error_rad": 1.1183378658953075e-05,
+      "hand_position_error_m": 8.39620198042703e-07,
+      "hand_orientation_error_rad": 1.6047790765783865e-05,
       "contacts": [
         {
           "geoms": [
             "foreArm_Link_collision_0",
             "wrist2_Link_collision_0"
           ],
-          "penetration_m": 0.02694743479169452
+          "penetration_m": 0.032616268010129304
         },
         {
           "geoms": [
             "foreArm_Link_collision_0",
             "wrist2_Link_collision_0"
           ],
-          "penetration_m": 0.026958956143320112
+          "penetration_m": 0.03262451925216895
         },
         {
           "geoms": [
             "foreArm_Link_collision_0",
             "wrist2_Link_collision_0"
           ],
-          "penetration_m": 0.027055726300849334
+          "penetration_m": 0.032630779043606235
         },
         {
           "geoms": [
             "foreArm_Link_collision_0",
             "wrist2_Link_collision_0"
           ],
-          "penetration_m": 0.027043630936130603
+          "penetration_m": 0.03262252849460679
         },
         {
           "geoms": [
             "foreArm_Link_collision_0",
             "wrist3_Link_collision_0"
           ],
-          "penetration_m": 0.009911840124916221
+          "penetration_m": 0.018480280886655973
         },
         {
           "geoms": [
             "foreArm_Link_collision_0",
             "wrist3_Link_collision_0"
           ],
-          "penetration_m": 0.00955845313466204
+          "penetration_m": 0.018238918033299342
         }
       ],
       "interference_count": 6
     },
     {
       "arm_qpos_rad": [
-        1.5672991220902315,
-        1.9765507275776764,
-        1.712477448343428,
-        2.8775641501705573,
-        2.439984044718457,
-        -3.1415482688092413
+        1.5673030701238053,
+        1.6737221719621673,
+        1.4935153754867492,
+        2.961391050705486,
+        2.4399687585260987,
+        -3.1415871831271818
       ],
       "seed_index": 3,
-      "hand_position_error_m": 7.295995924389127e-06,
-      "hand_orientation_error_rad": 3.6755187105748446e-05,
+      "hand_position_error_m": 1.8821718695819383e-07,
+      "hand_orientation_error_rad": 3.824550144655871e-06,
       "contacts": [
         {
           "geoms": [
             "foreArm_Link_collision_0",
             "wrist2_Link_collision_0"
           ],
-          "penetration_m": 0.026951749229656735
+          "penetration_m": 0.032617356047090595
         },
         {
           "geoms": [
             "foreArm_Link_collision_0",
             "wrist2_Link_collision_0"
           ],
-          "penetration_m": 0.02696326740391594
+          "penetration_m": 0.03262560730400378
         },
         {
           "geoms": [
             "foreArm_Link_collision_0",
             "wrist2_Link_collision_0"
           ],
-          "penetration_m": 0.02705995487534292
+          "penetration_m": 0.03263185096268122
         },
         {
           "geoms": [
             "foreArm_Link_collision_0",
             "wrist2_Link_collision_0"
           ],
-          "penetration_m": 0.027047862985102436
+          "penetration_m": 0.03262360058899563
         },
         {
           "geoms": [
             "foreArm_Link_collision_0",
             "wrist3_Link_collision_0"
           ],
-          "penetration_m": 0.009918481755573916
+          "penetration_m": 0.018481914091996704
         },
         {
           "geoms": [
             "foreArm_Link_collision_0",
             "wrist3_Link_collision_0"
           ],
-          "penetration_m": 0.009565194333695487
+          "penetration_m": 0.018240555246524702
         }
       ],
       "interference_count": 6
     }
   ],
   "best_residual": {
-    "score": 4.6283093332848855e-07,
+    "score": 1.5484836022873944e-07,
     "arm_qpos_rad": [
-      -4.71588244021926,
-      2.3237194789677424,
-      1.8403477700004875,
-      5.799816999676112,
-      -2.439967262477765,
-      2.937615224304121e-06
+      -4.715882464720336,
+      1.6737231359014186,
+      1.4935175788638408,
+      -3.321798697142067,
+      2.439967046341527,
+      -3.1415931028253556
     ],
-    "position_error_m": 1.2109616794989582e-07,
-    "orientation_error_rad": 2.2335408601230606e-06
+    "position_error_m": 1.1253967427942719e-07,
+    "orientation_error_rad": 5.318090911833374e-07
   },
   "ik_found": true,
   "enabled_geometry_interference_free_solution_found": true,
@@ -580,28 +529,28 @@
         "cap_body_collision_2",
         "thumb_distal"
       ],
-      "penetration_m": 2.4175670391279478e-05
+      "penetration_m": 2.84757418868004e-05
     },
     {
       "geoms": [
         "cap_body_collision_2",
         "thumb_distal"
       ],
-      "penetration_m": 1.5736049082738565e-05
+      "penetration_m": 2.071281416059126e-05
     },
     {
       "geoms": [
         "cap_body_collision_2",
         "index_intermediate"
       ],
-      "penetration_m": 8.383698106986108e-06
+      "penetration_m": 5.356523349327179e-06
     },
     {
       "geoms": [
         "cap_body_collision_2",
         "middle_intermediate"
       ],
-      "penetration_m": 2.092376834853665e-06
+      "penetration_m": 6.438879627292114e-06
     }
   ]
 }

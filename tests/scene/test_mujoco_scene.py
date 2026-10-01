@@ -79,7 +79,7 @@ class SceneTests(unittest.TestCase):
     def test_ground_truth_frame_and_clock(self):
         report = asyncio.run(self.scene.report(TaskParameters().grasp_channels))
         estimate = report["cap_estimate"]
-        np.testing.assert_allclose(estimate["pose"]["position_m"], [0, 1.007, 0.4], atol=1e-12)
+        np.testing.assert_allclose(estimate["pose"]["position_m"], [0, 1.007, 0.6], atol=1e-12)
         np.testing.assert_allclose(report["cap_axis_world"], [0, -1, 0], atol=1e-12)
         np.testing.assert_allclose(report["grip_axis_world"], [0, 0, 1], atol=1e-12)
         self.assertEqual(estimate["source"], "simulation_ground_truth")
