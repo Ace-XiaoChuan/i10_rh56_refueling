@@ -1,0 +1,315 @@
+{
+  "result": {
+    "state": "completed",
+    "reason": "completed; executor retains holding control",
+    "backend": "mock_no_physics",
+    "stop": null
+  },
+  "events": [
+    {
+      "elapsed_s": 8.369999977730913e-05,
+      "state": "check_ready",
+      "kind": "request",
+      "data": {
+        "backend": "mock_no_physics",
+        "parameters": {
+          "grasp_channels": [
+            0,
+            0,
+            440,
+            390,
+            660,
+            0
+          ],
+          "unlock_angle_deg": 225.0,
+          "thread_lead_m_per_turn": null,
+          "thread_travel_m": null,
+          "grasp_pose_in_cap": null,
+          "approach_channels": null,
+          "retreat_distance_m": null,
+          "hold_duration_s": null,
+          "rotation_tolerance_deg": null
+        },
+        "limits": {
+          "max_twist_segments": 1,
+          "total_timeout_s": 30.0
+        }
+      }
+    },
+    {
+      "elapsed_s": 0.0001916999999593827,
+      "state": "check_ready",
+      "kind": "state",
+      "data": {}
+    },
+    {
+      "elapsed_s": 0.0003059999999095453,
+      "state": "check_ready",
+      "kind": "feedback",
+      "data": {}
+    },
+    {
+      "elapsed_s": 0.00031209999997372506,
+      "state": "estimate",
+      "kind": "state",
+      "data": {}
+    },
+    {
+      "elapsed_s": 0.00048190000006798073,
+      "state": "estimate",
+      "kind": "feedback",
+      "data": {
+        "pose": {
+          "frame_id": "mock_world",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "orientation_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "timestamp_s": 1791039052.537916,
+        "source": "mock",
+        "valid": true,
+        "confidence": 1.0,
+        "timestamp_clock": "unix"
+      }
+    },
+    {
+      "elapsed_s": 0.0004903999997623032,
+      "state": "approach",
+      "kind": "state",
+      "data": {}
+    },
+    {
+      "elapsed_s": 0.0006376999999702093,
+      "state": "approach",
+      "kind": "feedback",
+      "data": {
+        "context": {
+          "source": "mock_no_physics",
+          "timestamp_s": 1791039052.538108,
+          "timestamp_clock": "unix",
+          "valid": true,
+          "detail": "合成判断；没有物理测量或判据验证"
+        },
+        "at_grasp_pose": true,
+        "arm_stopped": true,
+        "local_control_acquired": true
+      }
+    },
+    {
+      "elapsed_s": 0.0006709999997838167,
+      "state": "grasp",
+      "kind": "state",
+      "data": {}
+    },
+    {
+      "elapsed_s": 0.0007971999998517276,
+      "state": "grasp",
+      "kind": "feedback",
+      "data": {
+        "context": {
+          "source": "mock_no_physics",
+          "timestamp_s": 1791039052.5382895,
+          "timestamp_clock": "unix",
+          "valid": true,
+          "detail": "合成判断；没有物理测量或判据验证"
+        },
+        "stable": true
+      }
+    },
+    {
+      "elapsed_s": 0.0008081000000856875,
+      "state": "twist",
+      "kind": "state",
+      "data": {}
+    },
+    {
+      "elapsed_s": 0.0010459999998602143,
+      "state": "twist",
+      "kind": "feedback",
+      "data": {
+        "context": {
+          "source": "mock_no_physics",
+          "timestamp_s": 1791039052.5370255,
+          "timestamp_clock": "unix",
+          "valid": true,
+          "detail": "合成判断；没有物理测量或判据验证"
+        },
+        "end_reason": "segment_boundary",
+        "progress": {
+          "cap_rotation_deg": 30,
+          "axial_progress_m": null
+        },
+        "cap": {
+          "pose": {
+            "frame_id": "mock_world",
+            "position_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "orientation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "timestamp_s": 1791039052.5370004,
+          "source": "mock",
+          "valid": true,
+          "confidence": 1.0,
+          "timestamp_clock": "unix"
+        },
+        "thread_released": false,
+        "grasp_stable": true,
+        "motion_stopped": true
+      }
+    },
+    {
+      "elapsed_s": 0.0010764999997263658,
+      "state": "twist",
+      "kind": "progress",
+      "data": {
+        "cap_rotation_deg": 30,
+        "axial_progress_m": null
+      }
+    },
+    {
+      "elapsed_s": 0.0010843000000022585,
+      "state": "check_support",
+      "kind": "state",
+      "data": {}
+    },
+    {
+      "elapsed_s": 0.0012865999997302424,
+      "state": "check_support",
+      "kind": "feedback",
+      "data": {
+        "context": {
+          "source": "mock_no_physics",
+          "timestamp_s": 1791039052.5370414,
+          "timestamp_clock": "unix",
+          "valid": true,
+          "detail": "合成判断；没有物理测量或判据验证"
+        },
+        "progress": {
+          "cap_rotation_deg": 30,
+          "axial_progress_m": null
+        },
+        "cap": {
+          "pose": {
+            "frame_id": "mock_world",
+            "position_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "orientation_xyzw": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "timestamp_s": 1791039052.5370004,
+          "source": "mock",
+          "valid": true,
+          "confidence": 1.0,
+          "timestamp_clock": "unix"
+        },
+        "thread_released": true,
+        "release_allowed": false,
+        "grasp_stable": true,
+        "motion_stopped": true
+      }
+    },
+    {
+      "elapsed_s": 0.0013014000001021486,
+      "state": "check_support",
+      "kind": "progress",
+      "data": {
+        "cap_rotation_deg": 30,
+        "axial_progress_m": null
+      }
+    },
+    {
+      "elapsed_s": 0.001304699999764125,
+      "state": "check_support",
+      "kind": "decision",
+      "data": {
+        "action": "take_out",
+        "reason": "detachment_during_support_check"
+      }
+    },
+    {
+      "elapsed_s": 0.0013094000000819506,
+      "state": "retreat",
+      "kind": "state",
+      "data": {}
+    },
+    {
+      "elapsed_s": 0.0014722000000801927,
+      "state": "retreat",
+      "kind": "feedback",
+      "data": {
+        "context": {
+          "source": "mock_no_physics",
+          "timestamp_s": 1791039052.5389547,
+          "timestamp_clock": "unix",
+          "valid": true,
+          "detail": "合成判断；没有物理测量或判据验证"
+        },
+        "clear_of_opening": true,
+        "grasp_stable": true
+      }
+    },
+    {
+      "elapsed_s": 0.0014778999998270592,
+      "state": "hold",
+      "kind": "state",
+      "data": {}
+    },
+    {
+      "elapsed_s": 0.0015871999999035324,
+      "state": "hold",
+      "kind": "feedback",
+      "data": {
+        "context": {
+          "source": "mock_no_physics",
+          "timestamp_s": 1791039052.5390856,
+          "timestamp_clock": "unix",
+          "valid": true,
+          "detail": "合成判断；没有物理测量或判据验证"
+        },
+        "stable": true
+      }
+    },
+    {
+      "elapsed_s": 0.0016204999997171399,
+      "state": "completed",
+      "kind": "state",
+      "data": {}
+    }
+  ],
+  "calls": [
+    "check_ready",
+    "approach",
+    "grasp",
+    "twist",
+    "check_support",
+    "retreat",
+    "hold"
+  ],
+  "progress": {
+    "cap_rotation_deg": 30,
+    "axial_progress_m": null
+  }
+}

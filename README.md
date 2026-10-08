@@ -8,9 +8,11 @@
 | --- | --- |
 | [项目合同](doc/assembly_contract.md) | 唯一的当前需求、通道目标、装配参数、实现状态与待办记录 |
 | [项目架构合同](doc/assembly_contract.md#项目架构合同) | 已确认的四模块架构与开发边界 |
-| [长期目标与近期工作计划](doc/assembly_contract.md#长期研究目标与近期工作计划) | 暂定最终路线、规划优先的里程碑和验证条件 |
+| [功能清单与实施顺序](doc/assembly_contract.md#功能清单与实施顺序) | 四模块待开发功能、当前交付顺序与验证边界 |
+| [长期目标与近期工作计划](doc/assembly_contract.md#长期研究目标与近期工作计划) | 博士路线的采用方式、新方法与工程对照；当前顺序查功能清单 |
 | [合作方路线原文](doc/research_route_reference.md) | 用户提供的第五、六章参考提纲；项目采用方式以合同为准 |
-| [当前技术路线](doc/current_technical_route.md) | 已确认的 RGB-D 感知、MTC 规划与 MuJoCo 仿真方向；与总体路线同级归档 |
+| [当前技术路线](doc/current_technical_route.md) | VLM 整盖定位、分割/深度、SpaHybGen 接触与抓姿、旋拧评价、MTC 路径及力反馈执行 |
+| [伟景相机与 SDK 交接](doc/hardware/vizum_camera_sdk_notes.md) | 型号疑点、已有软件检查和回公司后的最小验证步骤 |
 | [模型预览与排障](doc/mjcf_inspection.md) | 启动、重建、验证边界及窗口排障 |
 | [MoveIt 规划模型](src/i10_rh56_moveit_config/README.md) | 模型审计、MTC 接近规划与 MuJoCo 回放 |
 | [资产索引](assets/README.md) | CAD/网格、照片和来源说明 |
@@ -18,7 +20,7 @@
 
 ## 开发基线
 
-2026-09-30 正式进入项目开发，采用“感知、规划、执行、任务流程”四模块架构，见[架构合同](doc/assembly_contract.md#项目架构合同)。现有原型作为开发基础；详细视图和目录拆分按实际需要补充。
+采用“感知、规划、执行、任务流程”四模块架构，见[架构合同](doc/assembly_contract.md#项目架构合同)。2026-10-08 已将当前路线替换为 VLM 整盖定位与 SpaHybGen 自动抓姿生成，保留 MTC；采用状态、下一步与验收统一见[合同实施顺序](doc/assembly_contract.md#实施顺序与交付)。下方已有工具和报告保留为开发基础与手动抓姿对照，不代表新感知、自动候选或物理取盖已经实现。
 
 ## 快速预览
 
@@ -48,6 +50,57 @@ Space 暂停/继续，R 显式重播，F 全景/近景，C 碰撞几何；结束
 
 模型派生使用项目 `.venv`，与当前候选记录版本一致；`~/mujoco-env/bin/activate` 是另一套环境，版本区别见合同。模型变更后先运行 `python3 tools/check_moveit_model_sources.py`，失效时重新生成并构建；RViz 不是依赖。
 
+当前接近终点的单构型余量诊断入口如下；扫描设置和验证边界见[合同](doc/assembly_contract.md#任务点-2-首轮单构型旋转余量诊断)。工具按微元盖角求连续 IK，再审计完整规划碰撞覆盖，输出六个关节的上下限距离、共同通过前缀与首个拒绝状态。
+
+```bash
+.venv/bin/python tools/check_rotation_margin.py
+```
+
+结果保存到独立目录 `artifacts/planning/rotation_margin_single/`，阅读 `report.md`，逐状态数据见 `joint_margins.csv`。目录已存在时拒绝覆盖，可用 `--output-dir` 指定新目录。`--max-angle-deg` 和 `--angle-step-deg` 只改变数值扫描预算，实际设置写入报告。发现几何边界也是完成诊断，退出码为 0；输入失效或程序故障才返回非零。若完整覆盖审计因环境故障未完成，保留诊断与日志；另行完成同一诊断的审计后，可用 `--summarize-only` 汇总已有数据，不重新求解或规划。
+
+该结果仅为固定深度、预型手的运动学诊断，不给出执行停转阈值，也不证明抓稳或脱离；构型筛选与重新抓握评价的最新范围见下方入口及合同。
+
+重新抓握前后的余量比较复用已有第一次成功重新接近记录，在同一盖姿态下分别计算两侧的可转范围：
+
+```bash
+.venv/bin/python tools/check_regrasp_margin.py
+```
+
+来源选择、扫描预算和边界见[合同](doc/assembly_contract.md#任务点-2-第二轮重新抓握前后的旋转余量)。输出目录为 `artifacts/planning/regrasp_margin_single/`，入口 `report.md` 同时展示追加转角、累计转角及停止原因。`--segment-dir` 选择具有第一次成功重新接近节点的原分段目录；`--output-dir` 必须是工作区内不存在的新目录。`--max-additional-angle-deg` 指定两侧共同扫描预算，`--angle-step-deg` 指定数值步长；不改变执行参数。
+
+`--prepare-only` 只保存两侧数值诊断，仍待完整覆盖审计；`--summarize-only` 只复核汇总已有诊断和审计，不重新运行 IK 或 MTC。工具保留原始关节绕数，不自动换分支、不覆盖已有结果；一次成功重新接近可能减少后续可转范围，报告如实记录。这里的“重新抓握”只表示已有几何路径的节点，实际松手和再次抓稳仍未验证。
+
+
+重新抓握构型筛选会保留候选绕数、评价连续旋转前缀、指定预抓取关节目标进行真实 MTC 规划，再检查实际到达后的余量：
+
+```bash
+# 首次使用先构建新增规划器；原模型无需重新生成
+source /opt/ros/humble/setup.bash
+source install/setup.bash
+colcon build --packages-select i10_rh56_moveit_config
+.venv/bin/python tools/select_regrasp_configuration.py
+# 已有结果仅复核，不重新计算或规划
+.venv/bin/python tools/select_regrasp_configuration.py --verify-only
+```
+
+有限候选预算、筛选规则及验证边界见[合同](doc/assembly_contract.md#任务点-2-第三轮重新抓握构型筛选与路径衔接)。输出位于 `artifacts/planning/regrasp_selection_single/`，入口为 `report.md`；保留候选池、未入选项、独立诊断、实际规划路径和拒绝记录。`--output-dir` 要求工作区内不存在的新目录，不覆盖或自动续跑。离线筛选不改变任务运行时的失败停止规则；几何路径和旋转余量不代表允许释放或实际抓稳。
+
+## 初始到达构型筛选
+
+在原单随机场景、仿真起点和预型下筛选初始机械臂构型，真实 MTC 两段接近后重新检查旋转空间：
+
+```bash
+# 新增原生规划器须先构建，模型无需重新生成
+source /opt/ros/humble/setup.bash
+source install/setup.bash
+colcon build --packages-select i10_rh56_moveit_config
+.venv/bin/python tools/select_initial_configuration.py
+# 只读复核保存的来源、路径和共同通过范围
+.venv/bin/python tools/select_initial_configuration.py --verify-only
+```
+
+数值预算、失败记录、采用状态和物理边界统一见[合同](doc/assembly_contract.md#任务点-2-第四轮初始到达构型筛选)。结果入口为 `artifacts/planning/initial_selection_single_v2/report.md`；首版未完成的拒绝记录、算法快照另存于 `artifacts/planning/initial_selection_single/`，不计为通过。`--trajectory` 选择原始两段接近基线，`--output-dir` 必须为工作区内不存在的新目录；不覆盖或自动续跑。可用所选 `path/mtc.json` 的真实几何轨迹单独回放，保留预型且只运行 `mj_forward`。筛选结果不写入正式任务参数，不能作为抓稳、脱离或允许松手的证据。
+
 ## 状态机演示
 
 使用 Python 3.10+，无需安装额外依赖；此入口只产生合成反馈，不驱动 MuJoCo 或硬件。
@@ -55,6 +108,11 @@ Space 暂停/继续，R 显式重播，F 全景/近景，C 碰撞几何；结束
 ```bash
 # 正常流程，输出结果及事件；可选写入 JSONL 文件
 python3 tools/run_cap_task.py --events /tmp/cap-task.jsonl
+# 未达到参考角度就脱离，以及一次计划重新抓握
+python3 tools/run_cap_task.py --scenario early_detach
+python3 tools/run_cap_task.py --scenario regrasp
+# 支撑未知：保持已有抓握并等待人工，不调用释放
+python3 tools/run_cap_task.py --scenario support_unknown
 # 在拧转阶段注入失败：停止并等待人工
 python3 tools/run_cap_task.py --fail-at twist
 # 执行中取消；Ctrl+C 也会请求停止
@@ -63,7 +121,7 @@ python3 tools/run_cap_task.py --delay 0.2 --cancel-after 0.7
 PYTHONPATH=src python3 -m unittest discover -s tests -v
 ```
 
-成功退出码为 0，失败/取消为 1。`--timeout` 设置演示阶段及停止回执的等待上限，默认 5 秒；不是物理控制参数。状态机代码见 [state_machine.py](src/fuel_cap_task/state_machine.py)，反馈及参数类型见 [interfaces.py](src/fuel_cap_task/interfaces.py)。未来执行器负责真实规划、控制权交接与保持，任务层只编排。
+成功退出码为 0，失败/取消为 1。`--timeout` 设置演示阶段及停止回执等待上限；`--total-timeout` 与 `--max-segments` 限制总软件等待和旋拧段数，默认段数对应所选有限脚本。这些均不是物理控制参数，入口通过 `RunLimits` 显式传入。状态机代码见 [state_machine.py](src/fuel_cap_task/state_machine.py)，新执行回执见 [execution_contract.py](src/fuel_cap_task/execution_contract.py)，位姿与参数继续复用 [interfaces.py](src/fuel_cap_task/interfaces.py)。旧执行回执不作为新版有效回执。实际检查结果见[合同实施记录](doc/assembly_contract.md#任务点-1-实施与验证)和[模拟报告](artifacts/task_orchestration/feedback_v1/report.json)；真实规划、支撑判据、控制交接及保持能力仍待后端接入验证。
 
 ## 有边界的随机场景
 

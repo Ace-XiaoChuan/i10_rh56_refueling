@@ -1,0 +1,3129 @@
+{
+  "mode": "finite_regrasp_candidate_pool_not_execution",
+  "origin": {
+    "kind": "first_successful_regrasp_endpoint",
+    "side": "before",
+    "segment_summary_path": "artifacts/planning/segmented_single_tol_020/summary.json",
+    "cumulative_angle_deg": 90.0,
+    "input_hashes": {
+      "artifacts/planning/segmented_single_tol_020/rotation_1.json": "ded971d51561cc9381f707d31ec45c9d4cb7a25b96503c9eeab9943fabd70eab",
+      "artifacts/planning/segmented_single_tol_020/rotation_1_fcl.json": "7b62b165824ef569807770b34989894f729541da66d144d010b8c8141046b0a4",
+      "artifacts/planning/segmented_single_tol_020/regrasp_1_request.json": "bed16b44ff575e81a92e1fa0207b86bf2a945f3f359a336402757992143b316c",
+      "artifacts/planning/segmented_single_tol_020/regrasp_1_mtc.json": "9c8d386c91dc90f51de153201a59db2f35a961a710cb78c92d0e038dbd800257",
+      "artifacts/planning/segmented_single_tol_020/regrasp_1_validation.json": "b58e9ca6523ae933ed73ace08b3be5254a43246899ed01e3f9ceb69ad53afd6e",
+      "artifacts/planning/segmented_single_tol_020/rotation_2.json": "83e025b9833fc9eb5c851ac59d779939680c3d750d7f7139660d2644b0af4f1b",
+      "artifacts/planning/segmented_single_tol_020/rotation_2_fcl.json": "43224ca3f67691fe49dfa3b7e7a03ab714d78e4eeb546c47359bfdab5ab63ad0",
+      "artifacts/planning/segmented_single_tol_020/summary.json": "ac510f469bf6eb76687bc5b374c2f960dee45d080fe133ffdd203a10a148edb6",
+      "artifacts/planning/random_single/approach.json": "bd2e297f98c634ae40ba06cd89c21e19e84a2f0883fae0ec11c9a825736ea64c"
+    }
+  },
+  "seed_count": 24,
+  "random_seed": 0,
+  "scan_count_budget": 12,
+  "joint_limits_rad": [
+    [
+      -6.28319,
+      6.28319
+    ],
+    [
+      -6.28319,
+      6.28319
+    ],
+    [
+      -6.28319,
+      6.28319
+    ],
+    [
+      -6.28319,
+      6.28319
+    ],
+    [
+      -6.28319,
+      6.28319
+    ],
+    [
+      -6.28319,
+      6.28319
+    ]
+  ],
+  "ik_attempts": [
+    {
+      "index": 0,
+      "seed_q_rad": [
+        1.345961372789421,
+        0.14572680417235123,
+        -1.9674079876058674,
+        0.18734257483739486,
+        1.3992966201361519,
+        1.327046302002907
+      ],
+      "converged": true,
+      "candidate_q_rad": [
+        1.345961372789421,
+        0.14572680417235123,
+        -1.9674079876058674,
+        0.18734257483739486,
+        1.3992966201361519,
+        1.327046302002907
+      ],
+      "position_error_m": 2.00334979922311e-05,
+      "orientation_error_rad": 8.222027628236257e-05
+    },
+    {
+      "index": 1,
+      "seed_q_rad": [
+        -1.2599962432452594,
+        -0.14557725796351725,
+        1.9681932960117656,
+        -0.1831405801596533,
+        -1.381205956467394,
+        -5.353926021727275
+      ],
+      "converged": true,
+      "candidate_q_rad": [
+        -1.2599962432452594,
+        -0.14557725796351725,
+        1.9681932960117656,
+        -0.1831405801596533,
+        -1.381205956467394,
+        -5.353926021727275
+      ],
+      "position_error_m": 8.798272808244897e-05,
+      "orientation_error_rad": 8.676523935639312e-05
+    },
+    {
+      "index": 2,
+      "seed_q_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "converged": true,
+      "candidate_q_rad": [
+        -1.259875682181447,
+        -0.5242920545847134,
+        1.745083348934856,
+        3.114171455883679,
+        1.3811020374275333,
+        -2.2124677065418816
+      ],
+      "position_error_m": 2.017497413819578e-05,
+      "orientation_error_rad": 1.5176673822163756e-05
+    },
+    {
+      "index": 3,
+      "seed_q_rad": [
+        1.721112608322577,
+        -2.8929476358919755,
+        -5.768301128278682,
+        -6.075497451447003,
+        3.93667286848152,
+        5.186843431191217
+      ],
+      "converged": true,
+      "candidate_q_rad": [
+        1.3459528051562875,
+        -4.10191259349252,
+        -4.537384133102724,
+        -1.2765302577266369,
+        4.883930833056114,
+        4.468585488971729
+      ],
+      "position_error_m": 1.8264005198888076e-07,
+      "orientation_error_rad": 2.136788406701229e-06
+    },
+    {
+      "index": 4,
+      "seed_q_rad": [
+        1.3400256798851737,
+        2.883940994018098,
+        0.5482082202512606,
+        5.467285404838136,
+        3.969135785441739,
+        -6.248776966231855
+      ],
+      "converged": false,
+      "candidate_q_rad": [
+        1.3010051470111772,
+        2.24079929092722,
+        1.716392352316695,
+        4.716489525391121,
+        5.093046501547079,
+        -6.28319
+      ],
+      "position_error_m": 0.06527332509006557,
+      "orientation_error_rad": 1.7383633849160283
+    },
+    {
+      "index": 5,
+      "seed_q_rad": [
+        4.4912779532244995,
+        -5.861140898192919,
+        2.8859376089083204,
+        -4.075834722372415,
+        4.563844346239168,
+        0.5210174489137813
+      ],
+      "converged": false,
+      "candidate_q_rad": [
+        5.032150351891612,
+        -6.28319,
+        2.0705399003460507,
+        -6.28319,
+        4.918442233905185,
+        0.8595587927397782
+      ],
+      "position_error_m": 0.11442280136425587,
+      "orientation_error_rad": 0.22139358967832398
+    },
+    {
+      "index": 6,
+      "seed_q_rad": [
+        -2.5168964929888187,
+        -0.9715417572861691,
+        -5.927314250911078,
+        -4.72139911986141,
+        2.1441312323177426,
+        1.8496393344564241
+      ],
+      "converged": true,
+      "candidate_q_rad": [
+        -1.2598818068632844,
+        -0.5243176733121174,
+        -4.538124813775304,
+        -3.1690281931669824,
+        1.3811039789561506,
+        4.070727327897912
+      ],
+      "position_error_m": 2.0927403028447906e-06,
+      "orientation_error_rad": 2.859806308465776e-06
+    },
+    {
+      "index": 7,
+      "seed_q_rad": [
+        1.4499731572157986,
+        -1.4617520556745536,
+        6.248128992902825,
+        6.042359584490842,
+        2.3315910829385116,
+        1.8907284401063622
+      ],
+      "converged": true,
+      "candidate_q_rad": [
+        1.345952769597458,
+        0.14571780605510393,
+        4.315816281812267,
+        0.18744058270729627,
+        1.3992545544918638,
+        1.3269931265247306
+      ],
+      "position_error_m": 9.408572382395395e-07,
+      "orientation_error_rad": 4.781272334065185e-06
+    },
+    {
+      "index": 8,
+      "seed_q_rad": [
+        2.368093226112051,
+        -1.3958555961374701,
+        -4.5855159812164725,
+        2.7833066484481046,
+        0.3186120508725123,
+        -2.3845726998134507
+      ],
+      "converged": true,
+      "candidate_q_rad": [
+        5.023303898056001,
+        -2.00172514931754,
+        -1.9681612769758852,
+        4.019934604647327,
+        -1.381106376719421,
+        -5.354050848163728
+      ],
+      "position_error_m": 3.432119123929054e-07,
+      "orientation_error_rad": 1.8286362665364605e-06
+    },
+    {
+      "index": 9,
+      "seed_q_rad": [
+        -0.17799826348338232,
+        4.894452131806591,
+        5.454355758042298,
+        -1.7869995959790739,
+        0.898871034285853,
+        -2.2384569213711023
+      ],
+      "converged": true,
+      "candidate_q_rad": [
+        -1.2598837414702715,
+        4.102567304920489,
+        4.538128029635066,
+        1.280345300153802,
+        1.381121604261068,
+        -2.212462247949477
+      ],
+      "position_error_m": 1.786388467463368e-06,
+      "orientation_error_rad": 1.5090702928872723e-05
+    },
+    {
+      "index": 10,
+      "seed_q_rad": [
+        1.1850100135008654,
+        -2.0368691340116705,
+        -1.3619568241429256,
+        4.904335811545983,
+        -3.4286413597740077,
+        1.54801647123979
+      ],
+      "converged": true,
+      "candidate_q_rad": [
+        -1.2598815909445675,
+        -2.180616295645158,
+        -1.7450584838722512,
+        1.2803343582562314,
+        -4.902077622883207,
+        4.070726924206496
+      ],
+      "position_error_m": 3.8251510749156805e-07,
+      "orientation_error_rad": 3.4290665722723374e-06
+    },
+    {
+      "index": 11,
+      "seed_q_rad": [
+        -5.227421266713192,
+        4.180132764188705,
+        3.607786429259641,
+        -3.275182618962226,
+        4.731043908375013,
+        -5.547201818784702
+      ],
+      "converged": false,
+      "candidate_q_rad": [
+        -5.008101518551785,
+        6.28319,
+        4.1711303262286155,
+        -3.005232998376915,
+        5.351747891177579,
+        -6.28319
+      ],
+      "position_error_m": 0.312988576342772,
+      "orientation_error_rad": 1.779914451468663
+    },
+    {
+      "index": 12,
+      "seed_q_rad": [
+        -2.0594152927002245,
+        -4.394721112802032,
+        -0.6240543897257336,
+        3.7237233836528487,
+        -3.384852357745152,
+        -5.629470562730225
+      ],
+      "converged": false,
+      "candidate_q_rad": [
+        -4.94541403334987,
+        -5.760784682465648,
+        -1.764816226036854,
+        3.0916546980382837,
+        -1.3654236410920115,
+        -6.28319
+      ],
+      "position_error_m": 0.019981240001142136,
+      "orientation_error_rad": 1.7974815371355228
+    },
+    {
+      "index": 13,
+      "seed_q_rad": [
+        -1.1994378511035446,
+        -3.788599647739784,
+        -5.142752742592779,
+        1.0094872886174402,
+        -2.5296608904669475,
+        2.161352994453236
+      ],
+      "converged": false,
+      "candidate_q_rad": [
+        -1.2567930432890326,
+        -6.28319,
+        -4.23524619968911,
+        6.10065316514274,
+        -1.3681955966706512,
+        0.9614821372896135
+      ],
+      "position_error_m": 0.093218178849819,
+      "orientation_error_rad": 0.08098830139775579
+    },
+    {
+      "index": 14,
+      "seed_q_rad": [
+        -3.776003115226724,
+        5.555761349606644,
+        -1.6950768839715513,
+        -4.957496228714259,
+        1.6224220933455715,
+        5.367786432580988
+      ],
+      "converged": false,
+      "candidate_q_rad": [
+        -4.916015105658857,
+        6.28319,
+        -2.0714717533781064,
+        -6.122727790645237,
+        1.4554936976274078,
+        6.28319
+      ],
+      "position_error_m": 0.09763746434674384,
+      "orientation_error_rad": 1.3228333570422166
+    },
+    {
+      "index": 15,
+      "seed_q_rad": [
+        -0.7492433305226669,
+        5.712556888105406,
+        -0.0013092447918259253,
+        -0.9396055132690746,
+        1.5106479191370035,
+        6.221570821459072
+      ],
+      "converged": true,
+      "candidate_q_rad": [
+        -1.2598856848112576,
+        4.102547620365803,
+        -1.7450989807092636,
+        1.280268296071065,
+        1.3811138489024657,
+        4.070706833881739
+      ],
+      "position_error_m": 1.2908163006223929e-05,
+      "orientation_error_rad": 5.84926370744967e-05
+    },
+    {
+      "index": 16,
+      "seed_q_rad": [
+        5.6415968178644365,
+        -0.5020879622889609,
+        3.2387186071052083,
+        -0.03238738787829476,
+        0.36834774365349165,
+        3.591291713735976
+      ],
+      "converged": false,
+      "candidate_q_rad": [
+        6.28319,
+        -0.4295421702827091,
+        3.373693424343816,
+        0.22713935431691817,
+        1.014706724569194,
+        3.0378572870644702
+      ],
+      "position_error_m": 0.6950075263215106,
+      "orientation_error_rad": 1.367382391777032
+    },
+    {
+      "index": 17,
+      "seed_q_rad": [
+        -1.072467027773886,
+        2.946609666854452,
+        2.653301639112832,
+        5.429426204664625,
+        -4.838902855791499,
+        2.877890986925393
+      ],
+      "converged": false,
+      "candidate_q_rad": [
+        0.43532186645997567,
+        2.712290203007441,
+        2.8112746104229425,
+        6.28319,
+        -6.216948474086892,
+        3.0572091141572733
+      ],
+      "position_error_m": 0.4982400711644433,
+      "orientation_error_rad": 1.4169888622645954
+    },
+    {
+      "index": 18,
+      "seed_q_rad": [
+        5.371171508189097,
+        5.880138314545278,
+        -6.098384983409283,
+        4.569639557260198,
+        6.046879727588908,
+        5.745476856859621
+      ],
+      "converged": false,
+      "candidate_q_rad": [
+        5.02348545725625,
+        6.137785663484174,
+        -4.315111834476447,
+        6.101682426148917,
+        4.901475847058403,
+        6.28319
+      ],
+      "position_error_m": 0.0005594812065094715,
+      "orientation_error_rad": 0.9286514473631748
+    },
+    {
+      "index": 19,
+      "seed_q_rad": [
+        -4.413764891961783,
+        5.939233273448505,
+        4.900078368695236,
+        4.0510720189606895,
+        -0.2514793540197342,
+        -3.3631035901030453
+      ],
+      "converged": false,
+      "candidate_q_rad": [
+        -4.937305658983481,
+        6.28319,
+        4.360845116841233,
+        3.0052889532781206,
+        -1.3990918404714914,
+        -1.8146235690152184
+      ],
+      "position_error_m": 0.39878938096431943,
+      "orientation_error_rad": 0.5144950433374448
+    },
+    {
+      "index": 20,
+      "seed_q_rad": [
+        3.7935460667941703,
+        5.322240929299796,
+        -2.9388958688715805,
+        0.4892645612552968,
+        -0.719389705031027,
+        5.416327379199267
+      ],
+      "converged": false,
+      "candidate_q_rad": [
+        1.3330000715761923,
+        6.28319,
+        -2.0646059660797125,
+        2.8519955666303094,
+        -1.4920429900846086,
+        4.7245520115745885
+      ],
+      "position_error_m": 0.3868209184372702,
+      "orientation_error_rad": 0.5570310434193547
+    },
+    {
+      "index": 21,
+      "seed_q_rad": [
+        -5.774117009135879,
+        2.915478016974693,
+        1.4372576829949324,
+        -5.9267400431447514,
+        2.7547989688544936,
+        -6.082231849949576
+      ],
+      "converged": true,
+      "candidate_q_rad": [
+        -4.937232114867205,
+        2.001162134597081,
+        1.9673669320260212,
+        -4.016446599889586,
+        1.3992563023688318,
+        -4.956193103883334
+      ],
+      "position_error_m": 1.8356670090041936e-07,
+      "orientation_error_rad": 1.9675542230559983e-06
+    },
+    {
+      "index": 22,
+      "seed_q_rad": [
+        3.2415103169917705,
+        0.16033096482611242,
+        5.392286698139082,
+        -5.452772234816522,
+        4.289122636175461,
+        -5.445138007629272
+      ],
+      "converged": true,
+      "candidate_q_rad": [
+        1.345952939644837,
+        0.1457182035423717,
+        4.315818330339446,
+        -6.095738522176023,
+        1.3992549988145526,
+        -4.956192298809407
+      ],
+      "position_error_m": 6.843416971545467e-08,
+      "orientation_error_rad": 6.742399089433488e-07
+    },
+    {
+      "index": 23,
+      "seed_q_rad": [
+        -1.9564599685554178,
+        -0.875892620825387,
+        5.856713210723323,
+        0.7820289775428373,
+        -3.0301991536686605,
+        -3.2462011399191053
+      ],
+      "converged": true,
+      "candidate_q_rad": [
+        -1.259881477189659,
+        -2.1806171571955657,
+        4.538122881165965,
+        1.2803274884643314,
+        -4.902079856008751,
+        -2.2124573608277167
+      ],
+      "position_error_m": 1.699312411952409e-06,
+      "orientation_error_rad": 7.027895196952819e-06
+    }
+  ],
+  "candidates": [
+    {
+      "id": "candidate_000",
+      "arm_qpos_rad": [
+        1.345961372789421,
+        0.14572680417235123,
+        -1.9674079876058674,
+        0.18734257483739486,
+        1.3992966201361519,
+        1.327046302002907
+      ],
+      "origin": {
+        "kind": "known_before"
+      },
+      "labels": [
+        "before"
+      ],
+      "initial_geometry_passed": true,
+      "position_error_m": 2.00334979922311e-05,
+      "orientation_error_rad": 8.222027628236257e-05,
+      "contacts": [],
+      "minimum_joint_margin_rad": 4.315782012394132,
+      "distance_from_before_rad": 0.0,
+      "scan_selected": true,
+      "prefilter_reason": "selected"
+    },
+    {
+      "id": "candidate_001",
+      "arm_qpos_rad": [
+        -1.2599962432452594,
+        -0.14557725796351725,
+        1.9681932960117656,
+        -0.1831405801596533,
+        -1.381205956467394,
+        -5.353926021727275
+      ],
+      "origin": {
+        "kind": "known_after"
+      },
+      "labels": [
+        "old_after"
+      ],
+      "initial_geometry_passed": true,
+      "position_error_m": 8.798272808244897e-05,
+      "orientation_error_rad": 8.676523935639312e-05,
+      "contacts": [],
+      "minimum_joint_margin_rad": 0.9292639782727257,
+      "distance_from_before_rad": 8.65266861458839,
+      "scan_selected": true,
+      "prefilter_reason": "selected"
+    },
+    {
+      "id": "candidate_002",
+      "arm_qpos_rad": [
+        -1.259875682181447,
+        -0.5242920545847134,
+        1.745083348934856,
+        3.114171455883679,
+        1.3811020374275333,
+        -2.2124677065418816
+      ],
+      "origin": {
+        "kind": "ik_seed",
+        "seed_index": 2
+      },
+      "labels": [],
+      "initial_geometry_passed": false,
+      "position_error_m": 2.017497413819578e-05,
+      "orientation_error_rad": 1.5176673822163756e-05,
+      "contacts": [
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.0057802202225541305
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.0058044334150268335
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005929138601578586
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005918112344686213
+        }
+      ],
+      "minimum_joint_margin_rad": 3.1690185441163212,
+      "distance_from_before_rad": 6.489739725943613,
+      "scan_selected": false,
+      "prefilter_reason": "initial_geometry_rejected"
+    },
+    {
+      "id": "candidate_003",
+      "arm_qpos_rad": [
+        1.3459528051562875,
+        -4.10191259349252,
+        -4.537384133102724,
+        -1.2765302577266369,
+        4.883930833056114,
+        4.468585488971729
+      ],
+      "origin": {
+        "kind": "ik_seed",
+        "seed_index": 3
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 1.8264005198888076e-07,
+      "orientation_error_rad": 2.136788406701229e-06,
+      "contacts": [],
+      "minimum_joint_margin_rad": 1.399259166943886,
+      "distance_from_before_rad": 6.985848951424813,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_004",
+      "arm_qpos_rad": [
+        -1.2598818068632844,
+        -0.5243176733121174,
+        -4.538124813775304,
+        -3.1690281931669824,
+        1.3811039789561506,
+        4.070727327897912
+      ],
+      "origin": {
+        "kind": "ik_seed",
+        "seed_index": 6
+      },
+      "labels": [],
+      "initial_geometry_passed": false,
+      "position_error_m": 2.0927403028447906e-06,
+      "orientation_error_rad": 2.859806308465776e-06,
+      "contacts": [
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005780416112297616
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.00580462782088394
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005929290555370295
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.0059182642429088765
+        }
+      ],
+      "minimum_joint_margin_rad": 1.7450651862246964,
+      "distance_from_before_rad": 5.713256913133198,
+      "scan_selected": false,
+      "prefilter_reason": "initial_geometry_rejected"
+    },
+    {
+      "id": "candidate_005",
+      "arm_qpos_rad": [
+        1.345952769597458,
+        0.14571780605510393,
+        4.315816281812267,
+        0.18744058270729627,
+        1.3992545544918638,
+        1.3269931265247306
+      ],
+      "origin": {
+        "kind": "ik_seed",
+        "seed_index": 7
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 9.408572382395395e-07,
+      "orientation_error_rad": 4.781272334065185e-06,
+      "contacts": [],
+      "minimum_joint_margin_rad": 1.9673737181877335,
+      "distance_from_before_rad": 6.283224270560676,
+      "scan_selected": true,
+      "prefilter_reason": "selected"
+    },
+    {
+      "id": "candidate_006",
+      "arm_qpos_rad": [
+        5.023303898056001,
+        -2.00172514931754,
+        -1.9681612769758852,
+        4.019934604647327,
+        -1.381106376719421,
+        -5.354050848163728
+      ],
+      "origin": {
+        "kind": "ik_seed",
+        "seed_index": 8
+      },
+      "labels": [],
+      "initial_geometry_passed": false,
+      "position_error_m": 3.432119123929054e-07,
+      "orientation_error_rad": 1.8286362665364605e-06,
+      "contacts": [
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.004739376786730518
+        }
+      ],
+      "minimum_joint_margin_rad": 0.9291391518362726,
+      "distance_from_before_rad": 9.22988949717044,
+      "scan_selected": false,
+      "prefilter_reason": "initial_geometry_rejected"
+    },
+    {
+      "id": "candidate_007",
+      "arm_qpos_rad": [
+        -1.2598837414702715,
+        4.102567304920489,
+        4.538128029635066,
+        1.280345300153802,
+        1.381121604261068,
+        -2.212462247949477
+      ],
+      "origin": {
+        "kind": "ik_seed",
+        "seed_index": 9
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 1.786388467463368e-06,
+      "orientation_error_rad": 1.5090702928872723e-05,
+      "contacts": [],
+      "minimum_joint_margin_rad": 1.745061970364934,
+      "distance_from_before_rad": 8.859577893073016,
+      "scan_selected": true,
+      "prefilter_reason": "selected"
+    },
+    {
+      "id": "candidate_008",
+      "arm_qpos_rad": [
+        -1.2598815909445675,
+        -2.180616295645158,
+        -1.7450584838722512,
+        1.2803343582562314,
+        -4.902077622883207,
+        4.070726924206496
+      ],
+      "origin": {
+        "kind": "ik_seed",
+        "seed_index": 10
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 3.8251510749156805e-07,
+      "orientation_error_rad": 3.4290665722723374e-06,
+      "contacts": [],
+      "minimum_joint_margin_rad": 1.3811123771167937,
+      "distance_from_before_rad": 7.789830602611677,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_009",
+      "arm_qpos_rad": [
+        -1.2598856848112576,
+        4.102547620365803,
+        -1.7450989807092636,
+        1.280268296071065,
+        1.3811138489024657,
+        4.070706833881739
+      ],
+      "origin": {
+        "kind": "ik_seed",
+        "seed_index": 15
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 1.2908163006223929e-05,
+      "orientation_error_rad": 5.84926370744967e-05,
+      "contacts": [],
+      "minimum_joint_margin_rad": 2.1806423796341976,
+      "distance_from_before_rad": 5.587376979684545,
+      "scan_selected": true,
+      "prefilter_reason": "selected"
+    },
+    {
+      "id": "candidate_010",
+      "arm_qpos_rad": [
+        -4.937232114867205,
+        2.001162134597081,
+        1.9673669320260212,
+        -4.016446599889586,
+        1.3992563023688318,
+        -4.956193103883334
+      ],
+      "origin": {
+        "kind": "ik_seed",
+        "seed_index": 21
+      },
+      "labels": [],
+      "initial_geometry_passed": false,
+      "position_error_m": 1.8356670090041936e-07,
+      "orientation_error_rad": 1.9675542230559983e-06,
+      "contacts": [
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.0040900189049028
+        }
+      ],
+      "minimum_joint_margin_rad": 1.3269968961166665,
+      "distance_from_before_rad": 10.749630467869213,
+      "scan_selected": false,
+      "prefilter_reason": "initial_geometry_rejected"
+    },
+    {
+      "id": "candidate_011",
+      "arm_qpos_rad": [
+        1.345952939644837,
+        0.1457182035423717,
+        4.315818330339446,
+        -6.095738522176023,
+        1.3992549988145526,
+        -4.956192298809407
+      ],
+      "origin": {
+        "kind": "ik_seed",
+        "seed_index": 22
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 6.843416971545467e-08,
+      "orientation_error_rad": 6.742399089433488e-07,
+      "contacts": [],
+      "minimum_joint_margin_rad": 0.1874514778239771,
+      "distance_from_before_rad": 10.88279046709911,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_012",
+      "arm_qpos_rad": [
+        -1.259881477189659,
+        -2.1806171571955657,
+        4.538122881165965,
+        1.2803274884643314,
+        -4.902079856008751,
+        -2.2124573608277167
+      ],
+      "origin": {
+        "kind": "ik_seed",
+        "seed_index": 23
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 1.699312411952409e-06,
+      "orientation_error_rad": 7.027895196952819e-06,
+      "contacts": [],
+      "minimum_joint_margin_rad": 1.3811101439912497,
+      "distance_from_before_rad": 10.390104559851315,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_013",
+      "arm_qpos_rad": [
+        -4.937223934390165,
+        0.14572680417235123,
+        -1.9674079876058674,
+        0.18734257483739486,
+        1.3992966201361519,
+        1.327046302002907
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_000",
+        "joint_index": 0,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 2.0033497992492423e-05,
+      "orientation_error_rad": 8.222027628234486e-05,
+      "contacts": [],
+      "minimum_joint_margin_rad": 1.3459660656098356,
+      "distance_from_before_rad": 6.283185307179586,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_014",
+      "arm_qpos_rad": [
+        1.345961372789421,
+        -6.137458503007235,
+        -1.9674079876058674,
+        0.18734257483739486,
+        1.3992966201361519,
+        1.327046302002907
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_000",
+        "joint_index": 1,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 2.0033497992440558e-05,
+      "orientation_error_rad": 8.222027628185516e-05,
+      "contacts": [],
+      "minimum_joint_margin_rad": 0.14573149699276566,
+      "distance_from_before_rad": 6.283185307179586,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_015",
+      "arm_qpos_rad": [
+        1.345961372789421,
+        0.14572680417235123,
+        -1.9674079876058674,
+        -6.0958427323421915,
+        1.3992966201361519,
+        1.327046302002907
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_000",
+        "joint_index": 3,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 2.0033497992237016e-05,
+      "orientation_error_rad": 8.222027628217464e-05,
+      "contacts": [],
+      "minimum_joint_margin_rad": 0.18734726765780874,
+      "distance_from_before_rad": 6.283185307179586,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_016",
+      "arm_qpos_rad": [
+        1.345961372789421,
+        0.14572680417235123,
+        -1.9674079876058674,
+        0.18734257483739486,
+        -4.883888687043434,
+        1.327046302002907
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_000",
+        "joint_index": 4,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 2.0033497992290762e-05,
+      "orientation_error_rad": 8.222027628254285e-05,
+      "contacts": [],
+      "minimum_joint_margin_rad": 1.399301312956566,
+      "distance_from_before_rad": 6.283185307179586,
+      "scan_selected": true,
+      "prefilter_reason": "selected"
+    },
+    {
+      "id": "candidate_017",
+      "arm_qpos_rad": [
+        1.345961372789421,
+        0.14572680417235123,
+        -1.9674079876058674,
+        0.18734257483739486,
+        1.3992966201361519,
+        -4.956139005176679
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_000",
+        "joint_index": 5,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 2.0033497992229918e-05,
+      "orientation_error_rad": 8.222027628244744e-05,
+      "contacts": [],
+      "minimum_joint_margin_rad": 1.3270509948233213,
+      "distance_from_before_rad": 6.283185307179586,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_018",
+      "arm_qpos_rad": [
+        5.023189063934327,
+        -0.14557725796351725,
+        1.9681932960117656,
+        -0.1831405801596533,
+        -1.381205956467394,
+        -5.353926021727275
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_001",
+        "joint_index": 0,
+        "turns": 1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 8.798272808265658e-05,
+      "orientation_error_rad": 8.676523935594605e-05,
+      "contacts": [],
+      "minimum_joint_margin_rad": 0.9292639782727257,
+      "distance_from_before_rad": 9.033253154309177,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_019",
+      "arm_qpos_rad": [
+        -1.2599962432452594,
+        6.137608049216069,
+        1.9681932960117656,
+        -0.1831405801596533,
+        -1.381205956467394,
+        -5.353926021727275
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_001",
+        "joint_index": 1,
+        "turns": 1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 8.79827280824414e-05,
+      "orientation_error_rad": 8.676523935677369e-05,
+      "contacts": [],
+      "minimum_joint_margin_rad": 0.14558195078393155,
+      "distance_from_before_rad": 10.520763135437123,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_020",
+      "arm_qpos_rad": [
+        -1.2599962432452594,
+        -0.14557725796351725,
+        -4.314992011167821,
+        -0.1831405801596533,
+        -1.381205956467394,
+        -5.353926021727275
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_001",
+        "joint_index": 2,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 8.798272808244645e-05,
+      "orientation_error_rad": 8.676523935646003e-05,
+      "contacts": [],
+      "minimum_joint_margin_rad": 0.9292639782727257,
+      "distance_from_before_rad": 8.055486790874498,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_021",
+      "arm_qpos_rad": [
+        -1.2599962432452594,
+        -0.14557725796351725,
+        1.9681932960117656,
+        6.100044727019933,
+        -1.381205956467394,
+        -5.353926021727275
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_001",
+        "joint_index": 3,
+        "turns": 1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 8.798272808244897e-05,
+      "orientation_error_rad": 8.676523935674711e-05,
+      "contacts": [],
+      "minimum_joint_margin_rad": 0.18314527298006755,
+      "distance_from_before_rad": 10.473369234690928,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_022",
+      "arm_qpos_rad": [
+        -1.2599962432452594,
+        -0.14557725796351725,
+        1.9681932960117656,
+        -0.1831405801596533,
+        4.9019793507121925,
+        -5.353926021727275
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_001",
+        "joint_index": 4,
+        "turns": 1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 8.798272808242571e-05,
+      "orientation_error_rad": 8.676523935634056e-05,
+      "contacts": [],
+      "minimum_joint_margin_rad": 0.9292639782727257,
+      "distance_from_before_rad": 8.911019351704924,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_023",
+      "arm_qpos_rad": [
+        -1.2599962432452594,
+        -0.14557725796351725,
+        1.9681932960117656,
+        -0.1831405801596533,
+        -1.381205956467394,
+        0.9292592854523116
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_001",
+        "joint_index": 5,
+        "turns": 1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 8.798272808244897e-05,
+      "orientation_error_rad": 8.676523935633086e-05,
+      "contacts": [],
+      "minimum_joint_margin_rad": 4.314996703988235,
+      "distance_from_before_rad": 5.512850213271763,
+      "scan_selected": true,
+      "prefilter_reason": "selected"
+    },
+    {
+      "id": "candidate_024",
+      "arm_qpos_rad": [
+        5.02330962499814,
+        -0.5242920545847134,
+        1.745083348934856,
+        3.114171455883679,
+        1.3811020374275333,
+        -2.2124677065418816
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_002",
+        "joint_index": 0,
+        "turns": 1
+      },
+      "labels": [],
+      "initial_geometry_passed": false,
+      "position_error_m": 2.0174974138231425e-05,
+      "orientation_error_rad": 1.5176673822321546e-05,
+      "contacts": [
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005780220222554196
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.0058044334150268995
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.0059291386015786485
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005918112344686286
+        }
+      ],
+      "minimum_joint_margin_rad": 1.2598803750018606,
+      "distance_from_before_rad": 6.989222068403174,
+      "scan_selected": false,
+      "prefilter_reason": "initial_geometry_rejected"
+    },
+    {
+      "id": "candidate_025",
+      "arm_qpos_rad": [
+        -1.259875682181447,
+        5.758893252594873,
+        1.745083348934856,
+        3.114171455883679,
+        1.3811020374275333,
+        -2.2124677065418816
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_002",
+        "joint_index": 1,
+        "turns": 1
+      },
+      "labels": [],
+      "initial_geometry_passed": false,
+      "position_error_m": 2.017497413779929e-05,
+      "orientation_error_rad": 1.5176673822100163e-05,
+      "contacts": [
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005780220222554165
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005804433415026847
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.00592913860157861
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005918112344686262
+        }
+      ],
+      "minimum_joint_margin_rad": 0.5242967474051277,
+      "distance_from_before_rad": 8.554264083899728,
+      "scan_selected": false,
+      "prefilter_reason": "initial_geometry_rejected"
+    },
+    {
+      "id": "candidate_026",
+      "arm_qpos_rad": [
+        -1.259875682181447,
+        -0.5242920545847134,
+        -4.53810195824473,
+        3.114171455883679,
+        1.3811020374275333,
+        -2.2124677065418816
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_002",
+        "joint_index": 2,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": false,
+      "position_error_m": 2.0174974138124732e-05,
+      "orientation_error_rad": 1.5176673821877193e-05,
+      "contacts": [
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.0057802202225542346
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005804433415026927
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005929138601578683
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005918112344686321
+        }
+      ],
+      "minimum_joint_margin_rad": 1.7450880417552703,
+      "distance_from_before_rad": 5.91122637675802,
+      "scan_selected": false,
+      "prefilter_reason": "initial_geometry_rejected"
+    },
+    {
+      "id": "candidate_027",
+      "arm_qpos_rad": [
+        -1.259875682181447,
+        -0.5242920545847134,
+        1.745083348934856,
+        -3.169013851295907,
+        1.3811020374275333,
+        -2.2124677065418816
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_002",
+        "joint_index": 3,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": false,
+      "position_error_m": 2.017497413819837e-05,
+      "orientation_error_rad": 1.517667382247842e-05,
+      "contacts": [
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.0057802202225541305
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.0058044334150268335
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005929138601578596
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005918112344686206
+        }
+      ],
+      "minimum_joint_margin_rad": 3.114176148704093,
+      "distance_from_before_rad": 6.694439698048698,
+      "scan_selected": false,
+      "prefilter_reason": "initial_geometry_rejected"
+    },
+    {
+      "id": "candidate_028",
+      "arm_qpos_rad": [
+        -1.259875682181447,
+        -0.5242920545847134,
+        1.745083348934856,
+        3.114171455883679,
+        -4.902083269752053,
+        -2.2124677065418816
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_002",
+        "joint_index": 4,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": false,
+      "position_error_m": 2.0174974138192156e-05,
+      "orientation_error_rad": 1.5176673822041948e-05,
+      "contacts": [
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005780220222554103
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005804433415026806
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005929138601578558
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.0059181123446861855
+        }
+      ],
+      "minimum_joint_margin_rad": 1.3811067302479474,
+      "distance_from_before_rad": 9.045649738097215,
+      "scan_selected": false,
+      "prefilter_reason": "initial_geometry_rejected"
+    },
+    {
+      "id": "candidate_029",
+      "arm_qpos_rad": [
+        -1.259875682181447,
+        -0.5242920545847134,
+        1.745083348934856,
+        3.114171455883679,
+        1.3811020374275333,
+        4.070717600637705
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_002",
+        "joint_index": 5,
+        "turns": 1
+      },
+      "labels": [],
+      "initial_geometry_passed": false,
+      "position_error_m": 2.017497413819578e-05,
+      "orientation_error_rad": 1.517667382215514e-05,
+      "contacts": [
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.0057802202225541305
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.0058044334150268335
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005929138601578586
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005918112344686213
+        }
+      ],
+      "minimum_joint_margin_rad": 2.2124723993622952,
+      "distance_from_before_rad": 6.092314378687154,
+      "scan_selected": false,
+      "prefilter_reason": "initial_geometry_rejected"
+    },
+    {
+      "id": "candidate_030",
+      "arm_qpos_rad": [
+        -4.937232502023299,
+        -4.10191259349252,
+        -4.537384133102724,
+        -1.2765302577266369,
+        4.883930833056114,
+        4.468585488971729
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_003",
+        "joint_index": 0,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 1.8264005161619738e-07,
+      "orientation_error_rad": 2.1367884065769668e-06,
+      "contacts": [],
+      "minimum_joint_margin_rad": 1.345957497976701,
+      "distance_from_before_rad": 9.395776223417299,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_031",
+      "arm_qpos_rad": [
+        1.3459528051562875,
+        2.1812727136870667,
+        -4.537384133102724,
+        -1.2765302577266369,
+        4.883930833056114,
+        4.468585488971729
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_003",
+        "joint_index": 1,
+        "turns": 1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 1.826400519175288e-07,
+      "orientation_error_rad": 2.136788406043402e-06,
+      "contacts": [],
+      "minimum_joint_margin_rad": 1.399259166943886,
+      "distance_from_before_rad": 5.907883907903951,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_032",
+      "arm_qpos_rad": [
+        1.3459528051562875,
+        -4.10191259349252,
+        1.7458011740768624,
+        -1.2765302577266369,
+        4.883930833056114,
+        4.468585488971729
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_003",
+        "joint_index": 2,
+        "turns": 1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 1.826400517597128e-07,
+      "orientation_error_rad": 2.136788406670221e-06,
+      "contacts": [],
+      "minimum_joint_margin_rad": 1.399259166943886,
+      "distance_from_before_rad": 7.482327877212067,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_033",
+      "arm_qpos_rad": [
+        1.3459528051562875,
+        -4.10191259349252,
+        -4.537384133102724,
+        5.00665504945295,
+        4.883930833056114,
+        4.468585488971729
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_003",
+        "joint_index": 3,
+        "turns": 1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 1.8264005198888076e-07,
+      "orientation_error_rad": 2.136788406701229e-06,
+      "contacts": [],
+      "minimum_joint_margin_rad": 1.2765349505470507,
+      "distance_from_before_rad": 8.359720966048402,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_034",
+      "arm_qpos_rad": [
+        1.3459528051562875,
+        -4.10191259349252,
+        -4.537384133102724,
+        -1.2765302577266369,
+        -1.399254474123472,
+        4.468585488971729
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_003",
+        "joint_index": 4,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 1.826400519844077e-07,
+      "orientation_error_rad": 2.136788406941473e-06,
+      "contacts": [],
+      "minimum_joint_margin_rad": 1.7458058668972765,
+      "distance_from_before_rad": 6.670179772798674,
+      "scan_selected": true,
+      "prefilter_reason": "selected"
+    },
+    {
+      "id": "candidate_035",
+      "arm_qpos_rad": [
+        1.3459528051562875,
+        -4.10191259349252,
+        -4.537384133102724,
+        -1.2765302577266369,
+        4.883930833056114,
+        -1.8145998182078573
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_003",
+        "joint_index": 5,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 1.8264005198888076e-07,
+      "orientation_error_rad": 2.136788406662123e-06,
+      "contacts": [],
+      "minimum_joint_margin_rad": 1.399259166943886,
+      "distance_from_before_rad": 6.985897040001219,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_036",
+      "arm_qpos_rad": [
+        5.023303500316302,
+        -0.5243176733121174,
+        -4.538124813775304,
+        -3.1690281931669824,
+        1.3811039789561506,
+        4.070727327897912
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_004",
+        "joint_index": 0,
+        "turns": 1
+      },
+      "labels": [],
+      "initial_geometry_passed": false,
+      "position_error_m": 2.092740303149271e-06,
+      "orientation_error_rad": 2.8598063091552104e-06,
+      "contacts": [
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.00578041611229755
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005804627820883857
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005929290555370215
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005918264242908811
+        }
+      ],
+      "minimum_joint_margin_rad": 1.2598864996836987,
+      "distance_from_before_rad": 6.274849081962504,
+      "scan_selected": false,
+      "prefilter_reason": "initial_geometry_rejected"
+    },
+    {
+      "id": "candidate_037",
+      "arm_qpos_rad": [
+        -1.2598818068632844,
+        5.758867633867469,
+        -4.538124813775304,
+        -3.1690281931669824,
+        1.3811039789561506,
+        4.070727327897912
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_004",
+        "joint_index": 1,
+        "turns": 1
+      },
+      "labels": [],
+      "initial_geometry_passed": false,
+      "position_error_m": 2.0927403028447906e-06,
+      "orientation_error_rad": 2.859806308465776e-06,
+      "contacts": [
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005780416112297616
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.00580462782088394
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005929290555370295
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.0059182642429088765
+        }
+      ],
+      "minimum_joint_margin_rad": 0.5243223661325311,
+      "distance_from_before_rad": 7.981208863802979,
+      "scan_selected": false,
+      "prefilter_reason": "initial_geometry_rejected"
+    },
+    {
+      "id": "candidate_038",
+      "arm_qpos_rad": [
+        -1.2598818068632844,
+        -0.5243176733121174,
+        1.7450604934042824,
+        -3.1690281931669824,
+        1.3811039789561506,
+        4.070727327897912
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_004",
+        "joint_index": 2,
+        "turns": 1
+      },
+      "labels": [],
+      "initial_geometry_passed": false,
+      "position_error_m": 2.0927403026652357e-06,
+      "orientation_error_rad": 2.859806308423346e-06,
+      "contacts": [
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005780416112297671
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005804627820883992
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005929290555370309
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005918264242908911
+        }
+      ],
+      "minimum_joint_margin_rad": 2.212462672102088,
+      "distance_from_before_rad": 6.309924070668951,
+      "scan_selected": false,
+      "prefilter_reason": "initial_geometry_rejected"
+    },
+    {
+      "id": "candidate_039",
+      "arm_qpos_rad": [
+        -1.2598818068632844,
+        -0.5243176733121174,
+        -4.538124813775304,
+        3.114157114012604,
+        1.3811039789561506,
+        4.070727327897912
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_004",
+        "joint_index": 3,
+        "turns": 1
+      },
+      "labels": [],
+      "initial_geometry_passed": false,
+      "position_error_m": 2.0927403027489476e-06,
+      "orientation_error_rad": 2.8598063085302665e-06,
+      "contacts": [
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005780416112297602
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005804627820883899
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005929290555370243
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005918264242908842
+        }
+      ],
+      "minimum_joint_margin_rad": 1.7450651862246964,
+      "distance_from_before_rad": 5.471957891822394,
+      "scan_selected": false,
+      "prefilter_reason": "initial_geometry_rejected"
+    },
+    {
+      "id": "candidate_040",
+      "arm_qpos_rad": [
+        -1.2598818068632844,
+        -0.5243176733121174,
+        -4.538124813775304,
+        -3.1690281931669824,
+        -4.902081328223436,
+        4.070727327897912
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_004",
+        "joint_index": 4,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": false,
+      "position_error_m": 2.0927403028447906e-06,
+      "orientation_error_rad": 2.859806308465776e-06,
+      "contacts": [
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005780416112297616
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.00580462782088394
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005929290555370295
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.0059182642429088765
+        }
+      ],
+      "minimum_joint_margin_rad": 1.3811086717765644,
+      "distance_from_before_rad": 8.505782599581515,
+      "scan_selected": false,
+      "prefilter_reason": "initial_geometry_rejected"
+    },
+    {
+      "id": "candidate_041",
+      "arm_qpos_rad": [
+        -1.2598818068632844,
+        -0.5243176733121174,
+        -4.538124813775304,
+        -3.1690281931669824,
+        1.3811039789561506,
+        -2.212457979281674
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_004",
+        "joint_index": 5,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": false,
+      "position_error_m": 2.0927403028447906e-06,
+      "orientation_error_rad": 2.859806308500557e-06,
+      "contacts": [
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005780416112297616
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.00580462782088394
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.005929290555370295
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.0059182642429088765
+        }
+      ],
+      "minimum_joint_margin_rad": 1.7450651862246964,
+      "distance_from_before_rad": 6.135275832498478,
+      "scan_selected": false,
+      "prefilter_reason": "initial_geometry_rejected"
+    },
+    {
+      "id": "candidate_042",
+      "arm_qpos_rad": [
+        -4.937232537582128,
+        0.14571780605510393,
+        4.315816281812267,
+        0.18744058270729627,
+        1.3992545544918638,
+        1.3269931265247306
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_005",
+        "joint_index": 0,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 9.40857238526957e-07,
+      "orientation_error_rad": 4.781272334077932e-06,
+      "contacts": [],
+      "minimum_joint_margin_rad": 1.3459574624178723,
+      "distance_from_before_rad": 8.885799510984864,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_043",
+      "arm_qpos_rad": [
+        1.345952769597458,
+        -6.137467501124482,
+        4.315816281812267,
+        0.18744058270729627,
+        1.3992545544918638,
+        1.3269931265247306
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_005",
+        "joint_index": 1,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 9.408572382280807e-07,
+      "orientation_error_rad": 4.781272333652385e-06,
+      "contacts": [],
+      "minimum_joint_margin_rad": 0.14572249887551791,
+      "distance_from_before_rad": 8.88579979023815,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_044",
+      "arm_qpos_rad": [
+        1.345952769597458,
+        0.14571780605510393,
+        4.315816281812267,
+        -6.09574472447229,
+        1.3992545544918638,
+        1.3269931265247306
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_005",
+        "joint_index": 3,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 9.408572382377334e-07,
+      "orientation_error_rad": 4.7812723337877955e-06,
+      "contacts": [],
+      "minimum_joint_margin_rad": 0.1874452755277103,
+      "distance_from_before_rad": 8.885724125545641,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_045",
+      "arm_qpos_rad": [
+        1.345952769597458,
+        0.14571780605510393,
+        4.315816281812267,
+        0.18744058270729627,
+        -4.883930752687722,
+        1.3269931265247306
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_005",
+        "joint_index": 4,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 9.408572382333742e-07,
+      "orientation_error_rad": 4.781272334146851e-06,
+      "contacts": [],
+      "minimum_joint_margin_rad": 1.399259247312278,
+      "distance_from_before_rad": 8.885823172390749,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_046",
+      "arm_qpos_rad": [
+        1.345952769597458,
+        0.14571780605510393,
+        4.315816281812267,
+        0.18744058270729627,
+        1.3992545544918638,
+        -4.956192180654856
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_005",
+        "joint_index": 5,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 9.408572382386677e-07,
+      "orientation_error_rad": 4.781272334100742e-06,
+      "contacts": [],
+      "minimum_joint_margin_rad": 1.3269978193451442,
+      "distance_from_before_rad": 8.885831028175504,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_047",
+      "arm_qpos_rad": [
+        -1.2598814091235848,
+        -2.00172514931754,
+        -1.9681612769758852,
+        4.019934604647327,
+        -1.381106376719421,
+        -5.354050848163728
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_006",
+        "joint_index": 0,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": false,
+      "position_error_m": 3.432119123863842e-07,
+      "orientation_error_rad": 1.8286362665856953e-06,
+      "contacts": [
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.004739376786730485
+        }
+      ],
+      "minimum_joint_margin_rad": 0.9291391518362726,
+      "distance_from_before_rad": 8.85767625768132,
+      "scan_selected": false,
+      "prefilter_reason": "initial_geometry_rejected"
+    },
+    {
+      "id": "candidate_048",
+      "arm_qpos_rad": [
+        5.023303898056001,
+        4.281460157862046,
+        -1.9681612769758852,
+        4.019934604647327,
+        -1.381106376719421,
+        -5.354050848163728
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_006",
+        "joint_index": 1,
+        "turns": 1
+      },
+      "labels": [],
+      "initial_geometry_passed": false,
+      "position_error_m": 3.4321191246569513e-07,
+      "orientation_error_rad": 1.8286362669216222e-06,
+      "contacts": [
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.00473937678673045
+        }
+      ],
+      "minimum_joint_margin_rad": 0.9291391518362726,
+      "distance_from_before_rad": 9.88350143472702,
+      "scan_selected": false,
+      "prefilter_reason": "initial_geometry_rejected"
+    },
+    {
+      "id": "candidate_049",
+      "arm_qpos_rad": [
+        5.023303898056001,
+        -2.00172514931754,
+        4.315024030203701,
+        4.019934604647327,
+        -1.381106376719421,
+        -5.354050848163728
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_006",
+        "joint_index": 2,
+        "turns": 1
+      },
+      "labels": [],
+      "initial_geometry_passed": false,
+      "position_error_m": 3.432119125203093e-07,
+      "orientation_error_rad": 1.8286362662405656e-06,
+      "contacts": [
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.004739376786730438
+        }
+      ],
+      "minimum_joint_margin_rad": 0.9291391518362726,
+      "distance_from_before_rad": 11.16511583553575,
+      "scan_selected": false,
+      "prefilter_reason": "initial_geometry_rejected"
+    },
+    {
+      "id": "candidate_050",
+      "arm_qpos_rad": [
+        5.023303898056001,
+        -2.00172514931754,
+        -1.9681612769758852,
+        -2.2632507025322592,
+        -1.381106376719421,
+        -5.354050848163728
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_006",
+        "joint_index": 3,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": false,
+      "position_error_m": 3.432119123913401e-07,
+      "orientation_error_rad": 1.8286362665364605e-06,
+      "contacts": [
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.004739376786730527
+        }
+      ],
+      "minimum_joint_margin_rad": 0.9291391518362726,
+      "distance_from_before_rad": 8.746856914006536,
+      "scan_selected": false,
+      "prefilter_reason": "initial_geometry_rejected"
+    },
+    {
+      "id": "candidate_051",
+      "arm_qpos_rad": [
+        5.023303898056001,
+        -2.00172514931754,
+        -1.9681612769758852,
+        4.019934604647327,
+        4.902078930460165,
+        -5.354050848163728
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_006",
+        "joint_index": 4,
+        "turns": 1
+      },
+      "labels": [],
+      "initial_geometry_passed": false,
+      "position_error_m": 3.432119123866442e-07,
+      "orientation_error_rad": 1.8286362665529526e-06,
+      "contacts": [
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.004739376786730513
+        }
+      ],
+      "minimum_joint_margin_rad": 0.9291391518362726,
+      "distance_from_before_rad": 9.472576377025028,
+      "scan_selected": false,
+      "prefilter_reason": "initial_geometry_rejected"
+    },
+    {
+      "id": "candidate_052",
+      "arm_qpos_rad": [
+        5.023303898056001,
+        -2.00172514931754,
+        -1.9681612769758852,
+        4.019934604647327,
+        -1.381106376719421,
+        0.9291344590158586
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_006",
+        "joint_index": 5,
+        "turns": 1
+      },
+      "labels": [],
+      "initial_geometry_passed": false,
+      "position_error_m": 3.432119123929054e-07,
+      "orientation_error_rad": 1.828636266511609e-06,
+      "contacts": [
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.004739376786730518
+        }
+      ],
+      "minimum_joint_margin_rad": 1.2598861019439989,
+      "distance_from_before_rad": 6.3806061494815545,
+      "scan_selected": false,
+      "prefilter_reason": "initial_geometry_rejected"
+    },
+    {
+      "id": "candidate_053",
+      "arm_qpos_rad": [
+        5.023301565709315,
+        4.102567304920489,
+        4.538128029635066,
+        1.280345300153802,
+        1.381121604261068,
+        -2.212462247949477
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_007",
+        "joint_index": 0,
+        "turns": 1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 1.786388467463368e-06,
+      "orientation_error_rad": 1.5090702928872723e-05,
+      "contacts": [],
+      "minimum_joint_margin_rad": 1.2598884342906853,
+      "distance_from_before_rad": 9.231712873480257,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_054",
+      "arm_qpos_rad": [
+        -1.2598837414702715,
+        -2.180618002259097,
+        4.538128029635066,
+        1.280345300153802,
+        1.381121604261068,
+        -2.212462247949477
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_007",
+        "joint_index": 1,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 1.786388467528879e-06,
+      "orientation_error_rad": 1.5090702928754776e-05,
+      "contacts": [],
+      "minimum_joint_margin_rad": 1.745061970364934,
+      "distance_from_before_rad": 8.261199298738523,
+      "scan_selected": true,
+      "prefilter_reason": "selected"
+    },
+    {
+      "id": "candidate_055",
+      "arm_qpos_rad": [
+        -1.2598837414702715,
+        4.102567304920489,
+        -1.74505727754452,
+        1.280345300153802,
+        1.381121604261068,
+        -2.212462247949477
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_007",
+        "joint_index": 2,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 1.7863884673891766e-06,
+      "orientation_error_rad": 1.5090702928816767e-05,
+      "contacts": [],
+      "minimum_joint_margin_rad": 2.180622695079511,
+      "distance_from_before_rad": 6.018268971230337,
+      "scan_selected": true,
+      "prefilter_reason": "selected"
+    },
+    {
+      "id": "candidate_056",
+      "arm_qpos_rad": [
+        -1.2598837414702715,
+        4.102567304920489,
+        4.538128029635066,
+        -5.002840007025784,
+        1.381121604261068,
+        -2.212462247949477
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_007",
+        "joint_index": 3,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 1.786388467463368e-06,
+      "orientation_error_rad": 1.5090702928872723e-05,
+      "contacts": [],
+      "minimum_joint_margin_rad": 1.280349992974216,
+      "distance_from_before_rad": 10.209576911848744,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_057",
+      "arm_qpos_rad": [
+        -1.2598837414702715,
+        4.102567304920489,
+        4.538128029635066,
+        1.280345300153802,
+        -4.902063702918518,
+        -2.212462247949477
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_007",
+        "joint_index": 4,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 1.78638846746474e-06,
+      "orientation_error_rad": 1.5090702929614944e-05,
+      "contacts": [],
+      "minimum_joint_margin_rad": 1.3811262970814822,
+      "distance_from_before_rad": 10.871933224279557,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_058",
+      "arm_qpos_rad": [
+        -1.2598837414702715,
+        4.102567304920489,
+        4.538128029635066,
+        1.280345300153802,
+        1.381121604261068,
+        4.07072305923011
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_007",
+        "joint_index": 5,
+        "turns": 1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 1.786388467463368e-06,
+      "orientation_error_rad": 1.5090702928807227e-05,
+      "contacts": [],
+      "minimum_joint_margin_rad": 1.745061970364934,
+      "distance_from_before_rad": 8.57273362565237,
+      "scan_selected": true,
+      "prefilter_reason": "selected"
+    },
+    {
+      "id": "candidate_059",
+      "arm_qpos_rad": [
+        5.023303716235018,
+        -2.180616295645158,
+        -1.7450584838722512,
+        1.2803343582562314,
+        -4.902077622883207,
+        4.070726924206496
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_008",
+        "joint_index": 0,
+        "turns": 1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 3.82515107536295e-07,
+      "orientation_error_rad": 3.4290665722876835e-06,
+      "contacts": [],
+      "minimum_joint_margin_rad": 1.259886283764982,
+      "distance_from_before_rad": 8.210596201046636,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_060",
+      "arm_qpos_rad": [
+        -1.2598815909445675,
+        4.102569011534428,
+        -1.7450584838722512,
+        1.2803343582562314,
+        -4.902077622883207,
+        4.070726924206496
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_008",
+        "joint_index": 1,
+        "turns": 1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 3.825151073044658e-07,
+      "orientation_error_rad": 3.429066572163066e-06,
+      "contacts": [],
+      "minimum_joint_margin_rad": 1.3811123771167937,
+      "distance_from_before_rad": 8.421768748504014,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_061",
+      "arm_qpos_rad": [
+        -1.2598815909445675,
+        -2.180616295645158,
+        4.538126823307335,
+        1.2803343582562314,
+        -4.902077622883207,
+        4.070726924206496
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_008",
+        "joint_index": 2,
+        "turns": 1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 3.8251510749156805e-07,
+      "orientation_error_rad": 3.4290665722723374e-06,
+      "contacts": [],
+      "minimum_joint_margin_rad": 1.3811123771167937,
+      "distance_from_before_rad": 10.146625285856294,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_062",
+      "arm_qpos_rad": [
+        -1.2598815909445675,
+        -2.180616295645158,
+        -1.7450584838722512,
+        -5.002850948923355,
+        -4.902077622883207,
+        4.070726924206496
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_008",
+        "joint_index": 3,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 3.825151076018796e-07,
+      "orientation_error_rad": 3.429066571991677e-06,
+      "contacts": [],
+      "minimum_joint_margin_rad": 1.2803390510766457,
+      "distance_from_before_rad": 9.296501416815486,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_063",
+      "arm_qpos_rad": [
+        -1.2598815909445675,
+        -2.180616295645158,
+        -1.7450584838722512,
+        1.2803343582562314,
+        1.3811076842963796,
+        4.070726924206496
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_008",
+        "joint_index": 4,
+        "turns": 1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 3.825151074959531e-07,
+      "orientation_error_rad": 3.4290665721752357e-06,
+      "contacts": [],
+      "minimum_joint_margin_rad": 2.2124630757935044,
+      "distance_from_before_rad": 4.579789766374064,
+      "scan_selected": true,
+      "prefilter_reason": "selected"
+    },
+    {
+      "id": "candidate_064",
+      "arm_qpos_rad": [
+        -1.2598815909445675,
+        -2.180616295645158,
+        -1.7450584838722512,
+        1.2803343582562314,
+        -4.902077622883207,
+        -2.2124583829730904
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_008",
+        "joint_index": 5,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 3.8251510749069106e-07,
+      "orientation_error_rad": 3.429066572322042e-06,
+      "contacts": [],
+      "minimum_joint_margin_rad": 1.3811123771167937,
+      "distance_from_before_rad": 8.10442909005298,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_065",
+      "arm_qpos_rad": [
+        5.023299622368329,
+        4.102547620365803,
+        -1.7450989807092636,
+        1.280268296071065,
+        1.3811138489024657,
+        4.070706833881739
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_009",
+        "joint_index": 0,
+        "turns": 1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 1.2908163006220642e-05,
+      "orientation_error_rad": 5.849263707426689e-05,
+      "contacts": [],
+      "minimum_joint_margin_rad": 1.2598903776316712,
+      "distance_from_before_rad": 6.160451219457771,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_066",
+      "arm_qpos_rad": [
+        -1.2598856848112576,
+        4.102547620365803,
+        -1.7450989807092636,
+        -5.002917011108521,
+        1.3811138489024657,
+        4.070706833881739
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_009",
+        "joint_index": 3,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 1.2908163006168165e-05,
+      "orientation_error_rad": 5.8492637074540794e-05,
+      "contacts": [],
+      "minimum_joint_margin_rad": 1.280272988891479,
+      "distance_from_before_rad": 7.547389578554834,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_067",
+      "arm_qpos_rad": [
+        1.3459531923123809,
+        2.001162134597081,
+        1.9673669320260212,
+        -4.016446599889586,
+        1.3992563023688318,
+        -4.956193103883334
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_010",
+        "joint_index": 0,
+        "turns": 1
+      },
+      "labels": [],
+      "initial_geometry_passed": false,
+      "position_error_m": 1.8356670069622645e-07,
+      "orientation_error_rad": 1.9675542230722338e-06,
+      "contacts": [
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.004090018904902802
+        }
+      ],
+      "minimum_joint_margin_rad": 1.3269968961166665,
+      "distance_from_before_rad": 8.722157691332939,
+      "scan_selected": false,
+      "prefilter_reason": "initial_geometry_rejected"
+    },
+    {
+      "id": "candidate_068",
+      "arm_qpos_rad": [
+        -4.937232114867205,
+        -4.282023172582505,
+        1.9673669320260212,
+        -4.016446599889586,
+        1.3992563023688318,
+        -4.956193103883334
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_010",
+        "joint_index": 1,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": false,
+      "position_error_m": 1.8356670071174126e-07,
+      "orientation_error_rad": 1.9675542232572004e-06,
+      "contacts": [
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.004090018904902799
+        }
+      ],
+      "minimum_joint_margin_rad": 1.3269968961166665,
+      "distance_from_before_rad": 11.47679767125858,
+      "scan_selected": false,
+      "prefilter_reason": "initial_geometry_rejected"
+    },
+    {
+      "id": "candidate_069",
+      "arm_qpos_rad": [
+        -4.937232114867205,
+        2.001162134597081,
+        -4.315818375153565,
+        -4.016446599889586,
+        1.3992563023688318,
+        -4.956193103883334
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_010",
+        "joint_index": 2,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": false,
+      "position_error_m": 1.8356670090041936e-07,
+      "orientation_error_rad": 1.9675542230559983e-06,
+      "contacts": [
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.0040900189049028
+        }
+      ],
+      "minimum_joint_margin_rad": 1.3269968961166665,
+      "distance_from_before_rad": 10.275559978702857,
+      "scan_selected": false,
+      "prefilter_reason": "initial_geometry_rejected"
+    },
+    {
+      "id": "candidate_070",
+      "arm_qpos_rad": [
+        -4.937232114867205,
+        2.001162134597081,
+        1.9673669320260212,
+        2.26673870729,
+        1.3992563023688318,
+        -4.956193103883334
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_010",
+        "joint_index": 3,
+        "turns": 1
+      },
+      "labels": [],
+      "initial_geometry_passed": false,
+      "position_error_m": 1.8356670090458022e-07,
+      "orientation_error_rad": 1.967554222708964e-06,
+      "contacts": [
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.004090018904902824
+        }
+      ],
+      "minimum_joint_margin_rad": 1.3269968961166665,
+      "distance_from_before_rad": 10.109727990695356,
+      "scan_selected": false,
+      "prefilter_reason": "initial_geometry_rejected"
+    },
+    {
+      "id": "candidate_071",
+      "arm_qpos_rad": [
+        -4.937232114867205,
+        2.001162134597081,
+        1.9673669320260212,
+        -4.016446599889586,
+        -4.883929004810755,
+        -4.956193103883334
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_010",
+        "joint_index": 4,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": false,
+      "position_error_m": 1.8356670092312278e-07,
+      "orientation_error_rad": 1.967554222987822e-06,
+      "contacts": [
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.004090018904902797
+        }
+      ],
+      "minimum_joint_margin_rad": 1.3269968961166665,
+      "distance_from_before_rad": 12.451244092383138,
+      "scan_selected": false,
+      "prefilter_reason": "initial_geometry_rejected"
+    },
+    {
+      "id": "candidate_072",
+      "arm_qpos_rad": [
+        -4.937232114867205,
+        2.001162134597081,
+        1.9673669320260212,
+        -4.016446599889586,
+        1.3992563023688318,
+        1.3269922032962524
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_010",
+        "joint_index": 5,
+        "turns": 1
+      },
+      "labels": [],
+      "initial_geometry_passed": false,
+      "position_error_m": 1.8356670090041936e-07,
+      "orientation_error_rad": 1.9675542230772846e-06,
+      "contacts": [
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.0040900189049028
+        }
+      ],
+      "minimum_joint_margin_rad": 1.345957885132795,
+      "distance_from_before_rad": 8.722124613131085,
+      "scan_selected": false,
+      "prefilter_reason": "initial_geometry_rejected"
+    },
+    {
+      "id": "candidate_073",
+      "arm_qpos_rad": [
+        -4.937232367534749,
+        0.1457182035423717,
+        4.315818330339446,
+        -6.095738522176023,
+        1.3992549988145526,
+        -4.956192298809407
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_011",
+        "joint_index": 0,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 6.843416979623955e-08,
+      "orientation_error_rad": 6.742399090593734e-07,
+      "contacts": [],
+      "minimum_joint_margin_rad": 0.1874514778239771,
+      "distance_from_before_rad": 12.56636987873431,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_074",
+      "arm_qpos_rad": [
+        1.345952939644837,
+        -6.137467103637214,
+        4.315818330339446,
+        -6.095738522176023,
+        1.3992549988145526,
+        -4.956192298809407
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_011",
+        "joint_index": 1,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 6.84341696718867e-08,
+      "orientation_error_rad": 6.742399088921772e-07,
+      "contacts": [],
+      "minimum_joint_margin_rad": 0.1457228963627859,
+      "distance_from_before_rad": 12.566369962477014,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_075",
+      "arm_qpos_rad": [
+        1.345952939644837,
+        0.1457182035423717,
+        -1.9673669768401405,
+        -6.095738522176023,
+        1.3992549988145526,
+        -4.956192298809407
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_011",
+        "joint_index": 2,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 6.843416972414139e-08,
+      "orientation_error_rad": 6.742399087623247e-07,
+      "contacts": [],
+      "minimum_joint_margin_rad": 0.1874514778239771,
+      "distance_from_before_rad": 8.885729873788902,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_076",
+      "arm_qpos_rad": [
+        1.345952939644837,
+        0.1457182035423717,
+        4.315818330339446,
+        -6.095738522176023,
+        -4.883930308365033,
+        -4.956192298809407
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_011",
+        "joint_index": 4,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 6.843416972153537e-08,
+      "orientation_error_rad": 6.742399086610795e-07,
+      "contacts": [],
+      "minimum_joint_margin_rad": 0.1874514778239771,
+      "distance_from_before_rad": 12.566386472812834,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_077",
+      "arm_qpos_rad": [
+        5.023303829989928,
+        -2.1806171571955657,
+        4.538122881165965,
+        1.2803274884643314,
+        -4.902079856008751,
+        -2.2124573608277167
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_012",
+        "joint_index": 0,
+        "turns": 1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 1.699312411883919e-06,
+      "orientation_error_rad": 7.027895197715126e-06,
+      "contacts": [],
+      "minimum_joint_margin_rad": 1.2598861700100725,
+      "distance_from_before_rad": 10.709187800827168,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    },
+    {
+      "id": "candidate_078",
+      "arm_qpos_rad": [
+        -1.259881477189659,
+        -2.1806171571955657,
+        4.538122881165965,
+        -5.002857818715254,
+        -4.902079856008751,
+        -2.2124573608277167
+      ],
+      "origin": {
+        "kind": "single_joint_winding",
+        "parent_id": "candidate_012",
+        "joint_index": 3,
+        "turns": -1
+      },
+      "labels": [],
+      "initial_geometry_passed": true,
+      "position_error_m": 1.699312412176623e-06,
+      "orientation_error_rad": 7.027895196466904e-06,
+      "contacts": [],
+      "minimum_joint_margin_rad": 1.280332181284746,
+      "distance_from_before_rad": 11.562778077454443,
+      "scan_selected": false,
+      "prefilter_reason": "finite_scan_budget"
+    }
+  ]
+}

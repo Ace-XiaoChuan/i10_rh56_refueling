@@ -240,7 +240,7 @@
     "assets/robots/aubo_i10/urdf/aubo_i10_JY.urdf": "5722135ce4a2abb8549e92c43ea6802b7d06a0fa7f207beb35f7994e57e5baa2",
     "assets/robots/sensor/meshes/sensor.stl": "4aa8d4dd99ed5c74449843db9c796428305341960267cc88c0386623a5658b37",
     "assets/scenes/i10_rh56_fuel_cap_preview.xml": "5154349867b0bc2dae0039c68fe4eb4aafa3d75fe2321a22baa093c6b98d12db",
-    "src/fuel_cap_task/arm_ik.py": "87c379edba746000b7c819358e988ea4afe98699974bf5554c4cf33846d3bc84",
+    "src/fuel_cap_task/arm_ik.py": "36bee62bc1de4d75dc26ae2ec6adadfd3ddd8026fd411f02549686af8f1ec2ca",
     "src/fuel_cap_task/grasp_search.py": "9639f45c8c8c6cdda93bf52a60a192634f07a2a7385f3b2c8ba5a9cab4f58c58",
     "src/fuel_cap_task/interfaces.py": "9fde75fbc8034c0d40a883f9ea222c7f917b78f6ceb604b47a761c8b585e5387",
     "src/fuel_cap_task/mujoco_scene.py": "7f4678dac166de830f5c6525bfe45b9299dab2f1e0e34a0f169b94b675f0b124",

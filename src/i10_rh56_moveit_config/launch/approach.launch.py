@@ -1,4 +1,4 @@
-"""Headless MTC planning; never executes a solution."""
+"""无界面 MTC 规划；不执行生成的解。"""
 import hashlib
 import json
 from pathlib import Path
@@ -25,12 +25,29 @@ def generate_launch_description():
         if output_path == request_path:
             raise RuntimeError('Request and output must differ')
         request = json.loads(request_path.read_text())
+        if ('scene_variation' in request) != ('planning_scene' in request):
+            raise RuntimeError('Sample and planning scene must be supplied together')
+        if 'planning_scene' in request:
+            import copy
+            import math
+            baseline = json.loads((config/'scene.json').read_text())
+            snapshot = copy.deepcopy(request['planning_scene'])
+            if len(snapshot['objects']) != len(baseline['objects']):
+                raise RuntimeError('Sampled scene object count changed')
+            for actual, original in zip(snapshot['objects'], baseline['objects']):
+                values = actual['position'] + [v for row in actual['rotation_matrix'] for v in row]
+                if not all(math.isfinite(v) for v in values):
+                    raise RuntimeError('Nonfinite sampled scene pose')
+                actual['position'] = original['position']
+                actual['rotation_matrix'] = original['rotation_matrix']
+            if snapshot != baseline:
+                raise RuntimeError('Sampled scene changed shapes or collision rules')
         for name in ('generated_hashes.json', 'provenance.json'):
             key = f'src/i10_rh56_moveit_config/config/{name}'
             expected = request['source_hashes'][key]
             if hashlib.sha256((config/name).read_bytes()).hexdigest() != expected:
                 raise RuntimeError('Request and installed model differ; regenerate/rebuild')
-        # Invalidate any old success before launching a new planning attempt.
+        # 启动新规划前使旧成功结果失效，避免失败后误用旧轨迹。
         output_path.parent.mkdir(parents=True, exist_ok=True)
         output_path.write_text(json.dumps({'mode': 'planning_not_completed_no_replay'})+'\n')
         planner = Node(package='i10_rh56_moveit_config', executable='plan_approach', output='screen', parameters=[{

@@ -1,0 +1,45 @@
+{
+  "mode": "unfinished_initial_selection_first_version_record",
+  "analysis_finished": false,
+  "date": "2026-10-08",
+  "command": ".venv/bin/python tools/select_initial_configuration.py",
+  "exit_code": 1,
+  "completed_candidate_scans": 12,
+  "path_calls": 3,
+  "completed_path_rejections": [
+    {
+      "candidate_id": "candidate_001",
+      "accepted": false,
+      "rejection": "mtc_endpoint_rejected_no_replay"
+    },
+    {
+      "candidate_id": "candidate_020",
+      "accepted": false,
+      "rejection": "mtc_selected_approach_planning_rejected_no_replay"
+    }
+  ],
+  "last_path_failure": "Dense trajectory validation failed; first native version did not save a structured rejection",
+  "source_snapshots": {
+    "src/fuel_cap_task/initial_configuration_selection.py": {
+      "snapshot_path": "artifacts/planning/initial_selection_single/implementation_snapshot/src/fuel_cap_task/initial_configuration_selection.py",
+      "sha256": "5d0154d8c931e1359b3996fc5e85e301b7ed9a6cdc3871a0c61a37b9753e965d"
+    },
+    "tools/select_initial_configuration.py": {
+      "snapshot_path": "artifacts/planning/initial_selection_single/implementation_snapshot/tools/select_initial_configuration.py",
+      "sha256": "e5e7c136aced9fda067311f2b27b41d50b388bca28d310af85a53b2ba444139e"
+    },
+    "src/i10_rh56_moveit_config/src/plan_selected_approach.cpp": {
+      "snapshot_path": "artifacts/planning/initial_selection_single/implementation_snapshot/src/i10_rh56_moveit_config/src/plan_selected_approach.cpp",
+      "sha256": "63eebd49af7dccf922b49a0b4d8a299bca94b5e1c7055f67fb5ecd8691f43b45"
+    },
+    "src/i10_rh56_moveit_config/launch/selected_approach.launch.py": {
+      "snapshot_path": "artifacts/planning/initial_selection_single/implementation_snapshot/src/i10_rh56_moveit_config/launch/selected_approach.launch.py",
+      "sha256": "1a6eeddac7238dcdac47490f0cb47f66a0337094bff55b0af7b09d3cb6caacde"
+    },
+    "install/i10_rh56_moveit_config/lib/i10_rh56_moveit_config/plan_selected_approach": {
+      "snapshot_path": "artifacts/planning/initial_selection_single/implementation_snapshot/install/i10_rh56_moveit_config/lib/i10_rh56_moveit_config/plan_selected_approach",
+      "sha256": "e5142f0d57dc16a23c84fb7be07e4447685b8552a26a5c56f359ac9d67e74bd3"
+    }
+  },
+  "physical_execution": false
+}

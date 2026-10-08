@@ -1,0 +1,29 @@
+{
+  "post_retreat_observation": {
+    "pose": {
+      "frame_id": "world",
+      "position_m": [
+        -0.02584019926300991,
+        0.9861900550570267,
+        0.6
+      ],
+      "orientation_xyzw": [
+        -0.204152409209889,
+        -0.6769946778326976,
+        0.7070996110772542,
+        0.0031843389260196413
+      ]
+    },
+    "timestamp_s": 0.0,
+    "source": "simulation_ground_truth",
+    "valid": true,
+    "confidence": null,
+    "timestamp_clock": "simulation"
+  },
+  "endpoint_position_error_m": 8.218211842663108e-05,
+  "endpoint_orientation_error_rad": 0.00016030191533123424,
+  "physical_release_verified": false,
+  "physical_regrasp_verified": false,
+  "endpoint_joint_error_rad": 0.00017169461685878629,
+  "checked_states": 327
+}

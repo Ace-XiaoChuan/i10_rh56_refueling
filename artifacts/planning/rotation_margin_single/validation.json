@@ -1,0 +1,61 @@
+{
+  "mode": "rotation_margin_validation_record",
+  "date": "2026-10-04",
+  "scan_runs": 1,
+  "planning_tests": {
+    "command": "PYTHONPATH=src .venv/bin/python -m unittest discover -s tests/planning -v",
+    "passed": 25,
+    "new_checks": 8,
+    "exit_code": 0
+  },
+  "model_sources": {
+    "command": "python3 tools/check_moveit_model_sources.py",
+    "inputs": 234,
+    "outputs": 233,
+    "exit_code": 0
+  },
+  "format_check": {
+    "command": "git diff --check",
+    "exit_code": 0
+  },
+  "initial_cli_exit_code": 1,
+  "audit_attempts": [
+    {
+      "log": "fcl_audit.log",
+      "exit_code": 1,
+      "reason": "default ROS log directory is read-only; audit not started"
+    },
+    {
+      "log": "fcl_audit_with_local_logs.log",
+      "exit_code": 130,
+      "reason": "sandbox DDS interface enumeration failed; launch interrupted before audit"
+    },
+    {
+      "log": "fcl_audit_host.log",
+      "exit_code": 0,
+      "reason": "same saved diagnostic audited with local ROS initialization available"
+    }
+  ],
+  "summary_command": ".venv/bin/python tools/check_rotation_margin.py --summarize-only",
+  "summary_exit_code": 0,
+  "source_sha256": {
+    "src/fuel_cap_task/rotation_diagnostic.py": "7f35f04c6f871a83fa81a7c5faa0e99c0029e83b0d4a3adc543b4c4ad73999b4",
+    "src/fuel_cap_task/rotation_margin.py": "e32fb596608d08b7678628c3df2d5cd6b71d26ade298df8cab0d96a96874e9ee",
+    "tools/check_rotation_margin.py": "7d24f825fbba7e3175c2e9cda9fd0e396b3ef6301b166bab6473035633e709d9",
+    "tests/planning/test_rotation_margin.py": "7a2e9489e68267561384be4c380f87b365f0249eaec3a41f5c1cb26f095103f5"
+  },
+  "artifact_sha256": {
+    "diagnostic.json": "4067aa55e32827afa5f2bcc931de38f16a78d550744c1efdc5d525b6c2064b7f",
+    "fcl_validation.json": "a6da19109d6dfea8388e2e4698f03352b2cb0608002a6d2c5eaf4dc364889135",
+    "fcl_audit_with_local_logs.log": "ea590f30cd4d8c77214aca0887809c8ef9d85e001d9ef0d7515682c0da7e5f6e",
+    "joint_margins.csv": "6278558bc6ec9933c66be52e1ac89dbb140a9595802d5b99b145993f1f297f6e",
+    "fcl_audit_host.log": "eb1d824f8b93f33f4cb7245ee1f5fc2cc11d1c5c8218b9e5ec092a784fa89e14",
+    "report.md": "0bfad9193659574a5f00b26f5d2ef43a7e1ab424a1ca4ecd24d9b33fa0208c30",
+    "fcl_audit.log": "feef1ec8b1d1c3ff15f46158428a7f93f45832a427e3d4a926812704aa6b7776",
+    "summary.json": "7af3a2da64e705cde18079d2c502470012ba7f0e66d668fda6e25a7511a827f5"
+  },
+  "dynamics_run": false,
+  "gui_run": false,
+  "hardware_run": false,
+  "mtc_search_run": false
+}

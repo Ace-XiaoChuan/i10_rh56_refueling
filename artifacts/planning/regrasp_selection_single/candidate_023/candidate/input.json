@@ -1,0 +1,31 @@
+{
+  "origin": {
+    "kind": "selected_regrasp_configuration",
+    "side": "after",
+    "segment_summary_path": "artifacts/planning/segmented_single_tol_020/summary.json",
+    "candidate_id": "candidate_023",
+    "role": "candidate",
+    "cumulative_angle_deg": 90.0,
+    "input_hashes": {
+      "artifacts/planning/segmented_single_tol_020/rotation_1.json": "ded971d51561cc9381f707d31ec45c9d4cb7a25b96503c9eeab9943fabd70eab",
+      "artifacts/planning/segmented_single_tol_020/rotation_1_fcl.json": "7b62b165824ef569807770b34989894f729541da66d144d010b8c8141046b0a4",
+      "artifacts/planning/segmented_single_tol_020/regrasp_1_request.json": "bed16b44ff575e81a92e1fa0207b86bf2a945f3f359a336402757992143b316c",
+      "artifacts/planning/segmented_single_tol_020/regrasp_1_mtc.json": "9c8d386c91dc90f51de153201a59db2f35a961a710cb78c92d0e038dbd800257",
+      "artifacts/planning/segmented_single_tol_020/regrasp_1_validation.json": "b58e9ca6523ae933ed73ace08b3be5254a43246899ed01e3f9ceb69ad53afd6e",
+      "artifacts/planning/segmented_single_tol_020/rotation_2.json": "83e025b9833fc9eb5c851ac59d779939680c3d750d7f7139660d2644b0af4f1b",
+      "artifacts/planning/segmented_single_tol_020/rotation_2_fcl.json": "43224ca3f67691fe49dfa3b7e7a03ab714d78e4eeb546c47359bfdab5ab63ad0",
+      "artifacts/planning/segmented_single_tol_020/summary.json": "ac510f469bf6eb76687bc5b374c2f960dee45d080fe133ffdd203a10a148edb6",
+      "artifacts/planning/random_single/approach.json": "bd2e297f98c634ae40ba06cd89c21e19e84a2f0883fae0ec11c9a825736ea64c",
+      "src/fuel_cap_task/configuration_selection.py": "ce6196c3125f003815f340a6d964decc17c910a6d38075edf70c27dd4cd376e4",
+      "src/i10_rh56_moveit_config/src/plan_selected_regrasp.cpp": "5323ae59502e0127f3a6712c0b03ba794b64a6b0bbdd59bb81b7acb2c93fd03d",
+      "src/i10_rh56_moveit_config/launch/selected_regrasp.launch.py": "33c57e8af0fa22186b452c57931d69105b79e59a2846cacba83be34e369f9ad3",
+      "install/i10_rh56_moveit_config/lib/i10_rh56_moveit_config/plan_selected_regrasp": "cba4391a25d5e46b4701d2c366de44c089fdd0643a4f106b2dc33a8717ae37a6",
+      "install/i10_rh56_moveit_config/share/i10_rh56_moveit_config/launch/selected_regrasp.launch.py": "33c57e8af0fa22186b452c57931d69105b79e59a2846cacba83be34e369f9ad3",
+      "artifacts/planning/regrasp_selection_single/candidate_pool.json": "2ab9bb6970b236ee446ffa62dffc50892da6ade1dcca77d221368383791a2ac0"
+    }
+  },
+  "scan_settings": {
+    "max_angle_deg": 135.0,
+    "angle_step_deg": 1.0
+  }
+}

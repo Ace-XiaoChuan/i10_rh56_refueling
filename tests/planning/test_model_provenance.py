@@ -1,4 +1,4 @@
-"""Reject stale planning assets; retained source geometry must remain untouched."""
+"""拒绝失效的规划资产；保留的源几何不得被改动。"""
 import hashlib
 import importlib.util
 import json

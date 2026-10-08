@@ -1,4 +1,4 @@
-"""Behavioral checks for sequencing, feedback gates and stopping."""
+"""验证阶段反馈、禁止动作、取消与统一停止行为。"""
 
 import asyncio
 from dataclasses import asdict, replace
@@ -6,11 +6,17 @@ import json
 import unittest
 
 from fuel_cap_task import CapTask, State
-from fuel_cap_task.interfaces import (
-    ApproachFeedback, GraspFeedback, HoldFeedback, RetreatFeedback,
-    StopFeedback, TaskFailure, TwistFeedback,
+from fuel_cap_task.interfaces import StopFeedback, TaskFailure
+from fuel_cap_task.execution_contract import (
+    ApproachFeedback, GraspFeedback, HoldFeedback, RetreatFeedback, RunLimits,
+    MotionProgress, TwistEndReason, TwistFeedback,
 )
-from fuel_cap_task.mock import MockEstimator, MockExecutor
+from fuel_cap_task.mock import MockEstimator, MockExecutor, mock_cap, mock_context
+
+
+def twist_reply(rotation, *, axial=None, released=True, stable=True):
+    return TwistFeedback(TwistEndReason.DETACHED, MotionProgress(rotation, axial),
+                         mock_cap(), released, stable, True, context=mock_context())
 
 
 class BlockingExecutor(MockExecutor):
@@ -40,7 +46,7 @@ class BlockingExecutor(MockExecutor):
 class TaskTests(unittest.IsolatedAsyncioTestCase):
     def make_task(self, executor=None, estimator=None, timeout=1.0):
         return CapTask(estimator or MockEstimator(), executor or MockExecutor(delay_s=0),
-                       step_timeout_s=timeout, stop_timeout_s=timeout)
+                       limits=RunLimits(1, 5.0), step_timeout_s=timeout, stop_timeout_s=timeout)
 
     async def test_success_keeps_grasp_and_records_source_and_commands(self):
         executor = MockExecutor(delay_s=0)
@@ -119,13 +125,13 @@ class TaskTests(unittest.IsolatedAsyncioTestCase):
 
     async def test_malformed_feedback_cannot_advance(self):
         cases = [
-            ("check_ready", GraspFeedback(True)),
-            ("approach", ApproachFeedback(True, "false", True)),
-            ("grasp", HoldFeedback(True)),
-            ("grasp", GraspFeedback(1)),
-            ("twist", TwistFeedback(float("nan"), True, True, True)),
-            ("twist", TwistFeedback(225, True, True, True, float("inf"))),
-            ("retreat", RetreatFeedback(True, "yes")),
+            ("check_ready", GraspFeedback(True, context=mock_context())),
+            ("approach", ApproachFeedback(True, "false", True, context=mock_context())),
+            ("grasp", HoldFeedback(True, context=mock_context())),
+            ("grasp", GraspFeedback(1, context=mock_context())),
+            ("twist", twist_reply(float("nan"))),
+            ("twist", twist_reply(225, axial=float("inf"))),
+            ("retreat", RetreatFeedback(True, "yes", context=mock_context())),
             ("hold", None),
         ]
         sequence = ["check_ready", "approach", "grasp", "twist", "retreat", "hold"]
@@ -146,7 +152,7 @@ class TaskTests(unittest.IsolatedAsyncioTestCase):
                                  sequence[:sequence.index(phase) + 1] + ["stop_and_hold"])
 
     async def test_malformed_stop_receipt_becomes_unknown(self):
-        for receipt in (None, GraspFeedback(True), StopFeedback("yes", True)):
+        for receipt in (None, GraspFeedback(True, context=mock_context()), StopFeedback("yes", True)):
             with self.subTest(receipt=receipt):
                 class Executor(MockExecutor):
                     async def stop_and_hold(self):
@@ -170,18 +176,18 @@ class TaskTests(unittest.IsolatedAsyncioTestCase):
                     kwargs = dict(step_timeout_s=1, stop_timeout_s=1)
                     kwargs[field] = invalid
                     with self.assertRaises(ValueError):
-                        CapTask(MockEstimator(), MockExecutor(), **kwargs)
+                        CapTask(MockEstimator(), MockExecutor(), limits=RunLimits(1, 5.0), **kwargs)
 
     async def test_feedback_not_command_completion_gates_progress(self):
         cases = [
-            ("approach", ApproachFeedback(True, False, True)),
-            ("approach", ApproachFeedback(True, True, False)),
-            ("grasp", GraspFeedback(False)),
-            ("twist", TwistFeedback(225.0, True, False, True)),
-            ("twist", TwistFeedback(100.0, False, True, True)),
-            ("twist", TwistFeedback(225.0, True, True, False)),
-            ("retreat", RetreatFeedback(False, True)),
-            ("hold", HoldFeedback(False)),
+            ("approach", ApproachFeedback(True, False, True, context=mock_context())),
+            ("approach", ApproachFeedback(True, True, False, context=mock_context())),
+            ("grasp", GraspFeedback(False, context=mock_context())),
+            ("twist", twist_reply(225, released=False)),
+            ("twist", twist_reply(100, released=None)),
+            ("twist", twist_reply(225, stable=False)),
+            ("retreat", RetreatFeedback(False, True, context=mock_context())),
+            ("hold", HoldFeedback(False, context=mock_context())),
         ]
         for phase, feedback in cases:
             with self.subTest(phase=phase, feedback=feedback):

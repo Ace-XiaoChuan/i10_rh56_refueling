@@ -1,0 +1,23 @@
+{
+  "origin": {
+    "kind": "first_successful_regrasp_endpoint",
+    "side": "before",
+    "segment_summary_path": "artifacts/planning/segmented_single_tol_020/summary.json",
+    "cumulative_angle_deg": 90.0,
+    "input_hashes": {
+      "artifacts/planning/segmented_single_tol_020/rotation_1.json": "ded971d51561cc9381f707d31ec45c9d4cb7a25b96503c9eeab9943fabd70eab",
+      "artifacts/planning/segmented_single_tol_020/rotation_1_fcl.json": "7b62b165824ef569807770b34989894f729541da66d144d010b8c8141046b0a4",
+      "artifacts/planning/segmented_single_tol_020/regrasp_1_request.json": "bed16b44ff575e81a92e1fa0207b86bf2a945f3f359a336402757992143b316c",
+      "artifacts/planning/segmented_single_tol_020/regrasp_1_mtc.json": "9c8d386c91dc90f51de153201a59db2f35a961a710cb78c92d0e038dbd800257",
+      "artifacts/planning/segmented_single_tol_020/regrasp_1_validation.json": "b58e9ca6523ae933ed73ace08b3be5254a43246899ed01e3f9ceb69ad53afd6e",
+      "artifacts/planning/segmented_single_tol_020/rotation_2.json": "83e025b9833fc9eb5c851ac59d779939680c3d750d7f7139660d2644b0af4f1b",
+      "artifacts/planning/segmented_single_tol_020/rotation_2_fcl.json": "43224ca3f67691fe49dfa3b7e7a03ab714d78e4eeb546c47359bfdab5ab63ad0",
+      "artifacts/planning/segmented_single_tol_020/summary.json": "ac510f469bf6eb76687bc5b374c2f960dee45d080fe133ffdd203a10a148edb6",
+      "artifacts/planning/random_single/approach.json": "bd2e297f98c634ae40ba06cd89c21e19e84a2f0883fae0ec11c9a825736ea64c"
+    }
+  },
+  "scan_settings": {
+    "max_angle_deg": 135.0,
+    "angle_step_deg": 1.0
+  }
+}

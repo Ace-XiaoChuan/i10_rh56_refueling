@@ -1,0 +1,105 @@
+{
+  "scope": "mock_orchestration_no_physics",
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "physical_support_criterion_validated": false,
+  "source_hashes": {
+    "src/fuel_cap_task/execution_contract.py": "dcf6ecd651d63b73e9f6cecba0e359b6f13607bb880e52d7013f147055f8b3be",
+    "src/fuel_cap_task/interfaces.py": "9fde75fbc8034c0d40a883f9ea222c7f917b78f6ceb604b47a761c8b585e5387",
+    "src/fuel_cap_task/state_machine.py": "8a885a75accd9da8a7a6aa47b464968962fa1d817655476c8e1236f94fc94f5c",
+    "src/fuel_cap_task/validation.py": "5cc83a81da75eb575f0f8ae091105ae1e2c1d6b8461ef1ffeb2b080c5cf67dbe",
+    "src/fuel_cap_task/mock.py": "2451cb9a9c9153737251a9c1ef1d4453282ef93a0fd8d423aab749207968c62b",
+    "tools/run_cap_task.py": "68d9cb8c0906a876feb4d18e185d221918765a4646e504fab0cf012cf1a8d367",
+    "tests/test_cap_task.py": "259492ed68c8ac2a18ec99d5dd3ffd42f566a9f30a63201a9728dc70a8c29cb5",
+    "tests/test_feedback_task.py": "e32e9e08c6e1c8442a31ed0766159dc57339214367cac4cb8ce034f9b142ab78",
+    "tests/scene/test_mujoco_scene.py": "1625e5f51af0353374671ab8948df0884cf4fe53121bc970877783b7e539f95c"
+  },
+  "checks": [
+    {
+      "command": "PYTHONPATH=src python3 -m unittest discover -s tests -v",
+      "tests_run": 41,
+      "passed": true
+    },
+    {
+      "command": "PYTHONPATH=src .venv/bin/python -m unittest discover -s tests/scene -p test_mujoco_scene.py -v",
+      "tests_run": 8,
+      "passed": true
+    },
+    {
+      "command": "python3 -m unittest discover -s tests/planning -p test_model_provenance.py -v",
+      "tests_run": 2,
+      "passed": true
+    }
+  ],
+  "scenarios": [
+    {
+      "scenario": "default",
+      "command": [
+        "python3",
+        "tools/run_cap_task.py",
+        "--scenario",
+        "default",
+        "--delay",
+        "0"
+      ],
+      "exit_code": 0,
+      "state": "completed",
+      "file": "default.json"
+    },
+    {
+      "scenario": "early_detach",
+      "command": [
+        "python3",
+        "tools/run_cap_task.py",
+        "--scenario",
+        "early_detach",
+        "--delay",
+        "0"
+      ],
+      "exit_code": 0,
+      "state": "completed",
+      "file": "early_detach.json"
+    },
+    {
+      "scenario": "regrasp",
+      "command": [
+        "python3",
+        "tools/run_cap_task.py",
+        "--scenario",
+        "regrasp",
+        "--delay",
+        "0"
+      ],
+      "exit_code": 0,
+      "state": "completed",
+      "file": "regrasp.json"
+    },
+    {
+      "scenario": "support_unknown",
+      "command": [
+        "python3",
+        "tools/run_cap_task.py",
+        "--scenario",
+        "support_unknown",
+        "--delay",
+        "0"
+      ],
+      "exit_code": 1,
+      "state": "waiting_for_operator",
+      "file": "support_unknown.json"
+    },
+    {
+      "scenario": "detach_in_check",
+      "command": [
+        "python3",
+        "tools/run_cap_task.py",
+        "--scenario",
+        "detach_in_check",
+        "--delay",
+        "0"
+      ],
+      "exit_code": 0,
+      "state": "completed",
+      "file": "detach_in_check.json"
+    }
+  ]
+}

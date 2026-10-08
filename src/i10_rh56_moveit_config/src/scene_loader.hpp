@@ -1,5 +1,5 @@
 #pragma once
-// Shared model/world loading for audit and MTC.
+// 模型审计与 MTC 共用的模型及环境加载逻辑。
 #include <rclcpp/rclcpp.hpp>
 #include <moveit/robot_model_loader/robot_model_loader.h>
 #include <moveit/planning_scene/planning_scene.h>

@@ -1,0 +1,251 @@
+{
+  "mode": "single_configuration_rotation_margin_not_execution",
+  "analysis_finished": true,
+  "diagnostic_sha256": "4067aa55e32827afa5f2bcc931de38f16a78d550744c1efdc5d525b6c2064b7f",
+  "fcl_sha256": "a6da19109d6dfea8388e2e4698f03352b2cb0608002a6d2c5eaf4dc364889135",
+  "scan_settings": {
+    "max_angle_deg": 225.0,
+    "angle_step_deg": 1.0
+  },
+  "checked_prefix_angle_deg": 189.0,
+  "passed_samples": 255,
+  "scan_horizon_reached": false,
+  "failure": {
+    "kind": "mujoco_robot_interference",
+    "angle_deg": 189.5,
+    "contacts": [
+      {
+        "geoms": [
+          "foreArm_Link_collision_0",
+          "wrist2_Link_collision_0"
+        ],
+        "penetration_m": 0.00011987197487885953
+      }
+    ],
+    "arm_qpos_rad": [
+      1.217410430103059,
+      0.19795886164044268,
+      -1.380019151087129,
+      2.0718749598354607,
+      0.7621603344094685,
+      -0.6871191825987961
+    ],
+    "cap_qpos_rad": 3.5957801026650555,
+    "joint_lower_margin_rad": [
+      7.500600430103059,
+      6.481148861640443,
+      4.903170848912872,
+      8.355064959835461,
+      7.045350334409469,
+      5.596070817401204
+    ],
+    "joint_upper_margin_rad": [
+      5.065779569896941,
+      6.085231138359558,
+      7.663209151087129,
+      4.211315040164539,
+      5.5210296655905315,
+      6.970309182598797
+    ],
+    "joint_margin_rad": [
+      5.065779569896941,
+      6.085231138359558,
+      4.903170848912872,
+      4.211315040164539,
+      5.5210296655905315,
+      5.596070817401204
+    ],
+    "minimum_joint_margin_rad": 4.211315040164539,
+    "position_error_m": 1.888295971038799e-05,
+    "orientation_error_rad": 0.00010179659955630823
+  },
+  "mujoco_failure": {
+    "kind": "mujoco_robot_interference",
+    "angle_deg": 189.5,
+    "contacts": [
+      {
+        "geoms": [
+          "foreArm_Link_collision_0",
+          "wrist2_Link_collision_0"
+        ],
+        "penetration_m": 0.00011987197487885953
+      }
+    ],
+    "arm_qpos_rad": [
+      1.217410430103059,
+      0.19795886164044268,
+      -1.380019151087129,
+      2.0718749598354607,
+      0.7621603344094685,
+      -0.6871191825987961
+    ],
+    "cap_qpos_rad": 3.5957801026650555,
+    "joint_lower_margin_rad": [
+      7.500600430103059,
+      6.481148861640443,
+      4.903170848912872,
+      8.355064959835461,
+      7.045350334409469,
+      5.596070817401204
+    ],
+    "joint_upper_margin_rad": [
+      5.065779569896941,
+      6.085231138359558,
+      7.663209151087129,
+      4.211315040164539,
+      5.5210296655905315,
+      6.970309182598797
+    ],
+    "joint_margin_rad": [
+      5.065779569896941,
+      6.085231138359558,
+      4.903170848912872,
+      4.211315040164539,
+      5.5210296655905315,
+      5.596070817401204
+    ],
+    "minimum_joint_margin_rad": 4.211315040164539,
+    "position_error_m": 1.888295971038799e-05,
+    "orientation_error_rad": 0.00010179659955630823
+  },
+  "fcl_failure": null,
+  "joint_tables_deg": {
+    "initial": [
+      {
+        "joint": "shoulder_joint",
+        "q_deg": 95.47009825334453,
+        "lower_limit_deg": -360.00026887880375,
+        "upper_limit_deg": 360.00026887880375,
+        "to_lower_deg": 455.4703671321483,
+        "to_upper_deg": 264.53017062545916,
+        "nearest_margin_deg": 264.53017062545916,
+        "last_increment_deg": null
+      },
+      {
+        "joint": "upperArm_joint",
+        "q_deg": 15.52697505951998,
+        "lower_limit_deg": -360.00026887880375,
+        "upper_limit_deg": 360.00026887880375,
+        "to_lower_deg": 375.5272439383237,
+        "to_upper_deg": 344.47329381928375,
+        "nearest_margin_deg": 344.47329381928375,
+        "last_increment_deg": null
+      },
+      {
+        "joint": "foreArm_joint",
+        "q_deg": -91.21920007248387,
+        "lower_limit_deg": -360.00026887880375,
+        "upper_limit_deg": 360.00026887880375,
+        "to_lower_deg": 268.7810688063199,
+        "to_upper_deg": 451.2194689512876,
+        "nearest_margin_deg": 268.7810688063199,
+        "last_increment_deg": null
+      },
+      {
+        "joint": "wrist1_joint",
+        "q_deg": 38.38569366529316,
+        "lower_limit_deg": -360.00026887880375,
+        "upper_limit_deg": 360.00026887880375,
+        "to_lower_deg": 398.3859625440969,
+        "to_upper_deg": 321.6145752135106,
+        "nearest_margin_deg": 321.6145752135106,
+        "last_increment_deg": null
+      },
+      {
+        "joint": "wrist2_joint",
+        "q_deg": 157.59562102221017,
+        "lower_limit_deg": -360.00026887880375,
+        "upper_limit_deg": 360.00026887880375,
+        "to_lower_deg": 517.595889901014,
+        "to_upper_deg": 202.40464785659356,
+        "nearest_margin_deg": 202.40464785659356,
+        "last_increment_deg": null
+      },
+      {
+        "joint": "wrist3_joint",
+        "q_deg": 136.4116316824433,
+        "lower_limit_deg": -360.00026887880375,
+        "upper_limit_deg": 360.00026887880375,
+        "to_lower_deg": 496.4119005612471,
+        "to_upper_deg": 223.58863719636045,
+        "nearest_margin_deg": 223.58863719636045,
+        "last_increment_deg": null
+      }
+    ],
+    "last_checked": [
+      {
+        "joint": "shoulder_joint",
+        "q_deg": 69.67757375872836,
+        "lower_limit_deg": -360.00026887880375,
+        "upper_limit_deg": 360.00026887880375,
+        "to_lower_deg": 429.6778426375321,
+        "to_upper_deg": 290.3226951200754,
+        "nearest_margin_deg": 290.3226951200754,
+        "last_increment_deg": 0.07284098583882997
+      },
+      {
+        "joint": "upperArm_joint",
+        "q_deg": 11.2616349810329,
+        "lower_limit_deg": -360.00026887880375,
+        "upper_limit_deg": 360.00026887880375,
+        "to_lower_deg": 371.26190385983665,
+        "to_upper_deg": 348.73863389777085,
+        "nearest_margin_deg": 348.73863389777085,
+        "last_increment_deg": 0.08203435685701095
+      },
+      {
+        "joint": "foreArm_joint",
+        "q_deg": -79.26337296595098,
+        "lower_limit_deg": -360.00026887880375,
+        "upper_limit_deg": 360.00026887880375,
+        "to_lower_deg": 280.7368959128528,
+        "to_upper_deg": 439.26364184475466,
+        "nearest_margin_deg": 280.7368959128528,
+        "last_increment_deg": 0.19677035480017663
+      },
+      {
+        "joint": "wrist1_joint",
+        "q_deg": 118.20539337004121,
+        "lower_limit_deg": -360.00026887880375,
+        "upper_limit_deg": 360.00026887880375,
+        "to_lower_deg": 478.205662248845,
+        "to_upper_deg": 241.79487550876254,
+        "nearest_margin_deg": 241.79487550876254,
+        "last_increment_deg": 0.5187702879824226
+      },
+      {
+        "joint": "wrist2_joint",
+        "q_deg": 43.360075709959624,
+        "lower_limit_deg": -360.00026887880375,
+        "upper_limit_deg": 360.00026887880375,
+        "to_lower_deg": 403.3603445887633,
+        "to_upper_deg": 316.6401931688441,
+        "nearest_margin_deg": 316.6401931688441,
+        "last_increment_deg": 0.30107536021084697
+      },
+      {
+        "joint": "wrist3_joint",
+        "q_deg": -38.79012657876404,
+        "lower_limit_deg": -360.00026887880375,
+        "upper_limit_deg": 360.00026887880375,
+        "to_lower_deg": 321.2101423000397,
+        "to_upper_deg": 398.79039545756774,
+        "nearest_margin_deg": 321.2101423000397,
+        "last_increment_deg": -0.5930254221787151
+      }
+    ]
+  },
+  "execution_stop_angle_deg": null,
+  "execution_stopping_reserve_deg": null,
+  "physical_grasp_verified": false,
+  "thread_motion_verified": false,
+  "coverage_note": "MuJoCo 原覆盖与 FCL 完整规划覆盖共同通过的有限采样；未验证连续安全或物理执行",
+  "closest_joint_to_limit_in_prefix": {
+    "joint": "wrist2_joint",
+    "angle_deg": 0.0,
+    "margin_deg": 202.40464785659356
+  },
+  "summary_source_hashes": {
+    "src/fuel_cap_task/rotation_margin.py": "e32fb596608d08b7678628c3df2d5cd6b71d26ade298df8cab0d96a96874e9ee"
+  }
+}

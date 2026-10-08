@@ -1,4 +1,4 @@
-"""Current-model endpoint IK; no trajectory execution or grasp acceptance."""
+"""当前模型的端点逆运动学；不执行轨迹，也不作为抓稳验收。"""
 import asyncio
 from dataclasses import asdict, dataclass
 import hashlib
@@ -70,10 +70,15 @@ class ArmIKPreview:
         self.limits = self.model.jnt_range[ids]
         self.initial = self.data.qpos[self.addresses].copy()
         self.flange = self.model.body('wrist3_Link').id
+        # 固定安装链给出法兰到手根的变换；base 是手根，base_link 才是臂基座。
         self.flange_from_hand = inverse(body_transform(self.data, 'wrist3_Link')) @ body_transform(self.data, 'base')
+        # 通过估计接口获取盖体位姿；当前场景的来源仍为仿真真值。
         self.estimate = asyncio.run(self.scene.estimator.estimate())
         self.world_from_cap = transform(*pose_arrays(asdict(self.estimate.pose)))
+        # world_from_X 将 X 系坐标转为世界系坐标。
+        # 世界中的盖位姿 × 候选中手相对盖的位姿 = 世界中的手根目标。
         self.world_from_hand = self.world_from_cap @ transform(*pose_arrays(c['cap_from_hand']))
+        # IK 求六个臂关节，因此用安装链的逆变换，将手根目标换算法兰目标。
         self.world_from_flange = self.world_from_hand @ inverse(self.flange_from_hand)
         base_inverse = inverse(body_transform(self.data, 'base_link'))
         self.base_from_hand = base_inverse @ self.world_from_hand
@@ -121,8 +126,8 @@ class ArmIKPreview:
         if closed:
             trial = self.candidate.get('contact_trial') or {}
             q = trial.get('final_qpos')
-            # Existing fixed-fixture model has exactly the hand's joints. Match
-            # recorded positions through that model's names, never array offsets.
+            # 现有固定夹具模型仅包含手部关节；通过该模型的关节名匹配记录值，
+            # 不使用数组偏移猜测对应关系。
             if q is None:
                 raise ValueError('Candidate has no recorded actual closure')
             from .grasp_contact import ContactExplorer
@@ -173,7 +178,7 @@ class ArmIKPreview:
             error = self.error()
             if (np.linalg.norm(error[:3]) <= cfg.position_tolerance_m
                     and np.linalg.norm(error[3:]) <= cfg.orientation_tolerance_rad):
-                # Equivalent turns nearest the initial preview posture, within limits.
+                # 在限位内选择最接近初始预览姿态的等效转角。
                 for axis in range(6):
                     variants = q[axis] + 2*np.pi*np.arange(-3, 4)
                     allowed = variants[(variants >= self.limits[axis,0]) & (variants <= self.limits[axis,1])]

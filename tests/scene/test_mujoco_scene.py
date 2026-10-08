@@ -9,6 +9,7 @@ import numpy as np
 from fuel_cap_task import CapTask, State
 from fuel_cap_task.interfaces import TaskParameters
 from fuel_cap_task.mock import MockExecutor
+from fuel_cap_task.execution_contract import RunLimits
 from fuel_cap_task.mujoco_scene import MujocoCapScene, HandPreviewMapping
 
 
@@ -116,7 +117,8 @@ class SceneTests(unittest.TestCase):
 
     def test_estimator_can_feed_task_interface_with_explicit_mock_execution(self):
         executor = MockExecutor(delay_s=0)
-        task = CapTask(self.scene.estimator, executor, step_timeout_s=1, stop_timeout_s=1)
+        task = CapTask(self.scene.estimator, executor, limits=RunLimits(1, 5.0),
+                       step_timeout_s=1, stop_timeout_s=1)
         result = asyncio.run(task.run())
         self.assertEqual(result.state, State.COMPLETED)
         self.assertEqual(result.backend, "mock_no_physics")

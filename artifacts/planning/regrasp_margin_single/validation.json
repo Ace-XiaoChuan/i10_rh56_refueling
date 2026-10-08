@@ -1,0 +1,47 @@
+{
+  "mode": "regrasp_margin_validation_record",
+  "date": "2026-10-04",
+  "command": "timeout 120s .venv/bin/python tools/check_regrasp_margin.py",
+  "exit_code": 0,
+  "scan_runs_per_endpoint": 1,
+  "new_mtc_search": false,
+  "planning_tests": {
+    "command": "PYTHONPATH=src .venv/bin/python -m unittest discover -s tests/planning -v",
+    "passed": 33,
+    "new_checks": 8,
+    "exit_code": 0
+  },
+  "model_sources": {
+    "command": "python3 tools/check_moveit_model_sources.py",
+    "inputs": 234,
+    "outputs": 233,
+    "exit_code": 0
+  },
+  "format_check": {
+    "command": "git diff --check",
+    "exit_code": 0
+  },
+  "previous_single_configuration_sources_and_artifacts_unchanged": true,
+  "source_sha256": {
+    "src/fuel_cap_task/regrasp_margin.py": "cd13575b049c483624f5e442027197cd77db5aa6122c5eb60c1f09efaffedea3",
+    "tools/check_regrasp_margin.py": "2419de226168d98c9f81d05f0ea92c61692d87eba585947fef12f4ebadbbd5fa",
+    "tests/planning/test_regrasp_margin.py": "99cff5fd440d0401fb2c7d5da88d82b8059817e1b7d12aa660865d5ec3fedc3e"
+  },
+  "artifact_sha256": {
+    "joint_margins.csv": "5928d1d1d7992d6a7c9d6012c5263602d5e90328de801aad966f58cd6bc3922b",
+    "report.md": "b36e88571d9ffe47b561648189a586687944509c255d6fce3c7fe953d4a66021",
+    "summary.json": "7a60898bee8c5509a5f6db8a5fc7b08969be88a8b98586d483ed8936d085b0a6",
+    "inputs.json": "682feddf8c05a860004f06d8445438ace464d084052128ab2968c76163eea4d6",
+    "before/diagnostic.json": "57ed4996070001d5a6e86335362d6670b1e9c4855a474b79f1d9842529eb8dd1",
+    "before/fcl_validation.json": "d1e8d60e61294c6ca327265a1c5835e3dfec9600550d46d73854d9ab7751087b",
+    "before/fcl_audit.log": "9dee873319efbb8dac5fd60e9bdbcb98e4d210b9f2ce74503d75c8969657b63e",
+    "before/input.json": "682feddf8c05a860004f06d8445438ace464d084052128ab2968c76163eea4d6",
+    "after/diagnostic.json": "7f197269ef47a89ab5a06af1a6ffe2c8479781f7e99493b796f5041143318c1e",
+    "after/fcl_validation.json": "38f524130f5341bbbb2a179065c7e5783f5192bbead041a721990ccf9112c476",
+    "after/fcl_audit.log": "8b70aba206fd14cdbc492c57b65d7e18042406f90bc04c0d9717b902cc36b48b",
+    "after/input.json": "91ab73f73a22d3d67284131621bbd11be519db912e8f44aedc492905ba0d78af"
+  },
+  "gui_run": false,
+  "dynamics_run": false,
+  "hardware_run": false
+}

@@ -16,5 +16,5 @@
     0.1000042581009579
   ],
   "coverage_note": "MuJoCo original enabled geometry; full planning geometry checked by FCL",
-  "trajectory_sha256": "10cf45bb8b9cb59d89922d281319a488bc4a5052bf7d39d2ae7ffa08f2c14e6a"
+  "trajectory_sha256": "a53f39166440e0952ce7f679ee5c92282c0568281f8f3e7338473a8f890e5929"
 }

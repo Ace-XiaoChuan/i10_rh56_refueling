@@ -1,4 +1,4 @@
-"""Validated MTC geometric trajectory playback, strictly mj_forward only."""
+"""回放已验证的 MTC 几何轨迹；严格只调用 mj_forward。"""
 import hashlib
 import json
 from pathlib import Path
@@ -26,7 +26,7 @@ class ApproachReplay:
             path = (ROOT/relative).resolve()
             if not path.is_relative_to(ROOT) or hashlib.sha256(path.read_bytes()).hexdigest() != expected:
                 raise ValueError(f'Stale source: {relative}')
-        # Check all source and generated geometry, not only manifest hashes.
+        # 检查全部源文件和生成几何，不能只核对清单自身的哈希。
         package = ROOT/'src/i10_rh56_moveit_config'
         provenance = json.loads((package/'config/provenance.json').read_text())
         if provenance['mujoco_version'] != mujoco.__version__:
@@ -36,8 +36,40 @@ class ApproachReplay:
             for relative, expected in records.items():
                 if hashlib.sha256((base/relative).read_bytes()).hexdigest() != expected:
                     raise ValueError(f'Stale planning geometry: {relative}')
-        self.scene = MujocoCapScene()
+        if 'scene_variation' in request:
+            # 回放必须重建原随机场景；不能把新轨迹放回固定基线场景中显示。
+            from .random_scenes import SceneSampler, SamplingSettings
+            from .planning_scene_snapshot import scene_snapshot, check_snapshot
+            variation = request['scene_variation']
+            candidate = request['candidate_path']
+            if candidate not in request['source_hashes']:
+                raise ValueError('Sampled candidate must be source-bound')
+            sampler = SceneSampler(ROOT/candidate, SamplingSettings(random_seed=variation['random_seed']))
+            if sampler.single_sample() != variation['sample']:
+                raise ValueError('Sample differs from saved random seed')
+            preview = sampler.preview(variation['sample'])
+            baseline = json.loads((package/'config/scene.json').read_text())
+            check_snapshot(request['planning_scene'], scene_snapshot(baseline, preview.model, preview.data))
+            self.scene = preview.scene
+            # 再从盖体和候选计算目标，核对报告中的位置、朝向及接近轴。
+            # 防止障碍是一个场景，目标却来自另一个场景。
+            if not np.allclose(request['hand_position'], preview.world_from_hand[:3, 3], atol=1e-12, rtol=0):
+                raise ValueError('Target differs from sampled cap/candidate')
+            _, orientation = pose_arrays({'position_m': request['hand_position'],
+                                          'orientation_xyzw': request['hand_orientation_xyzw']})
+            if not np.allclose(orientation, preview.world_from_hand[:3, :3], atol=1e-12, rtol=0):
+                raise ValueError('Target orientation differs from sampled cap/candidate')
+            axis = preview.world_from_cap[:3, 2]
+            pregrasp = preview.world_from_hand[:3, 3] + request['approach_distance_m'] * axis
+            if (not np.allclose(request['outward_axis_world'], axis, atol=1e-12, rtol=0)
+                    or not np.allclose(request['pregrasp_position'], pregrasp, atol=1e-12, rtol=0)):
+                raise ValueError('Approach differs from sampled cap axis')
+        else:
+            if 'planning_scene' in request:
+                raise ValueError('Planning scene requires a reproducible variation')
+            self.scene = MujocoCapScene()
         self.model, self.data = self.scene.model, self.scene.data
+        # 手保持候选预型；该回放没有闭合动作，也不复用历史闭合接触采样。
         self.scene.hand.apply(self.data, request['pregrasp_channels'])
         expected_hand = {self.model.joint(j).name: float(self.data.qpos[self.model.jnt_qposadr[j]])
                          for j in self.scene.hand.joint_ids}
@@ -63,7 +95,7 @@ class ApproachReplay:
             raise ValueError('Trajectory initial state differs from request')
         if np.max(np.abs(np.diff(self.points, axis=0))) > .02000001:
             raise ValueError('Trajectory discontinuity or insufficient sampling')
-        # Playback display progress follows geometric joint distance, no physical times.
+        # 回放进度按关节空间的几何距离计算，不代表物理执行时间。
         length = np.linalg.norm(np.diff(self.points, axis=0), axis=1)
         self.progress = np.r_[0, np.cumsum(length)]
         if self.progress[-1] <= 0:
@@ -80,15 +112,19 @@ class ApproachReplay:
         self.set_progress(0)
 
     def set_progress(self, fraction):
+        # fraction 是显示进度；找出两侧已验证路点，再按关节角插值显示。
+        # 这里只决定画面位置，不是控制器或真实时间轨迹。
         fraction = float(np.clip(fraction, 0, 1))
         right = min(len(self.points)-1, int(np.searchsorted(self.progress, fraction, side='right')))
         left = max(0, right-1)
         span = self.progress[right]-self.progress[left]
         weight = 0 if span == 0 else (fraction-self.progress[left])/span
         q = self.points[left]+weight*(self.points[right]-self.points[left])
+        # 先恢复本场景初态，再只覆盖六个臂关节，保持手、盖和门关节不变。
         self.data.qpos[:] = self.initial
         self.data.qpos[self.addresses] = q
         self.data.qvel[:] = 0
+        # 只刷新前向位姿与接触几何；不调用 mj_step，不进行动力学积分。
         mujoco.mj_forward(self.model, self.data)
         return self.labels[right]
 
@@ -105,11 +141,14 @@ class ApproachReplay:
             self.data.qpos[self.addresses] = q
             mujoco.mj_forward(self.model, self.data)
             if self.labels[index] == 'axial approach':
+                # 从抓取前位置量到当前手根；投影到接近方向 -axis 得到轴向进度。
+                # 去掉轴向分量后的长度就是偏离直线的横向误差，单位均为 m。
                 delta = body_transform(self.data, 'base')[:3, 3]-origin
                 along = float(np.dot(delta, -axis))
                 axial_positions.append(along)
                 line_error = max(line_error, float(np.linalg.norm(delta+along*axis)))
             for contact in self.data.contact:
+                # 仅统计涉及机器人的接触；负 contact.dist 表示几何穿透。
                 bodies = self.model.geom_bodyid[contact.geom]
                 if any(int(b) in self.robot_bodies for b in bodies) and -contact.dist > worst:
                     worst = float(-contact.dist)
@@ -121,6 +160,7 @@ class ApproachReplay:
         q = request['hand_orientation_xyzw']
         _, wanted_rotation = pose_arrays({'position_m': request['hand_position'], 'orientation_xyzw': q})
         orientation_error = float(np.linalg.norm(rotation_error(wanted_rotation, actual[:3, :3])))
+        # 按合同阈值检查终点位姿、穿透和直线偏差；不是抓稳或拧盖验收。
         if error > 1e-4 or orientation_error > .002 or worst > 1e-4 or line_error > .0002:
             raise ValueError(f'MuJoCo validation failed: error={error}, penetration={worst}, pair={pair}')
         summary = {'mode': 'mujoco_kinematic_replay_not_dynamics', 'waypoints': len(self.points),

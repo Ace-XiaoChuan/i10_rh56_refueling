@@ -1,0 +1,9 @@
+{
+  "checked_samples": 154,
+  "clear_prefix_angle_deg": 99.0,
+  "completed_input_check": true,
+  "diagnostic_sha256": "b8ac8d24947ec65cce917b0ee0fe49a269a8dc4990cb2280bb8a2c83b0f4f221",
+  "failure": null,
+  "mode": "full_fcl_rotation_prefix_audit_not_execution",
+  "passed_samples": 154
+}

@@ -1,0 +1,31 @@
+{
+  "origin": {
+    "kind": "selected_initial_configuration",
+    "side": "after",
+    "candidate_id": "candidate_001",
+    "role": "candidate",
+    "cumulative_angle_deg": 0.0,
+    "baseline_trajectory_path": "artifacts/planning/random_single/approach.json",
+    "diagnostic_trajectory_path": "artifacts/planning/random_single/approach.json",
+    "input_hashes": {
+      "artifacts/manual_grasp/user_selected_20260930.json": "f0ad6a80fbb8fe666f93675818b0656281466a5abd3ce834c22227a069ef6610",
+      "assets/scenes/i10_rh56_fuel_cap_preview.xml": "5154349867b0bc2dae0039c68fe4eb4aafa3d75fe2321a22baa093c6b98d12db",
+      "src/i10_rh56_moveit_config/config/generated_hashes.json": "87fd73014f24ded32279a229bd8e293920ddca9599f80f92d0571f8b56983512",
+      "src/i10_rh56_moveit_config/config/provenance.json": "f63c23026ee53138068b00055afdf139b34331b05f0059791d28cf293166d082",
+      "artifacts/planning/random_single/approach.json": "bd2e297f98c634ae40ba06cd89c21e19e84a2f0883fae0ec11c9a825736ea64c",
+      "src/fuel_cap_task/initial_configuration_selection.py": "073921c77d036c4e4b5d4d044cd8eb4e7ae122a15d884650ccccee3988c446d2",
+      "tools/select_initial_configuration.py": "8e93ba2d8222ce71b41afc1f2058b1978679cc16d22839f209eac91cb2c20cd7",
+      "src/fuel_cap_task/configuration_selection.py": "ce6196c3125f003815f340a6d964decc17c910a6d38075edf70c27dd4cd376e4",
+      "src/fuel_cap_task/trajectory_replay.py": "42d2da3ebcc73bbc44a33942077f62dc3c030ad3da3aa3701046c2d3076b5654",
+      "src/i10_rh56_moveit_config/src/plan_selected_approach.cpp": "f6c4117db274c3e7d845083a437555bb75dad8646eee6cffd44345baca445d6a",
+      "src/i10_rh56_moveit_config/launch/selected_approach.launch.py": "1a6eeddac7238dcdac47490f0cb47f66a0337094bff55b0af7b09d3cb6caacde",
+      "install/i10_rh56_moveit_config/lib/i10_rh56_moveit_config/plan_selected_approach": "27ba761d03145c71062829d2777a4aa7cd6fc2867851c6c9284eab2a20aec780",
+      "install/i10_rh56_moveit_config/share/i10_rh56_moveit_config/launch/selected_approach.launch.py": "1a6eeddac7238dcdac47490f0cb47f66a0337094bff55b0af7b09d3cb6caacde",
+      "artifacts/planning/initial_selection_single_v2/candidate_pool.json": "64d0ac552aba635bf9c753880b29fc0ed135567ed83121ba810e818a47cba743"
+    }
+  },
+  "scan_settings": {
+    "max_angle_deg": 225.0,
+    "angle_step_deg": 1.0
+  }
+}

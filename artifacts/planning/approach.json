@@ -87,8 +87,8 @@
     "source_hashes": {
       "artifacts/manual_grasp/user_selected_20260930.json": "f0ad6a80fbb8fe666f93675818b0656281466a5abd3ce834c22227a069ef6610",
       "assets/scenes/i10_rh56_fuel_cap_preview.xml": "5154349867b0bc2dae0039c68fe4eb4aafa3d75fe2321a22baa093c6b98d12db",
-      "src/i10_rh56_moveit_config/config/generated_hashes.json": "867416caca6bca58a3e89a485bebdc8761def9d5ee1755462072afc65304fb90",
-      "src/i10_rh56_moveit_config/config/provenance.json": "6101a7a6a38f56f4a2b96c5f735358376bed27424f6858c38f86337b73432468"
+      "src/i10_rh56_moveit_config/config/generated_hashes.json": "87fd73014f24ded32279a229bd8e293920ddca9599f80f92d0571f8b56983512",
+      "src/i10_rh56_moveit_config/config/provenance.json": "f63c23026ee53138068b00055afdf139b34331b05f0059791d28cf293166d082"
     }
   },
   "schema_version": 1,
@@ -2247,5 +2247,7 @@
         ]
       ]
     }
-  ]
+  ],
+  "comment_translation_provenance_note": "2026-10-02：仅注释翻译后的来源清单重新绑定；Python 执行逻辑与全部模型/场景几何哈希核对不变；沿用原规划轨迹，未重新搜索。",
+  "comment_guidance_provenance_note": "2026-10-02：补充中文分段阅读注释后重新绑定来源清单；执行逻辑及模型/场景几何哈希核对不变，沿用原规划路点，没有重新搜索。"
 }

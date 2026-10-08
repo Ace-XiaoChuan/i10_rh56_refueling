@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Replay actual MTC approach in MuJoCo; no actuators, mj_step or dynamics."""
+"""在 MuJoCo 中回放实际 MTC 接近轨迹；不驱动执行器、不调用 mj_step、不运行动力学。"""
 import argparse
 import ctypes
 import json
@@ -51,7 +51,7 @@ def render(replay, folder, frames=120):
 
 
 def view(replay, duration, auto_close):
-    # WSLg rendering threads must initialize X11 before opening GLFW.
+    # WSLg 渲染线程需在打开 GLFW 前初始化 X11 线程支持。
     ctypes.CDLL('libX11.so.6').XInitThreads()
     import mujoco.viewer
     keys = SimpleQueue();before = set(threading.enumerate());threads=[]

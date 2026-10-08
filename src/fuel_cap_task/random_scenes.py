@@ -1,4 +1,4 @@
-"""Bounded scene variations around the current candidate; endpoint checks only."""
+"""围绕当前候选生成有边界场景变化；端点检查不代表路径或执行通过。"""
 from dataclasses import asdict, dataclass
 import hashlib
 import json
@@ -51,7 +51,7 @@ class SceneSampler:
         self.world_from_base=body_transform(d,'base_link')
         self.mount=body_transform(d,'inspection_tank_mount')
         self.opening=d.body('tank_opening_center').xpos.copy()
-        # The raised opening is no longer the body-height midpoint.
+        # 提高后的开孔位置不再位于车体高度中点。
         self.center=d.body('tank_body_center').xpos.copy()
         self.base_opening=self.world_from_base[:3,:3].T@(self.opening-self.world_from_base[:3,3])
         self.cap_initial=float(d.joint('cap_twist').qpos[0])
@@ -74,25 +74,51 @@ class SceneSampler:
                              'cap_yaw_deg':float(rng.uniform(-cfg.cap_yaw_limit_deg,cfg.cap_yaw_limit_deg)) if group in ('cap_yaw','mixed') else 0.})
         return rows
 
+    def single_sample(self):
+        """生成一个独立混合样本，在可行性检查之前固定采样结果。"""
+        cfg = self.settings
+        # 相同种子复现同一个样本；这里的位置在机械臂 base_link 系中，单位 m。
+        rng = np.random.default_rng(cfg.random_seed)
+        height = self.base_opening[2] if cfg.height_m is None else cfg.height_m
+        # 拒绝的只是超出水平距离边界的位置，不依据 IK 或碰撞结果挑样。
+        for _ in range(10000):
+            p = [rng.uniform(cfg.x_min_m, cfg.x_max_m),
+                 rng.uniform(cfg.y_min_m, cfg.y_max_m), height]
+            if np.linalg.norm(p[:2]) <= cfg.max_horizontal_distance_m:
+                break
+        else:
+            raise ValueError('Unable to sample within configured bounds')
+        # 两个角度分别是箱体绕竖直轴偏航、盖体绕开口轴转动，单位 deg。
+        return {'id': 0, 'group': 'mixed', 'opening_base_m': list(map(float, p)),
+                'tank_yaw_deg': float(rng.uniform(-cfg.tank_yaw_limit_deg, cfg.tank_yaw_limit_deg)),
+                'cap_yaw_deg': float(rng.uniform(-cfg.cap_yaw_limit_deg, cfg.cap_yaw_limit_deg))}
+
     def preview(self, sample, ik_settings=None):
         root=ET.parse(DEFAULT_SCENE).getroot()
         root.set('model', f"sample_{sample.get('id', 'custom')}_{sample.get('group', 'custom')}")
         for mesh in root.findall('./asset/mesh'):
             mesh.set('file',str((DEFAULT_SCENE.parent/mesh.get('file')).resolve()))
+        # br 将基座系方向转到世界系；delta 是在世界系表达的箱体偏航旋转。
         br=self.world_from_base[:3,:3]
         delta=br@rotation(2,np.deg2rad(sample['tank_yaw_deg']))@br.T
+        # 先绕车体几何中心旋转，求旋转后的开孔位置，再算采样期望的世界位置。
         rotated_opening=self.center+delta@(self.opening-self.center)
         desired=self.world_from_base[:3,3]+br@np.array(sample['opening_base_m'])
+        # 将安装根也绕车体中心转动，再平移 desired - rotated_opening。
+        # 箱体、门和盖共用这棵装配树，因而保持相对装配关系。
         pos=self.center+delta@(self.mount[:3,3]-self.center)+desired-rotated_opening
         r=delta@self.mount[:3,:3]
         body=root.find("./worldbody/body[@name='inspection_tank_mount']")
         body.set('pos',' '.join(map(str,pos)))
         for attr in ('euler','axisangle','xyaxes','zaxis'):body.attrib.pop(attr,None)
+        # 工具输出 XYZW，MuJoCo XML 使用 WXYZ；只调整存储顺序。
         q=np.array(quaternion(r))[[3,0,1,2]]
         body.set('quat',' '.join(map(str,q)))
         xml=ET.tostring(root,encoding='unicode')
+        # 重新编译派生模型，避免静态几何移动后沿用旧碰撞缓存；不改源场景。
         model=mujoco.MjModel.from_xml_string(xml)
         scene=MujocoCapScene(model=model)
+        # 盖体额外绕开口轴转动；这个简化关节只改变姿态，不模拟螺纹运动。
         scene.data.joint('cap_twist').qpos[0]=self.cap_initial+np.deg2rad(sample['cap_yaw_deg'])
         mujoco.mj_forward(model,scene.data)
         p=ArmIKPreview(self.candidate_path,ik_settings,scene=scene)

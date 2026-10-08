@@ -1,0 +1,6472 @@
+{
+  "schema_version": 1,
+  "arm_joints": [
+    "shoulder_joint",
+    "upperArm_joint",
+    "foreArm_joint",
+    "wrist1_joint",
+    "wrist2_joint",
+    "wrist3_joint"
+  ],
+  "initial_joint_positions": {
+    "shoulder_joint": 0.0,
+    "upperArm_joint": -0.5,
+    "foreArm_joint": 1.2,
+    "wrist1_joint": 0.0,
+    "wrist2_joint": 0.0,
+    "wrist3_joint": 0.0,
+    "thumb_proximal_yaw_joint": 1.308,
+    "thumb_proximal_pitch_joint": 0.1388721804511278,
+    "thumb_intermediate_joint": 0.3347,
+    "thumb_distal_joint": 0.24165563909774435,
+    "index_proximal_joint": 0.3537201181842599,
+    "index_intermediate_joint": 0.34506999999999993,
+    "middle_proximal_joint": 0.3748858447488584,
+    "middle_intermediate_joint": 0.2687099999999999,
+    "ring_proximal_joint": 1.53102336825141,
+    "ring_intermediate_joint": 1.56,
+    "pinky_proximal_joint": 1.53102336825141,
+    "pinky_intermediate_joint": 1.56
+  },
+  "pregrasp_position": [
+    -0.16533478156771897,
+    0.7570052501824867,
+    0.5594958431484657
+  ],
+  "hand_position": [
+    -0.13603240763609342,
+    0.8526157667691634,
+    0.5594958431484657
+  ],
+  "hand_orientation_xyzw": [
+    0.2889963051185749,
+    0.5545713474194427,
+    0.6122197885204341,
+    0.48385812672020884
+  ],
+  "outward_axis_world": [
+    -0.2930237393162555,
+    -0.9561051658667671,
+    2.220446049250313e-16
+  ],
+  "approach_distance_m": 0.1,
+  "pregrasp_channels": [
+    0,
+    0,
+    800,
+    800,
+    900,
+    0
+  ],
+  "cap_estimate": {
+    "pose": {
+      "frame_id": "world",
+      "position_m": [
+        -0.025840199263009907,
+        0.9861900550570267,
+        0.6
+      ],
+      "orientation_xyzw": [
+        0.33434997457481885,
+        -0.6230650804705858,
+        0.497743262318912,
+        0.5022465976152816
+      ]
+    },
+    "timestamp_s": 0.0,
+    "source": "simulation_ground_truth",
+    "valid": true,
+    "confidence": null,
+    "timestamp_clock": "simulation"
+  },
+  "source_hashes": {
+    "assets/scenes/i10_rh56_fuel_cap_preview.xml": "5154349867b0bc2dae0039c68fe4eb4aafa3d75fe2321a22baa093c6b98d12db",
+    "artifacts/manual_grasp/user_selected_20260930.json": "f0ad6a80fbb8fe666f93675818b0656281466a5abd3ce834c22227a069ef6610",
+    "src/i10_rh56_moveit_config/config/generated_hashes.json": "87fd73014f24ded32279a229bd8e293920ddca9599f80f92d0571f8b56983512",
+    "src/i10_rh56_moveit_config/config/provenance.json": "f63c23026ee53138068b00055afdf139b34331b05f0059791d28cf293166d082"
+  },
+  "scene_variation": {
+    "random_seed": 20261002,
+    "sample": {
+      "id": 0,
+      "group": "mixed",
+      "opening_base_m": [
+        0.027891365438223705,
+        -0.9794973188959596,
+        0.6
+      ],
+      "tank_yaw_deg": -17.039069896501893,
+      "cap_yaw_deg": 16.523023939825535
+    }
+  },
+  "candidate_path": "artifacts/manual_grasp/user_selected_20260930.json",
+  "planning_scene": {
+    "frame_id": "world",
+    "objects": [
+      {
+        "id": "scene_geom_0",
+        "source_geom": 0,
+        "source_body": "world",
+        "added_collision": true,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "shape": {
+          "type": "plane",
+          "coefficients": [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "id": "scene_geom_50",
+        "source_geom": 50,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.29246821294573794,
+          1.1114148482288893,
+          0.6131802493605003
+        ],
+        "rotation_matrix": [
+          [
+            -0.047379587790176536,
+            -0.9549305015853009,
+            -0.29302373931625575
+          ],
+          [
+            0.01452072897122586,
+            0.2926637323499876,
+            -0.9561051658667687
+          ],
+          [
+            0.9987714068248947,
+            -0.04955478694357235,
+            -5.551115123125783e-17
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_031_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_51",
+        "source_geom": 51,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.29245080237274423,
+          1.1114201841598983,
+          0.639796255178725
+        ],
+        "rotation_matrix": [
+          [
+            -0.1416816006249734,
+            -0.9455492648410591,
+            -0.29302373931625575
+          ],
+          [
+            0.04342207728770636,
+            0.28978860399764084,
+            -0.9561051658667687
+          ],
+          [
+            0.9889594770506871,
+            -0.14818620972153246,
+            1.1102230246251565e-16
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_032_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_52",
+        "source_geom": 52,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.29241661133329955,
+          1.1114306629090849,
+          0.6671994114715658
+        ],
+        "rotation_matrix": [
+          [
+            -0.2346165550016178,
+            -0.926872245952102,
+            -0.29302373931625564
+          ],
+          [
+            0.07190445434916937,
+            0.28406453711723534,
+            -0.9561051658667686
+          ],
+          [
+            0.9694249953265714,
+            -0.24538781232179996,
+            5.551115123125783e-17
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_033_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_53",
+        "source_geom": 53,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.29236686715668014,
+          1.1114459083289012,
+          0.6959868247917856
+        ],
+        "rotation_matrix": [
+          [
+            -0.3252877311793434,
+            -0.8990689518281212,
+            -0.2930237393162558
+          ],
+          [
+            0.09969303665194768,
+            0.2755434815886495,
+            -0.9561051658667687
+          ],
+          [
+            0.9403452506326127,
+            -0.34022170655719686,
+            1.1102230246251565e-16
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_034_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_54",
+        "source_geom": 54,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.2923033706015502,
+          1.1114653685291827,
+          0.726877797418519
+        ],
+        "rotation_matrix": [
+          [
+            -0.41282016556628487,
+            -0.8623900504406032,
+            -0.29302373931625575
+          ],
+          [
+            0.12651966844016088,
+            0.26430226124774775,
+            -0.9561051658667685
+          ],
+          [
+            0.9019824191189199,
+            -0.431772759215288,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_035_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_55",
+        "source_geom": 55,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.2922284338203675,
+          1.1114883348895983,
+          0.7607947067084623
+        ],
+        "rotation_matrix": [
+          [
+            -0.4963690410786726,
+            -0.2930237393162562,
+            0.8171626908124007
+          ],
+          [
+            0.15212543315341176,
+            -0.9561051658667701,
+            -0.25044113957328995
+          ],
+          [
+            0.8546786692357141,
+            0.0,
+            0.5191573676193704
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_036_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_56",
+        "source_geom": 56,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.2921447968504438,
+          1.111513967653176,
+          0.7989890232127079
+        ],
+        "rotation_matrix": [
+          [
+            -0.5751275390480632,
+            -0.2930237393162562,
+            0.763783609424582
+          ],
+          [
+            0.17626305985162216,
+            -0.9561051658667701,
+            -0.234081706962814
+          ],
+          [
+            0.7988489516549842,
+            0.0,
+            0.6015316720171416
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_037_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_57",
+        "source_geom": 57,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.29205555263139604,
+          1.11154131890669,
+          0.8432526871660322
+        ],
+        "rotation_matrix": [
+          [
+            -0.6483342039404492,
+            -0.2930237393162561,
+            0.702708935618459
+          ],
+          [
+            0.1986991803281725,
+            -0.9561051658667699,
+            -0.21536375632820298
+          ],
+          [
+            0.7349703366380314,
+            0.0,
+            0.6780992584144179
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_038_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_58",
+        "source_geom": 58,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.2691490059258995,
+          1.1185616365559332,
+          0.867210874532095
+        ],
+        "rotation_matrix": [
+          [
+            0.7027089356184579,
+            -0.29302373931625564,
+            -0.6483342039404482
+          ],
+          [
+            -0.21536375632820265,
+            -0.9561051658667683,
+            0.19869918032817221
+          ],
+          [
+            -0.6780992584144169,
+            0.0,
+            -0.7349703366380302
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_039_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_59",
+        "source_geom": 59,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.22682828815993553,
+          1.1315319408833744,
+          0.8673042159575299
+        ],
+        "rotation_matrix": [
+          [
+            0.7637836094245809,
+            -0.29302373931625575,
+            -0.5751275390480627
+          ],
+          [
+            -0.23408170696281363,
+            -0.9561051658667687,
+            0.17626305985162194
+          ],
+          [
+            -0.601531672017141,
+            1.3877787807814457e-17,
+            -0.798848951654983
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_040_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_60",
+        "source_geom": 60,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.19031050484347592,
+          1.142723782326077,
+          0.8673916927047638
+        ],
+        "rotation_matrix": [
+          [
+            0.8171626908123992,
+            -0.2930237393162557,
+            -0.4963690410786721
+          ],
+          [
+            -0.2504411395732895,
+            -0.9561051658667685,
+            0.1521254331534116
+          ],
+          [
+            -0.5191573676193699,
+            0.0,
+            -0.8546786692357127
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_041_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_61",
+        "source_geom": 61,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.1578823726611266,
+          1.1526622419122665,
+          0.8674700698371738
+        ],
+        "rotation_matrix": [
+          [
+            0.8623900504406024,
+            0.412820165566284,
+            -0.2930237393162553
+          ],
+          [
+            -0.26430226124774747,
+            -0.1265196684401606,
+            -0.9561051658667674
+          ],
+          [
+            -0.43177275921528707,
+            0.901982419118919,
+            -1.3877787807814457e-17
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_042_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_62",
+        "source_geom": 62,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.12834735415405796,
+          1.161714030222468,
+          0.8675364815222025
+        ],
+        "rotation_matrix": [
+          [
+            0.8990689518281202,
+            0.32528773117934284,
+            -0.29302373931625536
+          ],
+          [
+            -0.27554348158864916,
+            -0.0996930366519474,
+            -0.9561051658667675
+          ],
+          [
+            -0.3402217065571962,
+            0.9403452506326114,
+            6.938893903907228e-18
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_043_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_63",
+        "source_geom": 63,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.10082355956665404,
+          1.1701494257188014,
+          0.867588509456362
+        ],
+        "rotation_matrix": [
+          [
+            0.9268722459521009,
+            0.23461655500161765,
+            -0.29302373931625536
+          ],
+          [
+            -0.28406453711723506,
+            -0.07190445434916937,
+            -0.9561051658667674
+          ],
+          [
+            -0.24538781232179982,
+            0.9694249953265703,
+            -1.0408340855860843e-16
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_044_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_64",
+        "source_geom": 64,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.07462326027401439,
+          1.1781792010447973,
+          0.8676242702080714
+        ],
+        "rotation_matrix": [
+          [
+            0.9455492648410575,
+            0.1416816006249731,
+            -0.29302373931625536
+          ],
+          [
+            -0.28978860399764045,
+            -0.04342207728770614,
+            -0.9561051658667674
+          ],
+          [
+            -0.14818620972153215,
+            0.9889594770506858,
+            5.551115123125783e-17
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_045_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_65",
+        "source_geom": 65,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.04917555961646995,
+          1.1859783225953169,
+          0.8676424801013085
+        ],
+        "rotation_matrix": [
+          [
+            0.9549305015852996,
+            0.04737958779017638,
+            -0.29302373931625536
+          ],
+          [
+            -0.29266373234998727,
+            -0.014520728971225777,
+            -0.9561051658667674
+          ],
+          [
+            -0.04955478694357214,
+            0.9987714068248934,
+            8.153200337090993e-17
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_046_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_66",
+        "source_geom": 66,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.02397215061449684,
+          1.1937025745007857,
+          0.8676424801013084
+        ],
+        "rotation_matrix": [
+          [
+            0.9549305015852996,
+            -0.04737958779017638,
+            -0.29302373931625536
+          ],
+          [
+            -0.29266373234998727,
+            0.014520728971225774,
+            -0.9561051658667674
+          ],
+          [
+            0.04955478694357214,
+            0.9987714068248934,
+            -8.239936510889834e-17
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_047_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_67",
+        "source_geom": 67,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.001475550043047641,
+          1.2015016960513052,
+          0.8676242702080715
+        ],
+        "rotation_matrix": [
+          [
+            0.9455492648410575,
+            -0.1416816006249731,
+            -0.29302373931625536
+          ],
+          [
+            -0.28978860399764045,
+            0.04342207728770614,
+            -0.9561051658667674
+          ],
+          [
+            0.14818620972153215,
+            0.9889594770506858,
+            -5.594483210025203e-17
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_048_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_68",
+        "source_geom": 68,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.027675849335687258,
+          1.209531471377301,
+          0.867588509456362
+        ],
+        "rotation_matrix": [
+          [
+            0.9268722459521009,
+            -0.23461655500161765,
+            -0.29302373931625536
+          ],
+          [
+            -0.28406453711723506,
+            0.07190445434916938,
+            -0.9561051658667674
+          ],
+          [
+            0.24538781232179982,
+            0.9694249953265703,
+            1.0343288725511712e-16
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_049_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_69",
+        "source_geom": 69,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.05519964392309118,
+          1.2179668668736345,
+          0.8675364815222024
+        ],
+        "rotation_matrix": [
+          [
+            0.8990689518281202,
+            -0.32528773117934284,
+            -0.29302373931625536
+          ],
+          [
+            -0.27554348158864916,
+            0.09969303665194741,
+            -0.9561051658667675
+          ],
+          [
+            0.3402217065571962,
+            0.9403452506326114,
+            -7.535205098774256e-18
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_050_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_70",
+        "source_geom": 70,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.08473466243015981,
+          1.227018655183836,
+          0.8674700698371736
+        ],
+        "rotation_matrix": [
+          [
+            0.8623900504406022,
+            -0.4128201655662845,
+            -0.2930237393162554
+          ],
+          [
+            -0.2643022612477475,
+            0.1265196684401607,
+            -0.9561051658667675
+          ],
+          [
+            0.4317727592152876,
+            0.9019824191189189,
+            -7.806255641895632e-17
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_051_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_71",
+        "source_geom": 71,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.11716279461250917,
+          1.2369571147700253,
+          0.867391692704764
+        ],
+        "rotation_matrix": [
+          [
+            0.8171626908123995,
+            -0.29302373931625575,
+            0.4963690410786719
+          ],
+          [
+            -0.25044113957328956,
+            -0.9561051658667687,
+            -0.15212543315341157
+          ],
+          [
+            0.5191573676193697,
+            0.0,
+            -0.8546786692357129
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_052_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_72",
+        "source_geom": 72,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.15368057792896878,
+          1.2481489562127281,
+          0.8673042159575299
+        ],
+        "rotation_matrix": [
+          [
+            0.763783609424581,
+            -0.29302373931625575,
+            0.5751275390480624
+          ],
+          [
+            -0.23408170696281366,
+            -0.9561051658667686,
+            -0.17626305985162188
+          ],
+          [
+            0.6015316720171406,
+            1.3877787807814457e-17,
+            -0.7988489516549832
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_053_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_73",
+        "source_geom": 73,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.19600129569493274,
+          1.2611192605401693,
+          0.867210874532095
+        ],
+        "rotation_matrix": [
+          [
+            0.7027089356184579,
+            -0.29302373931625564,
+            0.6483342039404482
+          ],
+          [
+            -0.21536375632820265,
+            -0.9561051658667683,
+            -0.19869918032817221
+          ],
+          [
+            0.6780992584144169,
+            0.0,
+            -0.7349703366380302
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_054_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_74",
+        "source_geom": 74,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.21890784240042932,
+          1.2681395781894125,
+          0.8432526871660322
+        ],
+        "rotation_matrix": [
+          [
+            0.6483342039404492,
+            -0.2930237393162561,
+            0.702708935618459
+          ],
+          [
+            -0.1986991803281725,
+            -0.9561051658667699,
+            -0.21536375632820298
+          ],
+          [
+            0.7349703366380314,
+            0.0,
+            -0.6780992584144179
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_055_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_75",
+        "source_geom": 75,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.21899708661947703,
+          1.2681669294429265,
+          0.7989890232127079
+        ],
+        "rotation_matrix": [
+          [
+            0.5751275390480634,
+            -0.29302373931625614,
+            0.7637836094245818
+          ],
+          [
+            -0.1762630598516222,
+            -0.95610516586677,
+            -0.23408170696281394
+          ],
+          [
+            0.7988489516549839,
+            0.0,
+            -0.6015316720171416
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_056_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_76",
+        "source_geom": 76,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.21908072358940062,
+          1.2681925622065042,
+          0.7607947067084622
+        ],
+        "rotation_matrix": [
+          [
+            0.49636904107867275,
+            -0.29302373931625614,
+            0.8171626908124002
+          ],
+          [
+            -0.15212543315341184,
+            -0.9561051658667699,
+            -0.25044113957328984
+          ],
+          [
+            0.8546786692357137,
+            0.0,
+            -0.5191573676193706
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_057_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_77",
+        "source_geom": 77,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.21915566037058348,
+          1.2682155285669199,
+          0.726877797418519
+        ],
+        "rotation_matrix": [
+          [
+            0.41282016556628476,
+            -0.8623900504406035,
+            -0.29302373931625575
+          ],
+          [
+            -0.12651966844016088,
+            0.26430226124774786,
+            -0.9561051658667687
+          ],
+          [
+            0.9019824191189201,
+            0.43177275921528785,
+            -6.938893903907228e-17
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_058_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_78",
+        "source_geom": 78,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.21921915692571353,
+          1.2682349887672013,
+          0.6959868247917856
+        ],
+        "rotation_matrix": [
+          [
+            0.32528773117934334,
+            -0.8990689518281212,
+            -0.2930237393162558
+          ],
+          [
+            -0.09969303665194768,
+            0.2755434815886495,
+            -0.9561051658667687
+          ],
+          [
+            0.9403452506326127,
+            0.34022170655719686,
+            -1.1102230246251565e-16
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_059_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_79",
+        "source_geom": 79,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.21926890110233277,
+          1.2682502341870177,
+          0.6671994114715658
+        ],
+        "rotation_matrix": [
+          [
+            0.2346165550016178,
+            -0.926872245952102,
+            -0.29302373931625564
+          ],
+          [
+            -0.07190445434916937,
+            0.28406453711723534,
+            -0.9561051658667686
+          ],
+          [
+            0.9694249953265714,
+            0.24538781232179996,
+            -5.551115123125783e-17
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_060_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_80",
+        "source_geom": 80,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.21930309214177734,
+          1.2682607129362042,
+          0.639796255178725
+        ],
+        "rotation_matrix": [
+          [
+            0.14168160062497334,
+            -0.9455492648410591,
+            -0.29302373931625575
+          ],
+          [
+            -0.04342207728770636,
+            0.28978860399764084,
+            -0.9561051658667687
+          ],
+          [
+            0.9889594770506871,
+            0.14818620972153246,
+            -1.1102230246251565e-16
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_061_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_81",
+        "source_geom": 81,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.21932050271477116,
+          1.268266048867213,
+          0.6131802493605003
+        ],
+        "rotation_matrix": [
+          [
+            0.047379587790176536,
+            -0.9549305015853009,
+            -0.29302373931625575
+          ],
+          [
+            -0.01452072897122586,
+            0.2926637323499876,
+            -0.9561051658667687
+          ],
+          [
+            0.9987714068248947,
+            0.04955478694357235,
+            5.551115123125783e-17
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_062_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_82",
+        "source_geom": 82,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.2193205027147711,
+          1.268266048867213,
+          0.5868197506394996
+        ],
+        "rotation_matrix": [
+          [
+            -0.047379587790176536,
+            -0.9549305015853009,
+            -0.29302373931625575
+          ],
+          [
+            0.01452072897122586,
+            0.2926637323499876,
+            -0.9561051658667687
+          ],
+          [
+            0.9987714068248947,
+            -0.04955478694357235,
+            -5.551115123125783e-17
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_063_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_83",
+        "source_geom": 83,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.21930309214177746,
+          1.2682607129362042,
+          0.560203744821275
+        ],
+        "rotation_matrix": [
+          [
+            -0.1416816006249734,
+            -0.9455492648410591,
+            -0.29302373931625575
+          ],
+          [
+            0.04342207728770636,
+            0.28978860399764084,
+            -0.9561051658667687
+          ],
+          [
+            0.9889594770506871,
+            -0.14818620972153246,
+            1.1102230246251565e-16
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_064_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_84",
+        "source_geom": 84,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.21926890110233277,
+          1.2682502341870177,
+          0.5328005885284341
+        ],
+        "rotation_matrix": [
+          [
+            -0.2346165550016178,
+            -0.926872245952102,
+            -0.29302373931625564
+          ],
+          [
+            0.07190445434916937,
+            0.28406453711723534,
+            -0.9561051658667686
+          ],
+          [
+            0.9694249953265714,
+            -0.24538781232179996,
+            5.551115123125783e-17
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_065_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_85",
+        "source_geom": 85,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.21921915692571337,
+          1.2682349887672013,
+          0.5040131752082143
+        ],
+        "rotation_matrix": [
+          [
+            -0.3252877311793434,
+            -0.8990689518281212,
+            -0.2930237393162558
+          ],
+          [
+            0.09969303665194768,
+            0.2755434815886495,
+            -0.9561051658667687
+          ],
+          [
+            0.9403452506326127,
+            -0.34022170655719686,
+            1.1102230246251565e-16
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_066_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_86",
+        "source_geom": 86,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.21915566037058343,
+          1.2682155285669199,
+          0.473122202581481
+        ],
+        "rotation_matrix": [
+          [
+            -0.41282016556628487,
+            -0.8623900504406032,
+            -0.29302373931625575
+          ],
+          [
+            0.12651966844016088,
+            0.26430226124774775,
+            -0.9561051658667685
+          ],
+          [
+            0.9019824191189199,
+            -0.431772759215288,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_067_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_87",
+        "source_geom": 87,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.21908072358940073,
+          1.2681925622065042,
+          0.4392052932915377
+        ],
+        "rotation_matrix": [
+          [
+            -0.4963690410786726,
+            -0.2930237393162562,
+            0.8171626908124007
+          ],
+          [
+            0.15212543315341176,
+            -0.9561051658667701,
+            -0.25044113957328995
+          ],
+          [
+            0.8546786692357141,
+            0.0,
+            0.5191573676193704
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_068_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_88",
+        "source_geom": 88,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.21899708661947703,
+          1.2681669294429265,
+          0.40101097678729203
+        ],
+        "rotation_matrix": [
+          [
+            -0.5751275390480632,
+            -0.2930237393162562,
+            0.763783609424582
+          ],
+          [
+            0.17626305985162216,
+            -0.9561051658667701,
+            -0.234081706962814
+          ],
+          [
+            0.7988489516549842,
+            0.0,
+            0.6015316720171416
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_069_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_89",
+        "source_geom": 89,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.21890784240042926,
+          1.2681395781894125,
+          0.35674731283396777
+        ],
+        "rotation_matrix": [
+          [
+            -0.6483342039404492,
+            -0.2930237393162561,
+            0.702708935618459
+          ],
+          [
+            0.1986991803281725,
+            -0.9561051658667699,
+            -0.21536375632820298
+          ],
+          [
+            0.7349703366380314,
+            0.0,
+            0.6780992584144179
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_070_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_90",
+        "source_geom": 90,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.19600129569493274,
+          1.2611192605401693,
+          0.33278912546790496
+        ],
+        "rotation_matrix": [
+          [
+            0.7027089356184579,
+            -0.29302373931625564,
+            -0.6483342039404482
+          ],
+          [
+            -0.21536375632820265,
+            -0.9561051658667683,
+            0.19869918032817221
+          ],
+          [
+            -0.6780992584144169,
+            0.0,
+            -0.7349703366380302
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_071_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_91",
+        "source_geom": 91,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.15368057792896875,
+          1.2481489562127281,
+          0.33269578404247
+        ],
+        "rotation_matrix": [
+          [
+            0.7637836094245809,
+            -0.29302373931625575,
+            -0.5751275390480627
+          ],
+          [
+            -0.23408170696281363,
+            -0.9561051658667687,
+            0.17626305985162194
+          ],
+          [
+            -0.601531672017141,
+            1.3877787807814457e-17,
+            -0.798848951654983
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_072_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_92",
+        "source_geom": 92,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.11716279461250914,
+          1.2369571147700253,
+          0.3326083072952361
+        ],
+        "rotation_matrix": [
+          [
+            0.8171626908123992,
+            -0.2930237393162557,
+            -0.4963690410786721
+          ],
+          [
+            -0.2504411395732895,
+            -0.9561051658667685,
+            0.1521254331534116
+          ],
+          [
+            -0.5191573676193699,
+            0.0,
+            -0.8546786692357127
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_073_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_93",
+        "source_geom": 93,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.08473466243015981,
+          1.227018655183836,
+          0.3325299301628262
+        ],
+        "rotation_matrix": [
+          [
+            0.8623900504406024,
+            0.412820165566284,
+            -0.2930237393162553
+          ],
+          [
+            -0.26430226124774747,
+            -0.1265196684401606,
+            -0.9561051658667674
+          ],
+          [
+            -0.43177275921528707,
+            0.901982419118919,
+            -1.3877787807814457e-17
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_074_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_94",
+        "source_geom": 94,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.055199643923091235,
+          1.2179668668736345,
+          0.3324635184777974
+        ],
+        "rotation_matrix": [
+          [
+            0.8990689518281202,
+            0.32528773117934284,
+            -0.29302373931625536
+          ],
+          [
+            -0.27554348158864916,
+            -0.0996930366519474,
+            -0.9561051658667675
+          ],
+          [
+            -0.3402217065571962,
+            0.9403452506326114,
+            6.938893903907228e-18
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_075_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_95",
+        "source_geom": 95,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.027675849335687258,
+          1.2095314713773013,
+          0.3324114905436379
+        ],
+        "rotation_matrix": [
+          [
+            0.9268722459521009,
+            0.23461655500161765,
+            -0.29302373931625536
+          ],
+          [
+            -0.28406453711723506,
+            -0.07190445434916937,
+            -0.9561051658667674
+          ],
+          [
+            -0.24538781232179982,
+            0.9694249953265703,
+            -1.0408340855860843e-16
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_076_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_96",
+        "source_geom": 96,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.001475550043047641,
+          1.2015016960513052,
+          0.33237572979192853
+        ],
+        "rotation_matrix": [
+          [
+            0.9455492648410575,
+            0.1416816006249731,
+            -0.29302373931625536
+          ],
+          [
+            -0.28978860399764045,
+            -0.04342207728770614,
+            -0.9561051658667674
+          ],
+          [
+            -0.14818620972153215,
+            0.9889594770506858,
+            5.551115123125783e-17
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_077_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_97",
+        "source_geom": 97,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.023972150614496812,
+          1.1937025745007859,
+          0.33235751989869156
+        ],
+        "rotation_matrix": [
+          [
+            0.9549305015852996,
+            0.04737958779017638,
+            -0.29302373931625536
+          ],
+          [
+            -0.29266373234998727,
+            -0.014520728971225777,
+            -0.9561051658667674
+          ],
+          [
+            -0.04955478694357214,
+            0.9987714068248934,
+            8.153200337090993e-17
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_078_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_98",
+        "source_geom": 98,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.04917555961646992,
+          1.1859783225953169,
+          0.3323575198986915
+        ],
+        "rotation_matrix": [
+          [
+            0.9549305015852996,
+            -0.04737958779017638,
+            -0.29302373931625536
+          ],
+          [
+            -0.29266373234998727,
+            0.014520728971225774,
+            -0.9561051658667674
+          ],
+          [
+            0.04955478694357214,
+            0.9987714068248934,
+            -8.239936510889834e-17
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_079_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_99",
+        "source_geom": 99,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.07462326027401439,
+          1.1781792010447973,
+          0.3323757297919284
+        ],
+        "rotation_matrix": [
+          [
+            0.9455492648410575,
+            -0.1416816006249731,
+            -0.29302373931625536
+          ],
+          [
+            -0.28978860399764045,
+            0.04342207728770614,
+            -0.9561051658667674
+          ],
+          [
+            0.14818620972153215,
+            0.9889594770506858,
+            -5.594483210025203e-17
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_080_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_100",
+        "source_geom": 100,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.10082355956665404,
+          1.1701494257188014,
+          0.3324114905436379
+        ],
+        "rotation_matrix": [
+          [
+            0.9268722459521009,
+            -0.23461655500161765,
+            -0.29302373931625536
+          ],
+          [
+            -0.28406453711723506,
+            0.07190445434916938,
+            -0.9561051658667674
+          ],
+          [
+            0.24538781232179982,
+            0.9694249953265703,
+            1.0343288725511712e-16
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_081_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_101",
+        "source_geom": 101,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.12834735415405799,
+          1.161714030222468,
+          0.33246351847779754
+        ],
+        "rotation_matrix": [
+          [
+            0.8990689518281202,
+            -0.32528773117934284,
+            -0.29302373931625536
+          ],
+          [
+            -0.27554348158864916,
+            0.09969303665194741,
+            -0.9561051658667675
+          ],
+          [
+            0.3402217065571962,
+            0.9403452506326114,
+            -7.535205098774256e-18
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_082_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_102",
+        "source_geom": 102,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.1578823726611266,
+          1.1526622419122665,
+          0.33252993016282634
+        ],
+        "rotation_matrix": [
+          [
+            0.8623900504406022,
+            -0.4128201655662845,
+            -0.2930237393162554
+          ],
+          [
+            -0.2643022612477475,
+            0.1265196684401607,
+            -0.9561051658667675
+          ],
+          [
+            0.4317727592152876,
+            0.9019824191189189,
+            -7.806255641895632e-17
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_083_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_103",
+        "source_geom": 103,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.19031050484347595,
+          1.142723782326077,
+          0.332608307295236
+        ],
+        "rotation_matrix": [
+          [
+            0.8171626908123995,
+            -0.29302373931625575,
+            0.4963690410786719
+          ],
+          [
+            -0.25044113957328956,
+            -0.9561051658667687,
+            -0.15212543315341157
+          ],
+          [
+            0.5191573676193697,
+            0.0,
+            -0.8546786692357129
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_084_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_104",
+        "source_geom": 104,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.22682828815993555,
+          1.1315319408833744,
+          0.33269578404247
+        ],
+        "rotation_matrix": [
+          [
+            0.763783609424581,
+            -0.29302373931625575,
+            0.5751275390480624
+          ],
+          [
+            -0.23408170696281366,
+            -0.9561051658667686,
+            -0.17626305985162188
+          ],
+          [
+            0.6015316720171406,
+            1.3877787807814457e-17,
+            -0.7988489516549832
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_085_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_105",
+        "source_geom": 105,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.2691490059258995,
+          1.1185616365559332,
+          0.332789125467905
+        ],
+        "rotation_matrix": [
+          [
+            0.7027089356184579,
+            -0.29302373931625564,
+            0.6483342039404482
+          ],
+          [
+            -0.21536375632820265,
+            -0.9561051658667683,
+            -0.19869918032817221
+          ],
+          [
+            0.6780992584144169,
+            0.0,
+            -0.7349703366380302
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_086_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_106",
+        "source_geom": 106,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.2920555526313961,
+          1.11154131890669,
+          0.35674731283396777
+        ],
+        "rotation_matrix": [
+          [
+            0.6483342039404492,
+            -0.2930237393162561,
+            0.702708935618459
+          ],
+          [
+            -0.1986991803281725,
+            -0.9561051658667699,
+            -0.21536375632820298
+          ],
+          [
+            0.7349703366380314,
+            0.0,
+            -0.6780992584144179
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_087_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_107",
+        "source_geom": 107,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.2921447968504438,
+          1.111513967653176,
+          0.4010109767872921
+        ],
+        "rotation_matrix": [
+          [
+            0.5751275390480634,
+            -0.29302373931625614,
+            0.7637836094245818
+          ],
+          [
+            -0.1762630598516222,
+            -0.95610516586677,
+            -0.23408170696281394
+          ],
+          [
+            0.7988489516549839,
+            0.0,
+            -0.6015316720171416
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_088_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_108",
+        "source_geom": 108,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.2922284338203674,
+          1.1114883348895983,
+          0.43920529329153774
+        ],
+        "rotation_matrix": [
+          [
+            0.49636904107867275,
+            -0.29302373931625614,
+            0.8171626908124002
+          ],
+          [
+            -0.15212543315341184,
+            -0.9561051658667699,
+            -0.25044113957328984
+          ],
+          [
+            0.8546786692357137,
+            0.0,
+            -0.5191573676193706
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_089_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_109",
+        "source_geom": 109,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.29230337060155026,
+          1.1114653685291827,
+          0.47312220258148097
+        ],
+        "rotation_matrix": [
+          [
+            0.41282016556628476,
+            -0.8623900504406035,
+            -0.29302373931625575
+          ],
+          [
+            -0.12651966844016088,
+            0.26430226124774786,
+            -0.9561051658667687
+          ],
+          [
+            0.9019824191189201,
+            0.43177275921528785,
+            -6.938893903907228e-17
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_090_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_110",
+        "source_geom": 110,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.29236686715668025,
+          1.1114459083289012,
+          0.5040131752082143
+        ],
+        "rotation_matrix": [
+          [
+            0.32528773117934334,
+            -0.8990689518281212,
+            -0.2930237393162558
+          ],
+          [
+            -0.09969303665194768,
+            0.2755434815886495,
+            -0.9561051658667687
+          ],
+          [
+            0.9403452506326127,
+            0.34022170655719686,
+            -1.1102230246251565e-16
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_091_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_111",
+        "source_geom": 111,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.29241661133329955,
+          1.1114306629090849,
+          0.5328005885284341
+        ],
+        "rotation_matrix": [
+          [
+            0.2346165550016178,
+            -0.926872245952102,
+            -0.29302373931625564
+          ],
+          [
+            -0.07190445434916937,
+            0.28406453711723534,
+            -0.9561051658667686
+          ],
+          [
+            0.9694249953265714,
+            0.24538781232179996,
+            -5.551115123125783e-17
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_092_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_112",
+        "source_geom": 112,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.2924508023727441,
+          1.1114201841598983,
+          0.560203744821275
+        ],
+        "rotation_matrix": [
+          [
+            0.14168160062497334,
+            -0.9455492648410591,
+            -0.29302373931625575
+          ],
+          [
+            -0.04342207728770636,
+            0.28978860399764084,
+            -0.9561051658667687
+          ],
+          [
+            0.9889594770506871,
+            0.14818620972153246,
+            -1.1102230246251565e-16
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_093_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_113",
+        "source_geom": 113,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.292468212945738,
+          1.1114148482288893,
+          0.5868197506394995
+        ],
+        "rotation_matrix": [
+          [
+            0.047379587790176536,
+            -0.9549305015853009,
+            -0.29302373931625575
+          ],
+          [
+            -0.01452072897122586,
+            0.2926637323499876,
+            -0.9561051658667687
+          ],
+          [
+            0.9987714068248947,
+            0.04955478694357235,
+            5.551115123125783e-17
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_094_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_114",
+        "source_geom": 114,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.2408265631405157,
+          0.9182963549518872,
+          0.6135357356349073
+        ],
+        "rotation_matrix": [
+          [
+            -0.047526497694566405,
+            -0.298825429270306,
+            0.9531235989305433
+          ],
+          [
+            0.01428843692654902,
+            -0.9543076239015577,
+            -0.29848416965320756
+          ],
+          [
+            0.9987677771069159,
+            -0.0005672607743632541,
+            0.04962464738544203
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_095_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_115",
+        "source_geom": 115,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.24068896822323013,
+          0.9183338051830422,
+          0.6408511841199434
+        ],
+        "rotation_matrix": [
+          [
+            -0.14212153076179007,
+            -0.2984944492981082,
+            0.9437703821545522
+          ],
+          [
+            0.04271175623129106,
+            -0.9544098977845541,
+            -0.2954275763880559
+          ],
+          [
+            0.9889272856856408,
+            -0.0016765288846185555,
+            0.1483914178021583
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_096_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_116",
+        "source_geom": 116,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.24041795533785384,
+          0.9184076274827443,
+          0.6689194377467688
+        ],
+        "rotation_matrix": [
+          [
+            -0.23534888464032916,
+            -0.29784684085888474,
+            0.9251476432921074
+          ],
+          [
+            0.07067124100333379,
+            -0.9546098014270297,
+            -0.28935394020904737
+          ],
+          [
+            0.969338165035096,
+            -0.002717795031720982,
+            0.24571555790499672
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_097_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_117",
+        "source_geom": 117,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.2400218071747557,
+          0.9185156761688082,
+          0.6983155261089227
+        ],
+        "rotation_matrix": [
+          [
+            -0.32631836995225494,
+            -0.29690184257610075,
+            0.8974216496756832
+          ],
+          [
+            0.09784354547643552,
+            -0.9549009384612852,
+            -0.2803405756118128
+          ],
+          [
+            0.9401824089187741,
+            -0.003673363673543123,
+            0.34065164664069647
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_098_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_118",
+        "source_geom": 118,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.23951279353775243,
+          0.9186547527564733,
+          0.7297379126755471
+        ],
+        "rotation_matrix": [
+          [
+            -0.41417729703376266,
+            -0.29565795501843123,
+            0.860838858472438
+          ],
+          [
+            0.12386602784915311,
+            -0.9552829002976955,
+            -0.2684991388137039
+          ],
+          [
+            0.9017285477163755,
+            -0.0045775575525727474,
+            0.4322784660380086
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_099_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_119",
+        "source_geom": 119,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.23890700490565908,
+          0.9188206282925766,
+          0.7640899020337052
+        ],
+        "rotation_matrix": [
+          [
+            -0.4981472911328805,
+            -0.2940189307340573,
+            0.8157218549891744
+          ],
+          [
+            0.14824696351428357,
+            -0.9557832695664723,
+            -0.2539708239653203
+          ],
+          [
+            0.8543255317183097,
+            -0.005586589910726081,
+            0.519708260341705
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_100_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_120",
+        "source_geom": 120,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.23822402353926356,
+          0.9190081088054083,
+          0.8026061670911777
+        ],
+        "rotation_matrix": [
+          [
+            -0.577662187180364,
+            -0.2914728553047302,
+            0.7624630955807054
+          ],
+          [
+            0.16993606383089788,
+            -0.9565513213243981,
+            -0.2369204589777232
+          ],
+          [
+            0.7983909641971564,
+            -0.007290013241540549,
+            0.6020952781705559
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_101_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_121",
+        "source_geom": 121,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.23748663920891452,
+          0.9192110845951929,
+          0.84706470249154
+        ],
+        "rotation_matrix": [
+          [
+            -0.6537329731687213,
+            -0.2837420542929753,
+            0.701515250310064
+          ],
+          [
+            0.18272139613371025,
+            -0.9587980819694576,
+            -0.21752960581640984
+          ],
+          [
+            0.7343337736935006,
+            -0.014024430016837397,
+            0.6786436650966183
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_102_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_122",
+        "source_geom": 122,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.2142247191070779,
+          0.9263403158307251,
+          0.8713945793007154
+        ],
+        "rotation_matrix": [
+          [
+            0.6971604022865494,
+            -0.30639006410704117,
+            -0.6481454328313534
+          ],
+          [
+            -0.2312956351521468,
+            -0.9518569998994226,
+            0.20117301236010326
+          ],
+          [
+            -0.6785791793469824,
+            0.009663351331524406,
+            -0.7344636934510935
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_103_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_123",
+        "source_geom": 123,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.17172413087698096,
+          0.939388761381626,
+          0.8721590726510999
+        ],
+        "rotation_matrix": [
+          [
+            0.7613555105745252,
+            -0.2999855941945465,
+            -0.5747577139922107
+          ],
+          [
+            -0.24044136248720827,
+            -0.953942367099898,
+            0.17939317561474166
+          ],
+          [
+            -0.6021011025758896,
+            0.001613545038573208,
+            -0.7984182229566842
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_104_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_124",
+        "source_geom": 124,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.134904648693478,
+          0.9506949036331224,
+          0.8728670099198295
+        ],
+        "rotation_matrix": [
+          [
+            0.8155857706133196,
+            -0.29836037376580504,
+            -0.4957831563692022
+          ],
+          [
+            -0.25438131191615254,
+            -0.9544527194176702,
+            0.15591713999440035
+          ],
+          [
+            -0.5197210780032852,
+            -0.0010458310310291763,
+            -0.8543353599825774
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_105_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_125",
+        "source_geom": 125,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.10206607756540091,
+          0.9607789375294631,
+          0.8734948137814851
+        ],
+        "rotation_matrix": [
+          [
+            0.8612873478569386,
+            -0.2973961790834629,
+            -0.4119946808978475
+          ],
+          [
+            -0.26703387716922217,
+            -0.9547501755196534,
+            0.13093895825599583
+          ],
+          [
+            -0.4322927397788854,
+            -0.0027595310742083295,
+            -0.9017291012952376
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_106_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_126",
+        "source_geom": 126,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.07202771322414221,
+          0.9700019136165805,
+          0.8740222378230729
+        ],
+        "rotation_matrix": [
+          [
+            0.8983066086750098,
+            -0.2965314670306628,
+            -0.3242133955768143
+          ],
+          [
+            -0.2774751975114178,
+            -0.9550144498555722,
+            0.10466573141702315
+          ],
+          [
+            -0.34066516049752515,
+            -0.004060742260191506,
+            -0.9401759190680719
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_107_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_127",
+        "source_geom": 127,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.04392570437541814,
+          0.97862787958763,
+          0.8744326580437491
+        ],
+        "rotation_matrix": [
+          [
+            0.9263808479500739,
+            -0.29561741982352324,
+            -0.23329994781008206
+          ],
+          [
+            -0.28537159109556204,
+            -0.9552930665226558,
+            0.07731889839703078
+          ],
+          [
+            -0.24572663581079596,
+            -0.005049569350532274,
+            -0.9693260144566869
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_108_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_128",
+        "source_geom": 128,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.01709208974226975,
+          0.9868609879360751,
+          0.874713406042323
+        ],
+        "rotation_matrix": [
+          [
+            0.9452817079344492,
+            -0.2946214602610782,
+            -0.14014523822864214
+          ],
+          [
+            -0.2905517542748916,
+            -0.9555968778050034,
+            0.049135376432004406
+          ],
+          [
+            -0.14839868844540358,
+            -0.005727327733042631,
+            -0.9889110308742263
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_109_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_129",
+        "source_geom": 129,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.009023029375631694,
+          0.9948693769151041,
+          0.8748559348306706
+        ],
+        "rotation_matrix": [
+          [
+            0.9548493378783159,
+            -0.29356064791769065,
+            -0.04566057322778471
+          ],
+          [
+            -0.2929161737560789,
+            -0.9559211555231409,
+            0.02036810190970453
+          ],
+          [
+            -0.049627181115219306,
+            -0.006073748220927472,
+            -0.9987493441685499
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_110_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_130",
+        "source_geom": 130,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.03490620292715439,
+          1.002801960663071,
+          0.8748559349798013
+        ],
+        "rotation_matrix": [
+          [
+            0.9550047245955553,
+            -0.2924759262794782,
+            0.049232190151683036
+          ],
+          [
+            -0.29240916348234275,
+            -0.9562535971852435,
+            -0.008714297552960035
+          ],
+          [
+            0.049627181178531724,
+            -0.0060737482040489395,
+            -0.9987493441655066
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_111_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_131",
+        "source_geom": 131,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.06102396651856906,
+          1.0108017213646008,
+          0.8747134059618162
+        ],
+        "rotation_matrix": [
+          [
+            0.9457552648135541,
+            -0.29141558361035474,
+            0.14361036420287632
+          ],
+          [
+            -0.28900658884947145,
+            -0.9565794035753332,
+            -0.037829039864297836
+          ],
+          [
+            0.14839868826589736,
+            -0.005727327867202019,
+            -0.9889110309003863
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_112_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_132",
+        "source_geom": 132,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.08786275659648873,
+          1.0190179423210683,
+          0.8744326574557879
+        ],
+        "rotation_matrix": [
+          [
+            0.9271976059312556,
+            -0.2904204234282748,
+            0.23655988081475693
+          ],
+          [
+            -0.28270659714540824,
+            -0.9568858236502403,
+            -0.06668208475795713
+          ],
+          [
+            0.2457266356865171,
+            -0.005049569580180355,
+            -0.9693260144869956
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_113_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_133",
+        "source_geom": 133,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.11597225188747251,
+          1.027619479897573,
+          0.8740222373205824
+        ],
+        "rotation_matrix": [
+          [
+            0.8995199079124538,
+            -0.2895072244006702,
+            0.3271842023829894
+          ],
+          [
+            -0.2735163313071223,
+            -0.9571672149609158,
+            -0.09497230708084799
+          ],
+          [
+            0.34066516079203857,
+            -0.004060741777844587,
+            -0.9401759189634409
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_114_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_134",
+        "source_geom": 134,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.14602009949377656,
+          1.0368115141448486,
+          0.873494814010978
+        ],
+        "rotation_matrix": [
+          [
+            0.8630072978979746,
+            -0.28864292715951606,
+            0.414612667890918
+          ],
+          [
+            -0.26142186361468894,
+            -0.9574328412958304,
+            -0.12239674682122018
+          ],
+          [
+            0.43229273993332495,
+            -0.0027595305726181504,
+            -0.9017291012227338
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_115_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_135",
+        "source_geom": 135,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.17886975681198736,
+          1.0468593768406624,
+          0.8728670109005601
+        ],
+        "rotation_matrix": [
+          [
+            0.8180643378493236,
+            -0.2876776389221264,
+            0.49800834852775394
+          ],
+          [
+            -0.24629401173296084,
+            -0.9577267263170085,
+            -0.14865657564531895
+          ],
+          [
+            0.5197210780059188,
+            -0.0010458309131713417,
+            -0.8543353599811195
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_116_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_136",
+        "source_geom": 136,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.21570147474842055,
+          1.0581255946508792,
+          0.8721590726470397
+        ],
+        "rotation_matrix": [
+          [
+            0.7653359382837943,
+            -0.28604555216678074,
+            0.5765750980200832
+          ],
+          [
+            -0.22745365319564192,
+            -0.9582146620495176,
+            -0.17346324417953335
+          ],
+          [
+            0.6021011021574563,
+            0.0016135423555908301,
+            -0.798418223277654
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_117_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_137",
+        "source_geom": 137,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.2582149580733605,
+          1.0711319619277746,
+          0.8713945789546504
+        ],
+        "rotation_matrix": [
+          [
+            0.7070402287053488,
+            -0.2795724082702915,
+            0.649563994942946
+          ],
+          [
+            -0.19905881581062318,
+            -0.9600759803772991,
+            -0.1965443963857593
+          ],
+          [
+            0.6785791794922406,
+            0.009663355344781521,
+            -0.7344636932640851
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_118_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_138",
+        "source_geom": 138,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.28147687897521195,
+          1.0782611934084922,
+          0.8470647029822186
+        ],
+        "rotation_matrix": [
+          [
+            0.6438531463526708,
+            -0.3022204184146549,
+            0.7029338124070024
+          ],
+          [
+            -0.21495821535347198,
+            -0.9531348982060394,
+            -0.2129009898375746
+          ],
+          [
+            0.7343337739637352,
+            -0.014024425658101067,
+            -0.6786436648942827
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_119_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_139",
+        "source_geom": 139,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.2822013670553566,
+          1.0785062471181917,
+          0.8026061667154569
+        ],
+        "rotation_matrix": [
+          [
+            0.5736817602090717,
+            -0.2945582902241339,
+            0.7642804797086352
+          ],
+          [
+            -0.18292377334863658,
+            -0.9556057080801507,
+            -0.23099052757318017
+          ],
+          [
+            0.798390963843732,
+            -0.007290016795205509,
+            -0.6020952785961767
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_120_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_140",
+        "source_geom": 140,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.2828721115910237,
+          1.0787336517419832,
+          0.7640899015154954
+        ],
+        "rotation_matrix": [
+          [
+            0.4956687238921017,
+            -0.29201908194410064,
+            0.8179470471465161
+          ],
+          [
+            -0.15633426369601194,
+            -0.9563961761712044,
+            -0.24671025961586834
+          ],
+          [
+            0.8543255317206705,
+            -0.0055865898030912214,
+            -0.5197082603389817
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_121_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_141",
+        "source_geom": 141,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.2834668152706237,
+          1.0789356988579208,
+          0.72973791270056
+        ],
+        "rotation_matrix": [
+          [
+            0.4124573467708963,
+            -0.29038115166805284,
+            0.8634568453898858
+          ],
+          [
+            -0.1294780413357003,
+            -0.9569001163818678,
+            -0.2599569273557518
+          ],
+          [
+            0.9017285477939513,
+            -0.0045775565871169765,
+            -0.4322784658864103
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_122_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_142",
+        "source_geom": 142,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.28396634663413034,
+          1.0791057175893144,
+          0.6983155264390228
+        ],
+        "rotation_matrix": [
+          [
+            0.3251050703280793,
+            -0.28913684973376447,
+            0.9003924563061453
+          ],
+          [
+            -0.1018024115622068,
+            -0.9572807260859562,
+            -0.2706471512217861
+          ],
+          [
+            0.9401824090287471,
+            -0.0036733622723314485,
+            -0.34065164635228545
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_123_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_143",
+        "source_geom": 143,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.2843550081752921,
+          1.0792381946148562,
+          0.6689194378034725
+        ],
+        "rotation_matrix": [
+          [
+            0.23453212680908375,
+            -0.2881910019562175,
+            0.9284075763832849
+          ],
+          [
+            -0.07333623499943971,
+            -0.9575690888797067,
+            -0.27871712659648473
+          ],
+          [
+            0.969338165002555,
+            -0.002717795718114674,
+            -0.2457155580257785
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_124_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_144",
+        "source_geom": 144,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.2846208449994791,
+          1.0793289041176182,
+          0.6408511840393839
+        ],
+        "rotation_matrix": [
+          [
+            0.1416479740807246,
+            -0.28754259390530573,
+            0.9472355082707996
+          ],
+          [
+            -0.04425692171740575,
+            -0.9577663838005175,
+            -0.28412123986387317
+          ],
+          [
+            0.9889272856580159,
+            -0.0016765297174665406,
+            -0.14839141797685174
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_125_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_145",
+        "source_geom": 145,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.28475579532375067,
+          1.0793749825896484,
+          0.6135357356589982
+        ],
+        "rotation_matrix": [
+          [
+            0.047371110913712766,
+            -0.2872111451860559,
+            0.9566952157984905
+          ],
+          [
+            -0.014795447180788956,
+            -0.957867128727393,
+            -0.28683036527931555
+          ],
+          [
+            0.998767777110138,
+            -0.0005672604863928843,
+            -0.04962464732387889
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_126_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_146",
+        "source_geom": 146,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.28475579546614105,
+          1.079374982633981,
+          0.5864642643650927
+        ],
+        "rotation_matrix": [
+          [
+            -0.047371110889834034,
+            -0.28721114520217583,
+            0.9566952157948335
+          ],
+          [
+            0.014795447474768325,
+            -0.9578671287223891,
+            -0.2868303652808622
+          ],
+          [
+            0.9987677771069158,
+            0.0005672607743632541,
+            0.04962464738544192
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_127_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_147",
+        "source_geom": 147,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.28462084492266376,
+          1.079328904093514,
+          0.5591488158800566
+        ],
+        "rotation_matrix": [
+          [
+            -0.14164797415596347,
+            -0.2875425937772192,
+            0.9472355082984305
+          ],
+          [
+            0.04425692085931028,
+            -0.9577663838404298,
+            -0.2841212398629933
+          ],
+          [
+            0.988927285685641,
+            0.001676528884618611,
+            0.14839141780215853
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_128_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_148",
+        "source_geom": 148,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.2843550076141938,
+          1.0792381944391283,
+          0.5310805622532312
+        ],
+        "rotation_matrix": [
+          [
+            -0.23453212690155267,
+            -0.2881910017368563,
+            0.9284075764280183
+          ],
+          [
+            0.07333623427359941,
+            -0.9575690889476738,
+            -0.27871712655395775
+          ],
+          [
+            0.969338165035096,
+            0.0027177950317208432,
+            0.24571555790499677
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_129_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_149",
+        "source_geom": 149,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.2839663461544007,
+          1.0791057174397751,
+          0.5016844738910773
+        ],
+        "rotation_matrix": [
+          [
+            -0.3251050701759485,
+            -0.2891368501940046,
+            0.9003924562132818
+          ],
+          [
+            0.101802413063678,
+            -0.9572807259415688,
+            -0.2706471511677162
+          ],
+          [
+            0.9401824089187741,
+            0.0036733636735431785,
+            0.3406516466406966
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_130_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_150",
+        "source_geom": 150,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.28346681548958125,
+          1.0789356989266745,
+          0.47026208732445285
+        ],
+        "rotation_matrix": [
+          [
+            -0.4124573466001403,
+            -0.2903811521467361,
+            0.8634568453104706
+          ],
+          [
+            0.129478042419912,
+            -0.9569001162319875,
+            -0.25995692736744
+          ],
+          [
+            0.9017285477163753,
+            0.004577557552572803,
+            0.4322784660380085
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_131_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_151",
+        "source_geom": 151,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.2828721125276391,
+          1.0787336520328397,
+          0.43591009796629476
+        ],
+        "rotation_matrix": [
+          [
+            -0.4956687238497292,
+            -0.29201908205664484,
+            0.8179470471320132
+          ],
+          [
+            0.15633426384325602,
+            -0.9563961761362121,
+            -0.24671025965821392
+          ],
+          [
+            0.8543255317183096,
+            0.005586589910726081,
+            0.5197082603417049
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_132_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_152",
+        "source_geom": 152,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.28220136705142357,
+          1.0785062471171682,
+          0.39739383290882224
+        ],
+        "rotation_matrix": [
+          [
+            -0.5736817611132743,
+            -0.29455828766778036,
+            0.7642804800151597
+          ],
+          [
+            0.18292376897033577,
+            -0.9556057088952372,
+            -0.23099052766839578
+          ],
+          [
+            0.7983909641971563,
+            0.007290013241540563,
+            0.6020952781705557
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_133_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_153",
+        "source_geom": 153,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.2814768786446407,
+          1.0782611933060977,
+          0.35293529750846
+        ],
+        "rotation_matrix": [
+          [
+            -0.6438531447556085,
+            -0.3022204222224789,
+            0.7029338122326919
+          ],
+          [
+            0.214958221060236,
+            -0.9531348969345182,
+            -0.21290098976812977
+          ],
+          [
+            0.7343337736935006,
+            0.014024430016837383,
+            0.6786436650966181
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_134_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_154",
+        "source_geom": 154,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.2582149585421976,
+          1.0711319620725444,
+          0.32860542069928456
+        ],
+        "rotation_matrix": [
+          [
+            0.7070402272277816,
+            -0.27957241246697284,
+            -0.6495639947450034
+          ],
+          [
+            -0.1990588215539958,
+            -0.9600759791956277,
+            0.19654439634111714
+          ],
+          [
+            -0.6785791793469826,
+            -0.009663351331524364,
+            -0.7344636934510937
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_135_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_155",
+        "source_geom": 155,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.21570147438924298,
+          1.0581255945406176,
+          0.32784092734889997
+        ],
+        "rotation_matrix": [
+          [
+            0.7653359392501526,
+            -0.2860455487602433,
+            -0.5765750984273785
+          ],
+          [
+            -0.22745364883639035,
+            -0.9582146630619168,
+            0.17346324430308646
+          ],
+          [
+            -0.6021011025758896,
+            -0.001613545038573208,
+            -0.7984182229566843
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_136_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_156",
+        "source_geom": 156,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.1788697563175906,
+          1.0468593766853354,
+          0.32713299008017055
+        ],
+        "rotation_matrix": [
+          [
+            0.8180643378066902,
+            -0.2876776390251765,
+            -0.49800834853825904
+          ],
+          [
+            -0.24629401188012476,
+            -0.957726726285926,
+            0.14865657560174794
+          ],
+          [
+            -0.5197210780032852,
+            0.0010458310310291763,
+            -0.8543353599825773
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_137_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_157",
+        "source_geom": 157,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.14602009951815337,
+          1.036811514150671,
+          0.32650518621851493
+        ],
+        "rotation_matrix": [
+          [
+            0.8630072976537293,
+            -0.2886429280834825,
+            -0.4146126677560672
+          ],
+          [
+            -0.2614218646763777,
+            -0.9574328410158313,
+            0.12239674674386429
+          ],
+          [
+            -0.4322927397788854,
+            0.0027595310742083295,
+            -0.9017291012952378
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_138_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_158",
+        "source_geom": 158,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.11597225220237889,
+          1.0276194799965979,
+          0.32597776217692703
+        ],
+        "rotation_matrix": [
+          [
+            0.8995199075838828,
+            -0.28950722574131027,
+            -0.3271842021000634
+          ],
+          [
+            -0.2735163327545187,
+            -0.957167214553376,
+            0.09497230701974715
+          ],
+          [
+            -0.34066516049752504,
+            0.004060742260191513,
+            -0.940175919068072
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_139_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_159",
+        "source_geom": 159,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.08786275664964882,
+          1.0190179423411252,
+          0.32556734195625076
+        ],
+        "rotation_matrix": [
+          [
+            0.9271976061114351,
+            -0.29042042277180324,
+            -0.23655988091448224
+          ],
+          [
+            -0.282706596446449,
+            -0.9568858238506954,
+            0.06668208484475702
+          ],
+          [
+            -0.24572663581079598,
+            0.00504956935053226,
+            -0.9693260144566871
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_140_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_160",
+        "source_geom": 160,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.061023966441388355,
+          1.0108017213415088,
+          0.32528659395767706
+        ],
+        "rotation_matrix": [
+          [
+            0.9457552650340073,
+            -0.2914155828138804,
+            -0.14361036436728236
+          ],
+          [
+            -0.2890065880358807,
+            -0.9565794038187774,
+            0.03782903992403234
+          ],
+          [
+            -0.1483986884454036,
+            0.005727327733042631,
+            -0.9889110308742264
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_141_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_161",
+        "source_geom": 161,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.03490620295038216,
+          1.0028019606694962,
+          0.3251440651693293
+        ],
+        "rotation_matrix": [
+          [
+            0.9550047245142241,
+            -0.29247592655482596,
+            -0.04923219009356961
+          ],
+          [
+            -0.29240916375871423,
+            -0.9562535971009192,
+            0.008714297532482328
+          ],
+          [
+            -0.04962718111521933,
+            0.006073748220927469,
+            -0.9987493441685498
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_142_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_162",
+        "source_geom": 162,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.009023029398470953,
+          0.9948693769227972,
+          0.32514406502019866
+        ],
+        "rotation_matrix": [
+          [
+            0.954849337790823,
+            -0.2935606481930028,
+            0.04566057328739272
+          ],
+          [
+            -0.2929161740305621,
+            -0.9559211554387007,
+            -0.020368101925305665
+          ],
+          [
+            0.049627181178531724,
+            0.00607374820404894,
+            -0.9987493441655068
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_143_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_163",
+        "source_geom": 163,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.01709208981913546,
+          0.9868609879119554,
+          0.3252865940381838
+        ],
+        "rotation_matrix": [
+          [
+            0.9452817082077272,
+            -0.29462145946497176,
+            0.14014523805899826
+          ],
+          [
+            -0.2905517534774903,
+            -0.955596878049648,
+            -0.049135376389360455
+          ],
+          [
+            0.14839868826589736,
+            0.005727327867202012,
+            -0.9889110309003863
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_144_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_164",
+        "source_geom": 164,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.043925704320148765,
+          0.9786278796008042,
+          0.3255673425442121
+        ],
+        "rotation_matrix": [
+          [
+            0.9263808481924789,
+            -0.29561741916746537,
+            0.23329994767884615
+          ],
+          [
+            -0.28537159041567367,
+            -0.9552930667244601,
+            -0.0773188984130465
+          ],
+          [
+            0.24572663568651704,
+            0.005049569580180338,
+            -0.9693260144869953
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_145_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_165",
+        "source_geom": 165,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.07202771290782754,
+          0.9700019137110102,
+          0.3259777626794175
+        ],
+        "rotation_matrix": [
+          [
+            0.898306608136147,
+            -0.2965314683694342,
+            0.3242133958453908
+          ],
+          [
+            -0.2774751988943648,
+            -0.9550144494419355,
+            -0.10466573152494485
+          ],
+          [
+            0.3406651607920387,
+            0.004060741777844587,
+            -0.9401759189634407
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_146_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_166",
+        "source_geom": 166,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.10206607754194777,
+          0.9607789375382993,
+          0.326505185989022
+        ],
+        "rotation_matrix": [
+          [
+            0.8612873474643522,
+            -0.2973961800056506,
+            0.4119946810528852
+          ],
+          [
+            -0.2670338781854479,
+            -0.9547501752338498,
+            -0.13093895826748395
+          ],
+          [
+            0.4322927399333249,
+            0.0027595305726181296,
+            -0.9017291012227336
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_147_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_167",
+        "source_geom": 167,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.1349046491900074,
+          0.9506949034847538,
+          0.32713298909943983
+        ],
+        "rotation_matrix": [
+          [
+            0.8155857705661724,
+            -0.298360373868575,
+            0.495783156384915
+          ],
+          [
+            -0.2543813120619331,
+            -0.9544527193856736,
+            -0.15591713995242537
+          ],
+          [
+            0.5197210780059188,
+            0.0010458309131713417,
+            -0.8543353599811194
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_148_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_168",
+        "source_geom": 168,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.17172413123626049,
+          0.9393887612716972,
+          0.3278409273529602
+        ],
+        "rotation_matrix": [
+          [
+            0.7613555122167048,
+            -0.2999855908057289,
+            0.5747577135856287
+          ],
+          [
+            -0.2404413583350801,
+            -0.9539423681701149,
+            -0.17939317548886058
+          ],
+          [
+            0.6021011021574562,
+            -0.001613542355590844,
+            -0.7984182232776542
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_149_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_169",
+        "source_geom": 169,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.21422471863763431,
+          0.9263403159735161,
+          0.3286054210453495
+        ],
+        "rotation_matrix": [
+          [
+            0.6971604002922366,
+            -0.3063900682451618,
+            0.6481454330203185
+          ],
+          [
+            -0.23129564073714903,
+            -0.9518569985266735,
+            -0.20117301243403923
+          ],
+          [
+            0.6785791794922407,
+            -0.009663355344781577,
+            -0.7344636932640852
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_150_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_170",
+        "source_geom": 170,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.23748663954009225,
+          0.9192110844947771,
+          0.35293529701778137
+        ],
+        "rotation_matrix": [
+          [
+            0.6537329712938951,
+            -0.28374205815935993,
+            0.7015152504933527
+          ],
+          [
+            -0.18272140175534604,
+            -0.958798080889014,
+            -0.21752960585656067
+          ],
+          [
+            0.7343337739637353,
+            0.01402442565810115,
+            -0.6786436648942826
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_151_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_171",
+        "source_geom": 171,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.23822402354309458,
+          0.919008108804052,
+          0.397393833284543
+        ],
+        "rotation_matrix": [
+          [
+            0.5776621888846987,
+            -0.29147285273065665,
+            0.7624630952734675
+          ],
+          [
+            -0.16993605969781866,
+            -0.9565513220816664,
+            -0.2369204588848351
+          ],
+          [
+            0.7983909638437319,
+            0.007290016795205509,
+            -0.6020952785961766
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_152_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_172",
+        "source_geom": 172,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.23890700396691109,
+          0.9188206285764747,
+          0.43591009848450457
+        ],
+        "rotation_matrix": [
+          [
+            0.49814729108547207,
+            -0.2940189308468817,
+            0.8157218549774594
+          ],
+          [
+            -0.14824696365998413,
+            -0.9557832695323942,
+            -0.2539708240085202
+          ],
+          [
+            0.8543255317206704,
+            0.0055865898030912214,
+            -0.5197082603389815
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_153_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_173",
+        "source_geom": 173,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.23951279331787123,
+          0.9186547528222133,
+          0.47026208729943997
+        ],
+        "rotation_matrix": [
+          [
+            0.41417729656768687,
+            -0.29565795549889345,
+            0.8608388585316659
+          ],
+          [
+            -0.12386602884285604,
+            -0.9552829001536198,
+            -0.2684991388678829
+          ],
+          [
+            0.9017285477939511,
+            0.004577556587117032,
+            -0.4322784658864105
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_154_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_174",
+        "source_geom": 174,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.24002180765589365,
+          0.9185156760238641,
+          0.5016844735609771
+        ],
+        "rotation_matrix": [
+          [
+            0.32631836923695234,
+            -0.29690184303820943,
+            0.8974216497828964
+          ],
+          [
+            -0.09784354680530767,
+            -0.9549009383229948,
+            -0.2803405756190618
+          ],
+          [
+            0.9401824090287474,
+            0.003673362272331504,
+            -0.3406516463522856
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_155_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_175",
+        "source_geom": 175,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.24041795590106138,
+          0.9184076273138989,
+          0.5310805621965274
+        ],
+        "rotation_matrix": [
+          [
+            0.23534888497044415,
+            -0.29784684063910993,
+            0.9251476432788848
+          ],
+          [
+            -0.07067124035032657,
+            -0.9546098014936473,
+            -0.28935394014875815
+          ],
+          [
+            0.969338165002555,
+            0.0027177957181146184,
+            -0.24571555802577838
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_156_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_176",
+        "source_geom": 176,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.24068896830036052,
+          0.9183338051599657,
+          0.559148815960616
+        ],
+        "rotation_matrix": [
+          [
+            0.14212153118028237,
+            -0.2984944491696536,
+            0.9437703821321595
+          ],
+          [
+            -0.04271175547839462,
+            -0.9544098978232658,
+            -0.29542757637184497
+          ],
+          [
+            0.988927285658016,
+            0.0016765297174665683,
+            -0.1483914179768513
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_157_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_177",
+        "source_geom": 177,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.2408265629977368,
+          0.9182963549949521,
+          0.5864642643410017
+        ],
+        "rotation_matrix": [
+          [
+            0.04752649754962085,
+            -0.29882542928646144,
+            0.9531235989327055
+          ],
+          [
+            -0.014288437183424263,
+            -0.9543076238966697,
+            -0.2984841696565376
+          ],
+          [
+            0.9987677771101379,
+            0.0005672604863928288,
+            -0.04962464732387889
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_158_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_178",
+        "source_geom": 178,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.00969189157439232,
+          1.0082464613348978,
+          0.6013514484863952
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_159_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_179",
+        "source_geom": 179,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.009438590558504115,
+          1.0083240921369243,
+          0.6040413301075558
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_160_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_180",
+        "source_geom": 180,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.008934428033158026,
+          1.0084786060896507,
+          0.6066922916095142
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_161_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_181",
+        "source_geom": 181,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.008184258353156657,
+          1.0087085154475364,
+          0.6092788026527022
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_162_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_182",
+        "source_geom": 182,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.007195307147577906,
+          1.0090116057252647,
+          0.6117759538615931
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_163_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_183",
+        "source_geom": 183,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.005977098292456767,
+          1.0093849580788965,
+          0.6141596962587309
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_164_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_184",
+        "source_geom": 184,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.004541364065063794,
+          1.00982497684147,
+          0.6164070728987932
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_165_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_185",
+        "source_geom": 185,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.0029019315747426666,
+          1.0103274243292786,
+          0.6184964408005155
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_166_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_186",
+        "source_geom": 186,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.0010745882256882333,
+          1.010887462074362,
+          0.6204076775705812
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_167_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_187",
+        "source_geom": 187,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.000923067218544682,
+          1.0114996964697318,
+          0.6221223764853548
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_168_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_188",
+        "source_geom": 188,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.003071795633756466,
+          1.0121582311764552,
+          0.6236240253401556
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_169_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_189",
+        "source_geom": 189,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.005350904053755504,
+          1.012856724287231,
+          0.6248981622223853
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_170_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_190",
+        "source_geom": 190,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.007738443224526631,
+          1.0135884488720983,
+          0.6259325162253596
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_171_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_191",
+        "source_geom": 191,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.01021141979449007,
+          1.0143463580097563,
+          0.626717126231437
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_172_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_192",
+        "source_geom": 192,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.01274601778102652,
+          1.0151231526618434,
+          0.6272444348825613
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_173_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_193",
+        "source_geom": 193,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.01531782749458814,
+          1.015911351832794,
+          0.6275093649602672
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_174_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_194",
+        "source_geom": 194,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.017902081253078794,
+          1.0167033648107475,
+          0.6275093649602672
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_175_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_195",
+        "source_geom": 195,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.020473890966640457,
+          1.017491563981698,
+          0.6272444348825613
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_176_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_196",
+        "source_geom": 196,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.023008488953176823,
+          1.0182683586337855,
+          0.626717126231437
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_177_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_197",
+        "source_geom": 197,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.025481465523140304,
+          1.019026267771443,
+          0.6259325162253596
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_178_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_198",
+        "source_geom": 198,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.027869004693911417,
+          1.0197579923563105,
+          0.6248981622223853
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_179_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_199",
+        "source_geom": 199,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.030148113113910413,
+          1.0204564854670866,
+          0.6236240253401556
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_180_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_200",
+        "source_geom": 200,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.03229684152912227,
+          1.0211150201738095,
+          0.6221223764853548
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_181_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_201",
+        "source_geom": 201,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.034294496973355154,
+          1.0217272545691796,
+          0.6204076775705812
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_182_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_202",
+        "source_geom": 202,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.03612184032240959,
+          1.022287292314263,
+          0.6184964408005155
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_183_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_203",
+        "source_geom": 203,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.037761272812730756,
+          1.0227897398020713,
+          0.6164070728987932
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_184_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_204",
+        "source_geom": 204,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.03919700704012363,
+          1.0232297585646453,
+          0.6141596962587309
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_185_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_205",
+        "source_geom": 205,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.04041521589524483,
+          1.0236031109182768,
+          0.6117759538615931
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_186_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_206",
+        "source_geom": 206,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.04140416710082359,
+          1.0239062011960052,
+          0.6092788026527022
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_187_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_207",
+        "source_geom": 207,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.04215433678082492,
+          1.0241361105538909,
+          0.6066922916095142
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_188_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_208",
+        "source_geom": 208,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.04265849930617108,
+          1.024290624506617,
+          0.6040413301075558
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_189_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_209",
+        "source_geom": 209,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.04291180032205924,
+          1.0243682553086437,
+          0.6013514484863952
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_190_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_210",
+        "source_geom": 210,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.04291180032205921,
+          1.024368255308644,
+          0.5986485515136047
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_191_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_211",
+        "source_geom": 211,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.04265849930617113,
+          1.024290624506617,
+          0.5959586698924442
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_192_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_212",
+        "source_geom": 212,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.04215433678082492,
+          1.0241361105538909,
+          0.5933077083904857
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_193_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_213",
+        "source_geom": 213,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.04140416710082362,
+          1.023906201196005,
+          0.5907211973472978
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_194_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_214",
+        "source_geom": 214,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.040415215895244855,
+          1.0236031109182768,
+          0.5882240461384068
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_195_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_215",
+        "source_geom": 215,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.03919700704012366,
+          1.0232297585646453,
+          0.585840303741269
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_196_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_216",
+        "source_geom": 216,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.03776127281273073,
+          1.0227897398020713,
+          0.5835929271012068
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_197_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_217",
+        "source_geom": 217,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.03612184032240959,
+          1.022287292314263,
+          0.5815035591994845
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_198_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_218",
+        "source_geom": 218,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.034294496973355154,
+          1.0217272545691796,
+          0.5795923224294187
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_199_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_219",
+        "source_geom": 219,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.032296841529122294,
+          1.0211150201738095,
+          0.5778776235146451
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_200_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_220",
+        "source_geom": 220,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.0301481131139104,
+          1.0204564854670866,
+          0.5763759746598444
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_201_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_221",
+        "source_geom": 221,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.02786900469391139,
+          1.0197579923563105,
+          0.5751018377776147
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_202_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_222",
+        "source_geom": 222,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.02548146552314029,
+          1.0190262677714432,
+          0.5740674837746403
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_203_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_223",
+        "source_geom": 223,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.023008488953176823,
+          1.0182683586337855,
+          0.5732828737685629
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_204_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_224",
+        "source_geom": 224,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.02047389096664043,
+          1.017491563981698,
+          0.5727555651174386
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_205_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_225",
+        "source_geom": 225,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.017902081253078808,
+          1.0167033648107475,
+          0.5724906350397327
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_206_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_226",
+        "source_geom": 226,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.015317827494588127,
+          1.015911351832794,
+          0.5724906350397327
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_207_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_227",
+        "source_geom": 227,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.012746017781026547,
+          1.0151231526618432,
+          0.5727555651174386
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_208_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_228",
+        "source_geom": 228,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.01021141979449007,
+          1.0143463580097563,
+          0.5732828737685629
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_209_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_229",
+        "source_geom": 229,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.007738443224526645,
+          1.0135884488720983,
+          0.5740674837746403
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_210_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_230",
+        "source_geom": 230,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.005350904053755531,
+          1.012856724287231,
+          0.5751018377776147
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_211_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_231",
+        "source_geom": 231,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.00307179563375648,
+          1.0121582311764552,
+          0.5763759746598444
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_212_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_232",
+        "source_geom": 232,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          -0.000923067218544682,
+          1.0114996964697318,
+          0.5778776235146451
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_213_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_233",
+        "source_geom": 233,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.0010745882256882333,
+          1.010887462074362,
+          0.5795923224294187
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_214_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_234",
+        "source_geom": 234,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.0029019315747426666,
+          1.0103274243292786,
+          0.5815035591994845
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_215_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_235",
+        "source_geom": 235,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.00454136406506378,
+          1.00982497684147,
+          0.5835929271012068
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_216_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_236",
+        "source_geom": 236,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.005977098292456781,
+          1.0093849580788965,
+          0.585840303741269
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_217_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_237",
+        "source_geom": 237,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.007195307147577934,
+          1.0090116057252647,
+          0.5882240461384068
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_218_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_238",
+        "source_geom": 238,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.00818425835315667,
+          1.0087085154475364,
+          0.5907211973472978
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_219_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_239",
+        "source_geom": 239,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.008934428033158012,
+          1.0084786060896507,
+          0.5933077083904857
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_220_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_240",
+        "source_geom": 240,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.009438590558504142,
+          1.0083240921369243,
+          0.5959586698924442
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_221_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_241",
+        "source_geom": 241,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.00969189157439232,
+          1.0082464613348978,
+          0.5986485515136047
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "mesh",
+          "uri": "package://i10_rh56_moveit_config/meshes/mesh_222_hull.stl"
+        }
+      },
+      {
+        "id": "scene_geom_244",
+        "source_geom": 244,
+        "source_body": "fuel_tank_body",
+        "added_collision": false,
+        "position": [
+          0.03071338242502738,
+          1.170718352069313,
+          0.10000000000000009
+        ],
+        "rotation_matrix": [
+          [
+            0.9561051658667673,
+            0.0,
+            -0.29302373931625536
+          ],
+          [
+            -0.29302373931625536,
+            0.0,
+            -0.9561051658667674
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "box",
+          "size": [
+            0.8,
+            0.2,
+            0.4
+          ]
+        }
+      },
+      {
+        "id": "scene_geom_247",
+        "source_geom": 247,
+        "source_body": "cap_body",
+        "added_collision": false,
+        "position": [
+          -0.0199797244766848,
+          1.005312158374362,
+          0.6
+        ],
+        "rotation_matrix": [
+          [
+            0.9166233075988042,
+            -0.2719168993713826,
+            -0.2930237393162553
+          ],
+          [
+            -0.2809234786358888,
+            0.08333613234361238,
+            -0.9561051658667673
+          ],
+          [
+            0.28440061729493255,
+            0.9587055277207183,
+            -2.572777873990212e-17
+          ]
+        ],
+        "shape": {
+          "type": "cylinder",
+          "radius": 0.0375,
+          "length": 0.02
+        }
+      },
+      {
+        "id": "scene_geom_249",
+        "source_geom": 249,
+        "source_body": "cap_body",
+        "added_collision": false,
+        "position": [
+          -0.014119249690359693,
+          1.0244342616916975,
+          0.6
+        ],
+        "rotation_matrix": [
+          [
+            0.9166233075988042,
+            -0.2719168993713826,
+            -0.2930237393162553
+          ],
+          [
+            -0.2809234786358888,
+            0.08333613234361238,
+            -0.9561051658667673
+          ],
+          [
+            0.28440061729493255,
+            0.9587055277207183,
+            -2.572777873990212e-17
+          ]
+        ],
+        "shape": {
+          "type": "cylinder",
+          "radius": 0.02,
+          "length": 0.02
+        }
+      },
+      {
+        "id": "scene_geom_251",
+        "source_geom": 251,
+        "source_body": "cap_body",
+        "added_collision": false,
+        "position": [
+          -0.025840199263009907,
+          0.9861900550570267,
+          0.6
+        ],
+        "rotation_matrix": [
+          [
+            0.9166233075988042,
+            -0.2719168993713826,
+            -0.2930237393162553
+          ],
+          [
+            -0.2809234786358888,
+            0.08333613234361238,
+            -0.9561051658667673
+          ],
+          [
+            0.28440061729493255,
+            0.9587055277207183,
+            -2.572777873990212e-17
+          ]
+        ],
+        "shape": {
+          "type": "box",
+          "size": [
+            0.019,
+            0.06,
+            0.017
+          ]
+        }
+      },
+      {
+        "id": "scene_geom_253",
+        "source_geom": 253,
+        "source_body": "fuel_door",
+        "added_collision": false,
+        "position": [
+          0.09176635168525119,
+          0.8747320360731051,
+          0.6
+        ],
+        "rotation_matrix": [
+          [
+            -0.4688693731927167,
+            0.0,
+            0.8832675194310433
+          ],
+          [
+            0.8832675194310433,
+            0.0,
+            0.4688693731927167
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ],
+        "shape": {
+          "type": "box",
+          "size": [
+            0.17,
+            0.17,
+            0.003
+          ]
+        }
+      }
+    ],
+    "allowed_world_contacts": [
+      {
+        "object": "scene_geom_0",
+        "link": "base_link",
+        "reason": "Fixed base support only"
+      }
+    ]
+  },
+  "comment_translation_provenance_note": "2026-10-02：仅注释翻译后的来源清单重新绑定；Python 执行逻辑与全部模型/场景几何哈希核对不变；沿用原规划轨迹，未重新搜索。",
+  "comment_guidance_provenance_note": "2026-10-02：补充中文分段阅读注释后重新绑定来源清单；执行逻辑及模型/场景几何哈希核对不变，沿用原规划路点，没有重新搜索。"
+}

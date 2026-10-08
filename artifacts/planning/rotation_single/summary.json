@@ -1,0 +1,23 @@
+{
+  "mode": "fixed_depth_preform_rotation_prefix_not_execution",
+  "target_angle_deg": 225.0,
+  "checked_prefix_angle_deg": 189.0,
+  "fcl_failure": null,
+  "mujoco_failure": {
+    "kind": "mujoco_robot_interference",
+    "angle_deg": 189.5,
+    "contacts": [
+      {
+        "geoms": [
+          "foreArm_Link_collision_0",
+          "wrist2_Link_collision_0"
+        ],
+        "penetration_m": 0.00011987197487885953
+      }
+    ]
+  },
+  "full_rotation_passed": false,
+  "physical_grasp_verified": false,
+  "thread_motion_verified": false,
+  "diagnostic_sha256": "b036257b6d3e30989b2c6ca7889973cf7e50f103153f77ee8c70559b6a9efdc9"
+}

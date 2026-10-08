@@ -1,4 +1,4 @@
-"""Cross-model trajectory verification and refusal of unsafe/stale replay inputs."""
+"""跨模型验证轨迹，并拒绝不安全或来源失效的回放输入。"""
 import copy
 import json
 from pathlib import Path

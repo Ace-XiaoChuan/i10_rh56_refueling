@@ -1,0 +1,24 @@
+{
+  "checked_samples": 1,
+  "clear_prefix_angle_deg": 0.0,
+  "completed_input_check": false,
+  "diagnostic_sha256": "9ccabaa9f10043ca5b34c884a7513a6e2330207c338260977c8e0c35f30c8db0",
+  "failure": {
+    "angle_deg": 0.0,
+    "contacts": [
+      {
+        "a": "foreArm_Link",
+        "b": "scene_geom_0",
+        "depth_m": 0.1767654611659608
+      },
+      {
+        "a": "scene_geom_0",
+        "b": "upperArm_Link",
+        "depth_m": 0.1443095933378696
+      }
+    ],
+    "kind": "fcl_robot_collision"
+  },
+  "mode": "full_fcl_rotation_prefix_audit_not_execution",
+  "passed_samples": 0
+}

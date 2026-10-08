@@ -1,0 +1,204 @@
+{
+  "mode": "initial_configuration_selection_validation_record",
+  "date": "2026-10-08",
+  "runs": [
+    {
+      "command": ".venv/bin/python tools/select_initial_configuration.py",
+      "output_dir": "artifacts/planning/initial_selection_single",
+      "exit_code": 1,
+      "analysis_finished": false,
+      "candidate_scans": 12,
+      "mtc_plan_calls": 3,
+      "source_snapshot_record": "artifacts/planning/initial_selection_single/first_version_record.json"
+    },
+    {
+      "command": ".venv/bin/python tools/select_initial_configuration.py",
+      "output_dir": "artifacts/planning/initial_selection_single_v2",
+      "exit_code": 0,
+      "analysis_finished": true,
+      "candidate_scans": 12,
+      "mtc_plan_calls": 1
+    }
+  ],
+  "local_ros_initialization_outside_sandbox": true,
+  "current_ik_seed_attempts": 24,
+  "current_ik_converged_attempts": 12,
+  "current_raw_candidates": 75,
+  "current_candidate_fcl_checked_states": 2292,
+  "current_candidate_fcl_passed_states": 2290,
+  "current_path_dense_checked_states": 136,
+  "current_actual_endpoint_scan_runs": 1,
+  "current_actual_endpoint_fcl_passed_states": 261,
+  "selected": {
+    "candidate_id": "candidate_001",
+    "trajectory_path": "artifacts/planning/initial_selection_single_v2/candidate_001/path/mtc.json",
+    "actual_arm_qpos_rad": [
+      -1.0151299764747599,
+      -0.3242603572855253,
+      1.8076003882191964,
+      1.1005292220707148,
+      -0.2566635171490094,
+      0.8282001388964989
+    ],
+    "endpoint_joint_error_rad": 0.0020937785278443144,
+    "checked_angle_deg": 224.0,
+    "checked_range_change_deg": 35.0
+  },
+  "build": {
+    "command": "colcon build --packages-select i10_rh56_moveit_config",
+    "exit_code": 0
+  },
+  "planning_tests": {
+    "command": "PYTHONPATH=src .venv/bin/python -m unittest discover -s tests/planning -v",
+    "passed": 56,
+    "new_checks": 14,
+    "exit_code": 0
+  },
+  "saved_result_verification": {
+    "command": ".venv/bin/python tools/select_initial_configuration.py --verify-only",
+    "exit_code": 0
+  },
+  "previous_selection_verification": {
+    "command": ".venv/bin/python tools/select_regrasp_configuration.py --verify-only",
+    "exit_code": 0
+  },
+  "model_sources": {
+    "command": "python3 tools/check_moveit_model_sources.py",
+    "inputs": 234,
+    "outputs": 233,
+    "exit_code": 0
+  },
+  "format_check": {
+    "command": "git diff --check",
+    "exit_code": 0
+  },
+  "previous_validation_records": {
+    "rotation_margin_single": {
+      "analysis_planner_sources_and_saved_artifacts_unchanged": true,
+      "build_manifest_changes": {}
+    },
+    "regrasp_margin_single": {
+      "analysis_planner_sources_and_saved_artifacts_unchanged": true,
+      "build_manifest_changes": {}
+    },
+    "regrasp_selection_single": {
+      "analysis_planner_sources_and_saved_artifacts_unchanged": true,
+      "build_manifest_changes": {
+        "src/i10_rh56_moveit_config/CMakeLists.txt": {
+          "recorded_sha256": "2d1b59b57e64c012e78aaa8279c167db7806d4ed8e304bfdaeda7f8e3f48ef55",
+          "current_sha256": "207b54429853f48ed4026acf2c9e2069334304ea47dbfb1e29222ec617bb1ad2",
+          "reason": "added independent selected initial approach build target"
+        }
+      }
+    }
+  },
+  "first_version_snapshots_match_original_bindings": true,
+  "source_sha256": {
+    "src/fuel_cap_task/initial_configuration_selection.py": "073921c77d036c4e4b5d4d044cd8eb4e7ae122a15d884650ccccee3988c446d2",
+    "tools/select_initial_configuration.py": "8e93ba2d8222ce71b41afc1f2058b1978679cc16d22839f209eac91cb2c20cd7",
+    "tests/planning/test_initial_configuration_selection.py": "03c642726972d3d69e75858853ca3c6338c79a814e2ad11a42062d36c8225824",
+    "src/i10_rh56_moveit_config/src/plan_selected_approach.cpp": "f6c4117db274c3e7d845083a437555bb75dad8646eee6cffd44345baca445d6a",
+    "src/i10_rh56_moveit_config/launch/selected_approach.launch.py": "1a6eeddac7238dcdac47490f0cb47f66a0337094bff55b0af7b09d3cb6caacde",
+    "src/i10_rh56_moveit_config/CMakeLists.txt": "207b54429853f48ed4026acf2c9e2069334304ea47dbfb1e29222ec617bb1ad2"
+  },
+  "artifact_sha256": {
+    "artifacts/planning/initial_selection_single_v2/report.md": "14e32d397c9ba74f7499bee0cc501d9ce8c579b264ecba78157aedbfe69f7602",
+    "artifacts/planning/initial_selection_single_v2/candidate_pool.json": "64d0ac552aba635bf9c753880b29fc0ed135567ed83121ba810e818a47cba743",
+    "artifacts/planning/initial_selection_single_v2/checkpoint.json": "7bd78bcaa86e28220ea5f0bfa4c140cbddd7d37133f9e26519faccc77b240cfc",
+    "artifacts/planning/initial_selection_single_v2/summary.json": "7bd78bcaa86e28220ea5f0bfa4c140cbddd7d37133f9e26519faccc77b240cfc",
+    "artifacts/planning/initial_selection_single_v2/candidate_001/actual_endpoint/diagnostic.json": "569e93fcd916e0c88e58d2e4c6452bf530ab1cb1e9c511706ac9865eba7906f6",
+    "artifacts/planning/initial_selection_single_v2/candidate_001/actual_endpoint/fcl_validation.json": "b04f7cf45ac6cfbe38ba7802e9c5b49f2e93f49fe8c96a62e350c6451821d107",
+    "artifacts/planning/initial_selection_single_v2/candidate_001/actual_endpoint/fcl_audit.log": "a173550fcd2d294555ab3d13bec81117d590b619a8ff90230a156976f0fcf4c4",
+    "artifacts/planning/initial_selection_single_v2/candidate_001/actual_endpoint/input.json": "8a58d8ccd06a2c2c37ffe39b459f8cdff96f46a9d6630b77980a00b00dd46910",
+    "artifacts/planning/initial_selection_single_v2/candidate_001/actual_endpoint/ros_logs/audit_rotation_20978_1791397615060.log": "246f9e483ebdd56e1c9bd01be8e6ba2c390d824a8c504c2e10d5e7750c493935",
+    "artifacts/planning/initial_selection_single_v2/candidate_001/actual_endpoint/ros_logs/2026-10-08-02-26-54-859936-DESKTOP-CD3R3PF-20950/launch.log": "bc840345117da7d84855c2f511dbfc9c8b530bd0ee9f56d32b02b5f966eb928c",
+    "artifacts/planning/initial_selection_single_v2/candidate_001/path/request.json": "8a1bc6c81c1736f30235785814120a28b3b2629fc4c2066733451c2554fe8623",
+    "artifacts/planning/initial_selection_single_v2/candidate_001/path/mtc.json": "2a5b55f7d53e23b364cd26d8cddd3de501079bce049cacc6b1899e6702514995",
+    "artifacts/planning/initial_selection_single_v2/candidate_001/path/mtc.log": "f05a2d91a55a2606be34039da4f3423a530112d2e2830672998c488b30126152",
+    "artifacts/planning/initial_selection_single_v2/candidate_001/path/axial_target_diagnostic.json": "ad0c2ed0f082c04d92da7c0927579728746b0516eb948dd1473bfd6d83751871",
+    "artifacts/planning/initial_selection_single_v2/candidate_001/path/ros_logs/plan_selected_approach_20796_1791397585298.log": "a07aa79032c4ba962b0a82afe415a48bbea18f0c1e4abcbc3d366b538ea7d718",
+    "artifacts/planning/initial_selection_single_v2/candidate_001/path/ros_logs/2026-10-08-02-26-25-182686-DESKTOP-CD3R3PF-20770/launch.log": "c4346617252ec5888c7a468f6238bcc9f2909542a050babb69994145ea8e7f4a",
+    "artifacts/planning/initial_selection_single_v2/candidate_001/candidate/diagnostic.json": "558fac65ee584980e5dc3c02b51b3c001f9b17982e8e21ef37d705eaab7dcacc",
+    "artifacts/planning/initial_selection_single_v2/candidate_001/candidate/fcl_validation.json": "aeca52d61ea2abcafc49ca69ba6310aae17138ffe1536920d455f8a875a6d0b3",
+    "artifacts/planning/initial_selection_single_v2/candidate_001/candidate/fcl_audit.log": "6ab0d9e4321d2d7d8ac95b4b210786ea55d63358ed8cd1325f3f6c10f8226f59",
+    "artifacts/planning/initial_selection_single_v2/candidate_001/candidate/input.json": "f15d1a034d9704974c60762cc5e6b48a1be9731c4249722cd2429d50223d5a97",
+    "artifacts/planning/initial_selection_single_v2/candidate_001/candidate/ros_logs/audit_rotation_19636_1791397413099.log": "a6efc6da7fdd962371681751c1e74e202f2e78cbcc9639834b8c809ed0aab2d4",
+    "artifacts/planning/initial_selection_single_v2/candidate_001/candidate/ros_logs/2026-10-08-02-23-32-988608-DESKTOP-CD3R3PF-19606/launch.log": "23c6707d46598048760ee9324e92f53aab3478d0e88a1e466a58bf1e35ecd3a7",
+    "artifacts/planning/initial_selection_single_v2/candidate_016/candidate/diagnostic.json": "362dc4094a754cf874a6742dbee73bd9fb9818d5bc250b559d43ad897fe3bd30",
+    "artifacts/planning/initial_selection_single_v2/candidate_016/candidate/fcl_validation.json": "4d8a5528a2f6f03c4a6d9bed716686f7e4cf4d5477ebcb105c2672f14792a4a9",
+    "artifacts/planning/initial_selection_single_v2/candidate_016/candidate/fcl_audit.log": "d61c7e2c25e1998635c2f24912a96be41b23951ce1ded726661e4b36f6290618",
+    "artifacts/planning/initial_selection_single_v2/candidate_016/candidate/input.json": "56ece0fe25fadcb8c062a5ab4aee33dbc0b341233d76f0060919739e0183b3a8",
+    "artifacts/planning/initial_selection_single_v2/candidate_016/candidate/ros_logs/audit_rotation_19924_1791397458205.log": "b668e728daebac917616e25d4b378b09aaec61d4b941ec3fdadd6a4161e1645d",
+    "artifacts/planning/initial_selection_single_v2/candidate_016/candidate/ros_logs/2026-10-08-02-24-18-084747-DESKTOP-CD3R3PF-19901/launch.log": "88e3d866f9536426b89ab71df0403fb6ee748599a502a6740835d4001d218484",
+    "artifacts/planning/initial_selection_single_v2/candidate_000/candidate/diagnostic.json": "78e8951fc5043d936708ffcd041f2ac97eae05226ef152fa4135290c3bde1b57",
+    "artifacts/planning/initial_selection_single_v2/candidate_000/candidate/fcl_validation.json": "f15edc4dc77a2f092579d7f145da7df5cbb0c75c050fc1b9a1e6489450137cff",
+    "artifacts/planning/initial_selection_single_v2/candidate_000/candidate/fcl_audit.log": "dfcca1897dc10bb20843cf2b397b6560b79cdc100c78435b613b921ef38ba422",
+    "artifacts/planning/initial_selection_single_v2/candidate_000/candidate/input.json": "9b56403114714314b3b1fa33e9becea932b845c137fc7cf0e324d3388cf9ff23",
+    "artifacts/planning/initial_selection_single_v2/candidate_000/candidate/ros_logs/audit_rotation_19526_1791397395804.log": "e0347456d55eb5f20604fe80e233f111962c3ea6101e1437fa5f779e0a583090",
+    "artifacts/planning/initial_selection_single_v2/candidate_000/candidate/ros_logs/2026-10-08-02-23-15-666165-DESKTOP-CD3R3PF-19500/launch.log": "d45175b4e72e47da6247585c24eda2c4a8f77f21a23e4fa605852208c1d5cb88",
+    "artifacts/planning/initial_selection_single_v2/candidate_017/candidate/diagnostic.json": "783d661c76d790d50b5dc565be91d2bbc52f6f63336e0df66946e69a323a63e6",
+    "artifacts/planning/initial_selection_single_v2/candidate_017/candidate/fcl_validation.json": "36c40acd95e49bd735f41b4221f09717c161f3b710a5afdfcd15b43f02407b87",
+    "artifacts/planning/initial_selection_single_v2/candidate_017/candidate/fcl_audit.log": "c88749ace8587d5533bf9c61ff59261be29323894da2f7a8b77e2bfbe60b5d7c",
+    "artifacts/planning/initial_selection_single_v2/candidate_017/candidate/input.json": "ab775036c5c4e43a1ab9979e55a58f303a0135647f5b4f03e4bacd5c1f5b1d3b",
+    "artifacts/planning/initial_selection_single_v2/candidate_017/candidate/ros_logs/audit_rotation_20045_1791397473847.log": "ef440d7dd161e834b356448c28a8cf213562542cbab620ccee12190566d0df63",
+    "artifacts/planning/initial_selection_single_v2/candidate_017/candidate/ros_logs/2026-10-08-02-24-33-723254-DESKTOP-CD3R3PF-20017/launch.log": "686ae1903dfb3bb6a476b910e34b476455690e47abc348f41cc2d50e5b585ff3",
+    "artifacts/planning/initial_selection_single_v2/candidate_014/candidate/diagnostic.json": "9b381d4a37bd80eceb9c9364790b79d6e5730b04154582e179b525e6153cb3f9",
+    "artifacts/planning/initial_selection_single_v2/candidate_014/candidate/fcl_validation.json": "25707f9e76aa27b612d69742ce30c00788d43a3150722107870979ae291d76cf",
+    "artifacts/planning/initial_selection_single_v2/candidate_014/candidate/fcl_audit.log": "3e2a50c39627c2bac65c4f790f935633ff5df83215686dbcad6b6be9eb76c7c9",
+    "artifacts/planning/initial_selection_single_v2/candidate_014/candidate/input.json": "676ee8b8cf2e2c67821dd779042363a5e04cf894b68bf8a9196df8a5fa54d007",
+    "artifacts/planning/initial_selection_single_v2/candidate_014/candidate/ros_logs/audit_rotation_19817_1791397442351.log": "8feb0f3a48989a583392f8cbeef0a05380e1d5c23a4e7a6eae7df4f0c0f96cc5",
+    "artifacts/planning/initial_selection_single_v2/candidate_014/candidate/ros_logs/2026-10-08-02-24-02-224353-DESKTOP-CD3R3PF-19789/launch.log": "76db42027ed3a8d7070b731179dd127b014a665c7218edbc257a6dfd83bddb23",
+    "artifacts/planning/initial_selection_single_v2/verification/run.log": "6c2531aa0ab6f8cd463bfd0fbb5ec12e7821510c97e4860d7c7c87ab5aec3287",
+    "artifacts/planning/initial_selection_single_v2/verification/previous_selection_verify.log": "ef1df127d59774829c0b2b6a223bc7f9f037dd393359ed5119b428eb4ffa8366",
+    "artifacts/planning/initial_selection_single_v2/verification/saved_result_verify.log": "6c2531aa0ab6f8cd463bfd0fbb5ec12e7821510c97e4860d7c7c87ab5aec3287",
+    "artifacts/planning/initial_selection_single_v2/verification/planning_tests.log": "5b7747a131079e6a11f7b49e4028277eb51c0e60da01bcc03e715eb82dd83705",
+    "artifacts/planning/initial_selection_single_v2/verification/build.log": "4648ff6aede81dbf2e9fa91a7134f59eff72ed3a5817d9312ef67f7b172f0de9",
+    "artifacts/planning/initial_selection_single_v2/candidate_021/candidate/diagnostic.json": "8322e49213c473e9cf13da61d394a40250c411d1714c0d63e534bcf8e74e1b7f",
+    "artifacts/planning/initial_selection_single_v2/candidate_021/candidate/fcl_validation.json": "84d997ea040440bbba7c0bc332935270a2b2f6c097f5c33c910585fee8233933",
+    "artifacts/planning/initial_selection_single_v2/candidate_021/candidate/fcl_audit.log": "47f702ff1125254dddb4dcda71fe83bd8d491b69fd785e85b1e9024a80c0b8e9",
+    "artifacts/planning/initial_selection_single_v2/candidate_021/candidate/input.json": "f99748c9f4c404a6789d0cbb856133e6add46c7277c93c37d3ad99ca176cd430",
+    "artifacts/planning/initial_selection_single_v2/candidate_021/candidate/ros_logs/audit_rotation_20413_1791397533279.log": "ae542458f451073e2bdb045b05b6a0bf1cdb45449fd468a598419930677aad03",
+    "artifacts/planning/initial_selection_single_v2/candidate_021/candidate/ros_logs/2026-10-08-02-25-33-183770-DESKTOP-CD3R3PF-20391/launch.log": "cc9309594d07335417735ffbe61e809ef866dc18a8696de134e44f446b5696fc",
+    "artifacts/planning/initial_selection_single_v2/candidate_074/candidate/diagnostic.json": "635fd72f29491a229b2c6b053f27ee54605815db0e1327373f53f9e4f3f1c9a4",
+    "artifacts/planning/initial_selection_single_v2/candidate_074/candidate/fcl_validation.json": "9bee533fef24babda9f41584d9b10d2c3e9db432c20331ceb95b8cb9cfa552bb",
+    "artifacts/planning/initial_selection_single_v2/candidate_074/candidate/fcl_audit.log": "3f9872278b2a3088735b0366f46af73dd3230e1a3fc9c78c995ef28bcfd0a49e",
+    "artifacts/planning/initial_selection_single_v2/candidate_074/candidate/input.json": "99f9abbf81a7546039e61ed11cb484ec941592f6700d9ccb623c9f48156c8b8d",
+    "artifacts/planning/initial_selection_single_v2/candidate_074/candidate/ros_logs/audit_rotation_20730_1791397582290.log": "d74f54164b12b9836da98c34ec54ad2c15345d0a892a2a34103512f0fc1fb1f9",
+    "artifacts/planning/initial_selection_single_v2/candidate_074/candidate/ros_logs/2026-10-08-02-26-22-165850-DESKTOP-CD3R3PF-20700/launch.log": "13809eb8a36e18fd7cd0db4086384d74649f59cff7eaac18db3c98d7c4ec7f55",
+    "artifacts/planning/initial_selection_single_v2/candidate_035/candidate/diagnostic.json": "3d819dc5aaf53acedacf4e29e4edcea7a52e76a1c7c2703d42cbd861ddd512c5",
+    "artifacts/planning/initial_selection_single_v2/candidate_035/candidate/fcl_validation.json": "624e7c82660f49aa5ad3cec35563f85664bcac76e4e771f5f847e8b7128590d1",
+    "artifacts/planning/initial_selection_single_v2/candidate_035/candidate/fcl_audit.log": "bcf73b0032708d1b2be1a5b32bb90c2820c9cc8ce0ebe6d9f2bdeb1044ee853d",
+    "artifacts/planning/initial_selection_single_v2/candidate_035/candidate/input.json": "23c7599f1776b3b9dadc2894228c5ee7c2e24bd891d31827869c5a91859cc8ae",
+    "artifacts/planning/initial_selection_single_v2/candidate_035/candidate/ros_logs/audit_rotation_20627_1791397576229.log": "3b8d44040d281d2b20df0d228206d2abf73e5992043825009a2240dbb4bd028b",
+    "artifacts/planning/initial_selection_single_v2/candidate_035/candidate/ros_logs/2026-10-08-02-26-16-114991-DESKTOP-CD3R3PF-20605/launch.log": "5277e26e8d5831f4fe28dc16ef7f2a83390d23f91355d80bb78b254c46742210",
+    "artifacts/planning/initial_selection_single_v2/candidate_020/candidate/diagnostic.json": "1ec6267e977e43a7c313052c21f14ca1e2a4b7c7395b812900df1c80201278f2",
+    "artifacts/planning/initial_selection_single_v2/candidate_020/candidate/fcl_validation.json": "ff281812613fc44f83710fa28b8491843080cd8f249a138d525cfe322f1a8673",
+    "artifacts/planning/initial_selection_single_v2/candidate_020/candidate/fcl_audit.log": "7c15a271080afeb3bbd279f185837bc91478e835092d4fc002d567cde1455ca3",
+    "artifacts/planning/initial_selection_single_v2/candidate_020/candidate/input.json": "9061b22fb9e29183f64af8cbac060c100ece224d9be0fd62190a287c56426d9c",
+    "artifacts/planning/initial_selection_single_v2/candidate_020/candidate/ros_logs/audit_rotation_20346_1791397525610.log": "f24ddaf1188544aa6d3e76f66cbaa3061fd991d991355fdb20ad743355bb8a90",
+    "artifacts/planning/initial_selection_single_v2/candidate_020/candidate/ros_logs/2026-10-08-02-25-25-475554-DESKTOP-CD3R3PF-20321/launch.log": "d760f3847b20052a352075a5a2b9c8307538869803a04cdfdb8263626098cba9",
+    "artifacts/planning/initial_selection_single_v2/candidate_023/candidate/diagnostic.json": "cb9b299139a59589b160440890400d4168adce80d38dda68888d054b89d4007b",
+    "artifacts/planning/initial_selection_single_v2/candidate_023/candidate/fcl_validation.json": "89b798a16f718a34795f150d6302b05a8b0592496f0b84ee56d65b9ee5489b5a",
+    "artifacts/planning/initial_selection_single_v2/candidate_023/candidate/fcl_audit.log": "7291c717d9a238e330c052260dd4a679684215450c1de4be620aff62831e3181",
+    "artifacts/planning/initial_selection_single_v2/candidate_023/candidate/input.json": "4e652ee41347411a51df12d6cf3809446de478f12433a7b780500e7adfaefe76",
+    "artifacts/planning/initial_selection_single_v2/candidate_023/candidate/ros_logs/audit_rotation_20499_1791397547605.log": "f99a5647e4e9be151483829d44db0f2db69759e83b8ce1ff22fe0e48d1cf0b49",
+    "artifacts/planning/initial_selection_single_v2/candidate_023/candidate/ros_logs/2026-10-08-02-25-47-498530-DESKTOP-CD3R3PF-20477/launch.log": "82cae370c2bd63eac78a8c62dc9d8820219fff78fa8dea860056142e44c823c5",
+    "artifacts/planning/initial_selection_single_v2/candidate_018/candidate/diagnostic.json": "de244d72bef2bd17600f67a5c5464782aa82fd4dc0e77e3c31b4a8704f15f19f",
+    "artifacts/planning/initial_selection_single_v2/candidate_018/candidate/fcl_validation.json": "56d8c29417a15a0922ac2bbb148347b71c9148cd381b28dc458a04a6d27148fa",
+    "artifacts/planning/initial_selection_single_v2/candidate_018/candidate/fcl_audit.log": "4d3911af409798f4926a7e04785aef73b8d1c1de2dc7197a484b3310bbdcfe29",
+    "artifacts/planning/initial_selection_single_v2/candidate_018/candidate/input.json": "5e75bcfccfadf028af300777e4fc939febf1e3bb4892f056931051d565d0e631",
+    "artifacts/planning/initial_selection_single_v2/candidate_018/candidate/ros_logs/audit_rotation_20182_1791397495682.log": "cfead4e413b41bac7f48bac4da237f39b5804a9b4aeb1370c45464463af1443a",
+    "artifacts/planning/initial_selection_single_v2/candidate_018/candidate/ros_logs/2026-10-08-02-24-55-479557-DESKTOP-CD3R3PF-20139/launch.log": "7ba07dec9878373532fd9dd8dbf0b9c40672ba64e2df993cee4279c182c37622",
+    "artifacts/planning/initial_selection_single_v2/candidate_012/candidate/diagnostic.json": "081aba6918104f3f4a87ec245ec93b91f7e90ef69afcda807bfd8d1a63a401c9",
+    "artifacts/planning/initial_selection_single_v2/candidate_012/candidate/fcl_validation.json": "2e1990d932157726820e0a090f56d3279400be3761fcb748f8075bd750c95b9e",
+    "artifacts/planning/initial_selection_single_v2/candidate_012/candidate/fcl_audit.log": "266143fb20c5f9b61c19146d1f544faae4352c7d75c4c8113270ae925f7f38c1",
+    "artifacts/planning/initial_selection_single_v2/candidate_012/candidate/input.json": "aa18c3d4ef4b9ca74aa9bd529f0a0defb8741b620e7d4b7f03a02f466c9007ca",
+    "artifacts/planning/initial_selection_single_v2/candidate_012/candidate/ros_logs/audit_rotation_19733_1791397428060.log": "9191d42cf7b4464a4c7f992abf34d4053f6ebf15c06adc124c859837defc21dd",
+    "artifacts/planning/initial_selection_single_v2/candidate_012/candidate/ros_logs/2026-10-08-02-23-47-878384-DESKTOP-CD3R3PF-19705/launch.log": "7d188d382a2b3c422d5080abf319565baa6a100f26806f1d0dc400c50291a244"
+  },
+  "gui_run": false,
+  "dynamics_run": false,
+  "hardware_run": false,
+  "model_changed": false,
+  "task_runtime_changed": false
+}
