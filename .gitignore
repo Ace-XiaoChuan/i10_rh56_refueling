@@ -74,3 +74,7 @@ core.[0-9]*
 /artifacts/**/*.safetensors
 /artifacts/**/*.tar.gz
 /artifacts/**/*.zip
+
+# Local agent instructions
+AGENTS.md
+agents.md
