@@ -1,0 +1,2 @@
+已有复现来源和输出复核通过： /home/ace/i10_rh56_refueling_ws/artifacts/spahybgen/original_20261008_v2
+{"status": "completed_offline_hand_adaptation", "hard_valid_count": 16, "best_candidate_id": 6, "elapsed_s": 82.47035582199896}

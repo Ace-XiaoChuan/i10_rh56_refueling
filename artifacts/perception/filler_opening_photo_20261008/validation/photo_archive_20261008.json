@@ -1,0 +1,26 @@
+{
+  "operation": "archive_photo_without_changing_image_bytes",
+  "date": "2026-10-08",
+  "archived_path": "assets/hardware_photos/fuel_tank/be44de650d565ff38af7dd108c384037.jpg",
+  "sha256": "b4b4964d87dc42d156b21dd662e9fcb6dba2543d29840468326cbd936e6c8c6f",
+  "legacy_relative_symlink": "assets/hardware_photos/fuel_tank/be44de650d565ff38af7dd108c384037.jpg",
+  "photo_manifest_entries_verified": 9,
+  "local_document_links_verified": 46,
+  "existing_prediction_results_modified": false,
+  "inference_rerun": false,
+  "existing_result_source_verification": {
+    "installed_cap": {
+      "exit_code": 0,
+      "log_sha256": "f872486860fccf7cbc5ca40712e01c2550fcdeb6898e011f9a9742eb49b48988"
+    },
+    "installed_black_cap": {
+      "exit_code": 0,
+      "log_sha256": "f872486860fccf7cbc5ca40712e01c2550fcdeb6898e011f9a9742eb49b48988"
+    },
+    "installed_descriptive_cap": {
+      "exit_code": 0,
+      "log_sha256": "f872486860fccf7cbc5ca40712e01c2550fcdeb6898e011f9a9742eb49b48988"
+    }
+  },
+  "git_diff_check_exit_code": 0
+}

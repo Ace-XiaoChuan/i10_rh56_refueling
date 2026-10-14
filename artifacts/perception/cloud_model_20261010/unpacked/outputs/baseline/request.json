@@ -1,0 +1,50 @@
+{
+  "phase": "baseline",
+  "recipe_sha256": "d9e0d17831e286aee692d3e15268cf7142ee69f911ca672be01f568380d5d242",
+  "environment": {
+    "python": "3.10.8",
+    "packages": {
+      "torch": "2.1.2+cu121",
+      "torchvision": "0.16.2+cu121",
+      "mmcv": "2.1.0",
+      "mmengine": "0.10.7",
+      "mmdet": "3.3.0",
+      "numpy": "1.26.4",
+      "transformers": "4.38.2"
+    }
+  },
+  "settings": {
+    "schema": "cap_dino_cloud_experiment_v1",
+    "seed": 20261010,
+    "classes": [
+      "fuel cap"
+    ],
+    "train_positive": 8,
+    "train_negative": 4,
+    "val_positive": 3,
+    "val_negative": 1,
+    "epochs": 20,
+    "batch_size": 1,
+    "workers": 2,
+    "input_scale": [
+      1024,
+      640
+    ],
+    "flip_probability": 0.5,
+    "learning_rate": 5e-05,
+    "weight_decay": 0.0001,
+    "backbone_lr_multiplier": 0.1,
+    "warmup_steps": 30,
+    "warmup_start_factor": 0.001,
+    "decay_epoch": 15,
+    "decay_factor": 0.1,
+    "gradient_clip_norm": 0.1,
+    "score_threshold": 0.35,
+    "diagnostic_iou_threshold": 0.5,
+    "mmdetection_tag": "v3.3.0",
+    "pretrained_url": "https://download.openmmlab.com/mmdetection/v3.0/grounding_dino/groundingdino_swint_ogc_mmdet-822d7e9d.pth",
+    "bert_model_id": "google-bert/bert-base-uncased",
+    "bert_revision": "86b5e0934494bd15c9632b12f734a8a67f723594"
+  },
+  "checkpoint_sha256": null
+}

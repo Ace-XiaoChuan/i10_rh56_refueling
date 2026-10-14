@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "phase": "baseline",
+  "recipe_sha256": "d9e0d17831e286aee692d3e15268cf7142ee69f911ca672be01f568380d5d242",
+  "elapsed_seconds": 9.440281494054943,
+  "metrics": {
+    "coco/fuel cap_precision": 0.077,
+    "coco/bbox_mAP": 0.077,
+    "coco/bbox_mAP_50": 0.12,
+    "coco/bbox_mAP_75": 0.12,
+    "coco/bbox_mAP_s": -1.0,
+    "coco/bbox_mAP_m": -1.0,
+    "coco/bbox_mAP_l": 0.085
+  },
+  "scope": "同场景首轮实验，不代表跨批次或实物自动语义验收"
+}

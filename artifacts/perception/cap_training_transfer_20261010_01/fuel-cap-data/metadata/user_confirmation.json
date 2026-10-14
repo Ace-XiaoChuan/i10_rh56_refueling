@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-10",
+  "source": "user_message",
+  "question": "除正右遮挡外，其余五张无油箱盖照片拍摄时是否均未安装盖体？",
+  "answer": "是，5 张均没有安装盖体",
+  "negative_images": [
+    "无油箱盖_正上.jpg",
+    "无油箱盖_正下.jpg",
+    "无油箱盖_正右.jpg",
+    "无油箱盖_正左.jpg",
+    "无油箱盖_正面.jpg"
+  ],
+  "occluded_images_excluded": [
+    "带油箱盖_正右遮挡.jpg",
+    "无油箱盖_正右遮挡.jpg"
+  ]
+}

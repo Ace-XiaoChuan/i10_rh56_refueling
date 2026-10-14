@@ -1,0 +1,16 @@
+{
+  "diagnostic_contract_and_gui_tests_passed": 17,
+  "existing_perception_and_task_tests_passed": 51,
+  "gui_real_sam_box_and_box_points_completed": true,
+  "gui_active_job_close_handoff_tested": true,
+  "headless_box_reproduced_mask_sha256": "260419bba116fca4fc61bdb1c86516f5d18dc321cec97311e793e42d8b941fcc",
+  "manual_sessions_verify_only_passed": [
+    "artifacts/perception/sam_manual_tool_check_20261008",
+    "artifacts/perception/sam_manual_tool_check_20261008_headless"
+  ],
+  "historical_installed_cap_verify_only_passed": true,
+  "annotation_source": "agent_development_gui_fixture_not_user_annotation",
+  "independent_pixel_reference_available": false,
+  "automatic_semantic_acceptance_passed": false,
+  "training_performed": false
+}

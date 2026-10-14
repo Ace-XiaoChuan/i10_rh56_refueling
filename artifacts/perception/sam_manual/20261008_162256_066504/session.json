@@ -1,0 +1,28 @@
+{
+  "schema": "sam_diagnostic_session_v1",
+  "image_path": "/home/ace/i10_rh56_refueling_ws/assets/hardware_photos/fuel_tank/be44de650d565ff38af7dd108c384037.jpg",
+  "image_sha256": "b4b4964d87dc42d156b21dd662e9fcb6dba2543d29840468326cbd936e6c8c6f",
+  "image_size_wh": [
+    1706,
+    1279
+  ],
+  "source_copy": "source.jpg",
+  "automatic_reference": {
+    "result_path": "/home/ace/i10_rh56_refueling_ws/artifacts/perception/filler_opening_photo_20261008/installed_cap/result.json",
+    "result_sha256": "c16883697f53a339ce97ebb81301b1672d8d55b657e374faf3969f7117627853",
+    "overlay_path": "/home/ace/i10_rh56_refueling_ws/artifacts/perception/filler_opening_photo_20261008/installed_cap/overlay.png",
+    "overlay_sha256": "f3505549951b5574235868ab46ab3b07f5186d81e84af6a14d0052337e41fdc2",
+    "status": "unique_candidate",
+    "candidate_count": 1,
+    "verification_scope": "same_image_and_display_output_hashes_only"
+  },
+  "implementation": {
+    "/home/ace/i10_rh56_refueling_ws/tools/diagnose_sam_image.py": "dbaf81807c2211542bbd0d7a16fee912e1df579b3245a3e0261eb63147f07ff3",
+    "/home/ace/i10_rh56_refueling_ws/tools/fetch_perception_models.py": "350a6eda9e455ef476fb5d74574b60fff94cab99166e79c9228d29ccec8ea35c",
+    "/home/ace/i10_rh56_refueling_ws/src/fuel_cap_task/sam_diagnostic.py": "a2eae3649760175fe334353f5613c48751c2e962ac5b99c4dd5df2799fa723ba",
+    "/home/ace/i10_rh56_refueling_ws/src/fuel_cap_task/sam_diagnostic_gui.py": "32aebd261526faaed0415d622ab40564588166dcd2f3c7b3c6b7efb4f52d0304",
+    "/home/ace/i10_rh56_refueling_ws/dependencies/perception-requirements.txt": "cf956c55df989d1f4759a7f5d4240e5c9119a7cf74dcc7ad7798a49564e61cbf"
+  },
+  "valid_3d_pose": false,
+  "target_semantics_validated": false
+}

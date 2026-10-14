@@ -1,0 +1,35 @@
+{
+  "schema": "sam_manual_diagnostic_v1",
+  "status": "runtime_error",
+  "input_path": "/home/ace/i10_rh56_refueling_ws/artifacts/perception/sam_manual/20261010_002941_382986/source.jpg",
+  "image_path": "/home/ace/i10_rh56_refueling_ws/pic/带油箱盖_正上.jpg",
+  "image_sha256": "a4af2d85e4091ff21b6f4ec58371175b0ce2c3f9cda2474d7b94d14293377dc6",
+  "image_size_wh": [
+    1440,
+    1920
+  ],
+  "mode": "box",
+  "annotation_path": "/home/ace/i10_rh56_refueling_ws/artifacts/perception/sam_manual/20261010_002941_382986/annotations/0001.json",
+  "annotation_sha256": "b0a2a5d2b5bd3c5e2e7d4f37bb5e4dc939f4758bca9129d9bfdd8e894f0a05ba",
+  "annotation_source": "operator_input",
+  "used_prompts": {
+    "box_xyxy_px": [
+      600.9795918367347,
+      982.052067381317,
+      777.3061224489796,
+      1123.1852986217457
+    ],
+    "point_coords_px": [],
+    "point_labels": []
+  },
+  "implementation": {
+    "/home/ace/i10_rh56_refueling_ws/tools/diagnose_sam_image.py": "dbaf81807c2211542bbd0d7a16fee912e1df579b3245a3e0261eb63147f07ff3",
+    "/home/ace/i10_rh56_refueling_ws/tools/fetch_perception_models.py": "350a6eda9e455ef476fb5d74574b60fff94cab99166e79c9228d29ccec8ea35c",
+    "/home/ace/i10_rh56_refueling_ws/src/fuel_cap_task/sam_diagnostic.py": "a2eae3649760175fe334353f5613c48751c2e962ac5b99c4dd5df2799fa723ba",
+    "/home/ace/i10_rh56_refueling_ws/src/fuel_cap_task/sam_diagnostic_gui.py": "32aebd261526faaed0415d622ab40564588166dcd2f3c7b3c6b7efb4f52d0304",
+    "/home/ace/i10_rh56_refueling_ws/dependencies/perception-requirements.txt": "4dfdf7aa9a16356a41abe1591b945fb548425f6df054194a0b8bdecdfdb2a0ad"
+  },
+  "valid_3d_pose": false,
+  "target_semantics_validated": false,
+  "score_meaning": "predicted_mask_quality_not_semantic_correctness"
+}

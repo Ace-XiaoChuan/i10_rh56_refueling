@@ -1,0 +1,346 @@
+[
+  {
+    "name": "portalocker",
+    "version": "4.4.0",
+    "source_environment": "/home/ace/i10_rh56_refueling_ws/.venv-perception",
+    "wheel": ".cache/shared-python310/wheelhouse/portalocker-4.4.0-py3-none-any.whl",
+    "sha256": "b3c36cbe298dacda87bc492eeee30d52775d005f8e06c1c12f9838280c991252",
+    "checked_files": 13,
+    "skipped_installation_files": [
+      "portalocker-4.4.0.dist-info/INSTALLER",
+      "portalocker-4.4.0.dist-info/RECORD",
+      "portalocker-4.4.0.dist-info/REQUESTED"
+    ],
+    "source": "installed_files_verified_against_RECORD"
+  },
+  {
+    "name": "requests",
+    "version": "2.34.2",
+    "source_environment": "/home/ace/i10_rh56_refueling_ws/.venv-perception",
+    "wheel": ".cache/shared-python310/wheelhouse/requests-2.34.2-py3-none-any.whl",
+    "sha256": "70ae526a86c9d2870e74884e05f41816b675748594e0cf007069ad56613d0264",
+    "checked_files": 25,
+    "skipped_installation_files": [
+      "requests-2.34.2.dist-info/INSTALLER",
+      "requests-2.34.2.dist-info/RECORD",
+      "requests-2.34.2.dist-info/REQUESTED"
+    ],
+    "source": "installed_files_verified_against_RECORD"
+  },
+  {
+    "name": "exceptiongroup",
+    "version": "1.3.1",
+    "source_environment": "/home/ace/i10_rh56_refueling_ws/.venv-perception",
+    "wheel": ".cache/shared-python310/wheelhouse/exceptiongroup-1.3.1-py3-none-any.whl",
+    "sha256": "1021c4f3e582841c7bdf9baba0f9c5f7bdfbc2b373acffb49ef0fab3c0197c9a",
+    "checked_files": 10,
+    "skipped_installation_files": [
+      "exceptiongroup-1.3.1.dist-info/INSTALLER",
+      "exceptiongroup-1.3.1.dist-info/RECORD",
+      "exceptiongroup-1.3.1.dist-info/REQUESTED"
+    ],
+    "source": "installed_files_verified_against_RECORD"
+  },
+  {
+    "name": "antlr4-python3-runtime",
+    "version": "4.9.3",
+    "source_environment": "/home/ace/i10_rh56_refueling_ws/.venv-perception",
+    "wheel": ".cache/shared-python310/wheelhouse/antlr4_python3_runtime-4.9.3-py3-none-any.whl",
+    "sha256": "2525aff5d13db47304766d75072a536288f4427e86bfa64f8cf56355484c0e08",
+    "checked_files": 60,
+    "skipped_installation_files": [
+      "../../../bin/pygrun",
+      "antlr4_python3_runtime-4.9.3.dist-info/INSTALLER",
+      "antlr4_python3_runtime-4.9.3.dist-info/RECORD",
+      "antlr4_python3_runtime-4.9.3.dist-info/REQUESTED"
+    ],
+    "source": "installed_files_verified_against_RECORD"
+  },
+  {
+    "name": "hydra-core",
+    "version": "1.3.2",
+    "source_environment": "/home/ace/i10_rh56_refueling_ws/.venv-perception",
+    "wheel": ".cache/shared-python310/wheelhouse/hydra_core-1.3.2-py3-none-any.whl",
+    "sha256": "30dcb349d157d850debe62ac56f66aa86f75ac29245df7ebe12aa78deec83ada",
+    "checked_files": 149,
+    "skipped_installation_files": [
+      "hydra_core-1.3.2.dist-info/INSTALLER",
+      "hydra_core-1.3.2.dist-info/RECORD",
+      "hydra_core-1.3.2.dist-info/REQUESTED"
+    ],
+    "source": "installed_files_verified_against_RECORD"
+  },
+  {
+    "name": "transformers",
+    "version": "4.49.0",
+    "source_environment": "/home/ace/i10_rh56_refueling_ws/.venv-perception",
+    "wheel": ".cache/shared-python310/wheelhouse/transformers-4.49.0-py3-none-any.whl",
+    "sha256": "1c5b9746c59879d5b09494504e9b0e03a2b5578129c1a13ff22da619b976d757",
+    "checked_files": 1754,
+    "skipped_installation_files": [
+      "../../../bin/transformers-cli",
+      "transformers-4.49.0.dist-info/INSTALLER",
+      "transformers-4.49.0.dist-info/RECORD",
+      "transformers-4.49.0.dist-info/REQUESTED"
+    ],
+    "source": "installed_files_verified_against_RECORD"
+  },
+  {
+    "name": "omegaconf",
+    "version": "2.3.1",
+    "source_environment": "/home/ace/i10_rh56_refueling_ws/.venv-perception",
+    "wheel": ".cache/shared-python310/wheelhouse/omegaconf-2.3.1-py3-none-any.whl",
+    "sha256": "c54c56c0103247bdbb33735cc120382a2a29e9a784883784e87b08f016d2b4f2",
+    "checked_files": 30,
+    "skipped_installation_files": [
+      "omegaconf-2.3.1.dist-info/INSTALLER",
+      "omegaconf-2.3.1.dist-info/RECORD",
+      "omegaconf-2.3.1.dist-info/REQUESTED"
+    ],
+    "source": "installed_files_verified_against_RECORD"
+  },
+  {
+    "name": "idna",
+    "version": "3.20",
+    "source_environment": "/home/ace/i10_rh56_refueling_ws/.venv-perception",
+    "wheel": ".cache/shared-python310/wheelhouse/idna-3.20-py3-none-any.whl",
+    "sha256": "b19e3f78036e2d72d311332bdd3547483ddb8318579f45c953d218082a946a0a",
+    "checked_files": 15,
+    "skipped_installation_files": [
+      "../../../bin/idna",
+      "idna-3.20.dist-info/INSTALLER",
+      "idna-3.20.dist-info/RECORD",
+      "idna-3.20.dist-info/REQUESTED"
+    ],
+    "source": "installed_files_verified_against_RECORD"
+  },
+  {
+    "name": "pytest",
+    "version": "8.3.5",
+    "source_environment": "/home/ace/i10_rh56_refueling_ws/.venv-perception",
+    "wheel": ".cache/shared-python310/wheelhouse/pytest-8.3.5-py3-none-any.whl",
+    "sha256": "d0daf3f9963bfaa67ff941089aaf316c938b333543741769a82999f6d2fdc118",
+    "checked_files": 79,
+    "skipped_installation_files": [
+      "../../../bin/py.test",
+      "../../../bin/pytest",
+      "pytest-8.3.5.dist-info/INSTALLER",
+      "pytest-8.3.5.dist-info/RECORD",
+      "pytest-8.3.5.dist-info/REQUESTED"
+    ],
+    "source": "installed_files_verified_against_RECORD"
+  },
+  {
+    "name": "iopath",
+    "version": "0.1.10",
+    "source_environment": "/home/ace/i10_rh56_refueling_ws/.venv-perception",
+    "wheel": ".cache/shared-python310/wheelhouse/iopath-0.1.10-py3-none-any.whl",
+    "sha256": "162018eae4d47f286d5fdae0581dc63c392a9a440cf7d19caa96420364ac0fa9",
+    "checked_files": 15,
+    "skipped_installation_files": [
+      "iopath-0.1.10.dist-info/INSTALLER",
+      "iopath-0.1.10.dist-info/RECORD",
+      "iopath-0.1.10.dist-info/REQUESTED"
+    ],
+    "source": "installed_files_verified_against_RECORD"
+  },
+  {
+    "name": "charset-normalizer",
+    "version": "3.5.2",
+    "source_environment": "/home/ace/i10_rh56_refueling_ws/.venv-perception",
+    "wheel": ".cache/shared-python310/wheelhouse/charset_normalizer-3.5.2-cp310-cp310-manylinux_2_17_x86_64.whl",
+    "sha256": "190f53c6e1f7501ba16e22a8cec39e3e8a6798d3ce93c627aa22d5b9862cf4ba",
+    "checked_files": 20,
+    "skipped_installation_files": [
+      "../../../bin/normalizer",
+      "charset_normalizer-3.5.2.dist-info/INSTALLER",
+      "charset_normalizer-3.5.2.dist-info/RECORD",
+      "charset_normalizer-3.5.2.dist-info/REQUESTED"
+    ],
+    "source": "installed_files_verified_against_RECORD"
+  },
+  {
+    "name": "safetensors",
+    "version": "0.8.0",
+    "source_environment": "/home/ace/i10_rh56_refueling_ws/.venv-perception",
+    "wheel": ".cache/shared-python310/wheelhouse/safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.whl",
+    "sha256": "148dcfc1f1cd2d3e2fd8f6fecc2e9843431e183ecd87f694467bc87d6595dec9",
+    "checked_files": 14,
+    "skipped_installation_files": [
+      "safetensors-0.8.0.dist-info/INSTALLER",
+      "safetensors-0.8.0.dist-info/RECORD",
+      "safetensors-0.8.0.dist-info/REQUESTED"
+    ],
+    "source": "installed_files_verified_against_RECORD"
+  },
+  {
+    "name": "tokenizers",
+    "version": "0.21.4",
+    "source_environment": "/home/ace/i10_rh56_refueling_ws/.venv-perception",
+    "wheel": ".cache/shared-python310/wheelhouse/tokenizers-0.21.4-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "sha256": "1b834ec43f5ae6af2e99b32831e4f9893f84e97c0bb7f9785d7fc159bf780f01",
+    "checked_files": 27,
+    "skipped_installation_files": [
+      "tokenizers-0.21.4.dist-info/INSTALLER",
+      "tokenizers-0.21.4.dist-info/RECORD",
+      "tokenizers-0.21.4.dist-info/REQUESTED"
+    ],
+    "source": "installed_files_verified_against_RECORD"
+  },
+  {
+    "name": "tqdm",
+    "version": "4.67.1",
+    "source_environment": "/home/ace/i10_rh56_refueling_ws/.venv-perception",
+    "wheel": ".cache/shared-python310/wheelhouse/tqdm-4.67.1-py3-none-any.whl",
+    "sha256": "0dd2075e9fa0c767067cb2367fc394521396b3ccfc7958ea23eea8d3a17b55af",
+    "checked_files": 39,
+    "skipped_installation_files": [
+      "../../../bin/tqdm",
+      "tqdm-4.67.1.dist-info/INSTALLER",
+      "tqdm-4.67.1.dist-info/RECORD",
+      "tqdm-4.67.1.dist-info/REQUESTED"
+    ],
+    "source": "installed_files_verified_against_RECORD"
+  },
+  {
+    "name": "regex",
+    "version": "2026.9.29",
+    "source_environment": "/home/ace/i10_rh56_refueling_ws/.venv-perception",
+    "wheel": ".cache/shared-python310/wheelhouse/regex-2026.9.29-cp310-cp310-manylinux_2_17_x86_64.whl",
+    "sha256": "87abbaeffd017f6ea87f2e7a3094ceb39e7ee553b3c403170c438e95f4ece417",
+    "checked_files": 9,
+    "skipped_installation_files": [
+      "regex-2026.9.29.dist-info/INSTALLER",
+      "regex-2026.9.29.dist-info/RECORD",
+      "regex-2026.9.29.dist-info/REQUESTED"
+    ],
+    "source": "installed_files_verified_against_RECORD"
+  },
+  {
+    "name": "setuptools",
+    "version": "75.8.2",
+    "source_environment": "/home/ace/i10_rh56_refueling_ws/.venv-perception",
+    "wheel": ".cache/shared-python310/wheelhouse/setuptools-75.8.2-py3-none-any.whl",
+    "sha256": "b131c1e1141e3dfa4c4e708e84f83f814847923d242ffc16b19b8ee4ea0008c2",
+    "checked_files": 460,
+    "skipped_installation_files": [
+      "setuptools-75.8.2.dist-info/INSTALLER",
+      "setuptools-75.8.2.dist-info/RECORD",
+      "setuptools-75.8.2.dist-info/REQUESTED",
+      "setuptools/_vendor/autocommand-2.2.2.dist-info/INSTALLER",
+      "setuptools/_vendor/autocommand-2.2.2.dist-info/RECORD",
+      "setuptools/_vendor/backports.tarfile-1.2.0.dist-info/INSTALLER",
+      "setuptools/_vendor/backports.tarfile-1.2.0.dist-info/RECORD",
+      "setuptools/_vendor/backports.tarfile-1.2.0.dist-info/REQUESTED",
+      "setuptools/_vendor/importlib_metadata-8.0.0.dist-info/INSTALLER",
+      "setuptools/_vendor/importlib_metadata-8.0.0.dist-info/RECORD",
+      "setuptools/_vendor/importlib_metadata-8.0.0.dist-info/REQUESTED",
+      "setuptools/_vendor/inflect-7.3.1.dist-info/INSTALLER",
+      "setuptools/_vendor/inflect-7.3.1.dist-info/RECORD",
+      "setuptools/_vendor/jaraco.collections-5.1.0.dist-info/INSTALLER",
+      "setuptools/_vendor/jaraco.collections-5.1.0.dist-info/RECORD",
+      "setuptools/_vendor/jaraco.collections-5.1.0.dist-info/REQUESTED",
+      "setuptools/_vendor/jaraco.context-5.3.0.dist-info/INSTALLER",
+      "setuptools/_vendor/jaraco.context-5.3.0.dist-info/RECORD",
+      "setuptools/_vendor/jaraco.functools-4.0.1.dist-info/INSTALLER",
+      "setuptools/_vendor/jaraco.functools-4.0.1.dist-info/RECORD",
+      "setuptools/_vendor/jaraco.text-3.12.1.dist-info/INSTALLER",
+      "setuptools/_vendor/jaraco.text-3.12.1.dist-info/RECORD",
+      "setuptools/_vendor/jaraco.text-3.12.1.dist-info/REQUESTED",
+      "setuptools/_vendor/more_itertools-10.3.0.dist-info/INSTALLER",
+      "setuptools/_vendor/more_itertools-10.3.0.dist-info/RECORD",
+      "setuptools/_vendor/more_itertools-10.3.0.dist-info/REQUESTED",
+      "setuptools/_vendor/packaging-24.2.dist-info/INSTALLER",
+      "setuptools/_vendor/packaging-24.2.dist-info/RECORD",
+      "setuptools/_vendor/packaging-24.2.dist-info/REQUESTED",
+      "setuptools/_vendor/platformdirs-4.2.2.dist-info/INSTALLER",
+      "setuptools/_vendor/platformdirs-4.2.2.dist-info/RECORD",
+      "setuptools/_vendor/platformdirs-4.2.2.dist-info/REQUESTED",
+      "setuptools/_vendor/tomli-2.0.1.dist-info/INSTALLER",
+      "setuptools/_vendor/tomli-2.0.1.dist-info/RECORD",
+      "setuptools/_vendor/tomli-2.0.1.dist-info/REQUESTED",
+      "setuptools/_vendor/typeguard-4.3.0.dist-info/INSTALLER",
+      "setuptools/_vendor/typeguard-4.3.0.dist-info/RECORD",
+      "setuptools/_vendor/typing_extensions-4.12.2.dist-info/INSTALLER",
+      "setuptools/_vendor/typing_extensions-4.12.2.dist-info/RECORD",
+      "setuptools/_vendor/wheel-0.43.0.dist-info/INSTALLER",
+      "setuptools/_vendor/wheel-0.43.0.dist-info/RECORD",
+      "setuptools/_vendor/wheel-0.43.0.dist-info/REQUESTED",
+      "setuptools/_vendor/zipp-3.19.2.dist-info/INSTALLER",
+      "setuptools/_vendor/zipp-3.19.2.dist-info/RECORD",
+      "setuptools/_vendor/zipp-3.19.2.dist-info/REQUESTED"
+    ],
+    "source": "installed_files_verified_against_RECORD"
+  },
+  {
+    "name": "urllib3",
+    "version": "2.8.0",
+    "source_environment": "/home/ace/i10_rh56_refueling_ws/.venv-perception",
+    "wheel": ".cache/shared-python310/wheelhouse/urllib3-2.8.0-py3-none-any.whl",
+    "sha256": "42d94a8b3ed5c57b1f1b740cf37ca1f88e55973d45c6946aa2b66232e0d3d913",
+    "checked_files": 41,
+    "skipped_installation_files": [
+      "urllib3-2.8.0.dist-info/INSTALLER",
+      "urllib3-2.8.0.dist-info/RECORD",
+      "urllib3-2.8.0.dist-info/REQUESTED"
+    ],
+    "source": "installed_files_verified_against_RECORD"
+  },
+  {
+    "name": "huggingface-hub",
+    "version": "0.29.3",
+    "source_environment": "/home/ace/i10_rh56_refueling_ws/.venv-perception",
+    "wheel": ".cache/shared-python310/wheelhouse/huggingface_hub-0.29.3-py3-none-any.whl",
+    "sha256": "9c3aaeb72b6c764425a9b6e36bd41e42f9de4f03b06000b16b483220353e793c",
+    "checked_files": 132,
+    "skipped_installation_files": [
+      "../../../bin/huggingface-cli",
+      "huggingface_hub-0.29.3.dist-info/INSTALLER",
+      "huggingface_hub-0.29.3.dist-info/RECORD",
+      "huggingface_hub-0.29.3.dist-info/REQUESTED"
+    ],
+    "source": "installed_files_verified_against_RECORD"
+  },
+  {
+    "name": "iniconfig",
+    "version": "2.3.1",
+    "source_environment": "/home/ace/i10_rh56_refueling_ws/.venv-perception",
+    "wheel": ".cache/shared-python310/wheelhouse/iniconfig-2.3.1-py3-none-any.whl",
+    "sha256": "367e6d53a9409b75d4526df419e46265a493cc725635124fbc98ad324df11cb8",
+    "checked_files": 9,
+    "skipped_installation_files": [
+      "iniconfig-2.3.1.dist-info/INSTALLER",
+      "iniconfig-2.3.1.dist-info/RECORD",
+      "iniconfig-2.3.1.dist-info/REQUESTED"
+    ],
+    "source": "installed_files_verified_against_RECORD"
+  },
+  {
+    "name": "certifi",
+    "version": "2026.7.22",
+    "source_environment": "/home/ace/i10_rh56_refueling_ws/.venv-perception",
+    "wheel": ".cache/shared-python310/wheelhouse/certifi-2026.7.22-py3-none-any.whl",
+    "sha256": "645e98a455c8b739721b29bfe1ece07381334c0f27b05be6c106bbc27b8a56e7",
+    "checked_files": 11,
+    "skipped_installation_files": [
+      "certifi-2026.7.22.dist-info/INSTALLER",
+      "certifi-2026.7.22.dist-info/RECORD",
+      "certifi-2026.7.22.dist-info/REQUESTED"
+    ],
+    "source": "installed_files_verified_against_RECORD"
+  },
+  {
+    "name": "pluggy",
+    "version": "1.6.0",
+    "source_environment": "/home/ace/i10_rh56_refueling_ws/.venv-perception",
+    "wheel": ".cache/shared-python310/wheelhouse/pluggy-1.6.0-py3-none-any.whl",
+    "sha256": "6884c9fd2bb39d7cf58af78d8768d1ba04ae3f73c9a0561bda939ac8df3b9822",
+    "checked_files": 13,
+    "skipped_installation_files": [
+      "pluggy-1.6.0.dist-info/INSTALLER",
+      "pluggy-1.6.0.dist-info/RECORD",
+      "pluggy-1.6.0.dist-info/REQUESTED"
+    ],
+    "source": "installed_files_verified_against_RECORD"
+  }
+]

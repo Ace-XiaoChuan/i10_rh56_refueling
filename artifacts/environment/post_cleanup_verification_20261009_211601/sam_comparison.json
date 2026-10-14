@@ -1,0 +1,8 @@
+{
+  "comparison": "同图、同一已保存用户框提示；本轮新推理与历史掩膜逐像素比较",
+  "old_mask_pixels": 35894,
+  "new_mask_pixels": 35894,
+  "changed_pixels": 0,
+  "mask_iou": 1.0,
+  "limitation": "只作为环境兼容性证据，不计自动语义识别或泛化验收。"
+}

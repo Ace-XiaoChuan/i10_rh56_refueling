@@ -1,0 +1,38 @@
+{
+  "evidence_source": "用户放入 src/ 的实际云端对照文件；已本地读取并目视检查原生 SVG 渲染",
+  "recipe_sha256": "d9e0d17831e286aee692d3e15268cf7142ee69f911ca672be01f568380d5d242",
+  "source_sha256": {
+    "src/comparison.html": "cbc3d9623e28c1ea9a2d98f4be1e643591558ec4e06fcf493250a752e46ee5b4",
+    "src/prediction_diagnostics.json": "d8f59b92b9660c76c85f2db062bc9955c260bb329f82036ff0cd62b3c34ae129"
+  },
+  "validation": {
+    "html_json_summaries_equal": true,
+    "eight_embedded_photo_hashes_match_dataset": true,
+    "top5_ious_recomputed_match": true,
+    "four_panels_visually_inspected": true,
+    "original_threshold_unchanged": 0.35
+  },
+  "far_scene": {
+    "highest_score": 0.11520548909902573,
+    "highest_score_box_iou": 0.8274176947683345,
+    "highest_score_box_xywh": [
+      722.2564697265625,
+      400.0709533691406,
+      114.43084716796875,
+      113.08462524414062
+    ],
+    "maximum_iou_any_prediction": 0.8844281853556129,
+    "maximum_iou_box_score": 0.03708263486623764
+  },
+  "negative_scene": {
+    "highest_score": 0.22578653693199158,
+    "highest_score_box_xywh": [
+      697.7752685546875,
+      664.8358154296875,
+      213.22149658203125,
+      238.23785400390625
+    ]
+  },
+  "finding": "远景存在正确位置低分预测；无盖开口的错误预测分数高于远景盖体，单一统一分数阈值不能同时接受此远景并拒绝此无盖图",
+  "verification_boundary": "完整预测和模型权重未回传；不调整阈值、不重训练、不计新批次泛化或 SAM 自动链通过"
+}

@@ -1,0 +1,12 @@
+{
+  "shared_environment": "/home/ace/mujoco-env",
+  "aliases": [
+    "/home/ace/i10_rh56_refueling_ws/.venv",
+    "/home/ace/i10_rh56_refueling_ws/.venv-perception"
+  ],
+  "retired_environment_paths": [
+    "/home/ace/i10_rh56_refueling_ws/.cache/shared-python310/retired_environments/.venv",
+    "/home/ace/i10_rh56_refueling_ws/.cache/shared-python310/retired_environments/.venv-perception"
+  ],
+  "old_directories_deleted": true
+}

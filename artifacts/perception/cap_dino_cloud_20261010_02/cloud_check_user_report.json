@@ -1,0 +1,30 @@
+{
+  "evidence_source": "用户于 2026-10-10 提供的云服务器终端输出；助手未登录实例或读取云端结果文件",
+  "instance": "autodl-container-be25119b52-7ec32236",
+  "reported_working_directory": "/root/autodl-tmp/fuel-cap-training",
+  "reported_environment_active": ".cloud-env",
+  "data_integrity": {
+    "images": 16,
+    "boxes": 11,
+    "empty_annotations": 5
+  },
+  "reported_result": {
+    "status": "passed",
+    "environment": {
+      "python": "3.10.8",
+      "packages": {
+        "torch": "2.1.2+cu121",
+        "torchvision": "0.16.2+cu121",
+        "mmcv": "2.1.0",
+        "mmengine": "0.10.7",
+        "mmdet": "3.3.0",
+        "numpy": "1.26.4",
+        "transformers": "4.38.2"
+      }
+    },
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "nms_cuda": true,
+    "deformable_attention_cuda_forward_backward": true
+  },
+  "verification_boundary": "关键 CUDA 算子检查通过；尚无模型下载、Grounding DINO 完整前向、真实训练或识别评价结果"
+}

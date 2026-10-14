@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "archive": "/home/ace/i10_rh56_refueling_ws/artifacts/perception/cloud_model_20261010/cap-dino-model-20261010.tar.gz",
+  "archive_sha256": "dd6d3ad45a25ce99f3fb3a61ab4fc9950460cc4ae01a9704c4c1ddbbf9189a2a",
+  "archive_sha256_check": "sha256sum -c 实际返回 OK",
+  "unpacked": "/home/ace/i10_rh56_refueling_ws/artifacts/perception/cloud_model_20261010/unpacked",
+  "checkpoint": "/home/ace/i10_rh56_refueling_ws/artifacts/perception/cloud_model_20261010/unpacked/outputs/train/best_coco_bbox_mAP_epoch_4.pth",
+  "checkpoint_bytes": 692333850,
+  "checkpoint_sha256": "3e351fd88a60227f1175b458a8eb88c25af46b7c46af6e78fb3ad48177d03edb",
+  "checks": [
+    "归档全部成员为目标目录内的常规文件或目录",
+    "checkpoint 实际摘要与评价请求相同",
+    "BERT 6 文件实际摘要与模型来源清单相同",
+    "云端配置与项目合同配置相同",
+    "4 个阶段状态通过且 recipe 相同",
+    "评价源文件实际摘要与已检查 HTML/JSON 证据相同"
+  ],
+  "local_detector_forward_executed": false,
+  "local_mmdetection_runtime_available": false,
+  "sam_bridge_result": "/home/ace/i10_rh56_refueling_ws/artifacts/perception/cloud_dino_sam_20261010_01/result.json",
+  "scope": "模型接收与完整性验证通过；云端已保存自动框到本机 SAM 2 已真实运行，未在本机执行新模型定位"
+}

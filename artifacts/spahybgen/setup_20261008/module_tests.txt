@@ -1,0 +1,14 @@
+..                                                                       [100%]
+=============================== warnings summary ===============================
+../../.venv-spahybgen/lib/python3.8/site-packages/transforms3d/quaternions.py:26
+  /home/ace/i10_rh56_refueling_ws/.venv-spahybgen/lib/python3.8/site-packages/transforms3d/quaternions.py:26: DeprecationWarning: `np.float` is a deprecated alias for the builtin `float`. To silence this warning, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
+  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+    _MAX_FLOAT = np.maximum_sctype(np.float)
+
+../../.venv-spahybgen/lib/python3.8/site-packages/transforms3d/quaternions.py:27
+  /home/ace/i10_rh56_refueling_ws/.venv-spahybgen/lib/python3.8/site-packages/transforms3d/quaternions.py:27: DeprecationWarning: `np.float` is a deprecated alias for the builtin `float`. To silence this warning, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
+  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+    _FLOAT_EPS = np.finfo(np.float).eps
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+2 passed, 2 warnings in 11.01s

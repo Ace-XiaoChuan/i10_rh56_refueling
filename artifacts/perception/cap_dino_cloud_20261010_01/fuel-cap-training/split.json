@@ -1,0 +1,97 @@
+{
+  "source": "user_confirmed_12_train_4_validation",
+  "seed": 20261010,
+  "train_ids": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    12,
+    13,
+    15,
+    16
+  ],
+  "val_ids": [
+    2,
+    9,
+    11,
+    14
+  ],
+  "smoke_ids": [
+    1,
+    12
+  ],
+  "train_images": [
+    {
+      "file_name": "带油箱盖_右上.jpg",
+      "sha256": "ac194a400fe4fd9bbe9a3bed0912069be549669806050cddc4a1221e4c56e5c5"
+    },
+    {
+      "file_name": "带油箱盖_左上.jpg",
+      "sha256": "15fc3487756cb7b1ceab9fd6c6f620227c0245969d9f61c9271364d05caba2ca"
+    },
+    {
+      "file_name": "带油箱盖_左下.jpg",
+      "sha256": "002cebce6322fafdcab1c2aa36a10fdbe18752e6165c43cab8833264752d13d7"
+    },
+    {
+      "file_name": "带油箱盖_正上.jpg",
+      "sha256": "a4af2d85e4091ff21b6f4ec58371175b0ce2c3f9cda2474d7b94d14293377dc6"
+    },
+    {
+      "file_name": "带油箱盖_正下.jpg",
+      "sha256": "726fd9b4cdd16ec4876bbb44e5389686d8400d78756e600e541b92d2c832e40f"
+    },
+    {
+      "file_name": "带油箱盖_正右.jpg",
+      "sha256": "b16306454776e30e68e7f9eea07e7cb26fcf804a7d3b51be78c2264586039e3f"
+    },
+    {
+      "file_name": "带油箱盖_正左.jpg",
+      "sha256": "0e0f5c54c0d33d56190ab45e0ed2754bdd222360de2fe8a5595f20de6a4a5601"
+    },
+    {
+      "file_name": "带油箱盖_近景.jpg",
+      "sha256": "530502bd45cee0b2e3e6854fb82b5e89d1faf8b10a2f59e18118605b3969e7a7"
+    },
+    {
+      "file_name": "无油箱盖_正上.jpg",
+      "sha256": "4689c539ef935df87f22d9a58789b3e72442e453b8e8932748d17758750b42f6"
+    },
+    {
+      "file_name": "无油箱盖_正下.jpg",
+      "sha256": "5beb0f9e01ec20a4b4529052f6b4737127149ccb9849c20daff9ad397fba503c"
+    },
+    {
+      "file_name": "无油箱盖_正左.jpg",
+      "sha256": "0fb327b4983f323bca67070bf818a696e18ef31c865ca94e6eb64b63ba4ecfdb"
+    },
+    {
+      "file_name": "无油箱盖_正面.jpg",
+      "sha256": "ae62841b3e1721ec5f3dc36957c117176e22e036f3fc0b4e1f22ad1770aec185"
+    }
+  ],
+  "val_images": [
+    {
+      "file_name": "带油箱盖_右下.jpg",
+      "sha256": "9cfca835e79251f31f488d7ef89a7a33d6cedeac0cfcd4388039677848deec1b"
+    },
+    {
+      "file_name": "带油箱盖_正面.jpg",
+      "sha256": "9287a6f900f440ae1ae128c637a0004f5fd5f465bf81249e2cd2a28f406ff537"
+    },
+    {
+      "file_name": "带油箱盖_远景.jpg",
+      "sha256": "8411ad5f6ed240753eb412890d09b7030b1dfa8bd1a8b48d6535501d0c0049dc"
+    },
+    {
+      "file_name": "无油箱盖_正右.jpg",
+      "sha256": "709745ec0ff288f3706287031291afc559275bef30c5581dc38bcd0238f6c4b0"
+    }
+  ],
+  "scope": "同一次拍摄、同一场景；没有独立测试集，不代表跨批次泛化"
+}

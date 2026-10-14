@@ -1,0 +1,37 @@
+{
+  "schema": "sam_user_visual_review_v1",
+  "recorded_date": "2026-10-08",
+  "source": "user_conversation_report",
+  "user_statement": "我已经人工框出了盖体区域，识别的都很准。",
+  "interpretation": "用户目视确认人工提示后的盖体分割准确；属于提示分割的定性确认。",
+  "archived_evidence_scope": {
+    "image_count": 1,
+    "completed_trial_count": 2,
+    "trials": [
+      {
+        "result_path": "trials/0001_box/result.json",
+        "result_sha256": "e663b9a13d062a73ee78e6a7662f61d4e6a9cf6b5ceb83f9239a19749603846f",
+        "mode": "box",
+        "annotation_source": "operator_input"
+      },
+      {
+        "result_path": "trials/0002_box_points/result.json",
+        "result_sha256": "be7d0cb0014fd63e5f1fd4b8070fd7ebfcab0d3c79ff43ce89b15ebd078b3fd1",
+        "mode": "box_points",
+        "annotation_source": "operator_input"
+      }
+    ]
+  },
+  "independent_agent_visual_review": "已查看两次叠加图，掩膜主要覆盖中央盖体及握梁。",
+  "independent_pixel_reference_available": false,
+  "automatic_pipeline_validated": false,
+  "multiview_generalization_validated": false,
+  "model_training_performed": false,
+  "verification": {
+    "mode": "verify_only_no_inference",
+    "passed": true,
+    "environment_setup": "source /opt/ros/humble/setup.bash",
+    "initial_unmatched_environment_reason": "首次未加载 ROS，包可见性与用户原推理记录不同；加载 ROS 后环境完全匹配。"
+  },
+  "next_priority": "沿用 SAM 2；建立定位数据集并评价、迁移学习改进定位模块。"
+}

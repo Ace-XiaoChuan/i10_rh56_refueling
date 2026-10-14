@@ -1,0 +1,17 @@
+{
+  "zip_crc_and_sha256": "passed",
+  "fresh_extract_verify": "passed",
+  "official_config_merge_4_phases": "passed",
+  "split": {
+    "train": 12,
+    "validation": 4
+  },
+  "python_and_shell_syntax": "passed",
+  "vendor_source_hashes": "passed",
+  "dataset_regressions": 6,
+  "cloud_gpu_backend_tested": false,
+  "model_download_tested": false,
+  "training_started": false,
+  "dataset_regressions_passed": 6,
+  "pytest_initial_attempt": "ROS 自动插件缺少 lark，未执行用例；随后禁用无关插件自动加载，6 项实际通过"
+}

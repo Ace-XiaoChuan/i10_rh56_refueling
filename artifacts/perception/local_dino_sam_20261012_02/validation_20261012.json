@@ -1,0 +1,84 @@
+{
+  "status": "passed",
+  "local_result_sha256": "5dc30ea28fe457eabbe102ec8e534ae8dbd846b5b90d2469faef2ddeef8a786a",
+  "source_and_artifact_verification": "tools/segment_cap_local.py --verify-only 已实际通过",
+  "real_inference_exit_code": 2,
+  "exit_code_meaning": "正常完成；远景及无盖无候选",
+  "comparison": [
+    {
+      "image_name": "带油箱盖_右下.jpg",
+      "image_sha256": "9cfca835e79251f31f488d7ef89a7a33d6cedeac0cfcd4388039677848deec1b",
+      "local_status": "unique_candidate",
+      "cloud_candidate_count": 1,
+      "local_candidate_count": 1,
+      "masks_equal_to_cloud_box_sam": true,
+      "local_highest_raw_score": 0.7305708527565002,
+      "max_candidate_box_abs_difference_px": 0.010009765625,
+      "max_candidate_score_abs_difference": 0.00034755468368530273
+    },
+    {
+      "image_name": "带油箱盖_正面.jpg",
+      "image_sha256": "9287a6f900f440ae1ae128c637a0004f5fd5f465bf81249e2cd2a28f406ff537",
+      "local_status": "unique_candidate",
+      "cloud_candidate_count": 1,
+      "local_candidate_count": 1,
+      "masks_equal_to_cloud_box_sam": true,
+      "local_highest_raw_score": 0.6723807454109192,
+      "max_candidate_box_abs_difference_px": 0.00396728515625,
+      "max_candidate_score_abs_difference": 0.0002530813217163086
+    },
+    {
+      "image_name": "带油箱盖_远景.jpg",
+      "image_sha256": "8411ad5f6ed240753eb412890d09b7030b1dfa8bd1a8b48d6535501d0c0049dc",
+      "local_status": "not_detected",
+      "cloud_candidate_count": 0,
+      "local_candidate_count": 0,
+      "masks_equal_to_cloud_box_sam": true,
+      "local_highest_raw_score": 0.11543349921703339
+    },
+    {
+      "image_name": "无油箱盖_正右.jpg",
+      "image_sha256": "709745ec0ff288f3706287031291afc559275bef30c5581dc38bcd0238f6c4b0",
+      "local_status": "not_detected",
+      "cloud_candidate_count": 0,
+      "local_candidate_count": 0,
+      "masks_equal_to_cloud_box_sam": true,
+      "local_highest_raw_score": 0.2247629165649414
+    }
+  ],
+  "shared_environment_freeze_unchanged": true,
+  "pytest": {
+    "command": "PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 PYTHONPATH=src /home/ace/mujoco-env/bin/python -m pytest -q -p no:cacheprovider tests/test_finetuned_cap.py tests/test_grounded_sam_contract.py tests/test_cap_cloud_dataset.py",
+    "passed": 25,
+    "test_source_sha256": "a505503a914abf9d3795d8434a3c75b9918c7ef0bb8f02dc157fa0c230b75449"
+  },
+  "cpu_runtime_check": {
+    "status": "passed",
+    "python": "3.10.12",
+    "packages": {
+      "torch": "2.1.2+cpu",
+      "torchvision": "0.16.2+cpu",
+      "mmcv": "2.1.0",
+      "mmengine": "0.10.7",
+      "mmdet": "3.3.0",
+      "numpy": "1.26.4",
+      "transformers": "4.38.2"
+    },
+    "device": "cpu",
+    "cpu_nms": true,
+    "cpu_deformable_attention": true,
+    "scope": "环境与最小算子检查；完整模型及图像结果须单独运行"
+  },
+  "evidence_sha256": {
+    "validation_evidence/cap-dino-install-torch-20261012.log": "fb83ef12ecc4e1485b5978112e08e0fb980383f418e5bef71923ba2043a39e64",
+    "validation_evidence/cap-dino-install-torch-network-20261012.log": "f2d011cc001bbbdf77a822b8a6e43349a9ffed398f31444757c68aa114da34b0",
+    "validation_evidence/cap-dino-install-runtime-20261012.log": "e163e231e06b2d5f79cb61485ef5b45dd85c313161d299f8e31d5dead1c42288",
+    "validation_evidence/cap-dino-install-runtime-retry-20261012.log": "d7d09d11adddef845ef5c2d20f8965a52a5f2386e3b75b8488bc653bd8aa49e2",
+    "validation_evidence/cap-dino-install-runtime-single-index-20261012.log": "226db3b3fcc97719c6ed4b6c209d0c5a58689bd04e3f85012ce9f9589c9bfe9a",
+    "validation_evidence/cap-dino-runtime-check-20261012.json": "8c29c25f84ee3ecf4e9a86838fc093df51c2a2d7347eb4d7fcb99345121aabb8",
+    "validation_evidence/cap-dino-shared-env-before-20261012.txt": "1e943c0450dfb6f23acaccdccc5b86fc8c0ca11cb82ba14c1d4945cd6e3db7b8",
+    "validation_evidence/cap-dino-shared-env-after-20261012.txt": "1e943c0450dfb6f23acaccdccc5b86fc8c0ca11cb82ba14c1d4945cd6e3db7b8"
+  },
+  "visual_review": "助手已查看本轮右下/正面叠加图，掩膜覆盖盖体主体；没有独立像素真值或本轮用户验收",
+  "scope": "同四张已评价图片的本机真实前向与分割接入复核；不计新批次泛化、三维或机器人任务验收"
+}

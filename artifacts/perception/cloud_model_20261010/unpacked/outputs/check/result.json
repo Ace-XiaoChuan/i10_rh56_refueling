@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "environment": {
+    "python": "3.10.8",
+    "packages": {
+      "torch": "2.1.2+cu121",
+      "torchvision": "0.16.2+cu121",
+      "mmcv": "2.1.0",
+      "mmengine": "0.10.7",
+      "mmdet": "3.3.0",
+      "numpy": "1.26.4",
+      "transformers": "4.38.2"
+    }
+  },
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "nms_cuda": true,
+  "deformable_attention_cuda_forward_backward": true
+}

@@ -1,0 +1,55 @@
+/home/ace/i10_rh56_refueling_ws/dependencies/SpaHybGen/src/spahybgen/handmodel.py:62: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/rh56-urdf-rw2033c8/hand.urdf' mode='r' encoding='UTF-8'>
+  self.robot = pk.build_chain_from_urdf(open(urdf_path).read()).to(
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/ace/i10_rh56_refueling_ws/dependencies/SpaHybGen/src/spahybgen/handmodel.py:65: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/ace/i10_rh56_refueling_ws/artifacts/rh56_spahybgen/model_20261008/contacts.json' mode='r' encoding='UTF-8'>
+  self.contact_point_dict = json.load(open(contact_path))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/ace/i10_rh56_refueling_ws/dependencies/SpaHybGen/src/spahybgen/handmodel.py:66: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/rh56-urdf-rw2033c8/hand.urdf' mode='r' encoding='UTF-8'>
+  visual = URDF.from_xml_string(open(urdf_path).read())
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+test_adam_cannot_leave_driver_box (test_rh56_adapter.AdapterTests) ... ok
+test_factory_binding_restored_after_construction (test_rh56_adapter.AdapterTests) ... ok
+test_final_loss_uses_current_pose_without_updating_running_mean (test_rh56_adapter.AdapterTests) ... ok
+test_full_hand_fk_and_contact_gradient_against_independent_reference (test_rh56_adapter.AdapterTests) ... /home/ace/i10_rh56_refueling_ws/dependencies/SpaHybGen/src/spahybgen/handmodel.py:62: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/rh56-urdf-z6zc3dgz/hand.urdf' mode='r' encoding='UTF-8'>
+  self.robot = pk.build_chain_from_urdf(open(urdf_path).read()).to(
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/ace/i10_rh56_refueling_ws/dependencies/SpaHybGen/src/spahybgen/handmodel.py:66: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/rh56-urdf-z6zc3dgz/hand.urdf' mode='r' encoding='UTF-8'>
+  visual = URDF.from_xml_string(open(urdf_path).read())
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_global_pose_transforms_points_and_rotates_normals (test_rh56_adapter.AdapterTests) ... ok
+test_projection_changes_only_drivers (test_rh56_adapter.AdapterTests) ... ok
+test_detect_broken_follower_even_inside_limits (test_rh56_adapter.MappingTests) ... ok
+test_out_of_range_input_is_not_silently_repaired (test_rh56_adapter.MappingTests) ... ok
+test_reject_driver_range_that_exceeds_follower_limit (test_rh56_adapter.MappingTests) ... ok
+test_reject_nonfinite_mapping (test_rh56_adapter.MappingTests) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 3.534s
+
+OK
+Processing joint #0: thumb_proximal_yaw_joint
+Processing joint #1: thumb_proximal_pitch_joint
+Processing joint #2: thumb_intermediate_joint
+Processing joint #3: thumb_distal_joint
+Processing joint #4: index_proximal_joint
+Processing joint #5: index_intermediate_joint
+Processing joint #6: middle_proximal_joint
+Processing joint #7: middle_intermediate_joint
+Processing joint #8: ring_proximal_joint
+Processing joint #9: ring_intermediate_joint
+Processing joint #10: pinky_proximal_joint
+Processing joint #11: pinky_intermediate_joint
+[SpactialOptimization]: Hand Model Initialized - rh56dfx_right. Num of Contact Point: 75
+Processing joint #0: thumb_proximal_yaw_joint
+Processing joint #1: thumb_proximal_pitch_joint
+Processing joint #2: thumb_intermediate_joint
+Processing joint #3: thumb_distal_joint
+Processing joint #4: index_proximal_joint
+Processing joint #5: index_intermediate_joint
+Processing joint #6: middle_proximal_joint
+Processing joint #7: middle_intermediate_joint
+Processing joint #8: ring_proximal_joint
+Processing joint #9: ring_intermediate_joint
+Processing joint #10: pinky_proximal_joint
+Processing joint #11: pinky_intermediate_joint

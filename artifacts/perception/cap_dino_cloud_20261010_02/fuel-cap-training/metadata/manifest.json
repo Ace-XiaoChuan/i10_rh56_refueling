@@ -1,0 +1,518 @@
+{
+  "schema": "cap_detection_annotations_v1",
+  "date": "2026-10-10",
+  "status": "annotations_exported_unsplit_not_trained",
+  "image_root": "/home/ace/i10_rh56_refueling_ws/pic",
+  "category_meaning": "整盖，包含握梁，排除凹腔、门板和连接带",
+  "selection_rule": "每张照片按会话时间和标注序号选最新保存；不按 SAM 质量分数选框",
+  "annotation_audit": {
+    "images_with_boxes": 11,
+    "valid_saved_records": 24,
+    "empty_sessions": [
+      "artifacts/perception/sam_manual/20261010_000019_552543",
+      "artifacts/perception/sam_manual/20261010_000554_401027"
+    ],
+    "missing_positive_images": [
+      "带油箱盖_正右遮挡.jpg"
+    ],
+    "errors": [],
+    "coverage": [
+      {
+        "image": "带油箱盖_右上.jpg",
+        "saved_records": 2,
+        "unique_boxes": 1,
+        "selected_latest": {
+          "path": "artifacts/perception/sam_manual/20261010_003210_640110/annotations/0002.json",
+          "box_xyxy_px": [
+            283.59183673469386,
+            679.2036753445635,
+            639.1836734693877,
+            976.1715160796325
+          ],
+          "image_sha256": "ac194a400fe4fd9bbe9a3bed0912069be549669806050cddc4a1221e4c56e5c5",
+          "image_size_wh": [
+            1440,
+            1920
+          ],
+          "points_count": 0
+        }
+      },
+      {
+        "image": "带油箱盖_右下.jpg",
+        "saved_records": 2,
+        "unique_boxes": 1,
+        "selected_latest": {
+          "path": "artifacts/perception/sam_manual/20261010_003258_125216/annotations/0002.json",
+          "box_xyxy_px": [
+            633.3061224489796,
+            599.8162327718223,
+            833.1428571428571,
+            808.5758039816233
+          ],
+          "image_sha256": "9cfca835e79251f31f488d7ef89a7a33d6cedeac0cfcd4388039677848deec1b",
+          "image_size_wh": [
+            1440,
+            1920
+          ],
+          "points_count": 0
+        }
+      },
+      {
+        "image": "带油箱盖_左上.jpg",
+        "saved_records": 2,
+        "unique_boxes": 1,
+        "selected_latest": {
+          "path": "artifacts/perception/sam_manual/20261010_003139_883819/annotations/0002.json",
+          "box_xyxy_px": [
+            642.1224489795918,
+            755.6508422664625,
+            965.3877551020408,
+            1061.4395099540582
+          ],
+          "image_sha256": "15fc3487756cb7b1ceab9fd6c6f620227c0245969d9f61c9271364d05caba2ca",
+          "image_size_wh": [
+            1440,
+            1920
+          ],
+          "points_count": 0
+        }
+      },
+      {
+        "image": "带油箱盖_左下.jpg",
+        "saved_records": 2,
+        "unique_boxes": 1,
+        "selected_latest": {
+          "path": "artifacts/perception/sam_manual/20261010_003234_231288/annotations/0002.json",
+          "box_xyxy_px": [
+            727.3469387755102,
+            461.6232771822358,
+            980.0816326530612,
+            735.0689127105666
+          ],
+          "image_sha256": "002cebce6322fafdcab1c2aa36a10fdbe18752e6165c43cab8833264752d13d7",
+          "image_size_wh": [
+            1440,
+            1920
+          ],
+          "points_count": 0
+        }
+      },
+      {
+        "image": "带油箱盖_正上.jpg",
+        "saved_records": 5,
+        "unique_boxes": 3,
+        "selected_latest": {
+          "path": "artifacts/perception/sam_manual/20261010_002941_382986/annotations/0002.json",
+          "box_xyxy_px": [
+            600.9795918367347,
+            982.052067381317,
+            777.3061224489796,
+            1123.1852986217457
+          ],
+          "image_sha256": "a4af2d85e4091ff21b6f4ec58371175b0ce2c3f9cda2474d7b94d14293377dc6",
+          "image_size_wh": [
+            1440,
+            1920
+          ],
+          "points_count": 0
+        }
+      },
+      {
+        "image": "带油箱盖_正下.jpg",
+        "saved_records": 2,
+        "unique_boxes": 1,
+        "selected_latest": {
+          "path": "artifacts/perception/sam_manual/20261010_003117_247038/annotations/0002.json",
+          "box_xyxy_px": [
+            580.4081632653061,
+            405.7580398162328,
+            844.8979591836735,
+            649.8009188361409
+          ],
+          "image_sha256": "726fd9b4cdd16ec4876bbb44e5389686d8400d78756e600e541b92d2c832e40f",
+          "image_size_wh": [
+            1440,
+            1920
+          ],
+          "points_count": 0
+        }
+      },
+      {
+        "image": "带油箱盖_正右.jpg",
+        "saved_records": 2,
+        "unique_boxes": 1,
+        "selected_latest": {
+          "path": "artifacts/perception/sam_manual/20261010_003047_724597/annotations/0002.json",
+          "box_xyxy_px": [
+            430.53061224489795,
+            799.7549770290965,
+            659.7551020408164,
+            1061.4395099540582
+          ],
+          "image_sha256": "b16306454776e30e68e7f9eea07e7cb26fcf804a7d3b51be78c2264586039e3f",
+          "image_size_wh": [
+            1440,
+            1920
+          ],
+          "points_count": 0
+        }
+      },
+      {
+        "image": "带油箱盖_正左.jpg",
+        "saved_records": 2,
+        "unique_boxes": 1,
+        "selected_latest": {
+          "path": "artifacts/perception/sam_manual/20261010_003018_261943/annotations/0002.json",
+          "box_xyxy_px": [
+            742.0408163265306,
+            908.5451761102603,
+            900.734693877551,
+            1126.125574272588
+          ],
+          "image_sha256": "0e0f5c54c0d33d56190ab45e0ed2754bdd222360de2fe8a5595f20de6a4a5601",
+          "image_size_wh": [
+            1440,
+            1920
+          ],
+          "points_count": 0
+        }
+      },
+      {
+        "image": "带油箱盖_正面.jpg",
+        "saved_records": 1,
+        "unique_boxes": 1,
+        "selected_latest": {
+          "path": "artifacts/perception/sam_manual/20261010_001757_523843/annotations/0001.json",
+          "box_xyxy_px": [
+            763.26656394453,
+            411.006160164271,
+            999.9383667180277,
+            644.5995893223819
+          ],
+          "image_sha256": "9287a6f900f440ae1ae128c637a0004f5fd5f465bf81249e2cd2a28f406ff537",
+          "image_size_wh": [
+            1920,
+            1440
+          ],
+          "points_count": 0
+        }
+      },
+      {
+        "image": "带油箱盖_近景.jpg",
+        "saved_records": 2,
+        "unique_boxes": 1,
+        "selected_latest": {
+          "path": "artifacts/perception/sam_manual/20261010_003409_254236/annotations/0002.json",
+          "box_xyxy_px": [
+            360.0,
+            673.323124042879,
+            774.3673469387755,
+            1070.260336906585
+          ],
+          "image_sha256": "530502bd45cee0b2e3e6854fb82b5e89d1faf8b10a2f59e18118605b3969e7a7",
+          "image_size_wh": [
+            1440,
+            1920
+          ],
+          "points_count": 0
+        }
+      },
+      {
+        "image": "带油箱盖_远景.jpg",
+        "saved_records": 2,
+        "unique_boxes": 1,
+        "selected_latest": {
+          "path": "artifacts/perception/sam_manual/20261010_003433_029276/annotations/0002.json",
+          "box_xyxy_px": [
+            730.7241910631741,
+            402.135523613963,
+            831.3097072419106,
+            508.58316221765915
+          ],
+          "image_sha256": "8411ad5f6ed240753eb412890d09b7030b1dfa8bd1a8b48d6535501d0c0049dc",
+          "image_size_wh": [
+            1920,
+            1440
+          ],
+          "points_count": 0
+        }
+      }
+    ]
+  },
+  "images": [
+    {
+      "image_id": 1,
+      "path": "pic/带油箱盖_右上.jpg",
+      "sha256": "ac194a400fe4fd9bbe9a3bed0912069be549669806050cddc4a1221e4c56e5c5",
+      "width": 1440,
+      "height": 1920,
+      "capture_batch": "pic_single_capture_same_scene_01",
+      "label": "cap_visible_bbox",
+      "annotation_source": "operator_input",
+      "source_annotation": "artifacts/perception/sam_manual/20261010_003210_640110/annotations/0002.json",
+      "source_annotation_sha256": "42cd3ace17bcee7626de9126ad11bef8c66b441586eda179678f267954248a66",
+      "box_xyxy_px": [
+        283.59183673469386,
+        679.2036753445635,
+        639.1836734693877,
+        976.1715160796325
+      ]
+    },
+    {
+      "image_id": 2,
+      "path": "pic/带油箱盖_右下.jpg",
+      "sha256": "9cfca835e79251f31f488d7ef89a7a33d6cedeac0cfcd4388039677848deec1b",
+      "width": 1440,
+      "height": 1920,
+      "capture_batch": "pic_single_capture_same_scene_01",
+      "label": "cap_visible_bbox",
+      "annotation_source": "operator_input",
+      "source_annotation": "artifacts/perception/sam_manual/20261010_003258_125216/annotations/0002.json",
+      "source_annotation_sha256": "13499f7343f7bdcc96782a5af4ac611d57691061975ff927a1d0a9c2257ef9f1",
+      "box_xyxy_px": [
+        633.3061224489796,
+        599.8162327718223,
+        833.1428571428571,
+        808.5758039816233
+      ]
+    },
+    {
+      "image_id": 3,
+      "path": "pic/带油箱盖_左上.jpg",
+      "sha256": "15fc3487756cb7b1ceab9fd6c6f620227c0245969d9f61c9271364d05caba2ca",
+      "width": 1440,
+      "height": 1920,
+      "capture_batch": "pic_single_capture_same_scene_01",
+      "label": "cap_visible_bbox",
+      "annotation_source": "operator_input",
+      "source_annotation": "artifacts/perception/sam_manual/20261010_003139_883819/annotations/0002.json",
+      "source_annotation_sha256": "5998930ca70091c55cd8752b50837015c8f87514fa2a5d98cc2ef56d7195d144",
+      "box_xyxy_px": [
+        642.1224489795918,
+        755.6508422664625,
+        965.3877551020408,
+        1061.4395099540582
+      ]
+    },
+    {
+      "image_id": 4,
+      "path": "pic/带油箱盖_左下.jpg",
+      "sha256": "002cebce6322fafdcab1c2aa36a10fdbe18752e6165c43cab8833264752d13d7",
+      "width": 1440,
+      "height": 1920,
+      "capture_batch": "pic_single_capture_same_scene_01",
+      "label": "cap_visible_bbox",
+      "annotation_source": "operator_input",
+      "source_annotation": "artifacts/perception/sam_manual/20261010_003234_231288/annotations/0002.json",
+      "source_annotation_sha256": "73d05deefdab23653094c719e1711e6a23cb497253580bbf689fe4a4fc0c5fce",
+      "box_xyxy_px": [
+        727.3469387755102,
+        461.6232771822358,
+        980.0816326530612,
+        735.0689127105666
+      ]
+    },
+    {
+      "image_id": 5,
+      "path": "pic/带油箱盖_正上.jpg",
+      "sha256": "a4af2d85e4091ff21b6f4ec58371175b0ce2c3f9cda2474d7b94d14293377dc6",
+      "width": 1440,
+      "height": 1920,
+      "capture_batch": "pic_single_capture_same_scene_01",
+      "label": "cap_visible_bbox",
+      "annotation_source": "operator_input",
+      "source_annotation": "artifacts/perception/sam_manual/20261010_002941_382986/annotations/0002.json",
+      "source_annotation_sha256": "b0a2a5d2b5bd3c5e2e7d4f37bb5e4dc939f4758bca9129d9bfdd8e894f0a05ba",
+      "box_xyxy_px": [
+        600.9795918367347,
+        982.052067381317,
+        777.3061224489796,
+        1123.1852986217457
+      ]
+    },
+    {
+      "image_id": 6,
+      "path": "pic/带油箱盖_正下.jpg",
+      "sha256": "726fd9b4cdd16ec4876bbb44e5389686d8400d78756e600e541b92d2c832e40f",
+      "width": 1440,
+      "height": 1920,
+      "capture_batch": "pic_single_capture_same_scene_01",
+      "label": "cap_visible_bbox",
+      "annotation_source": "operator_input",
+      "source_annotation": "artifacts/perception/sam_manual/20261010_003117_247038/annotations/0002.json",
+      "source_annotation_sha256": "9a8a29148ccd07f5338f8ca7edd001b53791a156a5ad548fce5152d755a6a6ba",
+      "box_xyxy_px": [
+        580.4081632653061,
+        405.7580398162328,
+        844.8979591836735,
+        649.8009188361409
+      ]
+    },
+    {
+      "image_id": 7,
+      "path": "pic/带油箱盖_正右.jpg",
+      "sha256": "b16306454776e30e68e7f9eea07e7cb26fcf804a7d3b51be78c2264586039e3f",
+      "width": 1440,
+      "height": 1920,
+      "capture_batch": "pic_single_capture_same_scene_01",
+      "label": "cap_visible_bbox",
+      "annotation_source": "operator_input",
+      "source_annotation": "artifacts/perception/sam_manual/20261010_003047_724597/annotations/0002.json",
+      "source_annotation_sha256": "b474da58056de81e31dc16aaa984e93f883e76faec9a42c929ff7db2ed5b1140",
+      "box_xyxy_px": [
+        430.53061224489795,
+        799.7549770290965,
+        659.7551020408164,
+        1061.4395099540582
+      ]
+    },
+    {
+      "image_id": 8,
+      "path": "pic/带油箱盖_正左.jpg",
+      "sha256": "0e0f5c54c0d33d56190ab45e0ed2754bdd222360de2fe8a5595f20de6a4a5601",
+      "width": 1440,
+      "height": 1920,
+      "capture_batch": "pic_single_capture_same_scene_01",
+      "label": "cap_visible_bbox",
+      "annotation_source": "operator_input",
+      "source_annotation": "artifacts/perception/sam_manual/20261010_003018_261943/annotations/0002.json",
+      "source_annotation_sha256": "335b3730bb818f88a0ffb220c09be9a9af1f094d868d61f1486bb593275bcc25",
+      "box_xyxy_px": [
+        742.0408163265306,
+        908.5451761102603,
+        900.734693877551,
+        1126.125574272588
+      ]
+    },
+    {
+      "image_id": 9,
+      "path": "pic/带油箱盖_正面.jpg",
+      "sha256": "9287a6f900f440ae1ae128c637a0004f5fd5f465bf81249e2cd2a28f406ff537",
+      "width": 1920,
+      "height": 1440,
+      "capture_batch": "pic_single_capture_same_scene_01",
+      "label": "cap_visible_bbox",
+      "annotation_source": "operator_input",
+      "source_annotation": "artifacts/perception/sam_manual/20261010_001757_523843/annotations/0001.json",
+      "source_annotation_sha256": "0355526a9a41d9b854c8c049a2f318d880c9bfc2bc972bccebb77c2635154f33",
+      "box_xyxy_px": [
+        763.26656394453,
+        411.006160164271,
+        999.9383667180277,
+        644.5995893223819
+      ]
+    },
+    {
+      "image_id": 10,
+      "path": "pic/带油箱盖_近景.jpg",
+      "sha256": "530502bd45cee0b2e3e6854fb82b5e89d1faf8b10a2f59e18118605b3969e7a7",
+      "width": 1440,
+      "height": 1920,
+      "capture_batch": "pic_single_capture_same_scene_01",
+      "label": "cap_visible_bbox",
+      "annotation_source": "operator_input",
+      "source_annotation": "artifacts/perception/sam_manual/20261010_003409_254236/annotations/0002.json",
+      "source_annotation_sha256": "ddbbd662a9a1bc82e1cebd8089ec4701da0815063112d7737b4ce5901f658dbe",
+      "box_xyxy_px": [
+        360.0,
+        673.323124042879,
+        774.3673469387755,
+        1070.260336906585
+      ]
+    },
+    {
+      "image_id": 11,
+      "path": "pic/带油箱盖_远景.jpg",
+      "sha256": "8411ad5f6ed240753eb412890d09b7030b1dfa8bd1a8b48d6535501d0c0049dc",
+      "width": 1920,
+      "height": 1440,
+      "capture_batch": "pic_single_capture_same_scene_01",
+      "label": "cap_visible_bbox",
+      "annotation_source": "operator_input",
+      "source_annotation": "artifacts/perception/sam_manual/20261010_003433_029276/annotations/0002.json",
+      "source_annotation_sha256": "b748d37d1af567337d00bba5ae5cc36f718ff10312e58e274457492d1623ebfa",
+      "box_xyxy_px": [
+        730.7241910631741,
+        402.135523613963,
+        831.3097072419106,
+        508.58316221765915
+      ]
+    },
+    {
+      "image_id": 12,
+      "path": "pic/无油箱盖_正上.jpg",
+      "sha256": "4689c539ef935df87f22d9a58789b3e72442e453b8e8932748d17758750b42f6",
+      "width": 1440,
+      "height": 1920,
+      "capture_batch": "pic_single_capture_same_scene_01",
+      "label": "cap_absent_negative",
+      "annotation_source": "user_confirmation.json",
+      "source_annotation_sha256": "e6602e069b19496bf725edf1a23929218f3ed05329710091a4fb414172a7bbcf"
+    },
+    {
+      "image_id": 13,
+      "path": "pic/无油箱盖_正下.jpg",
+      "sha256": "5beb0f9e01ec20a4b4529052f6b4737127149ccb9849c20daff9ad397fba503c",
+      "width": 1440,
+      "height": 1920,
+      "capture_batch": "pic_single_capture_same_scene_01",
+      "label": "cap_absent_negative",
+      "annotation_source": "user_confirmation.json",
+      "source_annotation_sha256": "e6602e069b19496bf725edf1a23929218f3ed05329710091a4fb414172a7bbcf"
+    },
+    {
+      "image_id": 14,
+      "path": "pic/无油箱盖_正右.jpg",
+      "sha256": "709745ec0ff288f3706287031291afc559275bef30c5581dc38bcd0238f6c4b0",
+      "width": 1440,
+      "height": 1920,
+      "capture_batch": "pic_single_capture_same_scene_01",
+      "label": "cap_absent_negative",
+      "annotation_source": "user_confirmation.json",
+      "source_annotation_sha256": "e6602e069b19496bf725edf1a23929218f3ed05329710091a4fb414172a7bbcf"
+    },
+    {
+      "image_id": 15,
+      "path": "pic/无油箱盖_正左.jpg",
+      "sha256": "0fb327b4983f323bca67070bf818a696e18ef31c865ca94e6eb64b63ba4ecfdb",
+      "width": 1440,
+      "height": 1920,
+      "capture_batch": "pic_single_capture_same_scene_01",
+      "label": "cap_absent_negative",
+      "annotation_source": "user_confirmation.json",
+      "source_annotation_sha256": "e6602e069b19496bf725edf1a23929218f3ed05329710091a4fb414172a7bbcf"
+    },
+    {
+      "image_id": 16,
+      "path": "pic/无油箱盖_正面.jpg",
+      "sha256": "ae62841b3e1721ec5f3dc36957c117176e22e036f3fc0b4e1f22ad1770aec185",
+      "width": 1440,
+      "height": 1920,
+      "capture_batch": "pic_single_capture_same_scene_01",
+      "label": "cap_absent_negative",
+      "annotation_source": "user_confirmation.json",
+      "source_annotation_sha256": "e6602e069b19496bf725edf1a23929218f3ed05329710091a4fb414172a7bbcf"
+    }
+  ],
+  "excluded_images": [
+    {
+      "path": "pic/带油箱盖_正右遮挡.jpg",
+      "sha256": "81f3e2b092c8c144ec2d30aec8c801b802f40808731dc86e6f956b796c484c8a",
+      "reason": "门板遮挡目标区域；不根据机构状态虚构可见盖体框",
+      "capture_batch": "pic_single_capture_same_scene_01"
+    },
+    {
+      "path": "pic/无油箱盖_正右遮挡.jpg",
+      "sha256": "ee4ce3440229b8f7bf74cd29ec5462cd15c4da40d99d51d6ce3f7b26dcaff9a8",
+      "reason": "门板遮挡目标区域；不根据机构状态虚构可见盖体框",
+      "capture_batch": "pic_single_capture_same_scene_01"
+    }
+  ],
+  "dataset_split": null,
+  "training_started": false,
+  "capture_batch_confirmation": {
+    "path": "capture_batch_confirmation.json",
+    "sha256": "8f05fe5bfbcb5046c24929426e96667b555551c3831c39358f08896693eebc00"
+  },
+  "evaluation_boundary": "现有全部照片来自同一拍摄批次与场景；内部角度留出不能代表跨批次、跨场景泛化，正式独立评价须另采批次。尚未划分。"
+}

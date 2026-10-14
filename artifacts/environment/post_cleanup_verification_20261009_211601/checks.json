@@ -1,0 +1,344 @@
+{
+  "started_utc": "2026-10-09T13:17:18.157812+00:00",
+  "checks": [
+    {
+      "name": "shared_interpreter",
+      "command": [
+        "/home/ace/i10_rh56_refueling_ws/.venv/bin/python",
+        "-c",
+        "from pathlib import Path;import sys,json,mujoco,numpy,torch,trimesh,cv2,scipy,pinocchio,coal; print(json.dumps({'python':sys.version,'prefix':sys.prefix,'mujoco':mujoco.__version__,'numpy':numpy.__version__,'torch':torch.__version__})); assert sys.version_info[:2]==(3,10);assert Path(sys.prefix).resolve()==Path('/home/ace/mujoco-env');assert mujoco.__version__=='3.13.0';assert torch.from_numpy(numpy.array([1.,2.])).sum().item()==3"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 14.51,
+      "log": "shared_interpreter.log"
+    },
+    {
+      "name": "perception_interpreter",
+      "command": [
+        "/home/ace/i10_rh56_refueling_ws/.venv-perception/bin/python",
+        "-c",
+        "from pathlib import Path;import sys,json,torch,torchvision,transformers,tkinter;from sam2.sam2_image_predictor import SAM2ImagePredictor;print(json.dumps({'python':sys.version,'prefix':sys.prefix,'torchvision':torchvision.__version__,'transformers':transformers.__version__}));assert Path(sys.prefix).resolve()==Path('/home/ace/mujoco-env')"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 6.99,
+      "log": "perception_interpreter.log"
+    },
+    {
+      "name": "shared_dependencies",
+      "command": [
+        "/home/ace/i10_rh56_refueling_ws/.venv/bin/python",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 4.74,
+      "log": "shared_dependencies.log"
+    },
+    {
+      "name": "planning_model_sources",
+      "command": [
+        "/home/ace/i10_rh56_refueling_ws/.venv/bin/python",
+        "tools/check_moveit_model_sources.py"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 2.27,
+      "log": "planning_model_sources.log"
+    },
+    {
+      "name": "candidate_and_existing_replay",
+      "command": [
+        "/home/ace/i10_rh56_refueling_ws/.venv/bin/python",
+        "-c",
+        "from pathlib import Path;import json;from fuel_cap_task.arm_ik import ArmIKPreview;from fuel_cap_task.trajectory_replay import ApproachReplay;preview=ArmIKPreview(Path('artifacts/manual_grasp/user_selected_20260930.json'));replay=ApproachReplay(Path('artifacts/planning/approach.json'));print(json.dumps(replay.validate(),ensure_ascii=False));[replay.set_progress(value) for value in (0.,.5,1.)]"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 1.57,
+      "log": "candidate_and_existing_replay.log"
+    },
+    {
+      "name": "focused_regression",
+      "command": [
+        "/home/ace/i10_rh56_refueling_ws/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests/test_cap_task.py",
+        "tests/test_feedback_task.py",
+        "tests/planning/test_approach_replay.py",
+        "tests/test_grounded_sam_contract.py",
+        "tests/test_sam_diagnostic.py",
+        "-k",
+        "not gui"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 6.66,
+      "log": "focused_regression.log"
+    },
+    {
+      "name": "mock_early_detach",
+      "command": [
+        "/home/ace/i10_rh56_refueling_ws/.venv/bin/python",
+        "tools/run_cap_task.py",
+        "--scenario",
+        "early_detach"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 0.48,
+      "log": "mock_early_detach.log"
+    },
+    {
+      "name": "mock_regrasp",
+      "command": [
+        "/home/ace/i10_rh56_refueling_ws/.venv/bin/python",
+        "tools/run_cap_task.py",
+        "--scenario",
+        "regrasp"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 0.42,
+      "log": "mock_regrasp.log"
+    },
+    {
+      "name": "mock_support_unknown",
+      "command": [
+        "/home/ace/i10_rh56_refueling_ws/.venv/bin/python",
+        "tools/run_cap_task.py",
+        "--scenario",
+        "support_unknown"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "passed": true,
+      "elapsed_seconds": 0.37,
+      "log": "mock_support_unknown.log"
+    },
+    {
+      "name": "spahybgen_interpreter",
+      "command": [
+        "/home/ace/i10_rh56_refueling_ws/.venv-spahybgen/bin/python",
+        "-c",
+        "import sys,json,numpy,torch,mujoco,open3d,pytorch_kinematics,graspnetAPI,grasp_nms;print(json.dumps({'python':sys.version,'prefix':sys.prefix,'mujoco':mujoco.__version__,'numpy':numpy.__version__,'torch':torch.__version__}));assert sys.version_info[:2]==(3,8);assert torch.from_numpy(numpy.array([1.,2.])).sum().item()==3"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 70.37,
+      "log": "spahybgen_interpreter.log"
+    },
+    {
+      "name": "spahybgen_saved_result",
+      "command": [
+        "/home/ace/i10_rh56_refueling_ws/.venv-spahybgen/bin/python",
+        "tools/reproduce_spahybgen.py",
+        "--verify-only",
+        "--output-dir",
+        "artifacts/spahybgen/original_20261008_v2"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 9.36,
+      "log": "spahybgen_saved_result.log"
+    },
+    {
+      "name": "rgbd_render",
+      "command": [
+        "/home/ace/i10_rh56_refueling_ws/.venv/bin/python",
+        "tools/capture_cap_rgbd.py",
+        "--output-dir",
+        "/home/ace/i10_rh56_refueling_ws/artifacts/environment/post_cleanup_verification_20261009_211601/rgbd"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 11.11,
+      "log": "rgbd_render.log"
+    },
+    {
+      "name": "grounding_dino_sam_inference",
+      "command": [
+        "/home/ace/i10_rh56_refueling_ws/.venv-perception/bin/python",
+        "tools/segment_cap_image.py",
+        "--image",
+        "/home/ace/i10_rh56_refueling_ws/artifacts/environment/post_cleanup_verification_20261009_211601/rgbd/rgb.png",
+        "--image-source",
+        "mujoco_rendered_rgb",
+        "--observation-json",
+        "/home/ace/i10_rh56_refueling_ws/artifacts/environment/post_cleanup_verification_20261009_211601/rgbd/observation.json",
+        "--prompt",
+        "fuel cap.",
+        "--output-dir",
+        "/home/ace/i10_rh56_refueling_ws/artifacts/environment/post_cleanup_verification_20261009_211601/automatic_segmentation"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 112.47,
+      "log": "grounding_dino_sam_inference.log"
+    },
+    {
+      "name": "new_automatic_result_verification",
+      "command": [
+        "/home/ace/i10_rh56_refueling_ws/.venv-perception/bin/python",
+        "tools/segment_cap_image.py",
+        "--verify-only",
+        "--output-dir",
+        "/home/ace/i10_rh56_refueling_ws/artifacts/environment/post_cleanup_verification_20261009_211601/automatic_segmentation"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 13.76,
+      "log": "new_automatic_result_verification.log"
+    },
+    {
+      "name": "saved_box_sam_inference",
+      "command": [
+        "/home/ace/i10_rh56_refueling_ws/.venv-perception/bin/python",
+        "tools/diagnose_sam_image.py",
+        "--image",
+        "assets/hardware_photos/fuel_tank/be44de650d565ff38af7dd108c384037.jpg",
+        "--prompts",
+        "artifacts/perception/sam_manual/20261008_162256_066504/annotations/0001.json",
+        "--headless",
+        "--mode",
+        "box",
+        "--output-dir",
+        "/home/ace/i10_rh56_refueling_ws/artifacts/environment/post_cleanup_verification_20261009_211601/manual_sam"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 31.67,
+      "log": "saved_box_sam_inference.log"
+    },
+    {
+      "name": "new_manual_result_verification",
+      "command": [
+        "/home/ace/i10_rh56_refueling_ws/.venv-perception/bin/python",
+        "tools/diagnose_sam_image.py",
+        "--verify-only",
+        "--output-dir",
+        "/home/ace/i10_rh56_refueling_ws/artifacts/environment/post_cleanup_verification_20261009_211601/manual_sam"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 1.63,
+      "log": "new_manual_result_verification.log"
+    },
+    {
+      "name": "mujoco_replay_gui",
+      "command": [
+        "/home/ace/i10_rh56_refueling_ws/.venv/bin/python",
+        "/home/ace/i10_rh56_refueling_ws/artifacts/environment/post_cleanup_verification_20261009_211601/check_gui.py"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 22.02,
+      "log": "mujoco_replay_gui.log"
+    },
+    {
+      "name": "sam_gui_regression",
+      "command": [
+        "/home/ace/i10_rh56_refueling_ws/.venv-perception/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests/test_sam_diagnostic.py",
+        "-k",
+        "gui"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 5.32,
+      "log": "sam_gui_regression.log"
+    }
+  ],
+  "limitations": [
+    "仅验证现有软件入口与环境兼容性，不验证真机、物理抓稳或完整取盖。"
+  ],
+  "unchanged_files": {
+    "artifacts/manual_grasp/user_selected_20260930.json": true,
+    "artifacts/planning/approach.json": true,
+    "artifacts/planning/replay_validation.json": true,
+    "assets/scenes/i10_rh56_fuel_cap_preview.xml": true,
+    "tools/replay_cap_approach.py": true,
+    "tools/segment_cap_image.py": true,
+    "tools/diagnose_sam_image.py": true,
+    "tools/reproduce_spahybgen.py": true
+  },
+  "finished_utc": "2026-10-09T13:24:28.426275+00:00",
+  "passed": true,
+  "initial_check_attempts": [
+    {
+      "name": "shared_interpreter",
+      "command": [
+        "/home/ace/i10_rh56_refueling_ws/.venv/bin/python",
+        "-c",
+        "import sys,json,mujoco,numpy,torch,trimesh,cv2,scipy,pinocchio,coal; print(json.dumps({'python':sys.version,'prefix':sys.prefix,'mujoco':mujoco.__version__,'numpy':numpy.__version__,'torch':torch.__version__})); assert sys.version_info[:2]==(3,10);assert sys.prefix=='/home/ace/mujoco-env';assert mujoco.__version__=='3.13.0';assert torch.from_numpy(numpy.array([1.,2.])).sum().item()==3"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 0,
+      "passed": false,
+      "elapsed_seconds": 48.76,
+      "log": "shared_interpreter_first_attempt.log"
+    },
+    {
+      "name": "perception_interpreter",
+      "command": [
+        "/home/ace/i10_rh56_refueling_ws/.venv-perception/bin/python",
+        "-c",
+        "import sys,json,torch,torchvision,transformers,tkinter;from sam2.sam2_image_predictor import SAM2ImagePredictor;print(json.dumps({'python':sys.version,'prefix':sys.prefix,'torchvision':torchvision.__version__,'transformers':transformers.__version__}));assert sys.prefix=='/home/ace/mujoco-env'"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 0,
+      "passed": false,
+      "elapsed_seconds": 23.46,
+      "log": "perception_interpreter_first_attempt.log"
+    }
+  ],
+  "check_script_correction": "初次断言误把 sys.prefix 的软链接路径判成错误；库已成功导入。现按 Path(sys.prefix).resolve() 判断实际环境，两项已重跑，原日志保留；未改环境或项目实现。",
+  "sam_mask_comparison": {
+    "comparison": "同图、同一已保存用户框提示；本轮新推理与历史掩膜逐像素比较",
+    "old_mask_pixels": 35894,
+    "new_mask_pixels": 35894,
+    "changed_pixels": 0,
+    "mask_iou": 1.0,
+    "limitation": "只作为环境兼容性证据，不计自动语义识别或泛化验收。"
+  },
+  "regression_tests": {
+    "non_gui_passed": 68,
+    "gui_passed": 2,
+    "total_passed": 70
+  },
+  "limits": [
+    "未重新运行 MTC 搜索或 SpaHybGen 抓姿优化；后者检查独立环境导入与已有结果来源。",
+    "窗口启动和退出已实际检查；用户尚未在本轮亲自确认交互效果。",
+    "推理运行通过只代表环境兼容性；实物自动语义识别的既有失败结论不变。",
+    "未接入真机或验证物理抓稳、完整拧盖。"
+  ]
+}

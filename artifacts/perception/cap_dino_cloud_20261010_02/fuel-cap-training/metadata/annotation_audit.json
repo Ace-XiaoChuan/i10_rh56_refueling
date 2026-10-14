@@ -1,0 +1,234 @@
+{
+  "images_with_boxes": 11,
+  "valid_saved_records": 24,
+  "empty_sessions": [
+    "artifacts/perception/sam_manual/20261010_000019_552543",
+    "artifacts/perception/sam_manual/20261010_000554_401027"
+  ],
+  "missing_positive_images": [
+    "带油箱盖_正右遮挡.jpg"
+  ],
+  "errors": [],
+  "coverage": [
+    {
+      "image": "带油箱盖_右上.jpg",
+      "saved_records": 2,
+      "unique_boxes": 1,
+      "selected_latest": {
+        "path": "artifacts/perception/sam_manual/20261010_003210_640110/annotations/0002.json",
+        "box_xyxy_px": [
+          283.59183673469386,
+          679.2036753445635,
+          639.1836734693877,
+          976.1715160796325
+        ],
+        "image_sha256": "ac194a400fe4fd9bbe9a3bed0912069be549669806050cddc4a1221e4c56e5c5",
+        "image_size_wh": [
+          1440,
+          1920
+        ],
+        "points_count": 0
+      }
+    },
+    {
+      "image": "带油箱盖_右下.jpg",
+      "saved_records": 2,
+      "unique_boxes": 1,
+      "selected_latest": {
+        "path": "artifacts/perception/sam_manual/20261010_003258_125216/annotations/0002.json",
+        "box_xyxy_px": [
+          633.3061224489796,
+          599.8162327718223,
+          833.1428571428571,
+          808.5758039816233
+        ],
+        "image_sha256": "9cfca835e79251f31f488d7ef89a7a33d6cedeac0cfcd4388039677848deec1b",
+        "image_size_wh": [
+          1440,
+          1920
+        ],
+        "points_count": 0
+      }
+    },
+    {
+      "image": "带油箱盖_左上.jpg",
+      "saved_records": 2,
+      "unique_boxes": 1,
+      "selected_latest": {
+        "path": "artifacts/perception/sam_manual/20261010_003139_883819/annotations/0002.json",
+        "box_xyxy_px": [
+          642.1224489795918,
+          755.6508422664625,
+          965.3877551020408,
+          1061.4395099540582
+        ],
+        "image_sha256": "15fc3487756cb7b1ceab9fd6c6f620227c0245969d9f61c9271364d05caba2ca",
+        "image_size_wh": [
+          1440,
+          1920
+        ],
+        "points_count": 0
+      }
+    },
+    {
+      "image": "带油箱盖_左下.jpg",
+      "saved_records": 2,
+      "unique_boxes": 1,
+      "selected_latest": {
+        "path": "artifacts/perception/sam_manual/20261010_003234_231288/annotations/0002.json",
+        "box_xyxy_px": [
+          727.3469387755102,
+          461.6232771822358,
+          980.0816326530612,
+          735.0689127105666
+        ],
+        "image_sha256": "002cebce6322fafdcab1c2aa36a10fdbe18752e6165c43cab8833264752d13d7",
+        "image_size_wh": [
+          1440,
+          1920
+        ],
+        "points_count": 0
+      }
+    },
+    {
+      "image": "带油箱盖_正上.jpg",
+      "saved_records": 5,
+      "unique_boxes": 3,
+      "selected_latest": {
+        "path": "artifacts/perception/sam_manual/20261010_002941_382986/annotations/0002.json",
+        "box_xyxy_px": [
+          600.9795918367347,
+          982.052067381317,
+          777.3061224489796,
+          1123.1852986217457
+        ],
+        "image_sha256": "a4af2d85e4091ff21b6f4ec58371175b0ce2c3f9cda2474d7b94d14293377dc6",
+        "image_size_wh": [
+          1440,
+          1920
+        ],
+        "points_count": 0
+      }
+    },
+    {
+      "image": "带油箱盖_正下.jpg",
+      "saved_records": 2,
+      "unique_boxes": 1,
+      "selected_latest": {
+        "path": "artifacts/perception/sam_manual/20261010_003117_247038/annotations/0002.json",
+        "box_xyxy_px": [
+          580.4081632653061,
+          405.7580398162328,
+          844.8979591836735,
+          649.8009188361409
+        ],
+        "image_sha256": "726fd9b4cdd16ec4876bbb44e5389686d8400d78756e600e541b92d2c832e40f",
+        "image_size_wh": [
+          1440,
+          1920
+        ],
+        "points_count": 0
+      }
+    },
+    {
+      "image": "带油箱盖_正右.jpg",
+      "saved_records": 2,
+      "unique_boxes": 1,
+      "selected_latest": {
+        "path": "artifacts/perception/sam_manual/20261010_003047_724597/annotations/0002.json",
+        "box_xyxy_px": [
+          430.53061224489795,
+          799.7549770290965,
+          659.7551020408164,
+          1061.4395099540582
+        ],
+        "image_sha256": "b16306454776e30e68e7f9eea07e7cb26fcf804a7d3b51be78c2264586039e3f",
+        "image_size_wh": [
+          1440,
+          1920
+        ],
+        "points_count": 0
+      }
+    },
+    {
+      "image": "带油箱盖_正左.jpg",
+      "saved_records": 2,
+      "unique_boxes": 1,
+      "selected_latest": {
+        "path": "artifacts/perception/sam_manual/20261010_003018_261943/annotations/0002.json",
+        "box_xyxy_px": [
+          742.0408163265306,
+          908.5451761102603,
+          900.734693877551,
+          1126.125574272588
+        ],
+        "image_sha256": "0e0f5c54c0d33d56190ab45e0ed2754bdd222360de2fe8a5595f20de6a4a5601",
+        "image_size_wh": [
+          1440,
+          1920
+        ],
+        "points_count": 0
+      }
+    },
+    {
+      "image": "带油箱盖_正面.jpg",
+      "saved_records": 1,
+      "unique_boxes": 1,
+      "selected_latest": {
+        "path": "artifacts/perception/sam_manual/20261010_001757_523843/annotations/0001.json",
+        "box_xyxy_px": [
+          763.26656394453,
+          411.006160164271,
+          999.9383667180277,
+          644.5995893223819
+        ],
+        "image_sha256": "9287a6f900f440ae1ae128c637a0004f5fd5f465bf81249e2cd2a28f406ff537",
+        "image_size_wh": [
+          1920,
+          1440
+        ],
+        "points_count": 0
+      }
+    },
+    {
+      "image": "带油箱盖_近景.jpg",
+      "saved_records": 2,
+      "unique_boxes": 1,
+      "selected_latest": {
+        "path": "artifacts/perception/sam_manual/20261010_003409_254236/annotations/0002.json",
+        "box_xyxy_px": [
+          360.0,
+          673.323124042879,
+          774.3673469387755,
+          1070.260336906585
+        ],
+        "image_sha256": "530502bd45cee0b2e3e6854fb82b5e89d1faf8b10a2f59e18118605b3969e7a7",
+        "image_size_wh": [
+          1440,
+          1920
+        ],
+        "points_count": 0
+      }
+    },
+    {
+      "image": "带油箱盖_远景.jpg",
+      "saved_records": 2,
+      "unique_boxes": 1,
+      "selected_latest": {
+        "path": "artifacts/perception/sam_manual/20261010_003433_029276/annotations/0002.json",
+        "box_xyxy_px": [
+          730.7241910631741,
+          402.135523613963,
+          831.3097072419106,
+          508.58316221765915
+        ],
+        "image_sha256": "8411ad5f6ed240753eb412890d09b7030b1dfa8bd1a8b48d6535501d0c0049dc",
+        "image_size_wh": [
+          1920,
+          1440
+        ],
+        "points_count": 0
+      }
+    }
+  ]
+}

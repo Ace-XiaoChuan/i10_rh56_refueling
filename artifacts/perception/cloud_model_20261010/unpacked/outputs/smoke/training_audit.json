@@ -1,0 +1,9 @@
+{
+  "visual_parameter_updated": true,
+  "bert_frozen": true,
+  "image_ids_seen": [
+    1,
+    12
+  ],
+  "peak_cuda_allocated_mib": 1176.38671875
+}

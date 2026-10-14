@@ -1,0 +1,239 @@
+{
+  "status": "first_ray_check_failed_1mm_assertion",
+  "rows": [
+    {
+      "pixel_uv": [
+        317,
+        33
+      ],
+      "geometry": "cap_middle",
+      "error_m": 0.002576951082823853
+    },
+    {
+      "pixel_uv": [
+        304,
+        38
+      ],
+      "geometry": "cap_middle",
+      "error_m": 1.0506182812619613e-08
+    },
+    {
+      "pixel_uv": [
+        333,
+        40
+      ],
+      "geometry": "cap_middle",
+      "error_m": 2.0531350064523224e-08
+    },
+    {
+      "pixel_uv": [
+        310,
+        43
+      ],
+      "geometry": "cap_middle",
+      "error_m": 7.555184033947171e-09
+    },
+    {
+      "pixel_uv": [
+        318,
+        45
+      ],
+      "geometry": "cap_grip",
+      "error_m": 1.3986346858452237e-08
+    },
+    {
+      "pixel_uv": [
+        321,
+        47
+      ],
+      "geometry": "cap_grip",
+      "error_m": 2.5812979975725625e-08
+    },
+    {
+      "pixel_uv": [
+        320,
+        49
+      ],
+      "geometry": "cap_grip",
+      "error_m": 6.474594926864086e-08
+    },
+    {
+      "pixel_uv": [
+        315,
+        51
+      ],
+      "geometry": "cap_grip",
+      "error_m": 1.0373631953441986e-08
+    },
+    {
+      "pixel_uv": [
+        306,
+        53
+      ],
+      "geometry": "cap_middle",
+      "error_m": 4.9868086771098774e-08
+    },
+    {
+      "pixel_uv": [
+        294,
+        55
+      ],
+      "geometry": "cap_middle",
+      "error_m": 5.521258783502958e-08
+    },
+    {
+      "pixel_uv": [
+        337,
+        56
+      ],
+      "geometry": "cap_middle",
+      "error_m": 6.813484398904279e-08
+    },
+    {
+      "pixel_uv": [
+        321,
+        58
+      ],
+      "geometry": "cap_grip",
+      "error_m": 1.8825836667346607e-08
+    },
+    {
+      "pixel_uv": [
+        305,
+        60
+      ],
+      "geometry": "cap_middle",
+      "error_m": 7.802858692507186e-09
+    },
+    {
+      "pixel_uv": [
+        347,
+        61
+      ],
+      "geometry": "cap_middle",
+      "error_m": 9.094490971417457e-08
+    },
+    {
+      "pixel_uv": [
+        331,
+        63
+      ],
+      "geometry": "cap_middle",
+      "error_m": 7.334585905294233e-08
+    },
+    {
+      "pixel_uv": [
+        313,
+        65
+      ],
+      "geometry": "cap_grip",
+      "error_m": 6.372763428075245e-10
+    },
+    {
+      "pixel_uv": [
+        297,
+        67
+      ],
+      "geometry": "cap_middle",
+      "error_m": 1.0096566915862581e-08
+    },
+    {
+      "pixel_uv": [
+        339,
+        68
+      ],
+      "geometry": "cap_middle",
+      "error_m": 5.06485258178202e-08
+    },
+    {
+      "pixel_uv": [
+        323,
+        70
+      ],
+      "geometry": "cap_grip",
+      "error_m": 2.9089405551019354e-08
+    },
+    {
+      "pixel_uv": [
+        308,
+        72
+      ],
+      "geometry": "cap_middle",
+      "error_m": 7.738807494828137e-08
+    },
+    {
+      "pixel_uv": [
+        296,
+        74
+      ],
+      "geometry": "cap_middle",
+      "error_m": 8.645456139877439e-08
+    },
+    {
+      "pixel_uv": [
+        341,
+        75
+      ],
+      "geometry": "cap_middle",
+      "error_m": 1.3690597988613717e-08
+    },
+    {
+      "pixel_uv": [
+        333,
+        77
+      ],
+      "geometry": "cap_middle",
+      "error_m": 1.3837156864759947e-08
+    },
+    {
+      "pixel_uv": [
+        329,
+        79
+      ],
+      "geometry": "cap_middle",
+      "error_m": 3.785611191187144e-08
+    },
+    {
+      "pixel_uv": [
+        330,
+        81
+      ],
+      "geometry": "cap_middle",
+      "error_m": 5.616626941318259e-08
+    },
+    {
+      "pixel_uv": [
+        337,
+        83
+      ],
+      "geometry": "cap_middle",
+      "error_m": 4.772869255376122e-08
+    },
+    {
+      "pixel_uv": [
+        308,
+        86
+      ],
+      "geometry": "cap_middle",
+      "error_m": 3.774284651480997e-08
+    },
+    {
+      "pixel_uv": [
+        332,
+        88
+      ],
+      "geometry": "cap_middle",
+      "error_m": 5.58688084684178e-09
+    },
+    {
+      "pixel_uv": [
+        315,
+        92
+      ],
+      "geometry": "cap_middle",
+      "error_m": 2.956501110595866e-08
+    }
+  ],
+  "max_error_m": 0.002576951082823853,
+  "note": "保留初次检查；几何射线与渲染表面边缘差异待独立区分，不改原始观测"
+}

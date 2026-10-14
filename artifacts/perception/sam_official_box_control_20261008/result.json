@@ -1,0 +1,31 @@
+{
+  "control_source": "official SAM2 truck image, manually specified box",
+  "box_xyxy": [
+    425.0,
+    600.0,
+    700.0,
+    875.0
+  ],
+  "shape": [
+    1,
+    1200,
+    1800
+  ],
+  "quality": [
+    0.9690506458282471
+  ],
+  "mask_pixels": 42321,
+  "not_grounding_dino_test": true,
+  "not_cap_validation": true,
+  "sam_source_commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+  "sam_config": "configs/sam2.1/sam2.1_hiera_t.yaml",
+  "checkpoint_sha256": "7402e0d864fa82708a20fbd15bc84245c2f26dff0eb43a4b5b93452deb34be69",
+  "image_sha256": "941715e721c8864324a1425b445ea4dde0498b995c45ddce0141a58971c6ff99",
+  "output_sha256": {
+    "output.npz": "47579db0979cd48cab0ac87669c2eae562f51f82cd8dacf38d1090152c8de0cb",
+    "mask.png": "ee79983210fd4c6dcbf9e83281c09b08a4c29c1817dd446bfdd0c7535509edc4"
+  },
+  "device": "cpu",
+  "dtype": "float32",
+  "apply_postprocessing": false
+}

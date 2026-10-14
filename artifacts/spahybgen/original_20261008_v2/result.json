@@ -1,0 +1,78 @@
+{
+  "status": "completed_original_example",
+  "started_utc": "2026-10-08T05:25:05.540306+00:00",
+  "source_url": "https://github.com/wangzivector/SpaHybGen",
+  "source_commit": "39e5794506bbbf2fd41804f73c93b7b393be550e",
+  "entrypoint": "scripts/generation_pipeline_test.py",
+  "hand": "robotiq2f",
+  "batch_size": 64,
+  "max_iter": 120,
+  "seed": 20261008,
+  "python": "3.8.20 (default, Oct  2 2024, 16:34:12) \n[Clang 18.1.8 ]",
+  "platform": "Linux-6.18.33.1-microsoft-standard-WSL2-x86_64-with-glibc2.2.5",
+  "runner_sha256": "f159c236a2692ca33ca752a57b6e64e4ee4aeb7ad039e9a5e7bc2c8a3245ee8e",
+  "requirements_sha256": "d7f24ed390e331c75b12660b51ecb855e8cda9374a9edeade62bd14c7f48baf5",
+  "algorithm_modified": false,
+  "physical_grasp_validated": false,
+  "rh56_validated": false,
+  "cap_task_validated": false,
+  "instrumentation": [
+    "固定随机种子及 CPU 线程数",
+    "保存推理及优化数组",
+    "将浏览器展示保存为 HTML"
+  ],
+  "device": "cpu",
+  "torch_threads": 4,
+  "network_training_mode": true,
+  "trajectory_shape": [
+    64,
+    121,
+    11
+  ],
+  "prediction_shape": [
+    7,
+    80,
+    80,
+    80
+  ],
+  "best_candidate_id": 28,
+  "best_final_losses": {
+    "FQH": 0.0014404704561457038,
+    "QH": 0.0010996690252795815,
+    "RH": 0.8024845719337463,
+    "WH": 7.58833994041197e-05,
+    "PN": 1.1430742006268702e-06,
+    "JR": 0.0,
+    "CK": 7.053790614008904e-05,
+    "LD": 6.412765651475638e-05,
+    "FC": 0.04536818712949753,
+    "AB": 0.1993337720632553,
+    "CTS": 0.6266618967056274,
+    "loss_all": 1.0499383211135864,
+    "loss_opti": 7.07349157333374
+  },
+  "loss_state_timing": "上游最后一次更新前的损失；保存的轨迹末态是更新后的 q，接入时需复核末态",
+  "all_candidates_retained": true,
+  "joint_names": [
+    "left_finger_joint",
+    "right_finger_joint"
+  ],
+  "pose_representation": "xyz_m + R6d + URDF joints; 不是机械臂执行轨迹",
+  "final_joint_limit_violation_max": 0.0002514130901545286,
+  "best_joint_limit_violation_max": 0.0,
+  "candidates_with_strict_joint_limit_violation": 1,
+  "visualization_trace_count": 38,
+  "timings": {
+    "optimization_seconds": 29.886287411999547
+  },
+  "outputs": {
+    "inference.npz": "90d87a70cfab5431c5d828faf40cfb37af5cbffe0bef4883541d97a4e5e4a7ea",
+    "optimization.npz": "597115985d9f3a9f46d7fefd7f6b9754c93655b525df85e79e8ca7e4e0862ab3",
+    "grasps.html": "54a42f6e6cc5a749e9faf5b0309a594cb4e994d9fbbe36f0f5e12fb7486ca57a",
+    "best_grasp.html": "72d8d673efd34a74c2a96a3c718f813e5dfa5886dc64b2e2bba37a9b674fbf80",
+    "preview.png": "49da4e7588e56b676680aa66d44751a82083642937e967c4b1f3c26909d5144a",
+    "environment.json": "9b587cc8f52f4c172d6c9aa985b44fe26dcf25264297016c435c2b1608259fb2",
+    "source_manifest.json": "d22e57599778f0093ec0eef60f3a8b6118def4e20121100ce6570c7171430b9e"
+  },
+  "elapsed_seconds": 86.52945155399993
+}

@@ -1,0 +1,22 @@
+{
+  "configs/grounding_dino/grounding_dino_swin-t_finetune_16xb2_1x_coco.py": {
+    "url": "https://raw.githubusercontent.com/open-mmlab/mmdetection/v3.3.0/configs/grounding_dino/grounding_dino_swin-t_finetune_16xb2_1x_coco.py",
+    "sha256": "357d19beb5db518a901225255ced11db099d2d7b26f4fd632d9844ba29c25c58"
+  },
+  "configs/_base_/datasets/coco_detection.py": {
+    "url": "https://raw.githubusercontent.com/open-mmlab/mmdetection/v3.3.0/configs/_base_/datasets/coco_detection.py",
+    "sha256": "331362fd27f59bc08d911eb8bd959a14dd8ed8fd8b048d7e11ec692ebd7ae985"
+  },
+  "configs/_base_/schedules/schedule_1x.py": {
+    "url": "https://raw.githubusercontent.com/open-mmlab/mmdetection/v3.3.0/configs/_base_/schedules/schedule_1x.py",
+    "sha256": "29c25800f6a955f137dcd301f559deff3dc37363ae31cbdfedd1df7665f6f23e"
+  },
+  "configs/_base_/default_runtime.py": {
+    "url": "https://raw.githubusercontent.com/open-mmlab/mmdetection/v3.3.0/configs/_base_/default_runtime.py",
+    "sha256": "f4ed2ce5d49aadf0f14f13e7726ac79fda698e8312242ed70add4420ea2a69df"
+  },
+  "LICENSE": {
+    "url": "https://raw.githubusercontent.com/open-mmlab/mmdetection/v3.3.0/LICENSE",
+    "sha256": "874b8b2e6f12306a1ff7812c068a0dbf880418b8ac1f7190382bd6c6da9f23a1"
+  }
+}

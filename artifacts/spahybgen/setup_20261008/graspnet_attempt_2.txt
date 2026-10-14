@@ -1,0 +1,4 @@
+Using Python 3.8.20 environment at: .venv-spahybgen
+error: No solution found when resolving dependencies
+  cause: Because graspnetapi>=1.2.11 depends on transforms3d==0.3.1 and you require transforms3d==0.4.1, we can conclude that your requirements and graspnetapi>=1.2.11 are incompatible.
+         And because you require graspnetapi==1.2.11, we can conclude that your requirements are unsatisfiable.

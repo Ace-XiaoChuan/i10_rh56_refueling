@@ -1,0 +1,181 @@
+{
+  "schema": "cap_training_transfer_v1",
+  "date": "2026-10-10",
+  "status": "data_only_unsplit_not_trained",
+  "image_root": "images",
+  "annotation_file": "annotations/instances_all.json",
+  "images": [
+    {
+      "image_id": 1,
+      "sha256": "ac194a400fe4fd9bbe9a3bed0912069be549669806050cddc4a1221e4c56e5c5",
+      "width": 1440,
+      "height": 1920,
+      "capture_batch": "pic_single_capture_same_scene_01",
+      "label": "cap_visible_bbox",
+      "path": "images/带油箱盖_右上.jpg",
+      "source_annotation": "annotations/source_boxes/0001.json"
+    },
+    {
+      "image_id": 2,
+      "sha256": "9cfca835e79251f31f488d7ef89a7a33d6cedeac0cfcd4388039677848deec1b",
+      "width": 1440,
+      "height": 1920,
+      "capture_batch": "pic_single_capture_same_scene_01",
+      "label": "cap_visible_bbox",
+      "path": "images/带油箱盖_右下.jpg",
+      "source_annotation": "annotations/source_boxes/0002.json"
+    },
+    {
+      "image_id": 3,
+      "sha256": "15fc3487756cb7b1ceab9fd6c6f620227c0245969d9f61c9271364d05caba2ca",
+      "width": 1440,
+      "height": 1920,
+      "capture_batch": "pic_single_capture_same_scene_01",
+      "label": "cap_visible_bbox",
+      "path": "images/带油箱盖_左上.jpg",
+      "source_annotation": "annotations/source_boxes/0003.json"
+    },
+    {
+      "image_id": 4,
+      "sha256": "002cebce6322fafdcab1c2aa36a10fdbe18752e6165c43cab8833264752d13d7",
+      "width": 1440,
+      "height": 1920,
+      "capture_batch": "pic_single_capture_same_scene_01",
+      "label": "cap_visible_bbox",
+      "path": "images/带油箱盖_左下.jpg",
+      "source_annotation": "annotations/source_boxes/0004.json"
+    },
+    {
+      "image_id": 5,
+      "sha256": "a4af2d85e4091ff21b6f4ec58371175b0ce2c3f9cda2474d7b94d14293377dc6",
+      "width": 1440,
+      "height": 1920,
+      "capture_batch": "pic_single_capture_same_scene_01",
+      "label": "cap_visible_bbox",
+      "path": "images/带油箱盖_正上.jpg",
+      "source_annotation": "annotations/source_boxes/0005.json"
+    },
+    {
+      "image_id": 6,
+      "sha256": "726fd9b4cdd16ec4876bbb44e5389686d8400d78756e600e541b92d2c832e40f",
+      "width": 1440,
+      "height": 1920,
+      "capture_batch": "pic_single_capture_same_scene_01",
+      "label": "cap_visible_bbox",
+      "path": "images/带油箱盖_正下.jpg",
+      "source_annotation": "annotations/source_boxes/0006.json"
+    },
+    {
+      "image_id": 7,
+      "sha256": "b16306454776e30e68e7f9eea07e7cb26fcf804a7d3b51be78c2264586039e3f",
+      "width": 1440,
+      "height": 1920,
+      "capture_batch": "pic_single_capture_same_scene_01",
+      "label": "cap_visible_bbox",
+      "path": "images/带油箱盖_正右.jpg",
+      "source_annotation": "annotations/source_boxes/0007.json"
+    },
+    {
+      "image_id": 8,
+      "sha256": "0e0f5c54c0d33d56190ab45e0ed2754bdd222360de2fe8a5595f20de6a4a5601",
+      "width": 1440,
+      "height": 1920,
+      "capture_batch": "pic_single_capture_same_scene_01",
+      "label": "cap_visible_bbox",
+      "path": "images/带油箱盖_正左.jpg",
+      "source_annotation": "annotations/source_boxes/0008.json"
+    },
+    {
+      "image_id": 9,
+      "sha256": "9287a6f900f440ae1ae128c637a0004f5fd5f465bf81249e2cd2a28f406ff537",
+      "width": 1920,
+      "height": 1440,
+      "capture_batch": "pic_single_capture_same_scene_01",
+      "label": "cap_visible_bbox",
+      "path": "images/带油箱盖_正面.jpg",
+      "source_annotation": "annotations/source_boxes/0009.json"
+    },
+    {
+      "image_id": 10,
+      "sha256": "530502bd45cee0b2e3e6854fb82b5e89d1faf8b10a2f59e18118605b3969e7a7",
+      "width": 1440,
+      "height": 1920,
+      "capture_batch": "pic_single_capture_same_scene_01",
+      "label": "cap_visible_bbox",
+      "path": "images/带油箱盖_近景.jpg",
+      "source_annotation": "annotations/source_boxes/0010.json"
+    },
+    {
+      "image_id": 11,
+      "sha256": "8411ad5f6ed240753eb412890d09b7030b1dfa8bd1a8b48d6535501d0c0049dc",
+      "width": 1920,
+      "height": 1440,
+      "capture_batch": "pic_single_capture_same_scene_01",
+      "label": "cap_visible_bbox",
+      "path": "images/带油箱盖_远景.jpg",
+      "source_annotation": "annotations/source_boxes/0011.json"
+    },
+    {
+      "image_id": 12,
+      "sha256": "4689c539ef935df87f22d9a58789b3e72442e453b8e8932748d17758750b42f6",
+      "width": 1440,
+      "height": 1920,
+      "capture_batch": "pic_single_capture_same_scene_01",
+      "label": "cap_absent_negative",
+      "path": "images/无油箱盖_正上.jpg"
+    },
+    {
+      "image_id": 13,
+      "sha256": "5beb0f9e01ec20a4b4529052f6b4737127149ccb9849c20daff9ad397fba503c",
+      "width": 1440,
+      "height": 1920,
+      "capture_batch": "pic_single_capture_same_scene_01",
+      "label": "cap_absent_negative",
+      "path": "images/无油箱盖_正下.jpg"
+    },
+    {
+      "image_id": 14,
+      "sha256": "709745ec0ff288f3706287031291afc559275bef30c5581dc38bcd0238f6c4b0",
+      "width": 1440,
+      "height": 1920,
+      "capture_batch": "pic_single_capture_same_scene_01",
+      "label": "cap_absent_negative",
+      "path": "images/无油箱盖_正右.jpg"
+    },
+    {
+      "image_id": 15,
+      "sha256": "0fb327b4983f323bca67070bf818a696e18ef31c865ca94e6eb64b63ba4ecfdb",
+      "width": 1440,
+      "height": 1920,
+      "capture_batch": "pic_single_capture_same_scene_01",
+      "label": "cap_absent_negative",
+      "path": "images/无油箱盖_正左.jpg"
+    },
+    {
+      "image_id": 16,
+      "sha256": "ae62841b3e1721ec5f3dc36957c117176e22e036f3fc0b4e1f22ad1770aec185",
+      "width": 1440,
+      "height": 1920,
+      "capture_batch": "pic_single_capture_same_scene_01",
+      "label": "cap_absent_negative",
+      "path": "images/无油箱盖_正面.jpg"
+    }
+  ],
+  "excluded_images": [
+    {
+      "path": "pic/带油箱盖_正右遮挡.jpg",
+      "sha256": "81f3e2b092c8c144ec2d30aec8c801b802f40808731dc86e6f956b796c484c8a",
+      "reason": "门板遮挡目标区域；不根据机构状态虚构可见盖体框",
+      "capture_batch": "pic_single_capture_same_scene_01"
+    },
+    {
+      "path": "pic/无油箱盖_正右遮挡.jpg",
+      "sha256": "ee4ce3440229b8f7bf74cd29ec5462cd15c4da40d99d51d6ce3f7b26dcaff9a8",
+      "reason": "门板遮挡目标区域；不根据机构状态虚构可见盖体框",
+      "capture_batch": "pic_single_capture_same_scene_01"
+    }
+  ],
+  "dataset_split": null,
+  "training_started": false,
+  "metadata_scope": "metadata/ 为历史证据，内部原项目路径不作为借用电脑上的数据路径"
+}

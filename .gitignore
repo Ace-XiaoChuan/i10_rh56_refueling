@@ -4,7 +4,19 @@ log/
 __pycache__/
 *.py[cod]
 .pytest_cache/
-.venv/
+.venv
+.venv-spahybgen/
+.cache/spahybgen/
+dependencies/SpaHybGen/
+.venv-perception
+.cache/perception/
+.cache/shared-python310/
+dependencies/sam2/
+
+# 云端模型权重与下载包保留在本地，校验摘要与实验结果纳入版本管理。
+/artifacts/perception/cloud_model_*/*.tar.gz
+/artifacts/perception/cloud_model_*/**/*.pth
+/artifacts/perception/cloud_model_*/**/*.safetensors
 
 # Local editor state and caches
 .vscode/
@@ -44,6 +56,8 @@ coverage.xml
 *.log
 MUJOCO_LOG.TXT
 MJMODEL.TXT
+# RH56 原示例结果绑定此日志哈希，随复现证据保留。
+!/artifacts/rh56_spahybgen/**/runtime.log
 core
 core.[0-9]*
 /tmp/
@@ -53,3 +67,10 @@ core.[0-9]*
 
 # Keep selected candidates, validation reports/views, source assets and
 # current generated models tracked: they are reproducibility evidence.
+
+# 模型权重与传输压缩包留在本机；配置、摘要和实验结果继续跟踪。
+/artifacts/**/*.pth
+/artifacts/**/*.pt
+/artifacts/**/*.safetensors
+/artifacts/**/*.tar.gz
+/artifacts/**/*.zip

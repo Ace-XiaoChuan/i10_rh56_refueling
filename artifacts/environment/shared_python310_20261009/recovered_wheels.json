@@ -1,0 +1,38 @@
+[
+  {
+    "name": "setuptools",
+    "version": "82.0.1",
+    "cache": "/home/ace/.cache/pip/http-v2/d/f/9/0/b/df90ba6c84bac0ae587d7e5b5a5de66b39386e0a90fe62fc4ec67b53.body",
+    "wheel": ".cache/shared-python310/wheelhouse/setuptools-82.0.1-py3-none-any.whl"
+  },
+  {
+    "name": "mujoco",
+    "version": "3.6.0",
+    "cache": "/home/ace/.cache/pip/http-v2/6/8/5/4/a/6854ab5139d470117f632e6c607981c2d3438acb8164d1dc51f88972.body",
+    "wheel": ".cache/shared-python310/wheelhouse/mujoco-3.6.0-cp313-cp313-manylinux_2_27_x86_64.whl"
+  },
+  {
+    "name": "mujoco",
+    "version": "3.8.1",
+    "cache": "/home/ace/.cache/pip/http/d/6/6/e/8/d66e83c8e3e625dd887de51fa053e0c6c13186f868b0aa14c262ca8c",
+    "wheel": ".cache/shared-python310/wheelhouse/mujoco-3.8.1-cp310-cp310-manylinux_2_27_x86_64.whl"
+  },
+  {
+    "name": "mujoco",
+    "version": "3.8.0",
+    "cache": "/home/ace/.cache/pip/http/3/3/1/7/1/331711b6b48acd68b67e009a9ba2bc69b20fdb78fce603dc7323acaa",
+    "wheel": ".cache/shared-python310/wheelhouse/mujoco-3.8.0-cp310-cp310-manylinux_2_27_x86_64.whl"
+  },
+  {
+    "name": "mujoco",
+    "version": "3.3.7",
+    "cache": "/home/ace/.cache/pip/http/7/a/3/5/2/7a352b2dcf3f1cc5f976971b3ddb22ab76afaf730fa66f6888fe8dda",
+    "wheel": ".cache/shared-python310/wheelhouse/mujoco-3.3.7-cp310-cp310-manylinux_2_27_x86_64.whl"
+  },
+  {
+    "name": "uv",
+    "version": "0.12.23",
+    "cache": ".cache/spahybgen/pip/http/c/6/5/9/6/c65960266e0387acd2e323a393556307a7624650797acd57e1fd0779",
+    "wheel": ".cache/shared-python310/wheelhouse/uv-0.12.23-py3-none-manylinux_2_17_x86_64.whl"
+  }
+]

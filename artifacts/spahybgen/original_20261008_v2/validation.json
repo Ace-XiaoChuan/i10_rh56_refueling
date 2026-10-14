@@ -1,0 +1,51 @@
+{
+  "result_sha256": "82855e7f268d9ba6bfdf19fc15701f7dca70a8cebd065a80ff5a73fbf207b6b1",
+  "checks": {
+    "input_matches_source": true,
+    "prediction_all_finite": true,
+    "quality_range": [
+      6.241412787370486e-39,
+      0.912691593170166
+    ],
+    "wrench_score_range": [
+      1.7924288440291947e-24,
+      0.9431290030479431
+    ],
+    "trajectory_shape": [
+      64,
+      121,
+      11
+    ],
+    "all_optimization_values_finite": true,
+    "all_candidate_ids_retained": true,
+    "ranking_matches_last_recorded_loss": true,
+    "loss_keys": [
+      "FQH",
+      "QH",
+      "RH",
+      "WH",
+      "PN",
+      "JR",
+      "CK",
+      "LD",
+      "FC",
+      "AB",
+      "CTS",
+      "loss_all",
+      "loss_opti",
+      "sort_ids"
+    ]
+  },
+  "upstream_module_tests": {
+    "passed": 2,
+    "files": [
+      "tests/test_grasp_decomposition.py",
+      "tests/test_volume_creation.py"
+    ]
+  },
+  "environment_dependency_check": {
+    "passed": true,
+    "packages": 141
+  },
+  "scope": "原始体素场景与 Robotiq-2F，未验证物理抓稳、RH56 或油箱盖"
+}

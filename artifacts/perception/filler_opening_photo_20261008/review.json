@@ -1,0 +1,225 @@
+{
+  "inference_reexecuted": false,
+  "runtime_acceptance_changed": false,
+  "reviewer": "assistant_visual_inspection",
+  "installed_scene_feasibility_passed": false,
+  "cases": [
+    {
+      "run": "installed_cap",
+      "title": "带盖安装场景：默认提示",
+      "prompt": "fuel cap.",
+      "software_status": "unique_candidate",
+      "selected_index": 0,
+      "image_sha256": "b4b4964d87dc42d156b21dd662e9fcb6dba2543d29840468326cbd936e6c8c6f",
+      "result_sha256": "c16883697f53a339ce97ebb81301b1672d8d55b657e374faf3969f7117627853",
+      "assessment_source": "assistant_visual_inspection",
+      "assessment": "误检油箱面板和外门，没有定位中央盖体。",
+      "candidates": [
+        {
+          "index": 0,
+          "label": "fuel cap",
+          "box_xyxy_px": [
+            210.18504333496094,
+            0.6952190399169922,
+            1517.3316650390625,
+            1079.310302734375
+          ],
+          "detector_text_match_score": 0.47508618235588074,
+          "sam_mask_quality_score": 0.9887410998344421,
+          "mask_pixels": 1167931,
+          "mask_file": "mask_000.png",
+          "mask_image_fraction": 0.5352634815996891
+        }
+      ],
+      "valid_3d_pose": false,
+      "pixel_ground_truth_available": false
+    },
+    {
+      "run": "cap_front_control",
+      "title": "单独盖体正面：正对照",
+      "prompt": "fuel cap.",
+      "software_status": "unique_candidate",
+      "selected_index": 0,
+      "image_sha256": "085b247d05013ebf20834012ff102d0d1941dd8b1e4eac08d3acea3df266c2a8",
+      "result_sha256": "a2293e00ff845528d75404ea7a57b87d8f5a00fa1acd0b453001825882bfebb1",
+      "assessment_source": "assistant_visual_inspection",
+      "assessment": "目视与整盖外轮廓一致；没有人工标注，不能报告 IoU。",
+      "candidates": [
+        {
+          "index": 0,
+          "label": "fuel cap",
+          "box_xyxy_px": [
+            177.73455810546875,
+            183.1766357421875,
+            871.5924072265625,
+            821.1961059570312
+          ],
+          "detector_text_match_score": 0.9255526661872864,
+          "sam_mask_quality_score": 0.9905834197998047,
+          "mask_pixels": 328601,
+          "mask_file": "mask_000.png",
+          "mask_image_fraction": 0.3209025478764441
+        }
+      ],
+      "valid_3d_pose": false,
+      "pixel_ground_truth_available": false
+    },
+    {
+      "run": "fuel_cap",
+      "title": "无盖场景：缺席对照",
+      "prompt": "fuel cap.",
+      "software_status": "unique_candidate",
+      "selected_index": 0,
+      "image_sha256": "2a23e5385ec11073f444fc0503e340585b07b055fb6e109610050591a1e0e8e5",
+      "result_sha256": "ef4d003978d06146d0338511c5f9b1a2321b914aab4e92e1a42fe3ddb8598069",
+      "assessment_source": "assistant_visual_inspection",
+      "assessment": "盖体缺席，却误检大片油箱面板及周边结构。",
+      "candidates": [
+        {
+          "index": 0,
+          "label": "fuel cap",
+          "box_xyxy_px": [
+            2.4076590538024902,
+            1.8277182579040527,
+            1702.677734375,
+            1273.6204833984375
+          ],
+          "detector_text_match_score": 0.4974617063999176,
+          "sam_mask_quality_score": 0.9327263832092285,
+          "mask_pixels": 1803226,
+          "mask_file": "mask_000.png",
+          "mask_image_fraction": 0.8264195632028613
+        }
+      ],
+      "valid_3d_pose": false,
+      "pixel_ground_truth_available": false
+    },
+    {
+      "run": "fuel_filler_opening",
+      "title": "无盖场景：加油口提示",
+      "prompt": "fuel filler opening.",
+      "software_status": "ambiguous",
+      "selected_index": null,
+      "image_sha256": "2a23e5385ec11073f444fc0503e340585b07b055fb6e109610050591a1e0e8e5",
+      "result_sha256": "e3b48fc1f24764dd58484154619b14bd8428366edb20d56e6664a420d117ca47",
+      "assessment_source": "assistant_visual_inspection",
+      "assessment": "返回两个候选：大片面板及凹腔，未取得唯一精确中央加油口。",
+      "candidates": [
+        {
+          "index": 0,
+          "label": "fuel filler opening",
+          "box_xyxy_px": [
+            2.6133179664611816,
+            2.4386603832244873,
+            1701.8282470703125,
+            1273.6011962890625
+          ],
+          "detector_text_match_score": 0.5608422756195068,
+          "sam_mask_quality_score": 0.9332144856452942,
+          "mask_pixels": 1803196,
+          "mask_file": "mask_000.png",
+          "mask_image_fraction": 0.8264058141847703
+        },
+        {
+          "index": 1,
+          "label": "fuel filler opening",
+          "box_xyxy_px": [
+            367.2083435058594,
+            125.81917572021484,
+            1087.1072998046875,
+            774.2696533203125
+          ],
+          "detector_text_match_score": 0.35200929641723633,
+          "sam_mask_quality_score": 0.9702872633934021,
+          "mask_pixels": 330416,
+          "mask_file": "mask_001.png",
+          "mask_image_fraction": 0.15142985205139933
+        }
+      ],
+      "valid_3d_pose": false,
+      "pixel_ground_truth_available": false
+    },
+    {
+      "run": "installed_black_cap",
+      "title": "带盖安装场景：描述词对照一",
+      "prompt": "black cap.",
+      "software_status": "ambiguous",
+      "selected_index": null,
+      "image_sha256": "b4b4964d87dc42d156b21dd662e9fcb6dba2543d29840468326cbd936e6c8c6f",
+      "result_sha256": "bf051022d6de119f4ba36c2a3c6af0fbe18f8ad5d0b62c0680b8a694ef7322d4",
+      "assessment_source": "assistant_visual_inspection",
+      "assessment": "歧义：误检面板及下方支撑部件，没有定位中央盖体。",
+      "candidates": [
+        {
+          "index": 0,
+          "label": "black cap",
+          "box_xyxy_px": [
+            199.44284057617188,
+            0.3566623628139496,
+            1518.7120361328125,
+            1081.1015625
+          ],
+          "detector_text_match_score": 0.5186865329742432,
+          "sam_mask_quality_score": 0.9886102676391602,
+          "mask_pixels": 1170587,
+          "mask_file": "mask_000.png",
+          "mask_image_fraction": 0.5364807280013419
+        },
+        {
+          "index": 1,
+          "label": "black cap",
+          "box_xyxy_px": [
+            577.8026733398438,
+            1044.3594970703125,
+            909.2122802734375,
+            1276.9200439453125
+          ],
+          "detector_text_match_score": 0.38646820187568665,
+          "sam_mask_quality_score": 0.9782439470291138,
+          "mask_pixels": 63462,
+          "mask_file": "mask_001.png",
+          "mask_image_fraction": 0.02908467286961256
+        }
+      ],
+      "valid_3d_pose": false,
+      "pixel_ground_truth_available": false
+    },
+    {
+      "run": "installed_descriptive_cap",
+      "title": "带盖安装场景：描述词对照二",
+      "prompt": "round black cap with a handle.",
+      "software_status": "unique_candidate",
+      "selected_index": 0,
+      "image_sha256": "b4b4964d87dc42d156b21dd662e9fcb6dba2543d29840468326cbd936e6c8c6f",
+      "result_sha256": "57b0a3db3fb3e97d013983d48e975e96b92ef35a64e4b9a177180b7d3b854b31",
+      "assessment_source": "assistant_visual_inspection",
+      "assessment": "仍误检油箱面板，没有定位中央盖体。",
+      "candidates": [
+        {
+          "index": 0,
+          "label": "round black cap",
+          "box_xyxy_px": [
+            196.8671875,
+            3.253338575363159,
+            1521.2430419921875,
+            1079.4290771484375
+          ],
+          "detector_text_match_score": 0.5312097668647766,
+          "sam_mask_quality_score": 0.9885619878768921,
+          "mask_pixels": 1171743,
+          "mask_file": "mask_000.png",
+          "mask_image_fraction": 0.5370105234984468
+        }
+      ],
+      "valid_3d_pose": false,
+      "pixel_ground_truth_available": false
+    }
+  ],
+  "builder_sha256": "15437183b98403f62fc369a65a4c5bf6e76c77596ce6b34481c679d48146c4c7",
+  "index_sha256": "41172599aa288dc738fec7aa83759e55a7c6d20db366dcb829feb2a92011a25f",
+  "saved_image_sha256": {
+    "filler_opening.jpg": "2a23e5385ec11073f444fc0503e340585b07b055fb6e109610050591a1e0e8e5",
+    "be44de650d565ff38af7dd108c384037.jpg": "b4b4964d87dc42d156b21dd662e9fcb6dba2543d29840468326cbd936e6c8c6f",
+    "front.jpg": "085b247d05013ebf20834012ff102d0d1941dd8b1e4eac08d3acea3df266c2a8"
+  }
+}

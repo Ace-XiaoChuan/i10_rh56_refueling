@@ -1,0 +1,8 @@
+{
+  "archive": "fuel-cap-data.zip",
+  "sha256": "4055c8780fdb2ebb9aedf5af5a5f606b97f11dadc46f024a328cb2666ace099f",
+  "bytes": 3528252,
+  "images": 16,
+  "annotation_source": "/home/ace/i10_rh56_refueling_ws/artifacts/perception/cap_annotations_20261010_004032",
+  "training_started": false
+}

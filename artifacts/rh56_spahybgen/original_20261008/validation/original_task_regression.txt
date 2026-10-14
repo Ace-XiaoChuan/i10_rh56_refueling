@@ -1,0 +1,46 @@
+test_cancel_at_stage_boundary_does_not_start_next_motion (test_cap_task.TaskTests) ... ok
+test_cancel_before_start_does_not_issue_motion (test_cap_task.TaskTests) ... ok
+test_cancel_during_motion_waits_for_operation_then_stops_holding (test_cap_task.TaskTests) ... ok
+test_concurrent_run_is_rejected (test_cap_task.TaskTests) ... ok
+test_executor_readiness_rejects_missing_physical_inputs_before_motion (test_cap_task.TaskTests) ... ok
+test_external_asyncio_cancel_also_stops (test_cap_task.TaskTests) ... ok
+test_failures_stop_once_without_later_actions_or_retries (test_cap_task.TaskTests) ... ok
+test_feedback_not_command_completion_gates_progress (test_cap_task.TaskTests) ... ok
+test_invalid_estimate_never_starts_approach (test_cap_task.TaskTests) ... ok
+test_malformed_estimates_stop_before_approach (test_cap_task.TaskTests) ... ok
+test_malformed_feedback_cannot_advance (test_cap_task.TaskTests) ... ok
+test_malformed_stop_receipt_becomes_unknown (test_cap_task.TaskTests) ... ok
+test_simulation_clock_zero_and_negative_unit_quaternion_are_valid (test_cap_task.TaskTests) ... ok
+test_stop_error_records_unknown_and_original_failure (test_cap_task.TaskTests) ... ok
+test_stop_timeout_records_unknown_without_recovery (test_cap_task.TaskTests) ... ok
+test_success_keeps_grasp_and_records_source_and_commands (test_cap_task.TaskTests) ... ok
+test_timeout_cancels_operation_and_stops (test_cap_task.TaskTests) ... ok
+test_timeouts_must_be_finite_positive_numbers (test_cap_task.TaskTests) ... ok
+test_unexpected_adapter_error_still_stops (test_cap_task.TaskTests) ... ok
+test_cancel_after_release_never_withdraws_or_recloses (test_feedback_task.FeedbackTaskTests) ... ok
+test_changed_reference_frame_stops_before_next_motion (test_feedback_task.FeedbackTaskTests) ... ok
+test_detachment_during_support_check_skips_release_even_at_last_segment (test_feedback_task.FeedbackTaskTests) ... ok
+test_early_detachment_does_not_require_reference_angle (test_feedback_task.FeedbackTaskTests) ... ok
+test_exhausted_mock_script_does_not_repeat_previous_success (test_feedback_task.FeedbackTaskTests) ... ok
+test_failures_in_new_stages_stop_once_without_recovery (test_feedback_task.FeedbackTaskTests) ... ok
+test_feedback_context_and_motion_must_be_valid (test_feedback_task.FeedbackTaskTests) ... ok
+test_invalid_or_contradictory_support_never_releases (test_feedback_task.FeedbackTaskTests) ... ok
+test_invalid_reobservation_stops_without_reclosing (test_feedback_task.FeedbackTaskTests) ... ok
+test_last_segment_budget_does_not_release_for_nonexistent_next_segment (test_feedback_task.FeedbackTaskTests) ... ok
+test_legacy_receipt_is_rejected_without_inventing_source (test_feedback_task.FeedbackTaskTests) ... ok
+test_logs_record_feedback_source_decision_and_run_limits (test_feedback_task.FeedbackTaskTests) ... ok
+test_missing_support_script_does_not_default_to_release_permission (test_feedback_task.FeedbackTaskTests) ... ok
+test_regrasp_uses_new_observation_and_preserves_cumulative_progress (test_feedback_task.FeedbackTaskTests) ... ok
+test_regressed_progress_in_twist_or_support_stops (test_feedback_task.FeedbackTaskTests) ... ok
+test_run_limits_are_explicit_finite_and_positive (test_feedback_task.FeedbackTaskTests) ... ok
+test_second_grasp_failure_does_not_start_second_twist (test_feedback_task.FeedbackTaskTests) ... ok
+test_take_out_uses_current_feedback_pose (test_feedback_task.FeedbackTaskTests) ... ok
+test_total_budget_applies_across_regrasp_stages (test_feedback_task.FeedbackTaskTests) ... ok
+test_unconfirmed_release_or_withdrawal_has_no_later_actions (test_feedback_task.FeedbackTaskTests) ... ok
+test_unknown_or_denied_support_never_releases (test_feedback_task.FeedbackTaskTests) ... ok
+test_unknown_twist_or_unconfirmed_grasp_stop_without_release (test_feedback_task.FeedbackTaskTests) ... ok
+
+----------------------------------------------------------------------
+Ran 41 tests in 0.773s
+
+OK

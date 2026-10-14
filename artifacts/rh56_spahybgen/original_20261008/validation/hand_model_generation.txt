@@ -1,0 +1,1 @@
+{"output": "/home/ace/i10_rh56_refueling_ws/artifacts/rh56_spahybgen/model_20261008", "links": 13, "joints": 12, "drivers": 6, "contact_regions": 15, "fk_reference_poses": 11}

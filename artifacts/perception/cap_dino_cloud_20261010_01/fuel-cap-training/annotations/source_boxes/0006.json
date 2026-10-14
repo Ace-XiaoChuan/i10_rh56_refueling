@@ -1,0 +1,18 @@
+{
+  "schema": "sam_manual_prompts_v1",
+  "image_path": "/home/ace/i10_rh56_refueling_ws/pic/带油箱盖_正下.jpg",
+  "image_sha256": "726fd9b4cdd16ec4876bbb44e5389686d8400d78756e600e541b92d2c832e40f",
+  "image_size_wh": [
+    1440,
+    1920
+  ],
+  "box_xyxy_px": [
+    580.4081632653061,
+    405.7580398162328,
+    844.8979591836735,
+    649.8009188361409
+  ],
+  "point_coords_px": [],
+  "point_labels": [],
+  "annotation_source": "operator_input"
+}

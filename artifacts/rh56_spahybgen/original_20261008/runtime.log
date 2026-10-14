@@ -1,0 +1,26 @@
+Processing joint #0: thumb_proximal_yaw_joint
+Processing joint #1: thumb_proximal_pitch_joint
+Processing joint #2: thumb_intermediate_joint
+Processing joint #3: thumb_distal_joint
+Processing joint #4: index_proximal_joint
+Processing joint #5: index_intermediate_joint
+Processing joint #6: middle_proximal_joint
+Processing joint #7: middle_intermediate_joint
+Processing joint #8: ring_proximal_joint
+Processing joint #9: ring_intermediate_joint
+Processing joint #10: pinky_proximal_joint
+Processing joint #11: pinky_intermediate_joint
+Processing joint #0: thumb_proximal_yaw_joint
+Processing joint #1: thumb_proximal_pitch_joint
+Processing joint #2: thumb_intermediate_joint
+Processing joint #3: thumb_distal_joint
+Processing joint #4: index_proximal_joint
+Processing joint #5: index_intermediate_joint
+Processing joint #6: middle_proximal_joint
+Processing joint #7: middle_intermediate_joint
+Processing joint #8: ring_proximal_joint
+Processing joint #9: ring_intermediate_joint
+Processing joint #10: pinky_proximal_joint
+Processing joint #11: pinky_intermediate_joint
+[SpactialOptimization]: Hand Model Initialized - rh56dfx_right. Num of Contact Point: 75
+Matplotlib is building the font cache; this may take a moment.

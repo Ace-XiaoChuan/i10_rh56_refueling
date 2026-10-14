@@ -1,0 +1,1 @@
+{"status": "unique_candidate", "candidates": [{"index": 0, "label": "round black cap", "box_xyxy_px": [196.8671875, 3.253338575363159, 1521.2430419921875, 1079.4290771484375], "detector_text_match_score": 0.5312097668647766, "sam_mask_quality_score": 0.9885619878768921, "mask_pixels": 1171743, "mask_file": "mask_000.png"}], "elapsed_s": 75.52660188000118}

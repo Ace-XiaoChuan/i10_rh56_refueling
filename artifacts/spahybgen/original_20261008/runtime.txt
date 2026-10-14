@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "tools/reproduce_spahybgen.py", line 109, in main
+  File "/home/ace/i10_rh56_refueling_ws/dependencies/SpaHybGen/src/spahybgen/pipeline/grasp_optimization.py", line 8, in <module>
+    from spahybgen.optimization import SpactialOptimization
+  File "/home/ace/i10_rh56_refueling_ws/dependencies/SpaHybGen/src/spahybgen/optimization.py", line 7, in <module>
+    from spahybgen.handmodel import HandModel
+  File "/home/ace/i10_rh56_refueling_ws/dependencies/SpaHybGen/src/spahybgen/handmodel.py", line 8, in <module>
+    import pytorch_kinematics as pk
+  File "/home/ace/i10_rh56_refueling_ws/.venv-spahybgen/lib/python3.8/site-packages/pytorch_kinematics/__init__.py", line 3, in <module>
+    from pytorch_kinematics.mjcf import *
+  File "/home/ace/i10_rh56_refueling_ws/.venv-spahybgen/lib/python3.8/site-packages/pytorch_kinematics/mjcf.py", line 3, in <module>
+    import mujoco
+ModuleNotFoundError: No module named 'mujoco'

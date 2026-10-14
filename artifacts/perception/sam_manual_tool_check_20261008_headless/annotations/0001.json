@@ -1,0 +1,35 @@
+{
+  "schema": "sam_manual_prompts_v1",
+  "image_path": "/home/ace/i10_rh56_refueling_ws/assets/hardware_photos/fuel_tank/be44de650d565ff38af7dd108c384037.jpg",
+  "image_sha256": "b4b4964d87dc42d156b21dd662e9fcb6dba2543d29840468326cbd936e6c8c6f",
+  "image_size_wh": [
+    1706,
+    1279
+  ],
+  "box_xyxy_px": [
+    677.0,
+    357.0,
+    908.0,
+    566.0
+  ],
+  "point_coords_px": [
+    [
+      788.0,
+      454.0
+    ],
+    [
+      698.0,
+      390.0
+    ],
+    [
+      973.0,
+      630.0
+    ]
+  ],
+  "point_labels": [
+    1,
+    1,
+    0
+  ],
+  "annotation_source": "agent_development_gui_fixture_not_user_annotation"
+}

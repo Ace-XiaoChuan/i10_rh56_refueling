@@ -1,0 +1,41 @@
+{
+  "info": {
+    "description": "同批次油箱盖定位首轮实验，人工框与用户确认无盖"
+  },
+  "images": [
+    {
+      "id": 1,
+      "file_name": "带油箱盖_右上.jpg",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": 12,
+      "file_name": "无油箱盖_正上.jpg",
+      "width": 1440,
+      "height": 1920
+    }
+  ],
+  "annotations": [
+    {
+      "id": 1,
+      "image_id": 1,
+      "category_id": 1,
+      "bbox": [
+        283.59183673469386,
+        679.2036753445635,
+        355.59183673469386,
+        296.967840735069
+      ],
+      "area": 105599.33993811921,
+      "iscrowd": 0
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "fuel cap",
+      "supercategory": "object"
+    }
+  ]
+}

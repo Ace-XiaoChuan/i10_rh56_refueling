@@ -1,0 +1,12 @@
+Using Python 3.8.20 environment at: .venv-spahybgen
+Resolved 2 packages in 723ms
+Downloading numpy (16.3MiB)
+Downloading cython (3.5MiB)
+ Downloaded cython
+ Downloaded numpy
+Prepared 2 packages in 18.96s
+Uninstalled 1 package in 12ms
+Installed 2 packages in 29ms
+ + cython==3.0.2
+ - numpy==1.24.4
+ + numpy==1.23.5

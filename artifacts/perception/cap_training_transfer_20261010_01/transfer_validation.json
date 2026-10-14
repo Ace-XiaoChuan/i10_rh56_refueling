@@ -1,0 +1,10 @@
+{
+  "zip_crc": "passed",
+  "archive_sha256": "passed",
+  "fresh_extraction_integrity": "passed",
+  "portable_gallery_images": 16,
+  "corrupted_temporary_copy_rejected": true,
+  "scripts_syntax": "passed",
+  "gpu_training_tested": false,
+  "training_started": false
+}

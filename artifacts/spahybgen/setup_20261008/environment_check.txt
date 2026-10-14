@@ -1,0 +1,3 @@
+Using Python 3.8.20 environment at: .venv-spahybgen
+Checked 141 packages in 1ms
+All installed packages are compatible

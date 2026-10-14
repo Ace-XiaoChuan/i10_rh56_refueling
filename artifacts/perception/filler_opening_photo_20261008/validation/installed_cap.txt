@@ -1,0 +1,1 @@
+{"status": "unique_candidate", "candidates": [{"index": 0, "label": "fuel cap", "box_xyxy_px": [210.18504333496094, 0.6952190399169922, 1517.3316650390625, 1079.310302734375], "detector_text_match_score": 0.47508618235588074, "sam_mask_quality_score": 0.9887410998344421, "mask_pixels": 1167931, "mask_file": "mask_000.png"}], "elapsed_s": 29.368484767001064}

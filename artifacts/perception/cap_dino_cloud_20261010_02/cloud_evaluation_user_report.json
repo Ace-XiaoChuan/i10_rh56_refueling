@@ -1,0 +1,26 @@
+{
+  "evidence_source": "用户于 2026-10-10 提供的 baseline/evaluate 指标与逐图诊断终端输出；未读取云端预测文件或权重",
+  "score_threshold": 0.35,
+  "diagnostic_iou_threshold": 0.5,
+  "baseline": {
+    "metrics": {"coco/fuel cap_precision": 0.077, "coco/bbox_mAP": 0.077, "coco/bbox_mAP_50": 0.12, "coco/bbox_mAP_75": 0.12, "coco/bbox_mAP_s": -1.0, "coco/bbox_mAP_m": -1.0, "coco/bbox_mAP_l": 0.085},
+    "counts": {"localized_unique": 0, "missed": 0, "ambiguous": 1, "mislocalized_unique": 2, "negative_false_positive": 1, "negative_correct_rejection": 0},
+    "images": [
+      {"file_name": "带油箱盖_右下.jpg", "status": "ambiguous", "candidate_count": 2, "reported_rounded_iou": 0.062},
+      {"file_name": "带油箱盖_正面.jpg", "status": "mislocalized_unique", "candidate_count": 1, "reported_rounded_iou": 0.03},
+      {"file_name": "带油箱盖_远景.jpg", "status": "mislocalized_unique", "candidate_count": 1, "reported_rounded_iou": 0.035},
+      {"file_name": "无油箱盖_正右.jpg", "status": "negative_false_positive", "candidate_count": 1, "reported_rounded_iou": 0.0}
+    ]
+  },
+  "evaluate": {
+    "metrics": {"coco/fuel cap_precision": 0.681, "coco/bbox_mAP": 0.681, "coco/bbox_mAP_50": 0.865, "coco/bbox_mAP_75": 0.865, "coco/bbox_mAP_s": -1.0, "coco/bbox_mAP_m": -1.0, "coco/bbox_mAP_l": 0.681},
+    "counts": {"localized_unique": 2, "missed": 1, "ambiguous": 0, "mislocalized_unique": 0, "negative_false_positive": 0, "negative_correct_rejection": 1},
+    "images": [
+      {"file_name": "带油箱盖_右下.jpg", "status": "localized_unique", "candidate_count": 1, "reported_rounded_iou": 0.944},
+      {"file_name": "带油箱盖_正面.jpg", "status": "localized_unique", "candidate_count": 1, "reported_rounded_iou": 0.83},
+      {"file_name": "带油箱盖_远景.jpg", "status": "missed", "candidate_count": 0, "reported_rounded_iou": 0.0},
+      {"file_name": "无油箱盖_正右.jpg", "status": "negative_correct_rejection", "candidate_count": 0, "reported_rounded_iou": 0.0}
+    ]
+  },
+  "verification_boundary": "仅同批次的 4 张验证图；远景无框通过既定阈值，未读取低分预测，未验证新批次泛化或 SAM 衔接"
+}

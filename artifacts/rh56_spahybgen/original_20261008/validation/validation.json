@@ -1,0 +1,73 @@
+{
+  "checks": {
+    "adapter_tests": {
+      "count": 10,
+      "exit_code": 0
+    },
+    "task_regression": {
+      "count": 41,
+      "exit_code": 0
+    },
+    "hand_source_result_verify": {
+      "exit_code": 0,
+      "rerun_optimization": false
+    },
+    "perception_source_result_verify": {
+      "exit_code": 0,
+      "rerun_inference": false
+    },
+    "planning_model_sources": {
+      "inputs": 234,
+      "outputs": 233,
+      "exit_code": 0
+    },
+    "existing_output_rejected": {
+      "exit_code": 1,
+      "expected": "FileExistsError"
+    },
+    "py_compile": {
+      "exit_code": 0
+    },
+    "git_diff_check": {
+      "exit_code": 0
+    },
+    "local_doc_links": {
+      "count": 69,
+      "exit_code": 0
+    }
+  },
+  "upstream": {
+    "SpaHybGen": {
+      "tracked_checkout_clean": true,
+      "head": "39e5794506bbbf2fd41804f73c93b7b393be550e"
+    },
+    "sam2": {
+      "tracked_checkout_clean": true,
+      "head": "2b90b9f5ceec907a1c18123530e92e794ad901a4"
+    }
+  },
+  "implementation_and_document_sha256": {
+    "tools/build_rh56_spahybgen_model.py": "8039701a2e0cd602c3c8e54c9c406cd7f15e46dc685975ec9551ac9cc0eb3ace",
+    "tools/generate_rh56_grasps.py": "70bb865116e95b9a367950736943673109ccfcbead9835427e8b20a769e12a5b",
+    "src/fuel_cap_task/rh56_spahybgen.py": "c87e213bf812dbe8ef9490055689eaf4087ef8a40f779a79da472c7bc83f0192",
+    "src/fuel_cap_task/rh56_drive_map.py": "e7d06568bbc5cc41dcf50f9af2c81c587018cd2adb3d97528039a21b5285c6f5",
+    "src/fuel_cap_task/__init__.py": "b962348cbf98d7e174d97dcad56dccda3b31aae1e6c8a453a2e99dc4604d8242",
+    "tests/spahybgen/test_rh56_adapter.py": "abd1cda61a20c708050dab82d5e24b60b4c22c9ef4ebf94d4704056b71964373",
+    "doc/rh56_spahybgen_adapter.md": "1d9c034121bb194cd0139c61e01da05ffee10c47308d5c5709293bd09c3468db",
+    "doc/assembly_contract.md": "cff2fcab4116b2d204fa8e0539ff65ffb8834309b59473b8d7cc27fadbd5b288"
+  },
+  "original_result_sha256": "6552f1d82977545cb52231f1cac17a56491d1423be2235fbf2ae97e8edffe22f",
+  "logs": {
+    "hand_model_generation.txt": "baf9dec467ce883a706d542ccd85491b0e1b6aee578dd0432dbb5943e2c6e075",
+    "adapter_tests_first.txt": "d46b4c90157129e0250dac539fae4e4800f39355ef0de95bf74a7c0167a7ddd7",
+    "hand_result_verify.txt": "5f3d22cc6585855c1c84ef9b8327854dfcf85188943c7be368da13840db9b0af",
+    "existing_directory_negative.txt": "b1a9b871188e43fe47dbc106032c5554527f5e195c27254689d38aafdd47c01f",
+    "original_task_regression.txt": "08e185be3014391ba11628fbda852480f22c8e3b04949c5befc69491d56845fe",
+    "adapter_tests_final.txt": "7e204e1dab0f879a5dcd64b11a12fda52251d0aa2b5dbe1f01aab3aedf4f9b2d",
+    "optimization_cli.txt": "40a5861f42c7ea00852f193c003c1aa73731079a51c41b32894bc27cf5bd207f",
+    "perception_result_verify.txt": "f872486860fccf7cbc5ca40712e01c2550fcdeb6898e011f9a9742eb49b48988",
+    "planning_model_sources.txt": "7a54d31179773f4ee2546e0f2c21f5082d8afc2f8c9e9c18ca12dcead97b14d5"
+  },
+  "physical_grasp_validated": false,
+  "cap_task_validated": false
+}

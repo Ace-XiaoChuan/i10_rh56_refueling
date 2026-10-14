@@ -1,0 +1,8 @@
+{
+  "comparison": "same_photo_and_saved_operator_box_new_shared_environment",
+  "old_mask_pixels": 35894,
+  "new_mask_pixels": 35894,
+  "changed_pixels": 0,
+  "mask_iou": 1.0,
+  "limitations": "仅检查同图同提示的环境兼容性；不计自动语义识别或跨图泛化通过。"
+}

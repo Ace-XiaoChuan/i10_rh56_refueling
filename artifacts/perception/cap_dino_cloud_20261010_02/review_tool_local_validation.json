@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "evidence_source": "本地合成预测用于工具检查，不是云端模型结果",
+  "checks": [
+    "低分正确框 IoU=1 且 score=0.34 仍为漏检",
+    "无盖不计算目标 IoU",
+    "8 个原图内嵌视图",
+    "显示阈值和图层开关",
+    "拒绝覆盖输出",
+    "输入原图摘要不变"
+  ],
+  "script_sha256": "41386c580217cf5279cf924ca424a2c5ca6d73f3f6833dc12eb4db4ee368e013",
+  "fixture": "/tmp/cap-review-check-f5uvvx4f",
+  "preliminary_fixture_issue": "第一次用硬链接构建 /tmp 数据时遇到跨文件系统限制，改用复制；未进入工具执行",
+  "actual_cloud_review_executed": false
+}

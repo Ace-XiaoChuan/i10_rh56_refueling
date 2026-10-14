@@ -1,0 +1,38 @@
+Using Python 3.8.20 environment at: .venv-spahybgen
+Resolved 137 packages in 8.79s
+   Building sklearn==0.0.post12
+   Building transforms3d==0.3.1
+   Building graspnetapi==1.2.10
+Downloading cython (3.3MiB)
+Downloading numpy (16.3MiB)
+   Building setproctitle==1.3.8
+Downloading pywavelets (6.6MiB)
+Downloading scikit-image (13.2MiB)
+      Built graspnetapi==1.2.10
+      Built sklearn==0.0.post12
+   Building grasp-nms==1.0.2
+      Built transforms3d==0.3.1
+error: Failed to build `grasp-nms==1.0.2`
+  cause: The build backend returned an error
+  cause: Call to `setuptools.build_meta:__legacy__.build_wheel` failed (exit status: 1)
+
+         [stderr]
+         Traceback (most recent call last):
+           File "<string>", line 11, in <module>
+           File "/home/ace/i10_rh56_refueling_ws/.venv-spahybgen/lib/python3.8/site-packages/setuptools/build_meta.py", line 416, in build_wheel
+             return self._build_with_temp_dir(['bdist_wheel'], '.whl',
+           File "/home/ace/i10_rh56_refueling_ws/.venv-spahybgen/lib/python3.8/site-packages/setuptools/build_meta.py", line 401, in _build_with_temp_dir
+             self.run_setup()
+           File "/home/ace/i10_rh56_refueling_ws/.venv-spahybgen/lib/python3.8/site-packages/setuptools/build_meta.py", line 487, in run_setup
+             super(_BuildMetaLegacyBackend,
+           File "/home/ace/i10_rh56_refueling_ws/.venv-spahybgen/lib/python3.8/site-packages/setuptools/build_meta.py", line 338, in run_setup
+             exec(code, locals())
+           File "<string>", line 5, in <module>
+         ModuleNotFoundError: No module named 'Cython'
+
+hint: This error likely indicates that `grasp-nms@1.0.2` depends on `Cython`, but doesn't declare it as a build dependency. If `grasp-nms` is a first-party package, consider adding `Cython` to its `build-system.requires`. Otherwise, either add it to your `pyproject.toml` under:
+
+[tool.uv.extra-build-dependencies]
+grasp-nms = ["Cython"]
+
+or `uv pip install Cython` into the environment and re-run with `--no-build-isolation`.

@@ -1,0 +1,22 @@
+{
+  "status": "completed_single_frame_image_interface",
+  "result_sha256": "5030610f56f8849fa3597d241d240e266abe563c4fb5f7eb4fb8e9b3ae33619c",
+  "mask_iou": 0.9283611383709519,
+  "mask_precision": 0.9283611383709519,
+  "mask_recall": 1.0,
+  "target_semantics_validated": false,
+  "valid_3d_pose": false,
+  "actual_environment_package_count": 37,
+  "sam_source_files_bound": 79,
+  "limitations": "单帧可见几何对照；未验收泛化、位姿、抓稳或任务执行",
+  "contract_tests_passed": 10,
+  "task_regression_tests_passed": 41,
+  "dependency_check_passed": true,
+  "model_provenance_passed": true,
+  "cap_source_verify_passed": true,
+  "n1_existing_source_verify_passed": true,
+  "truck_source_verify_passed": true,
+  "documentation_local_links_checked": 53,
+  "static_compile_passed": true,
+  "git_diff_check_passed": true
+}

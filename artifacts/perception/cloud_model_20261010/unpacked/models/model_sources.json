@@ -1,0 +1,14 @@
+{
+  "pretrained_url": "https://download.openmmlab.com/mmdetection/v3.0/grounding_dino/groundingdino_swint_ogc_mmdet-822d7e9d.pth",
+  "bert_model_id": "google-bert/bert-base-uncased",
+  "bert_revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+  "files": {
+    "bert/config.json": "a3792a2bf43de8e6e20535079790abb57e293379f5f34882f91a5f4062f847a2",
+    "bert/model.safetensors": "5875f83030335d194f35b15a32e7f4e654aa302aa83af032a3f36d035dcaf8af",
+    "bert/special_tokens_map.json": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+    "bert/tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+    "bert/tokenizer_config.json": "f62a57a75856b93282501c92a86f62b169997c81e93cf6f75b7cc15d6285968e",
+    "bert/vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+    "grounding_dino_pretrained.pth": "822d7e9db9ce6ff2119b72dc6e78606a1b0a2c307234798adf0cab50f1b424e3"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "evaluation_source": "simulation_visible_geometry_only",
+  "prediction_result_sha256": "5030610f56f8849fa3597d241d240e266abe563c4fb5f7eb4fb8e9b3ae33619c",
+  "evaluation_only_sha256": "61c22b045508ebcbe29d01b7d94132a6a9927f80b79def0874afa0eed29f9955",
+  "evaluation_code_sha256": "3ea0ea14322348cb320963f8c85db3358ae9f63f1389e9d0ca65d6616efa06b6",
+  "visible_target_pixels": 2838,
+  "candidates": [
+    {
+      "index": 0,
+      "iou": 0.9283611383709519,
+      "precision": 0.9283611383709519,
+      "recall": 1.0
+    }
+  ],
+  "acceptance_threshold": null,
+  "limitations": "仅此帧可见几何评价；不自动改写推理结果或标为语义/泛化通过"
+}

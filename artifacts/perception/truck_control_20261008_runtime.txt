@@ -1,0 +1,1 @@
+{"status": "unique_candidate", "candidates": [{"index": 0, "label": "truck", "box_xyxy_px": [90.91427612304688, 277.2508850097656, 1713.3489990234375, 851.7266845703125], "detector_text_match_score": 0.7269912958145142, "sam_mask_quality_score": 0.9903653264045715, "mask_pixels": 638724, "mask_file": "mask_000.png"}], "elapsed_s": 18.897212322000996}

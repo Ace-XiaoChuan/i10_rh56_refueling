@@ -1,0 +1,48 @@
+{
+  "model_id": "IDEA-Research/grounding-dino-tiny",
+  "revision": "a2bb814dd30d776dcf7e30523b00659f4f141c71",
+  "files": {
+    "grounding-dino-tiny/config.json": {
+      "url": "https://huggingface.co/IDEA-Research/grounding-dino-tiny/resolve/a2bb814dd30d776dcf7e30523b00659f4f141c71/config.json",
+      "sha256": "eec82c5ab66e16df12a9a212e68ac011779927c2536cf9078658e35d85f0c67a",
+      "bytes": 1644
+    },
+    "grounding-dino-tiny/model.safetensors": {
+      "url": "https://huggingface.co/IDEA-Research/grounding-dino-tiny/resolve/a2bb814dd30d776dcf7e30523b00659f4f141c71/model.safetensors",
+      "sha256": "1a2412ef99bd74bcd3c2a246fa1e48581f8889a1300c9051974741314fc042f3",
+      "bytes": 689359096
+    },
+    "grounding-dino-tiny/preprocessor_config.json": {
+      "url": "https://huggingface.co/IDEA-Research/grounding-dino-tiny/resolve/a2bb814dd30d776dcf7e30523b00659f4f141c71/preprocessor_config.json",
+      "sha256": "8454179ba95e2ad22947835aad7b45862a601fc0055ab88bf1ee70892d3aea60",
+      "bytes": 457
+    },
+    "grounding-dino-tiny/special_tokens_map.json": {
+      "url": "https://huggingface.co/IDEA-Research/grounding-dino-tiny/resolve/a2bb814dd30d776dcf7e30523b00659f4f141c71/special_tokens_map.json",
+      "sha256": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+      "bytes": 125
+    },
+    "grounding-dino-tiny/tokenizer.json": {
+      "url": "https://huggingface.co/IDEA-Research/grounding-dino-tiny/resolve/a2bb814dd30d776dcf7e30523b00659f4f141c71/tokenizer.json",
+      "sha256": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+      "bytes": 711396
+    },
+    "grounding-dino-tiny/tokenizer_config.json": {
+      "url": "https://huggingface.co/IDEA-Research/grounding-dino-tiny/resolve/a2bb814dd30d776dcf7e30523b00659f4f141c71/tokenizer_config.json",
+      "sha256": "d40ab645b68211910b9170d22433d43186a6ec8ee6fd10ba170524b25bf4fb56",
+      "bytes": 1237
+    },
+    "grounding-dino-tiny/vocab.txt": {
+      "url": "https://huggingface.co/IDEA-Research/grounding-dino-tiny/resolve/a2bb814dd30d776dcf7e30523b00659f4f141c71/vocab.txt",
+      "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+      "bytes": 231508
+    },
+    "grounding-dino-tiny/added_tokens.json": {
+      "url": "https://huggingface.co/IDEA-Research/grounding-dino-tiny/resolve/a2bb814dd30d776dcf7e30523b00659f4f141c71/added_tokens.json",
+      "sha256": "909e96cb32d92ce728a01bc99850cbba26196d74115c17ebeb019275412588f2",
+      "bytes": 82
+    }
+  },
+  "weights_included": false,
+  "meaning": "当前推理预训练权重的来源记录；MMDetection 训练权重格式兼容仍待核对"
+}

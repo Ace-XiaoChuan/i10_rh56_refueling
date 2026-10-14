@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "phase": "smoke",
+  "recipe_sha256": "d9e0d17831e286aee692d3e15268cf7142ee69f911ca672be01f568380d5d242",
+  "elapsed_seconds": 9.384145589079708,
+  "metrics": {
+    "visual_parameter_updated": true,
+    "bert_frozen": true,
+    "image_ids_seen": [
+      1,
+      12
+    ],
+    "peak_cuda_allocated_mib": 1176.38671875
+  },
+  "scope": "同场景首轮实验，不代表跨批次或实物自动语义验收"
+}

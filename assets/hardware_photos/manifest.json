@@ -78,6 +78,21 @@
       "width_px": 1279,
       "height_px": 1706,
       "batch": 2
+    },
+    {
+      "original_root_filename": "be44de650d565ff38af7dd108c384037.jpg",
+      "file": "fuel_tank/be44de650d565ff38af7dd108c384037.jpg",
+      "caption": "油箱盖安装于凹腔、外门已打开的实物场景",
+      "destination": "assets/hardware_photos/fuel_tank/be44de650d565ff38af7dd108c384037.jpg",
+      "bytes": 138033,
+      "sha256": "b4b4964d87dc42d156b21dd662e9fcb6dba2543d29840468326cbd936e6c8c6f",
+      "width_px": 1706,
+      "height_px": 1279,
+      "archived_date": "2026-10-08",
+      "source": "用户在聊天中补充并提供原图本地路径",
+      "image_edits": "none; bytes preserved",
+      "legacy_root_symlink": "be44de650d565ff38af7dd108c384037.jpg"
     }
-  ]
+  ],
+  "last_archived_date": "2026-10-08"
 }

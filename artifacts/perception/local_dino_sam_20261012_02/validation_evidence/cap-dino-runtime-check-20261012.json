@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "python": "3.10.12",
+  "packages": {
+    "torch": "2.1.2+cpu",
+    "torchvision": "0.16.2+cpu",
+    "mmcv": "2.1.0",
+    "mmengine": "0.10.7",
+    "mmdet": "3.3.0",
+    "numpy": "1.26.4",
+    "transformers": "4.38.2"
+  },
+  "device": "cpu",
+  "cpu_nms": true,
+  "cpu_deformable_attention": true,
+  "scope": "环境与最小算子检查；完整模型及图像结果须单独运行"
+}

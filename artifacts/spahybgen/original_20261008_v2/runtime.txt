@@ -1,0 +1,25 @@
+Matplotlib created a temporary cache directory at /tmp/matplotlib-uspdz07c because the default path (/home/ace/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib is building the font cache; this may take a moment.
+WARNING:root:Failed to import geometry msgs in rigid_transformations.py.
+WARNING:root:Failed to import ros dependencies in rigid_transforms.py
+WARNING:root:autolab_core not installed as catkin package, RigidTransform ros methods will be unavailable
+loading network: assets/trained_models/spahybgen_unet_64_voxel.pt
+SummaryWriter log to: data/grasp_otimization/10-08-13-25
+Processing joint #0: left_finger_joint
+Processing joint #1: right_finger_joint
+[SpactialOptimization]: Hand Model Initialized - robotiq2f. Num of Contact Point: 18
+trial:   0%|            [0.000s, ?it/s]trial:   1%|            [2.918s,  2.92s/it]trial:   2%| ▎          [3.138s,  1.19it/s]trial:   3%| ▎          [3.557s,  1.44it/s]trial:   5%| ▌          [3.737s,  2.54it/s]trial:   6%| ▌          [3.859s,  3.11it/s]trial:   8%| ▊          [4.051s,  4.44it/s]trial:   9%| ▉          [4.212s,  5.87it/s]trial:  11%| █          [4.454s,  6.54it/s]trial:  12%| █▎         [4.631s,  7.61it/s]trial:  13%| █▎         [4.750s,  7.75it/s]trial:  14%| █▍         [4.954s,  6.89it/s]trial:  15%| █▌         [5.085s,  7.05it/s]trial:  17%| █▋         [5.270s,  8.19it/s]trial:  18%| █▊         [5.378s,  8.41it/s]trial:  19%| █▉         [5.544s,  9.53it/s]trial:  20%| ██         [5.699s,  8.63it/s]trial:  22%| ██▏        [5.944s,  8.45it/s]trial:  23%| ██▎        [6.161s,  8.70it/s]trial:  24%| ██▍        [6.643s,  5.29it/s]trial:  25%| ██▌        [6.823s,  5.35it/s]trial:  27%| ██▋        [7.003s,  6.70it/s]trial:  28%| ██▊        [7.167s,  7.99it/s]trial:  30%| ███        [7.321s,  9.19it/s]trial:  32%| ███▏       [7.499s,  9.76it/s]trial:  33%| ███▎       [7.698s,  9.86it/s]trial:  35%| ███▌       [7.857s, 10.57it/s]trial:  37%| ███▋       [8.019s, 11.06it/s]trial:  38%| ███▊       [8.196s, 11.14it/s]trial:  40%| ████       [8.371s, 11.23it/s]trial:  42%| ████▏      [8.528s, 11.64it/s]trial:  43%| ████▎      [8.700s, 11.63it/s]trial:  45%| ████▌      [8.886s, 11.36it/s]trial:  47%| ████▋      [9.078s, 11.06it/s]trial:  48%| ████▊      [9.267s, 10.92it/s]trial:  50%| █████      [9.439s, 11.10it/s]trial:  52%| █████▏     [9.593s, 11.63it/s]trial:  53%| █████▎     [9.755s, 11.82it/s]trial:  55%| █████▌     [9.938s, 11.55it/s]trial:  57%| █████▋     [10.083s, 12.14it/s]trial:  58%| █████▊     [10.248s, 12.12it/s]trial:  60%| ██████     [10.395s, 12.55it/s]trial:  62%| ██████▏    [10.578s, 12.00it/s]trial:  63%| ██████▎    [10.791s, 11.08it/s]trial:  65%| ██████▌    [10.998s, 10.62it/s]trial:  67%| ██████▋    [11.187s, 10.61it/s]trial:  68%| ██████▊    [11.341s, 11.21it/s]trial:  70%| ███████    [11.501s, 11.58it/s]trial:  72%| ███████▏   [11.708s, 10.93it/s]trial:  73%| ███████▎   [11.879s, 11.14it/s]trial:  75%| ███████▌   [12.033s, 11.64it/s]trial:  77%| ███████▋   [12.190s, 11.94it/s]trial:  78%| ███████▊   [12.341s, 12.32it/s]trial:  80%| ████████   [12.490s, 12.62it/s]trial:  82%| ████████▏  [13.245s,  5.93it/s]trial:  82%| ████████▎  [13.536s,  5.25it/s]trial:  83%| ████████▎  [13.789s,  4.93it/s]trial:  84%| ████████▍  [14.039s,  4.68it/s]trial:  85%| ████████▌  [14.320s,  4.35it/s]trial:  86%| ████████▌  [14.573s,  4.24it/s]trial:  87%| ████████▋  [14.838s,  4.10it/s]trial:  88%| ████████▊  [15.188s,  3.66it/s]trial:  88%| ████████▊  [15.420s,  3.83it/s]trial:  89%| ████████▉  [15.683s,  3.82it/s]trial:  90%| █████████  [16.513s,  2.34it/s]trial:  91%| █████████  [16.775s,  2.64it/s]trial:  92%| █████████▏ [17.024s,  2.94it/s]trial:  92%| █████████▎ [17.285s,  3.16it/s]trial:  93%| █████████▎ [17.530s,  3.39it/s]trial:  94%| █████████▍ [17.775s,  3.57it/s]trial:  95%| █████████▌ [18.052s,  3.58it/s]trial:  96%| █████████▌ [18.295s,  3.72it/s]trial:  97%| █████████▋ [18.583s,  3.64it/s]trial:  98%| █████████▊ [18.836s,  3.73it/s]trial:  98%| █████████▊ [19.138s,  3.59it/s]trial:  99%| █████████▉ [19.398s,  3.67it/s]trial: 100%| ██████████ [25.325s,  1.97s/it]trial: 100%| ██████████ [25.615s,  4.68it/s]
+[Best Grasp]: [FQH]: 0.0014404704561457038
+[Best Grasp]: [QH]: 0.0010996690252795815
+[Best Grasp]: [RH]: 0.8024845719337463
+[Best Grasp]: [WH]: 7.58833994041197e-05
+[Best Grasp]: [PN]: 1.1430742006268702e-06
+[Best Grasp]: [JR]: 0.0
+[Best Grasp]: [CK]: 7.053790614008904e-05
+[Best Grasp]: [LD]: 6.412765651475638e-05
+[Best Grasp]: [FC]: 0.04536818712949753
+[Best Grasp]: [AB]: 0.1993337720632553
+[Best Grasp]: [CTS]: 0.6266618967056274
+[Best Grasp]: [loss_all]: 1.0499383211135864
+[Best Grasp]: [loss_opti]: 7.07349157333374
+复现完成： /home/ace/i10_rh56_refueling_ws/artifacts/spahybgen/original_20261008_v2

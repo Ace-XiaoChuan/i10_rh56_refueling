@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "tools/generate_rh56_grasps.py", line 275, in <module>
+    main()
+  File "tools/generate_rh56_grasps.py", line 271, in main
+    run(args)
+  File "tools/generate_rh56_grasps.py", line 159, in run
+    raise FileExistsError("output directory already exists")
+FileExistsError: output directory already exists

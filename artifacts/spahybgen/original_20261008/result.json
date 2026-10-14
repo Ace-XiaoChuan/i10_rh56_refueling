@@ -1,0 +1,27 @@
+{
+  "status": "failed",
+  "started_utc": "2026-10-08T05:23:35.186274+00:00",
+  "source_url": "https://github.com/wangzivector/SpaHybGen",
+  "source_commit": "39e5794506bbbf2fd41804f73c93b7b393be550e",
+  "entrypoint": "scripts/generation_pipeline_test.py",
+  "hand": "robotiq2f",
+  "batch_size": 64,
+  "max_iter": 120,
+  "seed": 20261008,
+  "python": "3.8.20 (default, Oct  2 2024, 16:34:12) \n[Clang 18.1.8 ]",
+  "platform": "Linux-6.18.33.1-microsoft-standard-WSL2-x86_64-with-glibc2.2.5",
+  "runner_sha256": "f159c236a2692ca33ca752a57b6e64e4ee4aeb7ad039e9a5e7bc2c8a3245ee8e",
+  "requirements_sha256": "87588331b3920df6686bfeb9e53e41c361c48c5fc16c73a22a7d883b4e81b41e",
+  "algorithm_modified": false,
+  "physical_grasp_validated": false,
+  "rh56_validated": false,
+  "cap_task_validated": false,
+  "instrumentation": [
+    "固定随机种子及 CPU 线程数",
+    "保存推理及优化数组",
+    "将浏览器展示保存为 HTML"
+  ],
+  "failed_stage": "imports",
+  "error": "ModuleNotFoundError(\"No module named 'mujoco'\")",
+  "elapsed_seconds": 6.069729990999804
+}

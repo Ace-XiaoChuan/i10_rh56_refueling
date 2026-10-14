@@ -1,0 +1,72 @@
+{
+  "runs": {
+    "installed_cap": {
+      "status": "unique_candidate",
+      "inference_exit_code": 0,
+      "source_verify_exit_code": 0,
+      "result_sha256": "c16883697f53a339ce97ebb81301b1672d8d55b657e374faf3969f7117627853",
+      "target_semantics_validated_by_runtime": false
+    },
+    "installed_descriptive_cap": {
+      "status": "unique_candidate",
+      "inference_exit_code": 0,
+      "source_verify_exit_code": 0,
+      "result_sha256": "57b0a3db3fb3e97d013983d48e975e96b92ef35a64e4b9a177180b7d3b854b31",
+      "target_semantics_validated_by_runtime": false
+    },
+    "fuel_filler_opening": {
+      "status": "ambiguous",
+      "inference_exit_code": 2,
+      "source_verify_exit_code": 0,
+      "result_sha256": "e3b48fc1f24764dd58484154619b14bd8428366edb20d56e6664a420d117ca47",
+      "target_semantics_validated_by_runtime": false
+    },
+    "cap_front_control": {
+      "status": "unique_candidate",
+      "inference_exit_code": 0,
+      "source_verify_exit_code": 0,
+      "result_sha256": "a2293e00ff845528d75404ea7a57b87d8f5a00fa1acd0b453001825882bfebb1",
+      "target_semantics_validated_by_runtime": false
+    },
+    "fuel_cap": {
+      "status": "unique_candidate",
+      "inference_exit_code": 0,
+      "source_verify_exit_code": 0,
+      "result_sha256": "ef4d003978d06146d0338511c5f9b1a2321b914aab4e92e1a42fe3ddb8598069",
+      "target_semantics_validated_by_runtime": false
+    },
+    "installed_black_cap": {
+      "status": "ambiguous",
+      "inference_exit_code": 2,
+      "source_verify_exit_code": 0,
+      "result_sha256": "bf051022d6de119f4ba36c2a3c6af0fbe18f8ad5d0b62c0680b8a694ef7322d4",
+      "target_semantics_validated_by_runtime": false
+    }
+  },
+  "original_models_and_implementation_changed": false,
+  "manual_review_is_independent": true,
+  "pixel_annotations_available": false,
+  "installed_scene_feasibility_passed": false,
+  "documentation_links_checked": 76,
+  "git_diff_check_exit_code": 0,
+  "review_sha256": "8201e044b6fb767c3961e0be1a4dcfce7a83afcddddd0a2532c620c7cac801cb",
+  "logs_sha256": {
+    "installed_descriptive_cap_verify.txt": "f872486860fccf7cbc5ca40712e01c2550fcdeb6898e011f9a9742eb49b48988",
+    "cap_front_control.txt": "14e0d43653e019da40d520cf1417a4d53c707c4dcd30713da8f1fe3afe3829d2",
+    "fuel_filler_opening.txt": "c955842beacdd126279d74c129bf5b1d9d7471f14534e92ea729079bd0fe0d89",
+    "installed_cap_verify.txt": "f872486860fccf7cbc5ca40712e01c2550fcdeb6898e011f9a9742eb49b48988",
+    "fuel_cap_verify.txt": "f872486860fccf7cbc5ca40712e01c2550fcdeb6898e011f9a9742eb49b48988",
+    "fuel_cap.txt": "2db280f44509a08a3c6cad620fa125c0a2174d5a0ab504ee2a83638f8f679e16",
+    "cap_front_control_verify.txt": "f872486860fccf7cbc5ca40712e01c2550fcdeb6898e011f9a9742eb49b48988",
+    "installed_black_cap.txt": "dfd5cffbcf0b8c3afe2144b87371d53ad63119e636ea5d16503d3e2d3af734b1",
+    "installed_black_cap_verify.txt": "f872486860fccf7cbc5ca40712e01c2550fcdeb6898e011f9a9742eb49b48988",
+    "fuel_filler_opening_verify.txt": "f872486860fccf7cbc5ca40712e01c2550fcdeb6898e011f9a9742eb49b48988",
+    "installed_descriptive_cap.txt": "bd0f42c5dfc3eae2378f68f56149a16b9afffe2ad4d2be973bfef799ef3729a8",
+    "installed_cap.txt": "e6dadaab469f7a86db719cfb5421c3e9c32683e78dd0b4b526476c3617c84c3c"
+  },
+  "documents_sha256": {
+    "doc/assembly_contract.md": "79d8928c57b92a716212d02d7f5f924dd7bb943a7eef8317b006d2e50e751066",
+    "doc/grounded_sam_perception.md": "bccb20c35d9f766cefebfe57305e1c48c26106010c726ff7553dffa766edff4e",
+    "AGENTS.md": "639df56004befae33ad8ab65ad7027fb4370d31f906af5ce2fa102d9f0f834cc"
+  }
+}

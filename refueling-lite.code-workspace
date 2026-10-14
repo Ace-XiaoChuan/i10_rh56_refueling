@@ -1,0 +1,37 @@
+{
+    "folders": [
+        { "name": "源码", "path": "src" },
+        { "name": "工具", "path": "tools" },
+        { "name": "测试", "path": "tests" },
+        { "name": "配置", "path": "config" },
+        { "name": "文档", "path": "doc" }
+    ],
+    "settings": {
+        "ROS2.distro": "humble",
+        "python.defaultInterpreterPath": "/home/ace/mujoco-env/bin/python",
+        "python.analysis.indexing": false,
+        "python.analysis.extraPaths": [
+            "/home/ace/i10_rh56_refueling_ws/src",
+            "/opt/ros/humble/lib/python3.10/site-packages",
+            "/opt/ros/humble/local/lib/python3.10/dist-packages"
+        ],
+        "python.analysis.exclude": [
+            "**/__pycache__/**",
+            "**/.pytest_cache/**"
+        ],
+        "files.watcherExclude": {
+            "**/__pycache__/**": true,
+            "**/.pytest_cache/**": true
+        },
+        "search.exclude": {
+            "**/__pycache__/**": true,
+            "**/.pytest_cache/**": true
+        },
+        "terminal.integrated.cwd": "/home/ace/i10_rh56_refueling_ws",
+        "cmake.sourceDirectory": "/home/ace/i10_rh56_refueling_ws/src/i10_rh56_moveit_config",
+        "python.autoComplete.extraPaths": [
+            "/opt/ros/humble/lib/python3.10/site-packages",
+            "/opt/ros/humble/local/lib/python3.10/dist-packages"
+        ]
+    }
+}

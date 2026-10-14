@@ -1,0 +1,20 @@
+{
+  "schema": "sam_diagnostic_session_v1",
+  "image_path": "/home/ace/i10_rh56_refueling_ws/pic/带油箱盖_远景.jpg",
+  "image_sha256": "8411ad5f6ed240753eb412890d09b7030b1dfa8bd1a8b48d6535501d0c0049dc",
+  "image_size_wh": [
+    1920,
+    1440
+  ],
+  "source_copy": "source.jpg",
+  "automatic_reference": null,
+  "implementation": {
+    "/home/ace/i10_rh56_refueling_ws/tools/diagnose_sam_image.py": "dbaf81807c2211542bbd0d7a16fee912e1df579b3245a3e0261eb63147f07ff3",
+    "/home/ace/i10_rh56_refueling_ws/tools/fetch_perception_models.py": "350a6eda9e455ef476fb5d74574b60fff94cab99166e79c9228d29ccec8ea35c",
+    "/home/ace/i10_rh56_refueling_ws/src/fuel_cap_task/sam_diagnostic.py": "a2eae3649760175fe334353f5613c48751c2e962ac5b99c4dd5df2799fa723ba",
+    "/home/ace/i10_rh56_refueling_ws/src/fuel_cap_task/sam_diagnostic_gui.py": "32aebd261526faaed0415d622ab40564588166dcd2f3c7b3c6b7efb4f52d0304",
+    "/home/ace/i10_rh56_refueling_ws/dependencies/perception-requirements.txt": "4dfdf7aa9a16356a41abe1591b945fb548425f6df054194a0b8bdecdfdb2a0ad"
+  },
+  "valid_3d_pose": false,
+  "target_semantics_validated": false
+}

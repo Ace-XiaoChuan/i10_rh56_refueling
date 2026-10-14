@@ -1,0 +1,13 @@
+{
+  "status": "passed_visible_interior_ray_check",
+  "samples": 22,
+  "max_error_m": 8.13853675563081e-08,
+  "mean_error_m": 3.487115047223261e-08,
+  "rotation_orthogonality_error": 2.016271937517304e-17,
+  "rotation_determinant": 1.0,
+  "valid_depth_pixels": 302222,
+  "target_has_valid_depth": true,
+  "files_match": true,
+  "capture_code_matches": true,
+  "limitations": "只验证三像素内缩后的可见内域；初次边缘射线存在2.577mm差异，保留ray_check_first.json，未更改原始深度，也不宣称边缘深度等同解析曲面"
+}

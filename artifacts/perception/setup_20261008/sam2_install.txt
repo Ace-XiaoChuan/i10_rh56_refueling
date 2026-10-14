@@ -1,0 +1,7 @@
+Using Python 3.10.12 environment at: .venv-perception
+Resolved 1 package in 23.79s
+   Building sam-2 @ file:///home/ace/i10_rh56_refueling_ws/dependencies/sam2
+      Built sam-2 @ file:///home/ace/i10_rh56_refueling_ws/dependencies/sam2
+Prepared 1 package in 2.52s
+Installed 1 package in 1ms
+ + sam-2==1.0 (from file:///home/ace/i10_rh56_refueling_ws/dependencies/sam2)

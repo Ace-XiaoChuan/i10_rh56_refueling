@@ -1,0 +1,106 @@
+{
+  "schema": "python_environment_consolidation_v1",
+  "status": "complete",
+  "date": "2026-10-09",
+  "shared_environment": "/home/ace/mujoco-env",
+  "aliases": [
+    "/home/ace/i10_rh56_refueling_ws/.venv",
+    "/home/ace/i10_rh56_refueling_ws/.venv-perception"
+  ],
+  "old_environment_directories_deleted": true,
+  "spahybgen_environment": "unchanged; Python 3.8.20",
+  "existing_package_changes": {
+    "mujoco": {
+      "before": "3.8.1",
+      "after": "3.13.0"
+    },
+    "setuptools": {
+      "before": "59.6.0",
+      "after": "75.8.2"
+    }
+  },
+  "added_packages": {
+    "portalocker": "4.4.0",
+    "requests": "2.34.2",
+    "exceptiongroup": "1.3.1",
+    "antlr4-python3-runtime": "4.9.3",
+    "trimesh": "5.1.0",
+    "hydra-core": "1.3.2",
+    "transformers": "4.49.0",
+    "omegaconf": "2.3.1",
+    "idna": "3.20",
+    "pytest": "8.3.5",
+    "iopath": "0.1.10",
+    "charset-normalizer": "3.5.2",
+    "safetensors": "0.8.0",
+    "tokenizers": "0.21.4",
+    "tqdm": "4.67.1",
+    "regex": "2026.9.29",
+    "urllib3": "2.8.0",
+    "huggingface-hub": "0.29.3",
+    "SAM-2": "1.0",
+    "iniconfig": "2.3.1",
+    "pycollada": "0.9.3",
+    "certifi": "2026.7.22",
+    "pluggy": "1.6.0"
+  },
+  "checks": {
+    "regression": {
+      "tests": 151,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 2
+    },
+    "gui_supplement": {
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "pip_check": true,
+    "existing_robotics_imports": true,
+    "numpy_torch_bridge": true,
+    "candidate_loaded": true,
+    "approach_validation": {
+      "mode": "mujoco_kinematic_replay_not_dynamics",
+      "waypoints": 268,
+      "stage_names": [
+        "move to pregrasp",
+        "axial approach"
+      ],
+      "maximum_robot_penetration_m": 0.0,
+      "worst_pair": null,
+      "endpoint_position_error_m": 9.293331248366469e-05,
+      "endpoint_orientation_error_rad": 0.00012189687259509252,
+      "hand_cap_door_unchanged": true,
+      "axial_max_lateral_error_m": 9.291673782715155e-05,
+      "axial_progress_start_end_m": [
+        5.195993949769221e-06,
+        0.1000042581009579
+      ],
+      "coverage_note": "MuJoCo original enabled geometry; full planning geometry checked by FCL",
+      "trajectory_sha256": "a53f39166440e0952ce7f679ee5c92282c0568281f8f3e7338473a8f890e5929"
+    },
+    "planning_model_sources": true,
+    "initial_selection_verify_only": true,
+    "rgbd_render": true,
+    "detector_status": "unique_candidate",
+    "sam_same_prompt_comparison": {
+      "comparison": "same_photo_and_saved_operator_box_new_shared_environment",
+      "old_mask_pixels": 35894,
+      "new_mask_pixels": 35894,
+      "changed_pixels": 0,
+      "mask_iou": 1.0,
+      "limitations": "仅检查同图同提示的环境兼容性；不计自动语义识别或跨图泛化通过。"
+    },
+    "alias_result_verification": true,
+    "activation": "两个入口均指向共享环境： /home/ace/mujoco-env\nMuJoCo: 3.13.0 Python: 3.10.12\n/home/ace/mujoco-env/bin/python",
+    "unchanged_source_files": 31
+  },
+  "limitations": [
+    "WSL 启动耗时未测量。",
+    "GUI 两项在沙箱中跳过，已在 WSLg 下补验通过。",
+    "新推理仅验证环境兼容性，历史语义失败和物理验证边界不改变。",
+    "旧视觉结果的完整环境绑定保持不变；共享环境中新推理另存，不改写旧报告。"
+  ]
+}

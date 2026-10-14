@@ -1,0 +1,6 @@
+{
+  "source": "agent_visual_review_separate_from_prediction",
+  "box_only": "目视掩膜主要覆盖中央盖体及握梁；不是原自动结果中的面板/门。",
+  "box_points": "目视掩膜主要覆盖中央盖体及握梁；边界与仅框结果略有差异。",
+  "limit": "框和点是开发检查提示，不是用户选定标注；没有独立像素参考，不报告实物 IoU 或泛化通过。"
+}

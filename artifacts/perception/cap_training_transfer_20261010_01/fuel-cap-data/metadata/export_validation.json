@@ -1,0 +1,10 @@
+{
+  "images": 16,
+  "boxes": 11,
+  "negative_images": 5,
+  "unique_ids": true,
+  "bbox_ranges_and_areas": true,
+  "gallery_references_exist": true,
+  "split_created": false,
+  "training_started": false
+}

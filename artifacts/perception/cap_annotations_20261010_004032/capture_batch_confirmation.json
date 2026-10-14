@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-10",
+  "source": "user_message",
+  "question": "pic/ 里的照片是否同一次拍摄、同一场景换角度？",
+  "answer": "同一次拍摄，同一场景换角度",
+  "capture_batch_id": "pic_single_capture_same_scene_01",
+  "scope": "pic/ 本次盘点的 18 张照片",
+  "capture_timestamp": null,
+  "meaning": "整理批次编号不表示实际拍摄日期；所有照片属于同一次拍摄的同一场景"
+}
