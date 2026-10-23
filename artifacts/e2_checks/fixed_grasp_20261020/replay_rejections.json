@@ -1,0 +1,62 @@
+[
+  {
+    "case": "target",
+    "rejected": true,
+    "reason": "MTC hand_position 与当前盖体/候选的计算结果不一致",
+    "report": "rejected_reports/target.json"
+  },
+  {
+    "case": "axis",
+    "rejected": true,
+    "reason": "MTC outward_axis_world 与当前盖体/候选的计算结果不一致",
+    "report": "rejected_reports/axis.json"
+  },
+  {
+    "case": "orientation",
+    "rejected": true,
+    "reason": "MTC 手根朝向与当前盖体/候选不一致",
+    "report": "rejected_reports/orientation.json"
+  },
+  {
+    "case": "channels",
+    "rejected": true,
+    "reason": "MTC pregrasp_channels 与固定候选不一致",
+    "report": "rejected_reports/channels.json"
+  },
+  {
+    "case": "joint_order",
+    "rejected": true,
+    "reason": "Arm joint order mismatch",
+    "report": "rejected_reports/joint_order.json"
+  },
+  {
+    "case": "discontinuity",
+    "rejected": true,
+    "reason": "Trajectory discontinuity or insufficient sampling",
+    "report": "rejected_reports/discontinuity.json"
+  },
+  {
+    "case": "endpoint",
+    "rejected": true,
+    "reason": "MuJoCo validation failed: error=0.008522639135752335, penetration=0.0, pair=None",
+    "report": "rejected_reports/endpoint.json"
+  },
+  {
+    "case": "source",
+    "rejected": true,
+    "reason": "Stale source: config/fixed_grasp.json",
+    "report": "rejected_reports/source.json"
+  },
+  {
+    "case": "world",
+    "rejected": true,
+    "reason": "Planning scene pose differs from sampled world",
+    "report": "rejected_reports/world.json"
+  },
+  {
+    "case": "failed_planning_no_replay",
+    "rejected": true,
+    "reason": "Not a validated MTC approach report",
+    "report": "blocked/trajectory.json"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "0": {
+    "channel": 0,
+    "frequency": 50.0,
+    "segments": [
+      "timestamp",
+      "R1_actual_q",
+      "R1_actual_qd",
+      "R1_actual_TCP_pose",
+      "R1_actual_TCP_speed",
+      "R1_actual_TCP_force",
+      "R1_actual_current",
+      "R1_joint_temperatures",
+      "R1_target_q",
+      "R1_joint_torque_sensor",
+      "R1_robot_mode",
+      "R1_safety_mode",
+      "R1_is_simulation_enabled"
+    ],
+    "to_server": false,
+    "trigger": 0
+  }
+}

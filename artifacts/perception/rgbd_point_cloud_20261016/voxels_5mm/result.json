@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "mode": "observed_surface_voxels",
+  "point_cloud_dir": "/home/ace/i10_rh56_refueling_ws/artifacts/perception/rgbd_point_cloud_20261016/point_cloud",
+  "source": "mujoco_rendered_rgbd",
+  "timestamp_s": 0.0,
+  "timestamp_clock": "simulation",
+  "frame_id": "world",
+  "length_unit": "m",
+  "voxel_size_m": 0.005,
+  "origin_world_m": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "index_axis_order": [
+    "x",
+    "y",
+    "z"
+  ],
+  "input_point_count": 302222,
+  "voxel_count": 36898,
+  "points_per_voxel_mean": 8.19074204563933,
+  "points_per_voxel_max": 24,
+  "point_count_conserved": true,
+  "global_view_point_count": 30000,
+  "local_radius_cells": 8,
+  "max_local_display_cubes": 3000,
+  "max_point_to_center_distance_m": 0.004328441208917919,
+  "cell_half_diagonal_m": 0.004330127018922193,
+  "observed_surface_only": true,
+  "unlisted_cell_state": "unknown",
+  "ground_truth_used": false,
+  "network_input_prepared": false,
+  "input_sha256": {
+    "result.json": "c3bbdbc9e481551695c7072bc587089a14ab8a57e359b988316d6c6a2dafa0ad",
+    "point_cloud.npz": "53be02de9193adfd45e305261a5544258902e097ae39916d625198342ee5c5dc"
+  },
+  "implementation_sha256": {
+    "tools/voxelize_cap_point_cloud.py": "80e3bf9d027599ea30c3d382efb73ae410c602027b5f99ee1fd7faea5705f87f",
+    "tools/voxel_viewer.html": "5efbabc5a2ebca20f1c038e498f6be4aa89a56aa8cf4cbfdc9b93eb24b015690",
+    "src/fuel_cap_task/voxelization.py": "704fd234aecda0d0d8436e220f3dc55da0e6dac82f2076b2610b0d5dd4b1696b",
+    "src/fuel_cap_task/rgbd_point_cloud.py": "2b27de4c134d902bc694f725aea882654cc265c2a18bab82246f198b847ec0fe",
+    "tools/reconstruct_cap_point_cloud.py": "83b0e4128efaf54337b5d2a78f8b285371853490d380599b0e4fd13d9fcfca92"
+  },
+  "plotly_javascript_sha256": "0a17719a72751704861215da0e5c5cdb3f9a8d50eff5cb84cb6f8b80786682b0",
+  "outputs_sha256": {
+    "index.html": "b078339777f54a7b60c5c6a9ea9d49a5f637f079b695466d2d5e102b153af5ee",
+    "voxel_centers.ply": "d16af83cdc8df620240a84b1b72796ff09a4f6c54b0bf652d1c7e57ad874482f",
+    "voxels.npz": "3ecf8f274ae1e440ab6b2c92f574cf50b684c4662a552eaa4a1512ecdf98138f",
+    "preview.png": "4fa705f47c30c84a411c1d4046aff0cc90d62bbbafa0f6c84196531a1a7996d6"
+  }
+}

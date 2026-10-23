@@ -1,0 +1,1247 @@
+{
+  "Math.poseTrans_flange_basis_computation": {
+    "host_duration_s": 0.005575336999754654,
+    "host_finished_utc": "2026-10-23T09:55:37.042579Z",
+    "host_started_utc": "2026-10-23T09:55:37.036996Z",
+    "method": "Math.poseTrans_flange_basis_computation",
+    "ok": true,
+    "value": [
+      {
+        "flange_pose_raw": [
+          0.7858284085988684,
+          0.31962418172927565,
+          0.03419269028820247,
+          3.1301263236498853,
+          -1.1181029051912559,
+          -0.09431606948072926
+        ],
+        "local_translation_pose": [
+          0.01,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "source": "SDK_math_computation_not_physical_motion",
+        "transformed_pose_raw": [
+          0.7901828613613479,
+          0.3192122647295939,
+          0.04318541320869256,
+          3.1301263236498853,
+          -1.1181029051912554,
+          -0.09431606948072924
+        ]
+      },
+      {
+        "flange_pose_raw": [
+          0.7858284085988684,
+          0.31962418172927565,
+          0.03419269028820247,
+          3.1301263236498853,
+          -1.1181029051912559,
+          -0.09431606948072926
+        ],
+        "local_translation_pose": [
+          0.0,
+          0.01,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "source": "SDK_math_computation_not_physical_motion",
+        "transformed_pose_raw": [
+          0.7847840545149384,
+          0.3096789914653817,
+          0.03424284168227921,
+          3.1301263236498853,
+          -1.1181029051912554,
+          -0.09431606948072924
+        ]
+      },
+      {
+        "flange_pose_raw": [
+          0.7858284085988684,
+          0.31962418172927565,
+          0.03419269028820247,
+          3.1301263236498853,
+          -1.1181029051912559,
+          -0.09431606948072926
+        ],
+        "local_translation_pose": [
+          0.0,
+          0.0,
+          0.01,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "source": "SDK_math_computation_not_physical_motion",
+        "transformed_pose_raw": [
+          0.794769776821166,
+          0.3186631848508612,
+          0.029819085446316968,
+          3.1301263236498853,
+          -1.1181029051912554,
+          -0.09431606948072924
+        ]
+      }
+    ]
+  },
+  "RobotAlgorithm.forwardToolKinematics_model_probes": {
+    "host_duration_s": 0.018544791000749683,
+    "host_finished_utc": "2026-10-23T09:55:37.036783Z",
+    "host_started_utc": "2026-10-23T09:55:37.018207Z",
+    "method": "RobotAlgorithm.forwardToolKinematics_model_probes",
+    "ok": true,
+    "value": [
+      {
+        "changed_axis": -1,
+        "delta_rad": 0.0,
+        "flange_pose_raw": [
+          0.7858289396810094,
+          0.3196246255091984,
+          0.03419310591553587,
+          3.130128154533304,
+          -1.1181036980282377,
+          -0.09431771594377507
+        ],
+        "q_rad": [
+          0.6960830124066383,
+          -0.7460257081188908,
+          1.7296665897568109,
+          -1.276848481788336,
+          -0.8670498175511218,
+          -1.1508858772100354
+        ],
+        "result_code": 0,
+        "source": "controller_model_computation_not_physical_motion"
+      },
+      {
+        "changed_axis": 0,
+        "delta_rad": -0.1,
+        "flange_pose_raw": [
+          0.813812286587665,
+          0.23957584575877247,
+          0.03419310591553587,
+          3.130128154533304,
+          -1.1181036980282377,
+          -0.19431771594377478
+        ],
+        "q_rad": [
+          0.5960830124066383,
+          -0.7460257081188908,
+          1.7296665897568109,
+          -1.276848481788336,
+          -0.8670498175511218,
+          -1.1508858772100354
+        ],
+        "result_code": 0,
+        "source": "controller_model_computation_not_physical_motion"
+      },
+      {
+        "changed_axis": 0,
+        "delta_rad": 0.1,
+        "flange_pose_raw": [
+          0.7499938497695726,
+          0.39647982165539114,
+          0.03419310591553587,
+          3.130128154533304,
+          -1.1181036980282377,
+          0.005682284056224282
+        ],
+        "q_rad": [
+          0.7960830124066383,
+          -0.7460257081188908,
+          1.7296665897568109,
+          -1.276848481788336,
+          -0.8670498175511218,
+          -1.1508858772100354
+        ],
+        "result_code": 0,
+        "source": "controller_model_computation_not_physical_motion"
+      },
+      {
+        "changed_axis": 1,
+        "delta_rad": -0.1,
+        "flange_pose_raw": [
+          0.7720824743067837,
+          0.3081378801066307,
+          -0.04577406236079791,
+          2.98872309394658,
+          -1.043276748050596,
+          0.030574773725179034
+        ],
+        "q_rad": [
+          0.6960830124066383,
+          -0.8460257081188908,
+          1.7296665897568109,
+          -1.276848481788336,
+          -0.8670498175511218,
+          -1.1508858772100354
+        ],
+        "result_code": 0,
+        "source": "controller_model_computation_not_physical_motion"
+      },
+      {
+        "changed_axis": 1,
+        "delta_rad": 0.1,
+        "flange_pose_raw": [
+          0.7933805938628096,
+          0.3259348970294117,
+          0.11554918512799207,
+          -2.9646269180191136,
+          -1.1823580797514137,
+          -0.26650098210441164
+        ],
+        "q_rad": [
+          0.6960830124066383,
+          -0.6460257081188908,
+          1.7296665897568109,
+          -1.276848481788336,
+          -0.8670498175511218,
+          -1.1508858772100354
+        ],
+        "result_code": 0,
+        "source": "controller_model_computation_not_physical_motion"
+      },
+      {
+        "changed_axis": 2,
+        "delta_rad": -0.1,
+        "flange_pose_raw": [
+          0.831464552582711,
+          0.35775840407855036,
+          0.0740825811969234,
+          -2.9646269180191136,
+          -1.182358079751414,
+          -0.26650098210441175
+        ],
+        "q_rad": [
+          0.6960830124066383,
+          -0.7460257081188908,
+          1.6296665897568108,
+          -1.276848481788336,
+          -0.8670498175511218,
+          -1.1508858772100354
+        ],
+        "result_code": 0,
+        "source": "controller_model_computation_not_physical_motion"
+      },
+      {
+        "changed_axis": 2,
+        "delta_rad": 0.1,
+        "flange_pose_raw": [
+          0.7373654562016925,
+          0.2791278373608615,
+          0.00044010027406118923,
+          2.9887230939465796,
+          -1.0432767480505958,
+          0.030574773725179465
+        ],
+        "q_rad": [
+          0.6960830124066383,
+          -0.7460257081188908,
+          1.829666589756811,
+          -1.276848481788336,
+          -0.8670498175511218,
+          -1.1508858772100354
+        ],
+        "result_code": 0,
+        "source": "controller_model_computation_not_physical_motion"
+      },
+      {
+        "changed_axis": 3,
+        "delta_rad": -0.1,
+        "flange_pose_raw": [
+          0.7749627136829815,
+          0.3105446498115809,
+          0.03511615288572899,
+          2.9887230939465796,
+          -1.043276748050596,
+          0.03057477372517947
+        ],
+        "q_rad": [
+          0.6960830124066383,
+          -0.7460257081188908,
+          1.7296665897568109,
+          -1.3768484817883362,
+          -0.8670498175511218,
+          -1.1508858772100354
+        ],
+        "result_code": 0,
+        "source": "controller_model_computation_not_physical_motion"
+      },
+      {
+        "changed_axis": 3,
+        "delta_rad": 0.1,
+        "flange_pose_raw": [
+          0.7967115927225809,
+          0.32871832788212946,
+          0.034688365189094954,
+          -2.9646269180191136,
+          -1.1823580797514137,
+          -0.2665009821044114
+        ],
+        "q_rad": [
+          0.6960830124066383,
+          -0.7460257081188908,
+          1.7296665897568109,
+          -1.176848481788336,
+          -0.8670498175511218,
+          -1.1508858772100354
+        ],
+        "result_code": 0,
+        "source": "controller_model_computation_not_physical_motion"
+      },
+      {
+        "changed_axis": 4,
+        "delta_rad": -0.1,
+        "flange_pose_raw": [
+          0.7845050128735873,
+          0.32932404479924066,
+          0.03054893090741359,
+          -3.064350627249823,
+          -1.0773719919755462,
+          -0.09137659941439133
+        ],
+        "q_rad": [
+          0.6960830124066383,
+          -0.7460257081188908,
+          1.7296665897568109,
+          -1.276848481788336,
+          -0.9670498175511217,
+          -1.1508858772100354
+        ],
+        "result_code": 0,
+        "source": "controller_model_computation_not_physical_motion"
+      },
+      {
+        "changed_axis": 4,
+        "delta_rad": 0.1,
+        "flange_pose_raw": [
+          0.7862192714989605,
+          0.31002554640405494,
+          0.03829394115367598,
+          3.033527376931548,
+          -1.1587848024841403,
+          -0.08850869050099246
+        ],
+        "q_rad": [
+          0.6960830124066383,
+          -0.7460257081188908,
+          1.7296665897568109,
+          -1.276848481788336,
+          -0.7670498175511218,
+          -1.1508858772100354
+        ],
+        "result_code": 0,
+        "source": "controller_model_computation_not_physical_motion"
+      },
+      {
+        "changed_axis": 5,
+        "delta_rad": -0.1,
+        "flange_pose_raw": [
+          0.7858289396810094,
+          0.3196246255091984,
+          0.03419310591553587,
+          2.9282121003896036,
+          -1.1068184089626578,
+          0.13064732336487422
+        ],
+        "q_rad": [
+          0.6960830124066383,
+          -0.7460257081188908,
+          1.7296665897568109,
+          -1.276848481788336,
+          -0.8670498175511218,
+          -1.2508858772100355
+        ],
+        "result_code": 0,
+        "source": "controller_model_computation_not_physical_motion"
+      },
+      {
+        "changed_axis": 5,
+        "delta_rad": 0.1,
+        "flange_pose_raw": [
+          0.7858289396810094,
+          0.3196246255091984,
+          0.03419310591553587,
+          -2.9501042953001675,
+          -1.1090606978653959,
+          -0.32031346948587264
+        ],
+        "q_rad": [
+          0.6960830124066383,
+          -0.7460257081188908,
+          1.7296665897568109,
+          -1.276848481788336,
+          -0.8670498175511218,
+          -1.0508858772100353
+        ],
+        "result_code": 0,
+        "source": "controller_model_computation_not_physical_motion"
+      }
+    ]
+  },
+  "RobotConfig.getBaseForceOffset": {
+    "host_duration_s": 0.0010345830014557578,
+    "host_finished_utc": "2026-10-23T09:55:36.968603Z",
+    "host_started_utc": "2026-10-23T09:55:36.967549Z",
+    "method": "RobotConfig.getBaseForceOffset",
+    "ok": true,
+    "value": []
+  },
+  "RobotConfig.getBaseForceSensorNames": {
+    "host_duration_s": 0.0009909789987432305,
+    "host_finished_utc": "2026-10-23T09:55:36.967408Z",
+    "host_started_utc": "2026-10-23T09:55:36.966409Z",
+    "method": "RobotConfig.getBaseForceSensorNames",
+    "ok": true,
+    "value": []
+  },
+  "RobotConfig.getCollisionLevel": {
+    "host_duration_s": 0.000766716999351047,
+    "host_finished_utc": "2026-10-23T09:55:36.957959Z",
+    "host_started_utc": "2026-10-23T09:55:36.957187Z",
+    "method": "RobotConfig.getCollisionLevel",
+    "ok": true,
+    "value": 0
+  },
+  "RobotConfig.getCollisionStopType": {
+    "host_duration_s": 0.00046658000064780936,
+    "host_finished_utc": "2026-10-23T09:55:36.958514Z",
+    "host_started_utc": "2026-10-23T09:55:36.958014Z",
+    "method": "RobotConfig.getCollisionStopType",
+    "ok": true,
+    "value": 1
+  },
+  "RobotConfig.getControlBoxType": {
+    "host_duration_s": 0.0005578220007009804,
+    "host_finished_utc": "2026-10-23T09:55:36.935210Z",
+    "host_started_utc": "2026-10-23T09:55:36.934645Z",
+    "method": "RobotConfig.getControlBoxType",
+    "ok": true,
+    "value": "cb_iMiniStation"
+  },
+  "RobotConfig.getCycletime": {
+    "host_duration_s": 0.0006670239999948535,
+    "host_finished_utc": "2026-10-23T09:55:36.937082Z",
+    "host_started_utc": "2026-10-23T09:55:36.936324Z",
+    "method": "RobotConfig.getCycletime",
+    "ok": true,
+    "value": 0.005
+  },
+  "RobotConfig.getDefaultJointAcc": {
+    "host_duration_s": 0.0013463409995893016,
+    "host_finished_utc": "2026-10-23T09:55:36.953192Z",
+    "host_started_utc": "2026-10-23T09:55:36.951842Z",
+    "method": "RobotConfig.getDefaultJointAcc",
+    "ok": true,
+    "value": 0.0
+  },
+  "RobotConfig.getDefaultJointSpeed": {
+    "host_duration_s": 0.001069926998752635,
+    "host_finished_utc": "2026-10-23T09:55:36.954390Z",
+    "host_started_utc": "2026-10-23T09:55:36.953315Z",
+    "method": "RobotConfig.getDefaultJointSpeed",
+    "ok": true,
+    "value": 0.0
+  },
+  "RobotConfig.getDefaultToolAcc": {
+    "host_duration_s": 0.0013054260016360786,
+    "host_finished_utc": "2026-10-23T09:55:36.955801Z",
+    "host_started_utc": "2026-10-23T09:55:36.954491Z",
+    "method": "RobotConfig.getDefaultToolAcc",
+    "ok": true,
+    "value": 0.0
+  },
+  "RobotConfig.getDefaultToolSpeed": {
+    "host_duration_s": 0.0011617449999903329,
+    "host_finished_utc": "2026-10-23T09:55:36.957078Z",
+    "host_started_utc": "2026-10-23T09:55:36.955912Z",
+    "method": "RobotConfig.getDefaultToolSpeed",
+    "ok": true,
+    "value": 0.0
+  },
+  "RobotConfig.getDof": {
+    "host_duration_s": 0.000969177002843935,
+    "host_finished_utc": "2026-10-23T09:55:36.936235Z",
+    "host_started_utc": "2026-10-23T09:55:36.935261Z",
+    "method": "RobotConfig.getDof",
+    "ok": true,
+    "value": 6
+  },
+  "RobotConfig.getGravity": {
+    "host_duration_s": 0.0010313170023437124,
+    "host_finished_utc": "2026-10-23T09:55:36.950464Z",
+    "host_started_utc": "2026-10-23T09:55:36.949426Z",
+    "method": "RobotConfig.getGravity",
+    "ok": true,
+    "value": [
+      -0.10527343775827445,
+      9.799205557066411,
+      -0.06699219104753168
+    ]
+  },
+  "RobotConfig.getHomePosition": {
+    "host_duration_s": 0.0004894390003755689,
+    "host_finished_utc": "2026-10-23T09:55:36.951794Z",
+    "host_started_utc": "2026-10-23T09:55:36.951300Z",
+    "method": "RobotConfig.getHomePosition",
+    "ok": true,
+    "value": [
+      0.0,
+      -0.2617993877991494,
+      1.74532925199433,
+      0.4363323129985824,
+      1.570796326794897,
+      0.0
+    ]
+  },
+  "RobotConfig.getJointMaxAccelerations": {
+    "host_duration_s": 0.0005348669983504806,
+    "host_finished_utc": "2026-10-23T09:55:36.946635Z",
+    "host_started_utc": "2026-10-23T09:55:36.946096Z",
+    "method": "RobotConfig.getJointMaxAccelerations",
+    "ok": true,
+    "value": [
+      10.368292586104928,
+      10.368292586104928,
+      25.963575649502424,
+      31.104877758314785,
+      31.104877758314785,
+      31.104877758314785
+    ]
+  },
+  "RobotConfig.getJointMaxPositions": {
+    "host_duration_s": 0.0012404999979480635,
+    "host_finished_utc": "2026-10-23T09:55:36.944935Z",
+    "host_started_utc": "2026-10-23T09:55:36.943662Z",
+    "method": "RobotConfig.getJointMaxPositions",
+    "ok": true,
+    "value": [
+      6.283185307179586,
+      6.283185307179586,
+      6.283185307179586,
+      6.283185307179586,
+      6.283185307179586,
+      6.283185307179586
+    ]
+  },
+  "RobotConfig.getJointMaxSpeeds": {
+    "host_duration_s": 0.000990499000181444,
+    "host_finished_utc": "2026-10-23T09:55:36.946007Z",
+    "host_started_utc": "2026-10-23T09:55:36.945012Z",
+    "method": "RobotConfig.getJointMaxSpeeds",
+    "ok": true,
+    "value": [
+      3.317853627553577,
+      3.317853627553577,
+      3.8945363474253636,
+      4.665731663747217,
+      4.665731663747217,
+      4.665731663747217
+    ]
+  },
+  "RobotConfig.getJointMinPositions": {
+    "host_duration_s": 0.002501745999325067,
+    "host_finished_utc": "2026-10-23T09:55:36.943559Z",
+    "host_started_utc": "2026-10-23T09:55:36.941051Z",
+    "method": "RobotConfig.getJointMinPositions",
+    "ok": true,
+    "value": [
+      -6.283185307179586,
+      -6.283185307179586,
+      -6.283185307179586,
+      -6.283185307179586,
+      -6.283185307179586,
+      -6.283185307179586
+    ]
+  },
+  "RobotConfig.getKinematicsCompensate(20)": {
+    "host_duration_s": 0.0009472790006839205,
+    "host_finished_utc": "2026-10-23T09:55:36.940943Z",
+    "host_started_utc": "2026-10-23T09:55:36.939965Z",
+    "method": "RobotConfig.getKinematicsCompensate(20)",
+    "ok": true,
+    "value": {}
+  },
+  "RobotConfig.getKinematicsParam(false)": {
+    "host_duration_s": 0.0014452659997914452,
+    "host_finished_utc": "2026-10-23T09:55:36.938652Z",
+    "host_started_utc": "2026-10-23T09:55:36.937200Z",
+    "method": "RobotConfig.getKinematicsParam(false)",
+    "ok": true,
+    "value": {
+      "a": [
+        0.0,
+        0.0,
+        0.647,
+        0.6005,
+        0.0,
+        0.0
+      ],
+      "alpha": [
+        0.0,
+        -1.5707963267948966,
+        3.141592653589793,
+        3.141592653589793,
+        -1.5707963267948966,
+        1.5707963267948966
+      ],
+      "beta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "d": [
+        0.1732,
+        0.191,
+        0.0,
+        0.0,
+        0.1175,
+        0.1045
+      ],
+      "theta": [
+        3.141592653589793,
+        -1.5707963267948966,
+        0.0,
+        -1.5707963267948966,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "RobotConfig.getKinematicsParam(true)": {
+    "host_duration_s": 0.0010908639997069258,
+    "host_finished_utc": "2026-10-23T09:55:36.939883Z",
+    "host_started_utc": "2026-10-23T09:55:36.938787Z",
+    "method": "RobotConfig.getKinematicsParam(true)",
+    "ok": true,
+    "value": {
+      "a": [
+        0.0,
+        0.0,
+        0.647,
+        0.6005,
+        0.0,
+        0.0
+      ],
+      "alpha": [
+        0.0,
+        -1.5707963267948966,
+        3.141592653589793,
+        3.141592653589793,
+        -1.5707963267948966,
+        1.5707963267948966
+      ],
+      "beta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "d": [
+        0.1732,
+        0.191,
+        0.0,
+        0.0,
+        0.1175,
+        0.1045
+      ],
+      "theta": [
+        3.141592653589793,
+        -1.5707963267948966,
+        0.0,
+        -1.5707963267948966,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "RobotConfig.getMountingPose": {
+    "host_duration_s": 0.0007098589994711801,
+    "host_finished_utc": "2026-10-23T09:55:36.949329Z",
+    "host_started_utc": "2026-10-23T09:55:36.948615Z",
+    "method": "RobotConfig.getMountingPose",
+    "ok": true,
+    "value": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "RobotConfig.getName": {
+    "host_duration_s": 0.0005272800008242484,
+    "host_finished_utc": "2026-10-23T09:55:36.932619Z",
+    "host_started_utc": "2026-10-23T09:55:36.932086Z",
+    "method": "RobotConfig.getName",
+    "ok": true,
+    "value": "rob1"
+  },
+  "RobotConfig.getPayload": {
+    "host_duration_s": 0.0006881529989186674,
+    "host_finished_utc": "2026-10-23T09:55:36.951248Z",
+    "host_started_utc": "2026-10-23T09:55:36.950554Z",
+    "method": "RobotConfig.getPayload",
+    "ok": true,
+    "value": {
+      "aom": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cog": [
+        0.0,
+        -0.06,
+        0.24
+      ],
+      "inertia": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mass": 8.0
+    }
+  },
+  "RobotConfig.getRobotSubType": {
+    "host_duration_s": 0.0008017729996936396,
+    "host_finished_utc": "2026-10-23T09:55:36.934499Z",
+    "host_started_utc": "2026-10-23T09:55:36.933689Z",
+    "method": "RobotConfig.getRobotSubType",
+    "ok": true,
+    "value": ""
+  },
+  "RobotConfig.getRobotType": {
+    "host_duration_s": 0.0009045389997481834,
+    "host_finished_utc": "2026-10-23T09:55:36.933576Z",
+    "host_started_utc": "2026-10-23T09:55:36.932667Z",
+    "method": "RobotConfig.getRobotType",
+    "ok": true,
+    "value": "aubo_i10_JY"
+  },
+  "RobotConfig.getTcpForceOffset": {
+    "host_duration_s": 0.0009238439997716341,
+    "host_finished_utc": "2026-10-23T09:55:36.965222Z",
+    "host_started_utc": "2026-10-23T09:55:36.964292Z",
+    "method": "RobotConfig.getTcpForceOffset",
+    "ok": true,
+    "value": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "RobotConfig.getTcpForceSensorNames": {
+    "host_duration_s": 0.0010566730015852954,
+    "host_finished_utc": "2026-10-23T09:55:36.962455Z",
+    "host_started_utc": "2026-10-23T09:55:36.961393Z",
+    "method": "RobotConfig.getTcpForceSensorNames",
+    "ok": true,
+    "value": [
+      "kw_ftsensor"
+    ]
+  },
+  "RobotConfig.getTcpForceSensorPose": {
+    "host_duration_s": 0.001710922999336617,
+    "host_finished_utc": "2026-10-23T09:55:36.964216Z",
+    "host_started_utc": "2026-10-23T09:55:36.962501Z",
+    "method": "RobotConfig.getTcpForceSensorPose",
+    "ok": true,
+    "value": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "RobotConfig.getTcpMaxAccelerations": {
+    "host_duration_s": 0.000732813001377508,
+    "host_finished_utc": "2026-10-23T09:55:36.947966Z",
+    "host_started_utc": "2026-10-23T09:55:36.947201Z",
+    "method": "RobotConfig.getTcpMaxAccelerations",
+    "ok": true,
+    "value": [
+      4.0,
+      10.0
+    ]
+  },
+  "RobotConfig.getTcpMaxSpeeds": {
+    "host_duration_s": 0.000419423002313124,
+    "host_finished_utc": "2026-10-23T09:55:36.947145Z",
+    "host_started_utc": "2026-10-23T09:55:36.946721Z",
+    "method": "RobotConfig.getTcpMaxSpeeds",
+    "ok": true,
+    "value": [
+      2.0,
+      5.0
+    ]
+  },
+  "RobotConfig.getTcpOffset": {
+    "host_duration_s": 0.0005131619982421398,
+    "host_finished_utc": "2026-10-23T09:55:36.948532Z",
+    "host_started_utc": "2026-10-23T09:55:36.948014Z",
+    "method": "RobotConfig.getTcpOffset",
+    "ok": true,
+    "value": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "RobotConfig.hasBaseForceSensor": {
+    "host_duration_s": 0.0008197330025723204,
+    "host_finished_utc": "2026-10-23T09:55:36.966152Z",
+    "host_started_utc": "2026-10-23T09:55:36.965326Z",
+    "method": "RobotConfig.hasBaseForceSensor",
+    "ok": true,
+    "value": false
+  },
+  "RobotConfig.hasTcpForceSensor": {
+    "host_duration_s": 0.002692776997719193,
+    "host_finished_utc": "2026-10-23T09:55:36.961266Z",
+    "host_started_utc": "2026-10-23T09:55:36.958567Z",
+    "method": "RobotConfig.hasTcpForceSensor",
+    "ok": true,
+    "value": true
+  },
+  "RobotManage.isSimulationEnabled": {
+    "host_duration_s": 0.0008099360020423774,
+    "host_finished_utc": "2026-10-23T09:55:36.969488Z",
+    "host_started_utc": "2026-10-23T09:55:36.968673Z",
+    "method": "RobotManage.isSimulationEnabled",
+    "ok": true,
+    "value": false
+  },
+  "RobotState.getBaseForce": {
+    "host_duration_s": 0.0014701410000270698,
+    "host_finished_utc": "2026-10-23T09:55:36.992791Z",
+    "host_started_utc": "2026-10-23T09:55:36.991301Z",
+    "method": "RobotState.getBaseForce",
+    "ok": true,
+    "value": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "RobotState.getBaseForceSensor": {
+    "host_duration_s": 0.001324442000623094,
+    "host_finished_utc": "2026-10-23T09:55:36.994260Z",
+    "host_started_utc": "2026-10-23T09:55:36.992915Z",
+    "method": "RobotState.getBaseForceSensor",
+    "ok": true,
+    "value": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "RobotState.getControlBoxTemperature": {
+    "host_duration_s": 0.0013235779988463037,
+    "host_finished_utc": "2026-10-23T09:55:37.008395Z",
+    "host_started_utc": "2026-10-23T09:55:37.007066Z",
+    "method": "RobotState.getControlBoxTemperature",
+    "ok": true,
+    "value": 42.0
+  },
+  "RobotState.getJointAccelerations": {
+    "host_duration_s": 0.0008938789978856221,
+    "host_finished_utc": "2026-10-23T09:55:36.972226Z",
+    "host_started_utc": "2026-10-23T09:55:36.971327Z",
+    "method": "RobotState.getJointAccelerations",
+    "ok": true,
+    "value": [
+      5e-324,
+      5e-324,
+      5e-324,
+      -5e-324,
+      5e-324,
+      -5e-324
+    ]
+  },
+  "RobotState.getJointCurrents": {
+    "host_duration_s": 0.0006029629985278007,
+    "host_finished_utc": "2026-10-23T09:55:36.972917Z",
+    "host_started_utc": "2026-10-23T09:55:36.972309Z",
+    "method": "RobotState.getJointCurrents",
+    "ok": true,
+    "value": [
+      -16.484,
+      0.01,
+      6.688,
+      -2.422,
+      4.201,
+      -0.06
+    ]
+  },
+  "RobotState.getJointFirmwareVersions": {
+    "host_duration_s": 0.001191134000691818,
+    "host_finished_utc": "2026-10-23T09:55:36.996833Z",
+    "host_started_utc": "2026-10-23T09:55:36.995630Z",
+    "method": "RobotState.getJointFirmwareVersions",
+    "ok": true,
+    "value": [
+      4004007,
+      4004007,
+      4004007,
+      4004007,
+      4004007,
+      4004007
+    ]
+  },
+  "RobotState.getJointHardwareVersions": {
+    "host_duration_s": 0.001774215001205448,
+    "host_finished_utc": "2026-10-23T09:55:36.998769Z",
+    "host_started_utc": "2026-10-23T09:55:36.996981Z",
+    "method": "RobotState.getJointHardwareVersions",
+    "ok": true,
+    "value": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ]
+  },
+  "RobotState.getJointPositions": {
+    "host_duration_s": 0.0006857520020275842,
+    "host_finished_utc": "2026-10-23T09:55:36.970315Z",
+    "host_started_utc": "2026-10-23T09:55:36.969623Z",
+    "method": "RobotState.getJointPositions",
+    "ok": true,
+    "value": [
+      0.6960830124066383,
+      -0.7460257081188908,
+      1.7296665897568109,
+      -1.276848481788336,
+      -0.8670498175511218,
+      -1.1508858772100354
+    ]
+  },
+  "RobotState.getJointSpeeds": {
+    "host_duration_s": 0.0007390569990093354,
+    "host_finished_utc": "2026-10-23T09:55:36.971201Z",
+    "host_started_utc": "2026-10-23T09:55:36.970456Z",
+    "method": "RobotState.getJointSpeeds",
+    "ok": true,
+    "value": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "RobotState.getJointTemperatures": {
+    "host_duration_s": 0.003555537998181535,
+    "host_finished_utc": "2026-10-23T09:55:36.978559Z",
+    "host_started_utc": "2026-10-23T09:55:36.974999Z",
+    "method": "RobotState.getJointTemperatures",
+    "ok": true,
+    "value": [
+      33.9,
+      31.7,
+      31.5,
+      32.5,
+      34.4,
+      33.8
+    ]
+  },
+  "RobotState.getJointTorqueSensors": {
+    "host_duration_s": 0.003030755000509089,
+    "host_finished_utc": "2026-10-23T09:55:36.981706Z",
+    "host_started_utc": "2026-10-23T09:55:36.978669Z",
+    "method": "RobotState.getJointTorqueSensors",
+    "ok": true,
+    "value": []
+  },
+  "RobotState.getJointUniqueIds": {
+    "host_duration_s": 0.0011034460003429558,
+    "host_finished_utc": "2026-10-23T09:55:36.995488Z",
+    "host_started_utc": "2026-10-23T09:55:36.994376Z",
+    "method": "RobotState.getJointUniqueIds",
+    "ok": true,
+    "value": [
+      "002e305008343136562037",
+      "003f335009343136562037",
+      "003153500b513133412030",
+      "004229500b513133412030",
+      "00341c4703303331343938",
+      "00373c4707303338343736"
+    ]
+  },
+  "RobotState.getJointVoltages": {
+    "host_duration_s": 0.0019037780002690852,
+    "host_finished_utc": "2026-10-23T09:55:36.974911Z",
+    "host_started_utc": "2026-10-23T09:55:36.973002Z",
+    "method": "RobotState.getJointVoltages",
+    "ok": true,
+    "value": [
+      48.07,
+      47.86,
+      47.76,
+      47.64,
+      47.58,
+      47.58
+    ]
+  },
+  "RobotState.getMainVoltage": {
+    "host_duration_s": 0.002282381999975769,
+    "host_finished_utc": "2026-10-23T09:55:37.010860Z",
+    "host_started_utc": "2026-10-23T09:55:37.008561Z",
+    "method": "RobotState.getMainVoltage",
+    "ok": true,
+    "value": 47.73666666666667
+  },
+  "RobotState.getMasterBoardFirmwareVersion": {
+    "host_duration_s": 0.000800619996880414,
+    "host_finished_utc": "2026-10-23T09:55:37.000933Z",
+    "host_started_utc": "2026-10-23T09:55:37.000099Z",
+    "method": "RobotState.getMasterBoardFirmwareVersion",
+    "ok": true,
+    "value": 6001115
+  },
+  "RobotState.getMasterBoardHardwareVersion": {
+    "host_duration_s": 0.001466203000745736,
+    "host_finished_utc": "2026-10-23T09:55:37.002517Z",
+    "host_started_utc": "2026-10-23T09:55:37.001045Z",
+    "method": "RobotState.getMasterBoardHardwareVersion",
+    "ok": true,
+    "value": 0
+  },
+  "RobotState.getMasterBoardUniqueId": {
+    "host_duration_s": 0.0010528309976507444,
+    "host_finished_utc": "2026-10-23T09:55:37.000028Z",
+    "host_started_utc": "2026-10-23T09:55:36.998944Z",
+    "method": "RobotState.getMasterBoardUniqueId",
+    "ok": true,
+    "value": "1138d36b"
+  },
+  "RobotState.getRobotCurrent": {
+    "host_duration_s": 0.0007784340014040936,
+    "host_finished_utc": "2026-10-23T09:55:37.012628Z",
+    "host_started_utc": "2026-10-23T09:55:37.011844Z",
+    "method": "RobotState.getRobotCurrent",
+    "ok": true,
+    "value": 0.04
+  },
+  "RobotState.getRobotModeType": {
+    "host_duration_s": 0.0006943959997443017,
+    "host_finished_utc": "2026-10-23T09:55:37.017360Z",
+    "host_started_utc": "2026-10-23T09:55:37.016660Z",
+    "method": "RobotState.getRobotModeType",
+    "ok": true,
+    "value": "RobotModeType.Running"
+  },
+  "RobotState.getRobotVoltage": {
+    "host_duration_s": 0.0007543270003225189,
+    "host_finished_utc": "2026-10-23T09:55:37.011767Z",
+    "host_started_utc": "2026-10-23T09:55:37.011004Z",
+    "method": "RobotState.getRobotVoltage",
+    "ok": true,
+    "value": 0.0
+  },
+  "RobotState.getSafetyModeType": {
+    "host_duration_s": 0.0007372309992206283,
+    "host_finished_utc": "2026-10-23T09:55:37.018170Z",
+    "host_started_utc": "2026-10-23T09:55:37.017427Z",
+    "method": "RobotState.getSafetyModeType",
+    "ok": true,
+    "value": "SafetyModeType.Normal"
+  },
+  "RobotState.getTcpForce": {
+    "host_duration_s": 0.0010559039983490948,
+    "host_finished_utc": "2026-10-23T09:55:36.989093Z",
+    "host_started_utc": "2026-10-23T09:55:36.988027Z",
+    "method": "RobotState.getTcpForce",
+    "ok": true,
+    "value": [
+      0.842187502066233,
+      -78.39364445653129,
+      0.5359375283802477,
+      -8.232660787124212,
+      -0.20702138113971508,
+      -17.344776269716252
+    ]
+  },
+  "RobotState.getTcpForceSensors": {
+    "host_duration_s": 0.0018411579985695425,
+    "host_finished_utc": "2026-10-23T09:55:36.991090Z",
+    "host_started_utc": "2026-10-23T09:55:36.989235Z",
+    "method": "RobotState.getTcpForceSensors",
+    "ok": true,
+    "value": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "RobotState.getTcpPose": {
+    "host_duration_s": 0.003594050998799503,
+    "host_finished_utc": "2026-10-23T09:55:36.985464Z",
+    "host_started_utc": "2026-10-23T09:55:36.981863Z",
+    "method": "RobotState.getTcpPose",
+    "ok": true,
+    "value": [
+      0.7858289396810094,
+      0.3196246255091984,
+      0.03419310591553587,
+      3.130128154533304,
+      -1.1181036980282377,
+      -0.09431771594377507
+    ]
+  },
+  "RobotState.getTcpSpeed": {
+    "host_duration_s": 0.0011450329984654672,
+    "host_finished_utc": "2026-10-23T09:55:36.987917Z",
+    "host_started_utc": "2026-10-23T09:55:36.986761Z",
+    "method": "RobotState.getTcpSpeed",
+    "ok": true,
+    "value": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "RobotState.getToolFirmwareVersion": {
+    "host_duration_s": 0.0011140110000269488,
+    "host_finished_utc": "2026-10-23T09:55:37.004795Z",
+    "host_started_utc": "2026-10-23T09:55:37.003655Z",
+    "method": "RobotState.getToolFirmwareVersion",
+    "ok": true,
+    "value": 0
+  },
+  "RobotState.getToolHardwareVersion": {
+    "host_duration_s": 0.0019958840020990465,
+    "host_finished_utc": "2026-10-23T09:55:37.006964Z",
+    "host_started_utc": "2026-10-23T09:55:37.004954Z",
+    "method": "RobotState.getToolHardwareVersion",
+    "ok": true,
+    "value": 0
+  },
+  "RobotState.getToolPose": {
+    "host_duration_s": 0.00105696099853958,
+    "host_finished_utc": "2026-10-23T09:55:36.986651Z",
+    "host_started_utc": "2026-10-23T09:55:36.985579Z",
+    "method": "RobotState.getToolPose",
+    "ok": true,
+    "value": [
+      0.7858289396810094,
+      0.3196246255091984,
+      0.03419310591553587,
+      3.130128154533304,
+      -1.1181036980282377,
+      -0.09431771594377507
+    ]
+  },
+  "RobotState.getToolUniqueId": {
+    "host_duration_s": 0.0009686969970061909,
+    "host_finished_utc": "2026-10-23T09:55:37.003591Z",
+    "host_started_utc": "2026-10-23T09:55:37.002616Z",
+    "method": "RobotState.getToolUniqueId",
+    "ok": true,
+    "value": "099c5421"
+  },
+  "RobotState.isCollisionOccurred": {
+    "host_duration_s": 0.0005872109977644868,
+    "host_finished_utc": "2026-10-23T09:55:37.016539Z",
+    "host_started_utc": "2026-10-23T09:55:37.015944Z",
+    "method": "RobotState.isCollisionOccurred",
+    "ok": true,
+    "value": false
+  },
+  "RobotState.isPowerOn": {
+    "host_duration_s": 0.0008738059987081215,
+    "host_finished_utc": "2026-10-23T09:55:37.013943Z",
+    "host_started_utc": "2026-10-23T09:55:37.013061Z",
+    "method": "RobotState.isPowerOn",
+    "ok": true,
+    "value": true
+  },
+  "RobotState.isSteady": {
+    "host_duration_s": 0.0011414790023991372,
+    "host_finished_utc": "2026-10-23T09:55:37.015178Z",
+    "host_started_utc": "2026-10-23T09:55:37.014032Z",
+    "method": "RobotState.isSteady",
+    "ok": true,
+    "value": true
+  },
+  "RobotState.isWithinSafetyLimits": {
+    "host_duration_s": 0.0005826010019518435,
+    "host_finished_utc": "2026-10-23T09:55:37.015864Z",
+    "host_started_utc": "2026-10-23T09:55:37.015276Z",
+    "method": "RobotState.isWithinSafetyLimits",
+    "ok": true,
+    "value": true
+  },
+  "SystemInfo.getControlSoftwareBuildDate": {
+    "host_duration_s": 0.0008446089996141382,
+    "host_finished_utc": "2026-10-23T09:55:36.931434Z",
+    "host_started_utc": "2026-10-23T09:55:36.930580Z",
+    "method": "SystemInfo.getControlSoftwareBuildDate",
+    "ok": true,
+    "value": "2025-1-15 15:17:15"
+  },
+  "SystemInfo.getControlSoftwareVersionCode": {
+    "host_duration_s": 0.0023070659990480635,
+    "host_finished_utc": "2026-10-23T09:55:36.928067Z",
+    "host_started_utc": "2026-10-23T09:55:36.925753Z",
+    "method": "SystemInfo.getControlSoftwareVersionCode",
+    "ok": true,
+    "value": 29004
+  },
+  "SystemInfo.getControlSoftwareVersionHash": {
+    "host_duration_s": 0.0004702299993368797,
+    "host_finished_utc": "2026-10-23T09:55:36.932010Z",
+    "host_started_utc": "2026-10-23T09:55:36.931534Z",
+    "method": "SystemInfo.getControlSoftwareVersionHash",
+    "ok": true,
+    "value": "02301bb"
+  },
+  "SystemInfo.getInterfaceVersionCode": {
+    "host_duration_s": 0.002087606000714004,
+    "host_finished_utc": "2026-10-23T09:55:36.930439Z",
+    "host_started_utc": "2026-10-23T09:55:36.928334Z",
+    "method": "SystemInfo.getInterfaceVersionCode",
+    "ok": true,
+    "value": 23001
+  }
+}

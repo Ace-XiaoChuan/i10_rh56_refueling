@@ -1,0 +1,50 @@
+{
+  "source_point_cloud": "artifacts/perception/rgbd_point_cloud_20261016/point_cloud",
+  "manual_pixel_rectangle_uv": [
+    200,
+    200,
+    350,
+    350
+  ],
+  "observed_patch_y_span_m": 4.450742296790988e-05,
+  "comparison": [
+    {
+      "size_m": 0.005,
+      "origin_world_m": [
+        0,
+        0,
+        0
+      ],
+      "voxel_count": 36898,
+      "flat_patch_y_layers": [
+        199,
+        200
+      ]
+    },
+    {
+      "size_m": 0.005,
+      "origin_world_m": [
+        -0.0025,
+        -0.0025,
+        -0.0025
+      ],
+      "voxel_count": 32412,
+      "flat_patch_y_layers": [
+        200
+      ]
+    },
+    {
+      "size_m": 0.002,
+      "origin_world_m": [
+        -0.001,
+        -0.001,
+        -0.001
+      ],
+      "voxel_count": 167400,
+      "flat_patch_y_layers": [
+        500
+      ]
+    }
+  ],
+  "point_coordinates_changed": false
+}

@@ -1,0 +1,70 @@
+{
+  "default_offscreen_samples": 4,
+  "worst_sampled_pixels": [
+    {
+      "pixel_uv": [
+        646,
+        426
+      ],
+      "error_m": 0.000723835033385245,
+      "geom": "cap_middle"
+    },
+    {
+      "pixel_uv": [
+        1162,
+        633
+      ],
+      "error_m": 3.334917568764695e-07,
+      "geom": "floor"
+    },
+    {
+      "pixel_uv": [
+        77,
+        660
+      ],
+      "error_m": 3.044413450226102e-07,
+      "geom": "floor"
+    },
+    {
+      "pixel_uv": [
+        1175,
+        624
+      ],
+      "error_m": 2.90191743967938e-07,
+      "geom": "floor"
+    },
+    {
+      "pixel_uv": [
+        1106,
+        754
+      ],
+      "error_m": 2.8671086660381206e-07,
+      "geom": "floor"
+    },
+    {
+      "pixel_uv": [
+        535,
+        584
+      ],
+      "error_m": 2.8220919179311466e-07,
+      "geom": "tank"
+    },
+    {
+      "pixel_uv": [
+        1200,
+        606
+      ],
+      "error_m": 2.6790136820054045e-07,
+      "geom": "floor"
+    },
+    {
+      "pixel_uv": [
+        549,
+        575
+      ],
+      "error_m": 2.6768682315214676e-07,
+      "geom": "tank"
+    }
+  ],
+  "samples_above_0_1_mm": 1
+}

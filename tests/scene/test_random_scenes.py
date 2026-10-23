@@ -7,7 +7,7 @@ from fuel_cap_task.arm_ik import body_transform,inverse
 from fuel_cap_task.grasp_search import rotation
 from fuel_cap_task.random_scenes import SceneSampler,SamplingSettings,classify
 
-CANDIDATE=Path(__file__).resolve().parents[2]/'artifacts/manual_grasp/user_selected_20260930.json'
+CANDIDATE=Path(__file__).resolve().parents[2]/'config/fixed_grasp.json'
 
 
 class RandomSceneTests(unittest.TestCase):

@@ -12,7 +12,7 @@ import mujoco
 import numpy as np
 
 from .interfaces import TaskParameters
-from .mujoco_scene import CAP_MODEL_FROM_TASK, DEFAULT_SCENE, HandPreviewMapping
+from .mujoco_scene import DEFAULT_SCENE, HandPreviewMapping
 
 
 @dataclass(frozen=True)
@@ -124,7 +124,7 @@ class GraspSearchScene:
         self.fingers = [self._collision_geom(name) for name in ('thumb_distal', 'index_intermediate', 'middle_intermediate')]
         self.tips = ['right_thumb_tip', 'right_index_tip', 'right_middle_tip']
         self.cap_site = self.model.site('cap_grip_center').id
-        # Task axes swap model X/Y; lengths come from the actual grip box.
+        # 盒体几何的长边尺寸存于第二项，按盖体系的长、宽、高排列。
         if self.model.geom_type[self.grip] != mujoco.mjtGeom.mjGEOM_BOX:
             raise ValueError('search requires the current box grip geometry')
         self.half = self.model.geom_size[self.grip][[1, 0, 2]].copy()
@@ -148,8 +148,9 @@ class GraspSearchScene:
         return geoms[0]
 
     def cap_frame(self):
+        """直接读取统一盖体系在世界中的位姿；X 沿握梁，Z 朝外。"""
         return (self.data.site_xpos[self.cap_site].copy(),
-                self.data.site_xmat[self.cap_site].reshape(3, 3) @ CAP_MODEL_FROM_TASK)
+                self.data.site_xmat[self.cap_site].reshape(3, 3).copy())
 
     def place(self, position, matrix, channels=None):
         # mj_resetData clears derived site poses; refresh before using cap axes.

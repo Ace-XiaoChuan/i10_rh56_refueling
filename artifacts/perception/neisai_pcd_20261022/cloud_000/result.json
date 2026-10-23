@@ -1,0 +1,109 @@
+{
+  "mode": "pcd_inspection",
+  "schema_version": 1,
+  "input_path": "/home/ace/i10_rh56_refueling_ws/Neisai1.pcd",
+  "input_sha256": "23efab7e08cb52b56a37dea0943d60bac05a57aeeb7a8d028e12d15d584f6ea5",
+  "header": {
+    "VERSION": [
+      "0.7"
+    ],
+    "FIELDS": [
+      "x",
+      "y",
+      "z",
+      "rgb"
+    ],
+    "SIZE": [
+      "4",
+      "4",
+      "4",
+      "4"
+    ],
+    "TYPE": [
+      "F",
+      "F",
+      "F",
+      "U"
+    ],
+    "COUNT": [
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "WIDTH": [
+      "28897"
+    ],
+    "HEIGHT": [
+      "1"
+    ],
+    "VIEWPOINT": [
+      "0",
+      "0",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    "POINTS": [
+      "28897"
+    ],
+    "DATA": [
+      "binary"
+    ]
+  },
+  "byte_order": "little",
+  "byte_order_source": "cli_argument",
+  "length_unit": "unknown",
+  "unit_source": "unconfirmed",
+  "frame_id": "unknown",
+  "capture_timestamp_s": null,
+  "organized_layout": false,
+  "pixel_mapping_verified": false,
+  "camera_calibration_loaded": false,
+  "point_count": 28897,
+  "finite_point_count": 28897,
+  "nonfinite_point_count": 0,
+  "zero_xyz_count": 0,
+  "duplicate_xyz_count": 0,
+  "bounds_min_raw": [
+    20.025604248046875,
+    -49.99359130859375,
+    573.6697998046875
+  ],
+  "bounds_max_raw": [
+    179.99436950683594,
+    64.9990234375,
+    702.2715454101562
+  ],
+  "extent_raw": [
+    159.96876525878906,
+    114.99261474609375,
+    128.60174560546875
+  ],
+  "view_point_count": 28897,
+  "rgb_decoding": "PCL_0xRRGGBB",
+  "rgb_channel_min": [
+    18,
+    0,
+    0
+  ],
+  "rgb_channel_max": [
+    254,
+    0,
+    0
+  ],
+  "constant_rgb_channels": [
+    "G",
+    "B"
+  ],
+  "geometry_filtering": "nonfinite_for_display_only",
+  "coordinate_transform_applied": false,
+  "cap_pose_estimated": false,
+  "outputs_sha256": {
+    "point_cloud_raw.npz": "d77d46bb64a8894dfbb78d85da3baf78f7b551f8d5e4437fe063c6013f5527b9",
+    "index.html": "85308e1379e28c1658cbf87ab6b69fb08aad210d88a8383720cb1af615bb6879",
+    "preview.png": "87906130637675c61351633b39d51437a359eddd76c7ebd98640fa40c6ba3b98"
+  }
+}

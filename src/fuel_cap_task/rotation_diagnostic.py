@@ -8,6 +8,7 @@ import mujoco
 import numpy as np
 
 from .arm_ik import IKSettings, body_transform, rotation_error, transform
+from .fixed_grasp import DEFAULT_FIXED_GRASP
 from .grasp_search import pose_arrays, rotation
 from .interfaces import TaskParameters
 from .planning_scene_snapshot import scene_snapshot
@@ -94,7 +95,7 @@ class RotationDiagnostic:
         self.replay.set_progress(1)
         from .arm_ik import ArmIKPreview
         request = self.replay.report['request']
-        candidate = request.get('candidate_path', 'artifacts/manual_grasp/user_selected_20260930.json')
+        candidate = request.get('candidate_path', str(DEFAULT_FIXED_GRASP.relative_to(ROOT)))
         self.preview = ArmIKPreview(ROOT/candidate, scene=self.replay.scene)
         self.start = self.replay.data.qpos.copy()
         self.q0 = self.start[self.preview.addresses].copy()

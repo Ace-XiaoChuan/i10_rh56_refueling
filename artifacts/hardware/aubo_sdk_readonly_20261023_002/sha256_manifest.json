@@ -1,0 +1,19 @@
+{
+  "README.md": "947b184c563e56fa25d0f53d8a0ad1bff9b66f4498eb8a2255efc5ca8dc243c2",
+  "analysis.json": "ddf2bf2dd86defdf6322c333cefb4c1814547cf8b156fe533decacfd56d543a8",
+  "configuration.json": "ced427c9f9df0a8c572f5613746666a0b8ec65658a71ea455d7351c797fda2c6",
+  "metadata.json": "ae72aa56b3d522ff54332211efd96ba0e9d274b8eafdb809646509289fc9823c",
+  "provenance.json": "70f191e174448878514477632b21f3231e245b41e2c68153c11b7d1707423a60",
+  "queries.jsonl": "7d4ae3f3e52ff5648477fef380733a4384d820fc1716822775400c8af3829ce2",
+  "rtde_output_menu.json": "8d9f3c5fdd34df323a1a7dbf993507cbe67dd8dac7b9564e0c883556be39caa3",
+  "rtde_registered_recipes.json": "3d07f7f59c460696e78635effc740eb54c87d6660282aae62fb90af9d1082519",
+  "rtde_samples.csv": "21b68a6b8e16197c04b0d4205a319b5aceee65204a7ae462708c55c7f1a5f2c4",
+  "rtde_samples.jsonl": "3dd0285db85f29dca235879854361cb92930bc3e215be2ad30dc21622a6cdbec",
+  "source_snapshot/CMakeLists.txt": "58434d9137161f5bd6ca8eaea07d37124ba764ce7d3c45336c7aeee80ab6f6d2",
+  "source_snapshot/README.md": "ad59c7b8501e405db173221b601145cf35b600066279b405d41a4607be428489",
+  "source_snapshot/api_check.cpp": "20a70b5f4aec032a403192cce4b89739dc015208e7264e3189098b3c17e8892b",
+  "source_snapshot/aubo_i10_JY.urdf": "5722135ce4a2abb8549e92c43ea6802b7d06a0fa7f207beb35f7994e57e5baa2",
+  "source_snapshot/collect.cpp": "317e1fd6a3426c8a96cf8ae11c3b33d40494ea50092c045520bf71f1cca8329a",
+  "source_snapshot/main.cpp": "c26ae27a975d36716be08367945630c85a55c6ee28fd39112619a2108d2b62f8",
+  "source_snapshot/summarize_capture.py": "4b0df57d19a3841f0003d60558c278f907a1ae8e44166b88dc1df37219aefc1b"
+}

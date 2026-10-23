@@ -116,7 +116,7 @@ python3 tools/fetch_perception_models.py --output-dir .cache/perception/models
   --output artifacts/perception/my_mask_evaluation.json
 ```
 
-评价输出各候选的 IoU、精确率和召回率。深度反投影使用 `observation.json` 的内参、`world_from_optical` 和光轴 Z 深度。
+评价输出各候选的 IoU、精确率和召回率。深度反投影与彩色点云查看见[RGB-D 点云工具](rgbd_point_cloud.md)，使用同份 `observation.json` 的内参、`world_from_optical` 和光轴 Z 深度。
 
 ## 已保存云端框的分割
 

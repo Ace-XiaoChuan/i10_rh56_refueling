@@ -5,8 +5,9 @@ from pathlib import Path
 import mujoco
 import numpy as np
 from .mujoco_scene import ARM_JOINTS, MujocoCapScene
-from .arm_ik import body_transform, rotation_error
+from .arm_ik import ArmIKPreview, body_transform, rotation_error
 from .grasp_search import pose_arrays
+from .grasp_preparation import check_mtc_fields
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -36,6 +37,7 @@ class ApproachReplay:
             for relative, expected in records.items():
                 if hashlib.sha256((base/relative).read_bytes()).hexdigest() != expected:
                     raise ValueError(f'Stale planning geometry: {relative}')
+        preview = None
         if 'scene_variation' in request:
             # 回放必须重建原随机场景；不能把新轨迹放回固定基线场景中显示。
             from .random_scenes import SceneSampler, SamplingSettings
@@ -51,23 +53,22 @@ class ApproachReplay:
             baseline = json.loads((package/'config/scene.json').read_text())
             check_snapshot(request['planning_scene'], scene_snapshot(baseline, preview.model, preview.data))
             self.scene = preview.scene
-            # 再从盖体和候选计算目标，核对报告中的位置、朝向及接近轴。
-            # 防止障碍是一个场景，目标却来自另一个场景。
-            if not np.allclose(request['hand_position'], preview.world_from_hand[:3, 3], atol=1e-12, rtol=0):
-                raise ValueError('Target differs from sampled cap/candidate')
-            _, orientation = pose_arrays({'position_m': request['hand_position'],
-                                          'orientation_xyzw': request['hand_orientation_xyzw']})
-            if not np.allclose(orientation, preview.world_from_hand[:3, :3], atol=1e-12, rtol=0):
-                raise ValueError('Target orientation differs from sampled cap/candidate')
-            axis = preview.world_from_cap[:3, 2]
-            pregrasp = preview.world_from_hand[:3, 3] + request['approach_distance_m'] * axis
-            if (not np.allclose(request['outward_axis_world'], axis, atol=1e-12, rtol=0)
-                    or not np.allclose(request['pregrasp_position'], pregrasp, atol=1e-12, rtol=0)):
-                raise ValueError('Approach differs from sampled cap axis')
         else:
             if 'planning_scene' in request:
                 raise ValueError('Planning scene requires a reproducible variation')
-            self.scene = MujocoCapScene()
+            if 'candidate_path' in request:
+                candidate = request['candidate_path']
+                if candidate not in request['source_hashes']:
+                    raise ValueError('Candidate must be source-bound')
+                preview = ArmIKPreview(ROOT/candidate)
+                self.scene = preview.scene
+            else:
+                # 旧基准格式没有候选路径，仍执行其原有来源和轨迹检查。
+                self.scene = MujocoCapScene()
+        if preview is not None:
+            # 基准与随机请求共用同一适配检查，核对手根目标、接近方向和两组指令。
+            self.preparation = preview.preparation.with_approach(request['approach_distance_m'])
+            check_mtc_fields(request, self.preparation)
         self.model, self.data = self.scene.model, self.scene.data
         # 手保持候选预型；该回放没有闭合动作，也不复用历史闭合接触采样。
         self.scene.hand.apply(self.data, request['pregrasp_channels'])

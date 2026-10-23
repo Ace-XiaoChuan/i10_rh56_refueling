@@ -7,6 +7,7 @@
 ## 生成、构建与模型检查
 
 ```bash
+.venv/bin/python tools/preview_cap_ik.py
 .venv/bin/python tools/build_moveit_model.py
 python3 tools/check_moveit_model_sources.py
 source /opt/ros/humble/setup.bash
@@ -50,7 +51,7 @@ ros2 launch i10_rh56_moveit_config approach.launch.py \
   --trajectory artifacts/planning/my_approach.json --view
 ```
 
-`FixedState` 指定起点，`MoveTo` 用 RRTConnect 到预抓取构型，`MoveRelative` 用 CartesianPath 沿盖轴接近。准备工具从仿真估计接口读取盖体位姿。
+`FixedState` 指定起点，`MoveTo` 用 RRTConnect 到预抓取构型，`MoveRelative` 用 CartesianPath 沿盖轴接近。准备工具从仿真估计接口读取盖体位姿，并通过公共 `GraspPreparation` 传递同一次观测的抓取及接近目标。MTC 的 `setIKFrame("base")` 使用世界系手根目标；数值 IK 使用法兰目标。接近期间手保持候选预型，请求中的闭合目标由后续 E3 执行后端在抓握阶段使用。完整字段说明见[项目说明](../../doc/assembly_contract.md#盖体坐标系)。
 
 回放检查关节顺序、限位、连续性、预型、端点和模型来源，设置 qpos 后运行 `mj_forward`。Space 暂停/继续，R 重播，F 切换视角，C 显示碰撞几何。`--render-dir` 保存动画和静态图。
 

@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "arm_joints": [
+    "shoulder_joint",
+    "upperArm_joint",
+    "foreArm_joint",
+    "wrist1_joint",
+    "wrist2_joint",
+    "wrist3_joint"
+  ],
+  "initial_joint_positions": {
+    "shoulder_joint": 0.0,
+    "upperArm_joint": -0.5,
+    "foreArm_joint": 1.2,
+    "wrist1_joint": 0.0,
+    "wrist2_joint": 0.0,
+    "wrist3_joint": 0.0,
+    "thumb_proximal_yaw_joint": 1.308,
+    "thumb_proximal_pitch_joint": 0.1388721804511278,
+    "thumb_intermediate_joint": 0.3347,
+    "thumb_distal_joint": 0.24165563909774435,
+    "index_proximal_joint": 0.3537201181842599,
+    "index_intermediate_joint": 0.34506999999999993,
+    "middle_proximal_joint": 0.3748858447488584,
+    "middle_intermediate_joint": 0.2687099999999999,
+    "ring_proximal_joint": 1.53102336825141,
+    "ring_intermediate_joint": 1.56,
+    "pinky_proximal_joint": 1.53102336825141,
+    "pinky_intermediate_joint": 1.56
+  },
+  "target_frame_id": "world",
+  "target_link": "base",
+  "pregrasp_position": [
+    -0.075,
+    0.7469999999999999,
+    0.58
+  ],
+  "hand_position": [
+    -0.075,
+    0.8469999999999999,
+    0.58
+  ],
+  "hand_orientation_xyzw": [
+    0.2988362387301199,
+    0.6408563820557885,
+    0.6408563820557885,
+    0.2988362387301199
+  ],
+  "outward_axis_world": [
+    0.0,
+    -1.0,
+    0.0
+  ],
+  "approach_distance_m": 0.1,
+  "pregrasp_channels": [
+    0,
+    0,
+    800,
+    800,
+    900,
+    0
+  ],
+  "grasp_channels": [
+    0,
+    0,
+    440,
+    390,
+    660,
+    0
+  ],
+  "cap_estimate": {
+    "pose": {
+      "frame_id": "world",
+      "position_m": [
+        0.0,
+        1.007,
+        0.6
+      ],
+      "orientation_xyzw": [
+        0.5,
+        -0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "timestamp_s": 0.0,
+    "source": "simulation_ground_truth",
+    "valid": true,
+    "confidence": null,
+    "timestamp_clock": "simulation"
+  },
+  "candidate_provenance": {
+    "candidate_path": "/home/ace/i10_rh56_refueling_ws/config/fixed_grasp.json",
+    "candidate_sha256": "e8c2bac9d88bc375b751a004cd9134288412449c76f8f0880747bd14f790c854",
+    "schema_version": 1,
+    "mode": "manual_grasp_candidate",
+    "recorded_source_scene": "/home/ace/i10_rh56_refueling_ws/assets/scenes/i10_rh56_fuel_cap_preview.xml",
+    "source_scene_path": "/home/ace/i10_rh56_refueling_ws/assets/scenes/i10_rh56_fuel_cap_preview.xml",
+    "source_scene_sha256": "b376bb512b2d176dd4159d78228e70546b4681cc90e6757e081ac9d4a54d30d4",
+    "mujoco_version": "3.13.0",
+    "selection_source": "user_screenshot_2026-09-30_Y75",
+    "selection_status": "model_frame_revalidated_candidate"
+  },
+  "source_hashes": {
+    "assets/scenes/i10_rh56_fuel_cap_preview.xml": "b376bb512b2d176dd4159d78228e70546b4681cc90e6757e081ac9d4a54d30d4",
+    "config/fixed_grasp.json": "e8c2bac9d88bc375b751a004cd9134288412449c76f8f0880747bd14f790c854",
+    "src/i10_rh56_moveit_config/config/generated_hashes.json": "01e6f99b1e04edc9a7fa71f87109c88392b1628542f15179332ec1d652430d0d",
+    "src/i10_rh56_moveit_config/config/provenance.json": "7a828fb08be146e7779f194ccc2b6566041743ec909a727483ec229be3cba64a"
+  },
+  "candidate_path": "config/fixed_grasp.json"
+}

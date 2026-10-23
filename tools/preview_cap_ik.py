@@ -15,6 +15,7 @@ if '--render-dir' in sys.argv and '--view' not in sys.argv:
 import mujoco
 import numpy as np
 from fuel_cap_task.arm_ik import ArmIKPreview
+from fuel_cap_task.fixed_grasp import DEFAULT_FIXED_GRASP
 
 
 def camera(cam, near=False, cap_position=None):
@@ -114,12 +115,13 @@ def view(preview, report):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--candidate',type=Path,default=Path('artifacts/manual_grasp/user_selected_20260930.json'))
-    parser.add_argument('--output',type=Path,default=Path('artifacts/arm_ik/current_candidate.json'))
+    parser.add_argument('--candidate',type=Path,default=DEFAULT_FIXED_GRASP)
+    parser.add_argument('--output',type=Path,default=DEFAULT_FIXED_GRASP.parent/'arm_ik_current.json')
     parser.add_argument('--view',action='store_true')
     parser.add_argument('--render-dir',type=Path)
+    parser.add_argument('--distance',type=float, help='Optional outward approach distance in metres')
     args=parser.parse_args()
-    preview=ArmIKPreview(args.candidate)
+    preview=ArmIKPreview(args.candidate, approach_distance_m=args.distance)
     report=preview.solve(progress=lambda s:print(s,flush=True))
     if report['solutions']:
         preview.show(report['solutions'][0],closed=bool((preview.candidate.get('contact_trial') or {}).get('final_qpos')))

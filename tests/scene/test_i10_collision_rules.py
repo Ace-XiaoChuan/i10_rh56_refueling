@@ -36,10 +36,10 @@ class CollisionRuleTests(unittest.TestCase):
     def test_local_hand_still_compiles_and_nonadjacent_arm_contacts_remain(self):
         local=ContactExplorer().scene.model
         self.assertEqual(local.nexclude,17)
-        p=ArmIKPreview(ROOT/'artifacts/manual_grasp/user_selected_20260930.json',IKSettings(seeds=2))
+        p=ArmIKPreview(ROOT/'config/fixed_grasp.json',IKSettings(seeds=2))
         # Known colliding branch from the previous IK audit, not an excluded pair.
         import json
-        report=json.loads((ROOT/'artifacts/arm_ik/current_candidate.json').read_text())
+        report=json.loads((ROOT/'config/arm_ik_current.json').read_text())
         bad=next(s for s in report['solutions'] if s['interference_count']>0)
         p.show(bad)
         pairs={frozenset(c['geoms']) for c in p.contacts()}

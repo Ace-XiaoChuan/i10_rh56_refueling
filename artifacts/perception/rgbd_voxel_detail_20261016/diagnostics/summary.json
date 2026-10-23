@@ -1,0 +1,8 @@
+{
+  "说明": "旧观测的网格边界对照、显示圆柱细分不足的失败检查均保留。颜色只用于诊断门板是否仍在数据中，不作为语义识别。",
+  "offscreen_samples_4_to_0_depth_unchanged": true,
+  "slices28_ray_max_error_m": 0.000723835033385245,
+  "slices128_ray_max_error_m": 3.3310184064383463e-06,
+  "说明_精度": "此值检查虚拟观测与解析表面的数值关系，不代表真实相机精度。",
+  "failed_samples_reconstructed_points_used_scene_geometry": false
+}

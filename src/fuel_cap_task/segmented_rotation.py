@@ -10,7 +10,8 @@ import subprocess
 import numpy as np
 
 from .arm_ik import body_transform, rotation_error, transform
-from .grasp_search import pose_arrays, quaternion
+from .grasp_search import pose_arrays
+from .grasp_preparation import prepare_grasp
 from .planning_scene_snapshot import scene_snapshot, check_snapshot
 from .rotation_diagnostic import RotationDiagnostic, hand_target, solve_continuous
 from .trajectory_replay import ROOT
@@ -116,15 +117,17 @@ def regrasp_request(source, q, angle, tolerances=None):
     expected = hand_target(source.cap0, np.eye(4), np.deg2rad(angle))
     if not np.allclose(cap, expected, atol=1e-10, rtol=0):
         raise ValueError('新观测与本轮盖体状态不一致')
-    # 保留当前手盖候选；新盖姿态给出新世界目标，不假定臂会自动复位。
-    target = cap @ source.relative
+    # 保留当前固定候选，复用新观测的公共计算；距离沿用本几何实验的 0.1 m。
+    prepared = prepare_grasp(
+        source.preview.fixed_grasp, observed,
+        flange_from_hand=source.preview.flange_from_hand,
+        world_from_base=body_transform(source.preview.data, 'base_link'),
+        approach_distance_m=.1,
+    )
     request = copy.deepcopy(source.replay.report['request'])
     request['initial_joint_positions'].update(zip(request['arm_joints'], map(float, q)))
-    request.update(cap_estimate=asdict(observed), hand_position=target[:3, 3].tolist(),
-                   hand_orientation_xyzw=list(quaternion(target[:3, :3])),
-                   pregrasp_position=(target[:3, 3]+.1*cap[:3, 2]).tolist(),
-                   outward_axis_world=cap[:3, 2].tolist(), approach_distance_m=.1,
-                   planning_scene=scene_snapshot(source.world, source.preview.model, source.preview.data),
+    request.update(prepared.mtc_fields())
+    request.update(planning_scene=scene_snapshot(source.world, source.preview.model, source.preview.data),
                    regrasp={'cumulative_angle_deg': angle, 'retreat_distance_m': .1,
                             'release_executed': False, 'grasp_verified': False,
                             'observation_stage': 'post_rotation_before_retreat_geometric_snapshot',

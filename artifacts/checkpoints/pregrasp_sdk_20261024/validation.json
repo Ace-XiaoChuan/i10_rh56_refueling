@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-24",
+  "checks": {
+    "sdk_release_build": "passed_all_three_targets",
+    "sdk_offline_initialization": "passed_no_controller_connection",
+    "sdk_api_symbols": {
+      "passed": true,
+      "symbol_count": 26
+    },
+    "moveit_provenance": {
+      "passed": true,
+      "source_files": 237,
+      "generated_files": 233
+    },
+    "camera_extrinsic_numeric_checks": {
+      "passed": true,
+      "checks": [
+        "independent_expanded_RzRyRx",
+        "orthonormal_rotation",
+        "determinant_one",
+        "mm_to_m",
+        "radian_degree_consistency",
+        "inverse_round_trip"
+      ]
+    },
+    "input_name_map_sha256": {
+      "passed": true,
+      "files": 6
+    },
+    "hardware_capture_manifests": {
+      "passed": true,
+      "001_files": 8,
+      "002_files": 17
+    },
+    "pytest_scoped": {
+      "passed": 125,
+      "failed": 17,
+      "setup_errors": 31,
+      "total": 173,
+      "all_failures_cause": "ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml",
+      "scope": [
+        "tests/scene",
+        "tests/planning",
+        "tests/test_rgbd_point_cloud.py",
+        "tests/test_voxelization.py",
+        "tests/test_cap_task.py",
+        "tests/test_feedback_task.py",
+        "tools/tests"
+      ]
+    },
+    "current_e2_paths": {
+      "passed": true,
+      "cases": [
+        "baseline",
+        "mixed"
+      ],
+      "report": "current_path_validation.json"
+    }
+  },
+  "known_followups": [
+    "Migrate legacy planning test fixtures by generating new results for the current model; preserve archived records and source checks.",
+    "Connect live state and timed whole-trajectory execution through the pinned SDK.",
+    "Pair camera capture with robot flange pose and validate physical calibration."
+  ],
+  "source_sha256": {
+    "config/fuel_cap_camera_calibration.json": "5d53caa02dffa85af1b67e2bd04cea15de47e9c20b4e3d43229079e01b288365",
+    "tools/aubo_sdk_probe/main.cpp": "c26ae27a975d36716be08367945630c85a55c6ee28fd39112619a2108d2b62f8",
+    "tools/aubo_sdk_probe/collect.cpp": "317e1fd6a3426c8a96cf8ae11c3b33d40494ea50092c045520bf71f1cca8329a",
+    "tools/aubo_sdk_probe/api_check.cpp": "20a70b5f4aec032a403192cce4b89739dc015208e7264e3189098b3c17e8892b",
+    "tools/aubo_sdk_probe/CMakeLists.txt": "58434d9137161f5bd6ca8eaea07d37124ba764ce7d3c45336c7aeee80ab6f6d2",
+    "tools/sdk/manifest_0.23.1_linux_x86_64.json": "e217e33a10cddbf3c1548ff39c8e6fa0a433c1b94866df81e37c478107af1255"
+  }
+}

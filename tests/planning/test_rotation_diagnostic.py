@@ -9,7 +9,6 @@ import numpy as np
 from fuel_cap_task.arm_ik import body_transform, inverse, transform
 from fuel_cap_task.grasp_search import rotation
 from fuel_cap_task.rotation_diagnostic import hand_target, RotationDiagnostic, RotationReplay
-from fuel_cap_task.mujoco_scene import CAP_MODEL_FROM_TASK
 
 ROOT = Path(__file__).resolve().parents[2]
 TRAJECTORY = ROOT/'artifacts/planning/random_single/approach.json'
@@ -29,12 +28,12 @@ class RotationDiagnosticTests(unittest.TestCase):
     def test_actual_model_cap_joint_matches_estimated_axis(self):
         diagnostic = RotationDiagnostic(TRAJECTORY)
         diagnostic.set_state(diagnostic.q0, 30.)
-        # site 使用的轴约定与盖体系仅相差绕 Z 的固定旋转，因此轴向不变。
+        # 模型参考标记与盖体系的轴定义已统一，可直接比较完整位姿。
         actual = body_transform(diagnostic.preview.data, 'cap_grip_center')
         expected = diagnostic.cap0 @ transform(np.zeros(3), rotation(2, np.deg2rad(30)))
         np.testing.assert_allclose(actual[:3, 3], expected[:3, 3], atol=1e-12)
         np.testing.assert_allclose(actual[:3, 2], expected[:3, 2], atol=1e-12)
-        np.testing.assert_allclose(actual[:3, :3] @ CAP_MODEL_FROM_TASK, expected[:3, :3], atol=1e-12)
+        np.testing.assert_allclose(actual[:3, :3], expected[:3, :3], atol=1e-12)
         np.testing.assert_array_equal(diagnostic.preview.data.qpos[diagnostic.preview.addresses], diagnostic.q0)
 
     def test_jump_stops_without_new_seed_or_retry(self):

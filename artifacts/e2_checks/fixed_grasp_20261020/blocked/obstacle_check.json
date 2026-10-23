@@ -1,0 +1,95 @@
+{
+  "scene_xml_sha256": "cf2cbf602ea77cf3a67b16566c7c95c18a3c860d59acc9024d440f5309e30356",
+  "obstacle": {
+    "id": "e2_injected_blocker",
+    "position": [
+      -0.075,
+      0.7469999999999999,
+      0.58
+    ],
+    "rotation_matrix": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "shape": {
+      "type": "sphere",
+      "radius": 0.06
+    }
+  },
+  "robot_contacts": {
+    "initial": [],
+    "pregrasp": [
+      {
+        "geoms": [
+          "e2_injected_blocker",
+          "wrist3_Link_collision_0"
+        ],
+        "penetration_m": 0.016454434275435283
+      },
+      {
+        "geoms": [
+          "e2_injected_blocker",
+          "base"
+        ],
+        "penetration_m": 0.060345566456878504
+      },
+      {
+        "geoms": [
+          "e2_injected_blocker",
+          "base"
+        ],
+        "penetration_m": 0.032145566518784516
+      },
+      {
+        "geoms": [
+          "e2_injected_blocker",
+          "base"
+        ],
+        "penetration_m": 0.011845566518186898
+      },
+      {
+        "geoms": [
+          "e2_injected_blocker",
+          "thumb_proximal_base"
+        ],
+        "penetration_m": 0.0010429837514059764
+      }
+    ],
+    "grasp": [
+      {
+        "geoms": [
+          "e2_injected_blocker",
+          "foreArm_Link_collision_0"
+        ],
+        "penetration_m": 0.008004123979233904
+      },
+      {
+        "geoms": [
+          "e2_injected_blocker",
+          "wrist2_Link_collision_0"
+        ],
+        "penetration_m": 0.02261375851020417
+      },
+      {
+        "geoms": [
+          "e2_injected_blocker",
+          "wrist3_Link_collision_0"
+        ],
+        "penetration_m": 0.026510538258508493
+      }
+    ]
+  }
+}

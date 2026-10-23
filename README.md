@@ -4,7 +4,7 @@
 
 ## 项目做到哪里了
 
-已有本机二维定位与分割、RH56 抓姿优化适配、MTC 几何路径、构型筛选和反馈状态机。接下来接深度与油箱盖自动抓姿，再实现抓稳、柔顺旋拧和脱离判断，完成取盖闭环。
+已有本机二维定位与分割、点云与体素工具、固定抓姿适配、MTC 几何路径和反馈状态机；AUBO SDK 0.23.1 已读通真机 RPC/RTDE 并保存资料。近期先完成末端相机观测 → MoveIt 规划 → SDK 移动到预抓取位并停止，后续再接抓取与旋拧。点云毫米单位、相机坐标系及相机到法兰外参已确认，尚需采集时机器人位姿、实时状态桥和轨迹执行适配。
 
 当前需求、参数与进度统一见[项目说明](doc/assembly_contract.md)。
 
@@ -17,6 +17,7 @@
 | 对自己的图片定位和分割 | [图像操作说明](doc/grounded_sam_perception.md) |
 | 整理标注和重新训练定位模型 | [定位数据](doc/cap_training_data.md)、[云端训练](doc/cap_dino_cloud_training.md) |
 | 查看模型、调抓姿和闭合接触 | [模型与抓姿工具](doc/mjcf_inspection.md) |
+| 查询真机状态、采集资料与准备 SDK | [真机查询](doc/hardware/aubo_sdk_connection.md)、[SDK 下载与校验](tools/sdk/README.md) |
 | 规划接近、回放路径和筛选构型 | [MoveIt 工具](src/i10_rh56_moveit_config/README.md) |
 | 理解空间接触预测和 RH56 优化 | [SpaHybGen 示例](doc/spahybgen_reproduction.md)、[RH56 适配](doc/rh56_spahybgen_adapter.md) |
 | 查找模型、照片和设备资料 | [资产索引](assets/README.md)、[i10 资料](doc/hardware/aubo_i10_sources.md)、[相机资料](doc/hardware/vizum_camera_sdk_notes.md) |
@@ -49,7 +50,7 @@
 
 ```bash
 .venv/bin/python tools/tune_cap_grasp.py \
-  --load artifacts/manual_grasp/user_selected_20260930.json
+  --load config/fixed_grasp.json
 ```
 
 在控制面板调整盖体系中的手根位姿和预型，点击“应用调姿”和“闭合”观察接触。保存的候选供后续规划和执行评价使用。

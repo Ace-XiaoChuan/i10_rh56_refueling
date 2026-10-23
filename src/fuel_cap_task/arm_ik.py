@@ -1,5 +1,4 @@
 """当前模型的端点逆运动学；不执行轨迹，也不作为抓稳验收。"""
-import asyncio
 from dataclasses import asdict, dataclass
 import hashlib
 import json
@@ -8,8 +7,11 @@ from pathlib import Path
 import mujoco
 import numpy as np
 
+from .fixed_grasp import load_fixed_grasp
 from .interfaces import TaskParameters
-from .grasp_search import pose_arrays, quaternion
+from .grasp_search import quaternion
+from .grasp_targets import inverse, transform
+from .grasp_preparation import prepare_grasp
 from .mujoco_scene import ARM_JOINTS, MujocoCapScene
 
 
@@ -26,19 +28,9 @@ class IKSettings:
     penetration_diagnostic_m: float = .0001
 
 
-def transform(p, r):
-    t = np.eye(4)
-    t[:3, :3], t[:3, 3] = r, p
-    return t
-
-
 def body_transform(data, name):
     b = data.body(name)
     return transform(b.xpos.copy(), b.xmat.reshape(3, 3).copy())
-
-
-def inverse(t):
-    return transform(-t[:3, :3].T @ t[:3, 3], t[:3, :3].T)
 
 
 def rotation_error(target, actual):
@@ -50,20 +42,22 @@ def rotation_error(target, actual):
 
 
 class ArmIKPreview:
-    def __init__(self, candidate_path, settings=None, *, scene=None):
+    def __init__(self, candidate_path, settings=None, *, scene=None, approach_distance_m=None):
         self.settings = settings or IKSettings()
         self.scene = scene if scene is not None else MujocoCapScene()
         self.model, self.data = self.scene.model, self.scene.data
-        self.candidate_path = Path(candidate_path)
-        self.candidate = json.loads(self.candidate_path.read_text())
-        self.scene_hash = hashlib.sha256(self.scene_path.read_bytes()).hexdigest()
-        c = self.candidate
-        if (c.get('mode') != 'manual_grasp_candidate' or c.get('schema_version') != 1
-                or c.get('source_scene_sha256') != self.scene_hash
-                or c.get('mujoco_version') != mujoco.__version__
-                or c.get('grasp_channels') != list(TaskParameters().grasp_channels)):
-            raise ValueError('Candidate format/model/version/final target does not match')
-        self.scene.hand.apply(self.data, c['pregrasp_channels'])
+        self.candidate_path = Path(candidate_path).expanduser().resolve()
+        self.fixed_grasp = load_fixed_grasp(self.candidate_path, source_scene_path=self.scene_path,
+                                            expected_mujoco_version=mujoco.__version__)
+        self.scene_hash = self.fixed_grasp.provenance.source_scene_sha256
+        # 原 JSON 仅保留闭合实验等显示记录；摘要须与公共读取器真正检查的字节一致。
+        raw = self.candidate_path.read_bytes()
+        if hashlib.sha256(raw).hexdigest() != self.fixed_grasp.provenance.candidate_sha256:
+            raise ValueError('Candidate changed while loading')
+        self.candidate = json.loads(raw)
+        if self.fixed_grasp.grasp_channels != TaskParameters().grasp_channels:
+            raise ValueError('Candidate final target does not match current task parameters')
+        self.scene.hand.apply(self.data, self.fixed_grasp.pregrasp_channels)
         ids = [self.model.joint(name).id for name in ARM_JOINTS]
         self.addresses = self.model.jnt_qposadr[ids]
         self.dofs = self.model.jnt_dofadr[ids]
@@ -73,16 +67,19 @@ class ArmIKPreview:
         # 固定安装链给出法兰到手根的变换；base 是手根，base_link 才是臂基座。
         self.flange_from_hand = inverse(body_transform(self.data, 'wrist3_Link')) @ body_transform(self.data, 'base')
         # 通过估计接口获取盖体位姿；当前场景的来源仍为仿真真值。
-        self.estimate = asyncio.run(self.scene.estimator.estimate())
-        self.world_from_cap = transform(*pose_arrays(asdict(self.estimate.pose)))
-        # world_from_X 将 X 系坐标转为世界系坐标。
-        # 世界中的盖位姿 × 候选中手相对盖的位姿 = 世界中的手根目标。
-        self.world_from_hand = self.world_from_cap @ transform(*pose_arrays(c['cap_from_hand']))
-        # IK 求六个臂关节，因此用安装链的逆变换，将手根目标换算法兰目标。
-        self.world_from_flange = self.world_from_hand @ inverse(self.flange_from_hand)
-        base_inverse = inverse(body_transform(self.data, 'base_link'))
-        self.base_from_hand = base_inverse @ self.world_from_hand
-        self.base_from_flange = base_inverse @ self.world_from_flange
+        self.estimate = self.scene.estimator.read()
+        self.preparation = prepare_grasp(
+            self.fixed_grasp, self.estimate,
+            flange_from_hand=self.flange_from_hand,
+            world_from_base=body_transform(self.data, 'base_link'),
+            approach_distance_m=approach_distance_m,
+        )
+        targets = self.preparation.targets
+        self.world_from_cap = targets.world_from_cap
+        self.world_from_hand = targets.world_from_hand
+        self.world_from_flange = targets.world_from_flange
+        self.base_from_hand = targets.base_from_hand
+        self.base_from_flange = targets.base_from_flange
         self.robot_bodies = set()
         base_id = self.model.body('base_link').id
         for b in range(self.model.nbody):
@@ -122,7 +119,7 @@ class ArmIKPreview:
         return result
 
     def show(self, solution, closed=False):
-        self.scene.hand.apply(self.data, self.candidate['pregrasp_channels'])
+        self.scene.hand.apply(self.data, self.fixed_grasp.pregrasp_channels)
         if closed:
             trial = self.candidate.get('contact_trial') or {}
             q = trial.get('final_qpos')
@@ -200,7 +197,11 @@ class ArmIKPreview:
             self.forward(self.initial)
             mujoco.mj_forward(self.model,self.data)
         return {'mode':'current_model_endpoint_ik_no_execution','source_scene_sha256':self.scene_hash,
-                'candidate_path':str(self.candidate_path.resolve()), 'candidate_sha256':hashlib.sha256(self.candidate_path.read_bytes()).hexdigest(),
+                'candidate_path':str(self.candidate_path), 'candidate_sha256':self.fixed_grasp.provenance.candidate_sha256,
+                'candidate_provenance':asdict(self.fixed_grasp.provenance),
+                'pregrasp_channels':list(self.fixed_grasp.pregrasp_channels),
+                'grasp_channels':list(self.fixed_grasp.grasp_channels),
+                **({'approach_targets':self.preparation.approach_record()} if self.preparation.approach is not None else {}),
                 'settings':asdict(cfg),'joint_names':list(ARM_JOINTS),'joint_limits_rad':self.limits.tolist(),
                 'cap_estimate':asdict(self.estimate),'flange_from_hand':self.flange_from_hand.tolist(),
                 'world_from_hand_target':self.world_from_hand.tolist(),'base_from_hand_target':self.base_from_hand.tolist(),

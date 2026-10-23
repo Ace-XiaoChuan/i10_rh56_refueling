@@ -1,0 +1,7 @@
+{
+  "test_command": "PYTHONDONTWRITEBYTECODE=1 /home/ace/mujoco-env/bin/python -m pytest tools/tests/test_pcd_point_cloud.py -q -p no:cacheprovider",
+  "test_exit_code": 0,
+  "test_count_passed": 5,
+  "open3d_checked_arrays_unchanged": true,
+  "report_output_and_implementation_digests_match": true
+}

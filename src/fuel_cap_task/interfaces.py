@@ -10,6 +10,8 @@ class TaskFailure(Exception):
 
 @dataclass(frozen=True)
 class Pose:
+    """在 frame_id 坐标系下表达的位姿；位置单位为米，四元数顺序为 XYZW。"""
+
     frame_id: str
     position_m: tuple[float, float, float]
     orientation_xyzw: tuple[float, float, float, float]
@@ -17,11 +19,15 @@ class Pose:
 
 @dataclass(frozen=True)
 class CapEstimate:
-    # Cap-local +Z points out of the opening toward the hand; +X follows the
-    # grip beam. The provider resolves symmetry and transforms into frame_id.
+    """当前盖体位姿的快照，连同来源、采样时间和有效性一起传递。
+
+    盖体系 +X 沿握梁、+Z 朝开口外侧，提供方负责统一轴向及对称性。
+    timestamp_s 须结合 timestamp_clock 解释；valid=False 时不能生成运动目标。
+    """
+
     pose: Pose
     timestamp_s: float
-    source: str  # e.g. mock, simulation_ground_truth, vision
+    source: str  # 例如 mock、simulation_ground_truth 或 vision。
     valid: bool
     confidence: float | None = None
     timestamp_clock: str = "unix"
@@ -87,7 +93,7 @@ class StopFeedback:
 
 class CapEstimator(Protocol):
     async def estimate(self) -> CapEstimate:
-        """Return an estimate with explicit source, timestamp and validity."""
+        """返回带来源、时间和有效性的当前盖体位姿。"""
         ...
 
 

@@ -1,0 +1,21 @@
+{
+  "original_directories": {
+    "observation": "/tmp/fuel_cap_virtual_rgbd_1792128448879",
+    "point_cloud": "/tmp/fuel_cap_point_cloud_1792129243368"
+  },
+  "files_sha256": {
+    "observation/observation.json": "162ca5a77d0e61437a484398bd3ea4faad0c68f71500e1698b9a2dfa7753c6a4",
+    "observation/evaluation_only.npz": "61c22b045508ebcbe29d01b7d94132a6a9927f80b79def0874afa0eed29f9955",
+    "observation/rgb.png": "a32ceb6f95942cdbde5293297fe060754002ae1562faaae95dfbe707f4016050",
+    "observation/depth.npz": "e84ca00d39cd36254631c4545a331a020d11afe2fed347a2d67acdacc74b613b",
+    "point_cloud/evaluation_rays.json": "da8b67fde8fe2e17dcace667073d92df2fb946b8d021a79e965a51f2a4eaf49c",
+    "point_cloud/cloud_world.ply": "bb9d6ab2ac162614d228ef32df7e248a6e05d977714f02721fbdc29f314d5cc7",
+    "point_cloud/index.html": "1b1c0faa2a060c8a1dc1242154fa04bd92e007efad8b959bad41dd11ebb43a74",
+    "point_cloud/point_cloud.npz": "53be02de9193adfd45e305261a5544258902e097ae39916d625198342ee5c5dc",
+    "point_cloud/preview.png": "2dcbe265b6a8782518d24aab8706c7fa3d5a969735e3a0c47a19b2e708117fab",
+    "point_cloud/rgb.png": "a32ceb6f95942cdbde5293297fe060754002ae1562faaae95dfbe707f4016050",
+    "point_cloud/cloud_camera.ply": "89b000fe623294972ec31bf1411b451c388f2166783306cae285041627d227bc",
+    "point_cloud/result.json": "c3bbdbc9e481551695c7072bc587089a14ab8a57e359b988316d6c6a2dafa0ad"
+  },
+  "copied_without_modifying_original_results": true
+}

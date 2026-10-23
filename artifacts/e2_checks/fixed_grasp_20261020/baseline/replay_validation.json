@@ -1,0 +1,20 @@
+{
+  "mode": "mujoco_kinematic_replay_not_dynamics",
+  "waypoints": 606,
+  "stage_names": [
+    "move to pregrasp",
+    "axial approach"
+  ],
+  "maximum_robot_penetration_m": 0.0,
+  "worst_pair": null,
+  "endpoint_position_error_m": 5.790419281858457e-05,
+  "endpoint_orientation_error_rad": 7.305637559322093e-05,
+  "hand_cap_door_unchanged": true,
+  "axial_max_lateral_error_m": 1.9953168472507473e-05,
+  "axial_progress_start_end_m": [
+    -5.318149303845665e-05,
+    0.09994557106577628
+  ],
+  "coverage_note": "MuJoCo original enabled geometry; full planning geometry checked by FCL",
+  "trajectory_sha256": "51909c6a10a26e0fd743c490c8465723ef2633273e85b25d6c5cedf05fed7572"
+}

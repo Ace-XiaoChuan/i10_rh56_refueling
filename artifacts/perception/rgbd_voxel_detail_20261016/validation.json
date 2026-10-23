@@ -1,0 +1,61 @@
+{
+  "mode": "detail_voxel_observation_and_pixel_correspondence_check",
+  "color_diagnostic_not_semantic_detection": true,
+  "blue_surface_point_count": 37984,
+  "blue_pixel_bounds_uv": [
+    [
+      739,
+      380
+    ],
+    [
+      931,
+      640
+    ]
+  ],
+  "blue_surface_does_not_touch_image_border": true,
+  "cases": [
+    {
+      "case": "voxels_2mm",
+      "input_point_count": 1070168,
+      "voxel_count": 275934,
+      "all_points_inside_assigned_cells": true,
+      "membership_counts_match": true,
+      "point_count_conserved": true,
+      "photo_lookup_matches_all_valid_pixels": true,
+      "invalid_pixels_preserved": true,
+      "blue_surface_voxel_count_color_diagnostic_only": 6816,
+      "blue_photo_click_uv": [
+        818,
+        503
+      ],
+      "blue_photo_click_voxel_id": 171053
+    },
+    {
+      "case": "voxels_5mm",
+      "input_point_count": 1070168,
+      "voxel_count": 50516,
+      "all_points_inside_assigned_cells": true,
+      "membership_counts_match": true,
+      "point_count_conserved": true,
+      "photo_lookup_matches_all_valid_pixels": true,
+      "invalid_pixels_preserved": true,
+      "blue_surface_voxel_count_color_diagnostic_only": 1734,
+      "blue_photo_click_uv": [
+        818,
+        503
+      ],
+      "blue_photo_click_voxel_id": 30642
+    }
+  ],
+  "independent_ray_check": {
+    "mode": "independent_render_geometry_ray_check",
+    "sample_count": 1024,
+    "ray_misses": 0,
+    "distance_error_median_m": 4.3884733735843895e-08,
+    "distance_error_max_m": 3.3310184064383463e-06,
+    "numeric_surface_check_tolerance_m": 0.0001,
+    "offscreen_samples": 0,
+    "evaluation_only": true,
+    "ray_geometry_used_to_generate_points": false
+  }
+}

@@ -2,9 +2,8 @@
     "folders": [
         { "name": "源码", "path": "src" },
         { "name": "工具", "path": "tools" },
-        { "name": "测试", "path": "tests" },
         { "name": "配置", "path": "config" },
-        { "name": "文档", "path": "doc" }
+        { "name": "文档", "path": "doc" },
     ],
     "settings": {
         "ROS2.distro": "humble",

@@ -1,0 +1,61 @@
+{
+  "mode": "e2_geometry_ik_and_planning_checks_not_execution",
+  "complete": true,
+  "scene_count": 6,
+  "geometry_max_matrix_element_error": 2.4424906541753444e-15,
+  "invalid_inputs_rejected": 29,
+  "injected_geometry_faults_detected": 3,
+  "replay_faults_rejected": 10,
+  "regression_tests_passed": 18,
+  "path_checks": {
+    "baseline": {
+      "mode": "mujoco_kinematic_replay_not_dynamics",
+      "waypoints": 606,
+      "stage_names": [
+        "move to pregrasp",
+        "axial approach"
+      ],
+      "maximum_robot_penetration_m": 0.0,
+      "worst_pair": null,
+      "endpoint_position_error_m": 5.790419281858457e-05,
+      "endpoint_orientation_error_rad": 7.305637559322093e-05,
+      "hand_cap_door_unchanged": true,
+      "axial_max_lateral_error_m": 1.9953168472507473e-05,
+      "axial_progress_start_end_m": [
+        -5.318149303845665e-05,
+        0.09994557106577628
+      ],
+      "coverage_note": "MuJoCo original enabled geometry; full planning geometry checked by FCL",
+      "trajectory_sha256": "51909c6a10a26e0fd743c490c8465723ef2633273e85b25d6c5cedf05fed7572"
+    },
+    "mixed": {
+      "mode": "mujoco_kinematic_replay_not_dynamics",
+      "waypoints": 311,
+      "stage_names": [
+        "move to pregrasp",
+        "axial approach"
+      ],
+      "maximum_robot_penetration_m": 0.0,
+      "worst_pair": null,
+      "endpoint_position_error_m": 6.043455334879015e-05,
+      "endpoint_orientation_error_rad": 0.00011457913372427044,
+      "hand_cap_door_unchanged": true,
+      "axial_max_lateral_error_m": 6.0478964728600505e-05,
+      "axial_progress_start_end_m": [
+        1.5777241142925684e-05,
+        0.1000152987123913
+      ],
+      "coverage_note": "MuJoCo original enabled geometry; full planning geometry checked by FCL",
+      "trajectory_sha256": "86b144171814c8c66bd35fd74f4e260fdd1b11e605cf19bcff0966cef18914f0"
+    }
+  },
+  "blocked": {
+    "planner_exit_code": 1,
+    "ik_found": true,
+    "interference_free_endpoint_found": false,
+    "reason": "Invalid goal state; failing stage: move to pregrasp",
+    "replay_rejected": true,
+    "fault_injection": true
+  },
+  "scope": "当前固定候选与模型的目标计算、IK 和几何路径；不包含 E3 闭合、抓握连接和动力学执行"
+}

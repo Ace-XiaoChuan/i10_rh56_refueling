@@ -1,0 +1,34 @@
+{
+  "mode": "saved_voxel_membership_check",
+  "input_point_count": 302222,
+  "voxel_count": 36898,
+  "all_points_inside_assigned_cells": true,
+  "membership_counts_match": true,
+  "all_cells_occupied": true,
+  "all_indices_unique": true,
+  "point_count_conserved": true,
+  "point_to_center_distance_bounded": true,
+  "example_cell_index": [
+    -18,
+    202,
+    121
+  ],
+  "example_cell_point_count": 24,
+  "example_points_world_m": [
+    [
+      -0.08855100852786339,
+      1.011905551668441,
+      0.6099866896376701
+    ],
+    [
+      -0.0873716232006423,
+      1.0125753153758663,
+      0.6099583024497731
+    ],
+    [
+      -0.08619017988660989,
+      1.013246390875668,
+      0.609929859663019
+    ]
+  ]
+}

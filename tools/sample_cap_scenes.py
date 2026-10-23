@@ -16,9 +16,10 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'src'))
 if '--render-dir' in sys.argv and '--view' not in sys.argv:os.environ.setdefault('MUJOCO_GL','egl')
 import mujoco
 from fuel_cap_task.random_scenes import SceneSampler, SamplingSettings, classify, save_report
+from fuel_cap_task.fixed_grasp import DEFAULT_FIXED_GRASP
 from preview_cap_ik import camera,target_marker
 
-DEFAULT_CANDIDATE=Path('artifacts/manual_grasp/user_selected_20260930.json')
+DEFAULT_CANDIDATE=DEFAULT_FIXED_GRASP
 
 
 def select(sampler,row,solution=0):

@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[2]
 
 class RandomApproachTests(unittest.TestCase):
     def setUp(self):
-        self.sampler = SceneSampler(ROOT/'artifacts/manual_grasp/user_selected_20260930.json',
+        self.sampler = SceneSampler(ROOT/'config/fixed_grasp.json',
                                     SamplingSettings(random_seed=20261002))
         self.baseline = json.loads((ROOT/'src/i10_rh56_moveit_config/config/scene.json').read_text())
 

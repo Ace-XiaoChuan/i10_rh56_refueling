@@ -1,0 +1,502 @@
+FEEEEEEEEEEEEEEEEEEEEEEEFEEEEEEEEFFFFFFFFFFFFFFF                         [100%]
+==================================== ERRORS ====================================
+_ ERROR at setup of ConfigurationSelectionTests.test_candidate_binding_detects_changed_pool _
+tests/planning/test_configuration_selection.py:24: in setUpClass
+    cls.context = RegraspContext(ROOT/'artifacts/planning/segmented_single_tol_020')
+src/fuel_cap_task/regrasp_margin.py:43: in __init__
+    source = RotationDiagnostic(trajectory)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ ERROR at setup of ConfigurationSelectionTests.test_endpoint_check_is_raw_finite_and_bounded _
+tests/planning/test_configuration_selection.py:24: in setUpClass
+    cls.context = RegraspContext(ROOT/'artifacts/planning/segmented_single_tol_020')
+src/fuel_cap_task/regrasp_margin.py:43: in __init__
+    source = RotationDiagnostic(trajectory)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ ERROR at setup of ConfigurationSelectionTests.test_existing_output_rejected_before_search _
+tests/planning/test_configuration_selection.py:24: in setUpClass
+    cls.context = RegraspContext(ROOT/'artifacts/planning/segmented_single_tol_020')
+src/fuel_cap_task/regrasp_margin.py:43: in __init__
+    source = RotationDiagnostic(trajectory)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ ERROR at setup of ConfigurationSelectionTests.test_failed_ik_seeds_are_logged_without_retry _
+tests/planning/test_configuration_selection.py:24: in setUpClass
+    cls.context = RegraspContext(ROOT/'artifacts/planning/segmented_single_tol_020')
+src/fuel_cap_task/regrasp_margin.py:43: in __init__
+    source = RotationDiagnostic(trajectory)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ ERROR at setup of ConfigurationSelectionTests.test_ranking_uses_checked_cap_range_before_static_margin _
+tests/planning/test_configuration_selection.py:24: in setUpClass
+    cls.context = RegraspContext(ROOT/'artifacts/planning/segmented_single_tol_020')
+src/fuel_cap_task/regrasp_margin.py:43: in __init__
+    source = RotationDiagnostic(trajectory)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ ERROR at setup of ConfigurationSelectionTests.test_raw_dedup_preserves_integer_turns _
+tests/planning/test_configuration_selection.py:24: in setUpClass
+    cls.context = RegraspContext(ROOT/'artifacts/planning/segmented_single_tol_020')
+src/fuel_cap_task/regrasp_margin.py:43: in __init__
+    source = RotationDiagnostic(trajectory)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ ERROR at setup of ConfigurationSelectionTests.test_same_fk_does_not_mean_same_winding _
+tests/planning/test_configuration_selection.py:24: in setUpClass
+    cls.context = RegraspContext(ROOT/'artifacts/planning/segmented_single_tol_020')
+src/fuel_cap_task/regrasp_margin.py:43: in __init__
+    source = RotationDiagnostic(trajectory)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ ERROR at setup of ConfigurationSelectionTests.test_saved_real_selection_when_available _
+tests/planning/test_configuration_selection.py:24: in setUpClass
+    cls.context = RegraspContext(ROOT/'artifacts/planning/segmented_single_tol_020')
+src/fuel_cap_task/regrasp_margin.py:43: in __init__
+    source = RotationDiagnostic(trajectory)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ ERROR at setup of ConfigurationSelectionTests.test_winding_variants_stay_in_limits_and_change_one_joint _
+tests/planning/test_configuration_selection.py:24: in setUpClass
+    cls.context = RegraspContext(ROOT/'artifacts/planning/segmented_single_tol_020')
+src/fuel_cap_task/regrasp_margin.py:43: in __init__
+    source = RotationDiagnostic(trajectory)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ ERROR at setup of InitialSelectionTests.test_actual_trajectory_requires_selected_pregrasp_check _
+tests/planning/test_initial_configuration_selection.py:26: in setUpClass
+    cls.context = InitialContext(TRAJECTORY)
+src/fuel_cap_task/initial_configuration_selection.py:30: in __init__
+    source = RotationDiagnostic(self.trajectory)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ ERROR at setup of InitialSelectionTests.test_existing_output_is_rejected_before_loading _
+tests/planning/test_initial_configuration_selection.py:26: in setUpClass
+    cls.context = InitialContext(TRAJECTORY)
+src/fuel_cap_task/initial_configuration_selection.py:30: in __init__
+    source = RotationDiagnostic(self.trajectory)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ ERROR at setup of InitialSelectionTests.test_failed_pregrasp_refinement_rejects_candidate _
+tests/planning/test_initial_configuration_selection.py:26: in setUpClass
+    cls.context = InitialContext(TRAJECTORY)
+src/fuel_cap_task/initial_configuration_selection.py:30: in __init__
+    source = RotationDiagnostic(self.trajectory)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ ERROR at setup of InitialSelectionTests.test_finite_ik_budget_and_baseline_are_preserved _
+tests/planning/test_initial_configuration_selection.py:26: in setUpClass
+    cls.context = InitialContext(TRAJECTORY)
+src/fuel_cap_task/initial_configuration_selection.py:30: in __init__
+    source = RotationDiagnostic(self.trajectory)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ ERROR at setup of InitialSelectionTests.test_missing_or_changed_actual_trajectory_binding_is_rejected _
+tests/planning/test_initial_configuration_selection.py:26: in setUpClass
+    cls.context = InitialContext(TRAJECTORY)
+src/fuel_cap_task/initial_configuration_selection.py:30: in __init__
+    source = RotationDiagnostic(self.trajectory)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ ERROR at setup of InitialSelectionTests.test_no_improvement_keeps_baseline_without_path_search _
+tests/planning/test_initial_configuration_selection.py:26: in setUpClass
+    cls.context = InitialContext(TRAJECTORY)
+src/fuel_cap_task/initial_configuration_selection.py:30: in __init__
+    source = RotationDiagnostic(self.trajectory)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ ERROR at setup of InitialSelectionTests.test_prefilter_keeps_baseline_even_if_invalid_and_obeys_budget _
+tests/planning/test_initial_configuration_selection.py:26: in setUpClass
+    cls.context = InitialContext(TRAJECTORY)
+src/fuel_cap_task/initial_configuration_selection.py:30: in __init__
+    source = RotationDiagnostic(self.trajectory)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ ERROR at setup of InitialSelectionTests.test_raw_winding_kept_at_initial_endpoint _
+tests/planning/test_initial_configuration_selection.py:26: in setUpClass
+    cls.context = InitialContext(TRAJECTORY)
+src/fuel_cap_task/initial_configuration_selection.py:30: in __init__
+    source = RotationDiagnostic(self.trajectory)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ ERROR at setup of InitialSelectionTests.test_runtime_audit_failure_stops_before_other_candidates _
+tests/planning/test_initial_configuration_selection.py:26: in setUpClass
+    cls.context = InitialContext(TRAJECTORY)
+src/fuel_cap_task/initial_configuration_selection.py:30: in __init__
+    source = RotationDiagnostic(self.trajectory)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ ERROR at setup of InitialSelectionTests.test_saved_pool_geometry_and_prefilter_rechecked _
+tests/planning/test_initial_configuration_selection.py:26: in setUpClass
+    cls.context = InitialContext(TRAJECTORY)
+src/fuel_cap_task/initial_configuration_selection.py:30: in __init__
+    source = RotationDiagnostic(self.trajectory)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ ERROR at setup of InitialSelectionTests.test_saved_real_initial_selection_when_available _
+tests/planning/test_initial_configuration_selection.py:26: in setUpClass
+    cls.context = InitialContext(TRAJECTORY)
+src/fuel_cap_task/initial_configuration_selection.py:30: in __init__
+    source = RotationDiagnostic(self.trajectory)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ ERROR at setup of InitialSelectionTests.test_selected_request_retains_initial_state_scene_and_pose _
+tests/planning/test_initial_configuration_selection.py:26: in setUpClass
+    cls.context = InitialContext(TRAJECTORY)
+src/fuel_cap_task/initial_configuration_selection.py:30: in __init__
+    source = RotationDiagnostic(self.trajectory)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ ERROR at setup of InitialSelectionTests.test_status_keeps_unknown_baseline_distinct _
+tests/planning/test_initial_configuration_selection.py:26: in setUpClass
+    cls.context = InitialContext(TRAJECTORY)
+src/fuel_cap_task/initial_configuration_selection.py:30: in __init__
+    source = RotationDiagnostic(self.trajectory)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ ERROR at setup of InitialSelectionTests.test_zero_progress_is_observed_initial_cap_not_model_zero _
+tests/planning/test_initial_configuration_selection.py:26: in setUpClass
+    cls.context = InitialContext(TRAJECTORY)
+src/fuel_cap_task/initial_configuration_selection.py:30: in __init__
+    source = RotationDiagnostic(self.trajectory)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ ERROR at setup of RegraspMarginTests.test_audit_failure_does_not_continue_or_repeat _
+tests/planning/test_regrasp_margin.py:51: in setUpClass
+    cls.context = RegraspContext(SEGMENT)
+src/fuel_cap_task/regrasp_margin.py:43: in __init__
+    source = RotationDiagnostic(trajectory)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ ERROR at setup of RegraspMarginTests.test_changed_input_hash_and_false_success_are_rejected _
+tests/planning/test_regrasp_margin.py:51: in setUpClass
+    cls.context = RegraspContext(SEGMENT)
+src/fuel_cap_task/regrasp_margin.py:43: in __init__
+    source = RotationDiagnostic(trajectory)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ ERROR at setup of RegraspMarginTests.test_rebound_tampered_cumulative_angle_or_unequal_budget_rejected _
+tests/planning/test_regrasp_margin.py:51: in setUpClass
+    cls.context = RegraspContext(SEGMENT)
+src/fuel_cap_task/regrasp_margin.py:43: in __init__
+    source = RotationDiagnostic(trajectory)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ ERROR at setup of RegraspMarginTests.test_rebound_wrong_cap_angle_or_target_still_rejected _
+tests/planning/test_regrasp_margin.py:51: in setUpClass
+    cls.context = RegraspContext(SEGMENT)
+src/fuel_cap_task/regrasp_margin.py:43: in __init__
+    source = RotationDiagnostic(trajectory)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ ERROR at setup of RegraspMarginTests.test_rejected_start_has_unknown_comparison_not_zero_range _
+tests/planning/test_regrasp_margin.py:51: in setUpClass
+    cls.context = RegraspContext(SEGMENT)
+src/fuel_cap_task/regrasp_margin.py:43: in __init__
+    source = RotationDiagnostic(trajectory)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ ERROR at setup of RegraspMarginTests.test_same_cap_and_hand_target_preserve_cumulative_angle_and_joint_winding _
+tests/planning/test_regrasp_margin.py:51: in setUpClass
+    cls.context = RegraspContext(SEGMENT)
+src/fuel_cap_task/regrasp_margin.py:43: in __init__
+    source = RotationDiagnostic(trajectory)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ ERROR at setup of RegraspMarginTests.test_short_scan_saves_relative_and_cumulative_failure_without_retry _
+tests/planning/test_regrasp_margin.py:51: in setUpClass
+    cls.context = RegraspContext(SEGMENT)
+src/fuel_cap_task/regrasp_margin.py:43: in __init__
+    source = RotationDiagnostic(trajectory)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ ERROR at setup of RegraspMarginTests.test_summary_uses_common_prefix_and_never_sets_execution_threshold _
+tests/planning/test_regrasp_margin.py:51: in setUpClass
+    cls.context = RegraspContext(SEGMENT)
+src/fuel_cap_task/regrasp_margin.py:43: in __init__
+    source = RotationDiagnostic(trajectory)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+=================================== FAILURES ===================================
+________ ApproachReplayTests.test_mtc_path_and_non_arm_state_invariance ________
+tests/planning/test_approach_replay.py:15: in test_mtc_path_and_non_arm_state_invariance
+    replay=ApproachReplay(REPORT)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ RandomApproachTests.test_saved_random_path_and_rejection_of_mismatched_world _
+tests/planning/test_random_approach.py:57: in test_saved_random_path_and_rejection_of_mismatched_world
+    replay = ApproachReplay(path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+__ RotationDiagnosticTests.test_actual_model_cap_joint_matches_estimated_axis __
+tests/planning/test_rotation_diagnostic.py:29: in test_actual_model_cap_joint_matches_estimated_axis
+    diagnostic = RotationDiagnostic(TRAJECTORY)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+______ RotationDiagnosticTests.test_jump_stops_without_new_seed_or_retry _______
+tests/planning/test_rotation_diagnostic.py:40: in test_jump_stops_without_new_seed_or_retry
+    diagnostic = RotationDiagnostic(TRAJECTORY)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ RotationDiagnosticTests.test_saved_prefix_preserves_hand_and_rejects_changed_reports _
+tests/planning/test_rotation_diagnostic.py:56: in test_saved_prefix_preserves_hand_and_rejects_changed_reports
+    replay = RotationReplay(folder/'diagnostic.json', folder/'fcl_validation.json')
+src/fuel_cap_task/rotation_diagnostic.py:239: in __init__
+    self.source = RotationDiagnostic(ROOT/self.diagnostic['trajectory_path'])
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ RotationMarginTests.test_actual_short_scan_and_summary_use_only_common_fcl_prefix _
+tests/planning/test_rotation_margin.py:86: in test_actual_short_scan_and_summary_use_only_common_fcl_prefix
+    report = RotationDiagnostic(TRAJECTORY).run(path, settings=RotationScanSettings(2.25))
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ RotationMarginTests.test_nonconvergence_saves_candidate_without_claiming_joint_limit _
+tests/planning/test_rotation_margin.py:54: in test_nonconvergence_saves_candidate_without_claiming_joint_limit
+    source = RotationDiagnostic(TRAJECTORY)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ RotationMarginTests.test_out_of_bounds_candidate_is_distinguished_from_ik_failure _
+tests/planning/test_rotation_margin.py:72: in test_out_of_bounds_candidate_is_distinguished_from_ik_failure
+    source = RotationDiagnostic(TRAJECTORY)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ RotationMarginTests.test_reaching_horizon_does_not_produce_execution_threshold _
+tests/planning/test_rotation_margin.py:105: in test_reaching_horizon_does_not_produce_execution_threshold
+    report = RotationDiagnostic(TRAJECTORY).run(path, settings=RotationScanSettings(.5))
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ RotationMarginTests.test_start_rejected_by_full_coverage_has_no_usable_range _
+tests/planning/test_rotation_margin.py:117: in test_start_rejected_by_full_coverage_has_no_usable_range
+    report = RotationDiagnostic(TRAJECTORY).run(path, settings=RotationScanSettings(.5))
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ RotationMarginTests.test_tampered_counts_hashes_sources_and_margin_are_rejected _
+tests/planning/test_rotation_margin.py:129: in test_tampered_counts_hashes_sources_and_margin_are_rejected
+    report = RotationDiagnostic(TRAJECTORY).run(path, settings=RotationScanSettings(.5))
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ SegmentedRotationTests.test_mid_segment_failure_preserves_cumulative_progress _
+tests/planning/test_segmented_rotation.py:54: in test_mid_segment_failure_preserves_cumulative_progress
+    source = RotationDiagnostic(TRAJECTORY)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+___ SegmentedRotationTests.test_new_estimate_and_scene_use_accumulated_angle ___
+tests/planning/test_segmented_rotation.py:42: in test_new_estimate_and_scene_use_accumulated_angle
+    source = RotationDiagnostic(TRAJECTORY)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ SegmentedRotationTests.test_new_tolerance_accepts_error_rejected_by_historical_setting _
+tests/planning/test_segmented_rotation.py:25: in test_new_tolerance_accepts_error_rejected_by_historical_setting
+    source = RotationDiagnostic(TRAJECTORY)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ SegmentedRotationTests.test_planning_failure_stops_without_followup_segment __
+tests/planning/test_segmented_rotation.py:70: in test_planning_failure_stops_without_followup_segment
+    result = run(TRAJECTORY, Path(tmp))
+src/fuel_cap_task/segmented_rotation.py:231: in run
+    source = RotationDiagnostic(trajectory)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+____ SegmentedRotationTests.test_saved_checked_prefix_and_tampered_summary _____
+tests/planning/test_segmented_rotation.py:90: in test_saved_checked_prefix_and_tampered_summary
+    replay = SegmentedReplay(path)
+tools/preview_segmented_rotation.py:32: in __init__
+    self.source = RotationDiagnostic(source)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+_ SegmentedRotationTests.test_wrong_motion_stage_or_unvalidated_result_is_rejected _
+tests/planning/test_segmented_rotation.py:79: in test_wrong_motion_stage_or_unvalidated_result_is_rejected
+    source = RotationDiagnostic(TRAJECTORY)
+src/fuel_cap_task/rotation_diagnostic.py:93: in __init__
+    self.replay = ApproachReplay(self.path)
+src/fuel_cap_task/trajectory_replay.py:29: in __init__
+    raise ValueError(f'Stale source: {relative}')
+E   ValueError: Stale source: assets/scenes/i10_rh56_fuel_cap_preview.xml
+----------- generated xml file: /tmp/refueling-checkpoint-failed.xml -----------
+=========================== short test summary info ============================
+FAILED tests/planning/test_approach_replay.py::ApproachReplayTests::test_mtc_path_and_non_arm_state_invariance
+FAILED tests/planning/test_random_approach.py::RandomApproachTests::test_saved_random_path_and_rejection_of_mismatched_world
+FAILED tests/planning/test_rotation_diagnostic.py::RotationDiagnosticTests::test_actual_model_cap_joint_matches_estimated_axis
+FAILED tests/planning/test_rotation_diagnostic.py::RotationDiagnosticTests::test_jump_stops_without_new_seed_or_retry
+FAILED tests/planning/test_rotation_diagnostic.py::RotationDiagnosticTests::test_saved_prefix_preserves_hand_and_rejects_changed_reports
+FAILED tests/planning/test_rotation_margin.py::RotationMarginTests::test_actual_short_scan_and_summary_use_only_common_fcl_prefix
+FAILED tests/planning/test_rotation_margin.py::RotationMarginTests::test_nonconvergence_saves_candidate_without_claiming_joint_limit
+FAILED tests/planning/test_rotation_margin.py::RotationMarginTests::test_out_of_bounds_candidate_is_distinguished_from_ik_failure
+FAILED tests/planning/test_rotation_margin.py::RotationMarginTests::test_reaching_horizon_does_not_produce_execution_threshold
+FAILED tests/planning/test_rotation_margin.py::RotationMarginTests::test_start_rejected_by_full_coverage_has_no_usable_range
+FAILED tests/planning/test_rotation_margin.py::RotationMarginTests::test_tampered_counts_hashes_sources_and_margin_are_rejected
+FAILED tests/planning/test_segmented_rotation.py::SegmentedRotationTests::test_mid_segment_failure_preserves_cumulative_progress
+FAILED tests/planning/test_segmented_rotation.py::SegmentedRotationTests::test_new_estimate_and_scene_use_accumulated_angle
+FAILED tests/planning/test_segmented_rotation.py::SegmentedRotationTests::test_new_tolerance_accepts_error_rejected_by_historical_setting
+FAILED tests/planning/test_segmented_rotation.py::SegmentedRotationTests::test_planning_failure_stops_without_followup_segment
+FAILED tests/planning/test_segmented_rotation.py::SegmentedRotationTests::test_saved_checked_prefix_and_tampered_summary
+FAILED tests/planning/test_segmented_rotation.py::SegmentedRotationTests::test_wrong_motion_stage_or_unvalidated_result_is_rejected
+ERROR tests/planning/test_configuration_selection.py::ConfigurationSelectionTests::test_candidate_binding_detects_changed_pool
+ERROR tests/planning/test_configuration_selection.py::ConfigurationSelectionTests::test_endpoint_check_is_raw_finite_and_bounded
+ERROR tests/planning/test_configuration_selection.py::ConfigurationSelectionTests::test_existing_output_rejected_before_search
+ERROR tests/planning/test_configuration_selection.py::ConfigurationSelectionTests::test_failed_ik_seeds_are_logged_without_retry
+ERROR tests/planning/test_configuration_selection.py::ConfigurationSelectionTests::test_ranking_uses_checked_cap_range_before_static_margin
+ERROR tests/planning/test_configuration_selection.py::ConfigurationSelectionTests::test_raw_dedup_preserves_integer_turns
+ERROR tests/planning/test_configuration_selection.py::ConfigurationSelectionTests::test_same_fk_does_not_mean_same_winding
+ERROR tests/planning/test_configuration_selection.py::ConfigurationSelectionTests::test_saved_real_selection_when_available
+ERROR tests/planning/test_configuration_selection.py::ConfigurationSelectionTests::test_winding_variants_stay_in_limits_and_change_one_joint
+ERROR tests/planning/test_initial_configuration_selection.py::InitialSelectionTests::test_actual_trajectory_requires_selected_pregrasp_check
+ERROR tests/planning/test_initial_configuration_selection.py::InitialSelectionTests::test_existing_output_is_rejected_before_loading
+ERROR tests/planning/test_initial_configuration_selection.py::InitialSelectionTests::test_failed_pregrasp_refinement_rejects_candidate
+ERROR tests/planning/test_initial_configuration_selection.py::InitialSelectionTests::test_finite_ik_budget_and_baseline_are_preserved
+ERROR tests/planning/test_initial_configuration_selection.py::InitialSelectionTests::test_missing_or_changed_actual_trajectory_binding_is_rejected
+ERROR tests/planning/test_initial_configuration_selection.py::InitialSelectionTests::test_no_improvement_keeps_baseline_without_path_search
+ERROR tests/planning/test_initial_configuration_selection.py::InitialSelectionTests::test_prefilter_keeps_baseline_even_if_invalid_and_obeys_budget
+ERROR tests/planning/test_initial_configuration_selection.py::InitialSelectionTests::test_raw_winding_kept_at_initial_endpoint
+ERROR tests/planning/test_initial_configuration_selection.py::InitialSelectionTests::test_runtime_audit_failure_stops_before_other_candidates
+ERROR tests/planning/test_initial_configuration_selection.py::InitialSelectionTests::test_saved_pool_geometry_and_prefilter_rechecked
+ERROR tests/planning/test_initial_configuration_selection.py::InitialSelectionTests::test_saved_real_initial_selection_when_available
+ERROR tests/planning/test_initial_configuration_selection.py::InitialSelectionTests::test_selected_request_retains_initial_state_scene_and_pose
+ERROR tests/planning/test_initial_configuration_selection.py::InitialSelectionTests::test_status_keeps_unknown_baseline_distinct
+ERROR tests/planning/test_initial_configuration_selection.py::InitialSelectionTests::test_zero_progress_is_observed_initial_cap_not_model_zero
+ERROR tests/planning/test_regrasp_margin.py::RegraspMarginTests::test_audit_failure_does_not_continue_or_repeat
+ERROR tests/planning/test_regrasp_margin.py::RegraspMarginTests::test_changed_input_hash_and_false_success_are_rejected
+ERROR tests/planning/test_regrasp_margin.py::RegraspMarginTests::test_rebound_tampered_cumulative_angle_or_unequal_budget_rejected
+ERROR tests/planning/test_regrasp_margin.py::RegraspMarginTests::test_rebound_wrong_cap_angle_or_target_still_rejected
+ERROR tests/planning/test_regrasp_margin.py::RegraspMarginTests::test_rejected_start_has_unknown_comparison_not_zero_range
+ERROR tests/planning/test_regrasp_margin.py::RegraspMarginTests::test_same_cap_and_hand_target_preserve_cumulative_angle_and_joint_winding
+ERROR tests/planning/test_regrasp_margin.py::RegraspMarginTests::test_short_scan_saves_relative_and_cumulative_failure_without_retry
+ERROR tests/planning/test_regrasp_margin.py::RegraspMarginTests::test_summary_uses_common_prefix_and_never_sets_execution_threshold
+17 failed, 125 deselected, 31 errors in 2.42s

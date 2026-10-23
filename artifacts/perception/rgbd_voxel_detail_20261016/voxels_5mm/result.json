@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "mode": "observed_surface_voxels",
+  "point_cloud_dir": "/tmp/fuel_cap_detail_1792132660893/primitive_detail/point_cloud",
+  "source": "mujoco_rendered_rgbd",
+  "timestamp_s": 0.0,
+  "timestamp_clock": "simulation",
+  "frame_id": "world",
+  "length_unit": "m",
+  "voxel_size_m": 0.005,
+  "origin_world_m": [
+    -0.0025,
+    -0.0025,
+    -0.0025
+  ],
+  "index_axis_order": [
+    "x",
+    "y",
+    "z"
+  ],
+  "input_point_count": 1070168,
+  "voxel_count": 50516,
+  "points_per_voxel_mean": 21.18473354976641,
+  "points_per_voxel_max": 56,
+  "point_count_conserved": true,
+  "global_view_point_count": 30000,
+  "local_radius_m": 0.04,
+  "max_local_display_cubes": 8000,
+  "photo_pixel_lookup": true,
+  "max_point_to_center_distance_m": 0.004220515931053527,
+  "cell_half_diagonal_m": 0.004330127018922193,
+  "observed_surface_only": true,
+  "unlisted_cell_state": "unknown",
+  "ground_truth_used": false,
+  "network_input_prepared": false,
+  "input_sha256": {
+    "result.json": "a6898e0d6e12c147de9d417e92dc7b170ca6fff9c928c7ac625baf7e53526140",
+    "point_cloud.npz": "a46e38c927d6f9904aa7532d89e1e1631f6ef8a23f81f5c03f2ff5624f1d34ae",
+    "rgb.png": "9223a895e51f88e50a1d60c8837d29c5a5082e92d76ccef21bb8c53f7ffe1018"
+  },
+  "implementation_sha256": {
+    "tools/voxelize_cap_point_cloud.py": "83d981b702ebb1a5ed9e323f6e808679680877198bdcf7691299970626f59ca4",
+    "tools/voxel_viewer.html": "0fbefab6f406476ae4bbbe9d376e1a951079fab68beb00951a279ebe109694a2",
+    "src/fuel_cap_task/voxelization.py": "b8586fe769e705917b5b6231c2227dc0d93c3e9c29be99ae67b59cdb40841b2b",
+    "src/fuel_cap_task/rgbd_point_cloud.py": "2b27de4c134d902bc694f725aea882654cc265c2a18bab82246f198b847ec0fe",
+    "tools/reconstruct_cap_point_cloud.py": "83b0e4128efaf54337b5d2a78f8b285371853490d380599b0e4fd13d9fcfca92"
+  },
+  "plotly_javascript_sha256": "0a17719a72751704861215da0e5c5cdb3f9a8d50eff5cb84cb6f8b80786682b0",
+  "outputs_sha256": {
+    "index.html": "2986be1fef35b14152db984c8158f41fe4047809b21899f37c4d88412ae88faa",
+    "voxel_centers.ply": "a4e223fa552038cdd1b1cd42819c3b99eaac64f160451542122358a4367e8755",
+    "voxels.npz": "fa0e3603fa04f706f3ad1254f4a2e886e73070856baadefd606530e27f41e58f",
+    "preview.png": "6226d16e8fc68cddb1fcac7fa2d2d9c8e32c1ebdb862b1694df16a1b58869261",
+    "rgb.png": "9223a895e51f88e50a1d60c8837d29c5a5082e92d76ccef21bb8c53f7ffe1018"
+  }
+}

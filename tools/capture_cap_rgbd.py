@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""保存固定虚拟相机的 RGB-D 观测；盖体真值只供独立评价。"""
+"""保存可指定取景的虚拟 RGB-D 观测；盖体真值只供独立评价。"""
 
 import argparse
 import hashlib
@@ -19,16 +19,34 @@ from fuel_cap_task.mujoco_scene import DEFAULT_SCENE, MujocoCapScene
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output-dir", type=Path, required=True)
+    parser.add_argument("--width", type=int, default=640)
+    parser.add_argument("--height", type=int, default=480)
+    parser.add_argument("--lookat-world-m", type=float, nargs=3, default=(0., .86, .42))
+    parser.add_argument("--distance-m", type=float, default=.65)
+    parser.add_argument("--azimuth-deg", type=float, default=90.)
+    parser.add_argument("--elevation-deg", type=float, default=-20.)
+    parser.add_argument("--offscreen-samples", type=int, default=0,
+                        help="离屏抗锯齿样本数；几何观测默认 0，避免边界混合深度")
+    parser.add_argument("--primitive-slices", type=int, default=128,
+                        help="圆柱等基本形状的显示圆周细分，不改变碰撞曲面")
     args = parser.parse_args()
+    if (args.width <= 0 or args.height <= 0 or args.distance_m <= 0 or args.offscreen_samples < 0
+            or args.primitive_slices < 3
+            or not np.isfinite([*args.lookat_world_m, args.distance_m,
+                                args.azimuth_deg, args.elevation_deg]).all()):
+        parser.error("图像尺寸与距离须为正，相机取景参数须为有限数值")
     output = args.output_dir.resolve()
     output.mkdir(parents=True, exist_ok=False)
     scene = MujocoCapScene()
     m, d = scene.model, scene.data
-    width, height = 640, 480
+    width, height = args.width, args.height
     m.vis.global_.offwidth, m.vis.global_.offheight = width, height
+    # 基本形状的显示网格是解析曲面的近似，提高细分以改善虚拟深度边缘。
+    m.vis.quality.offsamples = args.offscreen_samples
+    m.vis.quality.numslices = args.primitive_slices
     cam, opt = mujoco.MjvCamera(), mujoco.MjvOption()
-    cam.lookat[:] = [0, .86, .42]
-    cam.distance, cam.azimuth, cam.elevation = .65, 90, -20
+    cam.lookat[:] = args.lookat_world_m
+    cam.distance, cam.azimuth, cam.elevation = args.distance_m, args.azimuth_deg, args.elevation_deg
     opt.geomgroup[0] = opt.geomgroup[3] = 0
     opt.sitegroup[:] = 0
     # 不加坐标箭头、接触标记或 GUI 文字，输入只含场景渲染。
@@ -72,6 +90,12 @@ def main():
         "world_from_optical": world_from_optical.tolist(), "depth_unit": "m",
         "depth_convention": "optical_z", "mujoco_version": mujoco.__version__,
         "camera_configuration_source": "assembly_contract/N2",
+        "capture_settings": {"lookat_world_m": list(args.lookat_world_m),
+                             "distance_m": args.distance_m, "azimuth_deg": args.azimuth_deg,
+                             "elevation_deg": args.elevation_deg,
+                             "offscreen_samples": args.offscreen_samples,
+                             "primitive_slices": args.primitive_slices,
+                             "primitive_stacks": int(m.vis.quality.numstacks)},
         "capture_code_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         "scene_xml_sha256": hashlib.sha256(DEFAULT_SCENE.read_bytes()).hexdigest(),
         "visible_cap_pixels_evaluation_only": int(target_mask.sum()),

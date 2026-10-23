@@ -19,11 +19,12 @@ import trimesh
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src'))
 from fuel_cap_task.arm_ik import ArmIKPreview, body_transform
+from fuel_cap_task.fixed_grasp import DEFAULT_FIXED_GRASP
 from fuel_cap_task.mujoco_scene import ARM_JOINTS
 
 PACKAGE = ROOT / 'src/i10_rh56_moveit_config'
-CANDIDATE = ROOT / 'artifacts/manual_grasp/user_selected_20260930.json'
-IK_REPORT = ROOT / 'artifacts/arm_ik/current_candidate.json'
+CANDIDATE = DEFAULT_FIXED_GRASP
+IK_REPORT = ROOT / 'config/arm_ik_current.json'
 
 
 def dump(path, value):
@@ -267,7 +268,10 @@ json.dump(result, sys.stdout)
         'joint_bounds':{m.joint(j).name:list(map(float,driver_limits.get(j,m.jnt_range[j]))) for j in range(m.njnt) if int(m.jnt_bodyid[j]) in p.robot_bodies},
         'cases':refs,'target_world_from_hand':p.world_from_hand.tolist()})
     source_paths={p.scene_path,CANDIDATE,IK_REPORT,Path(__file__).resolve(),ROOT/'assets/robots/aubo_i10/urdf/aubo_i10_JY.urdf'}
-    source_paths.update(ROOT/'src/fuel_cap_task'/name for name in ('arm_ik.py','mujoco_scene.py','grasp_search.py','interfaces.py'))
+    source_paths.update(ROOT/'src/fuel_cap_task'/name for name in (
+        'arm_ik.py', 'mujoco_scene.py', 'grasp_search.py', 'interfaces.py', 'fixed_grasp.py',
+        'grasp_targets.py', 'grasp_preparation.py',
+    ))
     for mesh in mesh_audit:
         if mesh['source_path']: source_paths.add((p.scene_path.parent/mesh['source_path']).resolve())
     versions=subprocess.run(['dpkg-query','-W','-f=${Package}=${Version}\n','ros-humble-moveit-core','ros-humble-moveit-kinematics','ros-humble-moveit-task-constructor-core'],text=True,capture_output=True,check=True).stdout.splitlines()

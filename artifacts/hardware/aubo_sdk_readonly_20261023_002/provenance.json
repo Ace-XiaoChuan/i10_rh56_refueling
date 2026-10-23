@@ -1,0 +1,25 @@
+{
+  "primary_capture": "aubo_sdk_readonly_20261023_002",
+  "collector_source_sha256": "317e1fd6a3426c8a96cf8ae11c3b33d40494ea50092c045520bf71f1cca8329a",
+  "collector_binary_sha256": "998e21cf7fdf7fb5924c5e9ca97f9b0f170fa9852d403a10fdc294e0e0ab6256",
+  "analysis_source_sha256": "4b0df57d19a3841f0003d60558c278f907a1ae8e44166b88dc1df37219aefc1b",
+  "sdk_inputs": {
+    "tools/sdk/aubo_sdk-0.23.1-Linux_x86_64+71831e1/lib/libaubo_sdk.so": "9bbd298e559b4bf7d15623f80887ee578a0828f3a46b87b991f7859ad55b1ffa",
+    "tools/sdk/aubo_sdk-0.23.1-Linux_x86_64+71831e1/include/aubo/global_config.h": "613946862c302355793e516ab0bc8610f6bf992b099e40e71891f9944dc1af57",
+    "tools/sdk/aubo_sdk-0.23.1-Linux_x86_64+71831e1/include/aubo_sdk/rpc.h": "7d1299cc92dbf5debd9cfb7fccd540b6c1aac3f9d1e59df37977a372149335ce",
+    "tools/sdk/aubo_sdk-0.23.1-Linux_x86_64+71831e1/include/aubo_sdk/rtde.h": "e6e15bbad8fddf5a40e9006e728d95d47f9cc20b873dee9dd469f83c09c05641",
+    "tools/sdk/aubo_sdk-0.23.1-Linux_x86_64+71831e1/include/aubo/robot/robot_config.h": "ef464034c9a5e14da7fe1fef199b85bf38d3dbb5f34e3dcb457f2fe475b4962b",
+    "tools/sdk/aubo_sdk-0.23.1-Linux_x86_64+71831e1/include/aubo/robot/robot_state.h": "ba3167b67de062a58178da1f6f461d8d39dcd953f1682d3c46e8b3de5cf25909",
+    "tools/sdk/aubo_sdk-0.23.1-Linux_x86_64+71831e1/include/aubo/robot/robot_algorithm.h": "ca29b83e3b163e390c603f892227c131b36543e8ea961ee419a950d316f61c39",
+    "tools/sdk/aubo_sdk-0.23.1-Linux_x86_64+71831e1/include/aubo/math.h": "e29aa47b907ee91fc356e4b59d8b902f414b83d18e93361ffc16849306f88670",
+    "tools/sdk/aubo_sdk-0.23.1-Linux_x86_64+71831e1/share/doc/rtde_recipe.md": "180b1ef1a3f715454925aea40a85861ea7f73dbc110c3988f7734bd668fdac31"
+  },
+  "model_input": {
+    "assets/robots/aubo_i10/urdf/aubo_i10_JY.urdf": "5722135ce4a2abb8549e92c43ea6802b7d06a0fa7f207beb35f7994e57e5baa2"
+  },
+  "notes": [
+    "第二批采集对应 source_snapshot/collect.cpp；第一批为增加数学探针与无效值标记前的版本。",
+    "不包含用户自定义认证信息；沿用 SDK 官方示例的公开默认认证。",
+    "只读取状态、配置与模型计算，不发送运动，不改写控制器参数。"
+  ]
+}

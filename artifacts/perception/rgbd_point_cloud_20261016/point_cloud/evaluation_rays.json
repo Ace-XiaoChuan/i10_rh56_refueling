@@ -1,0 +1,10 @@
+{
+  "mode": "independent_render_geometry_ray_check",
+  "sample_count": 1024,
+  "ray_misses": 0,
+  "distance_error_median_m": 7.809006430381515e-08,
+  "distance_error_p95_m": 1.8957726295454332e-07,
+  "distance_error_max_m": 4.023714410550383e-07,
+  "evaluation_only": true,
+  "ray_geometry_used_to_generate_points": false
+}

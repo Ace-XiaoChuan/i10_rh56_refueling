@@ -7,7 +7,7 @@ import numpy as np
 
 from fuel_cap_task.arm_ik import ArmIKPreview, IKSettings, body_transform, inverse, rotation_error
 
-CANDIDATE = Path(__file__).resolve().parents[2]/'artifacts/manual_grasp/user_selected_20260930.json'
+CANDIDATE = Path(__file__).resolve().parents[2]/'config/fixed_grasp.json'
 
 
 class ArmIKTests(unittest.TestCase):

@@ -11,8 +11,6 @@
     "ros-humble-moveit-task-constructor-core=0.1.3-1jammy.20260326.041707"
   ],
   "sources": {
-    "artifacts/arm_ik/current_candidate.json": "c91ba49a4173082420e6f4c3c35f0f14eea1362f81066f220280c95a16c01e27",
-    "artifacts/manual_grasp/user_selected_20260930.json": "f0ad6a80fbb8fe666f93675818b0656281466a5abd3ce834c22227a069ef6610",
     "assets/objects/fuel_tank/meshes/body_00.stl": "07997de9277191ade181d5fecac27f27ae098b5324fd7844582296b8242b53b2",
     "assets/objects/fuel_tank/meshes/body_01.stl": "62e90414f4a8ed930d5709493853206c90e9b0d339091e946e5f9aaece452b35",
     "assets/objects/fuel_tank/meshes/body_02.stl": "9fae6bd8c697c18538b0b01cda9471dd33e8e3e747c982da044994a4540f5ac8",
@@ -239,12 +237,17 @@
     "assets/robots/aubo_i10/mjcf/meshes/visual_link6.obj": "26e66016f547e820c5857684b3c40b6d72c0c4bf9f41a3044ac35b78287fac70",
     "assets/robots/aubo_i10/urdf/aubo_i10_JY.urdf": "5722135ce4a2abb8549e92c43ea6802b7d06a0fa7f207beb35f7994e57e5baa2",
     "assets/robots/sensor/meshes/sensor.stl": "4aa8d4dd99ed5c74449843db9c796428305341960267cc88c0386623a5658b37",
-    "assets/scenes/i10_rh56_fuel_cap_preview.xml": "5154349867b0bc2dae0039c68fe4eb4aafa3d75fe2321a22baa093c6b98d12db",
-    "src/fuel_cap_task/arm_ik.py": "36bee62bc1de4d75dc26ae2ec6adadfd3ddd8026fd411f02549686af8f1ec2ca",
-    "src/fuel_cap_task/grasp_search.py": "9639f45c8c8c6cdda93bf52a60a192634f07a2a7385f3b2c8ba5a9cab4f58c58",
-    "src/fuel_cap_task/interfaces.py": "9fde75fbc8034c0d40a883f9ea222c7f917b78f6ceb604b47a761c8b585e5387",
-    "src/fuel_cap_task/mujoco_scene.py": "7f4678dac166de830f5c6525bfe45b9299dab2f1e0e34a0f169b94b675f0b124",
-    "tools/build_moveit_model.py": "af4fe0c4c177d3c40263c7d40747c75b672e9f839dbf3d2c5113deca58345966"
+    "assets/scenes/i10_rh56_fuel_cap_preview.xml": "b376bb512b2d176dd4159d78228e70546b4681cc90e6757e081ac9d4a54d30d4",
+    "config/arm_ik_current.json": "9fe23c4fe9f236a5386ad23f9183b05364795aa26ac5cb93b091600f5c5818f9",
+    "config/fixed_grasp.json": "e8c2bac9d88bc375b751a004cd9134288412449c76f8f0880747bd14f790c854",
+    "src/fuel_cap_task/arm_ik.py": "f13f2721c5788ea33499956e74a74bfe9c3a45b8341465c420bd9efe17f5def1",
+    "src/fuel_cap_task/fixed_grasp.py": "7bfa81edc377c15d099b4ccc0a500f6805ab8c737685b173f4e2a6f0bda4515f",
+    "src/fuel_cap_task/grasp_preparation.py": "a11e0451e29fe39228379ae21eaffea8e1ce84d2797ddcc7074963da5ccd53fc",
+    "src/fuel_cap_task/grasp_search.py": "a9d89f33f5e2e102bf655284fd2a9f34415219ab0d6ce1293a7495ab4e4de970",
+    "src/fuel_cap_task/grasp_targets.py": "d798b181ed6dac8718eff3a170f7279a3ece0a2f8fa7e1d223a8f4bdc25003ed",
+    "src/fuel_cap_task/interfaces.py": "02ff0fee271650786f947243c444048d6ed8be8b3429304c4f7c8f62de1ea110",
+    "src/fuel_cap_task/mujoco_scene.py": "c5a0854e74c181903300ac208f30d99b9d2195ddf693cf685f892ead0ca75e1b",
+    "tools/build_moveit_model.py": "ffc57b656e38de65536b6364e5ce07ce618c66af3f10bb03fa415d1803520f66"
   },
   "source_arm_differences": [
     {

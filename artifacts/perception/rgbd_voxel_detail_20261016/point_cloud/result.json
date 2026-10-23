@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "mode": "observed_rgbd_point_cloud",
+  "observation_dir": "/tmp/fuel_cap_detail_1792132660893/primitive_detail/observation",
+  "source": "mujoco_rendered_rgbd",
+  "timestamp_s": 0.0,
+  "timestamp_clock": "simulation",
+  "camera_frame_id": "virtual_camera_optical",
+  "world_frame_id": "world",
+  "length_unit": "m",
+  "point_count": 1070168,
+  "view_point_count": 30000,
+  "image_size_wh": [
+    1280,
+    960
+  ],
+  "world_from_optical": [
+    [
+      1.0,
+      -2.0942694414863748e-17,
+      5.753957678794917e-17,
+      0.0
+    ],
+    [
+      -6.123233905617736e-17,
+      -0.34202015414019754,
+      0.9396926168497417,
+      0.09427664428949356
+    ],
+    [
+      -3.964116798554564e-25,
+      -0.9396926168497417,
+      -0.34202015414019754,
+      0.9278181195259094
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "world_bounds_min_m": [
+    -1.162241391714735,
+    0.8737316594966029,
+    -1.6090291066195306e-07
+  ],
+  "world_bounds_max_m": [
+    1.1622413917147354,
+    1.9978110921984145,
+    0.9670285989487696
+  ],
+  "input_sha256": {
+    "observation.json": "10cca822675a039907d72a573d9a3eee59f54f6f659f48cb556cfee4566e2436",
+    "rgb.png": "9223a895e51f88e50a1d60c8837d29c5a5082e92d76ccef21bb8c53f7ffe1018",
+    "depth.npz": "c1d8572759c8c3f094440623abec7ff10f5ac5bbc6ef66b365f9117709ff2425"
+  },
+  "implementation_sha256": {
+    "tools/reconstruct_cap_point_cloud.py": "83b0e4128efaf54337b5d2a78f8b285371853490d380599b0e4fd13d9fcfca92",
+    "src/fuel_cap_task/rgbd_point_cloud.py": "2b27de4c134d902bc694f725aea882654cc265c2a18bab82246f198b847ec0fe"
+  },
+  "observed_surface_only": true,
+  "ground_truth_used": false,
+  "outputs_sha256": {
+    "cloud_world.ply": "f4bd9b80551fb5b5511c4fc68d46ccd36e94cef8e8c87fe293817395c78ea652",
+    "index.html": "553df719322d5965304518f7147eb68df64a9d48be6535df76b78c1b09bb4df0",
+    "point_cloud.npz": "a46e38c927d6f9904aa7532d89e1e1631f6ef8a23f81f5c03f2ff5624f1d34ae",
+    "preview.png": "c9cb8b9669b1f51ea3fafe3a0ab92d52a2ff4bcbb4c6eb8681fa60a5d8084eb8",
+    "rgb.png": "9223a895e51f88e50a1d60c8837d29c5a5082e92d76ccef21bb8c53f7ffe1018",
+    "cloud_camera.ply": "72f32f02b47bbe804a65497cca57812639a683e8c603ce640d4b0576c57d4998"
+  }
+}

@@ -45,7 +45,7 @@ python3 tools/build_fuel_tank_urdf.py
 
 ```bash
 .venv/bin/python tools/tune_cap_grasp.py \
-  --load artifacts/manual_grasp/user_selected_20260930.json
+  --load config/fixed_grasp.json
 ```
 
 不带 `--load` 时从默认种子开始。界面位置为盖体系 mm，姿态为固定轴 XYZ RPY 度；六通道编辑接近预型，闭合目标只读。

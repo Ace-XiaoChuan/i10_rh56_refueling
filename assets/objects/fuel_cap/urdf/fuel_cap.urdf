@@ -28,25 +28,25 @@
     <collision><origin xyz="0 0 0.030"/><geometry><box size="0.019 0.060 0.017"/></geometry></collision>
   </link>
   <!-- Reference frames derived from the current provisional geometry (meters).
-       All axes match cap_body: +Z upward, +Y along the grip's 60 mm side.
+       Reference axes: +Z outward, +X along the grip's 60 mm side.
        Fixed children follow cap_twist together with the cap. -->
   <link name="cap_grip_center"/>
   <joint name="cap_grip_center_joint" type="fixed">
     <parent link="cap_body"/><child link="cap_grip_center"/>
-    <origin xyz="0 0 0.030" rpy="0 0 0"/>
+    <origin xyz="0 0 0.030" rpy="0 0 1.5707963267948966"/>
   </joint>
 
   <link name="cap_grip_top_center"/>
   <joint name="cap_grip_top_center_joint" type="fixed">
     <parent link="cap_body"/><child link="cap_grip_top_center"/>
     <!-- Grip center Z + half of its 17 mm height. -->
-    <origin xyz="0 0 0.0385" rpy="0 0 0"/>
+    <origin xyz="0 0 0.0385" rpy="0 0 1.5707963267948966"/>
   </joint>
 
   <link name="cap_bottom_center"/>
   <joint name="cap_bottom_center_joint" type="fixed">
     <parent link="cap_body"/><child link="cap_bottom_center"/>
     <!-- White cylinder center Z - half of its 20 mm height. -->
-    <origin xyz="0 0 -0.020" rpy="0 0 0"/>
+    <origin xyz="0 0 -0.020" rpy="0 0 1.5707963267948966"/>
   </joint>
 </robot>

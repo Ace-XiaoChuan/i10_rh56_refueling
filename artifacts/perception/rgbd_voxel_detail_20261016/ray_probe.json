@@ -1,0 +1,21 @@
+{
+  "sample_count": 1024,
+  "ray_misses": 0,
+  "distance_error_max_m": 3.3310184064383463e-06,
+  "distance_error_median_m": 4.3884733735843895e-08,
+  "capture_settings": {
+    "lookat_world_m": [
+      0.0,
+      0.94,
+      0.62
+    ],
+    "distance_m": 0.9,
+    "azimuth_deg": 90.0,
+    "elevation_deg": -20.0,
+    "offscreen_samples": 0,
+    "primitive_slices": 128,
+    "primitive_stacks": 16
+  },
+  "evaluation_only": true,
+  "ray_geometry_used_to_generate_points": false
+}

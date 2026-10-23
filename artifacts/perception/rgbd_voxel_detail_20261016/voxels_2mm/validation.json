@@ -1,0 +1,16 @@
+{
+  "case": "voxels_2mm",
+  "input_point_count": 1070168,
+  "voxel_count": 275934,
+  "all_points_inside_assigned_cells": true,
+  "membership_counts_match": true,
+  "point_count_conserved": true,
+  "photo_lookup_matches_all_valid_pixels": true,
+  "invalid_pixels_preserved": true,
+  "blue_surface_voxel_count_color_diagnostic_only": 6816,
+  "blue_photo_click_uv": [
+    818,
+    503
+  ],
+  "blue_photo_click_voxel_id": 171053
+}

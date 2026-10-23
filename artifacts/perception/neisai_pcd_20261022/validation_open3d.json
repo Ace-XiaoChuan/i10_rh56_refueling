@@ -1,0 +1,18 @@
+{
+  "independent_reader": "Open3D",
+  "version": "0.17.0",
+  "checks": [
+    {
+      "file": "Neisai1.pcd",
+      "open3d_point_count": 28897,
+      "xyz_exact_match": true,
+      "rgb_exact_match": true
+    },
+    {
+      "file": "Neisai2.pcd",
+      "open3d_point_count": 28914,
+      "xyz_exact_match": true,
+      "rgb_exact_match": true
+    }
+  ]
+}

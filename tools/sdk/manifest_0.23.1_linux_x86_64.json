@@ -1,0 +1,769 @@
+{
+  "schema_version": 1,
+  "package_directory": "aubo_sdk-0.23.1-Linux_x86_64+71831e1",
+  "official_download_url": "https://download.aubo-robotics.cn/sdk/aubo_sdk-0.23.1-Linux_x86_64+71831e1.zip",
+  "file_count": 190,
+  "total_size_bytes": 89771630,
+  "files": {
+    "include/AuboRobotMetaType.h": {
+      "size_bytes": 65575,
+      "sha256": "6eca6d41de44996cfb34032d0aff03ddae484fa44e46f2da567acd4e34d19d8b"
+    },
+    "include/aubo/aubo_api.h": {
+      "size_bytes": 4932,
+      "sha256": "5b8b3bf3acc7c83fb34152558ae035c18a29ec1a3f36f7c48b29e4bacbf87d5a"
+    },
+    "include/aubo/axes/README.md": {
+      "size_bytes": 18,
+      "sha256": "8f96fe4c20b8d99f541188b6a6c597ce3fdededc79884de553e3d282c5824358"
+    },
+    "include/aubo/axes/axes.h": {
+      "size_bytes": 4057,
+      "sha256": "8517edc8c510b0b1dd58aad1b9077e8f3134824c1953a0a3d9ac9ffc26c47e5c"
+    },
+    "include/aubo/error_stack/error_stack.h": {
+      "size_bytes": 2135,
+      "sha256": "3d397e7c9ca4104eefa4a4e0b79c7953ea02ec84adafe4748a15082f94cfbedf"
+    },
+    "include/aubo/error_stack/hal_error.h": {
+      "size_bytes": 13120,
+      "sha256": "142048fee9763b09e8fbdc98edbe40ed97157fa3d3fd7d4ef836a22acd8997a1"
+    },
+    "include/aubo/error_stack/rtm_error.h": {
+      "size_bytes": 18805,
+      "sha256": "045d81defa34199911bb5c221ce99b95218b9f6fe3c4e448bb7fc95273b9cc13"
+    },
+    "include/aubo/error_stack/system_error.h": {
+      "size_bytes": 726,
+      "sha256": "c5f7b6eb067167173220d8df19aa4953b2fb81336aaa50fad0b17fd133032e44"
+    },
+    "include/aubo/global_config.h": {
+      "size_bytes": 5439,
+      "sha256": "613946862c302355793e516ab0bc8610f6bf992b099e40e71891f9944dc1af57"
+    },
+    "include/aubo/math.h": {
+      "size_bytes": 13909,
+      "sha256": "e29aa47b907ee91fc356e4b59d8b902f414b83d18e93361ffc16849306f88670"
+    },
+    "include/aubo/register_control.h": {
+      "size_bytes": 41659,
+      "sha256": "24af9ed90a110cc01056dcb04fbe419a8e638bd3cb6b8794da2275bb56438866"
+    },
+    "include/aubo/robot/force_control.h": {
+      "size_bytes": 34539,
+      "sha256": "62c6bab131f25c926aa8f913fddb85d50e54556e75fe4041ecdfb8f00a11fda0"
+    },
+    "include/aubo/robot/io_control.h": {
+      "size_bytes": 54965,
+      "sha256": "e158e226481c2331e2f417a4ba0d83badab16cbe3d6a159e775a637f05d65030"
+    },
+    "include/aubo/robot/motion_control.h": {
+      "size_bytes": 50957,
+      "sha256": "4bb1af2aa1c590d94d23828d1852dd80a783f39ea5fee503e306788efdb30dbe"
+    },
+    "include/aubo/robot/robot_algorithm.h": {
+      "size_bytes": 14203,
+      "sha256": "ca29b83e3b163e390c603f892227c131b36543e8ea961ee419a950d316f61c39"
+    },
+    "include/aubo/robot/robot_config.h": {
+      "size_bytes": 33056,
+      "sha256": "ef464034c9a5e14da7fe1fef199b85bf38d3dbb5f34e3dcb457f2fe475b4962b"
+    },
+    "include/aubo/robot/robot_manage.h": {
+      "size_bytes": 15784,
+      "sha256": "f0f2df1100fac9d6482ba3213f5171d151addc08af9aeb852c6374f87396798a"
+    },
+    "include/aubo/robot/robot_state.h": {
+      "size_bytes": 38019,
+      "sha256": "ba3167b67de062a58178da1f6f461d8d39dcd953f1682d3c46e8b3de5cf25909"
+    },
+    "include/aubo/robot_interface.h": {
+      "size_bytes": 6251,
+      "sha256": "8dcd69fb1d10cc07ce849716a4042982f83fd12f0824f9e9d18d8a111eb8fc21"
+    },
+    "include/aubo/runtime_machine.h": {
+      "size_bytes": 13173,
+      "sha256": "3687346223fb3e993bf1529e441d8a25afa6de9fd4461df650d822027d4af1ef"
+    },
+    "include/aubo/serial.h": {
+      "size_bytes": 8603,
+      "sha256": "75ef2bf0143facf3c6f349fbcb04965fbb6593698c3cc0cdb8474939d2fed596"
+    },
+    "include/aubo/socket.h": {
+      "size_bytes": 10464,
+      "sha256": "117c65d729cf20fa78109930c58ce778cb4545e98072b849ec27ad819c545ae8"
+    },
+    "include/aubo/sync_move.h": {
+      "size_bytes": 7238,
+      "sha256": "d5e819e63902e90612a65d87c20df13e2c760c869042a8cb7acdad078f530d85"
+    },
+    "include/aubo/system_info.h": {
+      "size_bytes": 4567,
+      "sha256": "6d813d094f1940b8176a4dc8f6834a85d33f72b30bc8a1f124d082e49928ac41"
+    },
+    "include/aubo/trace.h": {
+      "size_bytes": 3358,
+      "sha256": "c049c4ba58ef592a3fd15313f5a0550358c5556ae3e2923c06d98704174b55c5"
+    },
+    "include/aubo/type_def.h": {
+      "size_bytes": 31247,
+      "sha256": "744e76b3a881a8bc56d71d560647bf7c07fb9262c4b3c482f17525f0de5d3400"
+    },
+    "include/aubo_sdk/rpc.h": {
+      "size_bytes": 3754,
+      "sha256": "7d1299cc92dbf5debd9cfb7fccd540b6c1aac3f9d1e59df37977a372149335ce"
+    },
+    "include/aubo_sdk/rtde.h": {
+      "size_bytes": 7519,
+      "sha256": "e6e15bbad8fddf5a40e9006e728d95d47f9cc20b873dee9dd469f83c09c05641"
+    },
+    "include/aubo_sdk/script.h": {
+      "size_bytes": 5008,
+      "sha256": "f8d3fa68e53b37bd84d8efd4add5d178902cb0541b0e1823108eca5822205af8"
+    },
+    "include/robot_proxy/realtime_robot_state.h": {
+      "size_bytes": 13911,
+      "sha256": "9b695426498f3d83ac0cfb0178996fb0f7ecd6af0e4abc5c70d73b0cdefa5e11"
+    },
+    "include/robot_proxy/robot_proxy.h": {
+      "size_bytes": 6547,
+      "sha256": "3a96eb793fa842111e548e6af97d80cfc0a40461c24c48c7e07b6dbbee857418"
+    },
+    "include/robotiomatetype.h": {
+      "size_bytes": 3170,
+      "sha256": "039454668e12df20a72a62232bbdbf8fe94e66d172351e386097b2258ba8e59a"
+    },
+    "include/rsdef.h": {
+      "size_bytes": 55037,
+      "sha256": "e1046fc781dd4e3b2adcce4d526bd7f51b789c7582177b429268dd38c382a32f"
+    },
+    "include/rserrors.h": {
+      "size_bytes": 375,
+      "sha256": "02d5c1d4d311d1a660a48395bf15ff2489accba59dfa70db2db66e91ad9c00d9"
+    },
+    "include/rspidcfg.h": {
+      "size_bytes": 2867,
+      "sha256": "65a02a35fc7b2f879ce36e66c3af0140dd0fa9a7b03154cd6e67d0baf93e9493"
+    },
+    "include/rstype.h": {
+      "size_bytes": 473,
+      "sha256": "a0b45da32721de9b45070e59315b214290fe2f50b865893dfc8a8e5a112b5d49"
+    },
+    "include/serviceinterface.h": {
+      "size_bytes": 78017,
+      "sha256": "47a63b6bc1731958a94c8a1a5a9db913da5f375dd0263349ecadef9c2db4a493"
+    },
+    "lib/cmake/aubo_sdk/aubo_sdkConfig.cmake": {
+      "size_bytes": 358,
+      "sha256": "3f0af9867a13e0e12101cbae34be513a282a03786c8ab097bc4f32785da2c767"
+    },
+    "lib/cmake/aubo_sdk/aubo_sdkConfigVersion.cmake": {
+      "size_bytes": 1978,
+      "sha256": "658854a09394fa224c19aae4040d9c2ae49d1c0056b81a2bfbd4e7a5cfc9c89c"
+    },
+    "lib/cmake/aubo_sdk/aubo_sdkTargets-debug.cmake": {
+      "size_bytes": 1334,
+      "sha256": "a30dcc52f543f3a24a18acf28309ba810ec01f2732507e83767dfc46319339c1"
+    },
+    "lib/cmake/aubo_sdk/aubo_sdkTargets-release.cmake": {
+      "size_bytes": 1346,
+      "sha256": "1ce5a1ac45cbddcc758eb3457d43bae2ff97ce117d9af6a46998f3b79a9e5994"
+    },
+    "lib/cmake/aubo_sdk/aubo_sdkTargets.cmake": {
+      "size_bytes": 4032,
+      "sha256": "26cee285f672805c02f8b79f156d7db127561c063a695b9cbc40cca555441745"
+    },
+    "lib/libaubo_sdk.so": {
+      "size_bytes": 6449624,
+      "sha256": "9bbd298e559b4bf7d15623f80887ee578a0828f3a46b87b991f7859ad55b1ffa"
+    },
+    "lib/libaubo_sdkd.so": {
+      "size_bytes": 60790992,
+      "sha256": "036382d07814e7b84f2ae174a82182917d1d7316b12d369e17c289a55562157c"
+    },
+    "lib/librobot_proxy.so": {
+      "size_bytes": 326552,
+      "sha256": "d11eb504f9e2d105fdab64a4cb0cbebfd29c6fe17e7e9c7644792761642ddc86"
+    },
+    "lib/librobot_proxyd.so": {
+      "size_bytes": 3035056,
+      "sha256": "6456dc66c01e66d0ac3fe02d2b3eceebb817d6e11cd605b8138cbf5f99fa8765"
+    },
+    "share/doc/error_code.md": {
+      "size_bytes": 27514,
+      "sha256": "ea9613ab8f95b88d9c1640e887c2eea2b02b2ed2778469bfe63c7d378c6b162e"
+    },
+    "share/doc/rtde_recipe.md": {
+      "size_bytes": 30804,
+      "sha256": "180b1ef1a3f715454925aea40a85861ea7f73dbc110c3988f7734bd668fdac31"
+    },
+    "share/example/aubo_script/example_algorithm.lua": {
+      "size_bytes": 4975,
+      "sha256": "004f290646a33cf665fb1c0b2776a6506b1af5539d025afc695f1d9adb54ffe5"
+    },
+    "share/example/aubo_script/example_client.lua": {
+      "size_bytes": 2886,
+      "sha256": "0b925a40a20e9155bf8479f6f5ace56e6d4e1449060fd0dcc88cc3f016772368"
+    },
+    "share/example/aubo_script/example_config.lua": {
+      "size_bytes": 7645,
+      "sha256": "3c39e9342f1c8f51b036d48bf649eef8db30b0422dd75b310dcd23a01341e9a1"
+    },
+    "share/example/aubo_script/example_io.lua": {
+      "size_bytes": 8126,
+      "sha256": "d504d3b5fefc626ff302555866fbc9f64330103aa4f23da16b7ab3940dca9740"
+    },
+    "share/example/aubo_script/example_math.lua": {
+      "size_bytes": 3729,
+      "sha256": "e3a9abb4211d99dfc898c5164c3aa61f788d34be75a74dee13d1ba23a365927c"
+    },
+    "share/example/aubo_script/example_movec_i5.lua": {
+      "size_bytes": 2129,
+      "sha256": "d6027c3b97c48f451797d1ac671229010c867565efe3b992be99009f568e0a75"
+    },
+    "share/example/aubo_script/example_movej.lua": {
+      "size_bytes": 2753,
+      "sha256": "68f1af91c7a63cd4af01ad161f2b26dc4409b5b4c6530c32e8c810a971f305b3"
+    },
+    "share/example/aubo_script/example_movel.lua": {
+      "size_bytes": 2207,
+      "sha256": "bc6f8192665faa4077eeac56b9d489518a805a0022eec12d8bc7d120bf10584a"
+    },
+    "share/example/aubo_script/example_server.lua": {
+      "size_bytes": 2999,
+      "sha256": "2f00b121267062ce8e4d60d1a1d01f96d5021c4879283d93a1ba0023ee0504c5"
+    },
+    "share/example/aubo_script/example_startup.lua": {
+      "size_bytes": 2766,
+      "sha256": "1e6623f4dc4114531d5c9f2d0648723dc9c39a16b901899212230a528f02451e"
+    },
+    "share/example/aubo_script/example_state.lua": {
+      "size_bytes": 10107,
+      "sha256": "ea17ded2b5d27dd83cd7d3dcda3edcdc754a2da78084b60542fe6fce438c8008"
+    },
+    "share/example/c++/CMakeLists.txt": {
+      "size_bytes": 7726,
+      "sha256": "9aae34cf942e068caae08036dc003e6b9fecdf7137c0a004bb31866bbe0d629e"
+    },
+    "share/example/c++/armplay.cpp": {
+      "size_bytes": 6321,
+      "sha256": "b24cd1d301e83f7a5ae7267afc28998a18d176e56dfd5b0ba58181a8388a7bcc"
+    },
+    "share/example/c++/aubope/CMakeLists.txt": {
+      "size_bytes": 192,
+      "sha256": "5469fc3cee26f8cd1d7cfd8fe8dc0e8b7c4ca2d3abefd12e15da4480ea6c2684"
+    },
+    "share/example/c++/aubope/example_0.cpp": {
+      "size_bytes": 1842,
+      "sha256": "495d618b022e6f8dae323de02c580a038305f86c06178758e338b95aff6db933"
+    },
+    "share/example/c++/aubope/example_0.h": {
+      "size_bytes": 300,
+      "sha256": "59452d8229b7adaceb1f03c4d3c22aa463b967347e0917acbd03c413dbcd9824"
+    },
+    "share/example/c++/aubope/example_1.cpp": {
+      "size_bytes": 4804,
+      "sha256": "ec2d5afbf12cad28f7cc6198786f01bf7d5cd277397c2c25cbb235b769e1ba5b"
+    },
+    "share/example/c++/aubope/example_1.h": {
+      "size_bytes": 1044,
+      "sha256": "4ae983bb77a97545f66cf9c699fd8573ea2899174d4cbc614c6abc6b634bc62d"
+    },
+    "share/example/c++/aubope/example_3.cpp": {
+      "size_bytes": 15803,
+      "sha256": "7435c0b60f523f0a68f3ebfd4110a749213aed20897808473c66afd92f8f8431"
+    },
+    "share/example/c++/aubope/example_3.h": {
+      "size_bytes": 314,
+      "sha256": "0041a09490f6e3f0fb529d0c3e9764a4ce1f5caa59a5ecae8881787997eb4f4f"
+    },
+    "share/example/c++/aubope/example_4.cpp": {
+      "size_bytes": 5108,
+      "sha256": "b01e198a37adc7be703ec5d8f75fb2b7d9418f115b8f0b033a7110ae984301da"
+    },
+    "share/example/c++/aubope/example_4.h": {
+      "size_bytes": 554,
+      "sha256": "8af2af10738ce85b60499737994200fadfc51d731fa50e9391038688d1b91e67"
+    },
+    "share/example/c++/aubope/example_5.cpp": {
+      "size_bytes": 20123,
+      "sha256": "8ecc22d63c49fb669865bfd5d77724e44aa548acb1dee3d5b5b9e98bd5c2734c"
+    },
+    "share/example/c++/aubope/example_5.h": {
+      "size_bytes": 386,
+      "sha256": "19aea881ec16cb924771b8073a65d5dbe0c5bdb47d71dd068daec549190a540e"
+    },
+    "share/example/c++/aubope/example_6.cpp": {
+      "size_bytes": 19032,
+      "sha256": "167ffb78a958295f38e8604333085cb2c1fd28c65f128b319f141e52500ba0bb"
+    },
+    "share/example/c++/aubope/example_6.h": {
+      "size_bytes": 350,
+      "sha256": "0400d187cac817d4d5a0b69eb842cb6dce9f3cf93263f3ac7d9373c066384278"
+    },
+    "share/example/c++/aubope/example_8.cpp": {
+      "size_bytes": 14800,
+      "sha256": "80454616c72b19a67f02cb84741a442c803dfbad22e9f31a6f45539808024b83"
+    },
+    "share/example/c++/aubope/example_8.h": {
+      "size_bytes": 554,
+      "sha256": "57ca6a60bafde9970f607f16e4273bb5882e1215c90fb8aa91d8d4f0f607ab5b"
+    },
+    "share/example/c++/aubope/example_9.cpp": {
+      "size_bytes": 6041,
+      "sha256": "08a005706761ef4ade7c782857cdee687ff8cd4976608bf884a65e3a3839e55d"
+    },
+    "share/example/c++/aubope/example_9.h": {
+      "size_bytes": 352,
+      "sha256": "70afc6bcf5ad51fce04b8b4a8e60c1cea4f5c007fef610b06fd55360d8aa2edf"
+    },
+    "share/example/c++/aubope/example_bhwk_c.cpp": {
+      "size_bytes": 43841,
+      "sha256": "0a9c1c7f2f25b116b5aa3d5da98fd111bc544a7ee54256f3c42f1e49b226f775"
+    },
+    "share/example/c++/aubope/example_bhwk_c.h": {
+      "size_bytes": 2543,
+      "sha256": "a11b8109d972dbdbfeb85d8fb5e71c17ad6d72b5e7d3bec08bef39c5efb48589"
+    },
+    "share/example/c++/aubope/example_c.cpp": {
+      "size_bytes": 12106,
+      "sha256": "09478915d26a71a8bb62638b7ff351a5f8c22f9b83710f1bf0a621dfbd8ba2db"
+    },
+    "share/example/c++/aubope/example_c.h": {
+      "size_bytes": 371,
+      "sha256": "e4fc3f5bc695292a437979c8372119917e82c3d80d072998177cb4fc029133f2"
+    },
+    "share/example/c++/aubope/main.cpp": {
+      "size_bytes": 11790,
+      "sha256": "f8b872e3fb64e8126f2551fdb24c41ba8b9db98d8189ec8e98e6e1a07c143932"
+    },
+    "share/example/c++/aubope/util.cpp": {
+      "size_bytes": 7962,
+      "sha256": "dadd92a5e081b2281264caf6c6ac7cd05f778db85fe8b135446c85fc29f6120a"
+    },
+    "share/example/c++/aubope/util.h": {
+      "size_bytes": 895,
+      "sha256": "9a20d3b73106959d6cff22412374105d3741034c3b9ac95d9efc20865ffed7be"
+    },
+    "share/example/c++/example_algorithm.cpp": {
+      "size_bytes": 6074,
+      "sha256": "ed21874157eda7a96403afc68064b2b0f5b43b5c2ab51f7a2b0253ec44de09c9"
+    },
+    "share/example/c++/example_collision_recovery.cpp": {
+      "size_bytes": 5055,
+      "sha256": "dd3ea68f0ee79541ff08cf4432e125b10436cb31f31a71817ca424d71c41ea30"
+    },
+    "share/example/c++/example_config.cpp": {
+      "size_bytes": 1782,
+      "sha256": "816285a436e8e38686efdbdd3cfcb099341e99039dac62806da52fbae10edfe0"
+    },
+    "share/example/c++/example_config2.cpp": {
+      "size_bytes": 10171,
+      "sha256": "9fa54f746066234d1859087c2c1eee6d89cf25a6945931102a72fa8480235021"
+    },
+    "share/example/c++/example_data_collect.cpp": {
+      "size_bytes": 12249,
+      "sha256": "eab7ef095057c67659dd2e4fdf17408f6b0f8d62466b823b4e7bd45266144106"
+    },
+    "share/example/c++/example_extract_data.cpp": {
+      "size_bytes": 8946,
+      "sha256": "28402a6b96295863cbc9befbcbdae26a4f3115493951852f1d2f92147bf07cd5"
+    },
+    "share/example/c++/example_fc_assemble.cpp": {
+      "size_bytes": 32565,
+      "sha256": "469a1b4ab2bf84d416bb9d7d9af0e77d8bfcdfb32f1c1ff366c7e86d2ab14212"
+    },
+    "share/example/c++/example_fc_assemble_usercoord.cpp": {
+      "size_bytes": 34717,
+      "sha256": "97c68472c8909107df7db5ee7de82b45cf660e98feda7b768cbfb3fdddf1f8b6"
+    },
+    "share/example/c++/example_force_control.cpp": {
+      "size_bytes": 12691,
+      "sha256": "89a55de24e174bb4422330536750d0e4478e3a45c0e24b07bb8bdb634817a623"
+    },
+    "share/example/c++/example_force_control2.cpp": {
+      "size_bytes": 15548,
+      "sha256": "6d601d0fb649a146381da8966b3de4cab96b24f396c36de20acd7321ccb4c895"
+    },
+    "share/example/c++/example_freedrive.cpp": {
+      "size_bytes": 1750,
+      "sha256": "402d99d140ba27a5e9c060868800a3ad978902959a452fcb63a9c9674f6347d0"
+    },
+    "share/example/c++/example_io.cpp": {
+      "size_bytes": 23007,
+      "sha256": "4e202c8f82ed3c6c50d1cc45dbfee1cd800030b1327ffc43e8a04b8ba257586f"
+    },
+    "share/example/c++/example_math.cpp": {
+      "size_bytes": 11559,
+      "sha256": "6375868dd5dbeb17010de6e04729f4ab5417539cec48589ec3e49c9b60f6aace"
+    },
+    "share/example/c++/example_moveSpiral_i5.cpp": {
+      "size_bytes": 7211,
+      "sha256": "e889e3e9888871b7bcfebcf5d4e690b962db6c03069dcf9615430f14d7252f42"
+    },
+    "share/example/c++/example_move_speed.cpp": {
+      "size_bytes": 13490,
+      "sha256": "e33a016db9cd787f32f74a3f0b7df666abd2fbdac3ed1735381e4cd1d3f0af5e"
+    },
+    "share/example/c++/example_movec_i5.cpp": {
+      "size_bytes": 18027,
+      "sha256": "b06e8bb8154421cf3ab6b199fab8a95b11387c10151602968d0cf8d676a765a9"
+    },
+    "share/example/c++/example_movej.cpp": {
+      "size_bytes": 3715,
+      "sha256": "77d0530fa323aa91542df7f2c2a8b5b5e252739c181516e2eba3a85709918c7b"
+    },
+    "share/example/c++/example_movel_i5.cpp": {
+      "size_bytes": 4413,
+      "sha256": "d1fb5319f1f4daf921aa617be5b2f561739e2bea478cd9e1b27a5c6db6e8bc09"
+    },
+    "share/example/c++/example_movel_singularity_i5.cpp": {
+      "size_bytes": 5395,
+      "sha256": "daada2a0916205c434fc041fb1eacf704fdb722bd77e33a440522388ceb39769"
+    },
+    "share/example/c++/example_multi_thread.cpp": {
+      "size_bytes": 2826,
+      "sha256": "286057a40ab537e52bd595f4a6c9b83dc27e0d45ef209bac1dc6e629c9917382"
+    },
+    "share/example/c++/example_payload_identify.cpp": {
+      "size_bytes": 7002,
+      "sha256": "27ac7ea15cec68a7e96ef7d210208c0f501e10113d56e0f8070b0357e40af993"
+    },
+    "share/example/c++/example_register.cpp": {
+      "size_bytes": 16117,
+      "sha256": "a132d312475237942e2dd1663cf82cc84cb9181b4380081726e934c467151566"
+    },
+    "share/example/c++/example_rtde.cpp": {
+      "size_bytes": 12069,
+      "sha256": "2fd70358bf20cc6d054bb2021ec27018cdecd34e377dd0fa4bd2dffb858bc125"
+    },
+    "share/example/c++/example_rtde_udp.cpp": {
+      "size_bytes": 11657,
+      "sha256": "c3e4e9012ba8d7eb5ebf6043d47a5bdea0f9d6693f083ef52573f5570f3b9f29"
+    },
+    "share/example/c++/example_rtde_uds.cpp": {
+      "size_bytes": 11434,
+      "sha256": "3c354a50ff6d16bebdd729d2ada841f4d6300cf2b2c57f096a51f77cea988a24"
+    },
+    "share/example/c++/example_script.cpp": {
+      "size_bytes": 3181,
+      "sha256": "d35e0bd2835c6bd79cf7fdfdccdb8223a385b96bea394f2b3b855d1cb4ccdb65"
+    },
+    "share/example/c++/example_script2.cpp": {
+      "size_bytes": 2621,
+      "sha256": "caf5735c08a7ed0696add943407b4a26ac201b2ee8c4b48b3eb4792a9780b04f"
+    },
+    "share/example/c++/example_script_uds.cpp": {
+      "size_bytes": 2011,
+      "sha256": "2b5b128a28ba460f6c08f03b5ac7de2ad7cb677084741c55d4ff18b1c2c750d4"
+    },
+    "share/example/c++/example_servoj.cpp": {
+      "size_bytes": 8467,
+      "sha256": "5674942324fe602164c70a917874c269beaf7eb326b3437c5fbbd09bddf9b26c"
+    },
+    "share/example/c++/example_servoj2.cpp": {
+      "size_bytes": 11884,
+      "sha256": "e2b93dc237a620aa5ba230dd9c717320bbc71178555009cc0e2ee7732058709a"
+    },
+    "share/example/c++/example_set_log_handler.cpp": {
+      "size_bytes": 1358,
+      "sha256": "73267f168b5f7c5a7c53f8f46e7ed5dc553b058f446627ba8a4eaef95ae76d19"
+    },
+    "share/example/c++/example_spline.cpp": {
+      "size_bytes": 8617,
+      "sha256": "174a896ee84f1b014688fd2684b1ba8e0bee4cb8ad412235d37b4c8851d981d1"
+    },
+    "share/example/c++/example_spline2.cpp": {
+      "size_bytes": 5810,
+      "sha256": "f328e1217342f77a4f187485eed791d02bd1cb59f23953f46676a3107d9d495a"
+    },
+    "share/example/c++/example_startup.cpp": {
+      "size_bytes": 3710,
+      "sha256": "7e8be3ae46497606bdf2a2fdd862e5336e71e501a0269d75ebbe4b121174c8fc"
+    },
+    "share/example/c++/example_state.cpp": {
+      "size_bytes": 11305,
+      "sha256": "e52dc631926aa6ca6f2376ca0655143aca91b0c69e970db6ac574db97cff92fa"
+    },
+    "share/example/c++/example_timer.cpp": {
+      "size_bytes": 2810,
+      "sha256": "36430e576b3c3045826d5df5d108b5d9e7ccef5d8338508835d9a0ef58145346"
+    },
+    "share/example/c++/offline_track.cpp": {
+      "size_bytes": 11578,
+      "sha256": "f71255fba4d6138cce5a4cd20170b7f9a051e1eb8d6404cfc3f828f815c1ef83"
+    },
+    "share/example/c++/record.cpp": {
+      "size_bytes": 8233,
+      "sha256": "0a15fea44d9a83d902bb8e2f0ac9def3586c117a509ee02cd2821e29e8342bcf"
+    },
+    "share/example/c++/robot_proxy/CMakeLists.txt": {
+      "size_bytes": 384,
+      "sha256": "99a010a8472af1ca6b0ab2b8f88a3b2de0d52a14517c372a7dacaa32ec49f232"
+    },
+    "share/example/c++/robot_proxy/main.cpp": {
+      "size_bytes": 156,
+      "sha256": "e712ad18d27efcc59bac47936bafa699ad7a04ec55b66e55139a77290ff1bf84"
+    },
+    "share/example/c++/robot_proxy/widget.cpp": {
+      "size_bytes": 1290,
+      "sha256": "a9ed35875166cc1895371e3fcca64535c7d37dbd42c3dc6cfed74e86de11d621"
+    },
+    "share/example/c++/robot_proxy/widget.h": {
+      "size_bytes": 617,
+      "sha256": "e2fca3f3e05fba556575c7f594c26fb42aaf7ca5154b5265fecbb84bb32de170"
+    },
+    "share/example/c++/robot_proxy/widget.ui": {
+      "size_bytes": 1697,
+      "sha256": "ae30d460d47326644b7b7c34e082c211a1856ac4a2ea8a95d3a389a1640a6fce"
+    },
+    "share/example/c++/trajs/CoffeCappuccino-heart-L_filtered.csv": {
+      "size_bytes": 75239,
+      "sha256": "fb73f6715646072f599335b64f57f44baf0a1bcfc2d2c3b5949c545b261d749c"
+    },
+    "share/example/c++/trajs/CoffeCappuccino-heart-R_filtered.csv": {
+      "size_bytes": 73065,
+      "sha256": "4339b9c4609516c18d8be6c281b9cba4b39428e339267c252ac34f08fccaf2a1"
+    },
+    "share/example/c++/trajs/aubo-joint-test-0929-10.armplay": {
+      "size_bytes": 127543,
+      "sha256": "a646321b1b124ee739f3c973d40bc7f6ab2e7c30baf7b51c9e9e66ae0398ddb6"
+    },
+    "share/example/c++/trajs/aubo-joint-test-1014.armplay": {
+      "size_bytes": 147760,
+      "sha256": "0eee67b9a431ac647aea082468ddee8054a9462344dba59b355587e80b3d42a8"
+    },
+    "share/example/c++/trajs/coffee_spline.txt": {
+      "size_bytes": 212316,
+      "sha256": "b9dbb31bea8e94b36bd7fc9e979e0354b994c4f8b717a52af85c012aba15482c"
+    },
+    "share/example/c++/trajs/collision_traj/1.csv": {
+      "size_bytes": 757254,
+      "sha256": "454f7bc5c10802801a38923b6a48190b7a90089e05df8555746b5a025beae845"
+    },
+    "share/example/c++/trajs/collision_traj/11_trajectory_vel2_acc5.txt": {
+      "size_bytes": 1188287,
+      "sha256": "ca575c849110051ce354ca3e4b8046896da08822d1921256ce71610da48ea2ad"
+    },
+    "share/example/c++/trajs/collision_traj/12_trajectory_vel2_acc20.txt": {
+      "size_bytes": 1179192,
+      "sha256": "f65b641dadb8e0a6e0fdb822e8031f5665b019779a9e27ca8b7037907a66776e"
+    },
+    "share/example/c++/trajs/collision_traj/13_trajectory_vel2_acc30.txt": {
+      "size_bytes": 1148450,
+      "sha256": "5d18a9fe1eb42129714d67d78528837e9855c7287486fb952611f5dca64c7efa"
+    },
+    "share/example/c++/trajs/collision_traj/14_trajectory_vel2.2_acc10.txt": {
+      "size_bytes": 1188287,
+      "sha256": "ca575c849110051ce354ca3e4b8046896da08822d1921256ce71610da48ea2ad"
+    },
+    "share/example/c++/trajs/collision_traj/2.csv": {
+      "size_bytes": 343788,
+      "sha256": "19398f557a3eeb3b1e682e6b10ddaa3a63953cfa87b316496e4691853691d98e"
+    },
+    "share/example/c++/trajs/collision_traj/3.csv": {
+      "size_bytes": 218929,
+      "sha256": "05188a800c49e4ddb6f1ff1e7fb5747b4d8b7fe13f519aab325c33e099092d89"
+    },
+    "share/example/c++/trajs/collision_traj/4.csv": {
+      "size_bytes": 304722,
+      "sha256": "3eb605a789523abd835aff97128c301ed2a7ebf7c42699fb17add4db18975d9f"
+    },
+    "share/example/c++/trajs/collision_traj/5.csv": {
+      "size_bytes": 242322,
+      "sha256": "0ab4eba28b746bda63d38f8f981fada5e3d7dc867a781b4eeace95fa276bfe2e"
+    },
+    "share/example/c++/trajs/collision_traj/6.csv": {
+      "size_bytes": 215166,
+      "sha256": "3413a1098adc0fef8df8c2c8308b61813c598f48d34b07a616a76702026b4cab"
+    },
+    "share/example/c++/trajs/collision_traj/7.csv": {
+      "size_bytes": 211356,
+      "sha256": "b75711bdefc12efbf742220bc00be9bf0652124f6c5b9bacf13f62dc9e3a5415"
+    },
+    "share/example/c++/trajs/collision_traj/8.csv": {
+      "size_bytes": 221136,
+      "sha256": "85e78af49d5634ad42fdb56feaa8f7b0e1e35e8dc442e99f0843278e5979dc4d"
+    },
+    "share/example/c++/trajs/collision_traj/9.csv": {
+      "size_bytes": 197954,
+      "sha256": "e04ee2bbe8a32a6e10e25fd8ea05a2c2a6b238e7ce8e9e0d086422bfd5ad84aa"
+    },
+    "share/example/c++/trajs/data1_zy.offt": {
+      "size_bytes": 1962054,
+      "sha256": "a4de052736560f74b166aedcf212b16e77f1b09e67c9345293e30ade600d6681"
+    },
+    "share/example/c++/trajs/data2_zy.offt": {
+      "size_bytes": 1951134,
+      "sha256": "81298401341b5601d11da8191c3b91530b7c9766c5d39db7bc3950fb979d1f82"
+    },
+    "share/example/c++/trajs/data4_zy.offt": {
+      "size_bytes": 1965548,
+      "sha256": "47f2ecb88048a0dd204aa151596ecbc4d68df8854a6bd7b1de24bf421f63f0e5"
+    },
+    "share/example/c++/trajs/path.txt": {
+      "size_bytes": 58278,
+      "sha256": "1264f647ee34ca8a4896e5f392535d376f6343c5883e193db97298bb03ad54e5"
+    },
+    "share/example/c++/trajs/path1.txt": {
+      "size_bytes": 2591,
+      "sha256": "e5b8b401f1c1764a03b3c0a1ac43e5390b23b5e3c5878dea6d9c0835654eaba3"
+    },
+    "share/example/c++/trajs/physiotherapy.txt": {
+      "size_bytes": 261603,
+      "sha256": "a0acd7ebc6ed91b850365741c554d3aad63c9a2587f45f8f65b80baea6fe206a"
+    },
+    "share/example/c++/trajs/record.offt": {
+      "size_bytes": 35163,
+      "sha256": "c90d1ee4a66dec22d45b942a0b7551842d8fa5b3ad944c89d327f7b7d340397b"
+    },
+    "share/example/c++/trajs/record1.offt": {
+      "size_bytes": 192383,
+      "sha256": "72162e09007bd77acce6ad4bc5db2e5c1148636fe047c334705134407907ab93"
+    },
+    "share/example/c++/trajs/record3.offt": {
+      "size_bytes": 182807,
+      "sha256": "c3bc81f13562b8dc5cac8aba1143b26108476558901544a112ce442b12a64bd6"
+    },
+    "share/example/c++/trajs/record4.offt": {
+      "size_bytes": 199110,
+      "sha256": "2c84beaa92c154068d120f3827fe4fbcf8f30832f37bf7b4d0171af47c0cabc8"
+    },
+    "share/example/c++/trajs/record5.offt": {
+      "size_bytes": 112110,
+      "sha256": "82447b3605867ce8175dfe373547f70c5880c9b18d14dc981496ed286ba55329"
+    },
+    "share/example/c++/trajs/record6.offt": {
+      "size_bytes": 113153,
+      "sha256": "8d8f78ce79db5b1fd4d31b4c9b1058940dc208b0d27f971cf92c195680a57602"
+    },
+    "share/example/c++/trajs/recordFinal.offt": {
+      "size_bytes": 2538496,
+      "sha256": "57ad0b8fb89ce685c8ec8f05f1619bf8c78c5c2537f76c639c33ebb3260c0271"
+    },
+    "share/example/c++/trajs/xx.csv": {
+      "size_bytes": 63658,
+      "sha256": "e3448d0644ddcfb20cc3259c14aea9408ba1c08dabe4f44220746e8d96622d1e"
+    },
+    "share/example/c++/visual_studio/PropertySheetDebug.props": {
+      "size_bytes": 1028,
+      "sha256": "f83a3674d6d9af7ba1c19a6909f6ebc3c2c496c218cb1253341d9333111d8318"
+    },
+    "share/example/c++/visual_studio/PropertySheetRelease.props": {
+      "size_bytes": 1123,
+      "sha256": "8824051fd635c48ab146efeaf75ef2a613f4daf3d325e1b90f167eaf4dbbcacf"
+    },
+    "share/example/c++/visual_studio/example_movej/example_movej.vcxproj": {
+      "size_bytes": 6614,
+      "sha256": "cb35f11867ec15b5f8b4e693bf38b9a930a5e5ad4becb80f13ae5ec9ab793735"
+    },
+    "share/example/c++/visual_studio/example_movel/example_movel.vcxproj": {
+      "size_bytes": 6614,
+      "sha256": "44beecdb4d86dfac915915fdb95e684a990df616c1f06a86ff1b8b7a849c7411"
+    },
+    "share/example/c++/visual_studio/example_rtde/example_rtde.vcxproj": {
+      "size_bytes": 6612,
+      "sha256": "ed573a3bd86c0847b0d36bfe90813fe48c9488e1c3658877563b390cb67d10ac"
+    },
+    "share/example/c++/visual_studio/example_servoj2/example_servoj2.vcxproj": {
+      "size_bytes": 6725,
+      "sha256": "a83af96d93c8e346064dc5317f375113231f63561088c13dce1c4c4f41b7a288"
+    },
+    "share/example/c++/visual_studio/example_startup/example_startup.vcxproj": {
+      "size_bytes": 7852,
+      "sha256": "b37d0c2fa520c883e06b63f712e0da63af5e325701eb85ffd30233c978454e7f"
+    },
+    "share/example/c++/visual_studio/visual_studio.sln": {
+      "size_bytes": 4478,
+      "sha256": "68ae7073905652724e6f03569c32e7caa1b17ef0e01e87e97685039f1ec04bda"
+    },
+    "share/example/python/example_algorithm.py": {
+      "size_bytes": 2207,
+      "sha256": "744d2d220541746ed740add44ec36ddb86d2efc3b21a2c33355c496124776c4c"
+    },
+    "share/example/python/example_armplay.py": {
+      "size_bytes": 4583,
+      "sha256": "92a32d32e66f7980767d5b7f9bff15fa23d987bc03b3c01a7f08ec3802ae095d"
+    },
+    "share/example/python/example_config.py": {
+      "size_bytes": 8245,
+      "sha256": "200a5d30fda2da4186ee4ab3aeff75904db50703c918641db98d42411dd255bd"
+    },
+    "share/example/python/example_freedrive.py": {
+      "size_bytes": 1293,
+      "sha256": "89b263ecc9386df4b41c255e30a8775f454089e1cdbb0536d18f0896c93b44c3"
+    },
+    "share/example/python/example_io.py": {
+      "size_bytes": 8718,
+      "sha256": "e84d3f18cf583a7a3863c124298ba53a28a33f731f62b00dfe612592be25d024"
+    },
+    "share/example/python/example_math.py": {
+      "size_bytes": 1490,
+      "sha256": "c7860f115ab6448d886ab36326e26c8d7085739a35f1807ae19e4ca3be05250d"
+    },
+    "share/example/python/example_movec.py": {
+      "size_bytes": 2339,
+      "sha256": "a48430fc1415ef1da64479ba544c36a1817275eb3998d0416dafe132f05443c9"
+    },
+    "share/example/python/example_movej.lua": {
+      "size_bytes": 3021,
+      "sha256": "062b067ca5e4416d795603f5c680e51721c854936d0a8d399ec627945ac811d5"
+    },
+    "share/example/python/example_movej.py": {
+      "size_bytes": 2792,
+      "sha256": "a611f7c33c61c9f37e50313fc004e43bef92b0f5cca0569e879c303116fca377"
+    },
+    "share/example/python/example_movel.py": {
+      "size_bytes": 5956,
+      "sha256": "924121b99c345f77281b589d92c92439f71ede26a4b3d2350c0d66145863b097"
+    },
+    "share/example/python/example_movel_singularity.py": {
+      "size_bytes": 5475,
+      "sha256": "3e6a869557bf09357e99f4065d846ea2fbb82d358b118ff58294919267552693"
+    },
+    "share/example/python/example_multi_thread.py": {
+      "size_bytes": 1868,
+      "sha256": "1ac95bade2f5662ed911dc761199e09a94038acc5c042c01d3a31c03611f804b"
+    },
+    "share/example/python/example_offline_track.py": {
+      "size_bytes": 6158,
+      "sha256": "3f653f4075622d64891f43a929a32f64913618a073b3dcb24d1d265c62b8d1fb"
+    },
+    "share/example/python/example_record.py": {
+      "size_bytes": 4645,
+      "sha256": "7f5283ad6f76fff860c31a2bf0f419f6db22cc5a4c21d55533b78f56c377f721"
+    },
+    "share/example/python/example_rtde.py": {
+      "size_bytes": 2613,
+      "sha256": "2da9147a1e22fb8e657f5f0a9ccc5df44753e48b129c3c879caef5aae001cb31"
+    },
+    "share/example/python/example_script.py": {
+      "size_bytes": 1281,
+      "sha256": "e24a2f2340808c6c830f0d42a6f28b9deb9e22c4dfd90e5066a4825dd52ed721"
+    },
+    "share/example/python/example_script2.py": {
+      "size_bytes": 1710,
+      "sha256": "c1a19f8f27ac8ff0d265fb13fe15b3d7d1d53b02fee46783a0c95addfb7d63f5"
+    },
+    "share/example/python/example_servoj.py": {
+      "size_bytes": 2969,
+      "sha256": "124d174bd183e78246a882dfdc3347a2999f6846d0c31ae47bdd659dd2049e60"
+    },
+    "share/example/python/example_set_log_handler.py": {
+      "size_bytes": 1271,
+      "sha256": "7d01ef55a8382c3b68c645e73b1d79ce141dc4395fc3d5a481cff0a339135d85"
+    },
+    "share/example/python/example_startup.py": {
+      "size_bytes": 2178,
+      "sha256": "c97ce729c36e86a0003cb3e2a7c64890fb1c7a718bd897fb1f7fad5be15f71bd"
+    },
+    "share/example/python/example_state.py": {
+      "size_bytes": 11724,
+      "sha256": "a224c21cdb1ea46081040236eeae7d6bfc3f797884742a70ef1b528433f6d919"
+    },
+    "share/example/python/example_timer.py": {
+      "size_bytes": 3452,
+      "sha256": "21f87c21ece0867ed66f88bc176960f751b561635aab5cffe0b68f3ed71646d2"
+    }
+  }
+}

@@ -1,0 +1,89 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>点云与表面体素</title>
+<style>
+body{margin:0;background:#f4f6f8;color:#233344;font-family:system-ui,sans-serif}
+header{padding:14px 22px}h1{margin:0 0 8px;font-size:22px}p{margin:5px 0}
+.panels{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0 12px}
+.panel{min-width:0}.plot{height:65vh;min-height:420px}h2{font-size:17px;margin:8px}
+#detail-note{padding:8px 22px}a{color:#165dba}
+@media(max-width:900px){.panels{grid-template-columns:1fr}.plot{height:55vh}}
+</style>
+<header><h1>点云怎样变成体素</h1>
+<p id="summary"></p>
+<p>左侧切换原始点云与体素中心，点击任意一点，右侧查看它附近的立方格。拖动旋转，滚轮缩放。</p>
+<p>所有坐标为世界系米制坐标。仅记录有观测点的格子；未观测格子保持未知。</p>
+<p><a href="voxels.npz">完整体素与逐点对应</a> · <a href="voxel_centers.ply">体素中心 PLY</a> ·
+<a href="result.json">结果说明</a></p></header>
+<div class="panels"><section class="panel"><h2>全景：切换前后比较</h2><div id="global" class="plot"></div></section>
+<section class="panel"><h2>局部：按真实边长画出的立方体</h2><div id="detail" class="plot"></div></section></div>
+<p id="detail-note"></p>
+<script>__PLOTLY_JS__</script>
+<script>
+const data = __VOXEL_DATA__;
+const centers = data.centers, size = data.size_m;
+const color = rgb => `rgb(${rgb[0]},${rgb[1]},${rgb[2]})`;
+const axis = title => ({title, color:'#dce6ee', gridcolor:'#344858'});
+const scene = () => ({xaxis:axis('X / m'), yaxis:axis('Y / m'), zaxis:axis('Z / m'),
+  bgcolor:'#152433', aspectmode:'data', camera:{eye:{x:1.2,y:-1.8,z:1}, up:{x:0,y:0,z:1}}});
+const layout = () => ({margin:{l:0,r:0,t:30,b:0}, showlegend:false, scene:scene(), uirevision:'view'});
+document.getElementById('summary').textContent =
+  `${data.point_count.toLocaleString()} 个原始点 → ${centers.length.toLocaleString()} 个表面体素；边长 ${size*1000} mm。`;
+
+const ids = data.display_indices;
+const centerTrace = {type:'scatter3d',mode:'markers',name:'体素中心',
+  x:ids.map(i=>centers[i][0]),y:ids.map(i=>centers[i][1]),z:ids.map(i=>centers[i][2]),
+  marker:{size:2.5,color:ids.map(i=>color(data.colors[i]))},
+  customdata:ids.map(i=>[i,...data.indices[i],data.counts[i]]),
+  hovertemplate:'格号 (%{customdata[1]}, %{customdata[2]}, %{customdata[3]})<br>包含 %{customdata[4]} 个点<extra></extra>'};
+const raw = data.raw_points;
+const rawTrace = {type:'scatter3d',mode:'markers',name:'原始点云',visible:false,
+  x:raw.map(p=>p[0]),y:raw.map(p=>p[1]),z:raw.map(p=>p[2]),
+  marker:{size:2,color:data.raw_colors.map(color)},customdata:data.raw_voxel_ids,
+  hovertemplate:'X %{x:.4f} m<br>Y %{y:.4f} m<br>Z %{z:.4f} m<extra></extra>'};
+const globalLayout = layout();
+globalLayout.updatemenus = [{type:'buttons',direction:'left',x:0,y:1.12,buttons:[
+  {label:'体素中心',method:'restyle',args:[{visible:[true,false]}]},
+  {label:'原始点云',method:'restyle',args:[{visible:[false,true]}]}]}];
+
+// 八个角点与十二个三角面定义一个立方体，边长始终使用实际体素尺寸。
+const corners=[[0,0,0],[1,0,0],[1,1,0],[0,1,0],[0,0,1],[1,0,1],[1,1,1],[0,1,1]];
+const faces=[[0,2,1],[0,3,2],[4,5,6],[4,6,7],[0,1,5],[0,5,4],
+             [1,2,6],[1,6,5],[2,3,7],[2,7,6],[3,0,4],[3,4,7]];
+const edges=[[0,1],[1,2],[2,3],[3,0],[4,5],[5,6],[6,7],[7,4],[0,4],[1,5],[2,6],[3,7]];
+function showDetail(id){
+  const focus=centers[id], radius=data.radius_cells*size;
+  let near=[];
+  centers.forEach((p,i)=>{
+    const delta=p.map((v,k)=>v-focus[k]);
+    if(Math.max(...delta.map(Math.abs))<=radius+size*1e-6)
+      near.push([i,delta.reduce((total,v)=>total+v*v,0)]);
+  });
+  near.sort((a,b)=>a[1]-b[1]);
+  const total=near.length;
+  near=near.slice(0,data.max_local_cubes);
+  const x=[],y=[],z=[],ii=[],jj=[],kk=[],fc=[],lx=[],ly=[],lz=[];
+  near.forEach(([index],n)=>{
+    const c=centers[index], vertices=corners.map(p=>p.map((v,k)=>c[k]+(v-.5)*size));
+    vertices.forEach(p=>{x.push(p[0]);y.push(p[1]);z.push(p[2]);});
+    faces.forEach(f=>{ii.push(n*8+f[0]);jj.push(n*8+f[1]);kk.push(n*8+f[2]);fc.push(color(data.colors[index]));});
+    edges.forEach(([a,b])=>{lx.push(vertices[a][0],vertices[b][0],null);
+      ly.push(vertices[a][1],vertices[b][1],null);lz.push(vertices[a][2],vertices[b][2],null);});
+  });
+  const mesh={type:'mesh3d',x,y,z,i:ii,j:jj,k:kk,facecolor:fc,flatshading:true,hoverinfo:'skip',
+    lighting:{ambient:.65,diffuse:.7,roughness:.9},lightposition:{x:-1,y:-2,z:3}};
+  const wire={type:'scatter3d',mode:'lines',x:lx,y:ly,z:lz,line:{color:'#40576c',width:1},
+    opacity:.7,hoverinfo:'skip'};
+  Plotly.react('detail',[mesh,wire],layout(),{responsive:true});
+  document.getElementById('detail-note').textContent=
+    `所选格号 (${data.indices[id].join(', ')})，包含 ${data.counts[id]} 个原始点；`+
+    `周围半宽 ${radius*1000} mm，显示 ${near.length} / ${total} 个格子。局部显示裁剪不影响完整保存的数据。`;
+}
+Plotly.newPlot('global',[centerTrace,rawTrace],globalLayout,{responsive:true}).then(()=>{
+  document.getElementById('global').on('plotly_click',event=>{
+    const p=event.points[0];
+    showDetail(p.curveNumber===0?p.customdata[0]:p.customdata);
+  });
+  showDetail(data.initial_index);
+});
+</script></html>
