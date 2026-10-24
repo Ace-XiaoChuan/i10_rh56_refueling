@@ -7,7 +7,7 @@
     "project_document": "doc/assembly_contract.md#末端相机外参"
   },
   "point_cloud": {
-    "files": ["fuel_cap_01.pcd", "fuel_cap_02.pcd"],
+    "files": ["doc/fuel_cap_01_ascii.pcd", "doc/fuel_cap_02_ascii.pcd"],
     "xyz_unit": "mm",
     "scale_to_m": 0.001,
     "frame_id": "camera",

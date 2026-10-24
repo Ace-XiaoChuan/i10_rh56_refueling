@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "paths_relative_to": "project_root",
   "files": [
     {
@@ -9,8 +9,11 @@
     },
     {
       "original_path": "Neisai1.pcd",
-      "current_path": "fuel_cap_01.pcd",
-      "sha256": "23efab7e08cb52b56a37dea0943d60bac05a57aeeb7a8d028e12d15d584f6ea5"
+      "current_path": "doc/fuel_cap_01_ascii.pcd",
+      "sha256": "6617ccdaa555a8902b64a9956a48260bc533d2c3208fbe0f38d02953be1ef0f0",
+      "original_sha256": "23efab7e08cb52b56a37dea0943d60bac05a57aeeb7a8d028e12d15d584f6ea5",
+      "previous_path": "fuel_cap_01.pcd",
+      "storage_conversion": "binary_to_ascii_verified_xyz_rgb_and_point_order"
     },
     {
       "original_path": "微信图片_20261022163706_63_16.jpg",
@@ -19,18 +22,27 @@
     },
     {
       "original_path": "Neisai2.pcd",
-      "current_path": "fuel_cap_02.pcd",
-      "sha256": "5ea2b6f90dfed9c705936f72e60ebe08c41262037a8b30eec99c83ec3d7570a8"
+      "current_path": "doc/fuel_cap_02_ascii.pcd",
+      "sha256": "294a8094b3aa9b6fe10852c16e71cfc2dcdb8a0546c054a992663f42e867a5c5",
+      "original_sha256": "5ea2b6f90dfed9c705936f72e60ebe08c41262037a8b30eec99c83ec3d7570a8",
+      "previous_path": "fuel_cap_02.pcd",
+      "storage_conversion": "binary_to_ascii_verified_xyz_rgb_and_point_order"
     },
     {
       "original_path": "doc/Neisai1.pcd",
-      "current_path": "doc/fuel_cap_01.pcd",
-      "sha256": "23efab7e08cb52b56a37dea0943d60bac05a57aeeb7a8d028e12d15d584f6ea5"
+      "current_path": "doc/fuel_cap_01_ascii.pcd",
+      "sha256": "6617ccdaa555a8902b64a9956a48260bc533d2c3208fbe0f38d02953be1ef0f0",
+      "original_sha256": "23efab7e08cb52b56a37dea0943d60bac05a57aeeb7a8d028e12d15d584f6ea5",
+      "previous_path": "doc/fuel_cap_01.pcd",
+      "storage_conversion": "binary_to_ascii_verified_xyz_rgb_and_point_order"
     },
     {
       "original_path": "doc/Neisai2.pcd",
-      "current_path": "doc/fuel_cap_02.pcd",
-      "sha256": "5ea2b6f90dfed9c705936f72e60ebe08c41262037a8b30eec99c83ec3d7570a8"
+      "current_path": "doc/fuel_cap_02_ascii.pcd",
+      "sha256": "294a8094b3aa9b6fe10852c16e71cfc2dcdb8a0546c054a992663f42e867a5c5",
+      "original_sha256": "5ea2b6f90dfed9c705936f72e60ebe08c41262037a8b30eec99c83ec3d7570a8",
+      "previous_path": "doc/fuel_cap_02.pcd",
+      "storage_conversion": "binary_to_ascii_verified_xyz_rgb_and_point_order"
     }
   ]
 }

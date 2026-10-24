@@ -8,7 +8,7 @@ PCD 已经包含三维坐标，无需再做深度反投影。先确认文件可�
 
 ```bash
 .venv/bin/python tools/inspect_pcd.py \
-  --pcd fuel_cap_01.pcd --pcd fuel_cap_02.pcd \
+  --pcd doc/fuel_cap_01_ascii.pcd --pcd doc/fuel_cap_02_ascii.pcd \
   --reference-image fuel_cap_01.jpg \
   --reference-image fuel_cap_02.jpg \
   --length-unit mm --frame-id camera \
@@ -24,11 +24,13 @@ python3 -m http.server 8768 --bind 127.0.0.1 \
 
 每份点云目录保存 `point_cloud_raw.npz`、`result.json`、`preview.png` 和 `index.html`。NPZ 的 `xyz_raw`、`records` 保留全部原行，`finite_mask` 和 `finite_source_indices` 记录哪些行可用于显示；存在颜色字段时保存 `rgb_pcl_decoded`。不丢弃原字段、不平滑、不填洞。报告保存输入及实现摘要；没有用文件修改时间代替采集时间。
 
-通用工具默认 `--length-unit unknown --frame-id unknown`。本批 PCD 已由用户确认是相机系毫米，故上述命令显式使用 `--length-unit mm --frame-id camera`，额外保存的 `xyz_m` 仍在相机系中；相机到法兰外参及基座系转换条件见[末端相机外参](assembly_contract.md#末端相机外参)。已有归档报告保留生成时的未知单位和坐标系。读取器默认按常见 x86 导出的小端布局解释，`--byte-order big` 可显式指定大端。当前仅支持 PCD 0.7 的 `DATA binary`，其他格式明确报错。
+通用工具默认 `--length-unit unknown --frame-id unknown`。本批 PCD 已由用户确认是相机系毫米，故上述命令显式使用 `--length-unit mm --frame-id camera`，额外保存的 `xyz_m` 仍在相机系中；相机到法兰外参及基座系转换条件见[末端相机外参](assembly_contract.md#末端相机外参)。已有归档报告保留生成时的未知单位和坐标系。当前读取器支持 PCD 0.7 的 `DATA ascii` 和未压缩 `DATA binary`，压缩格式明确报错。二进制默认按常见 x86 导出的小端布局解释，`--byte-order big` 可显式指定大端；ASCII 文件不涉及字节序，报告相应字段记为 `null`。
+
+项目当前只保留上述两份 ASCII 点云输入，已与转换前的二进制逐点核对 XYZ、RGB 和点序一致。原文件名及内容摘要保存在[输入名称与格式映射](../config/fuel_cap_input_names.json)，历史结果继续保留生成时的来源记录。
 
 ## 关键计算
 
-实现位于 [pcd_point_cloud.py](../src/fuel_cap_task/pcd_point_cloud.py) 的 `load_binary_pcd()`。头部的 FIELDS、SIZE、TYPE、COUNT 共同描述每个点的字节布局：
+实现位于 [pcd_point_cloud.py](../src/fuel_cap_task/pcd_point_cloud.py) 的 `load_pcd()`。头部的 FIELDS、SIZE、TYPE、COUNT 共同描述每个点的字段布局。ASCII 按点逐行检查列数和数据类型，整数颜色直接解析为整数，避免浮点中转；二进制按字节布局读取：
 
 ```python
 # dtype 来自文件头；载荷长度须等于点数乘以每点字节数。
@@ -49,4 +51,4 @@ xyz = np.column_stack([records[name] for name in ("x", "y", "z")])
 .venv/bin/python -m pytest tools/tests/test_pcd_point_cloud.py -q
 ```
 
-独立构造字节检查已知坐标、整数及浮点颜色、非有限点保留、载荷截断、点数冲突和压缩格式拒绝。实测文件还可用已有 `.venv-spahybgen` 环境的 Open3D 独立读取，逐点核对 XYZ 和颜色。
+独立构造字节和文本样本检查已知坐标、整数及浮点颜色、非有限点保留、载荷截断、ASCII 点数与列数冲突、数值越界、多元素字段、大整数保真和压缩格式拒绝。实测文件还可用已有 `.venv-spahybgen` 环境的 Open3D 独立读取，逐点核对 XYZ 和颜色。

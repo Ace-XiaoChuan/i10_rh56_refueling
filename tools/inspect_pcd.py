@@ -15,7 +15,7 @@ sys.path.insert(0, str(ROOT / "src"))
 import numpy as np
 from PIL import Image
 
-from fuel_cap_task.pcd_point_cloud import load_binary_pcd
+from fuel_cap_task.pcd_point_cloud import load_pcd
 from fuel_cap_task.rgbd_point_cloud import digest
 from reconstruct_cap_point_cloud import plotly_asset
 
@@ -79,7 +79,7 @@ Plotly.newPlot('cloud', {json.dumps([trace])}, {json.dumps(layout)}, {{responsiv
 
 def inspect_one(path, output, args):
     """统计完整点云，显式排除非有限点用于显示，保留原行号用于以后追溯。"""
-    cloud = load_binary_pcd(path, byte_order=args.byte_order)
+    cloud = load_pcd(path, byte_order=args.byte_order)
     valid = np.isfinite(cloud.xyz_raw).all(axis=1)
     points = cloud.xyz_raw[valid]
     if not len(points):
@@ -96,9 +96,13 @@ def inspect_one(path, output, args):
         arrays["xyz_m"] = cloud.xyz_raw * scale
     np.savez_compressed(output / "point_cloud_raw.npz", **arrays)
     shown = write_views(output, points, colors, path.name, args.length_unit, args.max_view_points)
+    binary = cloud.header["DATA"] == ["binary"]
     report = {"mode": "pcd_inspection", "schema_version": 1, "input_path": str(path),
-              "input_sha256": cloud.sha256, "header": cloud.header, "byte_order": cloud.byte_order,
-              "byte_order_source": "cli_argument", "length_unit": args.length_unit,
+              "input_sha256": cloud.sha256, "header": cloud.header,
+              "data_encoding": cloud.header["DATA"][0],
+              "byte_order": cloud.byte_order if binary else None,
+              "byte_order_source": "cli_argument" if binary else "not_applicable_ascii",
+              "length_unit": args.length_unit,
               "unit_source": "unconfirmed" if scale is None else "cli_argument",
               "frame_id": args.frame_id, "capture_timestamp_s": None,
               "organized_layout": int(cloud.header["HEIGHT"][0]) > 1,
