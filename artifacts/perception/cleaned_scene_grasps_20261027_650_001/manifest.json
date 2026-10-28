@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-10-26T17:27:28.060667+00:00",
+  "files_sha256": {
+    "README.md": "ad528d91ab5f0dd9a4f1c9f1f4822eee91c66c8eb512ace0bbd567b8df6c88cd",
+    "comparison.png": "c84e291cfb12312d6fc291dc7ffe7e6bc42c03c16d124ef6c87194be52107ebd",
+    "hand_000.ply": "d5c7ddb3090ca40ffd4f0f60d0ace075f1c291ee2c6a35d9755d6cc072c456bb",
+    "hand_180.ply": "4259ae8be6b7983ac1af7a977153b234f6190e1feb6cc2fe9c28e79f99abca86",
+    "index.html": "c365ba076140a4023fb879d1115b63b86aca5f760f535c5c7064090bba958ff1",
+    "result.json": "f50f4d42e519c7cade83bb822d9e745fa12ea2c7f389868e83c16902f87b23ed",
+    "scene_cleaned.pcd": "8daad2be6a6bca8d035c86abc87bcdaf80e66b51c64e177ed876a77d9d216c63",
+    "source_snapshot/config/active_point_cloud_scene.json": "0ad6d4c42044dc248db84778448c2535ae00f483e3d6ac61f5e6c462bd0634ea",
+    "source_snapshot/config/fixed_grasp.json": "60d98d006c9e3484e2cfaaacb969ab652318167dbc7a1a6bdb05adf0124c43e8",
+    "source_snapshot/tools/overlay_grasps_on_scene.py": "4ebe12ce0e96fa57da25cc2476e545d9416a80d9e4b5325747531b8a20ea04b0",
+    "validation.json": "8529c7b5181cb19a86ea1e6c5383158caf11384acfc06ff67b329668ce20c4d3"
+  }
+}

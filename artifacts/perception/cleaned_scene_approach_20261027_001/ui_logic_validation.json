@@ -1,0 +1,15 @@
+{
+  "method": "V8 JavaScript with mock DOM, Plotly and timers; no real browser/WebGL execution",
+  "checks": [
+    "initial 100 mm offset",
+    "slider midpoint",
+    "latest rapid drag request",
+    "0/180/both/none visibility",
+    "play/pause and completed playback",
+    "start/end preserve terminal geometry",
+    "point cloud never updated",
+    "static viewer compatibility"
+  ],
+  "animation_steps": 20,
+  "status": "passed"
+}

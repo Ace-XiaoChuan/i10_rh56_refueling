@@ -1,0 +1,55 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Views
+    Name: Views
+Visualization Manager:
+  Class: ""
+  Global Options:
+    Background Color: 235; 240; 245
+    Fixed Frame: world
+    Frame Rate: 20
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Ground grid
+      Enabled: true
+      Cell Size: 0.1
+      Plane Cell Count: 30
+      Color: 120; 130; 140
+    - Class: moveit_rviz_plugin/PlanningScene
+      Name: Actual MTC PlanningScene
+      Enabled: true
+      Robot Description: robot_description
+      Planning Scene Topic: /i10_observed_planning_scene
+      Scene Geometry:
+        Show Scene Geometry: true
+        Scene Alpha: 1
+        Scene Color: 40; 170; 200
+        Voxel Rendering: Occupied Voxels
+        Voxel Coloring: Z-Axis
+      Scene Robot:
+        Show Robot Visual: true
+        Show Robot Collision: false
+        Robot Alpha: 1
+    - Class: moveit_rviz_plugin/Trajectory
+      Name: Validated MTC path
+      Enabled: true
+      Robot Description: robot_description
+      Trajectory Topic: /display_planned_path
+      Show Robot Visual: true
+      Show Robot Collision: false
+      Robot Alpha: 0.8
+      Interrupt Display: false
+      State Display Time: 0.05 s
+      Loop Animation: true
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 4.8
+      Focal Point: {X: 0.0, Y: -0.3, Z: 1.0}
+      Pitch: 0.4
+      Yaw: 0.25
+      Target Frame: world
+Window Geometry:
+  Width: 1400
+  Height: 900

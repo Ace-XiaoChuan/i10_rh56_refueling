@@ -1,0 +1,600 @@
+{
+  "schema_version": 1,
+  "mode": "cropped_cap_geometry",
+  "frame_id": "camera",
+  "length_unit": "m",
+  "input_path": "/home/ace/i10_rh56_refueling_ws/artifacts/perception/cap_observation_20261026_001/crop/cap_crop.pcd",
+  "input_sha256": "2e357c1d5acccfbc44f421d0e095cab7fcd64119ba1220d448696c43e3fd1520",
+  "input_length_unit": "mm",
+  "capture_timestamp_s": null,
+  "pcd_exports_length_unit": "mm",
+  "source": "agent_or_operator_seeded_3d_connected_components",
+  "geometric_checks_passed": true,
+  "motion_target_valid": false,
+  "cap_estimate": null,
+  "boundary_center_m": [
+    0.1288023228883131,
+    0.01433173746006709,
+    0.6574905670819486
+  ],
+  "boundary_radius_m": 0.038181602016541784,
+  "visible_bridge_surface_reference_m": [
+    0.1244373076032444,
+    0.018470779716390995,
+    0.635223133993367
+  ],
+  "cap_grip_center_model_based_m": [
+    0.12604587493152922,
+    0.016945486513710226,
+    0.643428985064172
+  ],
+  "visible_surface_to_grip_center_offset_m_in_cap": [
+    0.0,
+    0.0,
+    -0.0085
+  ],
+  "model_prior": {
+    "length_m": 0.060000000000000005,
+    "base_width_m": 0.019000000000000013,
+    "top_width_m": 0.017000000000000015,
+    "height_m": 0.017,
+    "top_width_reduction_m": 0.002,
+    "top_surface_to_reference_m": 0.0085,
+    "reference_frame": "cap_grip_center",
+    "reference_definition": "existing_height_midpoint",
+    "source_kind": "provisional_urdf_and_user_width_relation"
+  },
+  "model_prior_sources": {
+    "urdf_path": "/home/ace/i10_rh56_refueling_ws/assets/objects/fuel_cap/urdf/fuel_cap.urdf",
+    "urdf_sha256": "0dc5ccac3d543b6fd4107ed5ea1472d8426cd7163134aa4e2319ac993efdef3c",
+    "config_sha256": "1cb5f008b7ae6976e18af829fff5229419b414d8be80c9c8d6d806ebaf2f04da"
+  },
+  "outward_axis_camera": [
+    -0.18924321509233244,
+    0.17944625913891388,
+    -0.9653942436241096
+  ],
+  "bridge_axis_camera_undirected": [
+    0.9349800185843112,
+    0.33330488018655224,
+    -0.12132692072210938
+  ],
+  "orientation_candidates": [
+    {
+      "rotation_columns_xyz": [
+        [
+          0.9349800185843112,
+          0.299998950647495,
+          -0.18924321509233244
+        ],
+        [
+          0.33330488018655224,
+          -0.9255846243995617,
+          0.17944625913891388
+        ],
+        [
+          -0.12132692072210938,
+          -0.23085435383705463,
+          -0.9653942436241096
+        ]
+      ],
+      "ambiguity_yaw_deg": 0
+    },
+    {
+      "rotation_columns_xyz": [
+        [
+          -0.9349800185843112,
+          -0.299998950647495,
+          -0.18924321509233244
+        ],
+        [
+          -0.33330488018655224,
+          0.9255846243995617,
+          0.17944625913891388
+        ],
+        [
+          0.12132692072210938,
+          0.23085435383705463,
+          -0.9653942436241096
+        ]
+      ],
+      "ambiguity_yaw_deg": 180
+    }
+  ],
+  "pose_candidates_camera_model_based": [
+    {
+      "frame_id": "camera",
+      "position_m": [
+        0.12604587493152922,
+        0.016945486513710226,
+        0.643428985064172
+      ],
+      "orientation_xyzw": [
+        0.9780029251755823,
+        0.16188699811924115,
+        -0.07938885657184633,
+        -0.10488225607870924
+      ],
+      "ambiguity_yaw_deg": 0
+    },
+    {
+      "frame_id": "camera",
+      "position_m": [
+        0.12604587493152922,
+        0.016945486513710226,
+        0.643428985064172
+      ],
+      "orientation_xyzw": [
+        -0.16188699811924115,
+        0.9780029251755823,
+        0.10488225607870924,
+        -0.07938885657184633
+      ],
+      "ambiguity_yaw_deg": 180
+    }
+  ],
+  "diagnostics": {
+    "point_count": 5742,
+    "face_count": 4446,
+    "bridge_count": 1296,
+    "bridge_core_count": 1166,
+    "boundary_count": 53,
+    "height_separation_m": 0.018446899038368828,
+    "height_quantile_gap_m": 0.014325724574732662,
+    "boundary_plane_rms_m": 0.0009488364476215596,
+    "boundary_circle_rms_m": 0.0011004913110398504,
+    "boundary_angular_coverage_deg": 325.1506170361753,
+    "bridge_eigenvalue_ratio": 14.870367804023987,
+    "bridge_surface_rms_m": 0.00033817524901413003,
+    "surface_height_from_boundary_m": 0.023065636899790524
+  },
+  "subsampling": {
+    "seed": 25,
+    "retained_fraction": 0.8,
+    "samples": [
+      {
+        "valid": true,
+        "boundary_center_delta_m": 7.22756545935693e-05,
+        "surface_reference_delta_m": 9.164033820149776e-05,
+        "normal_angle_deg": 0.1416608685193593,
+        "bridge_axis_angle_deg": 0.2668309032337276
+      },
+      {
+        "valid": true,
+        "boundary_center_delta_m": 0.00013620328822368005,
+        "surface_reference_delta_m": 0.00017169185708910666,
+        "normal_angle_deg": 0.16234180905757864,
+        "bridge_axis_angle_deg": 0.19475823681007898
+      },
+      {
+        "valid": true,
+        "boundary_center_delta_m": 0.00021072090800327211,
+        "surface_reference_delta_m": 0.00023419557825605383,
+        "normal_angle_deg": 0.23622964770698204,
+        "bridge_axis_angle_deg": 0.13825162693751453
+      },
+      {
+        "valid": true,
+        "boundary_center_delta_m": 0.00020381136815671698,
+        "surface_reference_delta_m": 0.00029015131827103024,
+        "normal_angle_deg": 0.3556825443923994,
+        "bridge_axis_angle_deg": 0.17475682490790528
+      },
+      {
+        "valid": true,
+        "boundary_center_delta_m": 0.0005898386325029836,
+        "surface_reference_delta_m": 0.0005287446924902742,
+        "normal_angle_deg": 0.3313451640352058,
+        "bridge_axis_angle_deg": 0.23634098187160504
+      },
+      {
+        "valid": true,
+        "boundary_center_delta_m": 0.0002985707993885691,
+        "surface_reference_delta_m": 0.0003722656105238404,
+        "normal_angle_deg": 0.5515893349076767,
+        "bridge_axis_angle_deg": 0.07764613142708834
+      },
+      {
+        "valid": true,
+        "boundary_center_delta_m": 0.00017322331280559283,
+        "surface_reference_delta_m": 0.00027571551953964644,
+        "normal_angle_deg": 0.26558966627451475,
+        "bridge_axis_angle_deg": 0.3327648288155303
+      },
+      {
+        "valid": true,
+        "boundary_center_delta_m": 0.0004291946860322096,
+        "surface_reference_delta_m": 0.0004921408993792577,
+        "normal_angle_deg": 0.23272828170402188,
+        "bridge_axis_angle_deg": 0.11647847871532167
+      },
+      {
+        "valid": true,
+        "boundary_center_delta_m": 0.00010750016705816697,
+        "surface_reference_delta_m": 4.3974701314933145e-05,
+        "normal_angle_deg": 0.30872782408309335,
+        "bridge_axis_angle_deg": 0.365726311493405
+      },
+      {
+        "valid": true,
+        "boundary_center_delta_m": 0.00018960754985086767,
+        "surface_reference_delta_m": 0.00034164791368513665,
+        "normal_angle_deg": 0.4222661951689149,
+        "bridge_axis_angle_deg": 0.1259220170183053
+      },
+      {
+        "valid": true,
+        "boundary_center_delta_m": 0.0002518375873257612,
+        "surface_reference_delta_m": 0.000285836795075876,
+        "normal_angle_deg": 0.12696357941825107,
+        "bridge_axis_angle_deg": 0.17451967601818955
+      },
+      {
+        "valid": true,
+        "boundary_center_delta_m": 0.00014988237264014473,
+        "surface_reference_delta_m": 0.00019739919540927162,
+        "normal_angle_deg": 0.14271070559060597,
+        "bridge_axis_angle_deg": 0.04512209466647096
+      }
+    ],
+    "interpretation": "仅为随机移除点后的敏感性，不是相对实物真值的误差"
+  },
+  "assumptions": [
+    "ROI和三维种子已在当前观测中选取，整盖选区仍需结合预览复核",
+    "观测外轮廓近圆且覆盖充分",
+    "凸起握梁与盖面存在明确高度分层",
+    "点云原点是观察相机原点",
+    "用占位 URDF 的顶面到中心距离换算实际观测的参考点"
+  ],
+  "unresolved": [
+    "外轮廓受人工裁剪影响，其圆心与法向仍需实物核对",
+    "握梁参考点使用占位模型高度，实物吻合程度待核对",
+    "握梁长轴有180度歧义",
+    "主机前后RPC快照不等于曝光硬件时间或连续静止监测",
+    "外参实物精度、工具安装及多视角一致性仍待核对"
+  ],
+  "implementation_sha256": {
+    "cap_geometry.py": "140c510a878a3fedf0188f0d4537bc7c2d4458c4e6115a8df8d1d43b9e917670",
+    "estimate_cap_geometry.py": "7bc4ec5f5b9a2bd17a1b313d0d30480f73004e7f6e4891537ba8bd4571e0d79c",
+    "cap_observation.py": "a9a5e3dc0b36a54dcef6b694f5cc70bbed31a15f82a72907eb43427515b58120"
+  },
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.2"
+  },
+  "robot_state_paired": true,
+  "pose_candidates_base_model_based": [
+    {
+      "frame_id": "base",
+      "reference_frame": "cap_grip_center",
+      "position_m": [
+        1.1274052757200694,
+        0.3482653761414757,
+        -0.4499735360298671
+      ],
+      "orientation_xyzw": [
+        -0.4157453955176378,
+        0.07165245527356874,
+        0.9059872784210925,
+        0.03476698287591428
+      ],
+      "base_from_cap_grip_center": [
+        [
+          -0.6518940460151776,
+          -0.12257524510436396,
+          -0.7483377994312238,
+          1.1274052757200694
+        ],
+        [
+          0.003418531674285245,
+          -0.9873143651099503,
+          0.158740851984383,
+          0.3482653761414757
+        ],
+        [
+          -0.7583023581732772,
+          0.10092399979757535,
+          0.6440433835183043,
+          -0.4499735360298671
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ambiguity_yaw_deg": 0
+    },
+    {
+      "frame_id": "base",
+      "reference_frame": "cap_grip_center",
+      "position_m": [
+        1.1274052757200694,
+        0.3482653761414757,
+        -0.4499735360298671
+      ],
+      "orientation_xyzw": [
+        -0.07165245527356874,
+        -0.41574539551763773,
+        -0.03476698287591428,
+        0.9059872784210925
+      ],
+      "base_from_cap_grip_center": [
+        [
+          0.6518940460151776,
+          0.12257524510436396,
+          -0.7483377994312238,
+          1.1274052757200694
+        ],
+        [
+          -0.003418531674285245,
+          0.9873143651099503,
+          0.158740851984383,
+          0.3482653761414757
+        ],
+        [
+          0.7583023581732772,
+          -0.10092399979757535,
+          0.6440433835183043,
+          -0.4499735360298671
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ambiguity_yaw_deg": 180
+    }
+  ],
+  "boundary_center_base_m": [
+    1.1383052923849728,
+    0.34595321453030775,
+    -0.45935443810190724
+  ],
+  "visible_bridge_surface_reference_base_m": [
+    1.121044404424904,
+    0.34961467338334296,
+    -0.4444991672699615
+  ],
+  "outward_axis_base": [
+    -0.7483377994312238,
+    0.158740851984383,
+    0.6440433835183043
+  ],
+  "bridge_axis_base_undirected": [
+    -0.6518940460151776,
+    0.003418531674285264,
+    -0.7583023581732772
+  ],
+  "observation_binding": {
+    "observation_path": "/home/ace/i10_rh56_refueling_ws/artifacts/hardware/vizum_i10_capture_20261026T055151Z/observation.json",
+    "observation_sha256": "50d2b2d7c48120b4c81e6d0a5116c5d5dbd11cff66c8cb95b58afb8f031734d1",
+    "point_cloud_sha256": "f6ef8f4f9bb3c12f045c1e9853a5b59afdb08b4c64858ea8c471f69c62842b6c",
+    "calibration_sha256": "0f208672a74bb5689930fa9daea0cfcc2c9c31b48379e6d846d57c912c8ba0e0",
+    "crop_to_source_max_nearest_error_m": 0.0,
+    "robot_before": {
+      "q_rad": [
+        1.08096597602,
+        -0.614419453372,
+        2.12577451765,
+        -1.19925369212,
+        -0.953916668874,
+        -1.18112133043
+      ],
+      "flange_pose_m_rpy_rad": [
+        0.496176583739,
+        0.396151860096,
+        0.00603644562364,
+        2.94249102096,
+        -0.932676810057,
+        0.533892957331
+      ],
+      "steady": true,
+      "simulation": false,
+      "base_from_flange": [
+        [
+          0.5127859297250841,
+          0.3620768955892515,
+          0.7784284886593189,
+          0.496176583739
+        ],
+        [
+          0.30313770930562267,
+          -0.9246722464289647,
+          0.23040999518456629,
+          0.396151860096
+        ],
+        [
+          0.8032173550620784,
+          0.11782002531175385,
+          -0.5839180782974756,
+          0.00603644562364
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pose_convention": "固定轴 XYZ RPY，R=Rz(yaw)Ry(pitch)Rx(roll)，平移 m",
+      "joint_order": [
+        "shoulder_joint",
+        "upperArm_joint",
+        "foreArm_joint",
+        "wrist1_joint",
+        "wrist2_joint",
+        "wrist3_joint"
+      ]
+    },
+    "robot_after": {
+      "q_rad": [
+        1.08096597602,
+        -0.61441832648,
+        2.12577451765,
+        -1.19925369212,
+        -0.953916668874,
+        -1.18112133043
+      ],
+      "flange_pose_m_rpy_rad": [
+        0.496176672365,
+        0.39615202632,
+        0.00603710261117,
+        2.94249200503,
+        -0.932677772479,
+        0.533892166907
+      ],
+      "steady": true,
+      "simulation": false,
+      "base_from_flange": [
+        [
+          0.5127855038788459,
+          0.3620768331225994,
+          0.7784287982388803,
+          0.496176672365
+        ],
+        [
+          0.30313691059956616,
+          -0.9246723635873095,
+          0.23041057582066243,
+          0.39615202632
+        ],
+        [
+          0.8032179283630744,
+          0.11781929779865383,
+          -0.5839174364774213,
+          0.00603710261117
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pose_convention": "固定轴 XYZ RPY，R=Rz(yaw)Ry(pitch)Rx(roll)，平移 m",
+      "joint_order": [
+        "shoulder_joint",
+        "upperArm_joint",
+        "foreArm_joint",
+        "wrist1_joint",
+        "wrist2_joint",
+        "wrist3_joint"
+      ]
+    },
+    "base_from_camera": [
+      [
+        -0.5046625010254555,
+        -0.23811212338098856,
+        0.8298303301023222,
+        0.6611139409092561
+      ],
+      [
+        -0.3230376438798493,
+        0.9434678611458183,
+        0.0742635551363572,
+        0.32521209277432206
+      ],
+      [
+        -0.8006012994589052,
+        -0.23058840318613588,
+        -0.5530520297592083,
+        0.010696094103806137
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "base_from_camera_after": [
+      [
+        -0.5046620765662152,
+        -0.23811200112723935,
+        0.8298306233172268,
+        0.6611140270647033
+      ],
+      [
+        -0.32303684777515695,
+        0.943468090438775,
+        0.07426410507978844,
+        0.3252122543645763
+      ],
+      [
+        -0.8006018882411942,
+        -0.230587591259793,
+        -0.5530515159563719,
+        0.010696767995930508
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "host_acquisition_window_utc": [
+      "2026-10-26T05:51:51.623130+00:00",
+      "2026-10-26T05:52:07.418329+00:00"
+    ],
+    "time_meaning": "UTC 主机调用起止时间及主机单调时间，不是相机曝光时间或控制器采样时间",
+    "camera_axis_convention": "camera_sdk_native",
+    "coordinate_processing": "mm_to_m_only_no_axis_flip",
+    "crop_manifest": {
+      "method": "agent_or_operator_seeded_3d_connected_components",
+      "bounds_mm": [
+        65.0,
+        195.0,
+        -55.0,
+        80.0,
+        620.0,
+        700.0
+      ],
+      "seeds_mm": [
+        [
+          131.0390625,
+          7.15625,
+          655.6328125
+        ],
+        [
+          127.140625,
+          16.76953125,
+          634.86328125
+        ]
+      ],
+      "connection_radius_mm": 1.8,
+      "roi_point_count": 20837,
+      "roi_component_count": 216,
+      "selected_component_counts": [
+        4446,
+        1296
+      ],
+      "selected_point_count": 5742,
+      "seed_snap_distances_mm": [
+        0.0,
+        0.0
+      ],
+      "seed_source_indices": [
+        154425,
+        152102
+      ],
+      "minimum_selected_margin_to_roi_mm": 11.6484375,
+      "circle_or_radius_used_to_cut_points": false,
+      "schema_version": 1,
+      "source_path": "/home/ace/i10_rh56_refueling_ws/artifacts/hardware/vizum_i10_capture_20261026T055151Z/cloud_sdk_native.pcd",
+      "source_sha256": "f6ef8f4f9bb3c12f045c1e9853a5b59afdb08b4c64858ea8c471f69c62842b6c",
+      "source_point_count": 268852,
+      "length_unit": "mm",
+      "frame_id": "camera_sdk_native",
+      "crop_path": "cap_crop.pcd",
+      "crop_sha256": "2e357c1d5acccfbc44f421d0e095cab7fcd64119ba1220d448696c43e3fd1520",
+      "source_indices_path": "source_indices.npz",
+      "visual_review_required": true,
+      "interpretation": "基于当前场景选取的ROI与种子，非通用自动盖体检测；没有添加拟合点或用圆半径截断观测"
+    }
+  }
+}

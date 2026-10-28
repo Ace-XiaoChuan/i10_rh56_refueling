@@ -1,0 +1,30 @@
+[
+  {
+    "source": "artifacts/e2_checks/fixed_grasp_20261020/baseline/visualization/approach.png",
+    "source_sha256": "b2a55e9834e30a27571fac8b34ec366fd925fd312c5b721a533540854dafff81",
+    "source_frames": 60,
+    "output_mp4": "arm_approach_baseline.mp4",
+    "mp4_frames": 90,
+    "mp4_fps": 15,
+    "duration_s": 6.0,
+    "output_gif": "arm_approach_baseline.gif",
+    "gif_duration_ms": 6000,
+    "width": 900,
+    "height": 700,
+    "content": "已有仿真路径回放；首尾各停留一秒；播放时长不是实际执行时间"
+  },
+  {
+    "source": "artifacts/e2_checks/fixed_grasp_20261020/mixed/visualization/approach.png",
+    "source_sha256": "91a2a1bf5fcb5f48c754382243a9114c581f20c8f2681e08d3f608540c0deac6",
+    "source_frames": 60,
+    "output_mp4": "arm_approach_changed_scene.mp4",
+    "mp4_frames": 90,
+    "mp4_fps": 15,
+    "duration_s": 6.0,
+    "output_gif": "arm_approach_changed_scene.gif",
+    "gif_duration_ms": 6000,
+    "width": 900,
+    "height": 700,
+    "content": "已有仿真路径回放；首尾各停留一秒；播放时长不是实际执行时间"
+  }
+]

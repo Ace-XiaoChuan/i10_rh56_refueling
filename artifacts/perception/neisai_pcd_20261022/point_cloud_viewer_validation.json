@@ -1,0 +1,13 @@
+{
+  "standalone_html": true,
+  "external_resources": 0,
+  "clouds": 2,
+  "point_counts": [
+    28897,
+    28914
+  ],
+  "coordinates_and_colors_exact_match": true,
+  "unit": "mm",
+  "bytes": 9996079,
+  "sha256": "38d449bc6abfaf85b503f491f035448406e0a304e2ba43a992a399d79032ceb8"
+}

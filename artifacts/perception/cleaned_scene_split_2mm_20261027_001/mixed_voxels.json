@@ -1,0 +1,93 @@
+{
+  "policy": "keep_in_environment",
+  "cells": [
+    {
+      "source_voxel_row": 36144,
+      "index_xyz": [
+        61,
+        25,
+        332
+      ],
+      "assigned_to": "environment",
+      "semantic_status": "unresolved",
+      "points": [
+        {
+          "point_row": 127943,
+          "in_cap_crop": false,
+          "camera_m": [
+            0.1221171875,
+            0.05059375,
+            0.665671875
+          ],
+          "cap_local_m": [
+            0.004843224838165426,
+            -0.037457785411140115,
+            -0.014691625455842485
+          ],
+          "nearest_cap_distance_m": 0.001967187655133018,
+          "nearest_cap_point_row": 128851
+        },
+        {
+          "point_row": 128851,
+          "in_cap_crop": true,
+          "camera_m": [
+            0.1234296875,
+            0.05048046875,
+            0.6642109375
+          ],
+          "cap_local_m": [
+            0.006209879967341151,
+            -0.0366219216226237,
+            -0.01354995441939967
+          ],
+          "nearest_cap_distance_m": 0.0,
+          "nearest_cap_point_row": 128851
+        }
+      ]
+    },
+    {
+      "source_voxel_row": 40691,
+      "index_xyz": [
+        77,
+        18,
+        325
+      ],
+      "assigned_to": "environment",
+      "semantic_status": "unresolved",
+      "points": [
+        {
+          "point_row": 153346,
+          "in_cap_crop": false,
+          "camera_m": [
+            0.155125,
+            0.0368125,
+            0.65001953125
+          ],
+          "cap_local_m": [
+            0.03301056277204343,
+            -0.011186351490522661,
+            -0.008300441219789694
+          ],
+          "nearest_cap_distance_m": 0.0019022795805398967,
+          "nearest_cap_point_row": 153347
+        },
+        {
+          "point_row": 153347,
+          "in_cap_crop": true,
+          "camera_m": [
+            0.1553515625,
+            0.03741796875,
+            0.65180859375
+          ],
+          "cap_local_m": [
+            0.033207138427575,
+            -0.012091808411232616,
+            -0.009961818172479788
+          ],
+          "nearest_cap_distance_m": 0.0,
+          "nearest_cap_point_row": 153347
+        }
+      ]
+    }
+  ]
+}

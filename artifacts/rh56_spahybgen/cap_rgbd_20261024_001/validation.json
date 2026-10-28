@@ -1,0 +1,16 @@
+{
+  "latest_run": "run_003",
+  "test_count_passed": 20,
+  "candidate_count": 16,
+  "geometry_pass_count": 0,
+  "source_and_outputs_verified": true,
+  "network_weights_optimized": false,
+  "arm_planning_performed": false,
+  "hardware_execution_performed": false,
+  "all_experiment_and_model_hashes_match": true,
+  "standalone_views_checked": true,
+  "coupled_joint_arrays_checked": true,
+  "mp4_decoded_frames": 91,
+  "manual_annotation_iou_evaluation_only": 0.936077057793345,
+  "upstream_commit": "39e5794506bbbf2fd41804f73c93b7b393be550e"
+}

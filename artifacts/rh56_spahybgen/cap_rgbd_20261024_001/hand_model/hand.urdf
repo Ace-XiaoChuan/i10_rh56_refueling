@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="rh56dfx_right_spahybgen">
+  <link name="base">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/base.obj" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="thumb_proximal_base">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/thumb_proximal_base.obj" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="thumb_proximal">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/thumb_proximal.obj" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="thumb_intermediate">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/thumb_intermediate.obj" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="thumb_distal">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/thumb_distal.obj" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="index_proximal">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/index_proximal.obj" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="index_intermediate">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/index_intermediate.obj" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="middle_proximal">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/middle_proximal.obj" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="middle_intermediate">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/middle_intermediate.obj" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="ring_proximal">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/ring_proximal.obj" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="ring_intermediate">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/ring_intermediate.obj" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="pinky_proximal">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/pinky_proximal.obj" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="pinky_intermediate">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/pinky_intermediate.obj" />
+      </geometry>
+    </visual>
+  </link>
+  <joint name="thumb_proximal_yaw_joint" type="revolute">
+    <axis xyz="0 0 -1" />
+    <limit lower="0.0" upper="1.308" velocity="0" effort="0" />
+    <child link="thumb_proximal_base" />
+    <parent link="base" />
+    <origin xyz="0.016960099999999999 0.020450400000000001 0.069099999999999995" rpy="3.6731876126458336e-06 -6.3268034398832322e-06 -1.5707949125923917" />
+  </joint>
+  <joint name="index_proximal_joint" type="revolute">
+    <axis xyz="0 0 1" />
+    <limit lower="0.06715014773032502" upper="1.5" velocity="0" effort="0" />
+    <child link="index_proximal" />
+    <parent link="base" />
+    <origin xyz="-0.00028524399999999998 0.032268900000000003 0.13653000000000001" rpy="1.6056952382089744 3.6160012277622637e-15 3.1415899999990526" />
+  </joint>
+  <joint name="middle_proximal_joint" type="revolute">
+    <axis xyz="0 0 1" />
+    <limit lower="0.09360730593607307" upper="1.5" velocity="0" effort="0" />
+    <child link="middle_proximal" />
+    <parent link="base" />
+    <origin xyz="-0.00028529599999999999 0.0129509 0.1371" rpy="1.5707949125807721 -4.6215836761440208e-13 3.1415899999994217" />
+  </joint>
+  <joint name="ring_proximal_joint" type="revolute">
+    <axis xyz="0 0 1" />
+    <limit lower="0.09360730593607307" upper="1.53102336825141" velocity="0" effort="0" />
+    <child link="ring_proximal" />
+    <parent link="base" />
+    <origin xyz="-0.00028534699999999998 -0.0062863299999999997 0.13691" rpy="1.5184106776944877 2.0771213766618553e-13 3.1415899999987151" />
+  </joint>
+  <joint name="pinky_proximal_joint" type="revolute">
+    <axis xyz="0 0 1" />
+    <limit lower="0.09360730593607307" upper="1.53102336825141" velocity="0" effort="0" />
+    <child link="pinky_proximal" />
+    <parent link="base" />
+    <origin xyz="-0.00028539800000000002 -0.025487099999999999 0.13571" rpy="1.4661094795241432 -1.2506913788721792e-12 3.141589999999947" />
+  </joint>
+  <joint name="thumb_proximal_pitch_joint" type="revolute">
+    <axis xyz="0 0 1" />
+    <limit lower="0.1" upper="0.48872180451127817" velocity="0" effort="0" />
+    <child link="thumb_proximal" />
+    <parent link="thumb_proximal_base" />
+    <origin xyz="-0.0088099000000000007 0.010892000000000001 -0.0092499999999999995" rpy="1.5707992067224876 -1.6129799948472259e-07 2.8586999444103394" />
+  </joint>
+  <joint name="index_intermediate_joint" type="revolute">
+    <axis xyz="0 0 1" />
+    <limit lower="0.025" upper="1.7" velocity="0" effort="0" />
+    <mimic joint="index_proximal_joint" multiplier="1.1169" offset="-0.05" />
+    <child link="index_intermediate" />
+    <parent link="index_proximal" />
+    <origin xyz="-0.0026137999999999999 0.032025999999999999 -0.001" rpy="0 -0 0" />
+  </joint>
+  <joint name="middle_intermediate_joint" type="revolute">
+    <axis xyz="0 0 1" />
+    <limit lower="-0.04545" upper="1.56" velocity="0" effort="0" />
+    <mimic joint="middle_proximal_joint" multiplier="1.1169" offset="-0.15" />
+    <child link="middle_intermediate" />
+    <parent link="middle_proximal" />
+    <origin xyz="-0.0024229 0.032041 -0.001" rpy="0 -0 0" />
+  </joint>
+  <joint name="ring_intermediate_joint" type="revolute">
+    <axis xyz="0 0 1" />
+    <limit lower="-0.04545" upper="1.56" velocity="0" effort="0" />
+    <mimic joint="ring_proximal_joint" multiplier="1.1169" offset="-0.15" />
+    <child link="ring_intermediate" />
+    <parent link="ring_proximal" />
+    <origin xyz="-0.0024229 0.032041 -0.001" rpy="0 -0 0" />
+  </joint>
+  <joint name="pinky_intermediate_joint" type="revolute">
+    <axis xyz="0 0 1" />
+    <limit lower="-0.04545" upper="1.56" velocity="0" effort="0" />
+    <mimic joint="pinky_proximal_joint" multiplier="1.1169" offset="-0.15" />
+    <child link="pinky_intermediate" />
+    <parent link="pinky_proximal" />
+    <origin xyz="-0.0024229 0.032041 -0.001" rpy="0 -0 0" />
+  </joint>
+  <joint name="thumb_intermediate_joint" type="revolute">
+    <axis xyz="0 0 1" />
+    <limit lower="0.0" upper="0.8" velocity="0" effort="0" />
+    <mimic joint="thumb_proximal_pitch_joint" multiplier="1.33" offset="0.15" />
+    <child link="thumb_intermediate" />
+    <parent link="thumb_proximal" />
+    <origin xyz="0.044069999999999998 0.034553 -0.00080000000000000004" rpy="0 -0 0" />
+  </joint>
+  <joint name="thumb_distal_joint" type="revolute">
+    <axis xyz="0 0 1" />
+    <limit lower="0.0" upper="0.6" velocity="0" effort="0" />
+    <mimic joint="thumb_proximal_pitch_joint" multiplier="0.66" offset="0.15" />
+    <child link="thumb_distal" />
+    <parent link="thumb_intermediate" />
+    <origin xyz="0.020247999999999999 0.010156 -0.0011999999999999999" rpy="0 -0 0" />
+  </joint>
+</robot>

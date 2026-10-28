@@ -1,0 +1,21 @@
+{
+  "camera_ip": "192.168.1.20",
+  "camera_serial": "Ik256431",
+  "sensor": "独立中间RGB相机",
+  "dimensions_wh": [
+    3120,
+    4096
+  ],
+  "point_cloud_acquired": false,
+  "laser_scan_started": false,
+  "image_processing": "SDK RGB888 原像素无损转 PNG；未裁剪、旋转、调亮",
+  "rgb_enable_restored_and_readback_verified": true,
+  "previous_cloud_pixel_mapping_verified": false,
+  "png_pixels_match_original_ppm": true,
+  "files_sha256": {
+    "capture.json": "dbc4cf1b9726931961e2fa55177e23e09ad8eabd76bec0ce83fed8987a93b8e1",
+    "image_metadata.json": "fed533fb370bbc53911f82a371a4f15358ca25268b0cd4641c5997fd6c00e2d5",
+    "capture-rgb.cpp": "ec61592b40d968ec23094412adcdeacd7817bc62c8a192df0373071e17487c3a",
+    "rgb.png": "9cf0f9164a99317ba0d05d1bee0c259d25e0586d318cb49ae45003945a3ee0f4"
+  }
+}

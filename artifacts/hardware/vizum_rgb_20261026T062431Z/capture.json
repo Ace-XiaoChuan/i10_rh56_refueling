@@ -1,0 +1,13 @@
+{
+  "purpose": "独立RGB传感器单帧取图，不采点云",
+  "camera_ip": "192.168.1.20",
+  "camera_serial": "Ik256431",
+  "start_utc": "2026-10-26T06:24:31.287931+00:00",
+  "timestamp_meaning": "主机调用时间，不是硬件曝光时间",
+  "point_cloud_acquired": false,
+  "robot_motion_commands_sent": false,
+  "returncode": 0,
+  "stdout": "init=0\nOpening 192.168.1.20 / Ik256431...\nopen_error=0 handle_valid=1\nrgb_support_query=0 supported=1\nextended_info_query=0 capability_mask=3 supports_center=1 pupil_distance_raw=0\nrgb_enable_query=0 enabled=0\ntemporary_enable_rgb=0\nrgb_resolution_query=0 width=3120 height=4096\nrgb_exposure_query=0 value_raw=50000\nrgb_auto_exposure_query=0 enabled=1\nrgb_trigger_query=0 mode=1\nrgb_roi_query=0 rect=0,3120,0,4096\nrgb_snapshot_result=0 image_valid=1\nrgb_image: width=3120 height=4096 bits=8 channels=3 type=1 bytes=38338560\nsaved=/tmp/vizum-camera-setup/rgb-11388/rgb.ppm\nrelease_image=0\nrgb_enable_restore=0 verify=0 actual=0 original=0\nclose=0\n",
+  "stderr": "",
+  "end_utc": "2026-10-26T06:24:48.395920+00:00"
+}

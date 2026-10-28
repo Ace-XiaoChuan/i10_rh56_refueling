@@ -1,0 +1,62 @@
+{
+  "description": "Ik256431末端相机一次真实静态扫描，绑定采集前后机器人RPC状态及外参文件",
+  "capture_directory_time_zone": "UTC",
+  "camera_ip": "192.168.1.20",
+  "camera_serial": "Ik256431",
+  "robot_ip": "192.168.1.32",
+  "robot_model": "aubo_i10_JY",
+  "sdk_distribution_name": "DetectLaser_3.6.20.119_Windows&Linux&ARM",
+  "sdk_runtime_reported_version": "3.6.20.112",
+  "point_count": 268852,
+  "point_cloud": "cloud_sdk_native.pcd",
+  "point_cloud_frame": "camera_sdk_native; no Y flip; no RGB map",
+  "length_unit_note": "SDK原值保留；按项目已确认的毫米单位解释，数值量级一致；本次未独立测距标定",
+  "legacy_pcd_axis_convention_verified": false,
+  "alignment_preview_note": "同一保持姿态期间的较早二维预览；曝光临时10000、全画幅ROI；不是此次扫描同步RGB，不提供像素映射",
+  "host_time_note": "时间是主机接口调用起止时间，不是控制器采样或相机曝光硬件时间",
+  "endpoint_max_abs_joint_delta_rad": 1.1268919999363192e-06,
+  "camera_configuration_after_verified": {
+    "exposure_raw": 200,
+    "left_roi": [
+      0,
+      256,
+      0,
+      1920
+    ],
+    "right_roi": [
+      960,
+      1216,
+      0,
+      1920
+    ],
+    "capture_status": false,
+    "auto_detect_status": false
+  },
+  "extrinsic_file": "fuel_cap_camera_calibration.json",
+  "extrinsic_sha256": "0f208672a74bb5689930fa9daea0cfcc2c9c31b48379e6d846d57c912c8ba0e0",
+  "extrinsic_physical_accuracy_verified": false,
+  "valid_for_motion_target": false,
+  "robot_motion_commands_sent_by_agent": false,
+  "temporary_libraries_location": "/tmp/vizum-camera-setup/sdk",
+  "files_sha256": {
+    "alignment_preview/camera_preview.json": "c63459f6eb88f500486d62db847132513d8699fa123a311dbf8bccb54e382501",
+    "alignment_preview/left.png": "b4c2e939ae965a16941ad7c09c3b2149bf7f3aefd097429d1c472fb96d5192ef",
+    "alignment_preview/observation.json": "947ed4b03976c31a838aa225349c3809a217ce948d7ab232d07c3c0520c6752e",
+    "alignment_preview/right.png": "feb8772c2dd0c7b2fab85823dfe475dad737278127fd5d2a887016da419614a3",
+    "alignment_preview/robot_after.json": "6ca8e37cb64456617416c9048e4cd2e8bd3d169ae3b3ba268c0b1b7565c23c9f",
+    "alignment_preview/robot_before.json": "b830ec6e183ec7834e6dc6576f0a20652be61aa97a1436aa9e9965d8a5654e3f",
+    "camera_cloud.json": "5294c2eee600873c1d8634f4474484e22d8f05e2a4451e3c0004f3d1ff5c623b",
+    "camera_configuration_after.json": "bcee0a9902e8d3e6946e5bd4a1724f5adbd57192be3563466ca9d702d1a74488",
+    "cloud_preview.png": "0f3d8fbe2f2f1a8e436f0d728257e15e081a23757799c5ccca7c3f8855f56fd1",
+    "cloud_sdk_native.pcd": "f6ef8f4f9bb3c12f045c1e9853a5b59afdb08b4c64858ea8c471f69c62842b6c",
+    "fuel_cap_camera_calibration.json": "0f208672a74bb5689930fa9daea0cfcc2c9c31b48379e6d846d57c912c8ba0e0",
+    "observation.json": "50d2b2d7c48120b4c81e6d0a5116c5d5dbd11cff66c8cb95b58afb8f031734d1",
+    "point_cloud_quality.json": "e425febcf0f4677facbf2d953ef7748ef4f96a081846d935def48e9f9860f924",
+    "robot_after.json": "cce7e2d3b075e0e84b9080aafc1d13da1b6b494a8006ec250921f7737e34ad53",
+    "robot_before.json": "93578f045d071882438eebaddf70eef68192da8eb091970bc8b88ea1a613ff58",
+    "source_snapshot/acquire-preview.py": "904772ddcd37773d5cd76e77dc29fdd78f18329d051ab8dc1aa305de00f32eb7",
+    "source_snapshot/archive-capture.py": "fd263ea6eb69b626f375cbdd1cef372ac951ae1b7d45b6549815e23ad52e3099",
+    "source_snapshot/discover.cpp": "28e8d67ea257df2e5a8ae1c4712b1b0f029e9055cc8077e19d4c82c0826cdbc0",
+    "source_snapshot/inspect-camera.cpp": "d33ef647ca457725197267be11a165dbf0fa0006be86462aca120f53aacd2f5b"
+  }
+}

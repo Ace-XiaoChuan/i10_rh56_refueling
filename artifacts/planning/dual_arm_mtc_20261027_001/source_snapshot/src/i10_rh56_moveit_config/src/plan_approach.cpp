@@ -1,0 +1,312 @@
+// P1 几何 MTC 接近规划，不执行轨迹，也不生成硬件执行时序。
+#include "scene_loader.hpp"
+#include "observed_scene_loader.hpp"
+#include "current_arm_state.hpp"
+#include <moveit/robot_trajectory/robot_trajectory.h>
+#include <moveit/task_constructor/solvers/cartesian_path.h>
+#include <moveit/task_constructor/solvers/pipeline_planner.h>
+#include <moveit/task_constructor/stages/fixed_state.h>
+#include <moveit/task_constructor/stages/move_relative.h>
+#include <moveit/task_constructor/stages/move_to.h>
+#include <moveit/task_constructor/task.h>
+#include <nlohmann/json.hpp>
+namespace mtc = moveit::task_constructor;
+using Json = nlohmann::json;
+
+// 从 MTC 的解树中提取真实规划路点，并加密复核整台机器人的碰撞和关节限位。
+// 加密只用于检查已规划的路径，不能把任意插值当作规划成功。
+void collect(const mtc::SolutionBase &solution, Json &stages,
+             const planning_scene::PlanningScenePtr &scene,
+             const moveit::core::JointModelGroup *arm, std::vector<double>& previous,
+             double joint_step, double shape_step,const Json& fixed_joints) {
+  if (auto seq = dynamic_cast<const mtc::SolutionSequence *>(&solution)) {
+    for (auto s : seq->solutions())
+      collect(*s, stages, scene, arm, previous, joint_step, shape_step, fixed_joints);
+    return;
+  }
+  auto sub = dynamic_cast<const mtc::SubTrajectory *>(&solution);
+  if (!sub || !sub->trajectory() || !sub->trajectory()->getWayPointCount())
+    return;
+  auto traj = sub->trajectory();
+  Json stage;
+  stage["name"] = solution.creator()->name();
+  stage["points"] = Json::array();
+  for (size_t i = 0; i < traj->getWayPointCount(); ++i) {
+    auto state = traj->getWayPoint(i);
+    std::vector<double> q;
+    state.copyJointGroupPositions(arm, q);
+    // q 为六个臂关节角（rad）；按变化最大的关节确定插值份数。
+    // 使每个关节相邻检查点间隔不超过合同中的 0.02 rad。
+    int steps = 1;
+    if (!previous.empty())
+      for (size_t k = 0; k < q.size(); ++k)
+        steps =
+            std::max(steps, int(std::ceil(std::abs(q[k] - previous[k]) / joint_step)));
+    if (shape_step > 0 && !previous.empty()) {
+      auto before = state;
+      before.setJointGroupPositions(arm, previous); before.update();
+      // 用 link 平移及包围半径乘转角估计几何位移，避免远端手指只按关节角粗采样。
+      for (const auto* link : state.getRobotModel()->getLinkModelsWithCollisionGeometry()) {
+        double radius = 0.;
+        for (size_t s=0;s<link->getShapes().size();++s)
+          radius = std::max(radius, link->getCollisionOriginTransforms()[s].translation().norm()+
+                           shapes::computeShapeExtents(link->getShapes()[s].get()).norm());
+        auto a=before.getGlobalLinkTransform(link), b=state.getGlobalLinkTransform(link);
+        double motion=(a.translation()-b.translation()).norm()+radius*
+            Eigen::Quaterniond(a.rotation()).angularDistance(Eigen::Quaterniond(b.rotation()));
+        steps=std::max(steps,int(std::ceil(motion/shape_step)));
+      }
+    }
+    for (int step = 1; step <= steps; ++step) {
+      auto dense = q;
+      if (!previous.empty())
+        for (size_t k = 0; k < q.size(); ++k)
+          dense[k] = previous[k] + (q[k] - previous[k]) * step / steps;
+      state.setJointGroupPositions(arm, dense);
+      state.update();
+      for(auto it=fixed_joints.begin();it!=fixed_joints.end();++it)
+        if(std::abs(state.getVariablePosition(it.key())-it.value().get<double>())>1e-10)
+          throw std::runtime_error("Fixed left arm moved during right-arm planning");
+      // 空组名检查全机器人，而非只检查 arm；手与安装件也参与碰撞检测。
+      if (!state.satisfiesBounds(1e-8) ||
+          scene->isStateColliding(state, "", false))
+        throw std::runtime_error("Dense trajectory validation failed: "+
+                                 collisionDetails(*scene,state).dump()+" q="+Json(dense).dump());
+      stage["points"].push_back(dense);
+    }
+    previous = q;
+  }
+  stages.push_back(stage);
+}
+int main(int argc, char **argv) {
+  rclcpp::init(argc, argv);
+  int code = 1;
+  auto node = std::make_shared<rclcpp::Node>(
+      "i10_mtc_approach",
+      rclcpp::NodeOptions().automatically_declare_parameters_from_overrides(
+          true));
+  std::string output;
+  Json report={{"mode","planning_not_completed_no_replay"}};
+  // 原生可执行文件直接启动时也沿用离线默认值；launch 可显式覆盖。
+  if (!node->has_parameter("start_source")) node->declare_parameter("start_source", "request");
+  if (!node->has_parameter("joint_states_topic")) node->declare_parameter("joint_states_topic", "/joint_states");
+  if (!node->has_parameter("state_timeout_s")) node->declare_parameter("state_timeout_s", 3.0);
+  if (!node->has_parameter("state_max_age_s")) node->declare_parameter("state_max_age_s", .5);
+  try {
+    const auto dir = node->get_parameter("config_dir").as_string();
+    output = node->get_parameter("output_path").as_string();
+    auto request =
+        Json::parse(read(node->get_parameter("request_path").as_string()));
+    const auto model_dir=requestModelDirectory(dir,request);
+    node->declare_parameter("robot_description", read(model_dir + "/robot.urdf"));
+    node->declare_parameter("robot_description_semantic",
+                            read(model_dir + "/robot.srdf"));
+    robot_model_loader::RobotModelLoader loader(node, "robot_description",
+                                                true);
+    auto model = loader.getModel();
+    auto scene = std::make_shared<planning_scene::PlanningScene>(model);
+    Json observed_manifest=Json::object();
+    // 随机场景使用请求中的障碍快照；普通 P1 请求使用固定基线场景。
+    if (request.contains("observed_scene")) {
+      if (request.contains("planning_scene") || request.contains("regrasp"))
+        throw std::runtime_error("Observed approach cannot mix legacy scene snapshots or regrasp requests");
+      const auto loaded=loadObservedWorld(*scene,YAML::LoadFile(dir+"/scene.json"),request["observed_scene"]);
+      report["observed_scene"]=loaded.summary;observed_manifest=loaded.manifest;
+    } else loadWorld(*scene,
+              request.contains("planning_scene")
+                  ? YAML::Load(request["planning_scene"].dump())
+                  : YAML::LoadFile(dir + "/scene.json"),
+              false);
+    auto arm = model->getJointModelGroup("arm");
+    if (arm->getActiveJointModelNames() !=
+        request["arm_joints"].get<std::vector<std::string>>())
+      throw std::runtime_error("Joint order mismatch");
+    auto &state = scene->getCurrentStateNonConst();
+    // 同时设置臂起点和手预型；起点不合法就停止，不移动起点来规避失败。
+    state.setToDefaultValues();
+    for (auto it = request["initial_joint_positions"].begin();
+         it != request["initial_joint_positions"].end(); ++it)
+      state.setVariablePosition(it.key(), it.value().get<double>());
+    // 显式启用时用六轴新测量替换请求中的臂起点；手预型与世界几何仍来自请求。
+    const auto start_source = node->get_parameter("start_source").as_string();
+    if (start_source == "joint_states") {
+      const auto topic = node->get_parameter("joint_states_topic").as_string();
+      const auto sample = readCurrentArmState(
+          node, model, topic, node->get_parameter("state_timeout_s").as_double(),
+          node->get_parameter("state_max_age_s").as_double());
+      state.setJointGroupPositions(arm, sample.positions);
+      for (std::size_t i = 0; i < sample.names.size(); ++i)
+        request["initial_joint_positions"][sample.names[i]] = sample.positions[i];
+      request["initial_state_source"] = {
+          {"arm", "joint_states"}, {"topic", topic}, {"stamp_ns", sample.stamp.nanoseconds()},
+          {"timestamp_clock", "host_ros_system_receive_time"}, {"hand", "request_preform_unmeasured"}};
+    } else if (start_source != "request") {
+      throw std::runtime_error("start_source must be request or joint_states");
+    }
+    state.update();
+    report["left_capture_fk_check"]=checkLeftCaptureFk(state,observed_manifest);
+    report["request"]=request;
+    report["initial_state_check"]=collisionDetails(*scene,state);
+    if (!state.satisfiesBounds(1e-8) ||
+        scene->isStateColliding(state, "", true))
+      throw std::runtime_error("Exact initial state invalid; stopping");
+    mtc::Task task("", false);
+    task.setRobotModel(model);
+    task.setName("i10 RH56 approach");
+    task.setTimeout(30.);
+    // 阶段一：FixedState 固定已确认的完整起始状态，供后续阶段向前规划。
+    auto fixed =
+        std::make_unique<mtc::stages::FixedState>("confirmed initial state");
+    fixed->setState(scene);
+    task.add(std::move(fixed));
+    // 重新抓握请求先沿盖轴退开；盖保持末段姿态，手使用接近预型。
+    // 这只规划释放后的无接触臂运动，不代表松手已实际执行。
+    if (request.contains("regrasp")) {
+      auto retreat_solver = std::make_shared<mtc::solvers::CartesianPath>();
+      retreat_solver->setStepSize(.002);
+      retreat_solver->setMinFraction(1.);
+      retreat_solver->setJumpThreshold(1.5);
+      retreat_solver->setTimeParameterization(nullptr);
+      auto retreat = std::make_unique<mtc::stages::MoveRelative>("axial retreat", retreat_solver);
+      retreat->setGroup("arm");
+      retreat->setIKFrame("base");
+      geometry_msgs::msg::Vector3Stamped outward;
+      outward.header.frame_id = "world";
+      auto axis = request["outward_axis_world"];
+      outward.vector.x = axis[0].get<double>();
+      outward.vector.y = axis[1].get<double>();
+      outward.vector.z = axis[2].get<double>();
+      retreat->setDirection(outward);
+      double distance = request["regrasp"]["retreat_distance_m"];
+      if (!std::isfinite(distance) || distance <= 0.)
+        throw std::runtime_error("Invalid retreat distance");
+      retreat->setMinMaxDistance(distance, distance);
+      task.add(std::move(retreat));
+    }
+    // 阶段二：MoveTo 用 OMPL/RRTConnect 到达抓取前位姿，路径可以绕障碍。
+    // 只生成几何路径；nullptr 关闭执行用的时间参数化。
+    auto pipeline = std::make_shared<mtc::solvers::PipelinePlanner>(node);
+    pipeline->setPlannerId("RRTConnectkConfigDefault");
+    pipeline->setTimeParameterization(nullptr);
+    auto move =
+        std::make_unique<mtc::stages::MoveTo>("move to pregrasp", pipeline);
+    move->setGroup("arm");
+    // "base" 是手根 link：要求这个坐标系到达目标，不是要求臂基座移动。
+    move->setIKFrame("base");
+    move->setTimeout(15.);
+    geometry_msgs::msg::PoseStamped goal;
+    goal.header.frame_id = "world";
+    // p 为外退后的手根位置（m），q 为保持不变的抓取朝向（XYZW 四元数）。
+    auto p = request["pregrasp_position"], q = request["hand_orientation_xyzw"];
+    goal.pose.position.x = p[0];
+    goal.pose.position.y = p[1];
+    goal.pose.position.z = p[2];
+    goal.pose.orientation.x = q[0];
+    goal.pose.orientation.y = q[1];
+    goal.pose.orientation.z = q[2];
+    goal.pose.orientation.w = q[3];
+    move->setGoal(goal);
+    task.add(std::move(move));
+    // 阶段三：MoveRelative 使用 CartesianPath，手根沿盖轴直线接近。
+    // 采样步长单位 m；要求整段完成，并启用相对关节跳变检查。
+    auto cart = std::make_shared<mtc::solvers::CartesianPath>();
+    cart->setStepSize(.002);
+    cart->setMinFraction(1.);
+    cart->setJumpThreshold(1.5);
+    cart->setTimeParameterization(nullptr);
+    auto approach =
+        std::make_unique<mtc::stages::MoveRelative>("axial approach", cart);
+    approach->setGroup("arm");
+    approach->setIKFrame("base");
+    geometry_msgs::msg::Vector3Stamped direction;
+    direction.header.frame_id = "world";
+    auto axis = request["outward_axis_world"];
+    // 盖轴朝外，取反后得到朝盖体接近的方向；该方向在世界系中表达。
+    direction.vector.x = -axis[0].get<double>();
+    direction.vector.y = -axis[1].get<double>();
+    direction.vector.z = -axis[2].get<double>();
+    approach->setDirection(direction);
+    double distance = request["approach_distance_m"];
+    // 最小/最大距离设为同一值，要求完成指定距离（m），不能只走部分就通过。
+    approach->setMinMaxDistance(distance, distance);
+    task.add(std::move(approach));
+    task.init();
+    // 最多取得一个完整解；这不是执行命令，也不是调用失败后自动重试。
+    auto result = task.plan(1);
+    task.printState();
+    if (!result || task.solutions().empty()) {
+      task.explainFailure();
+      throw std::runtime_error("MTC found no complete approach solution");
+    }
+    report["schema_version"] = 1;
+    report["mode"] = "mtc_geometric_approach_not_execution";
+    report["request"] = request;
+    report["stages"] = Json::array();
+    std::vector<double> previous;
+    state.copyJointGroupPositions(arm,previous);
+    double joint_step = request.contains("observed_scene") ? request.at("dense_joint_step_rad").get<double>() : .02;
+    double shape_step = request.contains("observed_scene") ? request.at("dense_shape_motion_m").get<double>() : 0.;
+    if (!std::isfinite(joint_step) || joint_step<=0 || !std::isfinite(shape_step) || shape_step<0)
+      throw std::runtime_error("Invalid trajectory validation step");
+    const auto fixed_joints=request.value("fixed_left_joint_positions",Json::object());
+    collect(**task.solutions().begin(), report["stages"], scene, arm, previous, joint_step, shape_step,fixed_joints);
+    report["fixed_left_arm_verified"]=!fixed_joints.empty();
+    report["dense_check_settings"]={{"joint_step_rad",joint_step},{"estimated_shape_step_m",shape_step},
+                                    {"whole_robot",true},{"continuous_collision_check",false}};
+    if (report["stages"].size() != (request.contains("regrasp") ? 3u : 2u))
+      throw std::runtime_error("Unexpected motion stage count");
+    const auto endpoint =
+        report["stages"].back()["points"].back().get<std::vector<double>>();
+    auto final = state;
+    final.setJointGroupPositions(arm, endpoint);
+    final.update();
+    // 用末态 FK 核对手根是否真到目标；误差分别是 m 和 rad。
+    Eigen::Vector3d target;
+    for (int i = 0; i < 3; ++i)
+      target[i] = request["hand_position"][i];
+    auto actual = final.getGlobalLinkTransform("base");
+    double error = (actual.translation() - target).norm();
+    Eigen::Quaterniond wanted(q[3].get<double>(), q[0].get<double>(),
+                              q[1].get<double>(), q[2].get<double>());
+    double rotation =
+        Eigen::Quaterniond(actual.rotation()).angularDistance(wanted);
+    report["endpoint_position_error_m"] = error;
+    report["endpoint_orientation_error_rad"] = rotation;
+    // 本轮请求显式携带位姿容差；历史请求保持原有验收值。
+    double position_tolerance = 1e-4, orientation_tolerance = .002;
+    if (request.contains("endpoint_tolerances")) {
+      position_tolerance = request["endpoint_tolerances"]["position_m"];
+      orientation_tolerance = request["endpoint_tolerances"]["orientation_rad"];
+    }
+    if (!std::isfinite(position_tolerance) || position_tolerance <= 0. ||
+        !std::isfinite(orientation_tolerance) || orientation_tolerance <= 0.)
+      throw std::runtime_error("Invalid endpoint tolerances");
+    if (error > position_tolerance || rotation > orientation_tolerance) {
+      // 保留真实拒绝路点和误差供诊断；独立模式确保不能当作成功轨迹回放。
+      report["mode"] = "mtc_endpoint_rejected_no_replay";
+      report["dense_fcl_check_passed"] = true;
+      report["endpoint_check_passed"] = false;
+      std::ofstream rejected(output);
+      if (!rejected)
+        throw std::runtime_error("Cannot save rejected endpoint");
+      rejected << report.dump(2) << std::endl;
+      RCLCPP_ERROR(node->get_logger(), "Endpoint error: %.9g m, %.9g rad", error, rotation);
+      throw std::runtime_error("Endpoint pose mismatch");
+    }
+    report["dense_fcl_check_passed"] = true;
+    report["endpoint_check_passed"] = true;
+    std::ofstream file(output);
+    if (!file)
+      throw std::runtime_error("Cannot open output");
+    file << report.dump(2) << std::endl;
+    code = 0;
+  } catch (const std::exception &e) {
+    if (!output.empty() && report.value("mode",std::string())!="mtc_endpoint_rejected_no_replay") {
+      report["mode"]="mtc_failed_no_replay";report["error"]=e.what();
+      std::ofstream failure(output); if(failure) failure<<report.dump(2)<<std::endl;
+    }
+    RCLCPP_ERROR(node->get_logger(), "%s", e.what());
+  }
+  rclcpp::shutdown();
+  return code;
+}

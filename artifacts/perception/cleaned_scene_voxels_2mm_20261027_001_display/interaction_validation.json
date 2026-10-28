@@ -1,0 +1,13 @@
+{
+  "method": "X11 XTest mouse/key events delivered to MuJoCo viewer; camera state logged from running viewer",
+  "left_drag_rotation": "passed",
+  "right_drag_pan": "passed",
+  "mouse_wheel_zoom": "passed",
+  "view_keys_7_8_9": "passed",
+  "all_tested_camera_states_free": true,
+  "source_voxel_data_unchanged": true,
+  "voxel_size_m": 0.002,
+  "display_geoms": 33,
+  "unit_tests_passed": 23,
+  "physics_steps": 0
+}

@@ -1,0 +1,42 @@
+{
+  "unit_tests": {
+    "command": "PYTHONPATH=src PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -B -m pytest -p no:cacheprovider tests/test_voxelization.py tests/test_voxel_mujoco.py -q",
+    "passed": 22,
+    "status": "passed"
+  },
+  "generator_smoke": {
+    "fresh_compile": "passed",
+    "reuse_exact_xml_cache": "passed"
+  },
+  "window_small_scene": {
+    "geom_count": 1000,
+    "startup_and_clean_shutdown": "passed"
+  },
+  "full_viewer_capacity_check": {
+    "model_geoms": 80298,
+    "capacity": 100000,
+    "all_voxels_fit": true
+  },
+  "rendering": {
+    "backend": "MuJoCo EGL",
+    "real_rendering": true,
+    "rendered_geometry_per_view": 80298,
+    "views": [
+      "full_scene",
+      "cap_region",
+      "voxel_detail"
+    ]
+  },
+  "environment_notes": [
+    "首次完整模型编译已完成，后续直接读取同版本 scene.mjb。",
+    "沙箱内 EGL 无法初始化，完整三视图已在可访问图形设备的环境中成功渲染。",
+    "查看器退出时保留模型引用等待图形线程关闭，启动关闭测试已通过。"
+  ],
+  "window_full_scene": {
+    "geom_count": 80298,
+    "startup_and_clean_shutdown": "passed",
+    "exit_code": 0,
+    "time_integration": false,
+    "shutdown_waits_for_render_thread": true
+  }
+}

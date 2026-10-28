@@ -1,0 +1,18 @@
+{
+  "source_voxel_count": 80298,
+  "environment_voxel_count": 78796,
+  "independent_cap_voxel_count": 1502,
+  "mixed_voxel_count": 2,
+  "mixed_voxel_policy": "keep_in_environment",
+  "unit_tests_passed": 10,
+  "unit_tests_failed": 0,
+  "native_octomap_roundtrip": "passed",
+  "ros_collision_object_roundtrip": "passed",
+  "all_box_positions_and_orientations": "passed",
+  "preview_render": "passed",
+  "viewer_start_and_exit": "passed",
+  "simulation_time_s": 0,
+  "planning_scene_loaded": false,
+  "contact_exemptions_added": false,
+  "robot_connections": 0
+}

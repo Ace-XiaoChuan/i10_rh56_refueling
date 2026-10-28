@@ -1,8 +1,8 @@
 {
   "mode": "pcd_inspection",
   "schema_version": 1,
-  "input_path": "/home/ace/i10_rh56_refueling_ws/Neisai2.pcd",
-  "input_sha256": "5ea2b6f90dfed9c705936f72e60ebe08c41262037a8b30eec99c83ec3d7570a8",
+  "input_path": "/home/ace/i10_rh56_refueling_ws/doc/fuel_cap_02_ascii.pcd",
+  "input_sha256": "294a8094b3aa9b6fe10852c16e71cfc2dcdb8a0546c054a992663f42e867a5c5",
   "header": {
     "VERSION": [
       "0.7"
@@ -50,14 +50,15 @@
       "28914"
     ],
     "DATA": [
-      "binary"
+      "ascii"
     ]
   },
-  "byte_order": "little",
-  "byte_order_source": "cli_argument",
-  "length_unit": "unknown",
-  "unit_source": "unconfirmed",
-  "frame_id": "unknown",
+  "data_encoding": "ascii",
+  "byte_order": null,
+  "byte_order_source": "not_applicable_ascii",
+  "length_unit": "mm",
+  "unit_source": "cli_argument",
+  "frame_id": "camera",
   "capture_timestamp_s": null,
   "organized_layout": false,
   "pixel_mapping_verified": false,
@@ -102,8 +103,8 @@
   "coordinate_transform_applied": false,
   "cap_pose_estimated": false,
   "outputs_sha256": {
-    "point_cloud_raw.npz": "2ecd9a4ec1f08d2a4dd8e981acb995a0c68b0263fc10841dd24343e8ac8e4912",
-    "index.html": "76701cc9a2b31916196fd58213d1f11c17e5b043bb7f971d5ddf51ed55438a93",
-    "preview.png": "7e68a0c72881c52312342b54a0321dc8420fa57e126780aeb75e39bb0615b373"
+    "point_cloud_raw.npz": "d90f9af8b60b642c16a7a55045d39a1c47be9b7807ced1500e4341db8af8cf58",
+    "index.html": "dafde1d371eefb0301a367e29d33d16f8bf304e9fbb21e1a792a73882f21be2a",
+    "preview.png": "8a16c83406e38f25e7d20ff575230c96f843b074b3d1ebf1315e2821669844bb"
   }
 }

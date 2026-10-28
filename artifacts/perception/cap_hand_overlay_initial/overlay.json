@@ -1,0 +1,350 @@
+{
+  "schema_version": 1,
+  "mode": "fixed_hand_on_observed_cap",
+  "frame_id": "camera",
+  "length_unit": "m",
+  "export_length_unit": "mm",
+  "hand_root_pose_kind": "fixed_grasp",
+  "finger_shape_kind": "pregrasp_channels",
+  "finger_channels": [
+    0,
+    0,
+    800,
+    800,
+    900,
+    0
+  ],
+  "geometry_pose_index": 0,
+  "ambiguity_yaw_deg": 0,
+  "orientation_disambiguated": false,
+  "camera_from_cap": [
+    [
+      0.5376015552202755,
+      0.8431184134564943,
+      -0.011657989335418143,
+      0.08344647351709987
+    ],
+    [
+      0.842166421214169,
+      -0.53620785437546,
+      0.05689337294785978,
+      0.0109149233223639
+    ],
+    [
+      0.04171674488811162,
+      -0.04040393293565862,
+      -0.9983121933539982,
+      0.6445079761503828
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "camera_from_hand": [
+    [
+      0.5508766076167447,
+      0.5376015552202755,
+      -0.6383725644209719,
+      0.13406304512826453
+    ],
+    [
+      -0.3882506172061535,
+      0.842166421214169,
+      0.37418869199691185,
+      -0.03704105450842141
+    ],
+    [
+      0.7387803607431019,
+      0.04171674488811162,
+      0.6726539167924559,
+      0.48091339534580646
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "cap_from_hand": [
+    [
+      -5.130511493604012e-17,
+      0.9999999999999998,
+      9.261337119565557e-17,
+      -0.01999999999999999
+    ],
+    [
+      0.6427876096865393,
+      -7.05747639174158e-17,
+      -0.766044443118978,
+      0.07499999999999997
+    ],
+    [
+      -0.7660444431189779,
+      3.229305099732029e-18,
+      -0.6427876096865391,
+      0.16000000000000003
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "fixed_grasp": {
+    "cap_from_hand": {
+      "frame_id": "cap_grip_center",
+      "position_m": [
+        -0.02,
+        0.075,
+        0.16
+      ],
+      "orientation_xyzw": [
+        0.6408563820557885,
+        0.6408563820557885,
+        -0.2988362387301199,
+        0.2988362387301199
+      ]
+    },
+    "pregrasp_channels": [
+      0,
+      0,
+      800,
+      800,
+      900,
+      0
+    ],
+    "grasp_channels": [
+      0,
+      0,
+      440,
+      390,
+      660,
+      0
+    ],
+    "provenance": {
+      "candidate_path": "/home/ace/i10_rh56_refueling_ws/config/fixed_grasp.json",
+      "candidate_sha256": "e8c2bac9d88bc375b751a004cd9134288412449c76f8f0880747bd14f790c854",
+      "schema_version": 1,
+      "mode": "manual_grasp_candidate",
+      "recorded_source_scene": "/home/ace/i10_rh56_refueling_ws/assets/scenes/i10_rh56_fuel_cap_preview.xml",
+      "source_scene_path": "/home/ace/i10_rh56_refueling_ws/assets/scenes/i10_rh56_fuel_cap_preview.xml",
+      "source_scene_sha256": "b376bb512b2d176dd4159d78228e70546b4681cc90e6757e081ac9d4a54d30d4",
+      "mujoco_version": "3.13.0",
+      "selection_source": "user_screenshot_2026-09-30_Y75",
+      "selection_status": "model_frame_revalidated_candidate"
+    }
+  },
+  "relative_position_error_m": 4.0608835428777945e-17,
+  "relative_rotation_max_abs_error": 2.220446049250313e-16,
+  "hand_mesh_vertex_count": 44656,
+  "hand_mesh_face_count": 89627,
+  "hand_meshes": [
+    {
+      "body": "base",
+      "geom_id": 207,
+      "compiled_mesh": "right_base_link_visual",
+      "source_mesh": "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/R_hand_base_link.STL",
+      "vertex_offset": 0,
+      "vertex_count": 14645,
+      "face_count": 29446
+    },
+    {
+      "body": "thumb_proximal_base",
+      "geom_id": 217,
+      "compiled_mesh": "right_thumb_proximal_base_visual",
+      "source_mesh": "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_thumb_proximal_base_visual.stl",
+      "vertex_offset": 14645,
+      "vertex_count": 610,
+      "face_count": 1240
+    },
+    {
+      "body": "thumb_proximal",
+      "geom_id": 219,
+      "compiled_mesh": "right_thumb_proximal_visual",
+      "source_mesh": "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_thumb_proximal_visual.stl",
+      "vertex_offset": 15255,
+      "vertex_count": 800,
+      "face_count": 1604
+    },
+    {
+      "body": "thumb_intermediate",
+      "geom_id": 221,
+      "compiled_mesh": "right_thumb_intermediate_visual",
+      "source_mesh": "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_thumb_intermediate_visual.stl",
+      "vertex_offset": 16055,
+      "vertex_count": 1492,
+      "face_count": 2996
+    },
+    {
+      "body": "thumb_distal",
+      "geom_id": 223,
+      "compiled_mesh": "right_thumb_distal_visual",
+      "source_mesh": "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_thumb_distal_visual.stl",
+      "vertex_offset": 17547,
+      "vertex_count": 760,
+      "face_count": 1524
+    },
+    {
+      "body": "index_proximal",
+      "geom_id": 225,
+      "compiled_mesh": "right_index_proximal_visual",
+      "source_mesh": "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_index_proximal_visual.stl",
+      "vertex_offset": 18307,
+      "vertex_count": 3683,
+      "face_count": 7375
+    },
+    {
+      "body": "index_intermediate",
+      "geom_id": 227,
+      "compiled_mesh": "right_index_intermediate_visual",
+      "source_mesh": "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_index_intermediate_visual.stl",
+      "vertex_offset": 21990,
+      "vertex_count": 2864,
+      "face_count": 5752
+    },
+    {
+      "body": "middle_proximal",
+      "geom_id": 229,
+      "compiled_mesh": "right_index_proximal_visual",
+      "source_mesh": "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_index_proximal_visual.stl",
+      "vertex_offset": 24854,
+      "vertex_count": 3683,
+      "face_count": 7375
+    },
+    {
+      "body": "middle_intermediate",
+      "geom_id": 231,
+      "compiled_mesh": "right_middle_intermediate_visual",
+      "source_mesh": "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_middle_intermediate_visual.stl",
+      "vertex_offset": 28537,
+      "vertex_count": 2375,
+      "face_count": 4772
+    },
+    {
+      "body": "ring_proximal",
+      "geom_id": 233,
+      "compiled_mesh": "right_index_proximal_visual",
+      "source_mesh": "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_index_proximal_visual.stl",
+      "vertex_offset": 30912,
+      "vertex_count": 3683,
+      "face_count": 7375
+    },
+    {
+      "body": "ring_intermediate",
+      "geom_id": 235,
+      "compiled_mesh": "right_index_intermediate_visual",
+      "source_mesh": "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_index_intermediate_visual.stl",
+      "vertex_offset": 34595,
+      "vertex_count": 2864,
+      "face_count": 5752
+    },
+    {
+      "body": "pinky_proximal",
+      "geom_id": 237,
+      "compiled_mesh": "right_index_proximal_visual",
+      "source_mesh": "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_index_proximal_visual.stl",
+      "vertex_offset": 37459,
+      "vertex_count": 3683,
+      "face_count": 7375
+    },
+    {
+      "body": "pinky_intermediate",
+      "geom_id": 239,
+      "compiled_mesh": "right_pinky_intermediate_visual",
+      "source_mesh": "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_pinky_intermediate_visual.stl",
+      "vertex_offset": 41142,
+      "vertex_count": 3514,
+      "face_count": 7041
+    }
+  ],
+  "hand_joint_positions_rad": {
+    "pinky_proximal_joint": 1.53102336825141,
+    "ring_proximal_joint": 1.53102336825141,
+    "middle_proximal_joint": 0.3748858447488584,
+    "index_proximal_joint": 0.3537201181842599,
+    "thumb_proximal_pitch_joint": 0.1388721804511278,
+    "thumb_proximal_yaw_joint": 1.308,
+    "pinky_intermediate_joint": 1.56,
+    "ring_intermediate_joint": 1.56,
+    "middle_intermediate_joint": 0.2687099999999999,
+    "index_intermediate_joint": 0.34506999999999993,
+    "thumb_intermediate_joint": 0.3347,
+    "thumb_distal_joint": 0.24165563909774435
+  },
+  "fingertip_sites_camera_m": {
+    "right_thumb_tip": [
+      0.09998291457170606,
+      -0.00032188632579814754,
+      0.637256556551797
+    ],
+    "right_index_tip": [
+      0.04834633941878384,
+      0.043110423392419946,
+      0.6468845030758215
+    ],
+    "right_middle_tip": [
+      0.03448993098535574,
+      0.02643791986592438,
+      0.6495437611568329
+    ],
+    "right_ring_tip": [
+      0.08668948620899082,
+      -0.022773312925582316,
+      0.5648269508280996
+    ],
+    "right_pinky_tip": [
+      0.07394460669220405,
+      -0.03570910505922163,
+      0.5684784098006831
+    ]
+  },
+  "coupling_residual_max_rad": 1.3877787807814457e-17,
+  "source_sha256": {
+    "geometry_result": "1bea95433f74fb95e553f0480ba99a3db182519c23262034ccf0af68c5e8b34c",
+    "cap_cloud": "e42c4cb02c8334887f4ca09d7cef04b4337d0d69abaaf6c3e5f520974e5f713b",
+    "crop_input": "534fdc585163b7ceaf3399c6291a1ca4bee39f4b972dcc83618a2c0a8a1c92eb",
+    "overlay_module": "12f35449c4fd82d100de0df384fb24b8a76080138228e137de190f3e0ef616bb",
+    "preview_tool": "120aade0eb2bdf1826bfe6d83245d5c5f0cd38a27bbb1bc5837517375bdc34fe",
+    "source_meshes": {
+      "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/R_hand_base_link.STL": "b4d84504242a99fa915c4ed5195ce4724c67cb94d9217cd4c254cfb5937ecf5c",
+      "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_thumb_proximal_base_visual.stl": "d28d68945bdcbcd4e1014f3697e40e23998542c87bf0bd4d9c6d7df39928f5df",
+      "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_thumb_proximal_visual.stl": "2be9bf3251ab6d1dc61403e49152e1544c47640b7aa9c2bcb4cb6a7296ca0b48",
+      "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_thumb_intermediate_visual.stl": "a1148e5e4092f58cc4121e96231107ad8cce0c8fcd4c48314f2d5b3596beab8a",
+      "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_thumb_distal_visual.stl": "26e2c18a3af02598fa43401736bba919846f082546fa786208500e679267777e",
+      "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_index_proximal_visual.stl": "fa3bc3e5ed7503b54d004075a513e5b1bfb4ea7e8a9b5aea748d73811e8b2a27",
+      "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_index_intermediate_visual.stl": "f8990e2fd197c02a040f803daa0212e4fe63bf53f90083716b54de42bb959a40",
+      "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_middle_intermediate_visual.stl": "4b2a8a0c7f3c7c3cea295af5c5ba4b4eb08d5e4b77b96b1bb1f9c53685e715df",
+      "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_pinky_intermediate_visual.stl": "0177537f2f33747e4c2e48efa457ea93d3efb3bbe76f8d556bc2beafa8676189"
+    }
+  },
+  "source_geometry_motion_target_valid": false,
+  "capture_timestamp_s": null,
+  "model_reference_prior": {
+    "length_m": 0.060000000000000005,
+    "base_width_m": 0.019000000000000013,
+    "top_width_m": 0.017000000000000015,
+    "height_m": 0.017,
+    "top_width_reduction_m": 0.002,
+    "top_surface_to_reference_m": 0.0085,
+    "reference_frame": "cap_grip_center",
+    "reference_definition": "existing_height_midpoint",
+    "source_kind": "provisional_urdf_and_user_width_relation"
+  },
+  "physics_steps": 0,
+  "simulation_time_s": 0.0,
+  "arm_ik_computed": false,
+  "physical_grasp_verified": false,
+  "note": "手指预型用于观察，不声明已闭合抓稳；点云保持原始坐标。当前使用0度候选，尚未消除180度歧义。",
+  "outputs_sha256": {
+    "overview.png": "7d5c5a19d1fdd144aaeab12c4f3ca610ce2b8a233187896fa4887cd84a7e812b",
+    "cap_cloud.pcd": "e42c4cb02c8334887f4ca09d7cef04b4337d0d69abaaf6c3e5f520974e5f713b",
+    "preview.png": "2a0aea7829067b1acdff5fb95046ee6e92a7c4b1eb3ab3783bbc33b42b09e627",
+    "rh56_fixed_pregrasp.ply": "4a4ed6d4b39ce9f06901eb8866c2527244a89cc20cd6eaedd88841607c610a39",
+    "grip_detail.png": "66f248547c08015bcb11a97b71fb9f73455f505f4324c0265924972066ba5dfc"
+  }
+}

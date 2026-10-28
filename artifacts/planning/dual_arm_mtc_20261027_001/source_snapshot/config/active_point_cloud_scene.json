@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "paths_relative_to": "project_root",
+  "point_cloud": {
+    "path": "doc/scene_cleaned.pcd",
+    "sha256": "8daad2be6a6bca8d035c86abc87bcdaf80e66b51c64e177ed876a77d9d216c63",
+    "length_unit": "mm",
+    "frame_id": "camera_sdk_native",
+    "point_count": 247103,
+    "selection_source": "user_cleaned_scene"
+  },
+  "surface_voxelization": {
+    "voxel_size_m": 0.002,
+    "grid_origin_camera_m": [0, 0, 0],
+    "occupancy_policy": "observed_surface_only",
+    "mujoco_geom_type": "box"
+  },
+  "octomap": {
+    "source_voxels": "artifacts/perception/cleaned_scene_voxels_2mm_20261027_001/voxels.npz",
+    "placement_config": "config/point_cloud_map_placement.json",
+    "output_dir": "artifacts/perception/cleaned_scene_octomap_2mm_20261027_001"
+  },
+  "collision_scene": {
+    "source_octomap_scene": "artifacts/perception/cleaned_scene_octomap_2mm_20261027_001/octomap_scene.json",
+    "output_dir": "artifacts/perception/cleaned_scene_split_2mm_20261027_001",
+    "cap_object_id": "fuel_cap",
+    "mixed_voxel_policy": "keep_in_environment",
+    "mtc_manifest": "artifacts/perception/dual_arm_collision_scene_20261027_001/octomap_scene.json",
+    "single_arm_mtc_manifest": "artifacts/perception/cleaned_scene_split_2mm_20261027_001/octomap_scene.json",
+    "dual_arm_mtc_manifest": "artifacts/perception/dual_arm_collision_scene_20261027_001/octomap_scene.json",
+    "replace_source_bodies": ["fuel_tank_body", "cap_body", "fuel_door"],
+    "approach_distance_m": 0.100,
+    "dense_joint_step_rad": 0.002,
+    "dense_shape_motion_m": 0.001
+  },
+  "source_capture": "artifacts/hardware/vizum_i10_capture_20261026T055151Z/observation.json",
+  "original_scan": "artifacts/hardware/vizum_i10_capture_20261026T055151Z/cloud_sdk_native.pcd",
+  "cap_crop": "artifacts/perception/cap_observation_20261026_001/crop/cap_crop.pcd",
+  "grasp_candidates": "artifacts/perception/cap_grasp_candidates_20261027_650_001/grasp_candidates.json",
+  "project_document": "doc/assembly_contract.md#相机"
+}

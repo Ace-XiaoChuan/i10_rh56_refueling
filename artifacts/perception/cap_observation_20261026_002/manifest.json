@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-10-26T07:54:51.885547+00:00",
+  "files_sha256": {
+    "README.md": "08aae9bbe340feafb6ef010107f8ade02cb822fba982d93f6ce893ac59ab311c",
+    "geometry/boundary.pcd": "db60d2ee8778290a6ad87e0b2a06e214316474c84859a4cb393228bc5218b35b",
+    "geometry/bridge.pcd": "3ed6148c603c355ef8da2fe22164f7c190923d22afef5cef8120522737aa35d1",
+    "geometry/classified_cap.pcd": "6c8c742769b821a349d6cbdcf117baaacf2c9eecdc8f945281caaea47ab60de2",
+    "geometry/derived_reference_points.pcd": "12528d664babec6570b99698c3268c73ecaa83ec863552f4e7a882ffaae718ac",
+    "geometry/face.pcd": "0d6002759879880427c95cd62cc44aa57198985cfaa87ef505e1f4e5f705aa48",
+    "geometry/groups.npz": "c9288cb254621f9c9a43336c123b224326e869fcac2dc7921a28564599c2388c",
+    "geometry/preview.png": "147ec40ce2b1466d608a90546c9669c43dc73562c562108c7a44028dd51471f4",
+    "geometry/result.json": "477ee64353d327c79e5fb49c39dedbfa81aa2c9e546860efa5e3a83c03947b93",
+    "source_snapshot/src/fuel_cap_task/cap_observation.py": "a9a5e3dc0b36a54dcef6b694f5cc70bbed31a15f82a72907eb43427515b58120",
+    "source_snapshot/tests/test_cap_observation.py": "2182f1592095168790bf5909f741d7e2b87e5540ae19fce1e6fa43f096bc7c1b",
+    "source_snapshot/tools/estimate_cap_geometry.py": "7bc4ec5f5b9a2bd17a1b313d0d30480f73004e7f6e4891537ba8bd4571e0d79c",
+    "validation.json": "9217f253ccce3f90aa1053aac95375b16bdaa228d2280d4cb9ccdc1f58b8b8fc"
+  }
+}

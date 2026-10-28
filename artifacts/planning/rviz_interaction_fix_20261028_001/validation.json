@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-10-27T18:26:10.242186+00:00",
+  "build_exit_code": 0,
+  "user_verified": {
+    "camera_drag_and_zoom": true,
+    "trajectory_animation": true,
+    "feedback": "可以拖动缩放，机械臂也在动"
+  },
+  "changes": [
+    "Move Camera 默认工具与 Interact 工具",
+    "默认启用轨迹显示",
+    "有订阅者时每 5 秒补发轻量轨迹；静态地图仅在新查看器连接时发送"
+  ],
+  "robot_connections": 0,
+  "trajectory_execution": false
+}

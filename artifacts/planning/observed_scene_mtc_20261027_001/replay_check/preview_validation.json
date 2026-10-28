@@ -1,0 +1,15 @@
+{
+  "map_display_mesh_count": 3,
+  "map_voxel_count": 80298,
+  "placeholder_tank_removed": true,
+  "map_carrier_transform_verified": true,
+  "simulation_time_s": 0.0,
+  "collision_checks_performed": false,
+  "anchor_site_matches_placement": true,
+  "mujoco_version": "3.13.0",
+  "display_xml_sha256": "1c6e9a6eaed3234e4de5f4fe6f5ea22bdc4ae8222d601822822326fe100e4f8c",
+  "trajectory_waypoints": 1950,
+  "endpoint_fk_error_m": 6.92914061943184e-05,
+  "trajectory_source": "/tmp/observed_mtc_standard_checks_20261027/installed_approach.json",
+  "dynamics_steps": 0
+}

@@ -1,0 +1,15 @@
+{
+  "exact_occupied_cell_set": true,
+  "free_leaf_count": 0,
+  "occupied_base_cell_count": 80298,
+  "occupied_leaf_count": 80172,
+  "raycasting_performed": false,
+  "resolution_m": 0.002,
+  "roundtrip_from_disk": true,
+  "tree_type": "OcTree",
+  "source_voxel_count": 80298,
+  "cap_voxel_count": 1504,
+  "cap_alignment_max_matrix_error": 2.220446049250313e-16,
+  "grid_not_resampled": true,
+  "hardware_valid": false
+}

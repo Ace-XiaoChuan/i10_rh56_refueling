@@ -1,0 +1,13 @@
+{
+  "start_utc": "2026-10-26T05:51:51.623130+00:00",
+  "start_monotonic_ns": 3654581619422,
+  "command": [
+    "/tmp/vizum-camera-setup/vizum-inspect",
+    "--cloud"
+  ],
+  "returncode": 0,
+  "stdout": "init=0\nsearch=0\nOpening confirmed target with bStopStream=false...\nopen_error=0 handle_valid=1\nversion_query=0 mask=289\nsdk=3.6.20.112 app= camera= hardware=4.6.4.27p2+Ext [NAC3] firmware=\nresolution_query=0 width=1216 height=1920\npupil_distance_query=0 value=0\ncapture_status_query=0 capturing=0\ndetect_status_query=0 detecting=0\nexposure_query=0 mode=0 time_raw=200\nroi_query=0 left=0,256,0,1920 right=960,1216,0,1920\ntrigger_query=0 mode=1\nscan_work_range_query=0 near_raw=500 far_raw=1500\ncreate_laser_detection_tool=0\nscan_start_host_unix_ns=1792993925773874530\nscan_end_host_unix_ns=1792993926652114126\nscan_result=0 point_count=268852 point_pointer_valid=1\nsaved=/tmp/vizum-camera-setup/cloud-7993/cloud_sdk_native.pcd\nscan_release=0\ndestroy_laser_detection_tool=called\nclose=0\n",
+  "stderr": "",
+  "end_utc": "2026-10-26T05:52:07.418329+00:00",
+  "end_monotonic_ns": 3670376822932
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "mode": "exclude_axis_aligned_box",
+  "created_utc": "2026-10-28T09:11:15.683875+00:00",
+  "source_path": "/tmp/i10-field/20261028T090946_506852Z_cloud/cloud_sdk_native.pcd",
+  "source_sha256": "951bba469e1cc1fd4ede91db139ebb49f8600e92b9d172dcc160cc184ed70401",
+  "config_path": "/home/ace/i10_rh56_refueling_ws/config/vizum_point_cloud_filter.json",
+  "config_sha256": "7d4353f0b1fdf16283f3d81909db2d9871d8a07e48cf7d0bc0877fe87f87338d",
+  "frame_id": "camera_sdk_native",
+  "length_unit": "mm",
+  "byte_order": "little",
+  "input_point_count": 238060,
+  "kept_point_count": 215309,
+  "removed_point_count": 22751,
+  "nonfinite_points_retained": 0,
+  "removed_pcd": "cloud_removed.pcd",
+  "coordinate_transform_applied": false,
+  "outputs_sha256": {
+    "cloud_raw.pcd": "951bba469e1cc1fd4ede91db139ebb49f8600e92b9d172dcc160cc184ed70401",
+    "point_indices.npz": "896d3e45bd102b471d874645067248196205311543c16ea8588661d7ea018d7e",
+    "cloud_removed.pcd": "0331e005ab42722700a1da84feac8e5a3107bbab8bcf7de8882352f8962749ce",
+    "filter_config.json": "7d4353f0b1fdf16283f3d81909db2d9871d8a07e48cf7d0bc0877fe87f87338d",
+    "cloud_filtered.pcd": "30dbcde5864e593005277f74deba0a0adaa435a685f5375f6bec0b084f309e13"
+  },
+  "implementation_sha256": {
+    "tools/filter_vizum_point_cloud.py": "1e4c5e3e9cc8b3e5f192fb5034550cac94285ab8bb1ffd0501c7d2ec60c4f9f1",
+    "src/fuel_cap_task/pcd_point_cloud.py": "64394ebf65b7f25115ea083ebd7c0c7c770bb208cef9e11d1e6865e247564175"
+  }
+}

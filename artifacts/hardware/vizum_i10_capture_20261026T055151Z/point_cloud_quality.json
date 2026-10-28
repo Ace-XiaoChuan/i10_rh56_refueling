@@ -1,0 +1,30 @@
+{
+  "point_count": 268852,
+  "finite_count": 268852,
+  "nonfinite_count": 0,
+  "zero_count": 0,
+  "bounds_min_sdk_native": [
+    -308.390625,
+    -840.22265625,
+    295.4453125
+  ],
+  "bounds_max_sdk_native": [
+    619.4609375,
+    998.44921875,
+    1599.984375
+  ],
+  "z_percentiles_1_5_50_95_99_sdk_native": [
+    301.4765625,
+    323.8359375,
+    632.51953125,
+    1516.88671875,
+    1574.3787499999999
+  ],
+  "length_unit_interpretation": "mm, consistent with project-confirmed existing point-cloud units and current numerical range; not independently calibrated in this capture",
+  "frame": "camera_sdk_native_no_y_flip",
+  "preview_points": 40000,
+  "point_cloud_sha256": "f6ef8f4f9bb3c12f045c1e9853a5b59afdb08b4c64858ea8c471f69c62842b6c",
+  "pixel_mapping_verified": false,
+  "extrinsic_physical_accuracy_verified": false,
+  "valid_for_motion_target": false
+}

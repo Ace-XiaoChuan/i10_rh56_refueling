@@ -1,0 +1,31 @@
+{
+  "created_utc": "2026-10-26T08:58:06.098595+00:00",
+  "description": "实测点云上的0度和180度固定抓取位；独立RH56显示模型",
+  "files_sha256": {
+    "README.md": "b76e71f2c063da55bd91c1888ce36385f7df01786233bfa247705f63e1bb2919",
+    "comparison.png": "887ed90d15e2f5c066492a329b0447a8d537e216b4124f7beb8c7ba65f9a9abe",
+    "direction_000/cap_cloud.pcd": "6c8c742769b821a349d6cbdcf117baaacf2c9eecdc8f945281caaea47ab60de2",
+    "direction_000/grip_detail.png": "23408a3985f0613f539aa094c5500dd380adb8d372e92fd1a10742de65ab7541",
+    "direction_000/hand_only.xml": "38907766bc02de8557943d6edec253e03ec19d7622fcbadfaa5c9bceacb47cd7",
+    "direction_000/overlay.json": "32726d84c7262bb75c334fc384cc19bd7fbcd7a7f7bcbf5a306e604565fe0efe",
+    "direction_000/overview.png": "064d550f16e402e07b99db382b5ca61778cfea385a5220f9e6375dd64fe3de4e",
+    "direction_000/preview.png": "900263c41c64d7d5b6d72bb9e17d16cbbae15f328bd8e3b208e17799bb7a6aa3",
+    "direction_000/rh56_fixed_grasp.ply": "521cff7cef0f360189cfad3d7146854f27fb92f5144193b9afe37abdbca6e2e9",
+    "direction_180/cap_cloud.pcd": "6c8c742769b821a349d6cbdcf117baaacf2c9eecdc8f945281caaea47ab60de2",
+    "direction_180/grip_detail.png": "5bd2029d6db9785f547cba4d09da1955b328c66fd8244bf5d211349ff4b8d794",
+    "direction_180/hand_only.xml": "38907766bc02de8557943d6edec253e03ec19d7622fcbadfaa5c9bceacb47cd7",
+    "direction_180/overlay.json": "02a95fa74f6f488e3c77ea30f12e19e1d0de23cff3e1950d01762896945b385e",
+    "direction_180/overview.png": "6e6a262f5ebe3db541663007ab2a667b9c9379f9e3063200ad2a9b6d178d875b",
+    "direction_180/preview.png": "6cf3b5df6552beee8a93e484cd9edb71a1af4fc00cadb4b78db6dfa72d5e22d8",
+    "direction_180/rh56_fixed_grasp.ply": "e44b9ede799f265cd620a245b6ff2328a2ea68fe793108a0242d24d1d1e2d9c6",
+    "grasp_candidates.json": "f605fe6ebc15198379d3df24650a86d3e9e17b7c89f3dd07c2bfa8d4d981d099",
+    "index.html": "c2fec73ca9f0628f573d8b64ad669620502b66ceebdadd2cd557abb10781b5b5",
+    "source_snapshot/config/fixed_grasp.json": "e8c2bac9d88bc375b751a004cd9134288412449c76f8f0880747bd14f790c854",
+    "source_snapshot/doc/assembly_contract.md": "10447bf5f22276e5f8dd6049e733a6494a1ba93d2ee5a0f42b0a25ef32de0eb4",
+    "source_snapshot/doc/cap_geometry.md": "dc659c7ca8ac1100a1713ab630e0ac3c933f17495be74dccbe2a6f1881a0f59f",
+    "source_snapshot/src/fuel_cap_task/cap_hand_overlay.py": "f34159b8d565f9db86c69bbc001b0d7542f54984d96335920ad8461b526d8fc4",
+    "source_snapshot/tests/test_cap_hand_overlay.py": "f2eac2b243ad3a276aa75d027ab5a73dae23fe388bab04d42f841c202b19f415",
+    "source_snapshot/tools/preview_cap_cloud_grasp.py": "c1e278fe753247f37374c7238ae29ad4ad6823c352951c69087e14a40b437bf6",
+    "validation.json": "5270c48c187e8ca86d0ff39ef28feb6ba00be9845759d930b48e1350984ac635"
+  }
+}

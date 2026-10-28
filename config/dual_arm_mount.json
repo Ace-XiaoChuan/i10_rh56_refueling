@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "description": "双臂与 T 型架的几何装配；右臂内部结构和末端装配沿用现有 URDF。",
+  "source_robot": "src/i10_rh56_moveit_config/config/robot.urdf",
+  "source_srdf": "src/i10_rh56_moveit_config/config/robot.srdf",
+  "source_kinematics": "src/i10_rh56_moveit_config/config/kinematics.json",
+  "right_base_from_left_base": {
+    "translation_m": [0.0027, 0.0025, -0.3034],
+    "rpy_rad": [3.1388, -0.0008, -3.1168],
+    "rotation_convention": "fixed_axis_XYZ_RzRyRx",
+    "base_origins_at_end_face_centers": true,
+    "source": "user_provided_and_conventions_confirmed"
+  },
+  "stand": {
+    "crossbar_radius_m": 0.075,
+    "post_radius_m": 0.075,
+    "floor_to_crossbar_top_m": 1.27,
+    "post_attachment": "crossbar_midpoint",
+    "post_top": "crossbar_centerline",
+    "description": "立柱竖直安装在横梁中点下方，上端伸至横梁轴心，以两圆柱相交近似连接。"
+  },
+  "vertical_source": {
+    "kind": "left_controller_gravity_configuration",
+    "configuration_paths": [
+      "artifacts/hardware/aubo_sdk_readonly_20261023_001/configuration.json",
+      "artifacts/hardware/aubo_sdk_readonly_20261023_002/configuration.json"
+    ],
+    "query": "RobotConfig.getGravity",
+    "api_reference": "https://docs.aubo-robotics.cn/arcs_api/zh/robot__config_8h_source.html",
+    "description": "核对两批左臂配置一致后，向右臂系旋转重力并取反，作为建模竖直方向；尚未独立测量。",
+    "physical_vertical_verified": false
+  },
+  "world_frame": "Z 轴沿推算竖直向上，X 轴沿右基座指向左基座的水平投影，原点在横梁中点正下方地面。"
+}

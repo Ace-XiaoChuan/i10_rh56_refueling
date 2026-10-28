@@ -1,0 +1,22 @@
+{
+  "tests_passed": 10,
+  "overlay_result_sha256": "ab1b6b8c4a60cc16a4ab9c3b120b12a9e15f5ebd3af0b7ff8d471386fdc68a73",
+  "mesh_vertices": 44656,
+  "mesh_triangles": 89627,
+  "hand_visual_components": 13,
+  "cap_cloud_byte_identical_to_input": true,
+  "exported_mesh_roundtrip_verified": true,
+  "relative_pose_preserved": true,
+  "mesh_centering_compensation_checked": true,
+  "units_checked": [
+    "JSON: m/rad",
+    "PLY and PCD: mm"
+  ],
+  "static_preview_opened": true,
+  "physics_steps": 0,
+  "source_geometry_orientation_disambiguated": false,
+  "markdown_metadata_checked": 4,
+  "local_links_checked": true,
+  "commit_created": false,
+  "push_performed": false
+}

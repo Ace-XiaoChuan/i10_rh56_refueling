@@ -1,0 +1,5360 @@
+{
+  "mode": "detached_hand_model_geometry_no_physics",
+  "settings": {
+    "penetration_tolerance_m": 0.0001,
+    "near_target_distance_m": 0.005,
+    "minimum_near_fingers": 2
+  },
+  "candidate_count": 16,
+  "geometrically_clear_count": 0,
+  "rejection_counts": {
+    "hand_environment_penetration": 11,
+    "hand_target_penetration": 16,
+    "insufficient_network_evidence": 16
+  },
+  "arm_joint_names_present": [],
+  "arm_planning_performed": false,
+  "physics_steps": 0,
+  "scene_geometry_used_only_for_evaluation": true,
+  "source_sha256": {
+    "tools/check_cap_grasp_geometry.py": "5259b49ccbde157e911572f47ff8d9c413c69d649c501da7b83d699ed5422d79",
+    "assets/scenes/i10_rh56_fuel_cap_preview.xml": "b376bb512b2d176dd4159d78228e70546b4681cc90e6757e081ac9d4a54d30d4",
+    "src/fuel_cap_task/grasp_search.py": "a9d89f33f5e2e102bf655284fd2a9f34415219ab0d6ce1293a7495ab4e4de970"
+  },
+  "generation_result_sha256": "b3b0021e57c7c580a6e535583d06f3b67b3dc62e5d80cbc72a6b5efcd510f672",
+  "candidates": [
+    {
+      "id": 0,
+      "geometrically_clear_and_near_target": false,
+      "rejection_reasons": [
+        "hand_environment_penetration",
+        "hand_target_penetration",
+        "insufficient_network_evidence"
+      ],
+      "finger_target_distances_m": {
+        "thumb": 0.04872062074507694,
+        "index": -0.00569427049625526,
+        "middle": -0.016837009069385234,
+        "ring": -0.020324065180258914,
+        "pinky": 0.0018920691017527665
+      },
+      "near_target_fingers": [
+        "index",
+        "middle",
+        "ring",
+        "pinky"
+      ],
+      "penetrations": [
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_11",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.00022464945902522825
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_11",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.0002057153641232764
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "neck_09",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.0009282690801963881
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "neck_10",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.0017367182210807756
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "neck_11",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.0018748794159816375
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "neck_11",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.0018768893352128554
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "neck_12",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.001630009037923633
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_08",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.0029409431757450068
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_08",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.0029431076091941434
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_08",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.002966006641119682
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_09",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.002940943152387469
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_09",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.002906967333967229
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_09",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.002909081913404558
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_09",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.0029431075878323426
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_07",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.00038018822503987915
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_07",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.00037395480662877345
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_07",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.0003771541966506309
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_07",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.00038078929708512677
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_08",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.004818874255454072
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_08",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.0048063426637157715
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_08",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.004798149311184281
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_09",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.004402228920298778
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_09",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.004405802183273443
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_10",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.00046834460994721805
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_10",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.0004746438477411293
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.005659163288932677
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.0056942704962552595
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.005683767408351414
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.0030823658680343225
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.0031106101851720515
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.016821360363165946
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.016805499719615643
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.01683700906938523
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.0117573496880813
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.011756913840743177
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.020324065180258914
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_1",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.0033294290891440546
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.0032220122196369655
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.003209978926628586
+        }
+      ],
+      "physical_grasp_verified": false
+    },
+    {
+      "id": 1,
+      "geometrically_clear_and_near_target": false,
+      "rejection_reasons": [
+        "hand_target_penetration",
+        "insufficient_network_evidence"
+      ],
+      "finger_target_distances_m": {
+        "thumb": 0.049047673243919725,
+        "index": -0.01106471324283742,
+        "middle": -0.013398783027025905,
+        "ring": -0.014458318455608262,
+        "pinky": 0.01116452193142405
+      },
+      "near_target_fingers": [
+        "index",
+        "middle",
+        "ring"
+      ],
+      "penetrations": [
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.011064713242837419
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.011058381871100973
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.011013774648829465
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.0066801659400716204
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.006685959059287934
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.013392881217215043
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.013398783027025903
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.013385032330364584
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.005099519202992701
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.005099518484473662
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.014458446366074486
+        }
+      ],
+      "physical_grasp_verified": false
+    },
+    {
+      "id": 2,
+      "geometrically_clear_and_near_target": false,
+      "rejection_reasons": [
+        "hand_target_penetration",
+        "insufficient_network_evidence"
+      ],
+      "finger_target_distances_m": {
+        "thumb": 0.04578173463906715,
+        "index": -0.013554284869570667,
+        "middle": -0.019883579925131564,
+        "ring": -0.0072332199016620115,
+        "pinky": 0.010391089047895258
+      },
+      "near_target_fingers": [
+        "index",
+        "middle",
+        "ring"
+      ],
+      "penetrations": [
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.01353816251937245
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.013554284869570662
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.013543359446123834
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.0015102997971528744
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.001511577191281056
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.019883579925131564
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.019847540974777363
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.019875807643777717
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.009629003422997584
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.009118876120120188
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.009122146339647513
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.00965509957767175
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.007233065413015042
+        }
+      ],
+      "physical_grasp_verified": false
+    },
+    {
+      "id": 3,
+      "geometrically_clear_and_near_target": false,
+      "rejection_reasons": [
+        "hand_target_penetration",
+        "insufficient_network_evidence"
+      ],
+      "finger_target_distances_m": {
+        "thumb": 0.03715292739009577,
+        "index": -0.014496484397596097,
+        "middle": -0.01679641125326059,
+        "ring": -0.0008841459482664681,
+        "pinky": 0.01521070405601621
+      },
+      "near_target_fingers": [
+        "index",
+        "middle",
+        "ring"
+      ],
+      "penetrations": [
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.014462570462811627
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.014467246805673458
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.014496484397596095
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.0031921507062677617
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.0031910642784662197
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.016787348881319938
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.016751529243160587
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.016796411253260587
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.009009463845339018
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.00902932272793299
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.000884145948266468
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.0008667527599479639
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.000850442932359696
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.0008572001401312421
+        }
+      ],
+      "physical_grasp_verified": false
+    },
+    {
+      "id": 4,
+      "geometrically_clear_and_near_target": false,
+      "rejection_reasons": [
+        "hand_target_penetration",
+        "insufficient_network_evidence"
+      ],
+      "finger_target_distances_m": {
+        "thumb": 0.05,
+        "index": -0.005936983380671045,
+        "middle": -0.010656283880873715,
+        "ring": -0.011346090481508142,
+        "pinky": -0.002176093601931014
+      },
+      "near_target_fingers": [
+        "index",
+        "middle",
+        "ring",
+        "pinky"
+      ],
+      "penetrations": [
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.005938370350803233
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.005937753503947517
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.0069071847517698775
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.006886928082835196
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.006911245240522222
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.010641568111328097
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.010634747313147822
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.010656283880873713
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.011344656467040524
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.01134609048150814
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.011340984768840155
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.0021825539887250496
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.0021664540846644785
+        }
+      ],
+      "physical_grasp_verified": false
+    },
+    {
+      "id": 5,
+      "geometrically_clear_and_near_target": false,
+      "rejection_reasons": [
+        "hand_environment_penetration",
+        "hand_target_penetration",
+        "insufficient_network_evidence"
+      ],
+      "finger_target_distances_m": {
+        "thumb": 0.04676538259377434,
+        "index": 0.002530068892752091,
+        "middle": -0.01275228014954255,
+        "ring": 0.010163146318098027,
+        "pinky": 0.017157434977094724
+      },
+      "near_target_fingers": [
+        "index",
+        "middle"
+      ],
+      "penetrations": [
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_14",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.0029688205854345724
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_14",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.0028864155802104103
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_15",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.00032428586869120274
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_13",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.001802237338047978
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_13",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.0017573555828570221
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_14",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.013748385864248631
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_14",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.013722479123939755
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_15",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.007769842439758346
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_15",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.007688109201888895
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_08",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.005040823151808392
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_08",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.005053526970745757
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_08",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.0050601908293032155
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_08",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.005031744424290593
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_09",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.010276193846386908
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_09",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.010183545182119738
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_09",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.010168451043923735
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_09",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.010278233600203648
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_10",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.01041675511759489
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_10",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.010409712260292426
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_10",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.010482870324260552
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_10",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.010493755720009114
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_11",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.010266911837941924
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_11",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.010359718007917126
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_11",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.010349342860883622
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_11",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.010037532833705894
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_12",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.00978055233320285
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_12",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.009959078506534656
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_12",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.009940284873188652
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_13",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.009070870286696838
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_13",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.009045050630274162
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_13",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.00903959292677214
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_13",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.009425849914353131
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_14",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.007784973312168287
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_14",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.00778478588965332
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_14",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.007827329226187915
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_08",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.004772505621381961
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_08",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.0047747489246929885
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_09",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.013062949924579122
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_09",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.013083209388991077
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_10",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.014017403778403558
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_10",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.014053070962217539
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_10",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.014032046232968842
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_10",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.013740984417996104
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_11",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.01398820820337511
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_11",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.014258328566926895
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_11",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.014285438487565041
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_11",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.014239497202842136
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_12",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.01438998657131968
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_12",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.01444705086695077
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_13",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.01450371750377124
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_13",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.01450353320545663
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_13",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.014510961533010146
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_14",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.006513241037206986
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_14",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.006470515791587538
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_06",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.0037380117670863973
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_06",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.0037306718237633727
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_07",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.006335303176175899
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_07",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.006337022089161815
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_08",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.008829111701520646
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_08",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.00881461981502601
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_09",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.010130216312248766
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_09",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.010106675324355732
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_09",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.010078254243208531
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_10",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.007830386192963428
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_10",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.007829704860618285
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_06",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.004331575908272017
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_06",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.004335097731749615
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_06",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.004364851199427866
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_06",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.0043663370474098795
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_07",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.012814772128294197
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_07",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.012809432862806017
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_07",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.012711129792399974
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_07",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.01271416352362665
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_08",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.01261171508618532
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_08",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.012714164083979422
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_08",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.012711130352535143
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_08",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.012610711468974427
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_09",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.012611715375842734
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_09",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.012610711758635838
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_09",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.012553900554202378
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_10",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.007237775287618003
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_05",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.0009120033571661434
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_05",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.000907405537538697
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_06",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.0030172090058278116
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_06",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.0030036568774780637
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_07",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.0015909503713576279
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_07",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.001593814550385893
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_04",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.006701441966327048
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_04",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.0066777828787830725
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_04",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.006688894944601015
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_04",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.006709790712325194
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_05",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.015502453211361705
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_05",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.015527186833896893
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_05",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.01551892858999551
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_06",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.014261747784588042
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_06",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.013640770836090037
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_06",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.014241117064361387
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_07",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.004446743689594607
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_07",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.004755075994209646
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_07",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.004761225688850151
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_07",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.004452893384235112
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_proximal/geom228"
+          ],
+          "distance_m": -0.0018891025355247267
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_proximal/geom228"
+          ],
+          "distance_m": -0.0018892573638505362
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.012687800932318579
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.012752280149542546
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.01266431683328317
+        }
+      ],
+      "physical_grasp_verified": false
+    },
+    {
+      "id": 6,
+      "geometrically_clear_and_near_target": false,
+      "rejection_reasons": [
+        "hand_environment_penetration",
+        "hand_target_penetration",
+        "insufficient_network_evidence"
+      ],
+      "finger_target_distances_m": {
+        "thumb": 0.03454272561987099,
+        "index": -0.00926592374261155,
+        "middle": -0.00703956258358751,
+        "ring": 0.01063723726048169,
+        "pinky": 0.03360847075610698
+      },
+      "near_target_fingers": [
+        "index",
+        "middle"
+      ],
+      "penetrations": [
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_31",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.005502096563047461
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_31",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.005508193013602249
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_32",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.003899754985689339
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_29",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.002343525605533775
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_29",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.0022777303630961976
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_30",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.010926289169222787
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_30",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.010846439116467016
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_31",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.01124504964827353
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_31",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.011198168942621146
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_32",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.0012930125352770148
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_32",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.0012842032300825158
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_29",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.00206222696015428
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_29",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.002061266527271164
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_30",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.010525856572852422
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_30",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.010525185850625732
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_31",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.018964828494682326
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_31",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.01901090334134066
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_32",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.007813920631113991
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_32",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.007814984737201236
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_32",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.007810256013720451
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_28",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.0024016886672774823
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_28",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.002400170622754716
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_29",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.009359704500814525
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_29",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.00935765087243745
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_30",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.016245814879667655
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_30",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.01622840090822599
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_31",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.00858039017290059
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_31",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.008612159656180726
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_31",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.008584121759994408
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_29",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.00010497351045791721
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_30",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.0021880180837891817
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_30",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.0022393117465244455
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_30",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.0022488200604655327
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_30",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.0022250662575193625
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_31",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.0015814102374339149
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_31",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.001573400440384841
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_27",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.002671337694272996
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_27",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.002707405446713662
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_27",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.0026911779995640595
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_28",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.008181849592807405
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_28",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.008152849609986718
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_28",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.008139242229018129
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_29",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.012007592872109632
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_29",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.011561649149562203
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_29",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.012025316571874986
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_30",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.005021392417723536
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_30",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.00502134689908211
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "index_proximal/geom224"
+          ],
+          "distance_m": -0.003524976733059306
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "index_proximal/geom224"
+          ],
+          "distance_m": -0.0035062932699226985
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "index_proximal/geom224"
+          ],
+          "distance_m": -0.0034879223361974276
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.008905773138436322
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.008961725265851593
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.00896610286664634
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.00926812491423679
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.009258926622235045
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_proximal/geom228"
+          ],
+          "distance_m": -0.0004731579713322941
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_proximal/geom228"
+          ],
+          "distance_m": -0.00045089153733768306
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.007039581808770614
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.007038870826128806
+        }
+      ],
+      "physical_grasp_verified": false
+    },
+    {
+      "id": 7,
+      "geometrically_clear_and_near_target": false,
+      "rejection_reasons": [
+        "hand_environment_penetration",
+        "hand_target_penetration",
+        "insufficient_network_evidence"
+      ],
+      "finger_target_distances_m": {
+        "thumb": 0.04981141690436889,
+        "index": -0.0037271899225825083,
+        "middle": -0.004640187198025708,
+        "ring": -0.015043186867082392,
+        "pinky": 0.012764489676379996
+      },
+      "near_target_fingers": [
+        "index",
+        "middle",
+        "ring"
+      ],
+      "penetrations": [
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_54",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.00023485411282465673
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_54",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.00021290664842070202
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_54",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.00023138694336409695
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_55",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.00048242779272188586
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_55",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.0004901208490950004
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.0036888904507673508
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.0037403798009037663
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.004625238841213486
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.004642052341464484
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.015031450246124397
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.015030066323529875
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.015043186867082389
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.007546665274875552
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "fuel_door_collision",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.0172837302768786
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "fuel_door_collision",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.01726595582310335
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "fuel_door_collision",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.005629333655362846
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "fuel_door_collision",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.005577817478721163
+        }
+      ],
+      "physical_grasp_verified": false
+    },
+    {
+      "id": 8,
+      "geometrically_clear_and_near_target": false,
+      "rejection_reasons": [
+        "hand_environment_penetration",
+        "hand_target_penetration",
+        "insufficient_network_evidence"
+      ],
+      "finger_target_distances_m": {
+        "thumb": 0.04184540191543576,
+        "index": -0.0035867503949190173,
+        "middle": -0.015492630949265253,
+        "ring": -0.004683342438803404,
+        "pinky": 0.0015950681461991349
+      },
+      "near_target_fingers": [
+        "index",
+        "middle",
+        "ring",
+        "pinky"
+      ],
+      "penetrations": [
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_04",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.0021526372144261598
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_04",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.0021504568048348227
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_05",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.003968960362183092
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_05",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.003958874765069185
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_05",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.00395671778939267
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_06",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.0018082419356853165
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_06",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.0018086629541325687
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_04",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.0031473124947717823
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_04",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.0031471842043509935
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_05",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.006264827834600996
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_05",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.006231291833746463
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_05",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.006256662491300796
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_06",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.002090211478756587
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_06",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.002089794037700668
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.0009755438564185146
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.0009428847982602127
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.000997775633676756
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.003583269064124753
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.003588332274521931
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.013282117501121068
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.013258487087455913
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.013260290032241603
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.015490860438709576
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.01549329145986519
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.004683677793420226
+        }
+      ],
+      "physical_grasp_verified": false
+    },
+    {
+      "id": 9,
+      "geometrically_clear_and_near_target": false,
+      "rejection_reasons": [
+        "hand_environment_penetration",
+        "hand_target_penetration",
+        "insufficient_network_evidence"
+      ],
+      "finger_target_distances_m": {
+        "thumb": 0.03462859566532358,
+        "index": -0.014551299426545952,
+        "middle": -0.003978184049141854,
+        "ring": 0.006171030810841176,
+        "pinky": 0.026775080120503485
+      },
+      "near_target_fingers": [
+        "index",
+        "middle"
+      ],
+      "penetrations": [
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_03",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.002888042843825517
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_03",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.0028685700566494082
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_04",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.013412292812970211
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_04",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.013201318527025274
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_05",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.0029311536133459215
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_05",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.0028850991787002372
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_00",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.01205781137861495
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_00",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.012054529757292251
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_00",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.012055298587230392
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_01",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.019917660522401376
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_01",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.019917913377717256
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_01",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.01992328627452184
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_02",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.02759940288427468
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_03",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.024164093731462524
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_03",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.024184178937635654
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_03",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.024159668702756897
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_04",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.013042139035644055
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_04",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.013040294266864563
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_04",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.013038082689965074
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_05",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.0018280440690568653
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_05",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.0018309995701216927
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_05",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.0017731150183101368
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_63",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.004084722401172614
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_63",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.004081838987439835
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_00",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.020078640523002813
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_00",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.020072574201259765
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_01",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.012161293340286022
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_01",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.012149985525730416
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_02",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.004149924991404794
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_02",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.004126825664620909
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_60",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.002169630994882099
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_60",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.0021289900715566606
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_61",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.008604162309475256
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_61",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.008584942700985802
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_62",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.014963248624350806
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_62",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.014953059998809581
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_63",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.021197451659491946
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_63",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.0211935026340715
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_57",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.0030876608971499575
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_57",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.0030980383428602654
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_57",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.0030644809089668545
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_58",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.008425948386698412
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_58",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.008407113604313121
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_58",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.008413479636147525
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_59",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.013672710731559748
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_59",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.013685697737266952
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_59",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.013681450740535755
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_60",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.01614131727390236
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_60",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.016135870802874736
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_61",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.010284587558110375
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_61",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.010283266264985477
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_62",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.00433162889789232
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_62",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.004328812288585157
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.014580171920544732
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.014549239271581381
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.003977587264601955
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.003978210504144818
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.0039740268217005595
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.003971973360876068
+        }
+      ],
+      "physical_grasp_verified": false
+    },
+    {
+      "id": 10,
+      "geometrically_clear_and_near_target": false,
+      "rejection_reasons": [
+        "hand_environment_penetration",
+        "hand_target_penetration",
+        "insufficient_network_evidence"
+      ],
+      "finger_target_distances_m": {
+        "thumb": 0.04867283012388684,
+        "index": -0.015124014256632293,
+        "middle": -0.0011290490877007115,
+        "ring": -0.0017087835758767631,
+        "pinky": 0.006578702803524715
+      },
+      "near_target_fingers": [
+        "index",
+        "middle",
+        "ring"
+      ],
+      "penetrations": [
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_00",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.0057532266152036105
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_00",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.005745295153566811
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_00",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.00571562237221024
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_00",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.005723552895968154
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_62",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.0033012185288049355
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_62",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.003262574151431795
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_62",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.003052696022442958
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_62",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.00309097565311036
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_63",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.015509965700085376
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_63",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.015435302525087331
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_63",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.015435992318781717
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_63",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.01551065549377965
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_61",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.0022477846301809223
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_61",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.0022487475782445574
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_62",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.00388771621600959
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_62",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.003873424836795541
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_62",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.003872141005690338
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_62",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.0038865908228191744
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_63",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.003049629717433694
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_63",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.0030778277111699545
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_63",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.003078781940225022
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_57",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.005239401078586642
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_57",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.005239120493177957
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_57",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.0052368056725815015
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_58",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.01661906059541962
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_58",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.016621719792922762
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_58",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.016617798403029183
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_59",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.026217327821360693
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_59",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.026219597063920495
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_60",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.024088867996888044
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_60",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.024087023741495583
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_61",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.021858126211441044
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_61",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.021874066577708524
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_62",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.01592579526722749
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_62",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.01587825389060698
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_62",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.015931046365840397
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_63",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.003352592412778909
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_63",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.0033982814022680188
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_63",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.0033500241138573065
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_55",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.002750205714599348
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_55",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.0026988770031431894
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_56",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.012198716034517788
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_56",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.012181574137127164
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_57",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.021587431029920556
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_57",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.021574103925405153
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_58",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.019410429242764402
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_59",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.008358836283990909
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_59",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.008354931964153677
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_53",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.002923928454649897
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_53",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.002938614441752357
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_53",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.002935341718741177
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_54",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.009662387779910384
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_54",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.009678967869259727
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_55",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.015295126342297787
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_55",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.015310133672842573
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_56",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.007994311881431182
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_56",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.007991831524436332
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_07",
+            "pinky_proximal/geom236"
+          ],
+          "distance_m": -0.0043516697473364235
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_07",
+            "pinky_proximal/geom236"
+          ],
+          "distance_m": -0.004351043173600874
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_08",
+            "pinky_proximal/geom236"
+          ],
+          "distance_m": -0.004010956338259284
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_08",
+            "pinky_proximal/geom236"
+          ],
+          "distance_m": -0.004026177872437073
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_09",
+            "pinky_proximal/geom236"
+          ],
+          "distance_m": -0.0007536503403290586
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_09",
+            "pinky_proximal/geom236"
+          ],
+          "distance_m": -0.0007373130409801731
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.0151240235495378
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.015123783163240144
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.0011318176888827078
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.0011287936788149098
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.0017099989573406966
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.0009932640074320485
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.0009734478202237937
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.001708009488245898
+        }
+      ],
+      "physical_grasp_verified": false
+    },
+    {
+      "id": 11,
+      "geometrically_clear_and_near_target": false,
+      "rejection_reasons": [
+        "hand_environment_penetration",
+        "hand_target_penetration",
+        "insufficient_network_evidence"
+      ],
+      "finger_target_distances_m": {
+        "thumb": 0.03222960853849429,
+        "index": -0.008409248290976685,
+        "middle": -0.010709229693760008,
+        "ring": 0.0007310188037034875,
+        "pinky": 0.01097294819468563
+      },
+      "near_target_fingers": [
+        "index",
+        "middle",
+        "ring"
+      ],
+      "penetrations": [
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_35",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.00425252977173832
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_35",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.004236446126078794
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_36",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.0014606507539321576
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_36",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.001470703999346267
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_29",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.0009516414149759676
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_29",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.0009290888768463917
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_30",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.011701446948351204
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_30",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.011682253534880158
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_31",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.020240423999159433
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_31",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.020240104285695202
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_31",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.02023070238763706
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_31",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.02022917315549005
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_32",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.019713108544063485
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_32",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.019503492177579955
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_32",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.019742494668698894
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_33",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.017084524315693767
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_33",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.01709081683919392
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_34",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.01348523571451287
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_34",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.01348554352550866
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_35",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.009573376326701128
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_35",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.009575915441326965
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_27",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.0006499205864444726
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_28",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.009134834942645963
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_28",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.009132450223786575
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_29",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.017681859983820446
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_29",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.017676986882251562
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_30",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.020562513662102287
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_30",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.02056030159735499
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_31",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.012761170981571299
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_31",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.012758352201970108
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_32",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.002450593214786809
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_32",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.002427030276866979
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_25",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.002444380673110841
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_25",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.002447842411876927
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_25",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.002484573922199085
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_26",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.007950569783838034
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_26",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.007934239351669176
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_27",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.011700475743267071
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_27",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.011701167428091035
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_28",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.010519434467073568
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_28",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.010412915752485069
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_29",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.002105610621273568
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_29",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.002089386201690968
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.00840931349507924
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.00840718354835286
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_proximal/geom228"
+          ],
+          "distance_m": -0.000772588657865003
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_proximal/geom228"
+          ],
+          "distance_m": -0.0007736404210293422
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_proximal/geom228"
+          ],
+          "distance_m": -0.0006737215030441223
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_proximal/geom228"
+          ],
+          "distance_m": -0.0006492776230625495
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.002683086199674278
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.0026923790225754636
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.002733373817856321
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.010710824336773209
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.010703523098021897
+        }
+      ],
+      "physical_grasp_verified": false
+    },
+    {
+      "id": 12,
+      "geometrically_clear_and_near_target": false,
+      "rejection_reasons": [
+        "hand_environment_penetration",
+        "hand_target_penetration",
+        "insufficient_network_evidence"
+      ],
+      "finger_target_distances_m": {
+        "thumb": 0.04537578325237616,
+        "index": -0.004309577416758664,
+        "middle": 0.0018847066124810855,
+        "ring": -0.0037139377048254394,
+        "pinky": 0.007191244895636921
+      },
+      "near_target_fingers": [
+        "index",
+        "middle",
+        "ring"
+      ],
+      "penetrations": [
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_24",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.004684068638612317
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_24",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.004664407471033022
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_25",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.0164086809420958
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_25",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.016340996830967708
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_26",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.004137859751517616
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_26",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.004092803715624097
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_26",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.004870677968397588
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_26",
+            "thumb_proximal_base/geom216"
+          ],
+          "distance_m": -0.004915734797293507
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_19",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.003927727693405868
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_20",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.0042291723064005185
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_20",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.004247526412616053
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_20",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.004247202464418675
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_21",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.00411144583825696
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_21",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.004150903161279867
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_21",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.004147613401862543
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_22",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.0031188043966702958
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_22",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.003149660585454493
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_23",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.0018588389327584905
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_23",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.0018629068153755539
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_24",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.0004183644859039603
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_24",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.0004141703972041216
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_19",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.008250661710323404
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_19",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.00825152926079653
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_19",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.008254153371522813
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_20",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.018650882749508064
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_20",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.018644953427156444
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_21",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.019088623183142875
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_21",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.019937901098796795
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_21",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.01994024767204584
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_21",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.019088052366997635
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_22",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.020807981435688315
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_22",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.020807981435688315
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_22",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.020822987495423793
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_22",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.019940249034309927
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_23",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.02093220656605445
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_23",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.021505149746768887
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_23",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.021631459646285895
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_23",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.020822985738647732
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_24",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.016782971699458527
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_24",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.016793580812887204
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_24",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.016788757858823666
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_25",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.005315690769393644
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_25",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.0053181648700429685
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_25",
+            "thumb_proximal/geom218"
+          ],
+          "distance_m": -0.005340562399611698
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_17",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.0014835901571831002
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_17",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.0014829090828320226
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_18",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.002826569963093252
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_18",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.0028216338096565185
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_19",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.004260295420475437
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_19",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.004264283751733109
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_20",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.004542341694147466
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_20",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.004555779805150094
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_20",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.004571629076861815
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_21",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.00225983757503401
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_17",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.007722881610746045
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_17",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.007721529184827228
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_17",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.007670539812173152
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_18",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.015784689944728057
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_18",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.01649431902149925
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_18",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.016484816970574273
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_18",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.015772098602524508
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_19",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.016494319563304726
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_19",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.017219136078369127
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_19",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.017212585186996657
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_19",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.016484817512340665
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_20",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.015453108361856557
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_21",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.0055646568468254165
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_21",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.005560063145357952
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_17",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.00045201749501844185
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "body_17",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.00044325055436300603
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_14",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.0016190190148500615
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_14",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.0016279115587192299
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_14",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.0016138133089607341
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_15",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.010413406597592854
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_15",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.010461657976055975
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_15",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.01046499077471065
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_16",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.01649950246815139
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_16",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.01651643802297324
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_16",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.016515905780969214
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_16",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.016499554038973
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_17",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.01049714324303153
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_17",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.010474999462243367
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_17",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.010469381498517824
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_17",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.010491525279305993
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_18",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.0014449726888838207
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_18",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.0011412227549350736
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_18",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.0011444341514787668
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_18",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.0014481840854275313
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.0043148068727405925
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.00430578411961917
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.0037164215202748416
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.0037161089274689177
+        }
+      ],
+      "physical_grasp_verified": false
+    },
+    {
+      "id": 13,
+      "geometrically_clear_and_near_target": false,
+      "rejection_reasons": [
+        "hand_environment_penetration",
+        "hand_target_penetration",
+        "insufficient_network_evidence"
+      ],
+      "finger_target_distances_m": {
+        "thumb": 0.05,
+        "index": -0.008484393067893323,
+        "middle": -0.01353603458267065,
+        "ring": -0.0014264977141365055,
+        "pinky": 0.010020972549446004
+      },
+      "near_target_fingers": [
+        "index",
+        "middle",
+        "ring"
+      ],
+      "penetrations": [
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.008484330222492618
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.008459382136658753
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.008484451966703997
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.010824628884258168
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.010841831077575968
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.01085006971232638
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.0108336196397385
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.012113072524411413
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.013584375534488248
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.013586423122680465
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.012118214149695973
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.0014259096081934428
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.0014261498496415113
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.001426591802747623
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "fuel_door_collision",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.0010265185442898525
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "fuel_door_collision",
+            "thumb_intermediate/geom220"
+          ],
+          "distance_m": -0.0009849386791296478
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "fuel_door_collision",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.00821028936115065
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "fuel_door_collision",
+            "thumb_distal/geom222"
+          ],
+          "distance_m": -0.008212497901821282
+        }
+      ],
+      "physical_grasp_verified": false
+    },
+    {
+      "id": 14,
+      "geometrically_clear_and_near_target": false,
+      "rejection_reasons": [
+        "hand_target_penetration",
+        "insufficient_network_evidence"
+      ],
+      "finger_target_distances_m": {
+        "thumb": 0.035985308677601996,
+        "index": -0.01230257715039615,
+        "middle": 0.00026813338745226606,
+        "ring": -0.008800504884501903,
+        "pinky": 0.01111338660730217
+      },
+      "near_target_fingers": [
+        "index",
+        "middle",
+        "ring"
+      ],
+      "penetrations": [
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.007777122607587559
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.00777391951830819
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.007781165799284782
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.012306394811029369
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.012304753638080238
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.00879191761224307
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.008794522544592452
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.008800504884501901
+        }
+      ],
+      "physical_grasp_verified": false
+    },
+    {
+      "id": 15,
+      "geometrically_clear_and_near_target": false,
+      "rejection_reasons": [
+        "hand_environment_penetration",
+        "hand_target_penetration",
+        "insufficient_network_evidence"
+      ],
+      "finger_target_distances_m": {
+        "thumb": 0.04516995581096761,
+        "index": -0.002856524024020146,
+        "middle": -0.01667862986280988,
+        "ring": -0.01556449742440142,
+        "pinky": 0.005566427738619179
+      },
+      "near_target_fingers": [
+        "index",
+        "middle",
+        "ring"
+      ],
+      "penetrations": [
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_12",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.0008014115616944901
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_12",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.0007998940466823819
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_13",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.0013678287163229495
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_13",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.0013726051198394902
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_13",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.0013664763715553973
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_14",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.00017870569632663576
+        },
+        {
+          "kind": "hand_environment",
+          "geoms": [
+            "recess_14",
+            "pinky_intermediate/geom238"
+          ],
+          "distance_m": -0.00018577519417264802
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.002810623750962193
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.0028565240240201457
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.002816492554798877
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.0003091759868580374
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "index_intermediate/geom226"
+          ],
+          "distance_m": -0.0003090155557590004
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.016674273072958986
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.016678629862809876
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.016666680330931657
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.01618850991213816
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "middle_intermediate/geom230"
+          ],
+          "distance_m": -0.016183431810440543
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_0",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.01556449742440142
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.006317732961687187
+        },
+        {
+          "kind": "hand_target",
+          "geoms": [
+            "cap_body_collision_2",
+            "ring_intermediate/geom234"
+          ],
+          "distance_m": -0.00629553859744976
+        }
+      ],
+      "physical_grasp_verified": false
+    }
+  ],
+  "display_candidate_id": 2,
+  "outputs_sha256": {}
+}

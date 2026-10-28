@@ -2,7 +2,7 @@
 
 适配器用六个独立驱动表示 RH56 十二关节，提供可微正运动学和指面接触采样，在 SpaHybGen 的空间接触预测上优化手根位姿与手型。
 
-当前使用原示例场景，油箱盖空间输入及碰撞筛选按[项目说明](assembly_contract.md#spahybgen-与-rh56)继续接入。
+当前已接通油箱盖仿真 RGB-D 的离线生成与独立手几何筛选，新模型与结果见[油箱盖离线迁移](cap_spahybgen_migration.md)。最新一轮 16 个数值与关节条件有效的候选均因干涉未通过几何筛选；后续仍需改进抓姿。下文保留原示例场景的适配说明。
 
 ## 查看结果
 
@@ -57,8 +57,8 @@ self.current_status = self.robot.forward_kinematics(full[:, self.chain_rows])
   --model-dir artifacts/rh56_spahybgen/model_new \
   --output-dir artifacts/rh56_spahybgen/candidates_new
 
-.venv-spahybgen/bin/python tools/generate_rh56_grasps.py \
-  --verify-only --output-dir artifacts/rh56_spahybgen/original_20261008
+.venv-spahybgen/bin/python tools/generate_cap_grasps.py \
+  --verify-only --output-dir artifacts/rh56_spahybgen/cap_rgbd_20261024_001/run_003
 ```
 
 模型派生使用共享仿真环境，优化使用 SpaHybGen 独立环境；默认读取已保存的原示例预测。

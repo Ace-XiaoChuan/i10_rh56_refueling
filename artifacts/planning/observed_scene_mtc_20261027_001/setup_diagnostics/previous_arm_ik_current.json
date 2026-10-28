@@ -1,0 +1,556 @@
+{
+  "mode": "current_model_endpoint_ik_no_execution",
+  "source_scene_sha256": "b376bb512b2d176dd4159d78228e70546b4681cc90e6757e081ac9d4a54d30d4",
+  "candidate_path": "/home/ace/i10_rh56_refueling_ws/config/fixed_grasp.json",
+  "candidate_sha256": "e8c2bac9d88bc375b751a004cd9134288412449c76f8f0880747bd14f790c854",
+  "settings": {
+    "seeds": 24,
+    "iterations": 250,
+    "random_seed": 0,
+    "position_tolerance_m": 0.0001,
+    "orientation_tolerance_rad": 0.0017453292519943296,
+    "rotation_weight_m": 0.2,
+    "damping": 0.01,
+    "max_step_rad": 0.2,
+    "penetration_diagnostic_m": 0.0001
+  },
+  "joint_names": [
+    "shoulder_joint",
+    "upperArm_joint",
+    "foreArm_joint",
+    "wrist1_joint",
+    "wrist2_joint",
+    "wrist3_joint"
+  ],
+  "joint_limits_rad": [
+    [
+      -6.28319,
+      6.28319
+    ],
+    [
+      -6.28319,
+      6.28319
+    ],
+    [
+      -6.28319,
+      6.28319
+    ],
+    [
+      -6.28319,
+      6.28319
+    ],
+    [
+      -6.28319,
+      6.28319
+    ],
+    [
+      -6.28319,
+      6.28319
+    ]
+  ],
+  "cap_estimate": {
+    "pose": {
+      "frame_id": "world",
+      "position_m": [
+        0.0,
+        1.007,
+        0.6
+      ],
+      "orientation_xyzw": [
+        0.5,
+        -0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "timestamp_s": 0.0,
+    "source": "simulation_ground_truth",
+    "valid": true,
+    "confidence": null,
+    "timestamp_clock": "simulation"
+  },
+  "flange_from_hand": [
+    [
+      0.9999999999999988,
+      5.865739230503498e-18,
+      0.0,
+      0.0
+    ],
+    [
+      5.865739230503498e-18,
+      0.9999999999999988,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.9999999999999987,
+      0.04349999999999998
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "world_from_hand_target": [
+    [
+      -0.6427876096865393,
+      1.3877787807814457e-17,
+      0.7660444431189781,
+      -0.075
+    ],
+    [
+      0.7660444431189781,
+      0.0,
+      0.6427876096865393,
+      0.8469999999999999
+    ],
+    [
+      -1.3877787807814457e-17,
+      1.0,
+      0.0,
+      0.58
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "base_from_hand_target": [
+    [
+      0.6427876096865393,
+      -1.3877787807814457e-17,
+      -0.7660444431189781,
+      0.075
+    ],
+    [
+      -0.7660444431189781,
+      0.0,
+      -0.6427876096865393,
+      -0.8469999999999999
+    ],
+    [
+      -1.3877787807814457e-17,
+      1.0,
+      0.0,
+      0.58
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "world_from_flange_target": [
+    [
+      -0.6427876096865385,
+      1.0107363308794536e-17,
+      0.7660444431189771,
+      -0.10832293327567549
+    ],
+    [
+      0.7660444431189772,
+      4.493416942312195e-18,
+      0.6427876096865384,
+      0.8190387389786354
+    ],
+    [
+      -8.012048577310942e-18,
+      0.9999999999999988,
+      0.0,
+      0.58
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "base_from_flange_target": [
+    [
+      0.6427876096865385,
+      -1.0107363308794536e-17,
+      -0.7660444431189771,
+      0.10832293327567549
+    ],
+    [
+      -0.7660444431189772,
+      -4.493416942312195e-18,
+      -0.6427876096865384,
+      -0.8190387389786354
+    ],
+    [
+      -8.012048577310942e-18,
+      0.9999999999999988,
+      0.0,
+      0.58
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "initial_preview_contacts": [],
+  "solutions": [
+    {
+      "arm_qpos_rad": [
+        -1.0763246077933735,
+        -0.3770564397303151,
+        1.7405543018416518,
+        2.1172078556358085,
+        0.20365992414320386,
+        0.00040561699156852274
+      ],
+      "seed_index": 1,
+      "hand_position_error_m": 4.787360825392462e-06,
+      "hand_orientation_error_rad": 8.223253780688195e-05,
+      "contacts": [],
+      "interference_count": 0
+    },
+    {
+      "arm_qpos_rad": [
+        -1.0763242831884607,
+        -2.0292656187429303,
+        -1.7406548321859947,
+        0.2877322095158397,
+        0.203657441157249,
+        0.0008749351129472907
+      ],
+      "seed_index": 2,
+      "hand_position_error_m": 9.79520879149184e-06,
+      "hand_orientation_error_rad": 0.00017830102790587088,
+      "contacts": [],
+      "interference_count": 0
+    },
+    {
+      "arm_qpos_rad": [
+        -1.0763234904806722,
+        -0.2489323343571627,
+        1.4938817065104182,
+        -1.397383489445387,
+        -0.20364000199376306,
+        3.1402016436910185
+      ],
+      "seed_index": 0,
+      "hand_position_error_m": 1.186419684317902e-05,
+      "hand_orientation_error_rad": 0.00028386416231209025,
+      "contacts": [],
+      "interference_count": 0
+    },
+    {
+      "arm_qpos_rad": [
+        -1.0763245764683544,
+        -0.24926456951683926,
+        1.4933853082177593,
+        -1.3994459926939529,
+        -0.2036540827229371,
+        -3.1410877551744085
+      ],
+      "seed_index": 15,
+      "hand_position_error_m": 2.2703978581785227e-06,
+      "hand_orientation_error_rad": 0.00010265904159636621,
+      "contacts": [],
+      "interference_count": 0
+    },
+    {
+      "arm_qpos_rad": [
+        1.56730491594705,
+        2.0292643308517224,
+        1.7404964070290163,
+        -0.2887066888998375,
+        -2.4399623369694488,
+        4.7973202957258404e-05
+      ],
+      "seed_index": 4,
+      "hand_position_error_m": 1.6713329662950157e-05,
+      "hand_orientation_error_rad": 4.019407516467652e-05,
+      "contacts": [],
+      "interference_count": 0
+    },
+    {
+      "arm_qpos_rad": [
+        1.567302965279749,
+        0.3771181032718443,
+        -1.7404867890909033,
+        -2.117549163504176,
+        -2.439975650435549,
+        5.4523265839254154e-05
+      ],
+      "seed_index": 19,
+      "hand_position_error_m": 1.0446358514250256e-05,
+      "hand_orientation_error_rad": 3.875330918617655e-05,
+      "contacts": [],
+      "interference_count": 0
+    },
+    {
+      "arm_qpos_rad": [
+        1.5673022887037942,
+        0.24915679731477847,
+        -1.4935516444754267,
+        1.3988292925088093,
+        2.4399633774812797,
+        3.1415485722211236
+      ],
+      "seed_index": 23,
+      "hand_position_error_m": 7.828035822121723e-06,
+      "hand_orientation_error_rad": 3.568822250044675e-05,
+      "contacts": [],
+      "interference_count": 0
+    },
+    {
+      "arm_qpos_rad": [
+        1.5673059419602826,
+        0.2491861661984534,
+        -1.493495827165136,
+        1.398954567931908,
+        2.4399884705557904,
+        -3.141553333057376
+      ],
+      "seed_index": 7,
+      "hand_position_error_m": 2.797352883093023e-06,
+      "hand_orientation_error_rad": 3.40165375849064e-05,
+      "contacts": [],
+      "interference_count": 0
+    },
+    {
+      "arm_qpos_rad": [
+        -1.0763246680184682,
+        -1.6737487617999538,
+        -1.4936209498436255,
+        -2.961053657033071,
+        -0.20365316158634034,
+        3.1411790488036666
+      ],
+      "seed_index": 9,
+      "hand_position_error_m": 4.116186253404471e-06,
+      "hand_orientation_error_rad": 8.415812575212055e-05,
+      "contacts": [
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.022876192316478618
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.022846156224693707
+        }
+      ],
+      "interference_count": 2
+    },
+    {
+      "arm_qpos_rad": [
+        -1.0763246392027137,
+        -1.673699814289537,
+        -1.493431232477614,
+        -2.961654841570642,
+        -0.20365711072185108,
+        -3.1412611381120255
+      ],
+      "seed_index": 11,
+      "hand_position_error_m": 1.8863087783372001e-06,
+      "hand_orientation_error_rad": 6.739016374552588e-05,
+      "contacts": [
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.022882665100460102
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.02285320365591006
+        }
+      ],
+      "interference_count": 2
+    },
+    {
+      "arm_qpos_rad": [
+        1.5673040410180115,
+        1.6737263041843218,
+        1.4935235540347525,
+        2.9613700090652313,
+        2.4399766078087133,
+        3.1415720190501317
+      ],
+      "seed_index": 8,
+      "hand_position_error_m": 8.396201981681841e-07,
+      "hand_orientation_error_rad": 1.6047790766071104e-05,
+      "contacts": [
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.03261626801012923
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.03262451925216886
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.03263077904360611
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.03262252849460666
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist3_Link_collision_0"
+          ],
+          "penetration_m": 0.01848028088665596
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist3_Link_collision_0"
+          ],
+          "penetration_m": 0.018238918033299335
+        }
+      ],
+      "interference_count": 6
+    },
+    {
+      "arm_qpos_rad": [
+        1.567303070123805,
+        1.673722171962167,
+        1.493515375486749,
+        2.9613910507054864,
+        2.4399687585260983,
+        -3.141587183127181
+      ],
+      "seed_index": 3,
+      "hand_position_error_m": 1.882171865349017e-07,
+      "hand_orientation_error_rad": 3.824550144448817e-06,
+      "contacts": [
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.03261735604709066
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.032625607304003816
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.032631850962681265
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist2_Link_collision_0"
+          ],
+          "penetration_m": 0.032623600588995674
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist3_Link_collision_0"
+          ],
+          "penetration_m": 0.018481914091996704
+        },
+        {
+          "geoms": [
+            "foreArm_Link_collision_0",
+            "wrist3_Link_collision_0"
+          ],
+          "penetration_m": 0.018240555246524806
+        }
+      ],
+      "interference_count": 6
+    }
+  ],
+  "best_residual": {
+    "score": 1.5484836014105303e-07,
+    "arm_qpos_rad": [
+      -4.715882464720336,
+      1.6737231359014184,
+      1.4935175788638406,
+      -3.3217986971420665,
+      2.4399670463415264,
+      -3.141593102825355
+    ],
+    "position_error_m": 1.1253967409170496e-07,
+    "orientation_error_rad": 5.318090915381686e-07
+  },
+  "ik_found": true,
+  "enabled_geometry_interference_free_solution_found": true,
+  "physical_grasp_verified": false,
+  "path_verified": false,
+  "unchecked": [
+    "sensor_adapter_collision",
+    "ground_collision_disabled",
+    "approach_path",
+    "continuous_twist",
+    "loads",
+    "hardware_calibration"
+  ],
+  "selected_recorded_closure_contacts": [
+    {
+      "geoms": [
+        "cap_body_collision_2",
+        "thumb_distal"
+      ],
+      "penetration_m": 2.8475741886695087e-05
+    },
+    {
+      "geoms": [
+        "cap_body_collision_2",
+        "thumb_distal"
+      ],
+      "penetration_m": 2.0712814160501028e-05
+    },
+    {
+      "geoms": [
+        "cap_body_collision_2",
+        "index_intermediate"
+      ],
+      "penetration_m": 5.356523349441671e-06
+    },
+    {
+      "geoms": [
+        "cap_body_collision_2",
+        "middle_intermediate"
+      ],
+      "penetration_m": 6.438879627448239e-06
+    }
+  ]
+}

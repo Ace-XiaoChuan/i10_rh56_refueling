@@ -1,0 +1,13 @@
+{
+  "start_utc": "2026-10-26T05:46:45.147318+00:00",
+  "start_monotonic_ns": 3363205043306,
+  "command": [
+    "/tmp/vizum-camera-setup/vizum-inspect",
+    "--snapshot-full"
+  ],
+  "returncode": 0,
+  "stdout": "init=0\nsearch=0\nOpening confirmed target with bStopStream=false...\nopen_error=0 handle_valid=1\nversion_query=0 mask=289\nsdk=3.6.20.112 app= camera= hardware=4.6.4.27p2+Ext [NAC3] firmware=\nresolution_query=0 width=1216 height=1920\npupil_distance_query=0 value=0\ncapture_status_query=0 capturing=0\ndetect_status_query=0 detecting=0\nexposure_query=0 mode=0 time_raw=200\nroi_query=0 left=0,256,0,1920 right=960,1216,0,1920\ntrigger_query=0 mode=1\nscan_work_range_query=0 near_raw=500 far_raw=1500\ntemporary_preview_exposure=0 time_raw=10000\ntemporary_full_frame_roi=0 width=1216 height=1920\nsnapshot_query=0\nleft: width=1216 height=1920 bits=8 channels=3 type=2 bytes=7004160\nsaved=/tmp/vizum-camera-setup/preview-7570/left.ppm\nright: width=1216 height=1920 bits=8 channels=3 type=2 bytes=7004160\nsaved=/tmp/vizum-camera-setup/preview-7570/right.ppm\nexposure_restore=0 verify=0 mode=0 time_raw=200 expected_mode=0 expected_time=200\nroi_restore=0 verify=0 matches_original=1\nclose=0\n",
+  "stderr": "",
+  "end_utc": "2026-10-26T05:47:01.571074+00:00",
+  "end_monotonic_ns": 3379628806544
+}

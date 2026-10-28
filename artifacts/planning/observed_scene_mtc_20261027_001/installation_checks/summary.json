@@ -1,0 +1,7 @@
+{
+  "source_model_exit": 0,
+  "planning_model_exit": 0,
+  "installed_approach_exit": 0,
+  "invalid_binding_exit": 1,
+  "invalid_binding_rejected": true
+}

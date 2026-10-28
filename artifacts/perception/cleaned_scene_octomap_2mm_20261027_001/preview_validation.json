@@ -1,0 +1,11 @@
+{
+  "map_display_mesh_count": 33,
+  "map_voxel_count": 80298,
+  "placeholder_tank_removed": true,
+  "map_carrier_transform_verified": true,
+  "simulation_time_s": 0.0,
+  "collision_checks_performed": false,
+  "anchor_site_matches_placement": true,
+  "mujoco_version": "3.13.0",
+  "display_xml_sha256": "b7fc1650abde374b2f3ea7aadfd212714f9730d621a5a8fb68d88963acbf1e18"
+}

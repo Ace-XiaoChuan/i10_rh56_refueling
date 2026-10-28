@@ -1,0 +1,91 @@
+{
+  "status": "completed_cap_rgbd_offline_generation",
+  "python": "3.8.20 (default, Oct  2 2024, 16:34:12) \n[Clang 18.1.8 ]",
+  "model_dir": "../hand_model",
+  "elapsed_s": 19.902900554999974,
+  "settings": {
+    "schema_version": 1,
+    "target_annotation": {
+      "source": "manual_whole_visible_cap_ellipse_on_rgb",
+      "image_size_wh": [
+        1280,
+        960
+      ],
+      "image_sha256": "1d5388201a598ccd649143bbe5eee5c28366daaa8f059e9f485b41a07b4b962c",
+      "ellipse_xyxy": [
+        594,
+        418,
+        685,
+        514
+      ]
+    },
+    "volume_size_m": 0.4,
+    "resolution": 80,
+    "contact_radius_m": 0.01,
+    "center_radius_m": 0.02,
+    "network_mode": "eval",
+    "minimum_contact_score": 0.1,
+    "minimum_center_score": 0.1,
+    "batch": 16,
+    "iterations": 120,
+    "init_random_scale": 0.2,
+    "learning_rate": 0.001,
+    "seed": 20261008,
+    "threads": 4,
+    "geometry": {
+      "penetration_tolerance_m": 0.0001,
+      "near_target_distance_m": 0.005,
+      "minimum_near_fingers": 2
+    }
+  },
+  "hard_valid_count": 16,
+  "driver_limits_all_iterations": true,
+  "network_training_mode": false,
+  "network_weights_optimized": false,
+  "checkpoint_sha256": "f74f5a953de0125d82a2f7ea22f490ea3b3abaab15fd49221ede929997795405",
+  "target_annotation_source": "manual_whole_visible_cap_ellipse_on_rgb",
+  "evaluation_truth_used_for_generation": false,
+  "scene_geometry_used_for_generation": false,
+  "grid_occupied_count": 288079,
+  "target_contact_peak": 4.422166105522152e-11,
+  "target_center_peak": 2.0203591404033272e-12,
+  "prediction_evidence_sufficient": false,
+  "method_changes": [
+    "whole_cap_observation_neighborhood",
+    "single_target_predicted_weighted_center",
+    "six_driver_hard_limits_and_final_recompute",
+    "recorded_network_mode"
+  ],
+  "arm_planning_performed": false,
+  "hardware_execution_performed": false,
+  "physical_grasp_verified": false,
+  "source_sha256": {
+    "tools/generate_cap_grasps.py": "585c90747598fa8b46833340ecaec455ae1adfd1e6979876ab32f824b0f9dd9b",
+    "src/fuel_cap_task/cap_spahybgen_input.py": "82c7fed4e4190ca960d1c9311f7873a8ef44a09c31841377f025aec3dca3f3c0",
+    "src/fuel_cap_task/cap_spahybgen_optimizer.py": "30d717731fce809bfd81f70c764096c35e3af63536fb1b1f648e2aa48bc10f65",
+    "src/fuel_cap_task/rh56_spahybgen.py": "c87e213bf812dbe8ef9490055689eaf4087ef8a40f779a79da472c7bc83f0192",
+    "src/fuel_cap_task/rh56_drive_map.py": "e7d06568bbc5cc41dcf50f9af2c81c587018cd2adb3d97528039a21b5285c6f5",
+    "src/fuel_cap_task/rgbd_point_cloud.py": "95024dbbaf484cffe45df1d4622e619729b9bfce27d679e25a5883b4cd09902c",
+    "tools/generate_rh56_grasps.py": "70bb865116e95b9a367950736943673109ccfcbead9835427e8b20a769e12a5b",
+    "dependencies/SpaHybGen/src/spahybgen/observation.py": "9bf9e2db5c9d89a2fa0f833fa6a4b372c369f40c3f6e5200c342db8d0c65076d",
+    "dependencies/SpaHybGen/src/spahybgen/optimization.py": "a23ded2aad88d11da3fbd46971a5648f6998ae6755b38a3e54576f64a353fd38",
+    "dependencies/SpaHybGen/assets/trained_models/spahybgen_unet_64_voxel.pt": "f74f5a953de0125d82a2f7ea22f490ea3b3abaab15fd49221ede929997795405"
+  },
+  "inputs_sha256": {
+    "../observation/rgb.png": "1d5388201a598ccd649143bbe5eee5c28366daaa8f059e9f485b41a07b4b962c",
+    "../observation/depth.npz": "aaae53c3b506cb5cd99bad96bd470425f4adf6783bc3f7c510dad8b6407d61a0",
+    "../observation/observation.json": "0fe8d91e0baa5be501f2459a055ad262f4583a390ffdda14a925d7281e19fa84",
+    "../hand_model/model.json": "6ba235fea57685ea1109866a38db9498037d8e55ed334e4036d2a185e0b6d716"
+  },
+  "outputs_sha256": {
+    "optimization.npz": "0a343f9715aaf1d3a04044c00269fd6a1f6944d30a851d655a185f459ebab013",
+    "scene_input.npz": "28335a327f66625425c23de126413fa54168eff27b921089d1846799d464d2db",
+    "model_audit.json": "9838f6302773daaa7ac09b36c565b6adf5b52ded85810b4ebe30c094a031ed25",
+    "environment.json": "9b587cc8f52f4c172d6c9aa985b44fe26dcf25264297016c435c2b1608259fb2",
+    "target_annotation.png": "1160758f90e561a5c5a3cb463076b693fb307f8c9455390b0a0ba661bbc32cfa",
+    "settings.json": "cac90760e1a8b03a4a04eba91125430973fee16bb065d92dc1940f412fef08f9",
+    "runtime.log": "94b781474fc56aa8bbdb3180912b28059e9e0a92d0bcc271ffca0209b92cd02c",
+    "candidates.json": "b8f8f7f2dbee3b7dd1194f99d7f4ef73a32be1fdb7595d6d07a4067889c8ec8a",
+    "inference.npz": "c695d0737e73f42050c5e6a12a7b9f3da2adcaff249485511609849366cd239f"
+  }
+}

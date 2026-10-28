@@ -1,0 +1,45 @@
+{
+  "pregrasp_channels": [
+    0,
+    0,
+    650,
+    650,
+    900,
+    0
+  ],
+  "grasp_channels_unchanged": true,
+  "comparison_to_previous_800_preshape": [
+    {
+      "angle_deg": 0,
+      "hand_root_pose_exactly_unchanged": true,
+      "changed_joints": [
+        "index_intermediate_joint",
+        "index_proximal_joint",
+        "middle_intermediate_joint",
+        "middle_proximal_joint"
+      ],
+      "unmodified_finger_and_palm_vertices_unchanged": true,
+      "mesh_topology_unchanged": true,
+      "coupling_residual_max_rad": 1.3877787807814457e-17
+    },
+    {
+      "angle_deg": 180,
+      "hand_root_pose_exactly_unchanged": true,
+      "changed_joints": [
+        "index_intermediate_joint",
+        "index_proximal_joint",
+        "middle_intermediate_joint",
+        "middle_proximal_joint"
+      ],
+      "unmodified_finger_and_palm_vertices_unchanged": true,
+      "mesh_topology_unchanged": true,
+      "coupling_residual_max_rad": 1.3877787807814457e-17
+    }
+  ],
+  "collision_check_performed": false,
+  "robot_connections": 0,
+  "tests": {
+    "command": "PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -B -m pytest -p no:cacheprovider tests/test_cap_hand_overlay.py -q",
+    "passed": 12
+  }
+}

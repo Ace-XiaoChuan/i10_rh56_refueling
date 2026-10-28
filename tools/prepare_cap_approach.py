@@ -18,7 +18,11 @@ def main():
     parser.add_argument('--candidate', type=Path, default=DEFAULT_FIXED_GRASP)
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--random-seed', type=int, help='Prepare exactly one new mixed random scene')
+    parser.add_argument('--observed-scene', type=Path, help='实测拆分场景的 octomap_scene.json')
+    parser.add_argument('--direction', choices=['direction_000','direction_180'], default='direction_000')
     args = parser.parse_args()
+    if args.observed_scene and args.random_seed is not None:
+        parser.error('实测场景不能与随机占位场景混用')
     import numpy as np
     if not np.isfinite(args.start).all() or not np.isfinite(args.distance) or args.distance <= 0:
         parser.error('Finite start and positive distance required')
@@ -56,6 +60,15 @@ def main():
         baseline = json.loads((root/'src/i10_rh56_moveit_config/config/scene.json').read_text())
         request['scene_variation'] = variation
         request['planning_scene'] = scene_snapshot(baseline, model, data)
+    if args.observed_scene:
+        from fuel_cap_task.observed_mtc import observed_fields
+        scene_config = json.loads((root/'config/active_point_cloud_scene.json').read_text())
+        request.update(observed_fields(args.observed_scene, root/scene_config['grasp_candidates'],
+                                       args.candidate, scene_config['collision_scene'], args.direction, args.distance))
+        request['initial_joint_positions'].update(request.get('fixed_left_joint_positions',{}))
+        if request.get('robot_model_profile') == 'dual_arm':
+            from fuel_cap_task.observed_mtc import model_directory
+            model_directory(root/'src/i10_rh56_moveit_config',request)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(request, indent=2, allow_nan=False)+'\n')
     print(args.output)

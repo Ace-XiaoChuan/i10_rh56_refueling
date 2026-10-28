@@ -1,0 +1,29 @@
+{
+  "mode": "offline_dual_arm_mtc_validation",
+  "robot_connections": 0,
+  "trajectory_execution": false,
+  "installed_planning_exit": 0,
+  "installed_scene_exit": 0,
+  "wrong_profile_exit": 1,
+  "wrong_world_model_rejected": true,
+  "published_robot_model_name": "i10_dual_arm_rh56",
+  "published_left_pose_matches_capture": true,
+  "published_octomap_transform_verified": true,
+  "scene_snapshot_sha256": "d5497e4a29523d91b2549067f2c3164635978cc6ce14c699ea178fd2c529c8c6",
+  "snapshot_bytes": 759876,
+  "rviz_capture_exit_code": -11,
+  "rviz_render_saved": true,
+  "validated_waypoints": 5762,
+  "endpoint_error_m": 8.53469522533819e-05,
+  "endpoint_orientation_error_rad": 8.054871353938081e-05,
+  "left_arm_fixed": true,
+  "dense_fcl_check_passed": true,
+  "endpoint_check_passed": true,
+  "direction_180": {
+    "audit_exit_code": 0,
+    "planning_exit_code": 1,
+    "mode": "mtc_failed_no_replay",
+    "error": "MTC found no complete approach solution",
+    "validated_waypoints": 0
+  }
+}

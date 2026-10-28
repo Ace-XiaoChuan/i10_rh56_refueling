@@ -1,0 +1,10 @@
+{
+  "mode": "offline_observed_mtc_validation",
+  "robot_connections": 0,
+  "trajectory_execution": false,
+  "candidates": {
+    "direction_000": {
+      "audit_exit_code": 1
+    }
+  }
+}

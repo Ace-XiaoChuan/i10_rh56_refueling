@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-26T07:35:57.764925+00:00",
+  "query_executable": "/home/ace/i10_rh56_refueling_ws/tools/aubo_sdk_probe/build/aubo_sdk_probe",
+  "query_executable_sha256": "005fc075b4d12259a8981c0311c5c1446172343fd8322498eb6b5643ec16104d",
+  "left_controller": {
+    "ip": "192.168.1.32",
+    "role": "camera",
+    "physical_role_basis": "user confirmed prior data are from left camera arm; prior capture records use this IP"
+  },
+  "other_controller": {
+    "ip": "192.168.1.253",
+    "inferred_role": "right_twisting_candidate",
+    "physical_side_verified": false
+  },
+  "right_base_from_left_base": null,
+  "robot_motion_commands_sent": false,
+  "controller_configuration_written": false,
+  "notes": [
+    "No calibrated inter-base transform was obtained.",
+    "No new full configuration or RTDE capture was performed for the second controller."
+  ]
+}

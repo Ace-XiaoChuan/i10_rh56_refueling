@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-26T19:27:33.186154+00:00",
+  "mode": "sdk_voxel_batched_surface_display",
+  "source_point_cloud": "/home/ace/i10_rh56_refueling_ws/doc/scene_cleaned.pcd",
+  "source_point_cloud_sha256": "8daad2be6a6bca8d035c86abc87bcdaf80e66b51c64e177ed876a77d9d216c63",
+  "scene_config_sha256": "2e0dca1cb6dbc9e2f736fe62dc287d026789e139473d4ba7a33685e180f04b25",
+  "frame_id": "camera_sdk_native",
+  "mujoco_world_frame": "camera_sdk_native",
+  "length_unit": "m",
+  "voxel_size_m": 0.002,
+  "grid_origin_camera_m": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "occupancy_policy": "observed_surface_only",
+  "color_mode": "depth_pseudocolor_and_cap_red",
+  "mujoco_version": "3.13.0",
+  "camera_views": {
+    "full_scene": {
+      "target_m": [
+        0.155,
+        0.07900000000000001,
+        1.001
+      ],
+      "distance_m": 2.944
+    },
+    "cap_region": {
+      "target_m": [
+        0.12604587493152922,
+        0.016945486513710226,
+        0.643428985064172
+      ],
+      "distance_m": 0.5
+    },
+    "voxel_detail": {
+      "target_m": [
+        0.12604587493152922,
+        0.016945486513710226,
+        0.643428985064172
+      ],
+      "distance_m": 0.11
+    }
+  },
+  "cap_focus_camera_m": [
+    0.12604587493152922,
+    0.016945486513710226,
+    0.643428985064172
+  ],
+  "validation": {
+    "voxel_count": 80298,
+    "voxel_size_m": 0.002,
+    "source_voxel_data_byte_identical": true,
+    "exposed_square_faces": 257896,
+    "display_geom_count": 33,
+    "compiled_surface_triangles_match_grid": true,
+    "compiled_vertex_max_error_m": 8.797221529022181e-08,
+    "display_mesh_collision_enabled": false,
+    "source_box_collision_scene_preserved": true,
+    "physics_steps": 0,
+    "model_compile_and_validation_seconds": 1.9557470239997201,
+    "rendered_geom_counts": {
+      "full_scene": 33,
+      "cap_region": 33,
+      "voxel_detail": 33
+    }
+  },
+  "source_box_scene": "/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001",
+  "source_voxels_sha256": "3786936e24ec249292d7ca77ab5e669e73b5e99c06493961a919b28d85db3d71",
+  "source_box_scene_sha256": "057ac8c94207e729ec64bec2e6471c91eb5e7f4f44a1a66df0680d4035f49836",
+  "source_box_validation": {
+    "mujoco_box_count": 80298,
+    "all_box_centers_match_voxels": true,
+    "all_full_box_edges_m": 0.002,
+    "all_boxes_collision_enabled": true,
+    "convex_meshes_used": false,
+    "placeholder_environment_loaded": false,
+    "physics_steps": 0,
+    "simulation_time_s": 0.0,
+    "input_point_count": 247103,
+    "voxel_count": 80298,
+    "every_point_retained_in_membership": true,
+    "every_point_inside_assigned_box": true,
+    "point_counts_sum": 247103,
+    "cap_points_retained": 5742,
+    "cap_voxel_count": 1504,
+    "grid_origin_camera_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "unobserved_space_filled": false,
+    "robot_connections": 0,
+    "model_load_and_forward_seconds": 0.2071639209989371,
+    "rendered_geom_counts": {
+      "full_scene": 80298,
+      "cap_region": 80298,
+      "voxel_detail": 80298
+    }
+  }
+}

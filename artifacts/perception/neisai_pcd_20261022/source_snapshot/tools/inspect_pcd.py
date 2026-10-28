@@ -15,7 +15,7 @@ sys.path.insert(0, str(ROOT / "src"))
 import numpy as np
 from PIL import Image
 
-from fuel_cap_task.pcd_point_cloud import load_binary_pcd
+from fuel_cap_task.pcd_point_cloud import load_pcd
 from fuel_cap_task.rgbd_point_cloud import digest
 from reconstruct_cap_point_cloud import plotly_asset
 
@@ -26,16 +26,18 @@ def save_json(path, value):
                     encoding="utf-8")
 
 
-def write_views(folder, points, colors, title, unit, max_points):
+def write_views(folder, points, colors, title, unit, max_points, frame_id="unknown"):
     """在文件原坐标中显示有效点；抽样只用于显示，颜色模式明确区分 Z 和 RGB。"""
     indices = np.linspace(0, len(points) - 1, min(max_points, len(points)), dtype=int)
     sample = points[indices]
     marker = {"size": 2, "color": sample[:, 2].tolist(), "colorscale": "Viridis",
-              "colorbar": {"title": "原坐标 Z"}}
+              "colorbar": {"title": f"原坐标 Z / {unit}"}}
     trace = {"type": "scatter3d", "mode": "markers", "x": sample[:, 0].tolist(),
              "y": sample[:, 1].tolist(), "z": sample[:, 2].tolist(), "marker": marker,
              "customdata": indices.tolist(),
-             "hovertemplate": "有效点行号 %{customdata}<br>X %{x:.4f}<br>Y %{y:.4f}<br>Z %{z:.4f}<extra></extra>"}
+             "hovertemplate": ("有效点行号 %{customdata}"
+                               f"<br>X %{{x:.4f}} {unit}<br>Y %{{y:.4f}} {unit}"
+                               f"<br>Z %{{z:.4f}} {unit}<extra></extra>")}
     axes = {name: {"title": f"{axis} / {unit}"}
             for name, axis in (("xaxis", "X"), ("yaxis", "Y"), ("zaxis", "Z"))}
     menus = []
@@ -51,7 +53,7 @@ def write_views(folder, points, colors, title, unit, max_points):
               "updatemenus": menus}
     page = f"""<!doctype html><html lang="zh-CN"><meta charset="utf-8">
 <title>{html.escape(title)} 点云</title><style>body{{font-family:system-ui;margin:24px}}#cloud{{height:75vh}}</style>
-<h1>{html.escape(title)}</h1><p>文件原坐标；单位：{unit}；坐标轴物理方向待核对。
+<h1>{html.escape(title)}</h1><p>文件原坐标；坐标系：{html.escape(frame_id)}；单位：{unit}；坐标轴物理方向待核对。
 显示 {len(sample):,} / {len(points):,} 个有效点。拖动旋转、滚轮缩放；下拉菜单切换颜色。</p>
 <p>Z 伪彩色仅用于观察几何；RGB 模式保留字段解码结果，不等于已确认真实彩色。
 未执行坐标配准或图像映射。</p><p><a href="../index.html">返回</a> · <a href="result.json">检查报告</a> ·
@@ -79,7 +81,7 @@ Plotly.newPlot('cloud', {json.dumps([trace])}, {json.dumps(layout)}, {{responsiv
 
 def inspect_one(path, output, args):
     """统计完整点云，显式排除非有限点用于显示，保留原行号用于以后追溯。"""
-    cloud = load_binary_pcd(path, byte_order=args.byte_order)
+    cloud = load_pcd(path, byte_order=args.byte_order)
     valid = np.isfinite(cloud.xyz_raw).all(axis=1)
     points = cloud.xyz_raw[valid]
     if not len(points):
@@ -95,10 +97,15 @@ def inspect_one(path, output, args):
     if scale is not None:
         arrays["xyz_m"] = cloud.xyz_raw * scale
     np.savez_compressed(output / "point_cloud_raw.npz", **arrays)
-    shown = write_views(output, points, colors, path.name, args.length_unit, args.max_view_points)
+    shown = write_views(output, points, colors, path.name, args.length_unit,
+                        args.max_view_points, args.frame_id)
+    binary = cloud.header["DATA"] == ["binary"]
     report = {"mode": "pcd_inspection", "schema_version": 1, "input_path": str(path),
-              "input_sha256": cloud.sha256, "header": cloud.header, "byte_order": cloud.byte_order,
-              "byte_order_source": "cli_argument", "length_unit": args.length_unit,
+              "input_sha256": cloud.sha256, "header": cloud.header,
+              "data_encoding": cloud.header["DATA"][0],
+              "byte_order": cloud.byte_order if binary else None,
+              "byte_order_source": "cli_argument" if binary else "not_applicable_ascii",
+              "length_unit": args.length_unit,
               "unit_source": "unconfirmed" if scale is None else "cli_argument",
               "frame_id": args.frame_id, "capture_timestamp_s": None,
               "organized_layout": int(cloud.header["HEIGHT"][0]) > 1,
@@ -146,7 +153,7 @@ def main():
         report = inspect_one(path.resolve(), folder, args)
         reports.append(report)
         sections.append(f'<h2>{html.escape(path.name)}</h2><p>{report["finite_point_count"]:,} 个有限点；'
-                        f'单位：{args.length_unit}；像素映射未核实。</p>'
+                        f'单位：{args.length_unit}；坐标系：{html.escape(args.frame_id)}；像素映射未核实。</p>'
                         f'<a href="{folder.name}/index.html">打开三维点云</a> · '
                         f'<a href="{folder.name}/result.json">检查报告</a><br>'
                         f'<img src="{folder.name}/preview.png" style="max-width:100%">')

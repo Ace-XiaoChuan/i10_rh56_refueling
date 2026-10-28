@@ -1,0 +1,367 @@
+<mujoco model="observed_octomap_placement_preview">
+  <compiler angle="radian" />
+  <default>
+    <default class="inspire">
+      <position kp="300" dampratio="1.0" />
+      <joint damping="0.1" armature="0.01" frictionloss="0.001" />
+      <material specular="0.5" shininess="0.25" />
+      <default class="visual">
+        <geom type="mesh" contype="0" conaffinity="0" group="2" rgba="0.1 0.1 0.1 1" />
+      </default>
+      <default class="collision">
+        <geom type="mesh" group="3" condim="4" friction="1 0.005 0.001" solref="0.002 1" solimp="0.9 0.95 0.001" />
+      </default>
+      <site size="0.0035" type="sphere" rgba="1 0 0 1" group="3" />
+    </default>
+  </default>
+  <visual>
+    <headlight ambient=".5 .5 .5" diffuse=".7 .7 .7" />
+    <global offwidth="1280" offheight="900" />
+    <map znear=".001" zfar="8" />
+  </visual>
+  <asset>
+    <mesh name="visual_link0" content_type="model/obj" file="/home/ace/i10_rh56_refueling_ws/assets/robots/aubo_i10/mjcf/meshes/visual_link0.obj" />
+    <mesh name="link0" content_type="model/stl" file="/home/ace/i10_rh56_refueling_ws/assets/robots/aubo_i10/meshes/aubo_i10_JY/collision/link0.STL" />
+    <mesh name="visual_link1" content_type="model/obj" file="/home/ace/i10_rh56_refueling_ws/assets/robots/aubo_i10/mjcf/meshes/visual_link1.obj" />
+    <mesh name="link1" content_type="model/stl" file="/home/ace/i10_rh56_refueling_ws/assets/robots/aubo_i10/meshes/aubo_i10_JY/collision/link1.STL" />
+    <mesh name="visual_link2" content_type="model/obj" file="/home/ace/i10_rh56_refueling_ws/assets/robots/aubo_i10/mjcf/meshes/visual_link2.obj" />
+    <mesh name="link2" content_type="model/stl" file="/home/ace/i10_rh56_refueling_ws/assets/robots/aubo_i10/meshes/aubo_i10_JY/collision/link2.STL" />
+    <mesh name="visual_link3" content_type="model/obj" file="/home/ace/i10_rh56_refueling_ws/assets/robots/aubo_i10/mjcf/meshes/visual_link3.obj" />
+    <mesh name="link3" content_type="model/stl" file="/home/ace/i10_rh56_refueling_ws/assets/robots/aubo_i10/meshes/aubo_i10_JY/collision/link3.STL" />
+    <mesh name="visual_link4" content_type="model/obj" file="/home/ace/i10_rh56_refueling_ws/assets/robots/aubo_i10/mjcf/meshes/visual_link4.obj" />
+    <mesh name="link4" content_type="model/stl" file="/home/ace/i10_rh56_refueling_ws/assets/robots/aubo_i10/meshes/aubo_i10_JY/collision/link4.STL" />
+    <mesh name="visual_link5" content_type="model/obj" file="/home/ace/i10_rh56_refueling_ws/assets/robots/aubo_i10/mjcf/meshes/visual_link5.obj" />
+    <mesh name="link5" content_type="model/stl" file="/home/ace/i10_rh56_refueling_ws/assets/robots/aubo_i10/meshes/aubo_i10_JY/collision/link5.STL" />
+    <mesh name="visual_link6" content_type="model/obj" file="/home/ace/i10_rh56_refueling_ws/assets/robots/aubo_i10/mjcf/meshes/visual_link6.obj" />
+    <mesh name="link6" content_type="model/stl" file="/home/ace/i10_rh56_refueling_ws/assets/robots/aubo_i10/meshes/aubo_i10_JY/collision/link6.STL" />
+    <material class="inspire" name="black" rgba="0.033 0.033 0.033 1" />
+    <material class="inspire" name="jointgray" rgba="0.278 0.278 0.278 1" />
+    <material class="inspire" name="linkgray" rgba="0.82 0.82 0.82 1" />
+    <texture name="blue_grid" type="2d" builtin="checker" rgb1=".02 .14 .44" rgb2=".27 .55 1" width="300" height="300" mark="edge" markrgb="1 1 1" />
+    <material name="blue_grid" texture="blue_grid" texrepeat="1 1" texuniform="true" reflectance=".2" />
+    <texture name="grey_grid" type="2d" builtin="checker" rgb1=".26 .26 .26" rgb2=".6 .6 .6" width="300" height="300" mark="edge" markrgb="1 1 1" />
+    <material name="grey_grid" texture="grey_grid" texrepeat="1 1" texuniform="true" reflectance=".2" />
+    <texture name="skybox" type="skybox" builtin="gradient" rgb1=".66 .79 1" rgb2=".9 .91 .93" width="800" height="800" />
+    <mesh name="right_thumb_proximal_base" file="/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_thumb_proximal_base.stl" />
+    <mesh name="right_thumb_proximal" file="/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_thumb_proximal.stl" />
+    <mesh name="right_thumb_intermediate" file="/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_thumb_intermediate.stl" />
+    <mesh name="right_thumb_distal" file="/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_thumb_distal.stl" />
+    <mesh name="right_index_proximal" file="/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_index_proximal.stl" />
+    <mesh name="right_index_intermediate" file="/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_index_intermediate.stl" />
+    <mesh name="right_middle_intermediate" file="/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_middle_intermediate.stl" />
+    <mesh name="right_pinky_intermediate" file="/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_pinky_intermediate.stl" />
+    <mesh name="right_base_link_visual" file="/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/R_hand_base_link.STL" />
+    <mesh name="right_thumb_proximal_base_visual" file="/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_thumb_proximal_base_visual.stl" />
+    <mesh name="right_thumb_proximal_visual" file="/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_thumb_proximal_visual.stl" />
+    <mesh name="right_thumb_intermediate_visual" file="/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_thumb_intermediate_visual.stl" />
+    <mesh name="right_thumb_distal_visual" file="/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_thumb_distal_visual.stl" />
+    <mesh name="right_index_proximal_visual" file="/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_index_proximal_visual.stl" />
+    <mesh name="right_index_intermediate_visual" file="/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_index_intermediate_visual.stl" />
+    <mesh name="right_middle_intermediate_visual" file="/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_middle_intermediate_visual.stl" />
+    <mesh name="right_pinky_intermediate_visual" file="/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_pinky_intermediate_visual.stl" />
+    <mesh name="adapter_mesh" file="/home/ace/i10_rh56_refueling_ws/assets/robots/adapter/meshes/adapter.stl" />
+    <mesh name="sensor_mesh" file="/home/ace/i10_rh56_refueling_ws/assets/robots/sensor/meshes/sensor.stl" />
+    <material name="depth_0" rgba="0.27 0.03 0.33 1" shininess=".05" />
+    <material name="depth_1" rgba="0.264838709677419 0.0674193548387097 0.358387096774194 1" shininess=".05" />
+    <material name="depth_2" rgba="0.259677419354839 0.104838709677419 0.386774193548387 1" shininess=".05" />
+    <material name="depth_3" rgba="0.254516129032258 0.142258064516129 0.415161290322581 1" shininess=".05" />
+    <material name="depth_4" rgba="0.249354838709677 0.179677419354839 0.443548387096774 1" shininess=".05" />
+    <material name="depth_5" rgba="0.244193548387097 0.217096774193548 0.471935483870968 1" shininess=".05" />
+    <material name="depth_6" rgba="0.239032258064516 0.254516129032258 0.500322580645161 1" shininess=".05" />
+    <material name="depth_7" rgba="0.233870967741935 0.291935483870968 0.528709677419355 1" shininess=".05" />
+    <material name="depth_8" rgba="0.226774193548387 0.328064516129032 0.55 1" shininess=".05" />
+    <material name="depth_9" rgba="0.213870967741936 0.360322580645161 0.55 1" shininess=".05" />
+    <material name="depth_10" rgba="0.200967741935484 0.39258064516129 0.55 1" shininess=".05" />
+    <material name="depth_11" rgba="0.188064516129032 0.424838709677419 0.55 1" shininess=".05" />
+    <material name="depth_12" rgba="0.175161290322581 0.457096774193548 0.55 1" shininess=".05" />
+    <material name="depth_13" rgba="0.162258064516129 0.489354838709677 0.55 1" shininess=".05" />
+    <material name="depth_14" rgba="0.149354838709677 0.521612903225806 0.55 1" shininess=".05" />
+    <material name="depth_15" rgba="0.136451612903226 0.553870967741935 0.55 1" shininess=".05" />
+    <material name="depth_16" rgba="0.145483870967742 0.584193548387097 0.539032258064516 1" shininess=".05" />
+    <material name="depth_17" rgba="0.176451612903226 0.61258064516129 0.517096774193548 1" shininess=".05" />
+    <material name="depth_18" rgba="0.20741935483871 0.640967741935484 0.495161290322581 1" shininess=".05" />
+    <material name="depth_19" rgba="0.238387096774194 0.669354838709677 0.473225806451613 1" shininess=".05" />
+    <material name="depth_20" rgba="0.269354838709677 0.697741935483871 0.451290322580645 1" shininess=".05" />
+    <material name="depth_21" rgba="0.300322580645161 0.726129032258064 0.429354838709677 1" shininess=".05" />
+    <material name="depth_22" rgba="0.331290322580645 0.754516129032258 0.40741935483871 1" shininess=".05" />
+    <material name="depth_23" rgba="0.362258064516129 0.782903225806452 0.385483870967742 1" shininess=".05" />
+    <material name="depth_24" rgba="0.43 0.801612903225806 0.356774193548387 1" shininess=".05" />
+    <material name="depth_25" rgba="0.51 0.817096774193548 0.325806451612903 1" shininess=".05" />
+    <material name="depth_26" rgba="0.59 0.83258064516129 0.294838709677419 1" shininess=".05" />
+    <material name="depth_27" rgba="0.67 0.848064516129032 0.263870967741935 1" shininess=".05" />
+    <material name="depth_28" rgba="0.75 0.863548387096774 0.232903225806452 1" shininess=".05" />
+    <material name="depth_29" rgba="0.83 0.879032258064516 0.201935483870968 1" shininess=".05" />
+    <material name="depth_30" rgba="0.91 0.894516129032258 0.170967741935484 1" shininess=".05" />
+    <material name="depth_31" rgba="0.99 0.91 0.14 1" shininess=".05" />
+    <material name="cap_observed" rgba="0.88 0.23 0.18 1" shininess=".05" />
+    <mesh name="surface_0" file="/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/meshes/surface_0.obj" inertia="shell" />
+    <mesh name="surface_1" file="/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/meshes/surface_1.obj" inertia="shell" />
+    <mesh name="surface_2" file="/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/meshes/surface_2.obj" inertia="shell" />
+    <mesh name="surface_3" file="/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/meshes/surface_3.obj" inertia="shell" />
+    <mesh name="surface_4" file="/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/meshes/surface_4.obj" inertia="shell" />
+    <mesh name="surface_5" file="/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/meshes/surface_5.obj" inertia="shell" />
+    <mesh name="surface_6" file="/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/meshes/surface_6.obj" inertia="shell" />
+    <mesh name="surface_7" file="/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/meshes/surface_7.obj" inertia="shell" />
+    <mesh name="surface_8" file="/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/meshes/surface_8.obj" inertia="shell" />
+    <mesh name="surface_9" file="/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/meshes/surface_9.obj" inertia="shell" />
+    <mesh name="surface_10" file="/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/meshes/surface_10.obj" inertia="shell" />
+    <mesh name="surface_11" file="/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/meshes/surface_11.obj" inertia="shell" />
+    <mesh name="surface_12" file="/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/meshes/surface_12.obj" inertia="shell" />
+    <mesh name="surface_13" file="/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/meshes/surface_13.obj" inertia="shell" />
+    <mesh name="surface_14" file="/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/meshes/surface_14.obj" inertia="shell" />
+    <mesh name="surface_15" file="/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/meshes/surface_15.obj" inertia="shell" />
+    <mesh name="surface_16" file="/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/meshes/surface_16.obj" inertia="shell" />
+    <mesh name="surface_17" file="/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/meshes/surface_17.obj" inertia="shell" />
+    <mesh name="surface_18" file="/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/meshes/surface_18.obj" inertia="shell" />
+    <mesh name="surface_19" file="/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/meshes/surface_19.obj" inertia="shell" />
+    <mesh name="surface_20" file="/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/meshes/surface_20.obj" inertia="shell" />
+    <mesh name="surface_21" file="/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/meshes/surface_21.obj" inertia="shell" />
+    <mesh name="surface_22" file="/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/meshes/surface_22.obj" inertia="shell" />
+    <mesh name="surface_23" file="/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/meshes/surface_23.obj" inertia="shell" />
+    <mesh name="surface_24" file="/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/meshes/surface_24.obj" inertia="shell" />
+    <mesh name="surface_25" file="/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/meshes/surface_25.obj" inertia="shell" />
+    <mesh name="surface_26" file="/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/meshes/surface_26.obj" inertia="shell" />
+    <mesh name="surface_27" file="/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/meshes/surface_27.obj" inertia="shell" />
+    <mesh name="surface_28" file="/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/meshes/surface_28.obj" inertia="shell" />
+    <mesh name="surface_29" file="/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/meshes/surface_29.obj" inertia="shell" />
+    <mesh name="surface_30" file="/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/meshes/surface_30.obj" inertia="shell" />
+    <mesh name="surface_31" file="/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/meshes/surface_31.obj" inertia="shell" />
+    <mesh name="surface_32" file="/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/meshes/surface_32.obj" inertia="shell" />
+  </asset>
+  <worldbody>
+    <light pos="0 -1 3" dir="0 0 -1" />
+    <geom name="floor" type="plane" size="2 2 .01" rgba=".25 .28 .32 1" contype="0" conaffinity="0" group="1" />
+    <body name="inspection_arm_mount" quat="0 0 0 1">
+      <body name="base_link">
+        <inertial pos="0.00018573 -0.00060247 0.0240441" quat="0.498672 0.500892 -0.510901 0.489299" mass="2.325" diaginertia="0.0115744 0.00669532 0.00654964" />
+        <geom type="mesh" contype="0" conaffinity="0" group="1" rgba="1 1 1 1" density="0" mesh="visual_link0" />
+        <geom name="base_link_collision_0" type="mesh" rgba="1 1 1 1" mesh="link0" />
+        <body name="shoulder_Link" pos="0 0 0.1732" quat="0 0 0 1">
+          <inertial pos="-4e-06 0.005112 -0.026275" quat="0.997565 -0.0697219 -1.82331e-05 0.00151628" mass="10.1801" diaginertia="0.043326 0.0424812 0.0296538" />
+          <joint name="shoulder_joint" range="-6.28319 6.28319" actuatorfrcrange="-267 267" />
+          <geom type="mesh" contype="0" conaffinity="0" group="1" rgba="0.89804 0.91765 0.92941 1" density="0" mesh="visual_link1" />
+          <geom name="shoulder_Link_collision_0" type="mesh" rgba="0.89804 0.91765 0.92941 1" mesh="link1" />
+          <body name="upperArm_Link" pos="0 0.191 0" quat="0.5 -0.5 -0.5 -0.5">
+            <inertial pos="0.231117 -1.3e-05 -0.022852" quat="0.505617 0.49432 0.493921 0.506005" mass="18.0964" diaginertia="1.52462 1.50645 0.0641157" />
+            <joint name="upperArm_joint" range="-6.28319 6.28319" actuatorfrcrange="-267 267" />
+            <geom type="mesh" contype="0" conaffinity="0" group="1" rgba="0.89804 0.91765 0.92941 1" density="0" mesh="visual_link2" />
+            <geom name="upperArm_Link_collision_0" type="mesh" rgba="0.89804 0.91765 0.92941 1" mesh="link2" />
+            <body name="foreArm_Link" pos="0.647 0 0" quat="0 -1 0 0">
+              <inertial pos="0.41956 -1.9e-05 0.118053" quat="0.494817 0.505196 0.503176 0.496737" mass="4.44809" diaginertia="0.246194 0.244857 0.00673165" />
+              <joint name="foreArm_joint" range="-6.28319 6.28319" actuatorfrcrange="-133 133" />
+              <geom type="mesh" contype="0" conaffinity="0" group="1" rgba="1 1 1 1" density="0" mesh="visual_link3" />
+              <geom name="foreArm_Link_collision_0" type="mesh" rgba="1 1 1 1" mesh="link3" />
+              <body name="wrist1_Link" pos="0.6005 0 0" quat="0 0.707107 0.707107 0">
+                <inertial pos="3.6e-05 0.01561 -0.001526" quat="0.687102 0.726417 0.0117534 -0.00836899" mass="2.37074" diaginertia="0.00367206 0.00362542 0.00218552" />
+                <joint name="wrist1_joint" range="-6.28319 6.28319" actuatorfrcrange="-49 49" />
+                <geom type="mesh" contype="0" conaffinity="0" group="1" rgba="1 1 1 1" density="0" mesh="visual_link4" />
+                <geom name="wrist1_Link_collision_0" type="mesh" rgba="1 1 1 1" mesh="link4" />
+                <body name="wrist2_Link" pos="0 0.1175 0" quat="0.707107 -0.707107 0 0">
+                  <inertial pos="-3.6e-05 -0.01561 -0.001526" quat="0.726417 0.687102 -0.00836899 0.0117534" mass="2.37074" diaginertia="0.00367206 0.00362542 0.00218552" />
+                  <joint name="wrist2_joint" range="-6.28319 6.28319" actuatorfrcrange="-49 49" />
+                  <geom type="mesh" contype="0" conaffinity="0" group="1" rgba="1 1 1 1" density="0" mesh="visual_link5" />
+                  <geom name="wrist2_Link_collision_0" type="mesh" rgba="1 1 1 1" mesh="link5" />
+                  <body name="wrist3_Link" pos="0 -0.1045 0" quat="0.707107 0.707107 0 0">
+                    <inertial pos="0 0.00077395 -0.0169826" quat="0.49527 0.504685 -0.504685 0.49527" mass="0.3406" diaginertia="0.000402675 0.00024702 0.000219415" />
+                    <joint name="wrist3_joint" range="-6.28319 6.28319" actuatorfrcrange="-49 49" />
+                    <geom type="mesh" contype="0" conaffinity="0" group="1" rgba="1 1 1 1" density="0" mesh="visual_link6" />
+                    <geom name="wrist3_Link_collision_0" type="mesh" rgba="1 1 1 1" mesh="link6" />
+                    <body name="sensor_link">
+                      <geom name="sensor_visual" type="mesh" mesh="sensor_mesh" rgba=".65 .70 .76 1" group="1" contype="0" conaffinity="0" density="0" />
+                      <body name="sensor_output_frame" pos="0 0 .0335" euler="0 0 0">
+                        <body name="adapter">
+                          <geom name="adapter_visual" type="mesh" mesh="adapter_mesh" rgba=".85 .55 .15 1" group="1" contype="0" conaffinity="0" density="0" />
+                          <body name="rh56_provisional_mount" pos="0 0 .010">
+                            <body name="base" pos="0.00 0 0.0" childclass="inspire">
+                              <geom type="mesh" quat="9.38189e-07 -9.38183e-07 -0.707105 0.707109" mesh="right_base_link_visual" class="visual" />
+                              <geom size="0.028 0.0139" pos="0 8.60444e-08 0.0136" quat="1.32679e-06 0 0 1" type="cylinder" class="collision" />
+                              <geom size="0.01955 0.0101 0.0287" pos="0.0032 2.31927e-07 0.038" quat="9.38189e-07 -9.38183e-07 -0.707105 0.707109" type="box" class="collision" />
+                              <geom size="0.01955 0.02 0.0407" pos="0.0032 4.22996e-07 0.0682" quat="9.38189e-07 -9.38183e-07 -0.707105 0.707109" type="box" class="collision" />
+                              <geom size="0.0161 0.02 0.0407" pos="1.81486e-12 6.83927e-07 0.1081" quat="9.38189e-07 -9.38183e-07 -0.707105 0.707109" type="box" class="collision" />
+                              <geom size="0.00625 0.00555 0.00445" pos="0.00159992 -0.0308992 0.134" quat="9.38189e-07 -9.38183e-07 -0.707105 0.707109" type="box" class="collision" />
+                              <geom size="0.00625 0.00555 0.00445" pos="0.00159997 -0.0117992 0.134" quat="9.38189e-07 -9.38183e-07 -0.707105 0.707109" type="box" class="collision" />
+                              <geom size="0.00625 0.00555 0.00445" pos="0.00160002 0.00700084 0.134" quat="9.38189e-07 -9.38183e-07 -0.707105 0.707109" type="box" class="collision" />
+                              <geom size="0.00625 0.00555 0.00445" pos="0.00160007 0.0262008 0.134" quat="9.38189e-07 -9.38183e-07 -0.707105 0.707109" type="box" class="collision" />
+                              <body name="thumb_proximal_base" pos="0.0169601 0.0204504 0.0691" quat="-0.707107 9.38192e-07 3.53553e-06 0.707106" childclass="inspire">
+                                <inertial pos="-0.0048064 0.0009382 -0.00757" quat="0.515015 0.680854 0.408023 0.323596" mass="0.0018869" diaginertia="8.66026e-08 6.8732e-08 4.94194e-08" />
+                                <joint name="thumb_proximal_yaw_joint" pos="0 0 0" axis="0 0 -1" range="0 1.308" actuatorfrcrange="-1 1" />
+                                <geom type="mesh" mesh="right_thumb_proximal_base" class="collision" />
+                                <geom class="visual" mesh="right_thumb_proximal_base_visual" />
+                                <body name="thumb_proximal" pos="-0.0088099 0.010892 -0.00925" quat="0.0996843 0.0996847 0.700046 0.700044">
+                                  <inertial pos="0.021932 0.012785 -0.0080386" quat="-0.254474 0.660716 0.251893 0.659733" mass="0.0066075" diaginertia="2.78601e-06 2.43933e-06 8.64566e-07" />
+                                  <joint name="thumb_proximal_pitch_joint" pos="0 0 0" axis="0 0 1" range="0.1 0.7" actuatorfrcrange="-1 1" />
+                                  <geom type="mesh" mesh="right_thumb_proximal" class="collision" />
+                                  <geom class="visual" mesh="right_thumb_proximal_visual" />
+                                  <body name="thumb_intermediate" pos="0.04407 0.034553 -0.0008">
+                                    <inertial pos="0.0095544 -0.0016282 -0.0071997" quat="0.636718 0.307389 -0.636802 0.307548" mass="0.0037847" diaginertia="4.6531e-07 4.48089e-07 2.45661e-07" />
+                                    <joint name="thumb_intermediate_joint" pos="0 0 0" axis="0 0 1" range="0 0.8" actuatorfrcrange="-1 1" />
+                                    <geom type="mesh" mesh="right_thumb_intermediate" class="collision" />
+                                    <geom class="visual" mesh="right_thumb_intermediate_visual" />
+                                    <body name="thumb_distal" pos="0.020248 0.010156 -0.0012">
+                                      <inertial pos="0.0092888 0.0049529 -0.0060033" quat="-0.266294 0.655967 0.262806 0.655537" mass="0.0033441" diaginertia="2.0026e-07 1.95247e-07 8.1593e-08" />
+                                      <joint name="thumb_distal_joint" pos="0 0 0" axis="0 0 1" range="0 0.6" actuatorfrcrange="-1 1" />
+                                      <geom type="mesh" mesh="right_thumb_distal" class="collision" />
+                                      <geom class="visual" mesh="right_thumb_distal_visual" />
+                                      <site name="right_thumb_tip" pos="0.0159104 0.0156076 -0.00599021" />
+                                      <site name="track_hand_right_thumb_tip" pos="0.0159104 0.0156076 -0.00599021" />
+                                      <site name="trace_hand_right_thumb_tip" pos="0.0159104 0.0156076 -0.00599021" />
+                                    </body>
+                                  </body>
+                                </body>
+                              </body>
+                              <body name="index_proximal" pos="-0.000285244 0.0322689 0.13653" quat="-9.21673e-07 -9.54413e-07 -0.719337 -0.694661" childclass="inspire">
+                                <inertial pos="0.0012259 0.011942 -0.0060001" quat="0.50867 0.49121 -0.508643 0.491172" mass="0.0042403" diaginertia="6.9398e-07 6.62871e-07 2.10909e-07" />
+                                <joint name="index_proximal_joint" pos="0 0 0" axis="0 0 1" range="0.025 1.57" actuatorfrcrange="-1 1" />
+                                <geom type="mesh" mesh="right_index_proximal" class="collision" />
+                                <geom class="visual" mesh="right_index_proximal_visual" />
+                                <body name="index_intermediate" pos="-0.0026138 0.032026 -0.001">
+                                  <inertial pos="0.0019697 0.019589 -0.005" quat="0.466773 0.531152 -0.466773 0.531153" mass="0.0045683" diaginertia="7.8179e-07 7.72465e-07 8.47212e-08" />
+                                  <joint name="index_intermediate_joint" pos="0 0 0" axis="0 0 1" range="0.025 1.70" actuatorfrcrange="-1 1" />
+                                  <geom type="mesh" mesh="right_index_intermediate" class="collision" />
+                                  <geom class="visual" mesh="right_index_intermediate_visual" />
+                                  <site name="right_index_tip" pos="-0.00412053 0.0433132 -0.00501047" />
+                                  <site name="track_hand_right_index_tip" pos="-0.00412053 0.0433132 -0.00501047" />
+                                  <site name="trace_hand_right_index_tip" pos="-0.00412053 0.0433132 -0.00501047" />
+                                </body>
+                              </body>
+                              <body name="middle_proximal" pos="-0.000285296 0.0129509 0.1371" quat="-9.38186e-07 -9.38185e-07 -0.707106 -0.707107" childclass="inspire">
+                                <inertial pos="0.001297 0.011934 -0.0060001" quat="0.510131 0.489693 -0.510105 0.489653" mass="0.0042403" diaginertia="6.9397e-07 6.62865e-07 2.10915e-07" />
+                                <joint name="middle_proximal_joint" pos="0 0 0" axis="0 0 1" range="0 1.57" actuatorfrcrange="-1 1" />
+                                <geom type="mesh" mesh="right_index_proximal" class="collision" />
+                                <geom class="visual" mesh="right_index_proximal_visual" />
+                                <body name="middle_intermediate" pos="-0.0024229 0.032041 -0.001">
+                                  <inertial pos="0.001921 0.020796 -0.005" quat="0.466148 0.531627 -0.466229 0.531705" mass="0.0050396" diaginertia="9.8384e-07 9.73279e-07 9.14014e-08" />
+                                  <joint name="middle_intermediate_joint" pos="0 0 0" axis="0 0 1" range="-0.04545 1.56" actuatorfrcrange="-1 1" />
+                                  <geom type="mesh" mesh="right_middle_intermediate" class="collision" />
+                                  <geom class="visual" mesh="right_middle_intermediate_visual" />
+                                  <site name="right_middle_tip" pos="-0.00426879 0.0466043 -0.00498678" />
+                                  <site name="track_hand_right_middle_tip" pos="-0.00426879 0.0466043 -0.00498678" />
+                                  <site name="trace_hand_right_middle_tip" pos="-0.00426879 0.0466043 -0.00498678" />
+                                </body>
+                              </body>
+                              <body name="ring_proximal" pos="-0.000285347 -0.00628633 0.13691" quat="9.62435e-07 9.13293e-07 0.688345 0.725383" childclass="inspire">
+                                <inertial pos="0.001297 0.011934 -0.0060002" quat="0.510129 0.489691 -0.510107 0.489654" mass="0.0042403" diaginertia="6.9397e-07 6.62865e-07 2.10915e-07" />
+                                <joint name="ring_proximal_joint" pos="0 0 0" axis="0 0 1" range="0 1.57" actuatorfrcrange="-1 1" />
+                                <geom type="mesh" mesh="right_index_proximal" class="collision" />
+                                <geom class="visual" mesh="right_index_proximal_visual" />
+                                <body name="ring_intermediate" pos="-0.0024229 0.032041 -0.001">
+                                  <inertial pos="0.0021753 0.019567 -0.005" quat="0.469554 0.528695 -0.469554 0.528695" mass="0.0045683" diaginertia="7.8177e-07 7.72448e-07 8.4722e-08" />
+                                  <joint name="ring_intermediate_joint" pos="0 0 0" axis="0 0 1" range="-0.04545 1.56" actuatorfrcrange="-1 1" />
+                                  <geom type="mesh" mesh="right_index_intermediate" class="collision" />
+                                  <geom class="visual" mesh="right_index_intermediate_visual" />
+                                  <site name="right_ring_tip" pos="-0.00366554 0.0433541 -0.00501047" />
+                                  <site name="track_hand_right_ring_tip" pos="-0.00366554 0.0433541 -0.00501047" />
+                                  <site name="trace_hand_right_ring_tip" pos="-0.00366554 0.0433541 -0.00501047" />
+                                </body>
+                              </body>
+                              <body name="pinky_proximal" pos="-0.000285398 -0.0254871 0.13571" quat="9.85986e-07 8.87816e-07 0.669143 0.743134" childclass="inspire">
+                                <inertial pos="0.001297 0.011934 -0.0060001" quat="0.51013 0.489693 -0.510106 0.489653" mass="0.0042403" diaginertia="6.9397e-07 6.62865e-07 2.10915e-07" />
+                                <joint name="pinky_proximal_joint" pos="0 0 0" axis="0 0 1" range="0 1.57" actuatorfrcrange="-1 1" />
+                                <geom type="mesh" mesh="right_index_proximal" class="collision" />
+                                <geom class="visual" mesh="right_index_proximal_visual" />
+                                <body name="pinky_intermediate" pos="-0.0024229 0.032041 -0.001">
+                                  <inertial pos="0.0024748 0.016203 -0.0050031" quat="0.47398 0.528862 -0.469291 0.524799" mass="0.0035996" diaginertia="4.4867e-07 4.43723e-07 6.56538e-08" />
+                                  <joint name="pinky_intermediate_joint" pos="0 0 0" axis="0 0 1" range="-0.04545 1.56" actuatorfrcrange="-1 1" />
+                                  <geom type="mesh" mesh="right_pinky_intermediate" class="collision" />
+                                  <geom class="visual" mesh="right_pinky_intermediate_visual" />
+                                  <site name="right_pinky_tip" pos="-0.00260734 0.0362776 -0.00501047" />
+                                  <site name="track_hand_right_pinky_tip" pos="-0.00260734 0.0362776 -0.00501047" />
+                                  <site name="trace_hand_right_pinky_tip" pos="-0.00260734 0.0362776 -0.00501047" />
+                                </body>
+                              </body>
+                            </body>
+                            <site name="eeff" pos="0.070 0.016 0.155" group="3" />
+                          </body>
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+    <body name="observed_camera_map" pos="-0.12640923414417743 0.3650248391811507 0.55456686962307611" quat="-0.31592240720289289 0.5001935198534484 0.55719826189398025 0.58269166140084316">
+      <geom name="surface_0" mesh="surface_0" material="depth_0" group="1" type="mesh" contype="0" conaffinity="0" />
+      <geom name="surface_1" mesh="surface_1" material="depth_1" group="1" type="mesh" contype="0" conaffinity="0" />
+      <geom name="surface_2" mesh="surface_2" material="depth_2" group="1" type="mesh" contype="0" conaffinity="0" />
+      <geom name="surface_3" mesh="surface_3" material="depth_3" group="1" type="mesh" contype="0" conaffinity="0" />
+      <geom name="surface_4" mesh="surface_4" material="depth_4" group="1" type="mesh" contype="0" conaffinity="0" />
+      <geom name="surface_5" mesh="surface_5" material="depth_5" group="1" type="mesh" contype="0" conaffinity="0" />
+      <geom name="surface_6" mesh="surface_6" material="depth_6" group="1" type="mesh" contype="0" conaffinity="0" />
+      <geom name="surface_7" mesh="surface_7" material="depth_7" group="1" type="mesh" contype="0" conaffinity="0" />
+      <geom name="surface_8" mesh="surface_8" material="depth_8" group="1" type="mesh" contype="0" conaffinity="0" />
+      <geom name="surface_9" mesh="surface_9" material="depth_9" group="1" type="mesh" contype="0" conaffinity="0" />
+      <geom name="surface_10" mesh="surface_10" material="depth_10" group="1" type="mesh" contype="0" conaffinity="0" />
+      <geom name="surface_11" mesh="surface_11" material="depth_11" group="1" type="mesh" contype="0" conaffinity="0" />
+      <geom name="surface_12" mesh="surface_12" material="depth_12" group="1" type="mesh" contype="0" conaffinity="0" />
+      <geom name="surface_13" mesh="surface_13" material="depth_13" group="1" type="mesh" contype="0" conaffinity="0" />
+      <geom name="surface_14" mesh="surface_14" material="depth_14" group="1" type="mesh" contype="0" conaffinity="0" />
+      <geom name="surface_15" mesh="surface_15" material="depth_15" group="1" type="mesh" contype="0" conaffinity="0" />
+      <geom name="surface_16" mesh="surface_16" material="depth_16" group="1" type="mesh" contype="0" conaffinity="0" />
+      <geom name="surface_17" mesh="surface_17" material="depth_17" group="1" type="mesh" contype="0" conaffinity="0" />
+      <geom name="surface_18" mesh="surface_18" material="depth_18" group="1" type="mesh" contype="0" conaffinity="0" />
+      <geom name="surface_19" mesh="surface_19" material="depth_19" group="1" type="mesh" contype="0" conaffinity="0" />
+      <geom name="surface_20" mesh="surface_20" material="depth_20" group="1" type="mesh" contype="0" conaffinity="0" />
+      <geom name="surface_21" mesh="surface_21" material="depth_21" group="1" type="mesh" contype="0" conaffinity="0" />
+      <geom name="surface_22" mesh="surface_22" material="depth_22" group="1" type="mesh" contype="0" conaffinity="0" />
+      <geom name="surface_23" mesh="surface_23" material="depth_23" group="1" type="mesh" contype="0" conaffinity="0" />
+      <geom name="surface_24" mesh="surface_24" material="depth_24" group="1" type="mesh" contype="0" conaffinity="0" />
+      <geom name="surface_25" mesh="surface_25" material="depth_25" group="1" type="mesh" contype="0" conaffinity="0" />
+      <geom name="surface_26" mesh="surface_26" material="depth_26" group="1" type="mesh" contype="0" conaffinity="0" />
+      <geom name="surface_27" mesh="surface_27" material="depth_27" group="1" type="mesh" contype="0" conaffinity="0" />
+      <geom name="surface_28" mesh="surface_28" material="depth_28" group="1" type="mesh" contype="0" conaffinity="0" />
+      <geom name="surface_29" mesh="surface_29" material="depth_29" group="1" type="mesh" contype="0" conaffinity="0" />
+      <geom name="surface_30" mesh="surface_30" material="depth_30" group="1" type="mesh" contype="0" conaffinity="0" />
+      <geom name="surface_31" mesh="surface_31" material="depth_31" group="1" type="mesh" contype="0" conaffinity="0" />
+      <geom name="surface_32" mesh="surface_32" material="cap_observed" group="1" type="mesh" contype="0" conaffinity="0" />
+    </body>
+    <geom name="cap_outward_axis" type="capsule" size=".003" fromto="0 1.0069999999999999 0.59999999999999998 0 0.8869999999999999 0.59999999999999998" rgba="1 .8 .1 1" contype="0" conaffinity="0" group="1" />
+    <geom type="capsule" size=".003" fromto="0 0 0 0.17999999999999999 0 0" rgba="1 .1 .1 1" contype="0" conaffinity="0" group="1" />
+    <geom type="capsule" size=".003" fromto="0 0 0 0 0.17999999999999999 0" rgba=".1 .8 .1 1" contype="0" conaffinity="0" group="1" />
+    <geom type="capsule" size=".003" fromto="0 0 0 0 0 0.17999999999999999" rgba=".1 .3 1 1" contype="0" conaffinity="0" group="1" />
+  </worldbody>
+  <contact>
+    <exclude body1="base" body2="thumb_proximal_base" />
+    <exclude body1="base" body2="index_proximal" />
+    <exclude body1="base" body2="middle_proximal" />
+    <exclude body1="base" body2="ring_proximal" />
+    <exclude body1="base" body2="pinky_proximal" />
+    <exclude body1="base" body2="thumb_proximal" />
+    <exclude body1="thumb_proximal_base" body2="thumb_intermediate" />
+    <exclude body1="thumb_proximal" body2="thumb_intermediate" />
+    <exclude body1="thumb_intermediate" body2="thumb_distal" />
+    <exclude body1="index_proximal" body2="index_intermediate" />
+    <exclude body1="middle_proximal" body2="middle_intermediate" />
+    <exclude body1="ring_proximal" body2="ring_intermediate" />
+    <exclude body1="pinky_proximal" body2="pinky_intermediate" />
+    <exclude body1="index_proximal" body2="middle_proximal" />
+    <exclude body1="middle_proximal" body2="ring_proximal" />
+    <exclude body1="ring_proximal" body2="pinky_proximal" />
+    <exclude body1="thumb_proximal_base" body2="index_proximal" />
+    <exclude body1="base_link" body2="shoulder_Link" />
+    <exclude body1="foreArm_Link" body2="upperArm_Link" />
+    <exclude body1="foreArm_Link" body2="wrist1_Link" />
+    <exclude body1="shoulder_Link" body2="upperArm_Link" />
+    <exclude body1="wrist1_Link" body2="wrist2_Link" />
+    <exclude body1="wrist2_Link" body2="wrist3_Link" />
+  </contact>
+  <equality>
+    <joint joint1="pinky_intermediate_joint" joint2="pinky_proximal_joint" polycoef="-0.15 1.1169 0 0 0" />
+    <joint joint1="ring_intermediate_joint" joint2="ring_proximal_joint" polycoef="-0.15 1.1169 0 0 0" />
+    <joint joint1="middle_intermediate_joint" joint2="middle_proximal_joint" polycoef="-0.15 1.1169 0 0 0" />
+    <joint joint1="index_intermediate_joint" joint2="index_proximal_joint" polycoef="-0.05 1.1169 0 0 0" />
+    <joint joint1="thumb_intermediate_joint" joint2="thumb_proximal_pitch_joint" polycoef="0.15 1.33 0 0" />
+    <joint joint1="thumb_distal_joint" joint2="thumb_proximal_pitch_joint" polycoef="0.15 0.66 0 0 0" />
+  </equality>
+  <actuator>
+    <position class="inspire" name="pinky" joint="pinky_proximal_joint" ctrlrange="0 1.57" />
+    <position class="inspire" name="ring" joint="ring_proximal_joint" ctrlrange="0 1.57" />
+    <position class="inspire" name="middle" joint="middle_proximal_joint" ctrlrange="0 1.50" />
+    <position class="inspire" name="index" joint="index_proximal_joint" ctrlrange="0 1.50" />
+    <position class="inspire" name="thumb_proximal" joint="thumb_proximal_pitch_joint" ctrlrange="0.1 0.57" />
+    <position class="inspire" name="thumb_yaw" joint="thumb_proximal_yaw_joint" ctrlrange="0 1.308" />
+  </actuator>
+</mujoco>

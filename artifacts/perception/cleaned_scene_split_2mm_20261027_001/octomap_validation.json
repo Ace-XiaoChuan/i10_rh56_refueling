@@ -1,0 +1,10 @@
+{
+  "exact_occupied_cell_set": true,
+  "free_leaf_count": 0,
+  "occupied_base_cell_count": 78796,
+  "occupied_leaf_count": 78677,
+  "raycasting_performed": false,
+  "resolution_m": 0.002,
+  "roundtrip_from_disk": true,
+  "tree_type": "OcTree"
+}

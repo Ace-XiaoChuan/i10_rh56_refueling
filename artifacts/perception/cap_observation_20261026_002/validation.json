@@ -1,0 +1,23 @@
+{
+  "tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -B -m pytest -p no:cacheprovider tests/test_cap_observation.py -q",
+    "passed": 12
+  },
+  "numerical_max_abs_difference_from_previous_native_branch": {
+    "boundary_center_m": 0.0,
+    "boundary_radius_m": 0.0,
+    "visible_bridge_surface_reference_m": 0.0,
+    "cap_grip_center_model_based_m": 0.0,
+    "outward_axis_camera": 0.0,
+    "bridge_axis_camera_undirected": 0.0,
+    "boundary_center_base_m": 0.0,
+    "visible_bridge_surface_reference_base_m": 0.0,
+    "outward_axis_base": 0.0,
+    "bridge_axis_base_undirected": 0.0
+  },
+  "both_base_pose_matrices_exactly_match_previous_native_branch": true,
+  "sdk_capture_flip_setting": "keFlipType_None",
+  "coordinate_processing": "mm_to_m_only_no_axis_flip",
+  "robot_motion_commands_sent": false,
+  "motion_target_valid": false
+}

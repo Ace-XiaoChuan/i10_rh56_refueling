@@ -1,0 +1,89 @@
+{
+  "created_utc": "2026-10-27T17:13:05.075919+00:00",
+  "installed_checks": {
+    "mode": "offline_dual_arm_mtc_validation",
+    "robot_connections": 0,
+    "trajectory_execution": false,
+    "installed_planning_exit": 0,
+    "installed_scene_exit": 0,
+    "wrong_profile_exit": 1,
+    "wrong_world_model_rejected": true,
+    "published_robot_model_name": "i10_dual_arm_rh56",
+    "published_left_pose_matches_capture": true,
+    "published_octomap_transform_verified": true,
+    "scene_snapshot_sha256": "d5497e4a29523d91b2549067f2c3164635978cc6ce14c699ea178fd2c529c8c6",
+    "snapshot_bytes": 759876,
+    "rviz_capture_exit_code": -11,
+    "rviz_render_saved": true,
+    "validated_waypoints": 5762,
+    "endpoint_error_m": 8.53469522533819e-05,
+    "endpoint_orientation_error_rad": 8.054871353938081e-05,
+    "left_arm_fixed": true,
+    "dense_fcl_check_passed": true,
+    "endpoint_check_passed": true,
+    "direction_180": {
+      "audit_exit_code": 0,
+      "planning_exit_code": 1,
+      "mode": "mtc_failed_no_replay",
+      "error": "MTC found no complete approach solution",
+      "validated_waypoints": 0
+    }
+  },
+  "native_run": {
+    "mode": "offline_observed_mtc_validation",
+    "robot_connections": 0,
+    "trajectory_execution": false,
+    "candidates": {
+      "direction_000": {
+        "audit_exit_code": 0,
+        "planning_exit_code": 0,
+        "mode": "mtc_geometric_approach_not_execution",
+        "endpoint_position_error_m": 5.130729554121173e-05,
+        "endpoint_orientation_error_rad": 0.00014113170463605828,
+        "dense_fcl_check_passed": true,
+        "endpoint_check_passed": true,
+        "validated_waypoints": 9527
+      },
+      "direction_180": {
+        "audit_exit_code": 0,
+        "planning_exit_code": 1,
+        "mode": "mtc_failed_no_replay",
+        "error": "MTC found no complete approach solution",
+        "validated_waypoints": 0
+      }
+    },
+    "all_audits_passed": true,
+    "all_candidates_planned": false
+  },
+  "active_robot_collision_links": 30,
+  "left_capture_fk_check": {
+    "orientation_error_rad": 5.4291084854141886e-12,
+    "passed": true,
+    "position_error_m": 6.966896046404603e-13
+  },
+  "unit_test_command": "python3 -m unittest discover -s tools/tests -p test_observed_mtc.py -v",
+  "observed_mtc_unit_tests": {
+    "exit_code": 0,
+    "passed": 6
+  },
+  "dual_model_check": {
+    "exit_code": 0,
+    "links": 33,
+    "joints": 32,
+    "independent_joints": 18
+  },
+  "single_model_provenance_check": {
+    "exit_code": 0,
+    "inputs": 237,
+    "generated_files": 233
+  },
+  "collision_object_roundtrip": {
+    "exit_code": 0,
+    "boxes": 1502,
+    "all_grid_indices_verified": true,
+    "all_box_rotations_verified": true,
+    "disjoint_union_cells": 80298
+  },
+  "robot_connections": 0,
+  "trajectory_execution": false
+}

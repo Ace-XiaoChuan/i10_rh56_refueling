@@ -1,0 +1,15 @@
+{
+  "planning_scene_service_passed": true,
+  "world_collision_objects": {
+    "fuel_cap": 1502,
+    "scene_geom_0": 1
+  },
+  "octomap_type": "OcTree",
+  "resolution_m": 0.002,
+  "robot_model_name": "i10_rh56",
+  "scene_snapshot_sha256": "05754ece772f562bacdcdcee416a63667799b13f17d3e5e990ea3e19679cbcff",
+  "scene_snapshot_bytes": 758484,
+  "hardware_execution": false,
+  "rviz_native_capture_exit_code": -11,
+  "rviz_native_image_saved": true
+}

@@ -1,0 +1,7 @@
+{
+  "start_utc": "2026-10-26T05:55:11.114234+00:00",
+  "end_utc": "2026-10-26T05:55:25.328507+00:00",
+  "returncode": 0,
+  "stdout": "init=0\nsearch=0\nOpening confirmed target with bStopStream=false...\nopen_error=0 handle_valid=1\nversion_query=0 mask=289\nsdk=3.6.20.112 app= camera= hardware=4.6.4.27p2+Ext [NAC3] firmware=\nresolution_query=0 width=1216 height=1920\npupil_distance_query=0 value=0\ncapture_status_query=0 capturing=0\ndetect_status_query=0 detecting=0\nexposure_query=0 mode=0 time_raw=200\nroi_query=0 left=0,256,0,1920 right=960,1216,0,1920\ntrigger_query=0 mode=1\nscan_work_range_query=0 near_raw=500 far_raw=1500\nclose=0\n",
+  "stderr": ""
+}

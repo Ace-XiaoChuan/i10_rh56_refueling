@@ -1,0 +1,13 @@
+{
+  "source_voxels_sha256": "3786936e24ec249292d7ca77ab5e669e73b5e99c06493961a919b28d85db3d71",
+  "validation": {
+    "display_geom_count": 3,
+    "exposed_square_faces": 257896
+  },
+  "files_sha256": {
+    "surface_mixed.obj": "d3132878a0f4837ecf68d182a0713cac28ddb54792b5b477739c4da095483561",
+    "scene.xml": "1c6e9a6eaed3234e4de5f4fe6f5ea22bdc4ae8222d601822822326fe100e4f8c",
+    "surface_environment.obj": "408b9011d2bea1cf6c200bc44c342acac63f1b29d26fd31de3216206e382ec60",
+    "surface_cap.obj": "988bf326e6e5811f084b27e14a953219bcee070728610de9ab692f90884035aa"
+  }
+}

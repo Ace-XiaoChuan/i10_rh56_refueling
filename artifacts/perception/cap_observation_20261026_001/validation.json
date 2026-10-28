@@ -1,0 +1,22 @@
+{
+  "tests": {
+    "command": "python -B -m pytest tests/test_cap_observation.py tests/test_cap_geometry.py tools/tests/test_pcd_point_cloud.py -q",
+    "passed": 34,
+    "result_recorded_from_actual_tool_output": true
+  },
+  "crop_rows_exactly_match_source": true,
+  "crop_point_count": 5742,
+  "crop_source_file_sha256_verified": true,
+  "calibration_version_verified": true,
+  "base_transform_chain_verified": true,
+  "right_handed_pose_candidates_verified": true,
+  "static_overlay_only": true,
+  "geometry_to_overlay_binding_verified": true,
+  "local_links_checked": true,
+  "edited_document_metadata_checked": true,
+  "subsampling_80_percent_trials": 12,
+  "maximum_subsampling_surface_reference_delta_mm": 0.5287446924902741,
+  "maximum_subsampling_normal_angle_deg": 0.5515893349076767,
+  "interpretation": "文件、数值与软件流程校验；不将拟合残差或随机删点敏感性解释为实物绝对精度",
+  "robot_motion_commands_sent": false
+}

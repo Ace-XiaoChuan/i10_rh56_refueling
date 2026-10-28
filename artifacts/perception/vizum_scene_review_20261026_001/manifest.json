@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-10-26T16:34:37.512746+00:00",
+  "capture_date": "2026-10-26",
+  "files_sha256": {
+    "README.md": "6cc7028d4f389d2d7f034d93dd771ee6a9d1d335a36c418a1cb488ae1f8820a2",
+    "cap_crop.pcd": "2e357c1d5acccfbc44f421d0e095cab7fcd64119ba1220d448696c43e3fd1520",
+    "coverage.json": "f9381c474b03cd96160dd4be681984ba5e48dfba5d5ed54ce6437b50c70fc5af",
+    "point_cloud_viewer.html": "1ab8f1095aa2a6373956d0721ca39c943a73a48e4e4693091acfaa35c2f5f83c",
+    "preview.png": "4ad114e3178db4a6fd5c996374596d3295895d0e0eb4805488a131381202ab83",
+    "scene_raw.pcd": "f6ef8f4f9bb3c12f045c1e9853a5b59afdb08b4c64858ea8c471f69c62842b6c",
+    "source_snapshot/export_vizum_scene_review.py": "602b519fbdef084281782b4aaa50b14dcded59d17351686f3e654fab9caa77b5",
+    "source_snapshot/src/fuel_cap_task/pcd_point_cloud.py": "64394ebf65b7f25115ea083ebd7c0c7c770bb208cef9e11d1e6865e247564175",
+    "source_snapshot/tools/export_pcd_viewer.py": "0be456e5181227c2a1685baef5356d0b268b89492969fa74ac34ff2bbaeb852e",
+    "validation.json": "ae5b166fdf22dd85010ecc8313e20ae0fec60e4d3770ede15fadef887ab13812"
+  }
+}

@@ -1,13 +1,13 @@
 {
   "mode": "pcd_inspection_batch",
   "schema_version": 1,
-  "inspection_time_utc": "2026-10-22T14:23:01.892533+00:00",
+  "inspection_time_utc": "2026-10-24T13:49:33.264564+00:00",
   "clouds": [
     {
       "mode": "pcd_inspection",
       "schema_version": 1,
-      "input_path": "/home/ace/i10_rh56_refueling_ws/Neisai1.pcd",
-      "input_sha256": "23efab7e08cb52b56a37dea0943d60bac05a57aeeb7a8d028e12d15d584f6ea5",
+      "input_path": "/home/ace/i10_rh56_refueling_ws/doc/fuel_cap_01_ascii.pcd",
+      "input_sha256": "6617ccdaa555a8902b64a9956a48260bc533d2c3208fbe0f38d02953be1ef0f0",
       "header": {
         "VERSION": [
           "0.7"
@@ -55,14 +55,15 @@
           "28897"
         ],
         "DATA": [
-          "binary"
+          "ascii"
         ]
       },
-      "byte_order": "little",
-      "byte_order_source": "cli_argument",
-      "length_unit": "unknown",
-      "unit_source": "unconfirmed",
-      "frame_id": "unknown",
+      "data_encoding": "ascii",
+      "byte_order": null,
+      "byte_order_source": "not_applicable_ascii",
+      "length_unit": "mm",
+      "unit_source": "cli_argument",
+      "frame_id": "camera",
       "capture_timestamp_s": null,
       "organized_layout": false,
       "pixel_mapping_verified": false,
@@ -107,16 +108,16 @@
       "coordinate_transform_applied": false,
       "cap_pose_estimated": false,
       "outputs_sha256": {
-        "point_cloud_raw.npz": "d77d46bb64a8894dfbb78d85da3baf78f7b551f8d5e4437fe063c6013f5527b9",
-        "index.html": "85308e1379e28c1658cbf87ab6b69fb08aad210d88a8383720cb1af615bb6879",
-        "preview.png": "87906130637675c61351633b39d51437a359eddd76c7ebd98640fa40c6ba3b98"
+        "point_cloud_raw.npz": "bbd5be8b824cca5ce906ce5d8e04f8b936c87c40d41c914631554a636c3e4df4",
+        "index.html": "5e938f0f1a7274e9e9b71d38ce998d771051d4e969a3c52079faa8d83d725dda",
+        "preview.png": "663751dc3c6259d0d92152d09ae752b017eef04b5f43cdf5b49140e7dec1bd4d"
       }
     },
     {
       "mode": "pcd_inspection",
       "schema_version": 1,
-      "input_path": "/home/ace/i10_rh56_refueling_ws/Neisai2.pcd",
-      "input_sha256": "5ea2b6f90dfed9c705936f72e60ebe08c41262037a8b30eec99c83ec3d7570a8",
+      "input_path": "/home/ace/i10_rh56_refueling_ws/doc/fuel_cap_02_ascii.pcd",
+      "input_sha256": "294a8094b3aa9b6fe10852c16e71cfc2dcdb8a0546c054a992663f42e867a5c5",
       "header": {
         "VERSION": [
           "0.7"
@@ -164,14 +165,15 @@
           "28914"
         ],
         "DATA": [
-          "binary"
+          "ascii"
         ]
       },
-      "byte_order": "little",
-      "byte_order_source": "cli_argument",
-      "length_unit": "unknown",
-      "unit_source": "unconfirmed",
-      "frame_id": "unknown",
+      "data_encoding": "ascii",
+      "byte_order": null,
+      "byte_order_source": "not_applicable_ascii",
+      "length_unit": "mm",
+      "unit_source": "cli_argument",
+      "frame_id": "camera",
       "capture_timestamp_s": null,
       "organized_layout": false,
       "pixel_mapping_verified": false,
@@ -216,15 +218,15 @@
       "coordinate_transform_applied": false,
       "cap_pose_estimated": false,
       "outputs_sha256": {
-        "point_cloud_raw.npz": "2ecd9a4ec1f08d2a4dd8e981acb995a0c68b0263fc10841dd24343e8ac8e4912",
-        "index.html": "76701cc9a2b31916196fd58213d1f11c17e5b043bb7f971d5ddf51ed55438a93",
-        "preview.png": "7e68a0c72881c52312342b54a0321dc8420fa57e126780aeb75e39bb0615b373"
+        "point_cloud_raw.npz": "d90f9af8b60b642c16a7a55045d39a1c47be9b7807ced1500e4341db8af8cf58",
+        "index.html": "dafde1d371eefb0301a367e29d33d16f8bf304e9fbb21e1a792a73882f21be2a",
+        "preview.png": "8a16c83406e38f25e7d20ff575230c96f843b074b3d1ebf1315e2821669844bb"
       }
     }
   ],
   "reference_images": [
     {
-      "input_path": "/home/ace/i10_rh56_refueling_ws/微信图片_20261022163702_62_16.jpg",
+      "input_path": "/home/ace/i10_rh56_refueling_ws/fuel_cap_01.jpg",
       "input_sha256": "97575938c6b1a40c254bb1fd37f9dd9b9bea2c8e302a78b3b7d78064aab8de69",
       "image_size_wh": [
         3120,
@@ -234,7 +236,7 @@
       "paired_cloud": null
     },
     {
-      "input_path": "/home/ace/i10_rh56_refueling_ws/微信图片_20261022163706_63_16.jpg",
+      "input_path": "/home/ace/i10_rh56_refueling_ws/fuel_cap_02.jpg",
       "input_sha256": "823ff9e2b707bef95a4da76994b85f84ce866f66bc4aa9f6ab6150b7a3985653",
       "image_size_wh": [
         3120,
@@ -245,8 +247,8 @@
     }
   ],
   "implementation_sha256": {
-    "tools/inspect_pcd.py": "8c9af75c4e67bdc1f8fdf9664815a0e86d425fcf13d7836ca895be1dca20b0b2",
-    "src/fuel_cap_task/pcd_point_cloud.py": "f8bae81e07dd730f128d90948a84542ac75dbd26a2318da64ef523c9b6ac1b80"
+    "tools/inspect_pcd.py": "33e56ee192aabe7763ac74666f4b1928abcc061688c9511377644e4caca29725",
+    "src/fuel_cap_task/pcd_point_cloud.py": "64394ebf65b7f25115ea083ebd7c0c7c770bb208cef9e11d1e6865e247564175"
   },
   "plotly_sha256": "0a17719a72751704861215da0e5c5cdb3f9a8d50eff5cb84cb6f8b80786682b0"
 }

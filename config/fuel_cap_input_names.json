@@ -44,5 +44,18 @@
       "previous_path": "doc/fuel_cap_02.pcd",
       "storage_conversion": "binary_to_ascii_verified_xyz_rgb_and_point_order"
     }
+  ],
+  "derived_files": [
+    {
+      "current_path": "doc/fuel_cap_01_cap_region_ascii.pcd",
+      "sha256": "534fdc585163b7ceaf3399c6291a1ca4bee39f4b972dcc83618a2c0a8a1c92eb",
+      "source_path": "doc/fuel_cap_01_ascii.pcd",
+      "source_sha256": "6617ccdaa555a8902b64a9956a48260bc533d2c3208fbe0f38d02953be1ef0f0",
+      "selection_source": "CloudCompare_manual_crop",
+      "user_visual_confirmation": "cap_region",
+      "point_count": 5378,
+      "length_unit": "mm",
+      "frame_id": "camera"
+    }
   ]
 }

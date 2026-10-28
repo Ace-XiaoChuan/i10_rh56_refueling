@@ -1,0 +1,30 @@
+{
+  "mujoco_box_count": 80298,
+  "all_box_centers_match_voxels": true,
+  "all_full_box_edges_m": 0.002,
+  "all_boxes_collision_enabled": true,
+  "convex_meshes_used": false,
+  "placeholder_environment_loaded": false,
+  "physics_steps": 0,
+  "simulation_time_s": 0.0,
+  "input_point_count": 247103,
+  "voxel_count": 80298,
+  "every_point_retained_in_membership": true,
+  "every_point_inside_assigned_box": true,
+  "point_counts_sum": 247103,
+  "cap_points_retained": 5742,
+  "cap_voxel_count": 1504,
+  "grid_origin_camera_m": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "unobserved_space_filled": false,
+  "robot_connections": 0,
+  "model_load_and_forward_seconds": 0.2071639209989371,
+  "rendered_geom_counts": {
+    "full_scene": 80298,
+    "cap_region": 80298,
+    "voxel_detail": 80298
+  }
+}

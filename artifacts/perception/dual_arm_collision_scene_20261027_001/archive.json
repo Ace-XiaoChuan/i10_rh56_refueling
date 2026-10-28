@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "files": {
+    "README.md": "47bf0c821242a8223935d5d0ea910112b49f61df7de57faffe33a12405dc1a88",
+    "cap_collision_object.json": "f7b77a0b236c6205a961291f94d4ff71b2197dec9cd768fd102e55f2f41ded2b",
+    "environment.bt": "12ddd848bc93133cbc4710b418d12cf8d92a02f05652bd363206a8658f1cc92c",
+    "octomap_scene.json": "7df817c06fce5f15b29f3f05e236559564476d3ef12fadf5e40c64edd84856b3",
+    "placement_config.json": "36a7199d3d27726a347ce34a073a77ceb7591202e8495b55cb0ea1b5d4ab6138",
+    "ros_message_validation.json": "024b3176f46fee05e4d6e87f9249a10e8fd2abb0ad5faa04638c271b96167765",
+    "scene_config.json": "b57d593822932997cf440e947674f3fc4dc31de964efac64679f3a1d96002464",
+    "source_snapshot/config/dual_arm_mount.json": "d8a86f5ea84fe4cac31af04d18243016a2ba59a19869584bd2e2f32b64820e9f",
+    "source_snapshot/src/i10_rh56_moveit_config/dual_arm/kinematics.json": "a9e8b91d749bad0b229fb0db87a57689fe05eb9bd11f49ac1306118e6b635392",
+    "source_snapshot/src/i10_rh56_moveit_config/dual_arm/model.json": "d6fe1e62fec503396fa668175f1a2feb9265dd7175da13850fab5a611f91c61b",
+    "source_snapshot/src/i10_rh56_moveit_config/dual_arm/robot.srdf": "1634279e878848f8e7cd892005465d049cb8c29d22ff438b9f98782ff3955e7b",
+    "source_snapshot/src/i10_rh56_moveit_config/dual_arm/robot.urdf": "218b4cf456afb676d56861c5331f76e7afd7691d51d4ca279894346a47b49d1c",
+    "source_snapshot/tools/place_scene_in_dual_arm.py": "c4d1a4e7d9bd90bb79e6654c27893c184a641e570300f2cd8c285e4f191648e5",
+    "split_display/result.json": "809b9e81fd8b7c754f0206d133b7924470786d8f9d58a2a1854954fc5db9957d",
+    "split_display/scene.xml": "1c6e9a6eaed3234e4de5f4fe6f5ea22bdc4ae8222d601822822326fe100e4f8c",
+    "split_display/surface_cap.obj": "988bf326e6e5811f084b27e14a953219bcee070728610de9ab692f90884035aa",
+    "split_display/surface_environment.obj": "408b9011d2bea1cf6c200bc44c342acac63f1b29d26fd31de3216206e382ec60",
+    "split_display/surface_mixed.obj": "d3132878a0f4837ecf68d182a0713cac28ddb54792b5b477739c4da095483561",
+    "validation.json": "6ef828b0db5e88b7fbb73dcfe5e3438faac2273113c8081c914362d6ad9435f2",
+    "voxel_components.npz": "725cbb2e9f9e54fa6cbc431545f05657d3dcf12fd90e01cbbcf5c89ac77ccbfd"
+  }
+}

@@ -1,10 +1,29 @@
 # i10 + RH56 MoveIt 规划
 
-本包提供完整臂手 URDF/SRDF、KDL 配置、场景和 MTC 无接触路径规划。轨迹导出后可在 MuJoCo 中回放；控制器执行与实时状态桥待接入。
+本包提供完整臂手 URDF/SRDF、KDL 配置、场景和 MTC 无接触路径规划。双臂实测场景和轨迹使用 RViz 查看，单臂轨迹可在 MuJoCo 中回放；控制器执行待接入。[六轴状态桥](../aubo_joint_state_bridge/README.md)提供 RTDE 关节反馈、MoveIt 状态检查与显式选择当前臂起点的入口。
 
 任务参数及诊断设置见[项目说明](../../doc/assembly_contract.md#几何规划与局部实验设置)。以下命令从项目根目录执行。
 
-## 生成、构建与模型检查
+真机采用左臂拍照后让位、右臂旋拧。实测 MTC 当前使用 `dual_arm/robot.urdf` 的双臂与 T 型架，右臂规划，左臂固定为采集记录中的拍照姿态；`config/robot.urdf` 保留为单臂基线。模型选择由请求中的 `robot_model_profile` 和场景摘要绑定，两个世界系不能混用。已有联机状态验证来自左臂，不能作为右臂实时起点；分工与数据传递见[项目说明](../../doc/assembly_contract.md#双臂分工与坐标传递)。
+
+实测 2 mm 环境 OctoMap 与独立盖体 `fuel_cap` 已接入 MTC。双臂场景从采集时左臂姿态、相机外参及两基座安装链恢复地图位置，不再用单臂临时盖体对齐。请求准备时传入双臂场景的 `--observed-scene`，会自动选择模型并固定左臂；同一加载函数供规划、FCL 对照与 RViz 使用。方向 0 完整接近通过，方向 180 因拇指中节与环境相交被拒绝。命令、结果与源码说明见[实测场景接入 MTC](../../doc/point_cloud_voxelization.md#实测场景接入-mtc)。
+
+## 双臂和 T 型架查看
+
+安装参数与竖直方向来源见[项目说明](../../doc/assembly_contract.md#双臂与-t-型架安装参数)。生成器复用现有右臂网格、六轴关节和末端装配，左臂加 `left_` 前缀；两臂安装在两个相交圆柱构成的 T 型架上。双臂模型的世界系原点在支架正下方地面，+Z 竖直向上，与原单臂仿真世界系分开使用。
+
+```bash
+python3 tools/build_dual_arm_model.py
+python3 tools/build_dual_arm_model.py --check
+.venv/bin/python tools/view_dual_arm.py --render
+
+source /opt/ros/humble/setup.bash
+python3 tools/view_dual_arm.py --view
+```
+
+静态预览保存到 `dual_arm/preview.png`。该安装查看器提供两臂关节滑块，采用独立的历史显示姿态，不作为 MTC 场景状态；MTC 左臂使用本次点云采集前的姿态。右基座名为 `base_link`，左基座为 `left_base_link`。`dual_arm/robot.srdf` 保留 `arm`、`hand`，新增 `right_arm`、`left_arm`、`dual_arms`；MTC 只驱动右臂的 `arm` 组，左臂和架子参与全链碰撞。相机外形、让位姿态和真机执行仍待接入。
+
+## 单臂规划模型生成、构建与检查
 
 ```bash
 .venv/bin/python tools/preview_cap_ik.py

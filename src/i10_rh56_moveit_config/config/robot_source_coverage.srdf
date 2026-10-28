@@ -15,8 +15,8 @@
   <group_state name="candidate_pregrasp" group="hand">
     <joint name="pinky_proximal_joint" value="1.53102336825141" />
     <joint name="ring_proximal_joint" value="1.53102336825141" />
-    <joint name="middle_proximal_joint" value="0.3748858447488584" />
-    <joint name="index_proximal_joint" value="0.3537201181842599" />
+    <joint name="middle_proximal_joint" value="0.5858447488584474" />
+    <joint name="index_proximal_joint" value="0.5686475960247112" />
     <joint name="thumb_proximal_pitch_joint" value="0.1388721804511278" />
     <joint name="thumb_proximal_yaw_joint" value="1.308" />
   </group_state>

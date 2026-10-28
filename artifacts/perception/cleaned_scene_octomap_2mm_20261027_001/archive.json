@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "files": {
+    "README.md": "f344b40f4612c72938fa9ddecdc2ccdc4bb3ae695181e96fb9c11a2a3705c51d",
+    "octomap_scene.json": "f1883d08e02ae40a13020a12d5d7caf2b29476d8d1c1ae68d5cf0699b650e7c2",
+    "octomap_validation.json": "2dee2a506be0e1caba2af47e46f8a67647e6b48b2242b550e391a11e8c5c8406",
+    "placement_config.json": "3ed46df7be0a97f6c112ebd3b4837c84d0e9873ad84cc7c6142a493de3a1b6b0",
+    "placement_preview.png": "a88858c3752a25ea23fdf18703c890aae2db5601f14faa52e1489461452f17d1",
+    "placement_preview.xml": "d0e9e3cdd0d46bc452d4ef765ca26fb9f52564f593b3fa1210052adbb5b8c9d1",
+    "preview_validation.json": "b67e6b091c39c631bb53d85447260050b31c9b08db11f0a2ccece3f2a697f3cf",
+    "scene.bt": "5e27d4519ceb3225c2f1ef2dab847a33b8ecbce19d83cdb79691db95e42ac785",
+    "scene_config.json": "d83452377ade5cb90690887d90b5f71082b2b1ea4ac7c61d16e285ade9e12627",
+    "source_snapshot/config/active_point_cloud_scene.json": "628187968225416999aab8e9f263d6e8c786b51f7d84f4337f92670311fa3960",
+    "source_snapshot/config/point_cloud_map_placement.json": "83eea24c3d8477abb5307bec12f6e19351e6b72f183873839903ab3b7cf16ff2",
+    "source_snapshot/doc/assembly_contract.md": "dfd17992ca0a3e810b683639c80e4af0500635b1e07ba94ce18bf0c8cd406e06",
+    "source_snapshot/doc/point_cloud_voxelization.md": "eb6e9cd437bb51883754d7e12f18008f16c187d373801c64980a93a8ed911946",
+    "source_snapshot/src/fuel_cap_task/voxel_octomap.py": "beae2d78467cb4a84c4d879cef09c06593cbd93ee3c9fd7b6a4025f2758e5ef7",
+    "source_snapshot/tools/export_voxel_octomap.py": "e0eb0d4459831105f7b78804bedfb5fd8f4b829cf98a4f1475fd38cef6f899ba",
+    "source_snapshot/tools/tests/test_voxel_octomap.py": "8339dc3d12a26e78ea4b5bd4d98135bf68e8bf41c494c3a84bac983b79b97415",
+    "source_snapshot/tools/view_voxel_map_placement.py": "72d455cdea0f1b90a2e06860861f137c1a0f2d26f64ac527b5cddcce5f96bb81",
+    "source_snapshot/tools/voxel_octomap_export.cpp": "eac17deca65c20e212ade0c304dfe87a558e65a433320d7c4e0dda2f3f4f47c8",
+    "validation.json": "fceffa5714f7a3f0ba31bab577d504fe3f230a3b2229497d156a2a80e6c733d7",
+    "validation_summary.json": "216175c36ffec2b2612956fb919d1b05e5c2789c7b341f6bf377905b57042120",
+    "voxel_labels.npz": "8bb07d07570052238a88a4ebdfcd4b7a7989d910b3ec122ce88e612fd14a010c"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "source": "mujoco_rendered_rgbd",
+  "timestamp_s": 0.0,
+  "timestamp_clock": "simulation",
+  "frame_id": "virtual_camera_optical",
+  "image_size_wh": [
+    1280,
+    960
+  ],
+  "camera_matrix": [
+    [
+      1158.8225099390856,
+      0,
+      639.5
+    ],
+    [
+      0,
+      1158.8225099390856,
+      479.5
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "world_from_optical": [
+    [
+      1.0,
+      -2.0942694414863748e-17,
+      5.753957678794917e-17,
+      0.0
+    ],
+    [
+      -6.123233905617736e-17,
+      -0.34202015414019754,
+      0.9396926168497417,
+      0.09427664428949356
+    ],
+    [
+      -3.964116798554564e-25,
+      -0.9396926168497417,
+      -0.34202015414019754,
+      0.9278181195259094
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "depth_unit": "m",
+  "depth_convention": "optical_z",
+  "mujoco_version": "3.13.0",
+  "camera_configuration_source": "assembly_contract/N2",
+  "capture_settings": {
+    "lookat_world_m": [
+      0.0,
+      0.94,
+      0.62
+    ],
+    "distance_m": 0.9,
+    "azimuth_deg": 90.0,
+    "elevation_deg": -20.0,
+    "offscreen_samples": 0,
+    "primitive_slices": 128,
+    "primitive_stacks": 16
+  },
+  "capture_code_sha256": "69c727ad75a415b9a5ca842704537eb7b42b512b236daa520b4caaaf115df706",
+  "scene_xml_sha256": "b376bb512b2d176dd4159d78228e70546b4681cc90e6757e081ac9d4a54d30d4",
+  "visible_cap_pixels_evaluation_only": 6414,
+  "files": {
+    "evaluation_only.npz": "d73a850b28c31804f933adb338fc82172a0ec72fa904a96ec09c867603d63c2c",
+    "rgb.png": "1d5388201a598ccd649143bbe5eee5c28366daaa8f059e9f485b41a07b4b962c",
+    "depth.npz": "aaae53c3b506cb5cd99bad96bd470425f4adf6783bc3f7c510dad8b6407d61a0"
+  },
+  "limitations": "仿真外观与虚拟标定；无物理执行、真实相机或不可见补全"
+}

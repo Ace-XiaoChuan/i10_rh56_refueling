@@ -1,0 +1,263 @@
+{
+  "schema_version": 1,
+  "mode": "cropped_cap_geometry",
+  "frame_id": "camera",
+  "length_unit": "m",
+  "input_path": "/home/ace/i10_rh56_refueling_ws/doc/fuel_cap_01_cap_region_ascii.pcd",
+  "input_sha256": "534fdc585163b7ceaf3399c6291a1ca4bee39f4b972dcc83618a2c0a8a1c92eb",
+  "input_length_unit": "mm",
+  "capture_timestamp_s": null,
+  "pcd_exports_length_unit": "mm",
+  "source": "manual_cloud_crop_then_geometry_fit",
+  "geometric_checks_passed": true,
+  "motion_target_valid": false,
+  "cap_estimate": null,
+  "boundary_center_m": [
+    0.08360538208022082,
+    0.010139417024825858,
+    0.6581158421063099
+  ],
+  "boundary_radius_m": 0.03599873837140145,
+  "visible_bridge_surface_reference_m": [
+    0.08334738060774882,
+    0.011398516992420707,
+    0.6360223225068738
+  ],
+  "cap_grip_center_model_based_m": [
+    0.08344647351709987,
+    0.0109149233223639,
+    0.6445079761503828
+  ],
+  "visible_surface_to_grip_center_offset_m_in_cap": [
+    0.0,
+    0.0,
+    -0.0085
+  ],
+  "model_prior": {
+    "length_m": 0.060000000000000005,
+    "base_width_m": 0.019000000000000013,
+    "top_width_m": 0.017000000000000015,
+    "height_m": 0.017,
+    "top_width_reduction_m": 0.002,
+    "top_surface_to_reference_m": 0.0085,
+    "reference_frame": "cap_grip_center",
+    "reference_definition": "existing_height_midpoint",
+    "source_kind": "provisional_urdf_and_user_width_relation"
+  },
+  "model_prior_sources": {
+    "urdf_path": "/home/ace/i10_rh56_refueling_ws/assets/objects/fuel_cap/urdf/fuel_cap.urdf",
+    "urdf_sha256": "0dc5ccac3d543b6fd4107ed5ea1472d8426cd7163134aa4e2319ac993efdef3c",
+    "config_sha256": "1cb5f008b7ae6976e18af829fff5229419b414d8be80c9c8d6d806ebaf2f04da"
+  },
+  "outward_axis_camera": [
+    -0.011657989335418142,
+    0.05689337294785979,
+    -0.9983121933539985
+  ],
+  "bridge_axis_camera_undirected": [
+    0.5376015552202756,
+    0.842166421214169,
+    0.04171674488811162
+  ],
+  "orientation_candidates": [
+    {
+      "rotation_columns_xyz": [
+        [
+          0.5376015552202756,
+          0.8431184134564944,
+          -0.011657989335418142
+        ],
+        [
+          0.842166421214169,
+          -0.5362078543754601,
+          0.05689337294785979
+        ],
+        [
+          0.04171674488811162,
+          -0.040403932935658624,
+          -0.9983121933539985
+        ]
+      ],
+      "ambiguity_yaw_deg": 0
+    },
+    {
+      "rotation_columns_xyz": [
+        [
+          -0.5376015552202756,
+          -0.8431184134564944,
+          -0.011657989335418142
+        ],
+        [
+          -0.842166421214169,
+          0.5362078543754601,
+          0.05689337294785979
+        ],
+        [
+          -0.04171674488811162,
+          0.040403932935658624,
+          -0.9983121933539985
+        ]
+      ],
+      "ambiguity_yaw_deg": 180
+    }
+  ],
+  "pose_candidates_camera_model_based": [
+    {
+      "frame_id": "camera",
+      "position_m": [
+        0.08344647351709987,
+        0.0109149233223639,
+        0.6445079761503828
+      ],
+      "orientation_xyzw": [
+        0.8763734368050149,
+        0.48075533896106204,
+        0.008574756573601305,
+        -0.027755663795058113
+      ],
+      "ambiguity_yaw_deg": 0
+    },
+    {
+      "frame_id": "camera",
+      "position_m": [
+        0.08344647351709987,
+        0.0109149233223639,
+        0.6445079761503828
+      ],
+      "orientation_xyzw": [
+        -0.48075533896106204,
+        0.8763734368050149,
+        0.027755663795058113,
+        0.008574756573601305
+      ],
+      "ambiguity_yaw_deg": 180
+    }
+  ],
+  "diagnostics": {
+    "point_count": 5378,
+    "face_count": 3995,
+    "bridge_count": 1383,
+    "bridge_core_count": 1244,
+    "boundary_count": 65,
+    "height_separation_m": 0.017905999588189052,
+    "height_quantile_gap_m": 0.014196198781106754,
+    "boundary_plane_rms_m": 0.0007924659586396166,
+    "boundary_circle_rms_m": 0.000620417190014457,
+    "boundary_angular_coverage_deg": 345.6647318698205,
+    "bridge_eigenvalue_ratio": 14.579830780274488,
+    "bridge_surface_rms_m": 0.000365427466853235,
+    "surface_height_from_boundary_m": 0.02213087223267213
+  },
+  "subsampling": {
+    "seed": 25,
+    "retained_fraction": 0.8,
+    "samples": [
+      {
+        "valid": true,
+        "boundary_center_delta_m": 5.9201657704101526e-05,
+        "surface_reference_delta_m": 7.313274146553471e-05,
+        "normal_angle_deg": 0.06786555533299723,
+        "bridge_axis_angle_deg": 0.11292080356467599
+      },
+      {
+        "valid": true,
+        "boundary_center_delta_m": 8.894774925376171e-05,
+        "surface_reference_delta_m": 0.00015432630393976226,
+        "normal_angle_deg": 0.19586575755377977,
+        "bridge_axis_angle_deg": 0.17822831177308965
+      },
+      {
+        "valid": true,
+        "boundary_center_delta_m": 8.645873475328375e-05,
+        "surface_reference_delta_m": 0.00012545534866452708,
+        "normal_angle_deg": 0.10562967250612731,
+        "bridge_axis_angle_deg": 0.30730914919028174
+      },
+      {
+        "valid": true,
+        "boundary_center_delta_m": 6.994557132456594e-05,
+        "surface_reference_delta_m": 0.0001419240807737352,
+        "normal_angle_deg": 0.21815499832545707,
+        "bridge_axis_angle_deg": 0.1456419126467022
+      },
+      {
+        "valid": true,
+        "boundary_center_delta_m": 9.025778828829263e-05,
+        "surface_reference_delta_m": 0.00011486344672932046,
+        "normal_angle_deg": 0.09926931966129306,
+        "bridge_axis_angle_deg": 0.3229100594747282
+      },
+      {
+        "valid": true,
+        "boundary_center_delta_m": 5.8012517725303905e-05,
+        "surface_reference_delta_m": 6.505866073869904e-05,
+        "normal_angle_deg": 0.11598594140674003,
+        "bridge_axis_angle_deg": 0.09390462945489668
+      },
+      {
+        "valid": true,
+        "boundary_center_delta_m": 7.571870140891064e-05,
+        "surface_reference_delta_m": 0.00013015563145117964,
+        "normal_angle_deg": 0.1407765018940404,
+        "bridge_axis_angle_deg": 0.6136503550065312
+      },
+      {
+        "valid": true,
+        "boundary_center_delta_m": 6.100584411245842e-05,
+        "surface_reference_delta_m": 6.876247153922816e-05,
+        "normal_angle_deg": 0.11201893384161288,
+        "bridge_axis_angle_deg": 0.18048490793843253
+      },
+      {
+        "valid": true,
+        "boundary_center_delta_m": 8.438040569303383e-05,
+        "surface_reference_delta_m": 0.00013191914196368845,
+        "normal_angle_deg": 0.12592245158996931,
+        "bridge_axis_angle_deg": 0.19454167353809462
+      },
+      {
+        "valid": true,
+        "boundary_center_delta_m": 4.3948865310876826e-05,
+        "surface_reference_delta_m": 2.9944913682068325e-05,
+        "normal_angle_deg": 0.020674891203480723,
+        "bridge_axis_angle_deg": 0.24837710593547263
+      },
+      {
+        "valid": true,
+        "boundary_center_delta_m": 6.015645104704775e-05,
+        "surface_reference_delta_m": 7.093124146365646e-05,
+        "normal_angle_deg": 0.17438640603566277,
+        "bridge_axis_angle_deg": 0.2784037185658749
+      },
+      {
+        "valid": true,
+        "boundary_center_delta_m": 8.945402323999757e-05,
+        "surface_reference_delta_m": 0.00017986281820554366,
+        "normal_angle_deg": 0.2642327640619606,
+        "bridge_axis_angle_deg": 0.27129277467883833
+      }
+    ],
+    "interpretation": "仅为随机移除点后的敏感性，不是相对实物真值的误差"
+  },
+  "assumptions": [
+    "已人工裁出整盖且外侧朝向相机",
+    "观测外轮廓近圆且覆盖充分",
+    "凸起握梁与盖面存在明确高度分层",
+    "点云原点是观察相机原点",
+    "用占位 URDF 的顶面到中心距离换算实际观测的参考点"
+  ],
+  "unresolved": [
+    "外轮廓受人工裁剪影响，其圆心与法向仍需实物核对",
+    "握梁参考点使用占位模型高度，实物吻合程度待核对",
+    "握梁长轴有180度歧义",
+    "缺少本次采集的机器人姿态与采集时间，尚不能生成有效基座系运动目标"
+  ],
+  "implementation_sha256": {
+    "cap_geometry.py": "140c510a878a3fedf0188f0d4537bc7c2d4458c4e6115a8df8d1d43b9e917670",
+    "estimate_cap_geometry.py": "b370000ded42f3a47051f07de21c89ac61b0793f919dc6ea0657798acebbd657"
+  },
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.2"
+  }
+}

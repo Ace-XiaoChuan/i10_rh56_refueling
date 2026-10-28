@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "mode": "manual_grasp_candidate",
+  "cap_from_hand": {
+    "position_m": [
+      -0.02,
+      0.075,
+      0.16
+    ],
+    "orientation_xyzw": [
+      0.6408563820557885,
+      0.6408563820557885,
+      -0.2988362387301199,
+      0.2988362387301199
+    ]
+  },
+  "pregrasp_channels": [
+    0,
+    0,
+    650,
+    650,
+    900,
+    0
+  ],
+  "grasp_channels": [
+    0,
+    0,
+    440,
+    390,
+    660,
+    0
+  ],
+  "selection_source": "user_screenshot_2026-09-30_Y75",
+  "source_scene": "/home/ace/i10_rh56_refueling_ws/assets/scenes/i10_rh56_fuel_cap_preview.xml",
+  "source_scene_sha256": "b376bb512b2d176dd4159d78228e70546b4681cc90e6757e081ac9d4a54d30d4",
+  "mujoco_version": "3.13.0",
+  "selection_status": "model_frame_revalidated_candidate",
+  "physical_grasp_verified": false,
+  "adapted_from": {
+    "candidate_path": "artifacts/manual_grasp/user_selected_20260930.json",
+    "candidate_sha256": "f0ad6a80fbb8fe666f93675818b0656281466a5abd3ce834c22227a069ef6610",
+    "source_scene_sha256": "5154349867b0bc2dae0039c68fe4eb4aafa3d75fe2321a22baa093c6b98d12db",
+    "reason": "统一模型参考轴为 X 沿握梁、Z 朝外；抓姿数值及几何保持一致。"
+  },
+  "contact_trial": {
+    "final_qpos": [
+      1.3080290581607403,
+      0.21406935078023423,
+      0.43382040805401156,
+      0.2908263272203194,
+      0.6711504948562227,
+      0.6982842827147231,
+      0.6946525242621244,
+      0.6244817782285575,
+      1.5310229784973792,
+      1.5599994985672436,
+      1.53102271555098,
+      1.5599991627938117
+    ],
+    "source_candidate": "artifacts/manual_grasp/user_selected_20260930.json",
+    "note": "仅继承原记录的闭合关节位置供几何显示，没有声明重新完成接触实验。"
+  },
+  "pregrasp_update": {
+    "source": "user_requested",
+    "received_date": "2026-10-27",
+    "previous_pregrasp_channels": [
+      0,
+      0,
+      800,
+      800,
+      900,
+      0
+    ],
+    "previous_candidate_sha256": "e8c2bac9d88bc375b751a004cd9134288412449c76f8f0880747bd14f790c854",
+    "scope": "pregrasp_channels_only; hand-root pose and grasp_channels unchanged"
+  }
+}

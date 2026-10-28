@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "arm_joints": [
+    "shoulder_joint",
+    "upperArm_joint",
+    "foreArm_joint",
+    "wrist1_joint",
+    "wrist2_joint",
+    "wrist3_joint"
+  ],
+  "initial_joint_positions": {
+    "shoulder_joint": 0.0,
+    "upperArm_joint": -0.5,
+    "foreArm_joint": 1.2,
+    "wrist1_joint": 0.0,
+    "wrist2_joint": 0.0,
+    "wrist3_joint": 0.0,
+    "thumb_proximal_yaw_joint": 1.308,
+    "thumb_proximal_pitch_joint": 0.1388721804511278,
+    "thumb_intermediate_joint": 0.3347,
+    "thumb_distal_joint": 0.24165563909774435,
+    "index_proximal_joint": 0.5686475960247112,
+    "index_intermediate_joint": 0.5851224999999999,
+    "middle_proximal_joint": 0.5858447488584474,
+    "middle_intermediate_joint": 0.5043299999999998,
+    "ring_proximal_joint": 1.53102336825141,
+    "ring_intermediate_joint": 1.56,
+    "pinky_proximal_joint": 1.53102336825141,
+    "pinky_intermediate_joint": 1.56,
+    "left_shoulder_joint": 1.08096597602,
+    "left_upperArm_joint": -0.614419453372,
+    "left_foreArm_joint": 2.12577451765,
+    "left_wrist1_joint": -1.19925369212,
+    "left_wrist2_joint": -0.953916668874,
+    "left_wrist3_joint": -1.18112133043
+  },
+  "target_frame_id": "world",
+  "target_link": "base",
+  "pregrasp_position": [
+    -0.11522291784829285,
+    -0.9374344410717889,
+    0.8878907337092222
+  ],
+  "hand_position": [
+    -0.18047151725377522,
+    -1.0114547029941705,
+    0.9041271465077717
+  ],
+  "hand_orientation_xyzw": [
+    -0.3720596171083784,
+    0.8290243768605735,
+    -0.17873423575610564,
+    -0.37728543154591254
+  ],
+  "outward_axis_world": [
+    0.6524859940548238,
+    0.7402026192238166,
+    -0.1623641279854951
+  ],
+  "approach_distance_m": 0.1,
+  "pregrasp_channels": [
+    0,
+    0,
+    650,
+    650,
+    900,
+    0
+  ],
+  "grasp_channels": [
+    0,
+    0,
+    440,
+    390,
+    660,
+    0
+  ],
+  "cap_estimate": {
+    "source": "paired_capture_and_dual_arm_installation",
+    "world_from_cap": [
+      [
+        -0.7517606309950562,
+        0.09548812097953985,
+        0.6524859940548238,
+        -0.30706609799591356
+      ],
+      [
+        0.6592514285716954,
+        0.13224082735819725,
+        0.7402026192238166,
+        -1.126620155550412
+      ],
+      [
+        -0.015604730439629552,
+        0.986607511795555,
+        -0.1623641279854951,
+        0.8557977489919918
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "valid_for_hardware": false
+  },
+  "candidate_provenance": {
+    "candidate_path": "/home/ace/i10_rh56_refueling_ws/config/fixed_grasp.json",
+    "candidate_sha256": "60d98d006c9e3484e2cfaaacb969ab652318167dbc7a1a6bdb05adf0124c43e8",
+    "schema_version": 1,
+    "mode": "manual_grasp_candidate",
+    "recorded_source_scene": "/home/ace/i10_rh56_refueling_ws/assets/scenes/i10_rh56_fuel_cap_preview.xml",
+    "source_scene_path": "/home/ace/i10_rh56_refueling_ws/assets/scenes/i10_rh56_fuel_cap_preview.xml",
+    "source_scene_sha256": "b376bb512b2d176dd4159d78228e70546b4681cc90e6757e081ac9d4a54d30d4",
+    "mujoco_version": "3.13.0",
+    "selection_source": "user_screenshot_2026-09-30_Y75",
+    "selection_status": "model_frame_revalidated_candidate"
+  },
+  "source_hashes": {
+    "assets/scenes/i10_rh56_fuel_cap_preview.xml": "b376bb512b2d176dd4159d78228e70546b4681cc90e6757e081ac9d4a54d30d4",
+    "config/fixed_grasp.json": "60d98d006c9e3484e2cfaaacb969ab652318167dbc7a1a6bdb05adf0124c43e8",
+    "src/i10_rh56_moveit_config/config/generated_hashes.json": "7dbcbb11f139f811d79c3f71347547e7cb68e98745e96919bc0775482a1672c0",
+    "src/i10_rh56_moveit_config/config/provenance.json": "8cb91efc9f642e805894966aa60d28202dd4261f3c07a80d19a08b98f157643f"
+  },
+  "candidate_path": "config/fixed_grasp.json",
+  "observed_scene": {
+    "manifest_path": "/home/ace/i10_rh56_refueling_ws/artifacts/perception/dual_arm_collision_scene_20261027_001/octomap_scene.json",
+    "manifest_sha256": "7df817c06fce5f15b29f3f05e236559564476d3ef12fadf5e40c64edd84856b3",
+    "replace_source_bodies": [
+      "fuel_tank_body",
+      "cap_body",
+      "fuel_door"
+    ],
+    "robot_model_binding": {
+      "profile": "dual_arm",
+      "files_sha256": {
+        "robot.urdf": "218b4cf456afb676d56861c5331f76e7afd7691d51d4ca279894346a47b49d1c",
+        "robot.srdf": "1634279e878848f8e7cd892005465d049cb8c29d22ff438b9f98782ff3955e7b",
+        "kinematics.json": "a9e8b91d749bad0b229fb0db87a57689fe05eb9bd11f49ac1306118e6b635392",
+        "model.json": "d6fe1e62fec503396fa668175f1a2feb9265dd7175da13850fab5a611f91c61b"
+      }
+    }
+  },
+  "observed_candidate_id": "direction_000",
+  "robot_model_profile": "single",
+  "fixed_left_joint_positions": {
+    "left_shoulder_joint": 1.08096597602,
+    "left_upperArm_joint": -0.614419453372,
+    "left_foreArm_joint": 2.12577451765,
+    "left_wrist1_joint": -1.19925369212,
+    "left_wrist2_joint": -0.953916668874,
+    "left_wrist3_joint": -1.18112133043
+  },
+  "observed_candidates_path": "/home/ace/i10_rh56_refueling_ws/artifacts/perception/cap_grasp_candidates_20261027_650_001/grasp_candidates.json",
+  "observed_candidates_sha256": "ed0ccf56fed7f5ef728e29ddc856d29c4baa259105d9a94107e2f2471ae8c1c0",
+  "dense_joint_step_rad": 0.002,
+  "dense_shape_motion_m": 0.001
+}

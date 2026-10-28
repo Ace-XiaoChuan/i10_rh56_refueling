@@ -1,0 +1,48 @@
+{
+  "robot_ip": "192.168.1.32",
+  "scope": "RTDE→ROS JointState静止状态只读联机验证，隔离domain79及诊断话题",
+  "summary": {
+    "frame_count": 617,
+    "bridge_returncode": 0,
+    "received_hz": 52.231318474220885,
+    "all_names_match": true,
+    "all_positions_six_finite": true,
+    "all_velocities_empty_or_six_finite": true,
+    "max_host_age_s": 0.027623477,
+    "max_receive_gap_s": 0.028321659,
+    "first_q_rad": [
+      1.0903721377356337,
+      -0.710088017535632,
+      2.125678731889977,
+      -1.1991915903641268,
+      -0.953951769864608,
+      -1.181099729824232
+    ],
+    "last_q_rad": [
+      1.0903721377356337,
+      -0.710088017535632,
+      2.125678731889977,
+      -1.1991915903641268,
+      -0.953951769864608,
+      -1.181099729824232
+    ],
+    "first_frame_max_abs_difference_from_rpc_rad": 4.366285111245816e-12,
+    "static_link_check_passed": true
+  },
+  "not_yet_checked": [
+    "MoveIt CurrentStateMonitor联机读取",
+    "示教移动时状态跟随及六轴物理对应",
+    "断流失效处理"
+  ],
+  "maximum_joint_change_from_earlier_cloud_capture_deg": 5.481404958652628,
+  "robot_motion_commands_sent": false,
+  "process_exited": true,
+  "files_sha256": {
+    "bridge.log": "e7155711fed4782811555aac6a31eb43fe9f982c53afb3ccfc9ebc808dc5852a",
+    "result.json": "140a45edc3a2e42fcf2ed57134e04dfe422f9ae04fba20bf73b95c200c043ff3",
+    "source_snapshot/joint_sample.hpp": "aa7040a1f73cca4222a03964f95d3e6dee379278e038cabe302ec31703932dc0",
+    "source_snapshot/CMakeLists.txt": "ab92080ce40975bbb534110ba9141233326753c0246b35ee2b66ea7b73d770e1",
+    "source_snapshot/check_live_bridge.py": "cad10bc7459785d1c65cd2de864aab551e08ad3eba7fbf834dc2b6d95315294b",
+    "source_snapshot/joint_state_bridge.cpp": "f7a321c6d49318c82fed7e54c00a38a33167a6239d7b8780eed8c964fa0f1cf4"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "arm_joints": [
+    "shoulder_joint",
+    "upperArm_joint",
+    "foreArm_joint",
+    "wrist1_joint",
+    "wrist2_joint",
+    "wrist3_joint"
+  ],
+  "initial_joint_positions": {
+    "shoulder_joint": 0.0,
+    "upperArm_joint": -0.5,
+    "foreArm_joint": 1.2,
+    "wrist1_joint": 0.0,
+    "wrist2_joint": 0.0,
+    "wrist3_joint": 0.0,
+    "thumb_proximal_yaw_joint": 1.308,
+    "thumb_proximal_pitch_joint": 0.1388721804511278,
+    "thumb_intermediate_joint": 0.3347,
+    "thumb_distal_joint": 0.24165563909774435,
+    "index_proximal_joint": 0.5686475960247112,
+    "index_intermediate_joint": 0.5851224999999999,
+    "middle_proximal_joint": 0.5858447488584474,
+    "middle_intermediate_joint": 0.5043299999999998,
+    "ring_proximal_joint": 1.53102336825141,
+    "ring_intermediate_joint": 1.56,
+    "pinky_proximal_joint": 1.53102336825141,
+    "pinky_intermediate_joint": 1.56
+  },
+  "target_frame_id": "world",
+  "target_link": "base",
+  "pregrasp_position": [
+    -0.07499999999999996,
+    0.747,
+    0.58
+  ],
+  "hand_position": [
+    -0.07499999999999996,
+    0.847,
+    0.58
+  ],
+  "hand_orientation_xyzw": [
+    0.2988362387301199,
+    0.6408563820557885,
+    0.6408563820557885,
+    0.29883623873011983
+  ],
+  "outward_axis_world": [
+    3.247366145777039e-17,
+    -0.9999999999999999,
+    5.754193314774691e-18
+  ],
+  "approach_distance_m": 0.1,
+  "pregrasp_channels": [
+    0,
+    0,
+    650,
+    650,
+    900,
+    0
+  ],
+  "grasp_channels": [
+    0,
+    0,
+    440,
+    390,
+    660,
+    0
+  ],
+  "cap_estimate": {
+    "source": "measured_geometry_with_simulation_placement",
+    "world_from_cap": [
+      [
+        3.805906124759131e-17,
+        -1.0,
+        3.247366145777039e-17,
+        2.7755575615628914e-17
+      ],
+      [
+        8.19605211839452e-18,
+        -2.42025808048032e-17,
+        -0.9999999999999999,
+        1.0070000000000001
+      ],
+      [
+        1.0,
+        -1.3609181798662855e-17,
+        5.754193314774691e-18,
+        0.6
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "valid_for_hardware": false
+  },
+  "candidate_provenance": {
+    "candidate_path": "/home/ace/i10_rh56_refueling_ws/config/fixed_grasp.json",
+    "candidate_sha256": "60d98d006c9e3484e2cfaaacb969ab652318167dbc7a1a6bdb05adf0124c43e8",
+    "schema_version": 1,
+    "mode": "manual_grasp_candidate",
+    "recorded_source_scene": "/home/ace/i10_rh56_refueling_ws/assets/scenes/i10_rh56_fuel_cap_preview.xml",
+    "source_scene_path": "/home/ace/i10_rh56_refueling_ws/assets/scenes/i10_rh56_fuel_cap_preview.xml",
+    "source_scene_sha256": "b376bb512b2d176dd4159d78228e70546b4681cc90e6757e081ac9d4a54d30d4",
+    "mujoco_version": "3.13.0",
+    "selection_source": "user_screenshot_2026-09-30_Y75",
+    "selection_status": "model_frame_revalidated_candidate"
+  },
+  "source_hashes": {
+    "assets/scenes/i10_rh56_fuel_cap_preview.xml": "b376bb512b2d176dd4159d78228e70546b4681cc90e6757e081ac9d4a54d30d4",
+    "config/fixed_grasp.json": "60d98d006c9e3484e2cfaaacb969ab652318167dbc7a1a6bdb05adf0124c43e8",
+    "src/i10_rh56_moveit_config/config/generated_hashes.json": "7dbcbb11f139f811d79c3f71347547e7cb68e98745e96919bc0775482a1672c0",
+    "src/i10_rh56_moveit_config/config/provenance.json": "8cb91efc9f642e805894966aa60d28202dd4261f3c07a80d19a08b98f157643f"
+  },
+  "candidate_path": "config/fixed_grasp.json",
+  "observed_scene": {
+    "manifest_path": "/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_split_2mm_20261027_001/octomap_scene.json",
+    "manifest_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "replace_source_bodies": [
+      "fuel_tank_body",
+      "cap_body",
+      "fuel_door"
+    ]
+  },
+  "observed_candidate_id": "direction_000",
+  "observed_candidates_path": "/home/ace/i10_rh56_refueling_ws/artifacts/perception/cap_grasp_candidates_20261027_650_001/grasp_candidates.json",
+  "observed_candidates_sha256": "ed0ccf56fed7f5ef728e29ddc856d29c4baa259105d9a94107e2f2471ae8c1c0",
+  "dense_joint_step_rad": 0.002,
+  "dense_shape_motion_m": 0.001
+}

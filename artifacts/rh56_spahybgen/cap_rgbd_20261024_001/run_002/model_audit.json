@@ -1,0 +1,12 @@
+{
+  "reference_poses": 11,
+  "links": 13,
+  "position_max_error_m": 1.4192786196094008e-08,
+  "rotation_max_element_error": 1.6750465936521408e-07,
+  "contact_point_max_error_m": 2.57405288930218e-08,
+  "contact_normal_max_element_error": 2.1756630430580515e-07,
+  "gradient_max_error": 9.942054748535156e-05,
+  "gradient_all_six_drivers_nonzero": true,
+  "contact_regions": 15,
+  "sampled_contact_points": 75
+}

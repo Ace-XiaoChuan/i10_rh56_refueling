@@ -1,0 +1,12 @@
+{
+  "files_sha256": {
+    "README.md": "2157f728d6ed7424fefcbe1ccf49f8237a0cc37630c83494f396cfe9b0c70174",
+    "build.log": "c3634a97924133eb9057a403b14224dda1a42a4baf92ecc71e6ac3115993ade9",
+    "source_snapshot/doc/assembly_contract.md": "737d2d6fd8cb5450b49adbf33ec74223796b9241d21e8f8f76b7556eb4142026",
+    "source_snapshot/doc/point_cloud_voxelization.md": "efc2e3b378d245f5e9ca83cf578bedae4c79b431830f58bbc027940adc8d3047",
+    "source_snapshot/src/i10_rh56_moveit_config/config/observed_dual_arm.rviz": "4fc90b94ebf929d01e5f52fa2c305629fdbc99c1b9d3c43c802e4dfd7a411a0d",
+    "source_snapshot/src/i10_rh56_moveit_config/config/observed_scene.rviz": "f93905742c58b947086cf1d26130b49005e5855574df2e4bb9b01c1c180f0d85",
+    "source_snapshot/src/i10_rh56_moveit_config/src/audit_observed_scene.cpp": "d8d4e3bce5b0bf71e3ae128e1ce6d79f3a096362dedcd2fbc28e86acd190444b",
+    "validation.json": "c4c0213ca6d6dea07d25b29bb8a55770c9e76de3f06e98be0237acca58430c2b"
+  }
+}

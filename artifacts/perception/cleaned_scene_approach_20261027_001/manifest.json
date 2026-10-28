@@ -1,0 +1,17 @@
+{
+  "created_utc": "2026-10-26T17:58:58.947061+00:00",
+  "files_sha256": {
+    "README.md": "bdeca9d0af5e97770ed596785f8706f53b52070df72d8a96986654de79a3988a",
+    "hand_000.ply": "d5c7ddb3090ca40ffd4f0f60d0ace075f1c291ee2c6a35d9755d6cc072c456bb",
+    "hand_180.ply": "4259ae8be6b7983ac1af7a977153b234f6190e1feb6cc2fe9c28e79f99abca86",
+    "index.html": "7d942270a8e10c9519c603b4ddbdaa7c30e2f563756174ca53525d733a0f9932",
+    "result.json": "0208a4085f1565137df8929fd62bbe913ffd9481d2f585d76413f360a7e3e7c1",
+    "scene_cleaned.pcd": "8daad2be6a6bca8d035c86abc87bcdaf80e66b51c64e177ed876a77d9d216c63",
+    "source_snapshot/config/active_point_cloud_scene.json": "0ad6d4c42044dc248db84778448c2535ae00f483e3d6ac61f5e6c462bd0634ea",
+    "source_snapshot/config/fixed_grasp.json": "60d98d006c9e3484e2cfaaacb969ab652318167dbc7a1a6bdb05adf0124c43e8",
+    "source_snapshot/src/fuel_cap_task/pcd_point_cloud.py": "64394ebf65b7f25115ea083ebd7c0c7c770bb208cef9e11d1e6865e247564175",
+    "source_snapshot/tools/overlay_grasps_on_scene.py": "9a56052a2e07d8e28d7201bc081c6fdb8929ad2215a11247a67fc01fb1052700",
+    "ui_logic_validation.json": "04e5383b641f2dc724547a987283dda2947a87e15cf9acbc34afeac177c9f5c7",
+    "validation.json": "e945306de1877ca483a685134d717f665b34c777cbdff3393e2c8dca035461ea"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -B -m pytest -p no:cacheprovider tests/test_cap_hand_overlay.py -q",
+    "passed": 12
+  },
+  "two_direction_cap_frame_relation": "diag(-1,-1,1,1)",
+  "pair_mesh_rotation_max_abs_error_m": 4.440892098500626e-16,
+  "previous_direction_000_pose_max_abs_error": 0.0,
+  "previous_direction_000_mesh_max_abs_error_m": 2.2737367544323206e-16,
+  "mesh_vertices_per_candidate": 44656,
+  "mesh_faces_per_candidate": 89627,
+  "cap_cloud_files_byte_identical_to_measured_input": true,
+  "left_base_targets_checked_via_independent_cap_frame_chain": true,
+  "display_models_contain_hand_only": true,
+  "physics_steps": 0,
+  "robot_connections": 0,
+  "physical_grasp_verified": false,
+  "collision_check_performed": false
+}

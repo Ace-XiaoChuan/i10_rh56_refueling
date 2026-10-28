@@ -1,0 +1,858 @@
+{
+  "candidate_id": "direction_180",
+  "endpoint_diagnostics": {
+    "hand_position": {
+      "collision_free_ik_found": false,
+      "sampled_ik_solutions": [
+        {
+          "arm_positions_rad": [
+            -0.6971987551037143,
+            1.2149679605206385,
+            5.068034878539576,
+            -1.5518406938381997,
+            0.44973303376440626,
+            1.6786072219713375
+          ],
+          "collision": true,
+          "orientation_error_rad": 3.222920165606841e-10,
+          "pairs": [
+            {
+              "a": "<octomap>",
+              "b": "thumb_intermediate",
+              "depth_m": 7.657077242874387e-05
+            }
+          ],
+          "position_error_m": 4.0197546348837164e-10,
+          "satisfies_bounds": true
+        },
+        {
+          "arm_positions_rad": [
+            2.7916423170800133,
+            -2.3477475411284123,
+            -1.329227950020896,
+            -0.6873704324955509,
+            3.4860208484783195,
+            0.7908026886611212
+          ],
+          "collision": true,
+          "orientation_error_rad": 1.5799730260251152e-09,
+          "pairs": [
+            {
+              "a": "<octomap>",
+              "b": "thumb_intermediate",
+              "depth_m": 7.657069639396365e-05
+            }
+          ],
+          "position_error_m": 8.442009667168579e-10,
+          "satisfies_bounds": true
+        },
+        {
+          "arm_positions_rad": [
+            -3.4915429604530446,
+            -1.076913895642716,
+            1.329228162884473,
+            0.7002519344197107,
+            -2.79716448684733,
+            0.7908025827656667
+          ],
+          "collision": true,
+          "orientation_error_rad": 3.417521419501155e-08,
+          "pairs": [
+            {
+              "a": "<octomap>",
+              "b": "foreArm_Link",
+              "depth_m": 7.480454742324298e-05
+            },
+            {
+              "a": "<octomap>",
+              "b": "thumb_intermediate",
+              "depth_m": 7.653243372809836e-05
+            }
+          ],
+          "position_error_m": 9.185650588832111e-08,
+          "satisfies_bounds": true
+        },
+        {
+          "arm_positions_rad": [
+            -3.4915430045320197,
+            4.360134528500083,
+            5.842564217927291,
+            2.9181319746775234,
+            2.797164780037251,
+            3.9323949955521558
+          ],
+          "collision": true,
+          "orientation_error_rad": 3.473526006065001e-07,
+          "pairs": [
+            {
+              "a": "<octomap>",
+              "b": "thumb_intermediate",
+              "depth_m": 7.62084327059228e-05
+            },
+            {
+              "a": "adapter",
+              "b": "foreArm_Link",
+              "depth_m": 0.002776243543696516
+            },
+            {
+              "a": "foreArm_Link",
+              "b": "sensor_link",
+              "depth_m": 0.0034892077320749365
+            },
+            {
+              "a": "foreArm_Link",
+              "b": "wrist2_Link",
+              "depth_m": 0.027698607532714303
+            },
+            {
+              "a": "foreArm_Link",
+              "b": "wrist3_Link",
+              "depth_m": 0.0036134455729354246
+            }
+          ],
+          "position_error_m": 6.492803884843147e-07,
+          "satisfies_bounds": true
+        },
+        {
+          "arm_positions_rad": [
+            2.791642302178723,
+            -1.07691318545434,
+            -4.953956181419581,
+            0.7002523314153685,
+            -2.797164460212252,
+            -5.492382572179468
+          ],
+          "collision": true,
+          "orientation_error_rad": 7.287465719564315e-10,
+          "pairs": [
+            {
+              "a": "<octomap>",
+              "b": "foreArm_Link",
+              "depth_m": 7.477997765778089e-05
+            },
+            {
+              "a": "<octomap>",
+              "b": "thumb_intermediate",
+              "depth_m": 7.653501299787847e-05
+            }
+          ],
+          "position_error_m": 5.524003312861349e-07,
+          "satisfies_bounds": true
+        },
+        {
+          "arm_positions_rad": [
+            2.791642312734936,
+            -1.499126426340829,
+            0.440616515633555,
+            3.3754456371790793,
+            2.7971644589843128,
+            -2.350789897870387
+          ],
+          "collision": true,
+          "orientation_error_rad": 1.747588574680754e-08,
+          "pairs": [
+            {
+              "a": "<octomap>",
+              "b": "foreArm_Link",
+              "depth_m": 0.0010337656807018869
+            },
+            {
+              "a": "<octomap>",
+              "b": "thumb_intermediate",
+              "depth_m": 7.654710628599593e-05
+            },
+            {
+              "a": "adapter",
+              "b": "foreArm_Link",
+              "depth_m": 0.003257115495242026
+            },
+            {
+              "a": "base",
+              "b": "foreArm_Link",
+              "depth_m": 0.009419114596532809
+            },
+            {
+              "a": "foreArm_Link",
+              "b": "sensor_link",
+              "depth_m": 0.0057459359063242454
+            },
+            {
+              "a": "foreArm_Link",
+              "b": "wrist2_Link",
+              "depth_m": 0.014492365043738673
+            },
+            {
+              "a": "foreArm_Link",
+              "b": "wrist3_Link",
+              "depth_m": 0.013294222548022719
+            }
+          ],
+          "position_error_m": 4.688386163159648e-08,
+          "satisfies_bounds": true
+        },
+        {
+          "arm_positions_rad": [
+            -3.4915429902954247,
+            -1.4991265454260976,
+            0.4406162748359199,
+            3.375445463826977,
+            2.797164460681236,
+            -2.3507899513110306
+          ],
+          "collision": true,
+          "orientation_error_rad": 4.693678633312848e-09,
+          "pairs": [
+            {
+              "a": "<octomap>",
+              "b": "foreArm_Link",
+              "depth_m": 0.001033795250284843
+            },
+            {
+              "a": "<octomap>",
+              "b": "thumb_intermediate",
+              "depth_m": 7.656491722768512e-05
+            },
+            {
+              "a": "adapter",
+              "b": "foreArm_Link",
+              "depth_m": 0.003257092124430816
+            },
+            {
+              "a": "base",
+              "b": "foreArm_Link",
+              "depth_m": 0.009419136503758013
+            },
+            {
+              "a": "foreArm_Link",
+              "b": "sensor_link",
+              "depth_m": 0.005745916118159083
+            },
+            {
+              "a": "foreArm_Link",
+              "b": "wrist2_Link",
+              "depth_m": 0.01449236513557619
+            },
+            {
+              "a": "foreArm_Link",
+              "b": "wrist3_Link",
+              "depth_m": 0.013294221249107688
+            }
+          ],
+          "position_error_m": 1.1100482401212379e-08,
+          "satisfies_bounds": true
+        },
+        {
+          "arm_positions_rad": [
+            -0.6971987701050109,
+            2.3782952017782693,
+            1.215151617480909,
+            -0.28486591366594666,
+            0.449733043196779,
+            1.6786072492305386
+          ],
+          "collision": true,
+          "orientation_error_rad": 6.836070316050179e-10,
+          "pairs": [
+            {
+              "a": "<octomap>",
+              "b": "thumb_intermediate",
+              "depth_m": 7.644817979822913e-05
+            },
+            {
+              "a": "foreArm_Link",
+              "b": "left_wrist3_Link",
+              "depth_m": 0.012004465494905418
+            }
+          ],
+          "position_error_m": 4.6745898204126156e-07,
+          "satisfies_bounds": true
+        },
+        {
+          "arm_positions_rad": [
+            2.7916423172883515,
+            -1.9230492501032344,
+            -0.44061790802034356,
+            2.918133974424445,
+            -3.486020849712531,
+            -2.35078996262792
+          ],
+          "collision": true,
+          "orientation_error_rad": 1.2418255640311276e-11,
+          "pairs": [
+            {
+              "a": "<octomap>",
+              "b": "thumb_intermediate",
+              "depth_m": 7.644728687731081e-05
+            },
+            {
+              "a": "adapter",
+              "b": "foreArm_Link",
+              "depth_m": 0.0027764282944923308
+            },
+            {
+              "a": "foreArm_Link",
+              "b": "sensor_link",
+              "depth_m": 0.003489350449005689
+            },
+            {
+              "a": "foreArm_Link",
+              "b": "wrist2_Link",
+              "depth_m": 0.02769861282256078
+            },
+            {
+              "a": "foreArm_Link",
+              "b": "wrist3_Link",
+              "depth_m": 0.0036135762232082126
+            }
+          ],
+          "position_error_m": 2.3286577820841156e-07,
+          "satisfies_bounds": true
+        },
+        {
+          "arm_positions_rad": [
+            -3.4915429921474934,
+            5.2062712544480805,
+            -4.953957339337309,
+            0.7002520484978939,
+            -2.797164461519802,
+            0.7908027395528072
+          ],
+          "collision": true,
+          "orientation_error_rad": 1.5052071238240968e-08,
+          "pairs": [
+            {
+              "a": "<octomap>",
+              "b": "foreArm_Link",
+              "depth_m": 7.4774611370395e-05
+            },
+            {
+              "a": "<octomap>",
+              "b": "thumb_intermediate",
+              "depth_m": 7.656267346518361e-05
+            }
+          ],
+          "position_error_m": 1.1367889731669914e-08,
+          "satisfies_bounds": true
+        },
+        {
+          "arm_positions_rad": [
+            -3.4915430575666084,
+            -2.347748735955287,
+            -1.329229387009712,
+            -0.6873672593735665,
+            3.486019532010584,
+            0.7908061245566063
+          ],
+          "collision": true,
+          "orientation_error_rad": 1.714158099299763e-06,
+          "pairs": [
+            {
+              "a": "<octomap>",
+              "b": "thumb_intermediate",
+              "depth_m": 7.578682866464113e-05
+            }
+          ],
+          "position_error_m": 7.85257576974059e-07,
+          "satisfies_bounds": true
+        },
+        {
+          "arm_positions_rad": [
+            -0.6971988418179822,
+            2.378295940427953,
+            1.215152064308069,
+            -0.28486637981617735,
+            0.44973308264752726,
+            1.6786074309860075
+          ],
+          "collision": true,
+          "orientation_error_rad": 2.752273700600967e-08,
+          "pairs": [
+            {
+              "a": "<octomap>",
+              "b": "thumb_intermediate",
+              "depth_m": 7.60057444517622e-05
+            },
+            {
+              "a": "foreArm_Link",
+              "b": "left_wrist3_Link",
+              "depth_m": 0.012004538243115634
+            }
+          ],
+          "position_error_m": 6.786722880475956e-07,
+          "satisfies_bounds": true
+        },
+        {
+          "arm_positions_rad": [
+            2.7916422539625474,
+            -1.0769132922483737,
+            1.3292290187669138,
+            0.7002523051103473,
+            -2.7971644686641843,
+            0.7908027001807056
+          ],
+          "collision": true,
+          "orientation_error_rad": 6.007352443296448e-08,
+          "pairs": [
+            {
+              "a": "<octomap>",
+              "b": "foreArm_Link",
+              "depth_m": 7.473864808184646e-05
+            },
+            {
+              "a": "<octomap>",
+              "b": "thumb_intermediate",
+              "depth_m": 7.655596678823865e-05
+            }
+          ],
+          "position_error_m": 4.907750376859724e-07,
+          "satisfies_bounds": true
+        },
+        {
+          "arm_positions_rad": [
+            -3.4915429901500543,
+            4.360136878034971,
+            -0.44061620699911397,
+            2.918134855223533,
+            2.797164457493903,
+            -2.350789961847277
+          ],
+          "collision": true,
+          "orientation_error_rad": 2.452889900332713e-12,
+          "pairs": [
+            {
+              "a": "<octomap>",
+              "b": "thumb_intermediate",
+              "depth_m": 7.657039969812852e-05
+            },
+            {
+              "a": "adapter",
+              "b": "foreArm_Link",
+              "depth_m": 0.0027765310162437586
+            },
+            {
+              "a": "foreArm_Link",
+              "b": "sensor_link",
+              "depth_m": 0.003489428828509708
+            },
+            {
+              "a": "foreArm_Link",
+              "b": "wrist2_Link",
+              "depth_m": 0.02769861230428794
+            },
+            {
+              "a": "foreArm_Link",
+              "b": "wrist3_Link",
+              "depth_m": 0.003613635731390081
+            }
+          ],
+          "position_error_m": 1.3388362686481752e-09,
+          "satisfies_bounds": true
+        },
+        {
+          "arm_positions_rad": [
+            -0.6971987805507148,
+            -3.904890326264506,
+            -5.0680346436926484,
+            -0.2848666447051507,
+            0.44973304976290546,
+            1.67860724004898
+          ],
+          "collision": true,
+          "orientation_error_rad": 1.3090514561239172e-08,
+          "pairs": [
+            {
+              "a": "<octomap>",
+              "b": "thumb_intermediate",
+              "depth_m": 7.650776465020645e-05
+            },
+            {
+              "a": "foreArm_Link",
+              "b": "left_wrist3_Link",
+              "depth_m": 0.012004473617783763
+            }
+          ],
+          "position_error_m": 9.197334867375048e-08,
+          "satisfies_bounds": true
+        },
+        {
+          "arm_positions_rad": [
+            -0.6971987554376721,
+            1.9508893240977179,
+            0.6509330531225586,
+            -3.5632712517164515,
+            -0.44973302915444374,
+            -1.462985409596701
+          ],
+          "collision": true,
+          "orientation_error_rad": 1.1137494267983085e-08,
+          "pairs": [
+            {
+              "a": "<octomap>",
+              "b": "thumb_intermediate",
+              "depth_m": 7.65489272236154e-05
+            },
+            {
+              "a": "foreArm_Link",
+              "b": "wrist2_Link",
+              "depth_m": 0.022222772427224514
+            }
+          ],
+          "position_error_m": 2.8251159167563016e-08,
+          "satisfies_bounds": true
+        }
+      ]
+    },
+    "pregrasp_position": {
+      "collision_free_ik_found": true,
+      "sampled_ik_solutions": [
+        {
+          "arm_positions_rad": [
+            5.526826201906771,
+            2.4951413996414606,
+            -4.992539489015193,
+            5.870492857998905,
+            0.48948187205445726,
+            -4.507640564179116
+          ],
+          "collision": true,
+          "orientation_error_rad": 1.3982225818708333e-11,
+          "pairs": [
+            {
+              "a": "foreArm_Link",
+              "b": "left_wrist2_Link",
+              "depth_m": 0.0051353810115901954
+            },
+            {
+              "a": "foreArm_Link",
+              "b": "left_wrist3_Link",
+              "depth_m": 0.05363972192601985
+            }
+          ],
+          "position_error_m": 2.7125731128567645e-10,
+          "satisfies_bounds": true
+        },
+        {
+          "arm_positions_rad": [
+            2.750553705040178,
+            -1.1192181714916265,
+            1.4317978281542425,
+            -5.323208957519137,
+            3.4828270547351385,
+            -5.37045296980588
+          ],
+          "collision": false,
+          "orientation_error_rad": 1.0472600343239224e-08,
+          "pairs": [],
+          "position_error_m": 1.1136479734973202e-08,
+          "satisfies_bounds": true
+        }
+      ]
+    }
+  },
+  "initial_state": {
+    "collision": false,
+    "pairs": [],
+    "satisfies_bounds": true
+  },
+  "intersection_separation_tests": {
+    "cap_intersection": {
+      "collision": true,
+      "pairs": [
+        {
+          "a": "fuel_cap",
+          "b": "probe",
+          "depth_m": 0.00125
+        }
+      ],
+      "position_world_m": [
+        -0.2858381382531988,
+        -1.1646325214802213,
+        0.8542009131550601
+      ],
+      "satisfies_bounds": true
+    },
+    "environment_intersection": {
+      "collision": true,
+      "pairs": [
+        {
+          "a": "<octomap>",
+          "b": "probe",
+          "depth_m": 0.0012499742507936782
+        }
+      ],
+      "position_world_m": [
+        -0.16188483626403802,
+        -1.2089079822664204,
+        0.9558437212539008
+      ],
+      "satisfies_bounds": true
+    },
+    "separated": {
+      "collision": false,
+      "pairs": [],
+      "position_world_m": [
+        20.0,
+        20.0,
+        20.0
+      ],
+      "satisfies_bounds": true
+    }
+  },
+  "left_capture_fk_check": {
+    "orientation_error_rad": 5.4291084854141886e-12,
+    "passed": true,
+    "position_error_m": 6.966896046404603e-13
+  },
+  "mode": "observed_scene_audit_completed",
+  "robot_collision_geometry_participation": {
+    "adapter": true,
+    "base": true,
+    "base_link": true,
+    "foreArm_Link": true,
+    "index_intermediate": true,
+    "index_proximal": true,
+    "left_base_link": true,
+    "left_foreArm_Link": true,
+    "left_shoulder_Link": true,
+    "left_upperArm_Link": true,
+    "left_wrist1_Link": true,
+    "left_wrist2_Link": true,
+    "left_wrist3_Link": true,
+    "middle_intermediate": true,
+    "middle_proximal": true,
+    "pinky_intermediate": true,
+    "pinky_proximal": true,
+    "ring_intermediate": true,
+    "ring_proximal": true,
+    "sensor_link": true,
+    "shoulder_Link": true,
+    "t_frame": true,
+    "thumb_distal": true,
+    "thumb_intermediate": true,
+    "thumb_proximal": true,
+    "thumb_proximal_base": true,
+    "upperArm_Link": true,
+    "wrist1_Link": true,
+    "wrist2_Link": true,
+    "wrist3_Link": true
+  },
+  "scene": {
+    "cap_box_count": 1502,
+    "cap_object_id": "fuel_cap",
+    "environment_base_cell_count": 78796,
+    "manifest_path": "/home/ace/i10_rh56_refueling_ws/artifacts/perception/dual_arm_collision_scene_20261027_001/octomap_scene.json",
+    "manifest_sha256": "7df817c06fce5f15b29f3f05e236559564476d3ef12fadf5e40c64edd84856b3",
+    "placement_mode": "paired_capture_dual_arm_world",
+    "removed_legacy_object_ids": [
+      "scene_geom_50",
+      "scene_geom_51",
+      "scene_geom_52",
+      "scene_geom_53",
+      "scene_geom_54",
+      "scene_geom_55",
+      "scene_geom_56",
+      "scene_geom_57",
+      "scene_geom_58",
+      "scene_geom_59",
+      "scene_geom_60",
+      "scene_geom_61",
+      "scene_geom_62",
+      "scene_geom_63",
+      "scene_geom_64",
+      "scene_geom_65",
+      "scene_geom_66",
+      "scene_geom_67",
+      "scene_geom_68",
+      "scene_geom_69",
+      "scene_geom_70",
+      "scene_geom_71",
+      "scene_geom_72",
+      "scene_geom_73",
+      "scene_geom_74",
+      "scene_geom_75",
+      "scene_geom_76",
+      "scene_geom_77",
+      "scene_geom_78",
+      "scene_geom_79",
+      "scene_geom_80",
+      "scene_geom_81",
+      "scene_geom_82",
+      "scene_geom_83",
+      "scene_geom_84",
+      "scene_geom_85",
+      "scene_geom_86",
+      "scene_geom_87",
+      "scene_geom_88",
+      "scene_geom_89",
+      "scene_geom_90",
+      "scene_geom_91",
+      "scene_geom_92",
+      "scene_geom_93",
+      "scene_geom_94",
+      "scene_geom_95",
+      "scene_geom_96",
+      "scene_geom_97",
+      "scene_geom_98",
+      "scene_geom_99",
+      "scene_geom_100",
+      "scene_geom_101",
+      "scene_geom_102",
+      "scene_geom_103",
+      "scene_geom_104",
+      "scene_geom_105",
+      "scene_geom_106",
+      "scene_geom_107",
+      "scene_geom_108",
+      "scene_geom_109",
+      "scene_geom_110",
+      "scene_geom_111",
+      "scene_geom_112",
+      "scene_geom_113",
+      "scene_geom_114",
+      "scene_geom_115",
+      "scene_geom_116",
+      "scene_geom_117",
+      "scene_geom_118",
+      "scene_geom_119",
+      "scene_geom_120",
+      "scene_geom_121",
+      "scene_geom_122",
+      "scene_geom_123",
+      "scene_geom_124",
+      "scene_geom_125",
+      "scene_geom_126",
+      "scene_geom_127",
+      "scene_geom_128",
+      "scene_geom_129",
+      "scene_geom_130",
+      "scene_geom_131",
+      "scene_geom_132",
+      "scene_geom_133",
+      "scene_geom_134",
+      "scene_geom_135",
+      "scene_geom_136",
+      "scene_geom_137",
+      "scene_geom_138",
+      "scene_geom_139",
+      "scene_geom_140",
+      "scene_geom_141",
+      "scene_geom_142",
+      "scene_geom_143",
+      "scene_geom_144",
+      "scene_geom_145",
+      "scene_geom_146",
+      "scene_geom_147",
+      "scene_geom_148",
+      "scene_geom_149",
+      "scene_geom_150",
+      "scene_geom_151",
+      "scene_geom_152",
+      "scene_geom_153",
+      "scene_geom_154",
+      "scene_geom_155",
+      "scene_geom_156",
+      "scene_geom_157",
+      "scene_geom_158",
+      "scene_geom_159",
+      "scene_geom_160",
+      "scene_geom_161",
+      "scene_geom_162",
+      "scene_geom_163",
+      "scene_geom_164",
+      "scene_geom_165",
+      "scene_geom_166",
+      "scene_geom_167",
+      "scene_geom_168",
+      "scene_geom_169",
+      "scene_geom_170",
+      "scene_geom_171",
+      "scene_geom_172",
+      "scene_geom_173",
+      "scene_geom_174",
+      "scene_geom_175",
+      "scene_geom_176",
+      "scene_geom_177",
+      "scene_geom_178",
+      "scene_geom_179",
+      "scene_geom_180",
+      "scene_geom_181",
+      "scene_geom_182",
+      "scene_geom_183",
+      "scene_geom_184",
+      "scene_geom_185",
+      "scene_geom_186",
+      "scene_geom_187",
+      "scene_geom_188",
+      "scene_geom_189",
+      "scene_geom_190",
+      "scene_geom_191",
+      "scene_geom_192",
+      "scene_geom_193",
+      "scene_geom_194",
+      "scene_geom_195",
+      "scene_geom_196",
+      "scene_geom_197",
+      "scene_geom_198",
+      "scene_geom_199",
+      "scene_geom_200",
+      "scene_geom_201",
+      "scene_geom_202",
+      "scene_geom_203",
+      "scene_geom_204",
+      "scene_geom_205",
+      "scene_geom_206",
+      "scene_geom_207",
+      "scene_geom_208",
+      "scene_geom_209",
+      "scene_geom_210",
+      "scene_geom_211",
+      "scene_geom_212",
+      "scene_geom_213",
+      "scene_geom_214",
+      "scene_geom_215",
+      "scene_geom_216",
+      "scene_geom_217",
+      "scene_geom_218",
+      "scene_geom_219",
+      "scene_geom_220",
+      "scene_geom_221",
+      "scene_geom_222",
+      "scene_geom_223",
+      "scene_geom_224",
+      "scene_geom_225",
+      "scene_geom_226",
+      "scene_geom_227",
+      "scene_geom_228",
+      "scene_geom_229",
+      "scene_geom_230",
+      "scene_geom_231",
+      "scene_geom_232",
+      "scene_geom_233",
+      "scene_geom_234",
+      "scene_geom_235",
+      "scene_geom_236",
+      "scene_geom_237",
+      "scene_geom_238",
+      "scene_geom_239",
+      "scene_geom_240",
+      "scene_geom_241",
+      "scene_geom_244",
+      "scene_geom_247",
+      "scene_geom_249",
+      "scene_geom_251",
+      "scene_geom_253"
+    ],
+    "resolution_m": 0.002,
+    "retained_legacy_object_ids": [
+      "scene_geom_0"
+    ],
+    "robot_model_profile": "dual_arm",
+    "valid_for_hardware": false,
+    "whole_robot_contact_exemptions": false,
+    "world_object_ids": [
+      "<octomap>",
+      "fuel_cap",
+      "scene_geom_0"
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "created_utc": "2026-10-26T16:34:03.710537+00:00",
+  "source_path": "/home/ace/i10_rh56_refueling_ws/artifacts/hardware/vizum_i10_capture_20261026T055151Z/cloud_sdk_native.pcd",
+  "source_sha256": "f6ef8f4f9bb3c12f045c1e9853a5b59afdb08b4c64858ea8c471f69c62842b6c",
+  "source_point_count": 268852,
+  "finite_point_count": 268852,
+  "frame_id": "camera_sdk_native",
+  "length_unit": "mm",
+  "bounds_min_mm": [
+    -308.390625,
+    -840.22265625,
+    295.4453125
+  ],
+  "bounds_max_mm": [
+    619.4609375,
+    998.44921875,
+    1599.984375
+  ],
+  "extent_mm": [
+    927.8515625,
+    1838.671875,
+    1304.5390625
+  ],
+  "cap_crop_point_count": 5742,
+  "cap_crop_source_indices_sha256": "abed76fcd5724d8dd257a6837b38a592463d69ba36b3fd55f8c9e54b1f9f5a99",
+  "local_window_point_count": 187817,
+  "local_window_center_mm": [
+    126.04587493152921,
+    16.945486513710225,
+    643.428985064172
+  ],
+  "local_window_bounds_min_mm": [
+    -173.95412506847077,
+    -283.05451348628975,
+    393.428985064172
+  ],
+  "local_window_bounds_max_mm": [
+    426.0458749315292,
+    316.94548651371025,
+    893.428985064172
+  ],
+  "local_window_dimensions_mm": [
+    600.0,
+    600.0,
+    500.0
+  ],
+  "all_raw_points_in_first_view": true,
+  "coordinate_transform_applied": false,
+  "extra_points_generated": false,
+  "color_meaning": "red=measured cap crop; others=Z pseudocolor; no true RGB",
+  "coverage_status": "single-view visible surfaces; tank opening and door completeness not verified",
+  "robot_connections": 0,
+  "new_captures": 0
+}

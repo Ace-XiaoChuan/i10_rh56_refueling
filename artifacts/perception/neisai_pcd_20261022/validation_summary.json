@@ -1,7 +1,18 @@
 {
+  "length_unit": "mm",
+  "frame_id": "camera",
+  "unit_confirmation_source": "config/fuel_cap_camera_calibration.json",
+  "point_counts": [
+    28897,
+    28914
+  ],
+  "all_original_arrays_exact_match": true,
+  "xyz_m_equals_xyz_raw_times_0_001": true,
+  "html_coordinates_exact_match_raw_mm": true,
+  "html_axes_hover_and_colorbar_use_mm": true,
+  "report_output_and_implementation_digests_match": true,
+  "original_archive_preserved": "original_inspection.tar.gz",
   "test_command": "PYTHONDONTWRITEBYTECODE=1 /home/ace/mujoco-env/bin/python -m pytest tools/tests/test_pcd_point_cloud.py -q -p no:cacheprovider",
   "test_exit_code": 0,
-  "test_count_passed": 5,
-  "open3d_checked_arrays_unchanged": true,
-  "report_output_and_implementation_digests_match": true
+  "test_count_passed": 11
 }

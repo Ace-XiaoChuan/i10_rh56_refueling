@@ -1,4 +1,4 @@
-"""读取未压缩二进制 PCD，保留文件坐标，不推断单位、相机轴或像素对应。"""
+"""读取 ASCII 或未压缩二进制 PCD，保留文件坐标、字段和点序。"""
 
 from dataclasses import dataclass
 import hashlib
@@ -24,12 +24,59 @@ class PcdCloud:
     sha256: str
 
 
-def load_binary_pcd(path, *, byte_order="little"):
-    """读取 DATA binary 的 PCD 0.7，按声明字段检查布局与完整载荷。
+def _ascii_records(payload, dtype, count):
+    """按头声明逐行读取文本；整数单独解析，避免颜色或整数大值经过浮点中转。"""
+    try:
+        lines = payload.decode("ascii").splitlines()
+    except UnicodeDecodeError as error:
+        raise ValueError("PCD ASCII 载荷包含非 ASCII 字符") from error
+    specs = []
+    for name in dtype.names:
+        field = dtype.fields[name][0]
+        base = field.base
+        number = int(np.prod(field.shape)) if field.shape else 1
+        limits = np.iinfo(base) if base.kind in "iu" else np.finfo(base)
+        specs.append((name, field.shape, base.kind, number, limits))
+    columns = sum(spec[3] for spec in specs)
+    records = np.empty(count, dtype=dtype)
+    row = 0
+    for line in lines:
+        tokens = line.split("#", 1)[0].split()
+        if not tokens:
+            continue
+        if row >= count:
+            raise ValueError("PCD ASCII 点数超过头声明")
+        if len(tokens) != columns:
+            raise ValueError(f"PCD ASCII 第 {row + 1} 点的列数与字段 COUNT 不符")
+        cursor = 0
+        for name, shape, kind, number, limits in specs:
+            values = []
+            for token in tokens[cursor:cursor + number]:
+                try:
+                    value = int(token) if kind in "iu" else float(token)
+                except ValueError as error:
+                    raise ValueError(f"PCD ASCII 字段 {name} 的数值格式错误") from error
+                if kind in "iu" and not limits.min <= value <= limits.max:
+                    raise ValueError(f"PCD ASCII 字段 {name} 的整数超出声明范围")
+                if kind == "f" and np.isfinite(value) and abs(value) > float(limits.max):
+                    raise ValueError(f"PCD ASCII 字段 {name} 的浮点数超出声明范围")
+                values.append(value)
+            records[name][row] = (np.asarray(values, dtype=dtype.fields[name][0].base).reshape(shape)
+                                  if shape else values[0])
+            cursor += number
+        row += 1
+    if row != count:
+        raise ValueError("PCD ASCII 点数少于头声明")
+    records.setflags(write=False)
+    return records
+
+
+def load_pcd(path, *, byte_order="little"):
+    """读取 DATA ascii/binary 的 PCD 0.7，按声明字段检查完整载荷。
 
     输入为文件路径；byte_order 显式记录字节序，默认 little 适用于常见
-    Windows/Linux x86 导出。PCD 头没有字节序、长度单位或机器人坐标系信息。
-    当前仅支持未压缩二进制；ASCII/压缩数据报错，不自动尝试其他格式。
+    Windows/Linux x86 二进制导出；ASCII 没有文件字节序，参数仅指定数组表示。
+    PCD 头没有长度单位或机器人坐标系信息。压缩格式明确报错。
     输出 PcdCloud 不缩放、不滤点、不变换坐标，也不根据 WIDTH 编造像素索引。
     """
     if byte_order not in ("little", "big"):
@@ -62,8 +109,8 @@ def load_binary_pcd(path, *, byte_order="little"):
         raise ValueError("PCD 缺少必需头字段")
     if header["VERSION"] not in (["0.7"], [".7"]):
         raise ValueError("当前读取器仅支持 PCD 0.7")
-    if header["DATA"] != ["binary"]:
-        raise ValueError("当前读取器仅支持 DATA binary，不能读取 ASCII 或压缩 PCD")
+    if header["DATA"] not in (["binary"], ["ascii"]):
+        raise ValueError("当前读取器仅支持 DATA binary 或 DATA ascii，不能读取压缩 PCD")
 
     fields = header["FIELDS"]
     if len(set(fields)) != len(fields):
@@ -90,9 +137,12 @@ def load_binary_pcd(path, *, byte_order="little"):
         dtype = np.dtype(f"{order}{kind.lower()}{size}")
         layout.append((name, dtype) if number == 1 else (name, dtype, (number,)))
     dtype = np.dtype(layout, align=False)
-    if len(content) - offset != count * dtype.itemsize:
-        raise ValueError("PCD 二进制载荷长度与头声明不符，文件可能截断或布局不同")
-    records = np.frombuffer(content, dtype=dtype, count=count, offset=offset)
+    if header["DATA"] == ["binary"]:
+        if len(content) - offset != count * dtype.itemsize:
+            raise ValueError("PCD 二进制载荷长度与头声明不符，文件可能截断或布局不同")
+        records = np.frombuffer(content, dtype=dtype, count=count, offset=offset)
+    else:
+        records = _ascii_records(content[offset:], dtype, count)
     for name in ("x", "y", "z"):
         if name not in fields or records[name].ndim != 1:
             raise ValueError("PCD 须包含标量 x、y、z 字段")
@@ -108,3 +158,11 @@ def load_binary_pcd(path, *, byte_order="little"):
         bits = packed.view(np.dtype(f"{order}u4"))
         rgb = np.column_stack(((bits >> 16) & 255, (bits >> 8) & 255, bits & 255)).astype(np.uint8)
     return PcdCloud(xyz, rgb, records, header, byte_order, hashlib.sha256(content).hexdigest())
+
+
+def load_binary_pcd(path, *, byte_order="little"):
+    """保留旧的二进制读取入口；需要兼容 ASCII 时使用 load_pcd。"""
+    cloud = load_pcd(path, byte_order=byte_order)
+    if cloud.header["DATA"] != ["binary"]:
+        raise ValueError("load_binary_pcd 仅支持 DATA binary；ASCII 请使用 load_pcd")
+    return cloud

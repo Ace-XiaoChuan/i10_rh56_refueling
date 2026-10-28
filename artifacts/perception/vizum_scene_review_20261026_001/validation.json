@@ -1,0 +1,14 @@
+{
+  "raw_point_count": 268852,
+  "view_point_counts": [
+    268852,
+    187817,
+    5742
+  ],
+  "every_displayed_coordinate_matches_original_source_row": true,
+  "first_view_contains_every_source_row_exactly_once": true,
+  "cap_highlight_uses_original_points_only": true,
+  "pcd_copy_sha256_matches_source": true,
+  "external_script_or_stylesheet_dependencies": false,
+  "browser_interaction_tested": false
+}

@@ -1,0 +1,227 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-27T06:49:23.660346+00:00",
+  "mode": "simulation_cap_alignment",
+  "planning_frame": "world",
+  "camera_frame": "camera_sdk_native",
+  "octomap_frame": "observed_voxel_grid",
+  "length_unit": "m",
+  "map_path": "scene.bt",
+  "map_sha256": "5e27d4519ceb3225c2f1ef2dab847a33b8ecbce19d83cdb79691db95e42ac785",
+  "resolution_m": 0.002,
+  "occupancy_policy": "observed_surface_only",
+  "world_from_camera": [
+    [
+      -0.29999895064749504,
+      0.9255846243995619,
+      0.23085435383705463,
+      -0.12640923414417743
+    ],
+    [
+      0.18924321509233244,
+      -0.17944625913891388,
+      0.9653942436241096,
+      0.3650248391811507
+    ],
+    [
+      0.9349800185843112,
+      0.3333048801865523,
+      -0.12132692072210935,
+      0.5545668696230761
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "camera_from_octomap": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "world_from_octomap": [
+    [
+      -0.29999895064749504,
+      0.9255846243995619,
+      0.23085435383705463,
+      -0.12640923414417743
+    ],
+    [
+      0.18924321509233244,
+      -0.17944625913891388,
+      0.9653942436241096,
+      0.3650248391811507
+    ],
+    [
+      0.9349800185843112,
+      0.3333048801865523,
+      -0.12132692072210935,
+      0.5545668696230761
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "world_from_cap": [
+    [
+      0.0,
+      -1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      -1.0,
+      1.007
+    ],
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.6
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "alignment_candidate_id": "direction_000",
+  "cap_candidates_world": [
+    {
+      "candidate_id": "direction_000",
+      "world_from_cap": [
+        [
+          3.805906124759131e-17,
+          -1.0,
+          3.247366145777039e-17,
+          2.7755575615628914e-17
+        ],
+        [
+          8.19605211839452e-18,
+          -2.42025808048032e-17,
+          -0.9999999999999999,
+          1.0070000000000001
+        ],
+        [
+          1.0,
+          -1.3609181798662855e-17,
+          5.754193314774691e-18,
+          0.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": "direction_180",
+      "world_from_cap": [
+        [
+          -3.805906124759131e-17,
+          1.0,
+          3.247366145777039e-17,
+          2.7755575615628914e-17
+        ],
+        [
+          -8.19605211839452e-18,
+          2.42025808048032e-17,
+          -0.9999999999999999,
+          1.0070000000000001
+        ],
+        [
+          -1.0,
+          1.3609181798662855e-17,
+          5.754193314774691e-18,
+          0.6
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "world_center_bounds_m": [
+    [
+      -0.654887525513064,
+      0.7831607854982094,
+      0.24693512792071332
+    ],
+    [
+      1.009684750690611,
+      2.1403144095568627,
+      1.2739013818137206
+    ]
+  ],
+  "voxel_labels_path": "voxel_labels.npz",
+  "voxel_labels_sha256": "8bb07d07570052238a88a4ebdfcd4b7a7989d910b3ec122ce88e612fd14a010c",
+  "cap_included_in_map": true,
+  "valid_for_hardware": false,
+  "right_base_from_left_base": null,
+  "moveit_scene_loaded": false,
+  "placement_config_sha256": "3ed46df7be0a97f6c112ebd3b4837c84d0e9873ad84cc7c6142a493de3a1b6b0",
+  "scene_config_sha256": "d83452377ade5cb90690887d90b5f71082b2b1ea4ac7c61d16e285ade9e12627",
+  "implementation_sha256": {
+    "tools/export_voxel_octomap.py": "e0eb0d4459831105f7b78804bedfb5fd8f4b829cf98a4f1475fd38cef6f899ba",
+    "tools/voxel_octomap_export.cpp": "eac17deca65c20e212ade0c304dfe87a558e65a433320d7c4e0dda2f3f4f47c8",
+    "src/fuel_cap_task/voxel_octomap.py": "beae2d78467cb4a84c4d879cef09c06593cbd93ee3c9fd7b6a4025f2758e5ef7"
+  },
+  "sources": {
+    "/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001/voxels.npz": "3786936e24ec249292d7ca77ab5e669e73b5e99c06493961a919b28d85db3d71",
+    "/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001/result.json": "24c31a7a3a9e1fd81c656cbfc8193716beed8a701780cea5bf600a90b186f5f4",
+    "/home/ace/i10_rh56_refueling_ws/config/active_point_cloud_scene.json": "628187968225416999aab8e9f263d6e8c786b51f7d84f4337f92670311fa3960",
+    "/home/ace/i10_rh56_refueling_ws/config/point_cloud_map_placement.json": "83eea24c3d8477abb5307bec12f6e19351e6b72f183873839903ab3b7cf16ff2",
+    "/home/ace/i10_rh56_refueling_ws/artifacts/perception/cap_grasp_candidates_20261027_650_001/grasp_candidates.json": "ed0ccf56fed7f5ef728e29ddc856d29c4baa259105d9a94107e2f2471ae8c1c0",
+    "/home/ace/i10_rh56_refueling_ws/artifacts/perception/cap_observation_20261026_002/geometry/result.json": "477ee64353d327c79e5fb49c39dedbfa81aa2c9e546860efa5e3a83c03947b93",
+    "/home/ace/i10_rh56_refueling_ws/assets/scenes/i10_rh56_fuel_cap_preview.xml": "b376bb512b2d176dd4159d78228e70546b4681cc90e6757e081ac9d4a54d30d4"
+  },
+  "validation": {
+    "exact_occupied_cell_set": true,
+    "free_leaf_count": 0,
+    "occupied_base_cell_count": 80298,
+    "occupied_leaf_count": 80172,
+    "raycasting_performed": false,
+    "resolution_m": 0.002,
+    "roundtrip_from_disk": true,
+    "tree_type": "OcTree",
+    "source_voxel_count": 80298,
+    "cap_voxel_count": 1504,
+    "cap_alignment_max_matrix_error": 2.220446049250313e-16,
+    "grid_not_resampled": true,
+    "hardware_valid": false
+  }
+}

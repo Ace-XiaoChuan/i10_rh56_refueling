@@ -1,0 +1,13 @@
+{
+  "ros_collision_object_roundtrip": true,
+  "object_id": "fuel_cap",
+  "frame_id": "world",
+  "box_count": 1502,
+  "box_grid_indices_match_source": true,
+  "box_orientations_match_map": true,
+  "components_disjoint": true,
+  "occupied_union_cell_count": 80298,
+  "serialized_message_bytes": 144341,
+  "serialized_message_sha256": "4f832c10caf429cfea171f44601e35cdf857bf8bb1ae5431f60c0d8810092c63",
+  "planning_scene_loaded": false
+}

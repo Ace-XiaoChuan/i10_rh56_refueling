@@ -1,0 +1,120 @@
+<mujoco model="measured_voxel_surface_display">
+  <compiler angle="radian" />
+  <option gravity="0 0 0" />
+  <statistic center="0.155 0.079 1.001" extent="2.3826875581997737" />
+  <visual>
+    <global offwidth="1280" offheight="900" />
+    <map znear="0.0001" zfar="8" />
+    <headlight ambient=".5 .5 .5" diffuse=".5 .5 .5" specular=".03 .03 .03" />
+    <rgba haze=".96 .97 .98 1" />
+  </visual>
+  <default>
+    <geom type="mesh" contype="0" conaffinity="0" margin="0" gap="0" group="0" />
+  </default>
+  <asset>
+    <material name="depth_0" rgba="0.27 0.03 0.33 1" shininess=".05" />
+    <material name="depth_1" rgba="0.264838709677419 0.0674193548387097 0.358387096774194 1" shininess=".05" />
+    <material name="depth_2" rgba="0.259677419354839 0.104838709677419 0.386774193548387 1" shininess=".05" />
+    <material name="depth_3" rgba="0.254516129032258 0.142258064516129 0.415161290322581 1" shininess=".05" />
+    <material name="depth_4" rgba="0.249354838709677 0.179677419354839 0.443548387096774 1" shininess=".05" />
+    <material name="depth_5" rgba="0.244193548387097 0.217096774193548 0.471935483870968 1" shininess=".05" />
+    <material name="depth_6" rgba="0.239032258064516 0.254516129032258 0.500322580645161 1" shininess=".05" />
+    <material name="depth_7" rgba="0.233870967741935 0.291935483870968 0.528709677419355 1" shininess=".05" />
+    <material name="depth_8" rgba="0.226774193548387 0.328064516129032 0.55 1" shininess=".05" />
+    <material name="depth_9" rgba="0.213870967741936 0.360322580645161 0.55 1" shininess=".05" />
+    <material name="depth_10" rgba="0.200967741935484 0.39258064516129 0.55 1" shininess=".05" />
+    <material name="depth_11" rgba="0.188064516129032 0.424838709677419 0.55 1" shininess=".05" />
+    <material name="depth_12" rgba="0.175161290322581 0.457096774193548 0.55 1" shininess=".05" />
+    <material name="depth_13" rgba="0.162258064516129 0.489354838709677 0.55 1" shininess=".05" />
+    <material name="depth_14" rgba="0.149354838709677 0.521612903225806 0.55 1" shininess=".05" />
+    <material name="depth_15" rgba="0.136451612903226 0.553870967741935 0.55 1" shininess=".05" />
+    <material name="depth_16" rgba="0.145483870967742 0.584193548387097 0.539032258064516 1" shininess=".05" />
+    <material name="depth_17" rgba="0.176451612903226 0.61258064516129 0.517096774193548 1" shininess=".05" />
+    <material name="depth_18" rgba="0.20741935483871 0.640967741935484 0.495161290322581 1" shininess=".05" />
+    <material name="depth_19" rgba="0.238387096774194 0.669354838709677 0.473225806451613 1" shininess=".05" />
+    <material name="depth_20" rgba="0.269354838709677 0.697741935483871 0.451290322580645 1" shininess=".05" />
+    <material name="depth_21" rgba="0.300322580645161 0.726129032258064 0.429354838709677 1" shininess=".05" />
+    <material name="depth_22" rgba="0.331290322580645 0.754516129032258 0.40741935483871 1" shininess=".05" />
+    <material name="depth_23" rgba="0.362258064516129 0.782903225806452 0.385483870967742 1" shininess=".05" />
+    <material name="depth_24" rgba="0.43 0.801612903225806 0.356774193548387 1" shininess=".05" />
+    <material name="depth_25" rgba="0.51 0.817096774193548 0.325806451612903 1" shininess=".05" />
+    <material name="depth_26" rgba="0.59 0.83258064516129 0.294838709677419 1" shininess=".05" />
+    <material name="depth_27" rgba="0.67 0.848064516129032 0.263870967741935 1" shininess=".05" />
+    <material name="depth_28" rgba="0.75 0.863548387096774 0.232903225806452 1" shininess=".05" />
+    <material name="depth_29" rgba="0.83 0.879032258064516 0.201935483870968 1" shininess=".05" />
+    <material name="depth_30" rgba="0.91 0.894516129032258 0.170967741935484 1" shininess=".05" />
+    <material name="depth_31" rgba="0.99 0.91 0.14 1" shininess=".05" />
+    <material name="cap_observed" rgba="0.88 0.23 0.18 1" shininess=".05" />
+    <mesh name="surface_0" file="meshes/surface_0.obj" inertia="shell" />
+    <mesh name="surface_1" file="meshes/surface_1.obj" inertia="shell" />
+    <mesh name="surface_2" file="meshes/surface_2.obj" inertia="shell" />
+    <mesh name="surface_3" file="meshes/surface_3.obj" inertia="shell" />
+    <mesh name="surface_4" file="meshes/surface_4.obj" inertia="shell" />
+    <mesh name="surface_5" file="meshes/surface_5.obj" inertia="shell" />
+    <mesh name="surface_6" file="meshes/surface_6.obj" inertia="shell" />
+    <mesh name="surface_7" file="meshes/surface_7.obj" inertia="shell" />
+    <mesh name="surface_8" file="meshes/surface_8.obj" inertia="shell" />
+    <mesh name="surface_9" file="meshes/surface_9.obj" inertia="shell" />
+    <mesh name="surface_10" file="meshes/surface_10.obj" inertia="shell" />
+    <mesh name="surface_11" file="meshes/surface_11.obj" inertia="shell" />
+    <mesh name="surface_12" file="meshes/surface_12.obj" inertia="shell" />
+    <mesh name="surface_13" file="meshes/surface_13.obj" inertia="shell" />
+    <mesh name="surface_14" file="meshes/surface_14.obj" inertia="shell" />
+    <mesh name="surface_15" file="meshes/surface_15.obj" inertia="shell" />
+    <mesh name="surface_16" file="meshes/surface_16.obj" inertia="shell" />
+    <mesh name="surface_17" file="meshes/surface_17.obj" inertia="shell" />
+    <mesh name="surface_18" file="meshes/surface_18.obj" inertia="shell" />
+    <mesh name="surface_19" file="meshes/surface_19.obj" inertia="shell" />
+    <mesh name="surface_20" file="meshes/surface_20.obj" inertia="shell" />
+    <mesh name="surface_21" file="meshes/surface_21.obj" inertia="shell" />
+    <mesh name="surface_22" file="meshes/surface_22.obj" inertia="shell" />
+    <mesh name="surface_23" file="meshes/surface_23.obj" inertia="shell" />
+    <mesh name="surface_24" file="meshes/surface_24.obj" inertia="shell" />
+    <mesh name="surface_25" file="meshes/surface_25.obj" inertia="shell" />
+    <mesh name="surface_26" file="meshes/surface_26.obj" inertia="shell" />
+    <mesh name="surface_27" file="meshes/surface_27.obj" inertia="shell" />
+    <mesh name="surface_28" file="meshes/surface_28.obj" inertia="shell" />
+    <mesh name="surface_29" file="meshes/surface_29.obj" inertia="shell" />
+    <mesh name="surface_30" file="meshes/surface_30.obj" inertia="shell" />
+    <mesh name="surface_31" file="meshes/surface_31.obj" inertia="shell" />
+    <mesh name="surface_32" file="meshes/surface_32.obj" inertia="shell" />
+  </asset>
+  <worldbody>
+    <camera name="full_scene" pos="0.155 0.079 -1.943" xyaxes="1 0 0 0 -1 0" fovy="45" />
+    <camera name="cap_region" pos="0.126045874931529 0.0169454865137102 0.143428985064172" xyaxes="1 0 0 0 -1 0" fovy="45" />
+    <camera name="voxel_detail" pos="0.126045874931529 0.0169454865137102 0.533428985064172" xyaxes="1 0 0 0 -1 0" fovy="45" />
+    <geom name="surface_0" mesh="surface_0" material="depth_0" group="0" />
+    <geom name="surface_1" mesh="surface_1" material="depth_1" group="0" />
+    <geom name="surface_2" mesh="surface_2" material="depth_2" group="0" />
+    <geom name="surface_3" mesh="surface_3" material="depth_3" group="0" />
+    <geom name="surface_4" mesh="surface_4" material="depth_4" group="0" />
+    <geom name="surface_5" mesh="surface_5" material="depth_5" group="0" />
+    <geom name="surface_6" mesh="surface_6" material="depth_6" group="0" />
+    <geom name="surface_7" mesh="surface_7" material="depth_7" group="0" />
+    <geom name="surface_8" mesh="surface_8" material="depth_8" group="0" />
+    <geom name="surface_9" mesh="surface_9" material="depth_9" group="0" />
+    <geom name="surface_10" mesh="surface_10" material="depth_10" group="0" />
+    <geom name="surface_11" mesh="surface_11" material="depth_11" group="0" />
+    <geom name="surface_12" mesh="surface_12" material="depth_12" group="0" />
+    <geom name="surface_13" mesh="surface_13" material="depth_13" group="0" />
+    <geom name="surface_14" mesh="surface_14" material="depth_14" group="0" />
+    <geom name="surface_15" mesh="surface_15" material="depth_15" group="0" />
+    <geom name="surface_16" mesh="surface_16" material="depth_16" group="0" />
+    <geom name="surface_17" mesh="surface_17" material="depth_17" group="0" />
+    <geom name="surface_18" mesh="surface_18" material="depth_18" group="0" />
+    <geom name="surface_19" mesh="surface_19" material="depth_19" group="0" />
+    <geom name="surface_20" mesh="surface_20" material="depth_20" group="0" />
+    <geom name="surface_21" mesh="surface_21" material="depth_21" group="0" />
+    <geom name="surface_22" mesh="surface_22" material="depth_22" group="0" />
+    <geom name="surface_23" mesh="surface_23" material="depth_23" group="0" />
+    <geom name="surface_24" mesh="surface_24" material="depth_24" group="0" />
+    <geom name="surface_25" mesh="surface_25" material="depth_25" group="0" />
+    <geom name="surface_26" mesh="surface_26" material="depth_26" group="0" />
+    <geom name="surface_27" mesh="surface_27" material="depth_27" group="0" />
+    <geom name="surface_28" mesh="surface_28" material="depth_28" group="0" />
+    <geom name="surface_29" mesh="surface_29" material="depth_29" group="0" />
+    <geom name="surface_30" mesh="surface_30" material="depth_30" group="0" />
+    <geom name="surface_31" mesh="surface_31" material="depth_31" group="0" />
+    <geom name="surface_32" mesh="surface_32" material="cap_observed" group="1" />
+  </worldbody>
+</mujoco>

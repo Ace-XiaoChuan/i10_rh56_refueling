@@ -1,0 +1,14 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>油箱盖自动抓姿离线实验</title>
+<style>body{font-family:system-ui;margin:32px auto;padding:0 20px;max-width:1100px;color:#243447;line-height:1.7}
+img{max-width:100%;height:auto}a{color:#225d9b}.status{padding:16px;background:#fff4df;border-radius:8px}</style>
+<h1>油箱盖自动抓姿离线实验</h1><p>仿真 RGB-D · 人工整盖标注 · RH56 独立手</p>
+<p class="status">最新一轮生成 16 个满足关节范围和位姿数值条件的候选，几何筛选通过 0 个。当前候选存在盖体或周边环境干涉，尚不能作为有效抓取结果。</p>
+<p><a href="views/index.html">打开三维候选网页</a> · <a href="views/contact_map.html">查看三维接触预测</a> ·
+<a href="geometry_003/optimization.mp4">播放优化过程视频</a> · <a href="README.md">结果说明</a></p>
+<h2>预测接触区域</h2><p>彩色点表示整盖邻域内的网络接触预测；分数用于候选生成。</p>
+<img src="views/contact_map.png" alt="油箱盖接触预测">
+<h2>候选抓姿对比</h2><p>每个候选均标注独立几何检查状态。</p>
+<img src="views/candidate_comparison.png" alt="RH56 候选抓姿对照">
+<h2>优化过程</h2><p>动画展示数值求解过程中的手姿变化，不是实际执行轨迹。</p>
+<img src="geometry_003/optimization.gif" alt="抓姿优化过程动画"></html>

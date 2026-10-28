@@ -1,0 +1,30 @@
+{
+  "frame_id": "camera_sdk_native",
+  "length_unit": "mm",
+  "projection": "3D point cloud; Z pseudocolor, not a pixel-aligned depth image",
+  "raw_point_count": 238060,
+  "filtered_point_count": 215309,
+  "removed_point_count": 22751,
+  "nonfinite_count": 0,
+  "zero_xyz_count": 0,
+  "raw_bounds_min_mm": [
+    -400.421875,
+    -653.015625,
+    294.17578125
+  ],
+  "raw_bounds_max_mm": [
+    603.0546875,
+    1019.11328125,
+    1577.65234375
+  ],
+  "removed_bounds_min_mm": [
+    51.484375,
+    105.0078125,
+    294.17578125
+  ],
+  "removed_bounds_max_mm": [
+    154.2265625,
+    170.75,
+    449.9609375
+  ]
+}

@@ -1,0 +1,376 @@
+{
+  "schema_version": 2,
+  "created_utc": "2026-10-27T08:33:53.963936+00:00",
+  "mode": "paired_capture_dual_arm_world",
+  "planning_frame": "world",
+  "camera_frame": "camera_sdk_native",
+  "octomap_frame": "observed_voxel_grid",
+  "length_unit": "m",
+  "map_path": "environment.bt",
+  "map_sha256": "12ddd848bc93133cbc4710b418d12cf8d92a02f05652bd363206a8658f1cc92c",
+  "resolution_m": 0.002,
+  "occupancy_policy": "observed_surface_only",
+  "world_from_camera": [
+    [
+      -0.7977133799631996,
+      -0.2218616528605677,
+      -0.5607412686949881,
+      0.15803912197260586
+    ],
+    [
+      0.5159806988962327,
+      0.23015823291681786,
+      -0.8251006642750709,
+      -0.664663854432198
+    ],
+    [
+      0.3121174166787926,
+      -0.9475255114299481,
+      -0.06912397120516307,
+      0.8769892835368204
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "camera_from_octomap": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "world_from_octomap": [
+    [
+      -0.7977133799631996,
+      -0.2218616528605677,
+      -0.5607412686949881,
+      0.15803912197260586
+    ],
+    [
+      0.5159806988962327,
+      0.23015823291681786,
+      -0.8251006642750709,
+      -0.664663854432198
+    ],
+    [
+      0.3121174166787926,
+      -0.9475255114299481,
+      -0.06912397120516307,
+      0.8769892835368204
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "world_from_cap": [
+    [
+      -0.7517606309950562,
+      0.09548812097953985,
+      0.6524859940548238,
+      -0.30706609799591356
+    ],
+    [
+      0.6592514285716954,
+      0.13224082735819725,
+      0.7402026192238166,
+      -1.126620155550412
+    ],
+    [
+      -0.015604730439629552,
+      0.986607511795555,
+      -0.1623641279854951,
+      0.8557977489919918
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "alignment_candidate_id": "direction_000",
+  "cap_candidates_world": [
+    {
+      "candidate_id": "direction_000",
+      "world_from_cap": [
+        [
+          -0.7517606309950562,
+          0.09548812097953985,
+          0.6524859940548238,
+          -0.30706609799591356
+        ],
+        [
+          0.6592514285716954,
+          0.13224082735819725,
+          0.7402026192238166,
+          -1.126620155550412
+        ],
+        [
+          -0.015604730439629552,
+          0.986607511795555,
+          -0.1623641279854951,
+          0.8557977489919918
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": "direction_180",
+      "world_from_cap": [
+        [
+          0.7517606309950562,
+          -0.09548812097953985,
+          0.6524859940548238,
+          -0.30706609799591356
+        ],
+        [
+          -0.6592514285716954,
+          -0.13224082735819725,
+          0.7402026192238166,
+          -1.126620155550412
+        ],
+        [
+          0.015604730439629552,
+          -0.986607511795555,
+          -0.1623641279854951,
+          0.8557977489919918
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "world_center_bounds_m": [
+    [
+      -1.3877492533500562,
+      -2.066405098553186,
+      -0.052767383903727705
+    ],
+    [
+      -0.14914303819061456,
+      -0.8668064531418901,
+      1.6757099474884856
+    ]
+  ],
+  "cap_included_in_map": true,
+  "valid_for_hardware": false,
+  "right_base_from_left_base": [
+    [
+      -0.9996923580047834,
+      -0.02478778365996267,
+      -0.0008689810486128755,
+      0.0027
+    ],
+    [
+      -0.02479010582818262,
+      0.999688835034392,
+      0.0027719597052592595,
+      0.0025
+    ],
+    [
+      0.0007999999146666695,
+      0.0027926490662026717,
+      -0.9999957805467629,
+      -0.3034
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "moveit_scene_loaded": false,
+  "placement_config_sha256": "36a7199d3d27726a347ce34a073a77ceb7591202e8495b55cb0ea1b5d4ab6138",
+  "scene_config_sha256": "b57d593822932997cf440e947674f3fc4dc31de964efac64679f3a1d96002464",
+  "implementation_sha256": {
+    "tools/place_scene_in_dual_arm.py": "c4d1a4e7d9bd90bb79e6654c27893c184a641e570300f2cd8c285e4f191648e5"
+  },
+  "sources": {
+    "/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_split_2mm_20261027_001/octomap_scene.json": "2270f140645e1f679de6a43555f00d8b49052c1c1a40ffd0ad0c3ec61db88d1b",
+    "/home/ace/i10_rh56_refueling_ws/artifacts/perception/cap_grasp_candidates_20261027_650_001/grasp_candidates.json": "ed0ccf56fed7f5ef728e29ddc856d29c4baa259105d9a94107e2f2471ae8c1c0",
+    "/home/ace/i10_rh56_refueling_ws/artifacts/perception/cap_observation_20261026_002/geometry/result.json": "477ee64353d327c79e5fb49c39dedbfa81aa2c9e546860efa5e3a83c03947b93",
+    "/home/ace/i10_rh56_refueling_ws/artifacts/hardware/vizum_i10_capture_20261026T055151Z/observation.json": "50d2b2d7c48120b4c81e6d0a5116c5d5dbd11cff66c8cb95b58afb8f031734d1",
+    "/home/ace/i10_rh56_refueling_ws/artifacts/hardware/vizum_i10_capture_20261026T055151Z/fuel_cap_camera_calibration.json": "0f208672a74bb5689930fa9daea0cfcc2c9c31b48379e6d846d57c912c8ba0e0",
+    "/home/ace/i10_rh56_refueling_ws/src/i10_rh56_moveit_config/dual_arm/model.json": "d6fe1e62fec503396fa668175f1a2feb9265dd7175da13850fab5a611f91c61b",
+    "/home/ace/i10_rh56_refueling_ws/config/dual_arm_mount.json": "d8a86f5ea84fe4cac31af04d18243016a2ba59a19869584bd2e2f32b64820e9f",
+    "/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_voxels_2mm_20261027_001/voxels.npz": "3786936e24ec249292d7ca77ab5e669e73b5e99c06493961a919b28d85db3d71"
+  },
+  "validation": {
+    "exact_occupied_cell_set": true,
+    "free_leaf_count": 0,
+    "occupied_base_cell_count": 78796,
+    "occupied_leaf_count": 78677,
+    "raycasting_performed": false,
+    "resolution_m": 0.002,
+    "roundtrip_from_disk": true,
+    "tree_type": "OcTree",
+    "source_voxel_count": 80298,
+    "environment_voxel_count": 78796,
+    "cap_object_voxel_count": 1502,
+    "mixed_voxel_count": 2,
+    "cap_object_id": "fuel_cap",
+    "components_disjoint": true,
+    "union_matches_source": true,
+    "point_count_preserved": 247103,
+    "cap_crop_point_count": 5742,
+    "cap_points_in_independent_object": 5740,
+    "cap_points_in_environment_mixed_cells": 2,
+    "cap_box_max_center_error_m": 3.3306690738754696e-16,
+    "cap_box_full_edge_m": 0.002,
+    "grid_not_resampled": true,
+    "contact_exemptions_added": false,
+    "moveit_scene_loaded": false,
+    "placement_chain_verified": true,
+    "source_octomap_byte_identical": true,
+    "candidate_left_base_transform_verified": true,
+    "left_arm_pose_source": "capture_state_before",
+    "world_from_camera_determinant": 1.0,
+    "robot_model_profile": "dual_arm"
+  },
+  "scene_representation": "environment_octomap_and_cap_collision_object",
+  "cap_object_path": "cap_collision_object.json",
+  "cap_object_sha256": "f7b77a0b236c6205a961291f94d4ff71b2197dec9cd768fd102e55f2f41ded2b",
+  "cap_object_id": "fuel_cap",
+  "independent_cap_cells_in_map": false,
+  "mixed_voxel_policy": "keep_in_environment",
+  "voxel_components_path": "voxel_components.npz",
+  "voxel_components_sha256": "725cbb2e9f9e54fa6cbc431545f05657d3dcf12fd90e01cbbcf5c89ac77ccbfd",
+  "allowed_collision_pairs": [],
+  "display_scene_dir": "split_display",
+  "display_record_sha256": "809b9e81fd8b7c754f0206d133b7924470786d8f9d58a2a1854954fc5db9957d",
+  "source_octomap_scene": "/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_octomap_2mm_20261027_001/octomap_scene.json",
+  "robot_model_profile": "dual_arm",
+  "robot_model_binding": {
+    "profile": "dual_arm",
+    "files_sha256": {
+      "robot.urdf": "218b4cf456afb676d56861c5331f76e7afd7691d51d4ca279894346a47b49d1c",
+      "robot.srdf": "1634279e878848f8e7cd892005465d049cb8c29d22ff438b9f98782ff3955e7b",
+      "kinematics.json": "a9e8b91d749bad0b229fb0db87a57689fe05eb9bd11f49ac1306118e6b635392",
+      "model.json": "d6fe1e62fec503396fa668175f1a2feb9265dd7175da13850fab5a611f91c61b"
+    }
+  },
+  "world_from_right_base": [
+    [
+      0.008877355459584076,
+      0.0097449602059458,
+      -0.9999131103804114,
+      -0.15171098447483627
+    ],
+    [
+      0.999862012605241,
+      0.013954333298378972,
+      0.009012898046407708,
+      2.168404344971009e-19
+    ],
+    [
+      0.014040951144469552,
+      -0.9998551456750034,
+      -0.00961973794738373,
+      1.1945431838346032
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "left_base_from_camera": [
+    [
+      -0.5046625010254555,
+      -0.23811212338098856,
+      0.8298303301023222,
+      0.6611139409092561
+    ],
+    [
+      -0.3230376438798493,
+      0.9434678611458183,
+      0.0742635551363572,
+      0.32521209277432206
+    ],
+    [
+      -0.8006012994589052,
+      -0.23058840318613588,
+      -0.5530520297592083,
+      0.010696094103806137
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "world_from_left_flange_at_capture": [
+    [
+      0.8001147786605746,
+      0.10799860625466999,
+      -0.5900446101914572,
+      0.1554927360861978
+    ],
+    [
+      -0.5239139069866434,
+      -0.3532029391865336,
+      -0.7750883187198634,
+      -0.500465060945023
+    ],
+    [
+      -0.29211394871681584,
+      0.9292921955967578,
+      -0.22602091975750147,
+      0.8042516259020389
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "fixed_left_joint_positions": {
+    "left_shoulder_joint": 1.08096597602,
+    "left_upperArm_joint": -0.614419453372,
+    "left_foreArm_joint": 2.12577451765,
+    "left_wrist1_joint": -1.19925369212,
+    "left_wrist2_joint": -0.953916668874,
+    "left_wrist3_joint": -1.18112133043
+  },
+  "left_arm_pose_source": "capture_state_before",
+  "source_split_scene": "/home/ace/i10_rh56_refueling_ws/artifacts/perception/cleaned_scene_split_2mm_20261027_001/octomap_scene.json"
+}

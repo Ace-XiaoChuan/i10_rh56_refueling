@@ -1,0 +1,13 @@
+<mujoco model="split_voxel_components_display">
+  <compiler angle="radian" />
+  <asset>
+    <mesh name="surface_environment" file="surface_environment.obj" inertia="shell" />
+    <mesh name="surface_cap" file="surface_cap.obj" inertia="shell" />
+    <mesh name="surface_mixed" file="surface_mixed.obj" inertia="shell" />
+  </asset>
+  <worldbody>
+    <geom name="surface_environment" type="mesh" mesh="surface_environment" rgba=".12 .55 .70 1" contype="0" conaffinity="0" group="1" />
+    <geom name="surface_cap" type="mesh" mesh="surface_cap" rgba=".95 .10 .10 1" contype="0" conaffinity="0" group="1" />
+    <geom name="surface_mixed" type="mesh" mesh="surface_mixed" rgba="1 .75 .05 1" contype="0" conaffinity="0" group="1" />
+  </worldbody>
+</mujoco>

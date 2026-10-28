@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "enabled": true,
+  "mode": "exclude_axis_aligned_box",
+  "frame_id": "camera_sdk_native",
+  "length_unit": "mm",
+  "bounds_min_xyz": [30.0, 105.0, 290.0],
+  "bounds_max_xyz": [160.0, 175.0, 450.0],
+  "interval": "closed",
+  "combine_axes": "and",
+  "preserve_raw": true,
+  "source": "user_confirmed_fixed_gun_filter_20261028",
+  "project_document": "doc/assembly_contract.md#油枪点云自动过滤"
+}

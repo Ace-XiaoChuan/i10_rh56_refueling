@@ -1,0 +1,95 @@
+{
+  "mode": "pcd_inspection",
+  "schema_version": 1,
+  "input_path": "/tmp/i10-field/20261028T090946_506852Z_cloud/filtering/cloud_removed.pcd",
+  "input_sha256": "0331e005ab42722700a1da84feac8e5a3107bbab8bcf7de8882352f8962749ce",
+  "header": {
+    "VERSION": [
+      ".7"
+    ],
+    "FIELDS": [
+      "x",
+      "y",
+      "z"
+    ],
+    "SIZE": [
+      "4",
+      "4",
+      "4"
+    ],
+    "TYPE": [
+      "F",
+      "F",
+      "F"
+    ],
+    "COUNT": [
+      "1",
+      "1",
+      "1"
+    ],
+    "WIDTH": [
+      "22751"
+    ],
+    "HEIGHT": [
+      "1"
+    ],
+    "VIEWPOINT": [
+      "0",
+      "0",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    "POINTS": [
+      "22751"
+    ],
+    "DATA": [
+      "binary"
+    ]
+  },
+  "data_encoding": "binary",
+  "byte_order": "little",
+  "byte_order_source": "cli_argument",
+  "length_unit": "mm",
+  "unit_source": "cli_argument",
+  "frame_id": "camera_sdk_native",
+  "capture_timestamp_s": null,
+  "organized_layout": false,
+  "pixel_mapping_verified": false,
+  "camera_calibration_loaded": false,
+  "point_count": 22751,
+  "finite_point_count": 22751,
+  "nonfinite_point_count": 0,
+  "zero_xyz_count": 0,
+  "duplicate_xyz_count": 0,
+  "bounds_min_raw": [
+    51.484375,
+    105.0078125,
+    294.17578125
+  ],
+  "bounds_max_raw": [
+    154.2265625,
+    170.75,
+    449.9609375
+  ],
+  "extent_raw": [
+    102.7421875,
+    65.7421875,
+    155.78515625
+  ],
+  "view_point_count": 22751,
+  "rgb_decoding": null,
+  "rgb_channel_min": null,
+  "rgb_channel_max": null,
+  "constant_rgb_channels": [],
+  "geometry_filtering": "nonfinite_for_display_only",
+  "coordinate_transform_applied": false,
+  "cap_pose_estimated": false,
+  "outputs_sha256": {
+    "point_cloud_raw.npz": "bf7aca99c0b803a05a7071d5848cf6b446d441fd4b68744d09aaf98c61a10409",
+    "index.html": "d76b8c2df8657b3ae661764725814b756f29940ae64755c6eb7dd0fa7791a1d7",
+    "preview.png": "a31411102fe8bbe6089d68c50917b20f3943415476cb86e9ce733ed38af65ccb"
+  }
+}

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/ace/i10_rh56_refueling_ws/tools/generate_cap_grasps.py", line 127, in run
+    geometry, observation = prepare(args, config, output)
+  File "/home/ace/i10_rh56_refueling_ws/tools/generate_cap_grasps.py", line 48, in prepare
+    raise ValueError("整盖标注与 RGB 图片不匹配")
+ValueError: 整盖标注与 RGB 图片不匹配

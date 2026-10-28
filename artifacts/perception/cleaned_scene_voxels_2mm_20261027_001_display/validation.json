@@ -1,0 +1,18 @@
+{
+  "voxel_count": 80298,
+  "voxel_size_m": 0.002,
+  "source_voxel_data_byte_identical": true,
+  "exposed_square_faces": 257896,
+  "display_geom_count": 33,
+  "compiled_surface_triangles_match_grid": true,
+  "compiled_vertex_max_error_m": 8.797221529022181e-08,
+  "display_mesh_collision_enabled": false,
+  "source_box_collision_scene_preserved": true,
+  "physics_steps": 0,
+  "model_compile_and_validation_seconds": 1.9557470239997201,
+  "rendered_geom_counts": {
+    "full_scene": 33,
+    "cap_region": 33,
+    "voxel_detail": 33
+  }
+}

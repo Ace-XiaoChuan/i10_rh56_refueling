@@ -1,0 +1,95 @@
+{
+  "mode": "pcd_inspection",
+  "schema_version": 1,
+  "input_path": "/tmp/i10-field/20261028T090946_506852Z_cloud/filtering/cloud_filtered.pcd",
+  "input_sha256": "30dbcde5864e593005277f74deba0a0adaa435a685f5375f6bec0b084f309e13",
+  "header": {
+    "VERSION": [
+      ".7"
+    ],
+    "FIELDS": [
+      "x",
+      "y",
+      "z"
+    ],
+    "SIZE": [
+      "4",
+      "4",
+      "4"
+    ],
+    "TYPE": [
+      "F",
+      "F",
+      "F"
+    ],
+    "COUNT": [
+      "1",
+      "1",
+      "1"
+    ],
+    "WIDTH": [
+      "215309"
+    ],
+    "HEIGHT": [
+      "1"
+    ],
+    "VIEWPOINT": [
+      "0",
+      "0",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    "POINTS": [
+      "215309"
+    ],
+    "DATA": [
+      "binary"
+    ]
+  },
+  "data_encoding": "binary",
+  "byte_order": "little",
+  "byte_order_source": "cli_argument",
+  "length_unit": "mm",
+  "unit_source": "cli_argument",
+  "frame_id": "camera_sdk_native",
+  "capture_timestamp_s": null,
+  "organized_layout": false,
+  "pixel_mapping_verified": false,
+  "camera_calibration_loaded": false,
+  "point_count": 215309,
+  "finite_point_count": 215309,
+  "nonfinite_point_count": 0,
+  "zero_xyz_count": 0,
+  "duplicate_xyz_count": 0,
+  "bounds_min_raw": [
+    -400.421875,
+    -653.015625,
+    317.53125
+  ],
+  "bounds_max_raw": [
+    603.0546875,
+    1019.11328125,
+    1577.65234375
+  ],
+  "extent_raw": [
+    1003.4765625,
+    1672.12890625,
+    1260.12109375
+  ],
+  "view_point_count": 30000,
+  "rgb_decoding": null,
+  "rgb_channel_min": null,
+  "rgb_channel_max": null,
+  "constant_rgb_channels": [],
+  "geometry_filtering": "nonfinite_for_display_only",
+  "coordinate_transform_applied": false,
+  "cap_pose_estimated": false,
+  "outputs_sha256": {
+    "point_cloud_raw.npz": "33e72e7a7fd41ee5f63fa7d02da2bf7271ca5a5df6c01494429cc14f32c4b744",
+    "index.html": "d06788ff703bde33a595f9fd3f6389f4fdb6c3fb21700dc033df8d2bc7c54894",
+    "preview.png": "bc8071111724d72aa33c00c3bf0d6a011db9510f340521f704f599b60c95bdc2"
+  }
+}

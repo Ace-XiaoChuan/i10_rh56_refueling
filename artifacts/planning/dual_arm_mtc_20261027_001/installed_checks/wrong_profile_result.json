@@ -1,0 +1,4 @@
+{
+  "error": "Single-arm model cannot load dual-arm world coordinates",
+  "mode": "observed_scene_audit_failed"
+}

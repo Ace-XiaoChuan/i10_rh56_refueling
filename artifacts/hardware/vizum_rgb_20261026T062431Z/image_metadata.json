@@ -1,0 +1,18 @@
+{
+  "image_size_wh": [
+    3120,
+    4096
+  ],
+  "mode": "RGB",
+  "all_rgb_channels_equal": false,
+  "rgb_channel_means": [
+    122.25441605005508,
+    125.11814160469251,
+    122.79771658090445
+  ],
+  "png_sha256": "9cf0f9164a99317ba0d05d1bee0c259d25e0586d318cb49ae45003945a3ee0f4",
+  "source": "VzNL_GetRGBImage, independent center RGB sensor; not stereo gray",
+  "processing": "SDK RGB888 bytes saved losslessly as PNG; no crop, rotate or brightness adjustment",
+  "point_cloud_acquired": false,
+  "pixel_mapping_to_previous_cloud_verified": false
+}

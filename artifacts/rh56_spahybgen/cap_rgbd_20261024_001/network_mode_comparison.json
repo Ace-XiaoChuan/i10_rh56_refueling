@@ -1,0 +1,63 @@
+{
+  "checkpoint_sha256": "f74f5a953de0125d82a2f7ea22f490ea3b3abaab15fd49221ede929997795405",
+  "network_weights_optimized": false,
+  "original_observation_sha256": "db39fcf602b970cc6999021ac928c999ee5e6fc159548219f5e3af3d965023b8",
+  "cap_scene_input_sha256": "28335a327f66625425c23de126413fa54168eff27b921089d1846799d464d2db",
+  "implementation_sha256": "47f44e87fd4c06c4b7092707f6e9d7c969e17db00f357be662c41d7d64408e74",
+  "comparisons": [
+    {
+      "input": "original",
+      "mode": "eval",
+      "occupied_count": 164892,
+      "quality_peak": 9.430014102917994e-09,
+      "center_peak": 2.739033722054529e-10,
+      "quality_quantiles": [
+        1.4564407450332225e-30,
+        3.542697310712884e-18,
+        2.94281305866697e-13
+      ],
+      "all_outputs_finite": true
+    },
+    {
+      "input": "original",
+      "mode": "upstream_train",
+      "occupied_count": 164892,
+      "quality_peak": 0.912691593170166,
+      "center_peak": 0.9431290030479431,
+      "quality_quantiles": [
+        1.0298639545325283e-11,
+        0.04634766541421476,
+        0.7205692768096928
+      ],
+      "all_outputs_finite": true
+    },
+    {
+      "input": "cap",
+      "mode": "eval",
+      "occupied_count": 288079,
+      "quality_peak": 4.422166105522152e-11,
+      "center_peak": 2.0203591404033272e-12,
+      "quality_quantiles": [
+        1.1194835269184197e-26,
+        5.314525379272711e-18,
+        4.50491164274751e-16
+      ],
+      "all_outputs_finite": true,
+      "target_quality_peak": 4.422166105522152e-11
+    },
+    {
+      "input": "cap",
+      "mode": "upstream_train",
+      "occupied_count": 288079,
+      "quality_peak": 0.9350720643997192,
+      "center_peak": 0.9526991844177246,
+      "quality_quantiles": [
+        1.2357625478465195e-09,
+        0.027164364792406602,
+        0.677147035598755
+      ],
+      "all_outputs_finite": true,
+      "target_quality_peak": 0.8671274185180664
+    }
+  ]
+}

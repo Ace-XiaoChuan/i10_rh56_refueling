@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "source": {
+    "type": "user_provided_translation_and_rpy_screenshot",
+    "received_date": "2026-10-24",
+    "conventions_confirmed_by_user": true,
+    "project_document": "doc/assembly_contract.md#末端相机外参"
+  },
+  "point_cloud": {
+    "files": ["doc/fuel_cap_01_ascii.pcd", "doc/fuel_cap_02_ascii.pcd"],
+    "xyz_unit": "mm",
+    "scale_to_m": 0.001,
+    "frame_id": "camera",
+    "axis_physical_directions": null,
+    "capture_timestamp_s": null,
+    "base_from_flange_at_capture": null
+  },
+  "extrinsic": {
+    "name": "flange_from_camera",
+    "equation": "p_flange_m = R_flange_camera @ p_camera_m + t_flange_camera_m",
+    "translation_mm": [66.81574800613885, 125.865040163263, 109.32585323244238],
+    "translation_m": [0.06681574800613885, 0.125865040163263, 0.10932585323244238],
+    "rpy_rad": [0.167457449599, -0.000210802337, 3.119940514551],
+    "rpy_deg_from_screenshot": [9.594605110058, -0.012078084240, 178.759423815619],
+    "rotation_convention": "fixed_axis_XYZ_RzRyRx",
+    "camera_frame_matches_pcd": true,
+    "matrix_translation_unit": "m",
+    "flange_from_camera_matrix": [
+      [-0.9997655793815923, -0.021312467650671723, 0.003816412769614693, 0.06681574800613885],
+      [0.021650446789024475, -0.9857813765351748, 0.1666323372885692, 0.125865040163263],
+      [0.00021080233543874078, 0.1666759022746088, 0.9860117135020864, 0.10932585323244238],
+      [0.0, 0.0, 0.0, 1.0]
+    ],
+    "physical_accuracy_verified": false,
+    "calibration_error_report": null
+  },
+  "integration": {
+    "status": "recorded_not_connected_to_robot_execution",
+    "required_before_base_frame_targets": [
+      "base_from_flange_at_capture",
+      "physical_extrinsic_accuracy_check",
+      "actual_tool_geometry_and_transform"
+    ]
+  }
+}

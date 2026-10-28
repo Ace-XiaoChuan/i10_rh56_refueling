@@ -1,0 +1,189 @@
+{
+  "mode": "dual_arm_geometry_model",
+  "config": "config/dual_arm_mount.json",
+  "geometry": {
+    "right_base_from_left_base": [
+      [
+        -0.9996923580047834,
+        -0.02478778365996267,
+        -0.0008689810486128755,
+        0.0027
+      ],
+      [
+        -0.02479010582818262,
+        0.999688835034392,
+        0.0027719597052592595,
+        0.0025
+      ],
+      [
+        0.0007999999146666695,
+        0.0027926490662026717,
+        -0.9999957805467629,
+        -0.3034
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "world_from_right_base": [
+      [
+        0.008877355459584076,
+        0.0097449602059458,
+        -0.9999131103804114,
+        -0.15171098447483627
+      ],
+      [
+        0.999862012605241,
+        0.013954333298378972,
+        0.009012898046407708,
+        2.168404344971009e-19
+      ],
+      [
+        0.014040951144469552,
+        -0.9998551456750034,
+        -0.00961973794738373,
+        1.1945431838346032
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "world_from_left_base": [
+      [
+        -0.00991613341001348,
+        0.0067294715351460446,
+        0.999928189677165,
+        0.15171098447483627
+      ],
+      [
+        -0.9998931321423022,
+        -0.0108092021982224,
+        -0.009843040307470888,
+        -2.168404344971009e-19
+      ],
+      [
+        0.010742187526354531,
+        -0.9999189343945316,
+        0.006835937861993028,
+        1.195000085031742
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "right_base_up_direction": [
+      0.014040951144469552,
+      -0.9998551456750034,
+      -0.00961973794738373
+    ],
+    "left_base_gravity_m_s2": [
+      -0.10527343775827445,
+      9.799205557066411,
+      -0.06699219104753168
+    ],
+    "world_from_crossbar": [
+      [
+        -0.0015058259647634051,
+        0.0,
+        0.9999988662434391,
+        0.0
+      ],
+      [
+        0.0,
+        -0.9999999999999999,
+        0.0,
+        0.0
+      ],
+      [
+        0.9999988662434391,
+        0.0,
+        0.0015058259647634051,
+        1.1947716344331727
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "crossbar_length_m": 0.30342231295671057,
+    "crossbar_radius_m": 0.075,
+    "crossbar_tilt_deg": 0.0862775050680568,
+    "crossbar_center_height_m": 1.1947716344331727,
+    "post_length_m": 1.1947716344331727,
+    "post_radius_m": 0.075,
+    "stand_height_m": 1.27,
+    "physical_vertical_verified": false
+  },
+  "validation": {
+    "links": 33,
+    "joints": 32,
+    "mesh_files": 33,
+    "independent_joints": 18
+  },
+  "right_base_link": "base_link",
+  "left_base_link": "left_base_link",
+  "sources_sha256": {
+    "artifacts/hardware/aubo_sdk_readonly_20261023_001/configuration.json": "d04a5b2ac9ebc392348e92f863407fea02cce2b4eee8d4df694cca3221d360af",
+    "artifacts/hardware/aubo_sdk_readonly_20261023_002/configuration.json": "ced427c9f9df0a8c572f5613746666a0b8ec65658a71ea455d7351c797fda2c6",
+    "config/dual_arm_mount.json": "d8a86f5ea84fe4cac31af04d18243016a2ba59a19869584bd2e2f32b64820e9f",
+    "src/i10_rh56_moveit_config/config/kinematics.json": "e7f57774641f6886a7d82172a676b5d3b225df07974394d089f4a807fa6664cf",
+    "src/i10_rh56_moveit_config/config/robot.srdf": "65844781f6d6c0aa9a1891c5d3fa44e18abb21cd411e7c871d1a9b58266341b7",
+    "src/i10_rh56_moveit_config/config/robot.urdf": "3e781ded72bd8b2388e10d7960f3b12c155e12d787b50849a052063e6a0101da",
+    "src/i10_rh56_moveit_config/meshes/mesh_000_surface.stl": "80926b6b5e7318f1d5a3f2990e33632a99cbbb69ebd5663fb99dafff5c084c46",
+    "src/i10_rh56_moveit_config/meshes/mesh_001_hull.stl": "69d87aa74bae878089e93a6e4eb60fd48598fc4a0e5d70ff14e504af34c51ad8",
+    "src/i10_rh56_moveit_config/meshes/mesh_002_surface.stl": "d4872ec01929e41593f33e2ce90dd8a4d4b3d53f7b93b79372b43017a1ea78bc",
+    "src/i10_rh56_moveit_config/meshes/mesh_003_hull.stl": "ae56978f52f6e392960ea8b71d5436ad5395118abeddca68c21f2079e6de40f9",
+    "src/i10_rh56_moveit_config/meshes/mesh_004_surface.stl": "8349dac317975036e1f1fd2c876b3ee1aa3a57b25b4b92ea1858355972da34ab",
+    "src/i10_rh56_moveit_config/meshes/mesh_005_hull.stl": "4f6eac47c33d22948487d8cf1769d90f8759c78fb217c4f9b323de397db569fb",
+    "src/i10_rh56_moveit_config/meshes/mesh_006_surface.stl": "c399e9dba76a474f00c270cd9cee6ff6fd395310510590b903fc95f25db59189",
+    "src/i10_rh56_moveit_config/meshes/mesh_007_hull.stl": "8e5f7c7deb137111a541776b3d7830a200881719bd49d9c641d243ad8435815c",
+    "src/i10_rh56_moveit_config/meshes/mesh_008_surface.stl": "2b01ae69418351314099dedabb967b13f7cccb607993889686f4fd11efebbd51",
+    "src/i10_rh56_moveit_config/meshes/mesh_009_hull.stl": "ec45aad710792607ec63ff8a1b7755a505c738194618693cfe319d7b8b1f5813",
+    "src/i10_rh56_moveit_config/meshes/mesh_010_surface.stl": "e5c7fc2b25cf18cb21fb02400dd0df57b4461a7c44845e88837675bd8e87ad0e",
+    "src/i10_rh56_moveit_config/meshes/mesh_011_hull.stl": "91984282fc1f061263dbfa271007b3fde262400d850ff4d6e0adec4f6759358c",
+    "src/i10_rh56_moveit_config/meshes/mesh_012_surface.stl": "e649b86fd4cc60e1448f48180f0004e89e652f3b8828b778fc8ff03346fb95b4",
+    "src/i10_rh56_moveit_config/meshes/mesh_013_hull.stl": "d079ae74fa757eb62b21063642a390f9d086771d8df455a5591080ee05bd46e7",
+    "src/i10_rh56_moveit_config/meshes/mesh_014_hull.stl": "a2a9c7b10b22af092ae3b0d0901744530e3d84838d379fbc5d4687215ab0154b",
+    "src/i10_rh56_moveit_config/meshes/mesh_015_hull.stl": "1b4ce574bf5f0fc65ae53b2c3afa177e1d0d408ae22718ff9064f09d4dda89e8",
+    "src/i10_rh56_moveit_config/meshes/mesh_016_hull.stl": "97cd07776e00785148b9aa6c92eef27b952bb79e981752a05f024ca0c020f583",
+    "src/i10_rh56_moveit_config/meshes/mesh_017_hull.stl": "ea60417bcc975cfdf25804c3067d8425b967a88d8999a6d19d067539b4f362a5",
+    "src/i10_rh56_moveit_config/meshes/mesh_018_hull.stl": "01a76bd864a72bd18cd88e91e651b170ece3ef718f06de1860174f5b7464614c",
+    "src/i10_rh56_moveit_config/meshes/mesh_019_hull.stl": "9a328e80284af8467c6442103638eb4a5f3df2bcc4549143b80c5ede7c7000f8",
+    "src/i10_rh56_moveit_config/meshes/mesh_020_hull.stl": "e454a8d344001136a3986f271781bac75d071369eab33b1b4189ca4f8508214b",
+    "src/i10_rh56_moveit_config/meshes/mesh_021_hull.stl": "1f5f170ec8e98b2d94f559ebd29b40544669b9c85a02403dd0c4e619975fff11",
+    "src/i10_rh56_moveit_config/meshes/mesh_022_surface.stl": "a947e49ab4871239a85eccefb822c6d5357958ba4d9073da47d8c4822dc1fc19",
+    "src/i10_rh56_moveit_config/meshes/mesh_023_surface.stl": "eab3e36e3d81a8178fc645e08255712e93c82218692425365c6dd9e2b5d5933f",
+    "src/i10_rh56_moveit_config/meshes/mesh_024_surface.stl": "8e7a354a21e0fde0f5fe0982ee041326023a11afda8bfc1b167104bbd5bb7122",
+    "src/i10_rh56_moveit_config/meshes/mesh_025_surface.stl": "f37321627acb735f23ce7a8523435c1c32561b78c195dc3edb7d46885c3b3e27",
+    "src/i10_rh56_moveit_config/meshes/mesh_026_surface.stl": "0bc5cf3a86eaa65e6106d7bcf7d468867d5c64ace1621e5dc7447a49e4a8c37f",
+    "src/i10_rh56_moveit_config/meshes/mesh_027_surface.stl": "df79578e81a62b58912289279c1586f32ba341f6da103d01be5ca4a36dc8b4a4",
+    "src/i10_rh56_moveit_config/meshes/mesh_028_surface.stl": "e1b4092ec3cc128ced6b28f3ffe521226529f0a8ba241cb80a9763b03a67e872",
+    "src/i10_rh56_moveit_config/meshes/mesh_029_surface.stl": "31015b5d3cc407e88deac45406b144e0c1c3a09dc2b5b0e63ac8e41e132dabcd",
+    "src/i10_rh56_moveit_config/meshes/mesh_030_surface.stl": "4f715fed51944914c902bc7d15fbe6c4079049f7c5c6cd8b2db4208c78c4ca34",
+    "src/i10_rh56_moveit_config/meshes/mesh_225_surface.stl": "4e751d48eceb1321b26addae30cc36099f68cd1a5065b74eae7ba58c95ad8627",
+    "src/i10_rh56_moveit_config/meshes/mesh_226_surface.stl": "45e1af0a8d45f40c2d973a55d08bad42f79e1ec7f0e9dd49c6665000b67d87d3",
+    "tools/build_dual_arm_model.py": "6b93c2f77fe1c592c4baa344fb94cbda366cce8df1d667c904bdc99e209c7579"
+  },
+  "generated_sha256": {
+    "robot.urdf": "218b4cf456afb676d56861c5331f76e7afd7691d51d4ca279894346a47b49d1c",
+    "robot.srdf": "1634279e878848f8e7cd892005465d049cb8c29d22ff438b9f98782ff3955e7b",
+    "kinematics.json": "a9e8b91d749bad0b229fb0db87a57689fe05eb9bd11f49ac1306118e6b635392"
+  },
+  "limitations": [
+    "vertical_from_left_controller_configuration_not_independent_measurement",
+    "stand_is_two_intersecting_cylinders_without_measured_inertia",
+    "left_camera_geometry_not_added",
+    "existing_single_arm_planners_keep_original_world_frame"
+  ]
+}

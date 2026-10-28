@@ -1,0 +1,52 @@
+{
+  "method": "agent_or_operator_seeded_3d_connected_components",
+  "bounds_mm": [
+    65.0,
+    195.0,
+    -55.0,
+    80.0,
+    620.0,
+    700.0
+  ],
+  "seeds_mm": [
+    [
+      131.0390625,
+      7.15625,
+      655.6328125
+    ],
+    [
+      127.140625,
+      16.76953125,
+      634.86328125
+    ]
+  ],
+  "connection_radius_mm": 1.8,
+  "roi_point_count": 20837,
+  "roi_component_count": 216,
+  "selected_component_counts": [
+    4446,
+    1296
+  ],
+  "selected_point_count": 5742,
+  "seed_snap_distances_mm": [
+    0.0,
+    0.0
+  ],
+  "seed_source_indices": [
+    154425,
+    152102
+  ],
+  "minimum_selected_margin_to_roi_mm": 11.6484375,
+  "circle_or_radius_used_to_cut_points": false,
+  "schema_version": 1,
+  "source_path": "/home/ace/i10_rh56_refueling_ws/artifacts/hardware/vizum_i10_capture_20261026T055151Z/cloud_sdk_native.pcd",
+  "source_sha256": "f6ef8f4f9bb3c12f045c1e9853a5b59afdb08b4c64858ea8c471f69c62842b6c",
+  "source_point_count": 268852,
+  "length_unit": "mm",
+  "frame_id": "camera_sdk_native",
+  "crop_path": "cap_crop.pcd",
+  "crop_sha256": "2e357c1d5acccfbc44f421d0e095cab7fcd64119ba1220d448696c43e3fd1520",
+  "source_indices_path": "source_indices.npz",
+  "visual_review_required": true,
+  "interpretation": "基于当前场景选取的ROI与种子，非通用自动盖体检测；没有添加拟合点或用圆半径截断观测"
+}

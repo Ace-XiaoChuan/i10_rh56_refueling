@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>aubo_joint_state_bridge</name>
+  <version>0.1.0</version>
+  <description>AUBO SDK RTDE 只读六轴关节状态桥。</description>
+  <maintainer email="3526623168@qq.com">Ace-XiaoChuan</maintainer>
+  <license>Proprietary</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>nlohmann-json-dev</depend>
+  <exec_depend>launch_ros</exec_depend>
+  <test_depend>ament_cmake_gtest</test_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

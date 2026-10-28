@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "source_urdf": "assets/objects/fuel_cap/urdf/fuel_cap.urdf",
+  "grip_shape_interpretation": "trapezoidal_prism",
+  "urdf_box_width_means": "base_width",
+  "top_width_reduction_m": 0.002,
+  "top_width_reduction_source": "user_confirmed",
+  "reference_definition": "existing_cap_grip_center_height_midpoint",
+  "dimension_status": "provisional_model_dimensions",
+  "project_document": "doc/assembly_contract.md#盖体几何估计"
+}

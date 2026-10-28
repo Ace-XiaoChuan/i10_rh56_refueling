@@ -1,0 +1,19 @@
+{
+  "synthetic_tests_passed": 11,
+  "checks": [
+    "完整原输入与既有摘要一致",
+    "人工裁剪完整保存并独立命名",
+    "所有分组PCD导出坐标与输入逐点一致",
+    "圆沿索引属于盖面，盖面与握梁构成互斥全分组",
+    "模型参考中心与顶面偏移8.5mm一致",
+    "相机系四元数归一化且保留180度候选",
+    "12次80%保留点的敏感性检查均得到结果",
+    "输入、模型、实现摘要保存",
+    "本轮4篇Markdown元数据与新说明本地链接核对通过",
+    "已实际打开并检查静态三视图"
+  ],
+  "precision_interpretation": "拟合残差和抽样敏感性不等于实物位姿精度",
+  "execution_connected": false,
+  "git_commit_created": false,
+  "git_push_performed": false
+}

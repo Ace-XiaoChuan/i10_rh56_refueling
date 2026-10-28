@@ -1,0 +1,21 @@
+{
+  "selected_candidate_ids": [
+    2,
+    7,
+    12,
+    14,
+    9
+  ],
+  "candidate_count": 16,
+  "geometry_pass_count": 0,
+  "scene_coordinates_displayed_in": "mm",
+  "generation_result_sha256": "af6888c167f28532bf4577b0de7d41a97d43ea4f8b0dd4dbdd4daa9de778fffe",
+  "geometry_sha256": "e9b4b60189f1e255eb4a07801a1e949a61bfc422325fc3e60767af045b42f596",
+  "renderer_sha256": "a8537b105371c4d20e7cbf228654c1d686cacd1b201a42254737213bedd19181",
+  "outputs_sha256": {
+    "index.html": "afbd02c73e421421c242766013e10d2aee746dbc4514b49b21600a71e8c2eb7d",
+    "contact_map.html": "d5fb34b4d4e8a9579588826d2df5cb4b4a6a6708ba2fbd7fee5f3d368154b944",
+    "contact_map.png": "ed4869c0eee5f03550cbc9b1ca88ed13778057a79ba4f8f28ca83cde4b653600",
+    "candidate_comparison.png": "997dae942ff5323e3a4ad9bcbac5801b07d8ac82594b6de2bb04ffdbb32b1a0a"
+  }
+}

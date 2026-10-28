@@ -1,0 +1,19 @@
+{
+  "native_disk_roundtrip": "passed",
+  "source_occupied_cells": 80298,
+  "occupied_octree_leaves": 80172,
+  "free_leaves": 0,
+  "cap_labeled_cells": 1504,
+  "unit_tests": {
+    "command": ".venv/bin/python -m unittest discover -s tools/tests -p test_voxel_octomap.py -v",
+    "passed": 6,
+    "failed": 0
+  },
+  "preview_render": "passed",
+  "preview_window_start_and_exit": "passed",
+  "simulation_time_s": 0.0,
+  "planning_scene_loaded": false,
+  "hardware_connections": 0,
+  "graphics_backend": "glfw",
+  "graphics_execution": "local display access outside filesystem sandbox"
+}

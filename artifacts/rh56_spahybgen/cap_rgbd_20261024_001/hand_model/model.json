@@ -1,0 +1,1244 @@
+{
+  "schema_version": 1,
+  "hand": "rh56dfx_right",
+  "root_frame": "base",
+  "unit": "m/rad",
+  "source_mujoco_version": "3.13.0",
+  "mapping": {
+    "driver_names": [
+      "pinky_proximal_joint",
+      "ring_proximal_joint",
+      "middle_proximal_joint",
+      "index_proximal_joint",
+      "thumb_proximal_pitch_joint",
+      "thumb_proximal_yaw_joint"
+    ],
+    "joint_names": [
+      "thumb_proximal_yaw_joint",
+      "index_proximal_joint",
+      "middle_proximal_joint",
+      "ring_proximal_joint",
+      "pinky_proximal_joint",
+      "thumb_proximal_pitch_joint",
+      "index_intermediate_joint",
+      "middle_intermediate_joint",
+      "ring_intermediate_joint",
+      "pinky_intermediate_joint",
+      "thumb_intermediate_joint",
+      "thumb_distal_joint"
+    ],
+    "matrix": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.1169,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.1169,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.1169,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.1169,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.33,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.66,
+        0.0
+      ]
+    ],
+    "offset": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -0.05,
+      -0.15,
+      -0.15,
+      -0.15,
+      0.15,
+      0.15
+    ],
+    "lower": [
+      0.09360730593607307,
+      0.09360730593607307,
+      0.09360730593607307,
+      0.06715014773032502,
+      0.1,
+      0.0
+    ],
+    "upper": [
+      1.53102336825141,
+      1.53102336825141,
+      1.5,
+      1.5,
+      0.48872180451127817,
+      1.308
+    ],
+    "full_lower": [
+      0.0,
+      0.025,
+      0.0,
+      0.0,
+      0.0,
+      0.1,
+      0.025,
+      -0.04545,
+      -0.04545,
+      -0.04545,
+      0.0,
+      0.0
+    ],
+    "full_upper": [
+      1.308,
+      1.57,
+      1.57,
+      1.57,
+      1.57,
+      0.7,
+      1.7,
+      1.56,
+      1.56,
+      1.56,
+      0.8,
+      0.6
+    ]
+  },
+  "link_names": [
+    "base",
+    "thumb_proximal_base",
+    "thumb_proximal",
+    "thumb_intermediate",
+    "thumb_distal",
+    "index_proximal",
+    "index_intermediate",
+    "middle_proximal",
+    "middle_intermediate",
+    "ring_proximal",
+    "ring_intermediate",
+    "pinky_proximal",
+    "pinky_intermediate"
+  ],
+  "contact_regions": [
+    {
+      "finger": "thumb",
+      "link": "thumb_distal",
+      "face_index": 827,
+      "vertex_indices": [
+        2481,
+        2482,
+        2483,
+        2481
+      ],
+      "vertices_link_m": [
+        [
+          0.00350344,
+          0.00916938,
+          -0.00608526
+        ],
+        [
+          0.00617263,
+          0.01133791,
+          -0.00398975
+        ],
+        [
+          0.00617263,
+          0.01133791,
+          -0.00818077
+        ],
+        [
+          0.00350344,
+          0.00916938,
+          -0.00608526
+        ]
+      ],
+      "normal_link": [
+        -0.6305598932415529,
+        0.7761405936009281,
+        0.0
+      ],
+      "tip_site_link_m": [
+        0.0159104,
+        0.0156076,
+        -0.00599021
+      ],
+      "closing_direction_link": [
+        -0.25487231373551494,
+        0.9669747171933222,
+        9.179714832308815e-13
+      ],
+      "distance_to_tip_m": 0.011742153969223214,
+      "normal_alignment": 0.9112205899388085
+    },
+    {
+      "finger": "thumb",
+      "link": "thumb_distal",
+      "face_index": 820,
+      "vertex_indices": [
+        2460,
+        2461,
+        2462,
+        2460
+      ],
+      "vertices_link_m": [
+        [
+          0.01124726,
+          0.01404546,
+          -0.00818081
+        ],
+        [
+          0.00862017,
+          0.01282381,
+          -0.00398972
+        ],
+        [
+          0.01124726,
+          0.01404545,
+          -0.0039897
+        ],
+        [
+          0.01124726,
+          0.01404546,
+          -0.00818081
+        ]
+      ],
+      "normal_link": [
+        -0.4216563088050772,
+        0.9067557318485483,
+        2.163521672880343e-06
+      ],
+      "tip_site_link_m": [
+        0.0159104,
+        0.0156076,
+        -0.00599021
+      ],
+      "closing_direction_link": [
+        -0.25487231373551494,
+        0.9669747171933222,
+        9.179714832308815e-13
+      ],
+      "distance_to_tip_m": 0.005909421498538491,
+      "normal_alignment": 0.9842783863940007
+    },
+    {
+      "finger": "thumb",
+      "link": "thumb_distal",
+      "face_index": 823,
+      "vertex_indices": [
+        2469,
+        2470,
+        2471,
+        2469
+      ],
+      "vertices_link_m": [
+        [
+          0.00862017,
+          0.01282382,
+          -0.00818079
+        ],
+        [
+          0.00862017,
+          0.01282381,
+          -0.00398972
+        ],
+        [
+          0.01124726,
+          0.01404546,
+          -0.00818081
+        ],
+        [
+          0.00862017,
+          0.01282382,
+          -0.00818079
+        ]
+      ],
+      "normal_link": [
+        -0.4216563087779923,
+        0.9067557318611433,
+        2.163542321783598e-06
+      ],
+      "tip_site_link_m": [
+        0.0159104,
+        0.0156076,
+        -0.00599021
+      ],
+      "closing_direction_link": [
+        -0.25487231373551494,
+        0.9669747171933222,
+        9.179714832308815e-13
+      ],
+      "distance_to_tip_m": 0.006886513313234468,
+      "normal_alignment": 0.9842783863992767
+    },
+    {
+      "finger": "index",
+      "link": "index_intermediate",
+      "face_index": 5653,
+      "vertex_indices": [
+        16959,
+        16960,
+        16961,
+        16959
+      ],
+      "vertices_link_m": [
+        [
+          -0.0048465,
+          0.03314752,
+          -0.00318396
+        ],
+        [
+          -0.00520998,
+          0.0347035,
+          -0.00528039
+        ],
+        [
+          -0.00488531,
+          0.03121524,
+          -0.00528039
+        ],
+        [
+          -0.0048465,
+          0.03314752,
+          -0.00318396
+        ]
+      ],
+      "normal_link": [
+        -0.9903702076391637,
+        -0.09217876400102265,
+        0.10329534010788453
+      ],
+      "tip_site_link_m": [
+        -0.00412053,
+        0.0433132,
+        -0.00501047
+      ],
+      "closing_direction_link": [
+        -0.993676686328497,
+        0.11227930818818613,
+        -7.081980897896743e-12
+      ],
+      "distance_to_tip_m": 0.010335892556655294,
+      "normal_alignment": 0.9737580183129414
+    },
+    {
+      "finger": "index",
+      "link": "index_intermediate",
+      "face_index": 4724,
+      "vertex_indices": [
+        14172,
+        14173,
+        14174,
+        14172
+      ],
+      "vertices_link_m": [
+        [
+          -0.0048465,
+          0.03314752,
+          -0.00737682
+        ],
+        [
+          -0.00488531,
+          0.03121524,
+          -0.00528039
+        ],
+        [
+          -0.00520998,
+          0.0347035,
+          -0.00528039
+        ],
+        [
+          -0.0048465,
+          0.03314752,
+          -0.00737682
+        ]
+      ],
+      "normal_link": [
+        -0.9903702076391637,
+        -0.09217876400102266,
+        -0.10329534010788453
+      ],
+      "tip_site_link_m": [
+        -0.00412053,
+        0.0433132,
+        -0.00501047
+      ],
+      "closing_direction_link": [
+        -0.993676686328497,
+        0.11227930818818613,
+        -7.081980897896743e-12
+      ],
+      "distance_to_tip_m": 0.0103723269387116,
+      "normal_alignment": 0.9737580183144044
+    },
+    {
+      "finger": "index",
+      "link": "index_intermediate",
+      "face_index": 5651,
+      "vertex_indices": [
+        16953,
+        16954,
+        16955,
+        16953
+      ],
+      "vertices_link_m": [
+        [
+          -0.0044359,
+          0.03034399,
+          -0.00319956
+        ],
+        [
+          -0.00488531,
+          0.03121524,
+          -0.00528039
+        ],
+        [
+          -0.00412412,
+          0.02796501,
+          -0.00528039
+        ],
+        [
+          -0.0044359,
+          0.03034399,
+          -0.00319956
+        ]
+      ],
+      "normal_link": [
+        -0.96730064526922,
+        -0.2265376844630927,
+        0.11406199708864792
+      ],
+      "tip_site_link_m": [
+        -0.00412053,
+        0.0433132,
+        -0.00501047
+      ],
+      "closing_direction_link": [
+        -0.993676686328497,
+        0.11227930818818613,
+        -7.081980897896743e-12
+      ],
+      "distance_to_tip_m": 0.013483287743071257,
+      "normal_alignment": 0.935748605383658
+    },
+    {
+      "finger": "middle",
+      "link": "middle_intermediate",
+      "face_index": 3969,
+      "vertex_indices": [
+        11907,
+        11908,
+        11909,
+        11907
+      ],
+      "vertices_link_m": [
+        [
+          -0.00551994,
+          0.04064666,
+          -0.00504879
+        ],
+        [
+          -0.00531247,
+          0.03783707,
+          -0.00713995
+        ],
+        [
+          -0.00549532,
+          0.03588961,
+          -0.00504879
+        ],
+        [
+          -0.00551994,
+          0.04064666,
+          -0.00504879
+        ]
+      ],
+      "normal_link": [
+        -0.995757861773433,
+        -0.005153521311918586,
+        -0.09186795923763903
+      ],
+      "tip_site_link_m": [
+        -0.00426879,
+        0.0466043,
+        -0.00498678
+      ],
+      "closing_direction_link": [
+        -0.9962410965292418,
+        0.08662377033016996,
+        -5.124873994485294e-13
+      ],
+      "distance_to_tip_m": 0.008594292573429186,
+      "normal_alignment": 0.9915684866443097
+    },
+    {
+      "finger": "middle",
+      "link": "middle_intermediate",
+      "face_index": 4700,
+      "vertex_indices": [
+        14100,
+        14101,
+        14102,
+        14100
+      ],
+      "vertices_link_m": [
+        [
+          -0.00551994,
+          0.04064666,
+          -0.00504879
+        ],
+        [
+          -0.00549532,
+          0.03588961,
+          -0.00504879
+        ],
+        [
+          -0.00531247,
+          0.03783707,
+          -0.00295764
+        ],
+        [
+          -0.00551994,
+          0.04064666,
+          -0.00504879
+        ]
+      ],
+      "normal_link": [
+        -0.9957578215853112,
+        -0.005153521103925907,
+        0.0918683948477755
+      ],
+      "tip_site_link_m": [
+        -0.00426879,
+        0.0466043,
+        -0.00498678
+      ],
+      "closing_direction_link": [
+        -0.9962410965292418,
+        0.08662377033016996,
+        -5.124873994485294e-13
+      ],
+      "distance_to_tip_m": 0.008584227600389504,
+      "normal_alignment": 0.9915684466251743
+    },
+    {
+      "finger": "middle",
+      "link": "middle_intermediate",
+      "face_index": 3966,
+      "vertex_indices": [
+        11898,
+        11899,
+        11900,
+        11898
+      ],
+      "vertices_link_m": [
+        [
+          -0.00515478,
+          0.03510613,
+          -0.00714522
+        ],
+        [
+          -0.00486253,
+          0.03146409,
+          -0.0050488
+        ],
+        [
+          -0.00549532,
+          0.03588961,
+          -0.00504879
+        ],
+        [
+          -0.00515478,
+          0.03510613,
+          -0.00714522
+        ]
+      ],
+      "normal_link": [
+        -0.9842184445724649,
+        -0.14072979372652578,
+        -0.10728083948705554
+      ],
+      "tip_site_link_m": [
+        -0.00426879,
+        0.0466043,
+        -0.00498678
+      ],
+      "closing_direction_link": [
+        -0.9962410965292418,
+        0.08662377033016996,
+        -5.124873994485294e-13
+      ],
+      "distance_to_tip_m": 0.012506821920293471,
+      "normal_alignment": 0.9683283171148533
+    },
+    {
+      "finger": "ring",
+      "link": "ring_intermediate",
+      "face_index": 5653,
+      "vertex_indices": [
+        16959,
+        16960,
+        16961,
+        16959
+      ],
+      "vertices_link_m": [
+        [
+          -0.0048465,
+          0.03314752,
+          -0.00318396
+        ],
+        [
+          -0.00520998,
+          0.0347035,
+          -0.00528039
+        ],
+        [
+          -0.00488531,
+          0.03121524,
+          -0.00528039
+        ],
+        [
+          -0.0048465,
+          0.03314752,
+          -0.00318396
+        ]
+      ],
+      "normal_link": [
+        -0.9903702076391637,
+        -0.09217876400102265,
+        0.10329534010788453
+      ],
+      "tip_site_link_m": [
+        -0.00366554,
+        0.0433541,
+        -0.00501047
+      ],
+      "closing_direction_link": [
+        -0.9943237979379322,
+        0.10639635733560686,
+        8.499867688256267e-13
+      ],
+      "distance_to_tip_m": 0.010424193982693446,
+      "normal_alignment": 0.9749411815110323
+    },
+    {
+      "finger": "ring",
+      "link": "ring_intermediate",
+      "face_index": 4724,
+      "vertex_indices": [
+        14172,
+        14173,
+        14174,
+        14172
+      ],
+      "vertices_link_m": [
+        [
+          -0.0048465,
+          0.03314752,
+          -0.00737682
+        ],
+        [
+          -0.00488531,
+          0.03121524,
+          -0.00528039
+        ],
+        [
+          -0.00520998,
+          0.0347035,
+          -0.00528039
+        ],
+        [
+          -0.0048465,
+          0.03314752,
+          -0.00737682
+        ]
+      ],
+      "normal_link": [
+        -0.9903702076391637,
+        -0.09217876400102266,
+        -0.10329534010788453
+      ],
+      "tip_site_link_m": [
+        -0.00366554,
+        0.0433541,
+        -0.00501047
+      ],
+      "closing_direction_link": [
+        -0.9943237979379322,
+        0.10639635733560686,
+        8.499867688256267e-13
+      ],
+      "distance_to_tip_m": 0.010460320806247878,
+      "normal_alignment": 0.9749411815108566
+    },
+    {
+      "finger": "ring",
+      "link": "ring_intermediate",
+      "face_index": 5651,
+      "vertex_indices": [
+        16953,
+        16954,
+        16955,
+        16953
+      ],
+      "vertices_link_m": [
+        [
+          -0.0044359,
+          0.03034399,
+          -0.00319956
+        ],
+        [
+          -0.00488531,
+          0.03121524,
+          -0.00528039
+        ],
+        [
+          -0.00412412,
+          0.02796501,
+          -0.00528039
+        ],
+        [
+          -0.0044359,
+          0.03034399,
+          -0.00319956
+        ]
+      ],
+      "normal_link": [
+        -0.96730064526922,
+        -0.2265376844630927,
+        0.11406199708864792
+      ],
+      "tip_site_link_m": [
+        -0.00366554,
+        0.0433541,
+        -0.00501047
+      ],
+      "closing_direction_link": [
+        -0.9943237979379322,
+        0.10639635733560686,
+        8.499867688256267e-13
+      ],
+      "distance_to_tip_m": 0.013543945380265758,
+      "normal_alignment": 0.9377072669258841
+    },
+    {
+      "finger": "pinky",
+      "link": "pinky_intermediate",
+      "face_index": 6175,
+      "vertex_indices": [
+        18525,
+        18526,
+        18527,
+        18525
+      ],
+      "vertices_link_m": [
+        [
+          -0.00316626,
+          0.02612491,
+          -0.00410935
+        ],
+        [
+          -0.00263762,
+          0.02474716,
+          -0.00276477
+        ],
+        [
+          -0.00310851,
+          0.02786386,
+          -0.00274239
+        ],
+        [
+          -0.00316626,
+          0.02612491,
+          -0.00410935
+        ]
+      ],
+      "normal_link": [
+        -0.9625502599315601,
+        -0.1470633371742932,
+        0.22774848400120312
+      ],
+      "tip_site_link_m": [
+        -0.00260734,
+        0.0362776,
+        -0.00501047
+      ],
+      "closing_direction_link": [
+        -0.989682004781628,
+        0.14328129470177733,
+        -4.716476693097702e-12
+      ],
+      "distance_to_tip_m": 0.010199845491987717,
+      "normal_alignment": 0.9315472455975726
+    },
+    {
+      "finger": "pinky",
+      "link": "pinky_intermediate",
+      "face_index": 6165,
+      "vertex_indices": [
+        18495,
+        18496,
+        18497,
+        18495
+      ],
+      "vertices_link_m": [
+        [
+          -0.0021313,
+          0.02233533,
+          -0.00498418
+        ],
+        [
+          -0.00216569,
+          0.02319167,
+          -0.00690162
+        ],
+        [
+          -0.00133644,
+          0.02093425,
+          -0.00611818
+        ],
+        [
+          -0.0021313,
+          0.02233533,
+          -0.00498418
+        ]
+      ],
+      "normal_link": [
+        -0.9081389810088228,
+        -0.3881004798251197,
+        -0.1570401500628702
+      ],
+      "tip_site_link_m": [
+        -0.00260734,
+        0.0362776,
+        -0.00501047
+      ],
+      "closing_direction_link": [
+        -0.989682004781628,
+        0.14328129470177733,
+        -4.716476693097702e-12
+      ],
+      "distance_to_tip_m": 0.014177346358796408,
+      "normal_alignment": 0.8431612681221731
+    },
+    {
+      "finger": "pinky",
+      "link": "pinky_intermediate",
+      "face_index": 6186,
+      "vertex_indices": [
+        18558,
+        18559,
+        18560,
+        18558
+      ],
+      "vertices_link_m": [
+        [
+          -0.00329447,
+          0.02717663,
+          -0.00557011
+        ],
+        [
+          -0.00281197,
+          0.02553595,
+          -0.00691966
+        ],
+        [
+          -0.00302924,
+          0.0252026,
+          -0.00483883
+        ],
+        [
+          -0.00329447,
+          0.02717663,
+          -0.00557011
+        ]
+      ],
+      "normal_link": [
+        -0.9750806186339922,
+        -0.17937334424694149,
+        -0.1305488051956795
+      ],
+      "tip_site_link_m": [
+        -0.00260734,
+        0.0362776,
+        -0.00501047
+      ],
+      "closing_direction_link": [
+        -0.989682004781628,
+        0.14328129470177733,
+        -4.716476693097702e-12
+      ],
+      "distance_to_tip_m": 0.010343554143932131,
+      "normal_alignment": 0.9393188964753258
+    }
+  ],
+  "hand_approaching_matrix": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      0
+    ]
+  ],
+  "hand_position_offset_m": 0.05,
+  "hardware_calibrated": false,
+  "inputs": {
+    "assets/objects/fuel_tank/meshes/body_00.stl": "07997de9277191ade181d5fecac27f27ae098b5324fd7844582296b8242b53b2",
+    "assets/objects/fuel_tank/meshes/body_01.stl": "62e90414f4a8ed930d5709493853206c90e9b0d339091e946e5f9aaece452b35",
+    "assets/objects/fuel_tank/meshes/body_02.stl": "9fae6bd8c697c18538b0b01cda9471dd33e8e3e747c982da044994a4540f5ac8",
+    "assets/objects/fuel_tank/meshes/body_03.stl": "c18370f2a75facc6a7b8cbff0adc3112b30d9d424662dda3f186bd39559257ac",
+    "assets/objects/fuel_tank/meshes/body_04.stl": "1e1ca20f0459a38386a8fe63507bb617c23a16b05d57f84b891c7b524722274c",
+    "assets/objects/fuel_tank/meshes/body_05.stl": "5906df2df872d272ef63feab30736c827a53e11d1f841b30ba4afb990f494513",
+    "assets/objects/fuel_tank/meshes/body_06.stl": "acea88debaae4ca740bd7b298b29e3e71381ed1b93c58d0927c0cc66ec80eb8a",
+    "assets/objects/fuel_tank/meshes/body_07.stl": "9829e7f76ee3c2e863c4f4c69f1b38da2604aa71c7df6665883f60b15543569b",
+    "assets/objects/fuel_tank/meshes/body_08.stl": "c81fee6a723eaed2ce27b0d710fd75923f7229e8e5b4c37c33d89f21e1adc54f",
+    "assets/objects/fuel_tank/meshes/body_09.stl": "70da5fd34acf2ad6bf732327c9337b299168ae2fe4ac417eb18c2edf485884d4",
+    "assets/objects/fuel_tank/meshes/body_10.stl": "0fe2301310bed42f8b675442c274569976e85b7323be0bab86caf46652a16d8c",
+    "assets/objects/fuel_tank/meshes/body_11.stl": "dd3e2a3f5aabfa40aaec3f75f2ec0edec8faccf2cbd698e2c1610d33d5d3046d",
+    "assets/objects/fuel_tank/meshes/body_12.stl": "60d13a7f2c82008c917d35a69e4d51f48c78bdb49328af42e3ffb5c6525ff66d",
+    "assets/objects/fuel_tank/meshes/body_13.stl": "7380b976a8d1002e9c8412ec8e243d9f9f03c0a1e6d2dac9cabad4b624c38323",
+    "assets/objects/fuel_tank/meshes/body_14.stl": "74880698f5bafa1c43d19040a212db894afc6843838b3314f60b25783f88fb68",
+    "assets/objects/fuel_tank/meshes/body_15.stl": "79d2644f4b99fadb136e74586e4c7d7e547d2fd0492cf5e115fdb2874ac5d777",
+    "assets/objects/fuel_tank/meshes/body_16.stl": "8360e74fa5ee3a0d7a42422fc85b575600f9f621c1297c015797856f03836361",
+    "assets/objects/fuel_tank/meshes/body_17.stl": "7e8586d0e9feec2afaa4cbaefc8eb0bb4299e2eafd68beadd4c2e64f96f6649a",
+    "assets/objects/fuel_tank/meshes/body_18.stl": "30b73625db5b82d51b3db9bc607ac92b92ffbf6fb5b770cce2de5a1dfe8fa315",
+    "assets/objects/fuel_tank/meshes/body_19.stl": "47c59ae364cc98a4c4901464da3290ddf5f5623d05ee384bfc5f823598e9f2da",
+    "assets/objects/fuel_tank/meshes/body_20.stl": "3a0bab86255b30882a7844628d906ce2649f237f533c3ab368ee0cef77ffcc4c",
+    "assets/objects/fuel_tank/meshes/body_21.stl": "96c603aa9de140356412d7b8dfc4914bf8873f774fdc629a29cbd209af2ba9cd",
+    "assets/objects/fuel_tank/meshes/body_22.stl": "925e78f2755ae07496e113ec431640cefb363e1e3d44ce85512ec87176729d2a",
+    "assets/objects/fuel_tank/meshes/body_23.stl": "c46a3f64a4a1bb4a6ff22cd951c3e8e94dd9a6a9dba89b2ea271cc6962a85db3",
+    "assets/objects/fuel_tank/meshes/body_24.stl": "e1687801b714b495b7de7fb023a9ea054c31dbf20f70a7ca2a9d44e1a6af1a96",
+    "assets/objects/fuel_tank/meshes/body_25.stl": "a588f6f1332a70a71d212c7eee0c6c5793be1103b574aa93fd24ef6c895db9d4",
+    "assets/objects/fuel_tank/meshes/body_26.stl": "c3ae68b099c828555215dd8105f17bc138f0cd9dc05e54bd043f042219e019d3",
+    "assets/objects/fuel_tank/meshes/body_27.stl": "2b5cd9a9023d6039afb8707143f2619c25888e20464bd09af1e4e9d6f58a3753",
+    "assets/objects/fuel_tank/meshes/body_28.stl": "f51b8b95c1dd4545b37f8400fe0376374c2bd1a197644ed18005d7e9b2e874a6",
+    "assets/objects/fuel_tank/meshes/body_29.stl": "1b0288945667bdeaaaa773e53475d8ea157af20be65cddda4c0529cc92a530d0",
+    "assets/objects/fuel_tank/meshes/body_30.stl": "e6039f0573261a90af0adffa69a8a9e3bd6bad32fc195d7bddff09ea0d115dee",
+    "assets/objects/fuel_tank/meshes/body_31.stl": "3b6d3aa93a7ceea0a45261be949d6c250930810e75f18ef3091f18d84733aaff",
+    "assets/objects/fuel_tank/meshes/body_32.stl": "d242f90c1e3eb6e79d584b6488bc9d21f9466f6fdd49c529074b762f62626251",
+    "assets/objects/fuel_tank/meshes/body_33.stl": "e8fc5a4046aced6e565b343d5ad4d0871e966182dbd0da8e89c1a149068bec69",
+    "assets/objects/fuel_tank/meshes/body_34.stl": "0a83972117489cbe46654c0947c2c852f47b8fd0397f2e693a9d279ff5ffcf2a",
+    "assets/objects/fuel_tank/meshes/body_35.stl": "be3b35670a77e30d85c3251e44cfe46d969ca5b81e6b4d4f721648f36a24b005",
+    "assets/objects/fuel_tank/meshes/body_36.stl": "cae709e0fc156bf7e2a68785b2279b66dcf7e5745c7888c77565f8424ad0d0d1",
+    "assets/objects/fuel_tank/meshes/body_37.stl": "2a3dc690caca2f79bb2a60895e3888e11a2a79606a1b41b0d3b30c13c754417d",
+    "assets/objects/fuel_tank/meshes/body_38.stl": "a6bcdb4cb0edc70d8ad396e7a983a1791f8a298fc303984d6fbf05b1b24991a1",
+    "assets/objects/fuel_tank/meshes/body_39.stl": "3ea383b5027c5ed9d35837d567fe11071dcf050ae470affc0b5df3d8f01716d9",
+    "assets/objects/fuel_tank/meshes/body_40.stl": "eec7bad33a2da69ff49ce038ddac9f72a40c03c253d711299528e6d392bc3edb",
+    "assets/objects/fuel_tank/meshes/body_41.stl": "c254abdd1adf8c05f38f0abb869fe1c9202a2146559989764c18e92e7e7a1a03",
+    "assets/objects/fuel_tank/meshes/body_42.stl": "e98388dc13f8d39cfaf143a3e5a23bf1342ace719016cab612868aecc5d0ee35",
+    "assets/objects/fuel_tank/meshes/body_43.stl": "8f99f2499a4f40d9a7d81430613ce909b187209b777aaea82792da6b31e11dda",
+    "assets/objects/fuel_tank/meshes/body_44.stl": "78931f4b4baf8c432dad8a02fc672c374ded361a31369329875ee07cb4ff6c2c",
+    "assets/objects/fuel_tank/meshes/body_45.stl": "368ef4d502099f419f1c68bccdcdb7e7b7a1163009a23fbe3648ffae011368fc",
+    "assets/objects/fuel_tank/meshes/body_46.stl": "09ecb139cfa9175acc4914c8507f99045690dd3955f02ff3ed1418328cc285c5",
+    "assets/objects/fuel_tank/meshes/body_47.stl": "e007f493d5c66d8d91376737ce85c56765e41df0e37f7ede75a48930ec13a1a0",
+    "assets/objects/fuel_tank/meshes/body_48.stl": "a4101e08aecfa0dbf463f69a6333371171a7a739e99b9707fb8e6a7a68c41366",
+    "assets/objects/fuel_tank/meshes/body_49.stl": "55c48acf71b329eb21aee0e66c57af06e8b5ed8412dfb217d66e9f27c7dbdfdf",
+    "assets/objects/fuel_tank/meshes/body_50.stl": "44134c305db9fc8ccc566bb14865efbfc4640789e87efeeb2fb3a1f030792243",
+    "assets/objects/fuel_tank/meshes/body_51.stl": "1dc4f2864f3428d77b169fdca6576c6ab447d8a58990ef211a9b155afbd98bf4",
+    "assets/objects/fuel_tank/meshes/body_52.stl": "84b5a232b00051d9802da3106b49ec5fd805956899a81e09a5db85c859d1a0ca",
+    "assets/objects/fuel_tank/meshes/body_53.stl": "59d9d3e09ddbc27e538769bcf808bbea17cff64c64ac0b723e1406590b232951",
+    "assets/objects/fuel_tank/meshes/body_54.stl": "dcafe5318ebb863c8a0abc89c05ffc35c9031e2f4f32a7ad4a300186b41f9ec7",
+    "assets/objects/fuel_tank/meshes/body_55.stl": "c8e6552f2d7f0acedf7df2db9711044fec1299ad3dbe44926bb39c01cf1e1b11",
+    "assets/objects/fuel_tank/meshes/body_56.stl": "e06eeebd1d760c25dab717c2f08136e121b79aa42239b203dad7b8226b2de757",
+    "assets/objects/fuel_tank/meshes/body_57.stl": "979f74763706de7d13dd18379c90c5f2983629e6855722c53888abdc225e8328",
+    "assets/objects/fuel_tank/meshes/body_58.stl": "6c0c91aa3a4d46e7ee7f413a410a5bd34a4e976bb13527e9899211f64796f888",
+    "assets/objects/fuel_tank/meshes/body_59.stl": "1aef7c98728897f65653dbb0c3583d7beb2f24f5c9a74adffb46397168a64beb",
+    "assets/objects/fuel_tank/meshes/body_60.stl": "3fd1f3a3d50efeb157948d7432cf9a66d518b3a900788ef1423d264fe349c1ef",
+    "assets/objects/fuel_tank/meshes/body_61.stl": "57b77f15a1bfb90032718413a5fc659d7cb2b0184c9d21ceca915386acda02f1",
+    "assets/objects/fuel_tank/meshes/body_62.stl": "e32f86be95621808776c0c8888640e9f2602c8343c34187ad98a1c1ad4c5b367",
+    "assets/objects/fuel_tank/meshes/body_63.stl": "704284d0fe59d222ff5a38dddbafeaa8d6a5f179490322791c9f52c90d1e9f20",
+    "assets/objects/fuel_tank/meshes/neck_00.stl": "b0d45ca94fba61325188d87d7f4ed7ecdf37a633901322ea36cebe8d4b376b0c",
+    "assets/objects/fuel_tank/meshes/neck_01.stl": "c2b134808d2b362d1b4cdded78923f21c59a4a4a2df83adf1752e59b2027ccf7",
+    "assets/objects/fuel_tank/meshes/neck_02.stl": "9673547303920984cc3e2deccb0819d282691167c79c66f65ccca1367a9af53b",
+    "assets/objects/fuel_tank/meshes/neck_03.stl": "b2730c280d10c9edb1e59a2178e4da5e6df5a81be0042c493b50a70961e255f8",
+    "assets/objects/fuel_tank/meshes/neck_04.stl": "ad1b6093953df4a6e5ccefd7a60f115efaa94bfa13fe1970d4c628e663df030b",
+    "assets/objects/fuel_tank/meshes/neck_05.stl": "cc7c669e10c36ca72d0ba340be8b66fee4bd998e96aa2785451552a0f89b7a02",
+    "assets/objects/fuel_tank/meshes/neck_06.stl": "ac222b46639a5202b7967e5dd99776eaf4d6d86a73775f5d02b489caa7716d3a",
+    "assets/objects/fuel_tank/meshes/neck_07.stl": "38676302f182dc09519c66775bcd04295a9ececf9a8f3250550d1f6f8471976f",
+    "assets/objects/fuel_tank/meshes/neck_08.stl": "cac67c09565b4b5c95bb550c26c6209b612215836a48b3843ff07b81e69b0da5",
+    "assets/objects/fuel_tank/meshes/neck_09.stl": "65ddb44e629966cd648aab7e7b2435b32cefac57c61bdaeaa5e8b1b936428fce",
+    "assets/objects/fuel_tank/meshes/neck_10.stl": "a614e1a7e64ad19cf213a3c952dab1854e2a8066cebbacd9996995bc0a1febda",
+    "assets/objects/fuel_tank/meshes/neck_11.stl": "1e0d4ca25f8788f5465cae2838127cbef0504552dca425c657d57d1f50837990",
+    "assets/objects/fuel_tank/meshes/neck_12.stl": "588bbf9f5161857706d085048fc0a24e8af2fd9534d1ff12bb86d016977134a7",
+    "assets/objects/fuel_tank/meshes/neck_13.stl": "a916365352f52ee52aed475b5fab1adff99e3867a1d2bbdf83cf20594543ca33",
+    "assets/objects/fuel_tank/meshes/neck_14.stl": "8c30c7e054f91f7450d2653eab71d577ee3d7d5c6d04192b40f80ac93c7dbf62",
+    "assets/objects/fuel_tank/meshes/neck_15.stl": "af93f9d2c2cb2a5422a8546d18e3073a5030cd0cfb6642ca5358855ec6dc0c12",
+    "assets/objects/fuel_tank/meshes/neck_16.stl": "81cef78aa37a640442ff126c34651acf868c7d8c994af05749bb68a3b3c14c3e",
+    "assets/objects/fuel_tank/meshes/neck_17.stl": "80e9bf9a6bd17d40a866638ce6cd779bd7926e37b664cc8a6032fd4bdfc36dd4",
+    "assets/objects/fuel_tank/meshes/neck_18.stl": "ee90c7fe4e90c3943b3a24fbd8a4e31cf7e4afaa68ec2860844d88a893b4c46a",
+    "assets/objects/fuel_tank/meshes/neck_19.stl": "f0af448047ad7277ea1ad4abaeccb3eb64963bc04631a06766dde60bcd0d5126",
+    "assets/objects/fuel_tank/meshes/neck_20.stl": "8e4f1ca5d19511c20b082eafbf48d21034a380792114f077368d905b62254f80",
+    "assets/objects/fuel_tank/meshes/neck_21.stl": "6581b27224915080cf3f8a939b2b810da7394940bff00dd763efd4324bd3f558",
+    "assets/objects/fuel_tank/meshes/neck_22.stl": "89c51bbc659f26f476643d4871f80615877f33b9e7f8a7e8a9c7d11740f0022a",
+    "assets/objects/fuel_tank/meshes/neck_23.stl": "4a2b222f991bbb1e80bd63a0ac2da41b96aacdfc5a7c50185214b3561af15f45",
+    "assets/objects/fuel_tank/meshes/neck_24.stl": "888cf9ae00cf348d89056101a02176aed1dff7d8c1a3832515024386e39f0cd0",
+    "assets/objects/fuel_tank/meshes/neck_25.stl": "b86bd671e85c105c7251182aac15592d0be136944320347427e7918ae0d40a45",
+    "assets/objects/fuel_tank/meshes/neck_26.stl": "8a7d8ffb9e7660951fd0eb08cdc8648ed415bea69f75231b62f29303a9eec795",
+    "assets/objects/fuel_tank/meshes/neck_27.stl": "ed9f6bb05a2f255e4ceab6d48d310ff80f65602a41bb97b6be4b63744062b28a",
+    "assets/objects/fuel_tank/meshes/neck_28.stl": "5e2da8d5861b6ba2bb46b6c3bff3e2842542b23260e7b38f9e1b16ac4db5757f",
+    "assets/objects/fuel_tank/meshes/neck_29.stl": "8b7908c2000ea88f2edd9abee5e7d4ad088ba1f90255665f35fd15b0e0d75737",
+    "assets/objects/fuel_tank/meshes/neck_30.stl": "7cc52dcff162029420c926efbc6e2ec69f2fe2f0ed8303d10cb5f00869163e72",
+    "assets/objects/fuel_tank/meshes/neck_31.stl": "fd2d65cd4618a8d0e1c343a5b53105382b9e331b9fb1924bb606f7b3478b0b25",
+    "assets/objects/fuel_tank/meshes/neck_32.stl": "d25abfb681673464c9fa0c3ac399f0d03d339e76981339dcc69fde08a2668784",
+    "assets/objects/fuel_tank/meshes/neck_33.stl": "cbf794a014ad10a3c7e249bf8f32a80caa66bdf8054b93eac955e450204fa0b9",
+    "assets/objects/fuel_tank/meshes/neck_34.stl": "df6e57d72c1b56d073b7aa0860ff1d19c63d99747de2ad2f36a713586ea76e8b",
+    "assets/objects/fuel_tank/meshes/neck_35.stl": "24a63f632cdefa410528ddd2a3e46538384758c5edb93028696f9d21550361e5",
+    "assets/objects/fuel_tank/meshes/neck_36.stl": "0d73053799d2d233953ad5c2d1cc6a86715aa94c0ed3e256bee757b578aa7cf3",
+    "assets/objects/fuel_tank/meshes/neck_37.stl": "47be7cdf96cefe0a06b12caf0cc8abd60ef0f294a4455fa571fcb6a0c20994bc",
+    "assets/objects/fuel_tank/meshes/neck_38.stl": "aa1a2d8df66a64db5a279771a216e813fdb0fe24e5009b87956ec8cf0ae8fecd",
+    "assets/objects/fuel_tank/meshes/neck_39.stl": "87eeade8447ab0b54d4246ba1de5c9493e5322f00ffda4769d7af39406fe6c40",
+    "assets/objects/fuel_tank/meshes/neck_40.stl": "ad13a15d4d4e57714445cc6ae7f008f44a17e5e631e05a240ce941e97a3e3d41",
+    "assets/objects/fuel_tank/meshes/neck_41.stl": "d1cda86ee1e4c0b53d29d7a7486da8f131359d00f0b6f04ff811348958a918a0",
+    "assets/objects/fuel_tank/meshes/neck_42.stl": "936c7f56db57f5e0ee9207b1f4583bd718c7ced72a7b04cfa0d3aab8678bcf34",
+    "assets/objects/fuel_tank/meshes/neck_43.stl": "52012145678032381f9212d8f4d9b30b7582df1f9ce372987e97b306fab66f9f",
+    "assets/objects/fuel_tank/meshes/neck_44.stl": "bbe4ba86473c7e9bf8c4f7d22f9e9f9fb6661b84e4c4bb3f7adaf091716276b1",
+    "assets/objects/fuel_tank/meshes/neck_45.stl": "d25e4a140729b0228e1a002b4d2a0ae44f5685049e51de42d0c69050900beec5",
+    "assets/objects/fuel_tank/meshes/neck_46.stl": "32bf38a869d177e332383c4fdd0fa710ffc0761ad6c063a317e9bc65131bab05",
+    "assets/objects/fuel_tank/meshes/neck_47.stl": "d20d771225a32d575d518dc4344289a397cbcc7a3f9e051c3c1843e63850760b",
+    "assets/objects/fuel_tank/meshes/neck_48.stl": "f8e1b16ca10126978867bd928cbf6847680f18ad7f77c8a0f5b90ae82624d71c",
+    "assets/objects/fuel_tank/meshes/neck_49.stl": "8e90164ae50d56c3fce7196415e41c16ced45a03fce1eb177f25ad3cdc429115",
+    "assets/objects/fuel_tank/meshes/neck_50.stl": "d669be3d015bab684769d747df9c364db6e1b09870f1b74182895be1fbf758bb",
+    "assets/objects/fuel_tank/meshes/neck_51.stl": "ecd3c208a08bdd4c677cccf12d018a9ecdac91a7d5cf9bc7babaa5ee3eb4ad70",
+    "assets/objects/fuel_tank/meshes/neck_52.stl": "968838eae584bd51aaf77d6ed66fbcfa350a484894128ce068e8b16fe84a0410",
+    "assets/objects/fuel_tank/meshes/neck_53.stl": "0d67ab47b1d85f9e79604bc9e0aaa047b830e3d11b3795a3ebacce7c881598c7",
+    "assets/objects/fuel_tank/meshes/neck_54.stl": "01c51b0ad7b290f521452759e06cbafdb9636c339219e54f866e82de8a42e2e0",
+    "assets/objects/fuel_tank/meshes/neck_55.stl": "0717ad01bd94003b9c3de9ee53b0023e8059f99ebd4c75e0a5c1786ad42f97f7",
+    "assets/objects/fuel_tank/meshes/neck_56.stl": "7dbf9efe95d152bead6c52ef93948024f30ff7db76e10239a176d30a50f97ccf",
+    "assets/objects/fuel_tank/meshes/neck_57.stl": "4928540aeef3c422b0bb28b3a72f6fa0189e1e4f72252f2d53b95125dd4ec763",
+    "assets/objects/fuel_tank/meshes/neck_58.stl": "cc6e34067105d01ad9cf33f0284a86785d2c28545ec767ced5ade3f39f8926fe",
+    "assets/objects/fuel_tank/meshes/neck_59.stl": "ddde95b81fae68b472cb6424bad2d9e784a9ce76261ba250a19bafc77780dc9a",
+    "assets/objects/fuel_tank/meshes/neck_60.stl": "bc4427d33656ab267594126030d046ef3a07b1e177da33ce2b22931dbadee61b",
+    "assets/objects/fuel_tank/meshes/neck_61.stl": "e2a1c6f2ba8170e41d9fc17e923827efd3b68ce1e3e33aceb31459f61e7833b7",
+    "assets/objects/fuel_tank/meshes/neck_62.stl": "0321bfa3f1871437aff54064dc4d80a04bb65bad78234bfbe83b4ffb82a90e5a",
+    "assets/objects/fuel_tank/meshes/neck_63.stl": "6de9a680057480951c2788e3d0dcb016c0a7d3a6a41214991dfce3f3bb159498",
+    "assets/objects/fuel_tank/meshes/recess_00.stl": "f7852aafcc5190d2cb04345521ced7bc7c855c05341c26d8aabf7e1eaa22a8f0",
+    "assets/objects/fuel_tank/meshes/recess_01.stl": "4a340939b043c9243196d78f7df38fff0e7ba66299ff1016a140f4915427fb8a",
+    "assets/objects/fuel_tank/meshes/recess_02.stl": "9180734ef848c49c293ecf96ec9f8e49a25bfc3b7c9581fbb81ee1bc86fc7bf4",
+    "assets/objects/fuel_tank/meshes/recess_03.stl": "950aab0f5a695520cc2b3b8e5aa75780b62f0d583e55a2c17f8ead533945398d",
+    "assets/objects/fuel_tank/meshes/recess_04.stl": "1904f5ec61a6641d5e25604f136161d77a5dd06a85722f4d137d1d36cd47ff10",
+    "assets/objects/fuel_tank/meshes/recess_05.stl": "169a75ca814cfd8d4582ca50f4a9ef6ca38d635818d816dd2dbf853a2e782567",
+    "assets/objects/fuel_tank/meshes/recess_06.stl": "066cf786f1a8aac90ca3153fe4b87207b78f4cffce8033ab853157c25a4c8b35",
+    "assets/objects/fuel_tank/meshes/recess_07.stl": "9804fb2e7d1bcb70509855e2788e09e109add243e2ff14780541570422fca845",
+    "assets/objects/fuel_tank/meshes/recess_08.stl": "e51168d9876640f58f0cf2478972793120184a6cbbe5f01dc447b5308dfcbcd2",
+    "assets/objects/fuel_tank/meshes/recess_09.stl": "3d1f7c321dcc68d10d7923a9bde2cd26e4ae3c5adde9a43c6420355d49e303f5",
+    "assets/objects/fuel_tank/meshes/recess_10.stl": "180660097f70925c8e2e87e4df2a6573d261f0d336b34eef22f0c37fa33be154",
+    "assets/objects/fuel_tank/meshes/recess_11.stl": "308a0bd98e654d4ef23cb347fcfbd188678118f7e85a996623138acd7bf2fc7b",
+    "assets/objects/fuel_tank/meshes/recess_12.stl": "ad1086feaf64bb19bbf9a735fdf08b75001595df8181782255788ca0f0765753",
+    "assets/objects/fuel_tank/meshes/recess_13.stl": "6978960fdefdef42892b03cb14c028a7b52ec2123869b332b16a2b0e3ef22f9f",
+    "assets/objects/fuel_tank/meshes/recess_14.stl": "d769fcb5901946be0f9c1aa8d6aa3dc198c5e4e19e250d967fabee3c00a387ba",
+    "assets/objects/fuel_tank/meshes/recess_15.stl": "24f12c97e0c1e994ef2f420e5e3da47a3964aa176c637bc5153ac11f50693ad2",
+    "assets/objects/fuel_tank/meshes/recess_16.stl": "df0682640b03ae672ee6eea7b1bc2a88fb1fb8b9bff7254295c626459432e87c",
+    "assets/objects/fuel_tank/meshes/recess_17.stl": "bf6e2987e74ca19d2457f27789e19e6622bd049ed4d0fc1e61fab414d65a379d",
+    "assets/objects/fuel_tank/meshes/recess_18.stl": "0458bc4352869fd45646d8484e0291513da3d52137794594f946eac9b41872c8",
+    "assets/objects/fuel_tank/meshes/recess_19.stl": "aef1c32716e033cec10e320557200dae8e1d36759760ed88ce0f4579eb82fb33",
+    "assets/objects/fuel_tank/meshes/recess_20.stl": "983b56c4ebfb394d3b6424a2fc91bbb5312b9710142921520d3ad8b220628116",
+    "assets/objects/fuel_tank/meshes/recess_21.stl": "b5c41da736f62d148ad59abaa21fad5675f1dc57ee403404accee57f83f6ecbf",
+    "assets/objects/fuel_tank/meshes/recess_22.stl": "974467c7d13ddf80e092cb80a12a5b3797ca4c73d904a0e2e6cf26e47af5ead7",
+    "assets/objects/fuel_tank/meshes/recess_23.stl": "24e5aa6206eaca4758d963aa0ec70c21f2841985cbded152dc3442601fb447c4",
+    "assets/objects/fuel_tank/meshes/recess_24.stl": "3521246af390f4a45781c6925ae3956fa19df3e480c1b39e2ac09bba93667938",
+    "assets/objects/fuel_tank/meshes/recess_25.stl": "e3a8111f2afb9ee41cf72fd49bccb516641a8080fab4720928a38721ccba3216",
+    "assets/objects/fuel_tank/meshes/recess_26.stl": "f069f30c97064f5258b1e2aad76ac4a641c332952bce886fbb50f972c4a3e5b5",
+    "assets/objects/fuel_tank/meshes/recess_27.stl": "d3affda56d03380baec168012205d2e9e1b4d88444290381c513ad5d1391330a",
+    "assets/objects/fuel_tank/meshes/recess_28.stl": "32e7ef206ad8981144e1cdd8bc34e8e5032ad9baf228d3625ecb0f97d7717211",
+    "assets/objects/fuel_tank/meshes/recess_29.stl": "21811c779599739320277705506e7464ddd3411f89396af3c132d07dadc56dc4",
+    "assets/objects/fuel_tank/meshes/recess_30.stl": "3c6bd56fd59bdf7795c78b1b7a91f086eae88c592dc824b0b260e5d155a54be4",
+    "assets/objects/fuel_tank/meshes/recess_31.stl": "273db9c51ec5fa6ee4d4be756f676b969aceb039bf14708b064b65c6f00c46b6",
+    "assets/objects/fuel_tank/meshes/recess_32.stl": "7e4b2982e6ba445a58ffbba054bce4629511185bbdbd9ae05aa3bd406f935f91",
+    "assets/objects/fuel_tank/meshes/recess_33.stl": "6f393edce5ccd6f9a8d2fae3fb6164eb6647ae426e528036c6fb253729b91ae5",
+    "assets/objects/fuel_tank/meshes/recess_34.stl": "d1c5c09812df107a85f5c40ab1b6f1d7686af855792d681cef391aa08e304045",
+    "assets/objects/fuel_tank/meshes/recess_35.stl": "542637290c5cfd44d35e230820e7cdb2f1f76893f440cc3dbf35ad8461d6083a",
+    "assets/objects/fuel_tank/meshes/recess_36.stl": "c6f1f7125cba1ff859d8da81e2a823ec3bca781860eb71de3513b598654b1ec1",
+    "assets/objects/fuel_tank/meshes/recess_37.stl": "a00e010d3a26afb8b0bced3d45b629b75ed5af17a0dbe39840864f7b19635513",
+    "assets/objects/fuel_tank/meshes/recess_38.stl": "23cf9a55d0a5fe331b9a120197693e5fcb595ecaad7d457b498ac3c08bc7398c",
+    "assets/objects/fuel_tank/meshes/recess_39.stl": "f161b2ffec33e370d2aff42b407b016461953ba5d5a61be92306245c960eef16",
+    "assets/objects/fuel_tank/meshes/recess_40.stl": "9cc4e251de5fca48f17d760a7e901e444151e98e3e0b4ed92c0fffba0f9940fa",
+    "assets/objects/fuel_tank/meshes/recess_41.stl": "90748bc0e0298a8d87d7b13934e997231cb1b3a9e012d31eacb60c1691f11a72",
+    "assets/objects/fuel_tank/meshes/recess_42.stl": "cb2ca7a81cdb0b5565708b551796e1bee7be173cdd186ae2f045050ea7483b24",
+    "assets/objects/fuel_tank/meshes/recess_43.stl": "90381cab385d591773142e72e44c5067f764b2ced07afbf7ed20faa94a9eff89",
+    "assets/objects/fuel_tank/meshes/recess_44.stl": "da6fb9cd1ee4c0cf374d4b123a02f3a7a85828b53aad9650db8a92f9b176898f",
+    "assets/objects/fuel_tank/meshes/recess_45.stl": "8640416edcfaff0255798517c7b984af29f6ab381c89db01c9222c22bdfa199a",
+    "assets/objects/fuel_tank/meshes/recess_46.stl": "efa75a208da546f8bc2804e5f59a1f72116fe1d7612be54df1609495c2bcb3dd",
+    "assets/objects/fuel_tank/meshes/recess_47.stl": "afa2e4cb990d18815640279ba847bca954512dc5ef499a3b6cfafa32c7c5b627",
+    "assets/objects/fuel_tank/meshes/recess_48.stl": "61d1f7f86ae8a050c00808210b113f36e115111b9a94aaf6043bc8041ebe0a70",
+    "assets/objects/fuel_tank/meshes/recess_49.stl": "9ec5096cbb8ef0dc16ac63aeaf81a25b505e642b14728634271665e23eb41240",
+    "assets/objects/fuel_tank/meshes/recess_50.stl": "b50d094baaee1d9e20009590f846d0b530689e70bd08a62223d032a18f3409b6",
+    "assets/objects/fuel_tank/meshes/recess_51.stl": "51cf6a5ea27447c80798e96a9b059d1c1593c449ceb958ea7e0c59505d4d3a0f",
+    "assets/objects/fuel_tank/meshes/recess_52.stl": "d399f8b93676daaaae35d70f2637ddab6bb0ba7c084a28e418d4257964f96ce8",
+    "assets/objects/fuel_tank/meshes/recess_53.stl": "58bb95f50790695f187cb8abcb6f6a2b680eee55cc1afce2e6a9932fe6b0a48b",
+    "assets/objects/fuel_tank/meshes/recess_54.stl": "6db6cafdf5d8874055d2725f14ccf4a6395b58233e590006033d113ab8a0f762",
+    "assets/objects/fuel_tank/meshes/recess_55.stl": "ec08d4c05d5cfa981bd2f56803b00490e4d3af5160026d25a4ae6b0e5b33c420",
+    "assets/objects/fuel_tank/meshes/recess_56.stl": "485fd40febfcff2cbbc776163bb026050663c92a2e00bd5cc3f3c62407a1955b",
+    "assets/objects/fuel_tank/meshes/recess_57.stl": "cc00583bec063acafc2c693b7be29d64c91c6756bfa37d879d8f56f3247acf0e",
+    "assets/objects/fuel_tank/meshes/recess_58.stl": "e621559a66a05eea2d1a857d8be8e2bddac8c56c42877745e4f748543a4dff25",
+    "assets/objects/fuel_tank/meshes/recess_59.stl": "8f1327d6e972241879290d3a74a5e830f612f9b33634ad9f49037d472ec28c0e",
+    "assets/objects/fuel_tank/meshes/recess_60.stl": "8c1aa5de6d2396546d0407191fb035edfcd482dc274b746cbc0bfd2e8ddaad9e",
+    "assets/objects/fuel_tank/meshes/recess_61.stl": "70d99fc6fa87d73438de5624ac6eb7b2c3a19b985b54ad8215a99630ba2ad13e",
+    "assets/objects/fuel_tank/meshes/recess_62.stl": "8c794f723d43dcbd86a1030d5cb9cd5125c0936f29e4366668583c5df2d637c6",
+    "assets/objects/fuel_tank/meshes/recess_63.stl": "b3cb7a8d5fd09f6b3ee061ee8566c2fe92438cb6bce9af30882f57a0f6b7ddad",
+    "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_index_intermediate.stl": "cb5f9967afe55faed1e213fde5fd7e8df64fe7baa3e558b19c269662fe70a414",
+    "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_index_proximal.stl": "45f93c17388a4c5f8f771a88d92ea2fd34dbbaf77d8477963a24261c49a0a627",
+    "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_middle_intermediate.stl": "a2fd03681008487e240d7f9934d652d53668bb92430413fea5eca06ad9a9a5c3",
+    "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_pinky_intermediate.stl": "c39e9b99aa99b2f7ad9620cb263ab3b42e04f536cb919959a2bd9ccef3ee55ef",
+    "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_thumb_distal.stl": "e2b9cdaeb1040324090e09eb9e4c5bc3564e0caed57b4df08ab139cc2b612742",
+    "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_thumb_intermediate.stl": "ea968025b1f65856df24f5b259932718ade5002af1b890024ee020e365976829",
+    "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_thumb_proximal.stl": "0ba9999aaf8ef936fd1f636639419fd07f960226cd30c185ea946fec36837bac",
+    "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_thumb_proximal_base.stl": "9ee662ae36cd0203f3b2517a9057b86a7d3345e8586abb3a449866e03a050b0a",
+    "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/R_hand_base_link.STL": "b4d84504242a99fa915c4ed5195ce4724c67cb94d9217cd4c254cfb5937ecf5c",
+    "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_index_intermediate_visual.stl": "f8990e2fd197c02a040f803daa0212e4fe63bf53f90083716b54de42bb959a40",
+    "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_index_proximal_visual.stl": "fa3bc3e5ed7503b54d004075a513e5b1bfb4ea7e8a9b5aea748d73811e8b2a27",
+    "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_middle_intermediate_visual.stl": "4b2a8a0c7f3c7c3cea295af5c5ba4b4eb08d5e4b77b96b1bb1f9c53685e715df",
+    "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_pinky_intermediate_visual.stl": "0177537f2f33747e4c2e48efa457ea93d3efb3bbe76f8d556bc2beafa8676189",
+    "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_thumb_distal_visual.stl": "26e2c18a3af02598fa43401736bba919846f082546fa786208500e679267777e",
+    "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_thumb_intermediate_visual.stl": "a1148e5e4092f58cc4121e96231107ad8cce0c8fcd4c48314f2d5b3596beab8a",
+    "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_thumb_proximal_base_visual.stl": "d28d68945bdcbcd4e1014f3697e40e23998542c87bf0bd4d9c6d7df39928f5df",
+    "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_thumb_proximal_visual.stl": "2be9bf3251ab6d1dc61403e49152e1544c47640b7aa9c2bcb4cb6a7296ca0b48",
+    "assets/robots/adapter/meshes/adapter.stl": "6c84b57f1c439dee38598484554c1e7f47a119b1e3b651b58f1a562a39a67aa2",
+    "assets/robots/aubo_i10/meshes/aubo_i10_JY/collision/link0.STL": "d0b4eab7e1e4e7be3ce71b0339b14802745a1da70c82f8cfa9ade1b13251da09",
+    "assets/robots/aubo_i10/meshes/aubo_i10_JY/collision/link1.STL": "5d7fa8b0edc29e5ff2183fe2fb1c3846c721cd7fd3ba34bd782c3e09feae1462",
+    "assets/robots/aubo_i10/meshes/aubo_i10_JY/collision/link2.STL": "46e451a71e0f7d1878c67205e66532d1fe988212b97117cae39166b5424f0bef",
+    "assets/robots/aubo_i10/meshes/aubo_i10_JY/collision/link3.STL": "097bc4a8745e79f84b3b4cbc06a9490fb6dde3500f94ebe8d88adb8269eef5ce",
+    "assets/robots/aubo_i10/meshes/aubo_i10_JY/collision/link4.STL": "2ec0bcdf779439e298d560fbc2679a0fd631a7853e83d31c07c2517502c041ef",
+    "assets/robots/aubo_i10/meshes/aubo_i10_JY/collision/link5.STL": "5876088d6ab33c3efe89a86f4945710bc9c686724bc46f8ead4e4b741baaeae5",
+    "assets/robots/aubo_i10/meshes/aubo_i10_JY/collision/link6.STL": "63606bd8dd02709e8140f1d10c6e52747c9508a3fb8a76eef26af7f2cce3e73a",
+    "assets/robots/aubo_i10/mjcf/meshes/visual_link0.obj": "9aa256c7a9534c2ad38b34caa095d6950f95a56c5e1fbfd0d6222fcaec8f77aa",
+    "assets/robots/aubo_i10/mjcf/meshes/visual_link1.obj": "f3ead3251100ad57f2620dbb66680111d53b05c5206f5c3aa0ca24da972ed092",
+    "assets/robots/aubo_i10/mjcf/meshes/visual_link2.obj": "31e436de5eb628a27b7b299b329b37378004ee658f3e6fe459e7be26877deb7f",
+    "assets/robots/aubo_i10/mjcf/meshes/visual_link3.obj": "3dae5b1a9c2897929258ecf6241608b090fa5826934c93286d45404e43c071d6",
+    "assets/robots/aubo_i10/mjcf/meshes/visual_link4.obj": "23523163b8909119500aed5ecad1529280d9622e9ec34b963690ebe7067ee58b",
+    "assets/robots/aubo_i10/mjcf/meshes/visual_link5.obj": "c955c09f8538550b47e8d4c2028ed873860ce58f1c484295d6b013b40d120fc1",
+    "assets/robots/aubo_i10/mjcf/meshes/visual_link6.obj": "26e66016f547e820c5857684b3c40b6d72c0c4bf9f41a3044ac35b78287fac70",
+    "assets/robots/aubo_i10/urdf/aubo_i10_JY.urdf": "5722135ce4a2abb8549e92c43ea6802b7d06a0fa7f207beb35f7994e57e5baa2",
+    "assets/robots/sensor/meshes/sensor.stl": "4aa8d4dd99ed5c74449843db9c796428305341960267cc88c0386623a5658b37",
+    "assets/scenes/i10_rh56_fuel_cap_preview.xml": "b376bb512b2d176dd4159d78228e70546b4681cc90e6757e081ac9d4a54d30d4",
+    "config/arm_ik_current.json": "9fe23c4fe9f236a5386ad23f9183b05364795aa26ac5cb93b091600f5c5818f9",
+    "config/fixed_grasp.json": "e8c2bac9d88bc375b751a004cd9134288412449c76f8f0880747bd14f790c854",
+    "src/fuel_cap_task/arm_ik.py": "f13f2721c5788ea33499956e74a74bfe9c3a45b8341465c420bd9efe17f5def1",
+    "src/fuel_cap_task/fixed_grasp.py": "7bfa81edc377c15d099b4ccc0a500f6805ab8c737685b173f4e2a6f0bda4515f",
+    "src/fuel_cap_task/grasp_preparation.py": "a11e0451e29fe39228379ae21eaffea8e1ce84d2797ddcc7074963da5ccd53fc",
+    "src/fuel_cap_task/grasp_search.py": "a9d89f33f5e2e102bf655284fd2a9f34415219ab0d6ce1293a7495ab4e4de970",
+    "src/fuel_cap_task/grasp_targets.py": "d798b181ed6dac8718eff3a170f7279a3ece0a2f8fa7e1d223a8f4bdc25003ed",
+    "src/fuel_cap_task/interfaces.py": "02ff0fee271650786f947243c444048d6ed8be8b3429304c4f7c8f62de1ea110",
+    "src/fuel_cap_task/mujoco_scene.py": "c5a0854e74c181903300ac208f30d99b9d2195ddf693cf685f892ead0ca75e1b",
+    "tools/build_moveit_model.py": "ffc57b656e38de65536b6364e5ce07ce618c66af3f10bb03fa415d1803520f66",
+    "src/i10_rh56_moveit_config/meshes/mesh_022_surface.stl": "a947e49ab4871239a85eccefb822c6d5357958ba4d9073da47d8c4822dc1fc19",
+    "src/i10_rh56_moveit_config/meshes/mesh_023_surface.stl": "eab3e36e3d81a8178fc645e08255712e93c82218692425365c6dd9e2b5d5933f",
+    "src/i10_rh56_moveit_config/meshes/mesh_024_surface.stl": "8e7a354a21e0fde0f5fe0982ee041326023a11afda8bfc1b167104bbd5bb7122",
+    "src/i10_rh56_moveit_config/meshes/mesh_025_surface.stl": "f37321627acb735f23ce7a8523435c1c32561b78c195dc3edb7d46885c3b3e27",
+    "src/i10_rh56_moveit_config/meshes/mesh_026_surface.stl": "0bc5cf3a86eaa65e6106d7bcf7d468867d5c64ace1621e5dc7447a49e4a8c37f",
+    "src/i10_rh56_moveit_config/meshes/mesh_027_surface.stl": "df79578e81a62b58912289279c1586f32ba341f6da103d01be5ca4a36dc8b4a4",
+    "src/i10_rh56_moveit_config/meshes/mesh_028_surface.stl": "e1b4092ec3cc128ced6b28f3ffe521226529f0a8ba241cb80a9763b03a67e872",
+    "src/i10_rh56_moveit_config/meshes/mesh_029_surface.stl": "31015b5d3cc407e88deac45406b144e0c1c3a09dc2b5b0e63ac8e41e132dabcd",
+    "src/i10_rh56_moveit_config/meshes/mesh_030_surface.stl": "4f715fed51944914c902bc7d15fbe6c4079049f7c5c6cd8b2db4208c78c4ca34",
+    "src/i10_rh56_moveit_config/config/robot.urdf": "3e781ded72bd8b2388e10d7960f3b12c155e12d787b50849a052063e6a0101da",
+    "src/i10_rh56_moveit_config/config/provenance.json": "7a828fb08be146e7779f194ccc2b6566041743ec909a727483ec229be3cba64a",
+    "tools/build_rh56_spahybgen_model.py": "8039701a2e0cd602c3c8e54c9c406cd7f15e46dc685975ec9551ac9cc0eb3ace",
+    "src/fuel_cap_task/rh56_drive_map.py": "e7d06568bbc5cc41dcf50f9af2c81c587018cd2adb3d97528039a21b5285c6f5"
+  },
+  "outputs": {
+    "hand.urdf": "3e91e6e81eed02803a50549072f53b877aaec84b01d8c2d7dd0fc146d37869d8",
+    "contacts.json": "4d9c5a4f8b96868d713f81323ffd61d54bd1cfdd6f4998fff405467d664e8375",
+    "fk_reference.npz": "23a80ad7cea4b86f502915876dbdcf3492f5c76fdc2edad5f5afd09bdcda1703",
+    "meshes/index_proximal.obj": "46ba4371baff07a45a59cf7aadcfe7adfcf1c0a934a3c9f242cbf69b0d468ebd",
+    "meshes/thumb_distal.obj": "148449b14a5d3c8c886a6469c9107e2e703e3092a7226c22ed878488b287630e",
+    "meshes/thumb_proximal_base.obj": "dc9fffe324b8f62a932b70faa214e52140dd2fbd4bea411e359b60f7fae1de5f",
+    "meshes/middle_intermediate.obj": "c3082897de4ed079624d1a4f3e7af4b1893b0d56d9e1e3384c258643702592b6",
+    "meshes/index_intermediate.obj": "4b210051d3bf30273dd9a5579301fc713494436b07e17eb352d0146fd0a73d10",
+    "meshes/pinky_proximal.obj": "46ba4371baff07a45a59cf7aadcfe7adfcf1c0a934a3c9f242cbf69b0d468ebd",
+    "meshes/thumb_intermediate.obj": "0cb40f6e5d8f009b1fbca548d021afc0265e04adb844115bc1288c7bfe393a77",
+    "meshes/ring_proximal.obj": "46ba4371baff07a45a59cf7aadcfe7adfcf1c0a934a3c9f242cbf69b0d468ebd",
+    "meshes/pinky_intermediate.obj": "385dacf256da037c59a513d49710a0dc0cc1b28d73bc13fb69a0694c0f433741",
+    "meshes/thumb_proximal.obj": "41088165dbff121ddb2a78d0eedab2f466f6639621077fee8f2e6d1c493e7d4a",
+    "meshes/middle_proximal.obj": "46ba4371baff07a45a59cf7aadcfe7adfcf1c0a934a3c9f242cbf69b0d468ebd",
+    "meshes/base.obj": "cef832b5aa44d39cad7d3a31a7c86dfbc2f46f3cb5254a9bd6c6fd83d441038b",
+    "meshes/ring_intermediate.obj": "4b210051d3bf30273dd9a5579301fc713494436b07e17eb352d0146fd0a73d10"
+  },
+  "limitations": "仅独立手模型、几何接触候选和运动学；不含接触动力学、驱动力或实物通道标定"
+}

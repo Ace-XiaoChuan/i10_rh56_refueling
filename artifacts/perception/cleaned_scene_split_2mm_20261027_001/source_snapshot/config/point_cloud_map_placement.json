@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "mode": "simulation_cap_alignment",
+  "planning_frame": "world",
+  "camera_frame": "camera_sdk_native",
+  "candidate_id": "direction_000",
+  "world_from_cap": [[0, -1, 0, 0], [0, 0, -1, 1.007], [1, 0, 0, 0.600], [0, 0, 0, 1]],
+  "anchor_source": {
+    "path": "assets/scenes/i10_rh56_fuel_cap_preview.xml",
+    "sha256": "b376bb512b2d176dd4159d78228e70546b4681cc90e6757e081ac9d4a54d30d4",
+    "site": "cap_grip_center"
+  },
+  "preview_arm_joints_rad": [0, -0.5, 1.2, 0, 0, 0],
+  "right_base_from_left_base": null,
+  "valid_for_hardware": false,
+  "description": "实测盖体系对齐现有单臂仿真盖体系；此变换只用于离线地图摆放，不能替代两臂标定。"
+}

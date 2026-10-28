@@ -1,0 +1,20 @@
+{
+  "scene_point_count": 247103,
+  "cap_points_retained": 5742,
+  "original_scan_point_count": 268852,
+  "max_scene_to_original_distance_mm": 6.104260637590507e-05,
+  "max_cap_to_cleaned_distance_mm": 7.688768146799611e-06,
+  "every_cleaned_point_displayed_once": true,
+  "hand_vertices_and_faces_unchanged": true,
+  "hand_grasp_poses_unchanged": true,
+  "coordinate_transform_applied": false,
+  "collision_check_performed": false,
+  "approach_offset_applied": true,
+  "robot_connections": 0,
+  "replay_translation_mm": 100.0,
+  "replay_follows_observed_cap_outward_axis": true,
+  "replay_orientation_and_preshape_fixed": true,
+  "replay_endpoints_and_intermediate_offsets_checked": true,
+  "terminal_meshes_byte_identical_to_approved_static_result": true,
+  "terminal_camera_and_left_base_poses_equal_approved_static_result": true
+}

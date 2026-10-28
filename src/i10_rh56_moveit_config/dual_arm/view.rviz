@@ -1,0 +1,61 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Views
+    Name: Views
+Visualization Manager:
+  Class: ""
+  Global Options:
+    Background Color: 48; 52; 60
+    Fixed Frame: world
+    Frame Rate: 30
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Ground (meters)
+      Enabled: true
+      Cell Size: 0.1
+      Plane Cell Count: 40
+    - Class: rviz_default_plugins/RobotModel
+      Name: Dual i10 and T frame
+      Enabled: true
+      Description Source: Topic
+      Description Topic:
+        Value: /robot_description
+        Durability Policy: Transient Local
+      Visual Enabled: true
+      Collision Enabled: false
+    - Class: rviz_default_plugins/TF
+      Name: TF
+      Enabled: true
+      Marker Scale: 0.3
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+    - Class: rviz_default_plugins/Axes
+      Name: Right base
+      Enabled: true
+      Reference Frame: base_link
+      Length: 0.12
+      Radius: 0.004
+    - Class: rviz_default_plugins/Axes
+      Name: Left base
+      Enabled: true
+      Reference Frame: left_base_link
+      Length: 0.12
+      Radius: 0.004
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/FocusCamera
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 3.2
+      Focal Point: {X: 0, Y: 0.3, Z: 1.1}
+      Pitch: 0.35
+      Yaw: 4.2
+      Target Frame: world
+Window Geometry:
+  Width: 1400
+  Height: 950

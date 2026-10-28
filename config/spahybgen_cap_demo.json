@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "target_annotation": {
+    "source": "manual_whole_visible_cap_ellipse_on_rgb",
+    "image_size_wh": [1280, 960],
+    "image_sha256": "1d5388201a598ccd649143bbe5eee5c28366daaa8f059e9f485b41a07b4b962c",
+    "ellipse_xyxy": [594, 418, 685, 514]
+  },
+  "volume_size_m": 0.4,
+  "resolution": 80,
+  "contact_radius_m": 0.01,
+  "center_radius_m": 0.02,
+  "network_mode": "upstream_train",
+  "minimum_contact_score": 0.1,
+  "minimum_center_score": 0.1,
+  "batch": 16,
+  "iterations": 240,
+  "init_random_scale": 1.0,
+  "learning_rate": 0.003,
+  "seed": 20261008,
+  "threads": 4,
+  "geometry": {
+    "penetration_tolerance_m": 0.0001,
+    "near_target_distance_m": 0.005,
+    "minimum_near_fingers": 2
+  }
+}

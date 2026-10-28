@@ -8,6 +8,7 @@ from launch.actions import DeclareLaunchArgument, RegisterEventHandler, OpaqueFu
 from launch.event_handlers import OnProcessExit
 from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
+from launch_ros.parameter_descriptions import ParameterValue
 
 
 def generate_launch_description():
@@ -25,6 +26,25 @@ def generate_launch_description():
         if output_path == request_path:
             raise RuntimeError('Request and output must differ')
         request = json.loads(request_path.read_text())
+        model_config = config
+        if request.get('robot_model_profile','single') == 'dual_arm':
+            model_config=config.parent/'dual_arm'
+            binding=request['observed_scene']['robot_model_binding']
+            for name, expected in binding['files_sha256'].items():
+                if hashlib.sha256((model_config/name).read_bytes()).hexdigest()!=expected:
+                    raise RuntimeError('Installed dual-arm model changed: '+name)
+        if 'observed_scene' in request:
+            binding = request['observed_scene']
+            manifest_path = Path(binding['manifest_path'])
+            if hashlib.sha256(manifest_path.read_bytes()).hexdigest() != binding['manifest_sha256']:
+                raise RuntimeError('Observed scene manifest changed')
+            manifest = json.loads(manifest_path.read_text())
+            for field, digest in [('map_path','map_sha256'), ('cap_object_path','cap_object_sha256')]:
+                if hashlib.sha256((manifest_path.parent/manifest[field]).read_bytes()).hexdigest() != manifest[digest]:
+                    raise RuntimeError('Observed scene geometry changed')
+            if 'planning_scene' in request or 'scene_variation' in request:
+                raise RuntimeError('Observed scene cannot mix legacy environment snapshots')
+            ompl['arm']['longest_valid_segment_fraction'] = .0002
         if ('scene_variation' in request) != ('planning_scene' in request):
             raise RuntimeError('Sample and planning scene must be supplied together')
         if 'planning_scene' in request:
@@ -52,7 +72,11 @@ def generate_launch_description():
         output_path.write_text(json.dumps({'mode': 'planning_not_completed_no_replay'})+'\n')
         planner = Node(package='i10_rh56_moveit_config', executable='plan_approach', output='screen', parameters=[{
             'config_dir': str(config), 'request_path': str(request_path), 'output_path': str(output_path),
-            'ompl': ompl, 'robot_description_kinematics': json.loads((config/'kinematics.json').read_text()),
+            'start_source': LaunchConfiguration('start_source'),
+            'joint_states_topic': LaunchConfiguration('joint_states_topic'),
+            'state_timeout_s': ParameterValue(LaunchConfiguration('state_timeout_s'), value_type=float),
+            'state_max_age_s': ParameterValue(LaunchConfiguration('state_max_age_s'), value_type=float),
+            'ompl': ompl, 'robot_description_kinematics': json.loads((model_config/'kinematics.json').read_text()),
         }])
         def check_exit(event, context):
             if event.returncode != 0:
@@ -60,4 +84,9 @@ def generate_launch_description():
             return []
         return [RegisterEventHandler(OnProcessExit(target_action=planner, on_exit=check_exit)), planner]
     return LaunchDescription([
-        DeclareLaunchArgument('request_path'), DeclareLaunchArgument('output_path'), OpaqueFunction(function=setup)])
+        DeclareLaunchArgument('request_path'), DeclareLaunchArgument('output_path'),
+        DeclareLaunchArgument('start_source', default_value='request', choices=['request', 'joint_states']),
+        DeclareLaunchArgument('joint_states_topic', default_value='/joint_states'),
+        DeclareLaunchArgument('state_timeout_s', default_value='3.0'),
+        DeclareLaunchArgument('state_max_age_s', default_value='0.5'),
+        OpaqueFunction(function=setup)])

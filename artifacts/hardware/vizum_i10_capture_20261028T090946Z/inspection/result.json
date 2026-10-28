@@ -1,0 +1,298 @@
+{
+  "mode": "pcd_inspection_batch",
+  "schema_version": 1,
+  "inspection_time_utc": "2026-10-28T09:12:14.773277+00:00",
+  "clouds": [
+    {
+      "mode": "pcd_inspection",
+      "schema_version": 1,
+      "input_path": "/tmp/i10-field/20261028T090946_506852Z_cloud/cloud_sdk_native.pcd",
+      "input_sha256": "951bba469e1cc1fd4ede91db139ebb49f8600e92b9d172dcc160cc184ed70401",
+      "header": {
+        "VERSION": [
+          ".7"
+        ],
+        "FIELDS": [
+          "x",
+          "y",
+          "z"
+        ],
+        "SIZE": [
+          "4",
+          "4",
+          "4"
+        ],
+        "TYPE": [
+          "F",
+          "F",
+          "F"
+        ],
+        "COUNT": [
+          "1",
+          "1",
+          "1"
+        ],
+        "WIDTH": [
+          "238060"
+        ],
+        "HEIGHT": [
+          "1"
+        ],
+        "VIEWPOINT": [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        "POINTS": [
+          "238060"
+        ],
+        "DATA": [
+          "binary"
+        ]
+      },
+      "data_encoding": "binary",
+      "byte_order": "little",
+      "byte_order_source": "cli_argument",
+      "length_unit": "mm",
+      "unit_source": "cli_argument",
+      "frame_id": "camera_sdk_native",
+      "capture_timestamp_s": null,
+      "organized_layout": false,
+      "pixel_mapping_verified": false,
+      "camera_calibration_loaded": false,
+      "point_count": 238060,
+      "finite_point_count": 238060,
+      "nonfinite_point_count": 0,
+      "zero_xyz_count": 0,
+      "duplicate_xyz_count": 0,
+      "bounds_min_raw": [
+        -400.421875,
+        -653.015625,
+        294.17578125
+      ],
+      "bounds_max_raw": [
+        603.0546875,
+        1019.11328125,
+        1577.65234375
+      ],
+      "extent_raw": [
+        1003.4765625,
+        1672.12890625,
+        1283.4765625
+      ],
+      "view_point_count": 30000,
+      "rgb_decoding": null,
+      "rgb_channel_min": null,
+      "rgb_channel_max": null,
+      "constant_rgb_channels": [],
+      "geometry_filtering": "nonfinite_for_display_only",
+      "coordinate_transform_applied": false,
+      "cap_pose_estimated": false,
+      "outputs_sha256": {
+        "point_cloud_raw.npz": "9081d2345c06ca8e6a1de1736dadf8b66404b9264632d6689aeb89f68db51e31",
+        "index.html": "f739500193907134fddb5ffdaa2b339f17c7cd4adddab50926fcee8f1740d317",
+        "preview.png": "3828bf014a7232d6f039f9115e27256f2291fa8998dad47224650dd9f2be4f9d"
+      }
+    },
+    {
+      "mode": "pcd_inspection",
+      "schema_version": 1,
+      "input_path": "/tmp/i10-field/20261028T090946_506852Z_cloud/filtering/cloud_filtered.pcd",
+      "input_sha256": "30dbcde5864e593005277f74deba0a0adaa435a685f5375f6bec0b084f309e13",
+      "header": {
+        "VERSION": [
+          ".7"
+        ],
+        "FIELDS": [
+          "x",
+          "y",
+          "z"
+        ],
+        "SIZE": [
+          "4",
+          "4",
+          "4"
+        ],
+        "TYPE": [
+          "F",
+          "F",
+          "F"
+        ],
+        "COUNT": [
+          "1",
+          "1",
+          "1"
+        ],
+        "WIDTH": [
+          "215309"
+        ],
+        "HEIGHT": [
+          "1"
+        ],
+        "VIEWPOINT": [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        "POINTS": [
+          "215309"
+        ],
+        "DATA": [
+          "binary"
+        ]
+      },
+      "data_encoding": "binary",
+      "byte_order": "little",
+      "byte_order_source": "cli_argument",
+      "length_unit": "mm",
+      "unit_source": "cli_argument",
+      "frame_id": "camera_sdk_native",
+      "capture_timestamp_s": null,
+      "organized_layout": false,
+      "pixel_mapping_verified": false,
+      "camera_calibration_loaded": false,
+      "point_count": 215309,
+      "finite_point_count": 215309,
+      "nonfinite_point_count": 0,
+      "zero_xyz_count": 0,
+      "duplicate_xyz_count": 0,
+      "bounds_min_raw": [
+        -400.421875,
+        -653.015625,
+        317.53125
+      ],
+      "bounds_max_raw": [
+        603.0546875,
+        1019.11328125,
+        1577.65234375
+      ],
+      "extent_raw": [
+        1003.4765625,
+        1672.12890625,
+        1260.12109375
+      ],
+      "view_point_count": 30000,
+      "rgb_decoding": null,
+      "rgb_channel_min": null,
+      "rgb_channel_max": null,
+      "constant_rgb_channels": [],
+      "geometry_filtering": "nonfinite_for_display_only",
+      "coordinate_transform_applied": false,
+      "cap_pose_estimated": false,
+      "outputs_sha256": {
+        "point_cloud_raw.npz": "33e72e7a7fd41ee5f63fa7d02da2bf7271ca5a5df6c01494429cc14f32c4b744",
+        "index.html": "d06788ff703bde33a595f9fd3f6389f4fdb6c3fb21700dc033df8d2bc7c54894",
+        "preview.png": "bc8071111724d72aa33c00c3bf0d6a011db9510f340521f704f599b60c95bdc2"
+      }
+    },
+    {
+      "mode": "pcd_inspection",
+      "schema_version": 1,
+      "input_path": "/tmp/i10-field/20261028T090946_506852Z_cloud/filtering/cloud_removed.pcd",
+      "input_sha256": "0331e005ab42722700a1da84feac8e5a3107bbab8bcf7de8882352f8962749ce",
+      "header": {
+        "VERSION": [
+          ".7"
+        ],
+        "FIELDS": [
+          "x",
+          "y",
+          "z"
+        ],
+        "SIZE": [
+          "4",
+          "4",
+          "4"
+        ],
+        "TYPE": [
+          "F",
+          "F",
+          "F"
+        ],
+        "COUNT": [
+          "1",
+          "1",
+          "1"
+        ],
+        "WIDTH": [
+          "22751"
+        ],
+        "HEIGHT": [
+          "1"
+        ],
+        "VIEWPOINT": [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        "POINTS": [
+          "22751"
+        ],
+        "DATA": [
+          "binary"
+        ]
+      },
+      "data_encoding": "binary",
+      "byte_order": "little",
+      "byte_order_source": "cli_argument",
+      "length_unit": "mm",
+      "unit_source": "cli_argument",
+      "frame_id": "camera_sdk_native",
+      "capture_timestamp_s": null,
+      "organized_layout": false,
+      "pixel_mapping_verified": false,
+      "camera_calibration_loaded": false,
+      "point_count": 22751,
+      "finite_point_count": 22751,
+      "nonfinite_point_count": 0,
+      "zero_xyz_count": 0,
+      "duplicate_xyz_count": 0,
+      "bounds_min_raw": [
+        51.484375,
+        105.0078125,
+        294.17578125
+      ],
+      "bounds_max_raw": [
+        154.2265625,
+        170.75,
+        449.9609375
+      ],
+      "extent_raw": [
+        102.7421875,
+        65.7421875,
+        155.78515625
+      ],
+      "view_point_count": 22751,
+      "rgb_decoding": null,
+      "rgb_channel_min": null,
+      "rgb_channel_max": null,
+      "constant_rgb_channels": [],
+      "geometry_filtering": "nonfinite_for_display_only",
+      "coordinate_transform_applied": false,
+      "cap_pose_estimated": false,
+      "outputs_sha256": {
+        "point_cloud_raw.npz": "bf7aca99c0b803a05a7071d5848cf6b446d441fd4b68744d09aaf98c61a10409",
+        "index.html": "d76b8c2df8657b3ae661764725814b756f29940ae64755c6eb7dd0fa7791a1d7",
+        "preview.png": "a31411102fe8bbe6089d68c50917b20f3943415476cb86e9ce733ed38af65ccb"
+      }
+    }
+  ],
+  "reference_images": [],
+  "implementation_sha256": {
+    "tools/inspect_pcd.py": "33e56ee192aabe7763ac74666f4b1928abcc061688c9511377644e4caca29725",
+    "src/fuel_cap_task/pcd_point_cloud.py": "64394ebf65b7f25115ea083ebd7c0c7c770bb208cef9e11d1e6865e247564175"
+  },
+  "plotly_sha256": "0a17719a72751704861215da0e5c5cdb3f9a8d50eff5cb84cb6f8b80786682b0"
+}

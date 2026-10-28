@@ -21,6 +21,8 @@ class ApproachReplay:
                 or report.get('dense_fcl_check_passed') is not True):
             raise ValueError('Not a validated MTC approach report')
         request = report['request']
+        if 'observed_scene' in request:
+            raise ValueError('实测场景轨迹须使用实测场景查看入口，不能叠加回旧占位油箱')
         if request['arm_joints'] != list(ARM_JOINTS):
             raise ValueError('Arm joint order mismatch')
         for relative, expected in request['source_hashes'].items():

@@ -1,0 +1,16 @@
+{
+  "source": "assistant_visual_recheck_of_current_rgb",
+  "image_sha256": "1d5388201a598ccd649143bbe5eee5c28366daaa8f059e9f485b41a07b4b962c",
+  "image_size_wh": [
+    1280,
+    960
+  ],
+  "ellipse_xyxy": [
+    594,
+    418,
+    685,
+    514
+  ],
+  "scope": "整个可见盖体范围；未指定抓点或抓姿",
+  "previous_image_binding_rejected": true
+}

@@ -1,0 +1,174 @@
+{
+  "purpose": "一次静态扫描及前后RPC状态",
+  "valid_for_motion_target": false,
+  "camera_ip": "192.168.1.20",
+  "camera_serial": "Ik256431",
+  "robot_ip": "192.168.1.32",
+  "time_meaning": "UTC 主机调用起止时间及主机单调时间，不是相机曝光时间或控制器采样时间",
+  "operator_report": "用户确认已大致对准目标且已停稳，要求观察期间保持姿态",
+  "point_cloud": {
+    "path": "cloud_sdk_native.pcd",
+    "sha256": "951bba469e1cc1fd4ede91db139ebb49f8600e92b9d172dcc160cc184ed70401",
+    "frame": "camera_sdk_native",
+    "xyz_unit": "SDK native; verification pending",
+    "dtype": "float32 XYZ",
+    "mirror": "none",
+    "rgb_map": false
+  },
+  "calibration_sha256": "0f208672a74bb5689930fa9daea0cfcc2c9c31b48379e6d846d57c912c8ba0e0",
+  "robot_before": {
+    "start_utc": "2026-10-28T09:09:46.507757+00:00",
+    "start_monotonic_ns": 11117488331039,
+    "command": [
+      "/home/ace/i10_rh56_refueling_ws/tools/aubo_sdk_probe/build/aubo_sdk_probe",
+      "--host",
+      "192.168.1.32"
+    ],
+    "returncode": 0,
+    "stdout": "机器人名称 = rob1\n关节角_rad = [1.09037213774, -0.710088017536, 2.12567985878, -1.1991929404, -0.953951769865, -1.18109972982]\nTCP位姿_控制器原值 = [0.483849752026, 0.384346826316, -0.0488801895919, 2.86734399548, -0.84962619459, 0.601819558364]\n法兰位姿_控制器原值 = [0.483849752026, 0.384346826316, -0.0488801895919, 2.86734399548, -0.84962619459, 0.601819558364]\nTCP偏移_控制器原值 = [0, 0, 0, 0, 0, 0]\n运行模式 = RobotModeType.Running\n安全模式 = SafetyModeType.Normal\n当前静止 = true\n机器人型号 = aubo_i10_JY\n仿真模式 = false\n",
+    "stderr": "",
+    "end_utc": "2026-10-28T09:09:46.524930+00:00",
+    "end_monotonic_ns": 11117505057697
+  },
+  "state_before": {
+    "q_rad": [
+      1.09037213774,
+      -0.710088017536,
+      2.12567985878,
+      -1.1991929404,
+      -0.953951769865,
+      -1.18109972982
+    ],
+    "flange_pose_m_rpy_rad": [
+      0.483849752026,
+      0.384346826316,
+      -0.0488801895919,
+      2.86734399548,
+      -0.84962619459,
+      0.601819558364
+    ],
+    "steady": true,
+    "simulation": false,
+    "base_from_flange": [
+      [
+        0.5442600818526246,
+        0.377323758069918,
+        0.7492714761004642,
+        0.483849752026
+      ],
+      [
+        0.3738039911424668,
+        -0.9086539067382278,
+        0.1860608878171838,
+        0.384346826316
+      ],
+      [
+        0.7510336473872106,
+        0.1788151541826085,
+        -0.635589176376465,
+        -0.0488801895919
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "pose_convention": "固定轴 XYZ RPY，R=Rz(yaw)Ry(pitch)Rx(roll)，平移 m",
+    "joint_order": [
+      "shoulder_joint",
+      "upperArm_joint",
+      "foreArm_joint",
+      "wrist1_joint",
+      "wrist2_joint",
+      "wrist3_joint"
+    ]
+  },
+  "camera_option": "--cloud",
+  "camera_cloud": {
+    "start_utc": "2026-10-28T09:09:46.526149+00:00",
+    "start_monotonic_ns": 11117506282987,
+    "command": [
+      "/tmp/vizum-camera-setup/vizum-inspect",
+      "--cloud"
+    ],
+    "returncode": 0,
+    "stdout": "init=0\nsearch=0\nOpening confirmed target with bStopStream=false...\nopen_error=0 handle_valid=1\nversion_query=0 mask=289\nsdk=3.6.20.112 app= camera= hardware=4.6.4.27p2+Ext [NAC3] firmware=\nresolution_query=0 width=1216 height=1920\npupil_distance_query=0 value=0\ncapture_status_query=0 capturing=0\ndetect_status_query=0 detecting=0\nexposure_query=0 mode=0 time_raw=200\nroi_query=0 left=0,256,0,1920 right=960,1216,0,1920\ntrigger_query=0 mode=1\nscan_work_range_query=0 near_raw=500 far_raw=1500\ncreate_laser_detection_tool=0\nscan_start_host_unix_ns=1793178601091268712\nscan_end_host_unix_ns=1793178602107599021\nscan_result=0 point_count=238060 point_pointer_valid=1\nsaved=/tmp/vizum-camera-setup/cloud-35929/cloud_sdk_native.pcd\nscan_release=0\ndestroy_laser_detection_tool=called\nclose=0\n",
+    "stderr": "",
+    "end_utc": "2026-10-28T09:10:02.881136+00:00",
+    "end_monotonic_ns": 11133861265754
+  },
+  "robot_after": {
+    "start_utc": "2026-10-28T09:10:02.881373+00:00",
+    "start_monotonic_ns": 11133861493638,
+    "command": [
+      "/home/ace/i10_rh56_refueling_ws/tools/aubo_sdk_probe/build/aubo_sdk_probe",
+      "--host",
+      "192.168.1.32"
+    ],
+    "returncode": 0,
+    "stdout": "机器人名称 = rob1\n关节角_rad = [1.09037213774, -0.710089144427, 2.12567873189, -1.19919159036, -0.953951769865, -1.18109972982]\nTCP位姿_控制器原值 = [0.483850094933, 0.384347484298, -0.0488807163633, 2.86734495515, -0.849627386691, 0.601818837615]\n法兰位姿_控制器原值 = [0.483850094933, 0.384347484298, -0.0488807163633, 2.86734495515, -0.849627386691, 0.601818837615]\nTCP偏移_控制器原值 = [0, 0, 0, 0, 0, 0]\n运行模式 = RobotModeType.Running\n安全模式 = SafetyModeType.Normal\n当前静止 = true\n机器人型号 = aubo_i10_JY\n仿真模式 = false\n",
+    "stderr": "",
+    "end_utc": "2026-10-28T09:10:02.893593+00:00",
+    "end_monotonic_ns": 11133873720496
+  },
+  "state_after": {
+    "q_rad": [
+      1.09037213774,
+      -0.710089144427,
+      2.12567873189,
+      -1.19919159036,
+      -0.953951769865,
+      -1.18109972982
+    ],
+    "flange_pose_m_rpy_rad": [
+      0.483850094933,
+      0.384347484298,
+      -0.0488807163633,
+      2.86734495515,
+      -0.849627386691,
+      0.601818837615
+    ],
+    "steady": true,
+    "simulation": false,
+    "base_from_flange": [
+      [
+        0.5442596132620987,
+        0.3773236464984028,
+        0.7492718726636808,
+        0.483850094933
+      ],
+      [
+        0.3738030919951362,
+        -0.9086541208184837,
+        0.18606164874703235,
+        0.384347484298
+      ],
+      [
+        0.751034434487971,
+        0.1788143017567016,
+        -0.635588486129663,
+        -0.0488807163633
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "pose_convention": "固定轴 XYZ RPY，R=Rz(yaw)Ry(pitch)Rx(roll)，平移 m",
+    "joint_order": [
+      "shoulder_joint",
+      "upperArm_joint",
+      "foreArm_joint",
+      "wrist1_joint",
+      "wrist2_joint",
+      "wrist3_joint"
+    ]
+  },
+  "endpoint_max_abs_joint_delta_rad": 1.3500400000143742e-06,
+  "static_assessment": "用户报告停稳，前后RPC均返回静止；没有连续状态监测，不将两端快照解释为全程运动证明",
+  "capture_complete": true
+}

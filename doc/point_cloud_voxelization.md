@@ -4,6 +4,231 @@
 
 当前采用的边长、原点与显示设置统一见[项目说明](assembly_contract.md#rgb-d-与三维接口)。
 
+## 当前实测清理点云的 MuJoCo 查看
+
+当前实测环境输入为 `doc/scene_cleaned.pcd`，边长及固定原点见[相机与实测场景设置](assembly_contract.md#相机)。入口读取 `config/active_point_cloud_scene.json`，将 SDK 相机系毫米坐标换算成米，复用 `voxelize_points()`，保留所有输入点的体素归属。这里的 MuJoCo world 定义为 SDK 相机系，不需要先完成左右臂基座换算。
+
+[当前交互查看结果](../artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/README.md)已保存。可直接运行下面的查看命令，将 `--scene-dir` 换成 `artifacts/perception/cleaned_scene_voxels_2mm_20261027_001`；工具会核对体素摘要并自动使用旁边的 `_display` 显示缓存。三种取景见[MuJoCo 预览](../artifacts/perception/cleaned_scene_voxels_2mm_20261027_001_display/preview.png)。
+
+```bash
+.venv/bin/python tools/voxelize_cleaned_scene.py \
+  --output-dir artifacts/perception/my_cleaned_scene_voxels
+
+.venv/bin/python tools/view_point_cloud_voxels.py \
+  --scene-dir artifacts/perception/my_cleaned_scene_voxels
+```
+
+查看器默认聚焦油箱盖周围。左键拖动旋转、右键拖动平移、滚轮缩放，按 7 看完整场景、8 看盖体区域、9 看格子细节，Esc 返回自由相机。场景只更新显示，不推进物理时间。盖体所在格子为红色，其余按相机 Z 伪彩色着色。原始 box 场景中所有格子保留碰撞掩码。
+
+完整 80,298 个独立 box 在当前图形环境中出现鼠标无响应，因此交互查看改为按原材质合并外露面，共 33 个显示 mesh；只移除两个相邻占据格之间的内部公共面。每个外露四边形仍为 2 mm 格面，体素 NPZ 与原版逐字节一致，不平滑、不补洞。显示 mesh 的碰撞掩码关闭，碰撞数据继续使用原始独立 box，避免整片环境的凸包填平凹槽。`--box-geoms` 可显式查看原始 box 模型。
+
+原始 `scene.xml` 可直接加载到 MuJoCo。`voxels.npz` 保存 `indices_xyz`、`centers_camera_m`、`point_counts` 和 `point_to_voxel`；同目录 `voxel_centers_camera_mm.ply` 为毫米制中心点，可与原始点云叠加。`full_scene.png`、`cap_region.png`、`voxel_detail.png` 为 MuJoCo 实际渲染，`preview.png` 将三张图并排展示。显示版另存 `_display` 目录，构建入口为 `tools/build_voxel_display.py --scene-dir 原始结果目录 --output-dir 新显示目录`，逐三角形核对编译后的网格与原始整数格角一致。
+
+关键实现见 [voxel_mujoco.py](../src/fuel_cap_task/voxel_mujoco.py)。MuJoCo 的 box `size` 是半边长，因此 2 mm 格子写作：
+
+```xml
+<!-- pos 为所属格子的米制几何中心；三个半尺寸均为 1 mm。 -->
+<geom type="box" pos="0.101 0.051 0.651" size="0.001 0.001 0.001"/>
+```
+
+只生成观测表面占据格，不推断门板厚度、遮挡区域或自由空间，也不对整片环境取凸包。体素与 MuJoCo 模型的数值核对保存在 `validation.json`。OctoMap 导出、地图摆放与双臂 MTC 使用方法见下文。
+
+## OctoMap 与地图摆放
+
+已将当前实测体素保存成原生 `OcTree` 的 `.bt` 文件。当前 MTC 使用[双臂场景](../artifacts/perception/dual_arm_collision_scene_20261027_001/README.md)：由采集时左臂法兰位姿、相机外参和已确认的两基座安装变换恢复地图位置，保持原网格不变。生成入口为 `tools/place_scene_in_dual_arm.py --output-dir 新目录`，读取当前配置保留的单臂拆分源数据；双臂预览使用下文的 RViz 入口。
+
+以下为保留的单臂摆放基线。[结果目录](../artifacts/perception/cleaned_scene_octomap_2mm_20261027_001/)包含完整地图、变换、盖体标记和复读检查；[同屏预览](../artifacts/perception/cleaned_scene_octomap_2mm_20261027_001/placement_preview.png)展示完整臂手与实测地图，红色为盖体，黄色为外向盖轴。原占位油箱、盖体和门板已从此预览移除。
+
+单臂基线将实测 `direction_000` 盖体系对齐到原仿真的 `cap_grip_center`。数值和用途集中维护在[项目设置](assembly_contract.md#相机)及 [point_cloud_map_placement.json](../config/point_cloud_map_placement.json)。该临时对齐不用于当前双臂目标；两个模型的 `world` 定义不同。
+
+从项目根目录生成新结果并查看：
+
+```bash
+.venv/bin/python tools/export_voxel_octomap.py \
+  --output-dir artifacts/perception/my_scene_octomap
+
+MUJOCO_GL=glfw .venv/bin/python tools/view_voxel_map_placement.py \
+  --scene-dir artifacts/perception/my_scene_octomap --render
+
+MUJOCO_GL=glfw .venv/bin/python tools/view_voxel_map_placement.py \
+  --scene-dir artifacts/perception/my_scene_octomap --view
+```
+
+查看已有结果时，将 `--scene-dir` 替换为 `artifacts/perception/cleaned_scene_octomap_2mm_20261027_001`。鼠标旋转、平移和缩放；窗口只运行 `mj_forward`，不推进动力学或控制机器人。省略 `--view` 和 `--render` 时只核对来源与模型。
+
+导出脚本用系统 `g++`、`pkg-config`、OctoMap 开发库及 `nlohmann/json.hpp` 临时编译原生转换器；本机已具备这些依赖，无需启动 ROS。也可用 `--converter` 复用已编译的可执行文件。
+
+| 文件 | 用途 |
+| --- | --- |
+| `scene.bt` | 全部观测表面占据格，含盖体；文件本身不带 frame 或摆放变换 |
+| `octomap_scene.json` | 分辨率、来源摘要、相机系和规划系、整图变换、两个盖体方向候选 |
+| `voxel_labels.npz` | 原始 XYZ 格号和逐格盖体标记，供后续把盖体独立管理 |
+| `validation.json` | 文件复读、原分辨率格号集合相等、无新增空闲格、摆放对齐误差 |
+| `placement_config.json`、`scene_config.json` | 本次实际使用的配置副本 |
+| `placement_preview.png`、`placement_preview.xml` | 机器人与地图同屏预览，不作为 MoveIt 碰撞检查结果 |
+
+关键实现分两处。原生转换器 [voxel_octomap_export.cpp](../tools/voxel_octomap_export.cpp) 将整数格号转换成 OctoMap 键，不经过点云射线更新：
+
+```cpp
+// key 是整数格号加上 OctoMap 的键偏置；lazy_eval 最后统一更新内部节点。
+tree.setNodeValue(key, tree.getClampingThresMaxLog(), true);
+tree.updateInnerOccupancy();
+tree.writeBinary(path);  // 只合并完全同值的八个子格，不填凹槽。
+```
+
+保存采用 [OctoMap 原生序列化接口](https://octomap.github.io/octomap/doc/classoctomap_1_1OcTree.html)。2 mm 是最细层分辨率，剪枝后的部分叶子可能更大；复读时把每个叶子展开回 2 mm 格号，检查与原输入集合完全相等，同时拒绝任何空闲叶子。当前 80,298 格对应 80,172 个占据叶子，1,504 个盖体格标记独立保留。
+
+坐标计算在 [voxel_octomap.py](../src/fuel_cap_task/voxel_octomap.py) 的 `align_map()`：
+
+```python
+# 实测盖体系与目标盖体系对齐，移动整张地图，避免旋转后重新分格。
+world_from_camera = world_from_cap @ np.linalg.inv(camera_from_cap)
+camera_from_octomap = np.eye(4)
+camera_from_octomap[:3, 3] = grid_origin_camera_m
+world_from_octomap = world_from_camera @ camera_from_octomap
+```
+
+地图在局部网格中保存，原网格原点由 `camera_from_octomap` 补回，因此以后网格原点非零时也不会丢失平移。[MoveIt 的整图加载接口](https://moveit.picknik.ai/humble/api/html/classplanning__scene_1_1PlanningScene.html)接收地图与刚体位姿。MTC 入口已将 `.bt` 和 `world_from_octomap` 一起加载到实际使用的 `PlanningScene`，并移除实测区域的旧占位障碍。
+
+完整地图保留为转换与摆放基线；可分别加载的环境和盖体组件见下一节。当前 MTC 包含双臂、T 型架及右臂完整末端装配；相机外形仍待补齐。
+
+相关数值检查：
+
+```bash
+.venv/bin/python -m unittest discover -s tools/tests -p test_voxel_octomap.py -v
+```
+
+覆盖负格号、完整八格剪枝、带缺角的格子、无效输入、非零网格原点、混合格处理、旋转 box 的角点及原生 ROS 消息读写；实际数据另做全部格号的文件复读核对。
+
+## 盖体与环境分开管理
+
+环境 OctoMap 与独立盖体 `CollisionObject` 保存于[拆分结果](../artifacts/perception/cleaned_scene_split_2mm_20261027_001/README.md)。[拆分预览](../artifacts/perception/cleaned_scene_split_2mm_20261027_001/placement_preview.png)中，青色为环境，红色为独立盖体，黄色小格为归属未定的混合格。盖轴也用黄色标出。该目录保留单臂临时变换；当前双臂场景复用相同组件，在新目录保存按安装链计算的变换。
+
+| 组件 | 内容与用途 |
+| --- | --- |
+| `environment.bt` | 环境占据格，含保守保留的混合格 |
+| `cap_collision_object.json` | ID 为 `fuel_cap` 的一个标准 MoveIt 碰撞对象，内部使用原边长的多个 box |
+| `voxel_components.npz` | 全部原格号、完整点归属和组件类别：0 为环境、1 为纯盖体、2 为留在环境的混合格 |
+| `mixed_voxels.json` | 混合格的原始点行号、坐标、盖体裁剪归属及最近盖体点距离 |
+| `octomap_scene.json` | 环境地图、盖体对象、整图变换及摘要的统一入口 |
+| `ros_message_validation.json` | 实际盖体文件的原生 ROS 序列化复读、全部 box 位置和朝向检查 |
+
+原 1,504 个盖体标记格中，有两个同时包含盖体裁剪点和裁剪外点。这些点相距接近一个格宽，不能由相邻关系确定语义，因此混合格保留在环境。拆分后为 1,502 个独立盖体格和 78,796 个环境格，两部分不重叠，并集保持原 80,298 格；全部原始点归属仍保留。混合格不会随 `fuel_cap` 的接触放行而被忽略，后续若规划受其影响，需复核原始裁剪或补观测。这里的盖体几何仍为观测表面，没有推断不可见背面或内部实体。
+
+从项目根目录生成与检查：
+
+```bash
+.venv/bin/python tools/split_voxel_collision_scene.py \
+  --output-dir artifacts/perception/my_split_scene
+
+.venv/bin/python tools/check_split_voxel_scene.py \
+  --scene-dir artifacts/perception/my_split_scene
+
+MUJOCO_GL=glfw .venv/bin/python tools/view_voxel_map_placement.py \
+  --scene-dir artifacts/perception/my_split_scene --view
+```
+
+分离入口从当前配置读取已归档的完整地图及其原始体素，拒绝覆盖旧结果。保存预览图片时将 `--view` 换为 `--render`。检查盖体文件需要本机 ROS 2 Humble 的 Python 消息包，系统 ROS 环境已提供这些包。
+
+关键计算在 [voxel_octomap.py](../src/fuel_cap_task/voxel_octomap.py) 的 `split_voxel_membership()`：
+
+```python
+# 原点归属恢复每格的盖体点数；全部点来自盖体裁剪时才归入独立对象。
+cap_counts = np.bincount(point_to_voxel[cap_point_rows], minlength=voxel_count)
+pure_cap = cap_counts == point_counts
+mixed = (cap_counts > 0) & ~pure_cap
+environment = ~pure_cap  # 混合格仍是障碍，不会误随目标放行。
+```
+
+`cap_collision_object()` 将纯盖体格中心与朝向一起变换到规划系，保持每个格子的原始体积；所有 box 共用一个对象 ID。对象 `pose` 为单位变换，每个 `primitive_pose` 都在消息 `header.frame_id` 中表达，避开不同版本对整体 pose 的处理差异。JSON 中的 `operation: [0]` 可由本机 `rosidl_runtime_py.set_message_fields()` 转成 `CollisionObject.ADD` 单字节值。[MoveIt 场景接口](https://moveit.picknik.ai/humble/api/html/classplanning__scene_1_1PlanningScene.html)加载的是该对象和环境八叉树，点云本身不直接充当碰撞对象。
+
+两个组件已接入下面的 MTC 实测入口，未增加接触放行、附着对象或轨迹执行。
+
+## 实测场景接入 MTC
+
+已将环境 OctoMap 和独立盖体加载到 MTC `FixedState` 实际持有的 PlanningScene。当前默认使用用户提供的双臂和 T 型架模型，右臂 `arm` 组规划，左臂固定为采集记录中的拍照姿态。加载时移除旧 `fuel_tank_body`、`cap_body`、`fuel_door` 对应对象，保留地面、双臂、架子、传感器和 adapter。两个候选共用同一地图变换；不传 `--observed-scene` 时，原单臂仿真入口继续可用。
+
+[双臂结果](../artifacts/planning/dual_arm_mtc_20261027_001/README.md)包含场景检查、成功轨迹及被拒绝方向的原因。`direction_000` 完成绕障碍到预抓取位，再沿盖轴接近；`direction_180` 的预抓取位可达，但其目标处拇指中节与环境格相交，MTC 未生成完整接近轨迹。失败文件为 `mtc_failed_no_replay`，不会作为成功路径显示。[旧单臂结果](../artifacts/planning/observed_scene_mtc_20261027_001/README.md)保持原样。
+
+先生成绑定实测场景的请求，再调用已安装的标准入口：
+
+```bash
+.venv/bin/python tools/prepare_cap_approach.py \
+  --start $(python3 -c 'import json; print(*json.load(open("config/point_cloud_map_placement.json"))["preview_arm_joints_rad"])') \
+  --distance .1 --direction direction_000 \
+  --observed-scene artifacts/perception/dual_arm_collision_scene_20261027_001/octomap_scene.json \
+  --output artifacts/planning/my_observed/request.json
+
+source /opt/ros/humble/setup.bash
+source install/setup.bash
+env -u CYCLONEDDS_URI ROS_LOCALHOST_ONLY=1 ROS_DOMAIN_ID=48 \
+  ros2 launch i10_rh56_moveit_config approach.launch.py \
+  request_path:="$PWD/artifacts/planning/my_observed/request.json" \
+  output_path:="$PWD/artifacts/planning/my_observed/trajectory.json"
+```
+
+这里从配置读取[当前右臂初始关节角](assembly_contract.md#右臂初始关节角)，场景使用双臂安装链摆放。准备工具自动写入模型类型、文件摘要和六个固定左臂关节；加载器核对左臂 FK 与采集记录，并拒绝双臂坐标配单臂模型。DDS 设置仅对该进程生效，使离线演示不依赖现场网卡配置。起点一旦存在碰撞或关节超限，规划停止并保存原因，不移动起点来规避失败。
+
+仅查看新右臂初始姿态、左臂和实测场景时，可使用已准备的 `config/dual_arm_initial_view_request.json`。该文件保存本次生成时的关节角；以后修改起点时，需要重新生成请求。以下命令不加载轨迹动画：
+
+```bash
+source /opt/ros/humble/setup.bash
+source install/setup.bash
+env -u CYCLONEDDS_URI ROS_LOCALHOST_ONLY=1 ROS_DOMAIN_ID=48 ROS_LOG_DIR=/tmp/dual_arm_scene_view_logs \
+  ros2 launch i10_rh56_moveit_config observed_scene.launch.py \
+  request_path:="$PWD/config/dual_arm_initial_view_request.json" \
+  output_path:="/tmp/dual_arm_scene_audit_view.json" \
+  publish_seconds:=600.0 rviz:=true
+```
+
+旧归档请求和轨迹保留其生成时的起点；修改当前默认关节角后，回放旧归档仍会显示旧姿态。新起点的轨迹须重新规划，并将对应请求和轨迹一起传给下方入口。
+
+查看同一份实际规划场景与成功轨迹：
+
+```bash
+env -u CYCLONEDDS_URI ROS_LOCALHOST_ONLY=1 ROS_DOMAIN_ID=48 \
+  ros2 launch i10_rh56_moveit_config observed_scene.launch.py \
+  request_path:="$PWD/artifacts/planning/my_observed/request.json" \
+  output_path:="$PWD/artifacts/planning/my_observed/scene_audit.json" \
+  trajectory_path:="$PWD/artifacts/planning/my_observed/trajectory.json" \
+  publish_seconds:=600.0 rviz:=true
+```
+
+场景由 `audit_observed_scene` 经 `/i10_observed_planning_scene` 和 `get_planning_scene` 服务提供。轨迹通过 `/display_planned_path` 显示；显示消息中的十秒动画时长不是执行时序。可不传 `trajectory_path`，只核对场景。该入口重新运行相交/分离和完整模型几何参与检查，默认不执行任何运动。
+
+窗口默认选中工具栏的 `Move Camera`：左键拖动旋转、中键拖动平移、滚轮缩放。传入成功轨迹后，`Validated MTC path` 默认循环播放；取消勾选可隐藏动画，重新勾选后会自动收到补发的轨迹。静态场景只在新查看器连接时发送，补发轨迹不会反复重建地图。
+
+当前双臂轨迹使用以上 RViz 入口。原 MuJoCo 查看器仅支持旧单臂场景，重看旧结果时使用对应的旧轨迹：
+
+```bash
+MUJOCO_GL=glfw .venv/bin/python tools/view_voxel_map_placement.py \
+  --scene-dir artifacts/perception/cleaned_scene_split_2mm_20261027_001 \
+  --trajectory artifacts/planning/observed_scene_mtc_20261027_001/direction_000/trajectory.json --view
+```
+
+旧 MuJoCo 回放空格暂停、R 重播，只运行 `mj_forward`；输入双臂场景会提示使用 RViz。原 `replay_cap_approach.py` 使用占位油箱，遇到实测请求会拒绝，避免显示错误环境。重新运行当前双臂两方向离线验证时，使用 `tools/run_observed_mtc_validation.py --output-dir 新目录 --domain-id 48`；可用 `--scene-manifest` 显式选择另一份已绑定模型的场景。
+
+关键加载逻辑位于 [observed_scene_loader.hpp](../src/i10_rh56_moveit_config/src/observed_scene_loader.hpp)，MTC 入口在 [plan_approach.cpp](../src/i10_rh56_moveit_config/src/plan_approach.cpp)：
+
+```cpp
+// 整张局部八叉树使用已保存的刚体变换，盖体作为独立对象加入同一场景。
+scene.processOctomapPtr(octree, world_from_octomap);
+scene.processCollisionObjectMsg(cap);
+fixed->setState(scene);  // MTC 与碰撞验证共用此场景。
+```
+
+加载前后均核对清单、几何和模型文件的 SHA-256；两方向目标由 [observed_mtc.py](../src/fuel_cap_task/observed_mtc.py) 从同一份实测候选计算。检查对环境、盖体及所有含碰撞几何的 link 分别构造相交对照，同时检查明确分离的探针。规划路径按[项目采样设置](assembly_contract.md#当前进度)加密，检查整个模型的关节限位和碰撞，并逐路点核对左臂保持不动。双臂共 30 个 link 含碰撞几何，涵盖架子、两臂、传感器、adapter、掌部和所有手指。仅固定安装接口与架子支撑地面的接触被排除，未放行手指与盖体或环境的接触。
+
+双臂地图计算在 [place_scene_in_dual_arm.py](../tools/place_scene_in_dual_arm.py)：
+
+```python
+# 输入为已保存的采集变换与安装变换；输出整图位姿，不重新分格。
+world_from_camera = world_from_right_base @ right_base_from_left_base @ left_base_from_camera
+world_from_octomap = world_from_camera @ camera_from_octomap
+```
+
+地图和盖体对象一起变换，保留相机系体素与占据形状。当前结果验证双臂模型中的几何路径；左臂让位姿态、相机外形、现场工具安装复核和硬件轨迹执行仍待完成。本机 RViz 显示与场景服务核对正常，窗口退出阶段出现段错误；退出日志保存在结果目录，数值规划与路径检查在独立进程中完成。
+
 ## 第一步：理解点与格子的区别
 
 一个点只有位置。一个体素则是有位置和边长的立方格，里面可以落入多个点。

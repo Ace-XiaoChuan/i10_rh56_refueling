@@ -1,0 +1,28 @@
+cmake_minimum_required(VERSION 3.16)
+project(aubo_joint_state_bridge LANGUAGES CXX)
+find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(nlohmann_json REQUIRED)
+set(AUBO_SDK_ROOT
+  "${CMAKE_CURRENT_SOURCE_DIR}/../../tools/sdk/aubo_sdk-0.23.1-Linux_x86_64+71831e1"
+  CACHE PATH "AUBO SDK 0.23.1 开发包目录")
+find_package(aubo_sdk 0.23.1 EXACT CONFIG REQUIRED
+  PATHS "${AUBO_SDK_ROOT}/lib/cmake/aubo_sdk" NO_DEFAULT_PATH)
+add_executable(joint_state_bridge src/joint_state_bridge.cpp)
+target_compile_features(joint_state_bridge PRIVATE cxx_std_17)
+target_compile_options(joint_state_bridge PRIVATE -Wall -Wextra -Wpedantic)
+target_include_directories(joint_state_bridge PRIVATE include)
+ament_target_dependencies(joint_state_bridge rclcpp sensor_msgs)
+target_link_libraries(joint_state_bridge aubo_sdk::aubo_sdk nlohmann_json::nlohmann_json)
+# 开发包保持原位置，安装后的节点同样能加载厂家库。
+set_target_properties(joint_state_bridge PROPERTIES INSTALL_RPATH "${AUBO_SDK_ROOT}/lib")
+install(TARGETS joint_state_bridge DESTINATION lib/${PROJECT_NAME})
+install(DIRECTORY launch DESTINATION share/${PROJECT_NAME})
+if(BUILD_TESTING)
+  find_package(ament_cmake_gtest REQUIRED)
+  ament_add_gtest(test_joint_sample test/test_joint_sample.cpp)
+  target_include_directories(test_joint_sample PRIVATE include)
+  target_compile_features(test_joint_sample PRIVATE cxx_std_17)
+endif()
+ament_package()
