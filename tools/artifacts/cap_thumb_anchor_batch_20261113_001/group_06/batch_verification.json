@@ -1,0 +1,39 @@
+{
+  "group": 6,
+  "status": "opposed_contact_timeout",
+  "raw_score_matches": true,
+  "geometric_final": {
+    "point_count": 667868,
+    "excess_points": 0,
+    "self_collisions": 0,
+    "maximum_inside_depth_m": 0.0
+  },
+  "physics_replayed": true,
+  "replay": {
+    "max_qpos_error": 0.0,
+    "force_matches": true,
+    "total_normal_forces_n": {
+      "thumb": 0.8406055928789891,
+      "index": 0.0,
+      "middle": 0.0,
+      "ring": 0.0,
+      "pinky": 0.0
+    },
+    "thumb_index": 7,
+    "hold_index": null
+  },
+  "independent_physical_checks": [
+    {
+      "time_s": 0.20000000000000015,
+      "excess_points": 0,
+      "self_collisions": 0,
+      "point_count": 667868
+    },
+    {
+      "time_s": 1.6249999999998765,
+      "excess_points": 0,
+      "self_collisions": 0,
+      "point_count": 667868
+    }
+  ]
+}

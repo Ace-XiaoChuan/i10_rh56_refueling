@@ -1,0 +1,126 @@
+{
+  "passes": true,
+  "checked_state_count": 3,
+  "source_hash_count": 45,
+  "scene_point_count": 634610,
+  "target_point_count": 3724,
+  "assumed_sample_count": 27879,
+  "states": [
+    {
+      "label": "650预张开（静态对照）",
+      "maximum_excess_m": {
+        "environment": 0.000353767302073662,
+        "target": 0.0,
+        "assumed_side": 0.0,
+        "self": 0.0
+      },
+      "counts": {
+        "environment": 7,
+        "target": 0,
+        "assumed_side": 0,
+        "self": 0
+      },
+      "metrics": [
+        {
+          "finger": "thumb",
+          "distance_mm": 14.06910476701683,
+          "angle_deg": 32.05937954831371
+        },
+        {
+          "finger": "index",
+          "distance_mm": 13.345382096958664,
+          "angle_deg": 13.18807296313269
+        },
+        {
+          "finger": "middle",
+          "distance_mm": 14.79281198718708,
+          "angle_deg": 12.166201524915001
+        }
+      ]
+    },
+    {
+      "label": "闭合参考（严格六驱动耦合）",
+      "maximum_excess_m": {
+        "environment": 0.0,
+        "target": 0.0,
+        "assumed_side": 0.0,
+        "self": 0.0
+      },
+      "counts": {
+        "environment": 0,
+        "target": 0,
+        "assumed_side": 0,
+        "self": 0
+      },
+      "metrics": [
+        {
+          "finger": "thumb",
+          "distance_mm": 1.482032167605025,
+          "angle_deg": 19.26185863747674
+        },
+        {
+          "finger": "index",
+          "distance_mm": 1.403988545159777,
+          "angle_deg": 0.8406154271826289
+        },
+        {
+          "finger": "middle",
+          "distance_mm": 1.0224574509978521,
+          "angle_deg": 1.4487814661730178
+        }
+      ]
+    },
+    {
+      "label": "本组最终抓姿",
+      "maximum_excess_m": {
+        "environment": 0.0,
+        "target": 0.0,
+        "assumed_side": 0.0,
+        "self": 0.0
+      },
+      "counts": {
+        "environment": 0,
+        "target": 0,
+        "assumed_side": 0,
+        "self": 0
+      },
+      "metrics": [
+        {
+          "finger": "thumb",
+          "distance_mm": 0.9572757957082295,
+          "angle_deg": 18.540187162006237
+        },
+        {
+          "finger": "index",
+          "distance_mm": 0.9619489026344665,
+          "angle_deg": 0.5830427714692478
+        },
+        {
+          "finger": "middle",
+          "distance_mm": 0.6923929148824985,
+          "angle_deg": 1.4805818723909776
+        }
+      ]
+    }
+  ],
+  "viewer": {
+    "passes": true,
+    "callback_draws": 16,
+    "targets": 3,
+    "model_points": 3,
+    "configurations": 3
+  },
+  "real_browser_checked": false,
+  "static_png_rendered_by": "Matplotlib Agg visual-mesh projection",
+  "artifact_sha256": {
+    "result.json": "88230d763257bd695950534b532d8fb2ae2eff0c8b4d0c1ef5fe252627a10647",
+    "candidate.json": "ec5892f1219449a160c17ce7be4e520495c302f7b65a06de64c62b66b0238dc9",
+    "fit_reference.py": "468f846d837ed746898a1fdb39382f12ccdf7c91f7216c3ccfb4c5593e08190a",
+    "render_reference.py": "fb01954e95ab55e251c6b19875424244ffbe857016ac18ce7a432f5fe7851b5e",
+    "verify_reference.py": "1431ee0188b0f02f94adb861416ade85cd8e8b559c7c85f3071505bf11ace0e9",
+    "index.html": "5b89d13552c8c6926491f33c22f4c201f18badf5cef02435f0410a781e0fdae8",
+    "viewer.js": "bfb48f9a6c7653fc1eb6f61d0e6ef80f4e4aa4e05ccd206561815d3a32d4cdb6",
+    "scene_data.js": "0614994f981792b4825a1b17ab0a4ac692ca977053272972e82baf705d01516b",
+    "single_grasp.png": "02cfa87d894c6b21436df5b4f38e30664beba2ca1fadb2eef44325fbbe8b8491"
+  }
+}

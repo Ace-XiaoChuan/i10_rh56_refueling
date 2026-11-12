@@ -1,0 +1,9 @@
+{
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "mujoco": "3.13.0",
+  "numpy": "2.2.6",
+  "scipy": "1.15.2",
+  "trimesh": "5.1.0",
+  "threadpool_limits": 1,
+  "plotly_schema_environment": ".venv-spahybgen (Python 3.8)"
+}

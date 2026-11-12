@@ -1,0 +1,885 @@
+{
+  "groups": [
+    {
+      "group": 0,
+      "folder": "group_00",
+      "feature_index_xyz": [
+        59,
+        89,
+        98
+      ],
+      "anchor_grip_m": [
+        0.022554129897082054,
+        0.008582675363353673,
+        -0.0014054811770124465
+      ],
+      "raw_network_score": 0.45991283655166626,
+      "status": "fixed_opposed_contact",
+      "success": true,
+      "geometry_feasible": true,
+      "geometric_updates": 24,
+      "physics_steps": 2250,
+      "elapsed_seconds": 35.28922584900283,
+      "final_contacts": {
+        "time_s": 1.1249999999999316,
+        "phase": "done",
+        "thumb_contact": true,
+        "opposed_contact": true,
+        "contacts": [
+          {
+            "finger": "thumb",
+            "side": 1,
+            "lateral": true,
+            "point_grip_m": [
+              0.0239166664736902,
+              0.00849983631963733,
+              -4.149126392807845e-08
+            ],
+            "normal_force_n": 2.1037449565818327,
+            "force_on_grip_n": [
+              -9.584343647027482e-06,
+              -2.039023399850134,
+              -0.517809248195563
+            ]
+          },
+          {
+            "finger": "middle",
+            "side": -1,
+            "lateral": true,
+            "point_grip_m": [
+              0.010306907125761601,
+              -0.009144582757191115,
+              -0.010959575799675212
+            ],
+            "normal_force_n": 6.1384924009920026,
+            "force_on_grip_n": [
+              -2.922141135379419e-05,
+              6.127772928165772,
+              -0.36261902374981814
+            ]
+          },
+          {
+            "finger": "pinky",
+            "side": -1,
+            "lateral": false,
+            "point_grip_m": [
+              -0.029999983695401362,
+              -0.008499801251803107,
+              -1.6234677442574647e-07
+            ],
+            "normal_force_n": 20.05523628920745,
+            "force_on_grip_n": [
+              1.2142750858417064,
+              15.494943122249722,
+              -12.674596774226824
+            ]
+          }
+        ],
+        "loads_n": {
+          "-1": {
+            "thumb": 0.0,
+            "pinky": 0.0,
+            "ring": 0.0,
+            "middle": 6.1384924009920026,
+            "index": 0.0
+          },
+          "1": {
+            "thumb": 2.1037449565818327,
+            "pinky": 0.0,
+            "ring": 0.0,
+            "middle": 0.0,
+            "index": 0.0
+          }
+        }
+      },
+      "finger_participation": [
+        {
+          "finger": "pinky",
+          "geometric_opening_checked": true,
+          "closing_command_delta_rad": 1.2277845858878171,
+          "final_command_delta_rad": 0.8281407031812786,
+          "actual_closing_motion_rad": 0.4480017111948865,
+          "contact_observed": true
+        },
+        {
+          "finger": "ring",
+          "geometric_opening_checked": true,
+          "closing_command_delta_rad": 0.5952347058734473,
+          "final_command_delta_rad": 0.401485809111614,
+          "actual_closing_motion_rad": 0.40148332208168225,
+          "contact_observed": false
+        },
+        {
+          "finger": "middle",
+          "geometric_opening_checked": true,
+          "closing_command_delta_rad": 0.10726506154141224,
+          "final_command_delta_rad": 0.0723502840096778,
+          "actual_closing_motion_rad": 0.07000864238802107,
+          "contact_observed": true
+        },
+        {
+          "finger": "index",
+          "geometric_opening_checked": true,
+          "closing_command_delta_rad": 0.3482552427220008,
+          "final_command_delta_rad": 0.2348981612159743,
+          "actual_closing_motion_rad": 0.2348959681461289,
+          "contact_observed": false
+        }
+      ]
+    },
+    {
+      "group": 1,
+      "folder": "group_01",
+      "feature_index_xyz": [
+        63,
+        81,
+        87
+      ],
+      "anchor_grip_m": [
+        0.012535351330869023,
+        0.009171478863171743,
+        -0.011415140673919633
+      ],
+      "raw_network_score": 0.6902663707733154,
+      "status": "fixed_opposed_contact",
+      "success": true,
+      "geometry_feasible": true,
+      "geometric_updates": 24,
+      "physics_steps": 2650,
+      "elapsed_seconds": 26.63401833199896,
+      "final_contacts": {
+        "time_s": 1.3249999999999096,
+        "phase": "done",
+        "thumb_contact": true,
+        "opposed_contact": true,
+        "contacts": [
+          {
+            "finger": "thumb",
+            "side": 1,
+            "lateral": true,
+            "point_grip_m": [
+              0.01518563796292671,
+              0.009009561335646982,
+              -0.00866519200738253
+            ],
+            "normal_force_n": 1.9332433733880063,
+            "force_on_grip_n": [
+              7.654981125509996e-07,
+              -1.9299073167655243,
+              -0.1135239597774087
+            ]
+          },
+          {
+            "finger": "index",
+            "side": -1,
+            "lateral": true,
+            "point_grip_m": [
+              0.013142048466229107,
+              -0.00863388527552154,
+              -0.002278583847134643
+            ],
+            "normal_force_n": 9.882305067631965,
+            "force_on_grip_n": [
+              0.0014469517491810802,
+              9.860516711148087,
+              -0.6608071592827693
+            ]
+          },
+          {
+            "finger": "middle",
+            "side": -1,
+            "lateral": true,
+            "point_grip_m": [
+              -0.008432336865498413,
+              -0.008858576266933925,
+              -0.006098284104029153
+            ],
+            "normal_force_n": 9.163987303078379,
+            "force_on_grip_n": [
+              -0.0001580637927442452,
+              9.144943434163007,
+              -0.5930421009119984
+            ]
+          }
+        ],
+        "loads_n": {
+          "-1": {
+            "thumb": 0.0,
+            "pinky": 0.0,
+            "ring": 0.0,
+            "middle": 9.163987303078379,
+            "index": 9.882305067631965
+          },
+          "1": {
+            "thumb": 1.9332433733880063,
+            "pinky": 0.0,
+            "ring": 0.0,
+            "middle": 0.0,
+            "index": 0.0
+          }
+        }
+      },
+      "finger_participation": [
+        {
+          "finger": "pinky",
+          "geometric_opening_checked": true,
+          "closing_command_delta_rad": 0.6925499840225676,
+          "final_command_delta_rad": 0.6748899594299468,
+          "actual_closing_motion_rad": 0.6748874314273418,
+          "contact_observed": false
+        },
+        {
+          "finger": "ring",
+          "geometric_opening_checked": true,
+          "closing_command_delta_rad": 0.5952347058734473,
+          "final_command_delta_rad": 0.5800562208736353,
+          "actual_closing_motion_rad": 0.5800537334890095,
+          "contact_observed": false
+        },
+        {
+          "finger": "middle",
+          "geometric_opening_checked": true,
+          "closing_command_delta_rad": 0.43674611731337276,
+          "final_command_delta_rad": 0.425609091321853,
+          "actual_closing_motion_rad": 0.4177514373563449,
+          "contact_observed": true
+        },
+        {
+          "finger": "index",
+          "geometric_opening_checked": true,
+          "closing_command_delta_rad": 0.43846991846627437,
+          "final_command_delta_rad": 0.4272889355453555,
+          "actual_closing_motion_rad": 0.4205291521625001,
+          "contact_observed": true
+        }
+      ]
+    },
+    {
+      "group": 2,
+      "folder": "group_02",
+      "feature_index_xyz": [
+        58,
+        85,
+        86
+      ],
+      "anchor_grip_m": [
+        0.018682259816091284,
+        0.009292189780452402,
+        -0.01346722626769084
+      ],
+      "raw_network_score": 0.6755284070968628,
+      "status": "opposed_contact_timeout",
+      "success": false,
+      "geometry_feasible": true,
+      "geometric_updates": 24,
+      "physics_steps": 2900,
+      "elapsed_seconds": 21.140239535998262,
+      "final_contacts": {
+        "time_s": 1.4499999999998958,
+        "phase": "failed",
+        "thumb_contact": true,
+        "opposed_contact": false,
+        "contacts": [
+          {
+            "finger": "thumb",
+            "side": 1,
+            "lateral": true,
+            "point_grip_m": [
+              0.018291609107477718,
+              0.009080027204134955,
+              -0.009861612083227838
+            ],
+            "normal_force_n": 0.8385573581910912,
+            "force_on_grip_n": [
+              -1.952749931807829e-05,
+              -0.8371103574763388,
+              -0.04924116552840019
+            ]
+          }
+        ],
+        "loads_n": {
+          "-1": {
+            "thumb": 0.0,
+            "pinky": 0.0,
+            "ring": 0.0,
+            "middle": 0.0,
+            "index": 0.0
+          },
+          "1": {
+            "thumb": 0.8385573581910912,
+            "pinky": 0.0,
+            "ring": 0.0,
+            "middle": 0.0,
+            "index": 0.0
+          }
+        }
+      },
+      "finger_participation": [
+        {
+          "finger": "pinky",
+          "geometric_opening_checked": true,
+          "closing_command_delta_rad": 1.0331538215731808,
+          "final_command_delta_rad": 1.0331538215731808,
+          "actual_closing_motion_rad": 1.033154730219698,
+          "contact_observed": false
+        },
+        {
+          "finger": "ring",
+          "geometric_opening_checked": true,
+          "closing_command_delta_rad": 1.0818117112129448,
+          "final_command_delta_rad": 1.0818117112129448,
+          "actual_closing_motion_rad": 1.0818126577812566,
+          "contact_observed": false
+        },
+        {
+          "finger": "middle",
+          "geometric_opening_checked": true,
+          "closing_command_delta_rad": 0.30381759254355645,
+          "final_command_delta_rad": 0.30381759254355645,
+          "actual_closing_motion_rad": 0.3038169967140609,
+          "contact_observed": false
+        },
+        {
+          "finger": "index",
+          "geometric_opening_checked": true,
+          "closing_command_delta_rad": 0.25238476426910894,
+          "final_command_delta_rad": 0.25238476426910894,
+          "actual_closing_motion_rad": 0.25238419733937123,
+          "contact_observed": false
+        }
+      ]
+    },
+    {
+      "group": 3,
+      "folder": "group_03",
+      "feature_index_xyz": [
+        54,
+        91,
+        92
+      ],
+      "anchor_grip_m": [
+        0.026562600306792243,
+        0.008993660407908804,
+        -0.00839222693444966
+      ],
+      "raw_network_score": 0.6146409511566162,
+      "status": "fixed_opposed_contact",
+      "success": true,
+      "geometry_feasible": true,
+      "geometric_updates": 24,
+      "physics_steps": 650,
+      "elapsed_seconds": 20.913340120998328,
+      "final_contacts": {
+        "time_s": 0.32500000000000023,
+        "phase": "done",
+        "thumb_contact": true,
+        "opposed_contact": true,
+        "contacts": [
+          {
+            "finger": "thumb",
+            "side": 1,
+            "lateral": true,
+            "point_grip_m": [
+              0.025469251796689785,
+              0.008817828203035012,
+              -0.005404259369235645
+            ],
+            "normal_force_n": 0.8629706609550041,
+            "force_on_grip_n": [
+              -0.003640249300607523,
+              -0.8610977865136933,
+              -0.05719844248703709
+            ]
+          },
+          {
+            "finger": "middle",
+            "side": -1,
+            "lateral": true,
+            "point_grip_m": [
+              0.011743149446817246,
+              -0.009366441602979121,
+              -0.01473542303629557
+            ],
+            "normal_force_n": 5.068805398610882,
+            "force_on_grip_n": [
+              1.1892024037033024,
+              4.9220142574293995,
+              -2.6444050988276087
+            ]
+          }
+        ],
+        "loads_n": {
+          "-1": {
+            "thumb": 0.0,
+            "pinky": 0.0,
+            "ring": 0.0,
+            "middle": 5.068805398610882,
+            "index": 0.0
+          },
+          "1": {
+            "thumb": 0.8629706609550041,
+            "pinky": 0.0,
+            "ring": 0.0,
+            "middle": 0.0,
+            "index": 0.0
+          }
+        }
+      },
+      "finger_participation": [
+        {
+          "finger": "pinky",
+          "geometric_opening_checked": true,
+          "closing_command_delta_rad": 0.4492615286292725,
+          "final_command_delta_rad": 0.011006907451417192,
+          "actual_closing_motion_rad": 0.011004368182803148,
+          "contact_observed": false
+        },
+        {
+          "finger": "ring",
+          "geometric_opening_checked": true,
+          "closing_command_delta_rad": 0.449261604271598,
+          "final_command_delta_rad": 0.011006909304654089,
+          "actual_closing_motion_rad": 0.011004369914488166,
+          "contact_observed": false
+        },
+        {
+          "finger": "middle",
+          "geometric_opening_checked": true,
+          "closing_command_delta_rad": 0.06000000000000005,
+          "final_command_delta_rad": 0.0014699999999999713,
+          "actual_closing_motion_rad": 0.00035281188533753394,
+          "contact_observed": true
+        },
+        {
+          "finger": "index",
+          "geometric_opening_checked": true,
+          "closing_command_delta_rad": 0.29254500291620766,
+          "final_command_delta_rad": 0.007167352571447072,
+          "actual_closing_motion_rad": 0.007165070794859618,
+          "contact_observed": false
+        }
+      ]
+    },
+    {
+      "group": 4,
+      "folder": "group_04",
+      "feature_index_xyz": [
+        55,
+        88,
+        87
+      ],
+      "anchor_grip_m": [
+        0.023027436131475114,
+        0.009271891256730391,
+        -0.013122151364416648
+      ],
+      "raw_network_score": 0.11731190234422684,
+      "status": "fixed_opposed_contact",
+      "success": true,
+      "geometry_feasible": true,
+      "geometric_updates": 24,
+      "physics_steps": 2400,
+      "elapsed_seconds": 21.406395202000567,
+      "final_contacts": {
+        "time_s": 1.1999999999999234,
+        "phase": "done",
+        "thumb_contact": true,
+        "opposed_contact": true,
+        "contacts": [
+          {
+            "finger": "thumb",
+            "side": 1,
+            "lateral": true,
+            "point_grip_m": [
+              0.02279425477930632,
+              0.009072301690443806,
+              -0.00973107264414804
+            ],
+            "normal_force_n": 1.4180440942022463,
+            "force_on_grip_n": [
+              -5.0727447236413245e-05,
+              -1.4155973288692518,
+              -0.08326617330945696
+            ]
+          },
+          {
+            "finger": "middle",
+            "side": -1,
+            "lateral": true,
+            "point_grip_m": [
+              0.01599740055553787,
+              -0.008953842137884629,
+              -0.007717079010608745
+            ],
+            "normal_force_n": 6.492649180427184,
+            "force_on_grip_n": [
+              -0.0009425420014190153,
+              6.481031082963872,
+              -0.38830302730657795
+            ]
+          }
+        ],
+        "loads_n": {
+          "-1": {
+            "thumb": 0.0,
+            "pinky": 0.0,
+            "ring": 0.0,
+            "middle": 6.492649180427184,
+            "index": 0.0
+          },
+          "1": {
+            "thumb": 1.4180440942022463,
+            "pinky": 0.0,
+            "ring": 0.0,
+            "middle": 0.0,
+            "index": 0.0
+          }
+        }
+      },
+      "finger_participation": [
+        {
+          "finger": "pinky",
+          "geometric_opening_checked": true,
+          "closing_command_delta_rad": 1.1304692037304989,
+          "final_command_delta_rad": 1.0451187788487875,
+          "actual_closing_motion_rad": 1.0451218128210844,
+          "contact_observed": false
+        },
+        {
+          "finger": "ring",
+          "geometric_opening_checked": true,
+          "closing_command_delta_rad": 0.5952347058734473,
+          "final_command_delta_rad": 0.5502944855799712,
+          "actual_closing_motion_rad": 0.5502919982560208,
+          "contact_observed": false
+        },
+        {
+          "finger": "middle",
+          "geometric_opening_checked": true,
+          "closing_command_delta_rad": 0.10787908887094877,
+          "final_command_delta_rad": 0.09973421766118651,
+          "actual_closing_motion_rad": 0.09756683206108185,
+          "contact_observed": true
+        },
+        {
+          "finger": "index",
+          "geometric_opening_checked": true,
+          "closing_command_delta_rad": 0.20227634591023103,
+          "final_command_delta_rad": 0.1870044817939981,
+          "actual_closing_motion_rad": 0.18700254230726499,
+          "contact_observed": false
+        }
+      ]
+    },
+    {
+      "group": 5,
+      "folder": "group_05",
+      "feature_index_xyz": [
+        66,
+        78,
+        85
+      ],
+      "anchor_grip_m": [
+        0.00803517699951654,
+        0.009248205745974413,
+        -0.012719497681565037
+      ],
+      "raw_network_score": 0.603560209274292,
+      "status": "fixed_opposed_contact",
+      "success": true,
+      "geometry_feasible": true,
+      "geometric_updates": 24,
+      "physics_steps": 2700,
+      "elapsed_seconds": 24.934482741002284,
+      "final_contacts": {
+        "time_s": 1.3499999999999068,
+        "phase": "done",
+        "thumb_contact": true,
+        "opposed_contact": true,
+        "contacts": [
+          {
+            "finger": "thumb",
+            "side": 1,
+            "lateral": true,
+            "point_grip_m": [
+              0.009328690148554123,
+              0.00910266870292916,
+              -0.010246876630586023
+            ],
+            "normal_force_n": 1.1002535704778467,
+            "force_on_grip_n": [
+              1.4004542304791104e-06,
+              -1.0983549224541203,
+              -0.06460947043755982
+            ]
+          },
+          {
+            "finger": "middle",
+            "side": -1,
+            "lateral": true,
+            "point_grip_m": [
+              -0.005795236663692023,
+              -0.009158461174974793,
+              -0.011194425857351724
+            ],
+            "normal_force_n": 2.151354901858361,
+            "force_on_grip_n": [
+              -2.2219971478745944e-05,
+              2.147303023575558,
+              -0.1321024379316924
+            ]
+          }
+        ],
+        "loads_n": {
+          "-1": {
+            "thumb": 0.0,
+            "pinky": 0.0,
+            "ring": 0.0,
+            "middle": 2.151354901858361,
+            "index": 0.0
+          },
+          "1": {
+            "thumb": 1.1002535704778467,
+            "pinky": 0.0,
+            "ring": 0.0,
+            "middle": 0.0,
+            "index": 0.0
+          }
+        }
+      },
+      "finger_participation": [
+        {
+          "finger": "pinky",
+          "geometric_opening_checked": true,
+          "closing_command_delta_rad": 0.7898653661798857,
+          "final_command_delta_rad": 0.7894704334967416,
+          "actual_closing_motion_rad": 0.7894679206925846,
+          "contact_observed": false
+        },
+        {
+          "finger": "ring",
+          "geometric_opening_checked": true,
+          "closing_command_delta_rad": 0.5465770053394976,
+          "final_command_delta_rad": 0.5463037168367904,
+          "actual_closing_motion_rad": 0.5463012673568486,
+          "contact_observed": false
+        },
+        {
+          "finger": "middle",
+          "geometric_opening_checked": true,
+          "closing_command_delta_rad": 0.06000000000000005,
+          "final_command_delta_rad": 0.05996999999999597,
+          "actual_closing_motion_rad": 0.05918462182064688,
+          "contact_observed": true
+        },
+        {
+          "finger": "index",
+          "geometric_opening_checked": true,
+          "closing_command_delta_rad": 0.39076658802982434,
+          "final_command_delta_rad": 0.39057120473578266,
+          "actual_closing_motion_rad": 0.39056894645490614,
+          "contact_observed": false
+        }
+      ]
+    },
+    {
+      "group": 6,
+      "folder": "group_06",
+      "feature_index_xyz": [
+        71,
+        76,
+        91
+      ],
+      "anchor_grip_m": [
+        0.004026706589806337,
+        0.008837220701419285,
+        -0.005732751924127838
+      ],
+      "raw_network_score": 0.6662373542785645,
+      "status": "opposed_contact_timeout",
+      "success": false,
+      "geometry_feasible": true,
+      "geometric_updates": 24,
+      "physics_steps": 3250,
+      "elapsed_seconds": 21.846764902998984,
+      "final_contacts": {
+        "time_s": 1.6249999999998765,
+        "phase": "failed",
+        "thumb_contact": true,
+        "opposed_contact": false,
+        "contacts": [
+          {
+            "finger": "thumb",
+            "side": 1,
+            "lateral": true,
+            "point_grip_m": [
+              0.005161186684912384,
+              0.00866347458672452,
+              -0.0027802145757686047
+            ],
+            "normal_force_n": 0.8406055928789891,
+            "force_on_grip_n": [
+              -3.1660245795872566e-07,
+              -0.8391550113859273,
+              -0.04936222893432962
+            ]
+          }
+        ],
+        "loads_n": {
+          "-1": {
+            "thumb": 0.0,
+            "pinky": 0.0,
+            "ring": 0.0,
+            "middle": 0.0,
+            "index": 0.0
+          },
+          "1": {
+            "thumb": 0.8406055928789891,
+            "pinky": 0.0,
+            "ring": 0.0,
+            "middle": 0.0,
+            "index": 0.0
+          }
+        }
+      },
+      "finger_participation": [
+        {
+          "finger": "pinky",
+          "geometric_opening_checked": true,
+          "closing_command_delta_rad": 0.3519461464719542,
+          "final_command_delta_rad": 0.3519461464719542,
+          "actual_closing_motion_rad": 0.35194552361668596,
+          "contact_observed": false
+        },
+        {
+          "finger": "ring",
+          "geometric_opening_checked": true,
+          "closing_command_delta_rad": 0.5465770053394976,
+          "final_command_delta_rad": 0.5465770053394976,
+          "actual_closing_motion_rad": 0.5465762822557354,
+          "contact_observed": false
+        },
+        {
+          "finger": "middle",
+          "geometric_opening_checked": true,
+          "closing_command_delta_rad": 0.05999999999999994,
+          "final_command_delta_rad": 0.05999999999999994,
+          "actual_closing_motion_rad": 0.060000004689795605,
+          "contact_observed": false
+        },
+        {
+          "finger": "index",
+          "geometric_opening_checked": true,
+          "closing_command_delta_rad": 0.4276248080992182,
+          "final_command_delta_rad": 0.4276248080992182,
+          "actual_closing_motion_rad": 0.42762414433795803,
+          "contact_observed": false
+        }
+      ]
+    },
+    {
+      "group": 7,
+      "folder": "group_07",
+      "feature_index_xyz": [
+        70,
+        75,
+        87
+      ],
+      "anchor_grip_m": [
+        0.003439992630067985,
+        0.009083109748065978,
+        -0.009912865717121619
+      ],
+      "raw_network_score": 0.5275958776473999,
+      "status": "opposed_contact_timeout",
+      "success": false,
+      "geometry_feasible": true,
+      "geometric_updates": 24,
+      "physics_steps": 3200,
+      "elapsed_seconds": 23.958756879997964,
+      "final_contacts": {
+        "time_s": 1.5999999999998793,
+        "phase": "failed",
+        "thumb_contact": true,
+        "opposed_contact": false,
+        "contacts": [
+          {
+            "finger": "thumb",
+            "side": 1,
+            "lateral": true,
+            "point_grip_m": [
+              0.0032401984203561654,
+              0.008927143134062957,
+              -0.007263496045458939
+            ],
+            "normal_force_n": 1.5062274123277066,
+            "force_on_grip_n": [
+              -2.2073194380356487e-06,
+              -1.503628217321883,
+              -0.08844886500618376
+            ]
+          }
+        ],
+        "loads_n": {
+          "-1": {
+            "thumb": 0.0,
+            "pinky": 0.0,
+            "ring": 0.0,
+            "middle": 0.0,
+            "index": 0.0
+          },
+          "1": {
+            "thumb": 1.5062274123277066,
+            "pinky": 0.0,
+            "ring": 0.0,
+            "middle": 0.0,
+            "index": 0.0
+          }
+        }
+      },
+      "finger_participation": [
+        {
+          "finger": "pinky",
+          "geometric_opening_checked": true,
+          "closing_command_delta_rad": 0.7412076751012266,
+          "final_command_delta_rad": 0.7412076751012266,
+          "actual_closing_motion_rad": 0.7412068816902277,
+          "contact_observed": false
+        },
+        {
+          "finger": "ring",
+          "geometric_opening_checked": true,
+          "closing_command_delta_rad": 0.5465770053394976,
+          "final_command_delta_rad": 0.5465770053394976,
+          "actual_closing_motion_rad": 0.5465762822557354,
+          "contact_observed": false
+        },
+        {
+          "finger": "middle",
+          "geometric_opening_checked": true,
+          "closing_command_delta_rad": 0.05999999999999994,
+          "final_command_delta_rad": 0.05999999999999994,
+          "actual_closing_motion_rad": 0.06000000467492195,
+          "contact_observed": false
+        },
+        {
+          "finger": "index",
+          "geometric_opening_checked": true,
+          "closing_command_delta_rad": 0.3418459455239898,
+          "final_command_delta_rad": 0.3418459455239898,
+          "actual_closing_motion_rad": 0.34184532878626367,
+          "contact_observed": false
+        }
+      ]
+    }
+  ],
+  "count": 8,
+  "success_count": 5,
+  "geometry_feasible_count": 8,
+  "elapsed_seconds": 196.71001664899813,
+  "input_unchanged": true,
+  "observation_id": "confirmed_sides_0p1_20261112_002",
+  "network_forwards": 0,
+  "hardware_execution_performed": false,
+  "motion_target_valid": false
+}

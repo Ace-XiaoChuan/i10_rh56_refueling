@@ -1,0 +1,27 @@
+{
+  "fingers": [
+    {
+      "finger": "pinky",
+      "current_target_distance_m": 0.05417266861086436,
+      "attraction_cutoff_m": 0.02,
+      "selected_for_contact": false,
+      "command_change_rad": 0.0,
+      "rejection_reason": "当前距离超过局部吸引范围；未尝试充分张开或全范围可达性判断",
+      "collision_was_not_the_selection_criterion": true,
+      "full_range_reachability_tested": false
+    },
+    {
+      "finger": "ring",
+      "current_target_distance_m": 0.06035970425953635,
+      "attraction_cutoff_m": 0.02,
+      "selected_for_contact": false,
+      "command_change_rad": 0.0,
+      "rejection_reason": "当前距离超过局部吸引范围；未尝试充分张开或全范围可达性判断",
+      "collision_was_not_the_selection_criterion": true,
+      "full_range_reachability_tested": false
+    }
+  ],
+  "closure_collision_stop": false,
+  "closure_checkpoints": 35,
+  "interpretation": "当前距离远被提前跳过，不等于尝试抓握后不可达；不能据此判断两指无法参与"
+}

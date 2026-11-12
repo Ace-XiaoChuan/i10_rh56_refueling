@@ -1,0 +1,46 @@
+{
+  "group": 4,
+  "status": "fixed_opposed_contact",
+  "raw_score_matches": true,
+  "geometric_final": {
+    "point_count": 667868,
+    "excess_points": 0,
+    "self_collisions": 0,
+    "maximum_inside_depth_m": 0.0
+  },
+  "physics_replayed": true,
+  "replay": {
+    "max_qpos_error": 0.0,
+    "force_matches": true,
+    "total_normal_forces_n": {
+      "thumb": 1.4180440942022463,
+      "index": 0.0,
+      "middle": 6.492649180427184,
+      "ring": 0.0,
+      "pinky": 0.0
+    },
+    "thumb_index": 1,
+    "hold_index": 38
+  },
+  "independent_physical_checks": [
+    {
+      "time_s": 0.05000000000000004,
+      "excess_points": 0,
+      "self_collisions": 0,
+      "point_count": 667868
+    },
+    {
+      "time_s": 0.974999999999948,
+      "excess_points": 0,
+      "self_collisions": 0,
+      "point_count": 667868
+    },
+    {
+      "time_s": 1.1999999999999234,
+      "excess_points": 0,
+      "self_collisions": 0,
+      "point_count": 667868
+    }
+  ],
+  "opposed_duration_s": 0.22499999999997533
+}

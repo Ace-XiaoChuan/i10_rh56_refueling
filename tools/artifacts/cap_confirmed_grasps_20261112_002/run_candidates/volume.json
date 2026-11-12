@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "observation_id": "confirmed_sides_0p1_20261112_002",
+  "frame_id": "left_base",
+  "motion_target_valid": false,
+  "hardware_execution_performed": false,
+  "parent_sha256": "be6de997044f7731c0879463255ee56d9844c191a6b575552487f03c2e0a84d8",
+  "network_volume_file": "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_confirmed_grasps_20261112_002/run_candidates/network_volume.npz",
+  "geometry_file": "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_confirmed_grasps_20261112_002/run_candidates/geometry_1mm.npz",
+  "files_sha256": {
+    "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_confirmed_grasps_20261112_002/run_candidates/network_volume.npz": "904ccad049b6230b91c0017aea41d20af37ff4b17186692158d516d8386c5222",
+    "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_confirmed_grasps_20261112_002/run_candidates/geometry_1mm.npz": "2bfdca2bfba1b500120c10c907f205eb4b8b3fd6092c41d59d7ca1c7f69328f6"
+  },
+  "occupancy_source": "user_visual_confirmation",
+  "binary_changed_cells": 521
+}

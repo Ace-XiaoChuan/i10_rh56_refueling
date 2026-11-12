@@ -1,0 +1,69 @@
+{
+  "sources": [
+    {
+      "original": "/home/ace/i10_rh56_refueling_ws/tools/run_thumb_anchor.py",
+      "snapshot": "implementation/tools/run_thumb_anchor.py",
+      "sha256": "f518e0565a40189ed2a5cf749a5d83af59c4ca198a5b3d87a0418047fcb92571"
+    },
+    {
+      "original": "/home/ace/i10_rh56_refueling_ws/tools/thumb_anchor_viewer.py",
+      "snapshot": "implementation/tools/thumb_anchor_viewer.py",
+      "sha256": "07a11deb204823c82235e8fa9c9767d4c9049de226924c0eb527ab697952456d"
+    },
+    {
+      "original": "/home/ace/i10_rh56_refueling_ws/tools/verify_thumb_anchor.py",
+      "snapshot": "implementation/tools/verify_thumb_anchor.py",
+      "sha256": "afbc5eed897ac7caf042b31d898024caf4b0827822b95beee018b1b107459f21"
+    },
+    {
+      "original": "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_thumb_anchor_batch_20261113_001/run_batch.py",
+      "snapshot": "implementation/experiment/run_batch.py",
+      "sha256": "44671449413e47967c6be97d4d79a8f50478adc511611677acc4ba7ea31fd7c9"
+    },
+    {
+      "original": "/home/ace/i10_rh56_refueling_ws/src/fuel_cap_task/thumb_anchor.py",
+      "snapshot": "implementation/src/fuel_cap_task/thumb_anchor.py",
+      "sha256": "bcce69cfeab8f41fd0f929506b03d1fb8612f78bf3fbbdf19cba7695cbc2136d"
+    },
+    {
+      "original": "/home/ace/i10_rh56_refueling_ws/src/fuel_cap_task/fixed_contact_kinematics.py",
+      "snapshot": "implementation/src/fuel_cap_task/fixed_contact_kinematics.py",
+      "sha256": "dbebcbf9b6e9789a9a6e370c16ed5a75f36ca03aea2fc52b5b6bb83024927e69"
+    },
+    {
+      "original": "/home/ace/i10_rh56_refueling_ws/src/fuel_cap_task/signed_hand_clearance.py",
+      "snapshot": "implementation/src/fuel_cap_task/signed_hand_clearance.py",
+      "sha256": "ba06c2a31c406cc33b8ff71ee4076914943a98ef12b67261d7d051f57b0fc542"
+    },
+    {
+      "original": "/home/ace/i10_rh56_refueling_ws/src/fuel_cap_task/observed_hand_geometry.py",
+      "snapshot": "implementation/src/fuel_cap_task/observed_hand_geometry.py",
+      "sha256": "9d23ca2c82d381da0b6cd93bcd6c9c3e8365b9308b54d0f7970c45c9312e7e99"
+    },
+    {
+      "original": "/home/ace/i10_rh56_refueling_ws/src/fuel_cap_task/joint_collision_update.py",
+      "snapshot": "implementation/src/fuel_cap_task/joint_collision_update.py",
+      "sha256": "f2d25838d0cf2b006e10e7c1716545960c59212d62a36fa48128da9919569525"
+    },
+    {
+      "original": "/home/ace/i10_rh56_refueling_ws/src/fuel_cap_task/rh56_drive_map.py",
+      "snapshot": "implementation/src/fuel_cap_task/rh56_drive_map.py",
+      "sha256": "e7d06568bbc5cc41dcf50f9af2c81c587018cd2adb3d97528039a21b5285c6f5"
+    },
+    {
+      "original": "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_thumb_anchor_batch_20261113_001/verify_batch.py",
+      "snapshot": "implementation/experiment/verify_batch.py",
+      "sha256": "4240bbd76d7cc12354f7b4e23c79464a67cdc8de66857b4d8d11e564850871cb"
+    },
+    {
+      "original": "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_thumb_anchor_batch_20261113_001/make_report.py",
+      "snapshot": "implementation/experiment/make_report.py",
+      "sha256": "59216b5831c561cd59b2af9cf2d1f0a53476b581c56f14e21b63ff6fd5215e20"
+    },
+    {
+      "original": "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_thumb_anchor_batch_20261113_001/check_report.py",
+      "snapshot": "implementation/experiment/check_report.py",
+      "sha256": "9544d0c92738dfa1c002081ab9a96b78478c4e84e1c898c6dc48c13a1cc87e9f"
+    }
+  ]
+}

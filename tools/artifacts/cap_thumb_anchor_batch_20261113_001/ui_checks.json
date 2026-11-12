@@ -1,0 +1,48 @@
+{
+  "summary_row_clicks_pass": true,
+  "summary_keyboard_pass": true,
+  "group_checks": [
+    {
+      "folder": "group_00",
+      "frame_options": 5,
+      "all_frame_switches_pass": true
+    },
+    {
+      "folder": "group_01",
+      "frame_options": 5,
+      "all_frame_switches_pass": true
+    },
+    {
+      "folder": "group_02",
+      "frame_options": 3,
+      "all_frame_switches_pass": true
+    },
+    {
+      "folder": "group_03",
+      "frame_options": 5,
+      "all_frame_switches_pass": true
+    },
+    {
+      "folder": "group_04",
+      "frame_options": 5,
+      "all_frame_switches_pass": true
+    },
+    {
+      "folder": "group_05",
+      "frame_options": 5,
+      "all_frame_switches_pass": true
+    },
+    {
+      "folder": "group_06",
+      "frame_options": 4,
+      "all_frame_switches_pass": true
+    },
+    {
+      "folder": "group_07",
+      "frame_options": 4,
+      "all_frame_switches_pass": true
+    }
+  ],
+  "engine": "functions V8 with DOM and Plotly stubs",
+  "real_browser_rendered": false
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "observation_id": "confirmed_sides_0p1_20261112_002",
+  "frame_id": "left_base",
+  "motion_target_valid": false,
+  "hardware_execution_performed": false,
+  "contacts_file": "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_confirmed_grasps_20261112_002/run_candidates/contacts.npz",
+  "network_volume_file": "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_confirmed_grasps_20261112_002/run_candidates/network_volume.npz",
+  "volume_manifest": "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_confirmed_grasps_20261112_002/run_candidates/volume.json",
+  "parent_sha256": "2ee1d423d5fa18e4d75307f82576614383a058768f51d94aaad35f5a255a3c19",
+  "prediction_evidence_sufficient": true,
+  "prediction_evidence_status": "saved_raw_scores_with_confirmed_surface_mask_no_reinference",
+  "checkpoint_sha256": "f74f5a953de0125d82a2f7ea22f490ea3b3abaab15fd49221ede929997795405",
+  "network_mode": "upstream_train",
+  "contact_peak": 0.8650266528129578,
+  "center_peak": 0.9416900873184204,
+  "raw_network_outputs_reused_unchanged": true,
+  "network_forwards": 0,
+  "files_sha256": {
+    "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_confirmed_grasps_20261112_002/run_candidates/contacts.npz": "fdf13e8ba62ef0f6a21ffc79791695f6b7c6be59852a7a23d87de15dddbd4735"
+  },
+  "source_sha256": {
+    "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_confirmed_grasps_20261112_002/prepare_experiment.py": "c09b884c106f7c6e987f71887e856f29141dc3aadd9135384e50360ecf3bd1dc"
+  }
+}

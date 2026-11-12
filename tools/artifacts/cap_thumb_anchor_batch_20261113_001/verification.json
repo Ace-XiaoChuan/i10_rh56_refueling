@@ -1,0 +1,362 @@
+{
+  "passes": true,
+  "count": 8,
+  "success_count": 5,
+  "input_sha256_matches": true,
+  "all_registered_groups_present": true,
+  "checks": [
+    {
+      "group": 0,
+      "status": "fixed_opposed_contact",
+      "raw_score_matches": true,
+      "geometric_final": {
+        "point_count": 667868,
+        "excess_points": 0,
+        "self_collisions": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      "physics_replayed": true,
+      "replay": {
+        "max_qpos_error": 0.0,
+        "force_matches": true,
+        "total_normal_forces_n": {
+          "thumb": 2.1037449565818327,
+          "index": 0.0,
+          "middle": 6.1384924009920026,
+          "ring": 0.0,
+          "pinky": 20.05523628920745
+        },
+        "thumb_index": 8,
+        "hold_index": 35
+      },
+      "independent_physical_checks": [
+        {
+          "time_s": 0.22500000000000017,
+          "excess_points": 0,
+          "self_collisions": 0,
+          "point_count": 667868
+        },
+        {
+          "time_s": 0.8999999999999563,
+          "excess_points": 0,
+          "self_collisions": 0,
+          "point_count": 667868
+        },
+        {
+          "time_s": 1.1249999999999316,
+          "excess_points": 0,
+          "self_collisions": 0,
+          "point_count": 667868
+        }
+      ],
+      "opposed_duration_s": 0.22499999999997533
+    },
+    {
+      "group": 1,
+      "status": "fixed_opposed_contact",
+      "raw_score_matches": true,
+      "geometric_final": {
+        "point_count": 667868,
+        "excess_points": 0,
+        "self_collisions": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      "physics_replayed": true,
+      "replay": {
+        "max_qpos_error": 0.0,
+        "force_matches": true,
+        "total_normal_forces_n": {
+          "thumb": 1.9332433733880063,
+          "index": 9.882305067631965,
+          "middle": 9.163987303078379,
+          "ring": 0.0,
+          "pinky": 0.0
+        },
+        "thumb_index": 4,
+        "hold_index": 43
+      },
+      "independent_physical_checks": [
+        {
+          "time_s": 0.12500000000000008,
+          "excess_points": 0,
+          "self_collisions": 0,
+          "point_count": 667868
+        },
+        {
+          "time_s": 1.0999999999999344,
+          "excess_points": 0,
+          "self_collisions": 0,
+          "point_count": 667868
+        },
+        {
+          "time_s": 1.3249999999999096,
+          "excess_points": 0,
+          "self_collisions": 0,
+          "point_count": 667868
+        }
+      ],
+      "opposed_duration_s": 0.22499999999997522
+    },
+    {
+      "group": 2,
+      "status": "opposed_contact_timeout",
+      "raw_score_matches": true,
+      "geometric_final": {
+        "point_count": 667868,
+        "excess_points": 0,
+        "self_collisions": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      "physics_replayed": true,
+      "replay": {
+        "max_qpos_error": 0.0,
+        "force_matches": true,
+        "total_normal_forces_n": {
+          "thumb": 0.8385573581910912,
+          "index": 0.0,
+          "middle": 0.0,
+          "ring": 0.0,
+          "pinky": 0.0
+        },
+        "thumb_index": 0,
+        "hold_index": null
+      },
+      "independent_physical_checks": [
+        {
+          "time_s": 0.02500000000000002,
+          "excess_points": 0,
+          "self_collisions": 0,
+          "point_count": 667868
+        },
+        {
+          "time_s": 1.4499999999998958,
+          "excess_points": 0,
+          "self_collisions": 0,
+          "point_count": 667868
+        }
+      ]
+    },
+    {
+      "group": 3,
+      "status": "fixed_opposed_contact",
+      "raw_score_matches": true,
+      "geometric_final": {
+        "point_count": 667868,
+        "excess_points": 0,
+        "self_collisions": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      "physics_replayed": true,
+      "replay": {
+        "max_qpos_error": 0.0,
+        "force_matches": true,
+        "total_normal_forces_n": {
+          "thumb": 0.8629706609550041,
+          "index": 0.0,
+          "middle": 5.068805398610882,
+          "ring": 0.0,
+          "pinky": 0.0
+        },
+        "thumb_index": 3,
+        "hold_index": 4
+      },
+      "independent_physical_checks": [
+        {
+          "time_s": 0.10000000000000007,
+          "excess_points": 0,
+          "self_collisions": 0,
+          "point_count": 667868
+        },
+        {
+          "time_s": 0.12500000000000008,
+          "excess_points": 0,
+          "self_collisions": 0,
+          "point_count": 667868
+        },
+        {
+          "time_s": 0.32500000000000023,
+          "excess_points": 0,
+          "self_collisions": 0,
+          "point_count": 667868
+        }
+      ],
+      "opposed_duration_s": 0.20000000000000015
+    },
+    {
+      "group": 4,
+      "status": "fixed_opposed_contact",
+      "raw_score_matches": true,
+      "geometric_final": {
+        "point_count": 667868,
+        "excess_points": 0,
+        "self_collisions": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      "physics_replayed": true,
+      "replay": {
+        "max_qpos_error": 0.0,
+        "force_matches": true,
+        "total_normal_forces_n": {
+          "thumb": 1.4180440942022463,
+          "index": 0.0,
+          "middle": 6.492649180427184,
+          "ring": 0.0,
+          "pinky": 0.0
+        },
+        "thumb_index": 1,
+        "hold_index": 38
+      },
+      "independent_physical_checks": [
+        {
+          "time_s": 0.05000000000000004,
+          "excess_points": 0,
+          "self_collisions": 0,
+          "point_count": 667868
+        },
+        {
+          "time_s": 0.974999999999948,
+          "excess_points": 0,
+          "self_collisions": 0,
+          "point_count": 667868
+        },
+        {
+          "time_s": 1.1999999999999234,
+          "excess_points": 0,
+          "self_collisions": 0,
+          "point_count": 667868
+        }
+      ],
+      "opposed_duration_s": 0.22499999999997533
+    },
+    {
+      "group": 5,
+      "status": "fixed_opposed_contact",
+      "raw_score_matches": true,
+      "geometric_final": {
+        "point_count": 667868,
+        "excess_points": 0,
+        "self_collisions": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      "physics_replayed": true,
+      "replay": {
+        "max_qpos_error": 0.0,
+        "force_matches": true,
+        "total_normal_forces_n": {
+          "thumb": 1.1002535704778467,
+          "index": 0.0,
+          "middle": 2.151354901858361,
+          "ring": 0.0,
+          "pinky": 0.0
+        },
+        "thumb_index": 4,
+        "hold_index": 44
+      },
+      "independent_physical_checks": [
+        {
+          "time_s": 0.12500000000000008,
+          "excess_points": 0,
+          "self_collisions": 0,
+          "point_count": 667868
+        },
+        {
+          "time_s": 1.1249999999999316,
+          "excess_points": 0,
+          "self_collisions": 0,
+          "point_count": 667868
+        },
+        {
+          "time_s": 1.3499999999999068,
+          "excess_points": 0,
+          "self_collisions": 0,
+          "point_count": 667868
+        }
+      ],
+      "opposed_duration_s": 0.22499999999997522
+    },
+    {
+      "group": 6,
+      "status": "opposed_contact_timeout",
+      "raw_score_matches": true,
+      "geometric_final": {
+        "point_count": 667868,
+        "excess_points": 0,
+        "self_collisions": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      "physics_replayed": true,
+      "replay": {
+        "max_qpos_error": 0.0,
+        "force_matches": true,
+        "total_normal_forces_n": {
+          "thumb": 0.8406055928789891,
+          "index": 0.0,
+          "middle": 0.0,
+          "ring": 0.0,
+          "pinky": 0.0
+        },
+        "thumb_index": 7,
+        "hold_index": null
+      },
+      "independent_physical_checks": [
+        {
+          "time_s": 0.20000000000000015,
+          "excess_points": 0,
+          "self_collisions": 0,
+          "point_count": 667868
+        },
+        {
+          "time_s": 1.6249999999998765,
+          "excess_points": 0,
+          "self_collisions": 0,
+          "point_count": 667868
+        }
+      ]
+    },
+    {
+      "group": 7,
+      "status": "opposed_contact_timeout",
+      "raw_score_matches": true,
+      "geometric_final": {
+        "point_count": 667868,
+        "excess_points": 0,
+        "self_collisions": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      "physics_replayed": true,
+      "replay": {
+        "max_qpos_error": 0.0,
+        "force_matches": true,
+        "total_normal_forces_n": {
+          "thumb": 1.5062274123277066,
+          "index": 0.0,
+          "middle": 0.0,
+          "ring": 0.0,
+          "pinky": 0.0
+        },
+        "thumb_index": 6,
+        "hold_index": null
+      },
+      "independent_physical_checks": [
+        {
+          "time_s": 0.17500000000000013,
+          "excess_points": 0,
+          "self_collisions": 0,
+          "point_count": 667868
+        },
+        {
+          "time_s": 1.5999999999998793,
+          "excess_points": 0,
+          "self_collisions": 0,
+          "point_count": 667868
+        }
+      ]
+    }
+  ],
+  "physical_forces_calibrated": false,
+  "hardware_execution_performed": false,
+  "source_sha256": {
+    "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_thumb_anchor_batch_20261113_001/summary.json": "cb37f6e1c41f92862249c4cc03fb6dba62fab3dcc51d3d85688ab2e68db665b6",
+    "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_thumb_anchor_batch_20261113_001/verify_batch.py": "4240bbd76d7cc12354f7b4e23c79464a67cdc8de66857b4d8d11e564850871cb"
+  }
+}

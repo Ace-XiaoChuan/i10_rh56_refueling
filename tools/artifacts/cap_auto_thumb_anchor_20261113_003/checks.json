@@ -1,0 +1,26 @@
+{
+  "new_pipeline_and_geometry_tests": {
+    "passed": 23,
+    "environment": ".venv"
+  },
+  "existing_fixed_contact_ik_tests": {
+    "passed": 23,
+    "environment": ".venv"
+  },
+  "existing_joint_collision_update_tests": {
+    "passed": 10,
+    "environment": ".venv-spahybgen"
+  },
+  "resolved_environment_failure": {
+    "test": "test_real_hand_fk_rows_match_joint_and_root_finite_difference_and_enable_joint_update",
+    "initial_error": "ModuleNotFoundError: spahybgen.optimization in .venv",
+    "resolution": "在依赖对应的 .venv-spahybgen 与 dependencies/SpaHybGen/src 路径重新运行，10项通过"
+  },
+  "html": {
+    "plotly_schema_valid": true,
+    "inline_javascript_valid": true,
+    "initial_render_and_frame_switch_passed": true,
+    "frames": 5,
+    "real_browser_rendered": false
+  }
+}

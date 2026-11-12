@@ -1,0 +1,57 @@
+{
+  "input_sha256": {
+    "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_thumb_correct_end_spike_20261113_001/spike.py": "9392f7ffbfad0f5f0e997775ae0f725319b50afdb0897d06c06174703e272831",
+    "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_thumb_optional_targets_spike_20261112_001/spike.py": "9a627a71c4c234b00cb7b641af804469f8806dff7e1dfe0dbfddfb4fa77c6307",
+    "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_thumb_optional_targets_spike_20261112_001/result.json": "91de660a8c43a2a1490148a1b3fa08636ec650546bce19a383c92d330f70f465",
+    "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_thumb_anchor_spike_20261112_001/spike.py": "58d8c3dbad3910865a2ed3d50079df030d51c00f8a20305535d69ae121085f01",
+    "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_thumb_anchor_spike_20261112_001/fixed_forces.py": "b88185ea0a98643397d93d96e723f41e874d627a3fd491c68862798cb1547702",
+    "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_thumb_anchor_spike_20261112_001/placement_probe/candidate_0.json": "2b002d18494f2cc3e8d445290769b4970b03fc8be136e93c37de0b51a25646a2",
+    "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_single_reference_20261111_001/result.json": "88230d763257bd695950534b532d8fb2ae2eff0c8b4d0c1ef5fe252627a10647",
+    "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_confirmed_sides_20261112_001/confirmed_geometry.npz": "06bebd93690a9e9b2d02ad65d08ffe57a9b285e5980062a8e550fbb640417b0d",
+    "/home/ace/i10_rh56_refueling_ws/assets/scenes/i10_rh56_fuel_cap_preview.xml": "b376bb512b2d176dd4159d78228e70546b4681cc90e6757e081ac9d4a54d30d4",
+    "/home/ace/i10_rh56_refueling_ws/artifacts/rh56_spahybgen/cap_roi_002_1mm_20261106_001/hand_model/model.json": "ca8f367dcf6e7ffa71c72981ba393c7d0907c59ee15148bb8903534b9b15349f",
+    "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_confirmed_grasps_20261112_002/run_candidates/contacts.npz": "fdf13e8ba62ef0f6a21ffc79791695f6b7c6be59852a7a23d87de15dddbd4735",
+    "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_confirmed_grasps_20261112_002/run_candidates/network_volume.npz": "904ccad049b6230b91c0017aea41d20af37ff4b17186692158d516d8386c5222",
+    "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_confirmed_grasps_20261112_002/run_candidates/geometry_1mm.npz": "2bfdca2bfba1b500120c10c907f205eb4b8b3fd6092c41d59d7ca1c7f69328f6",
+    "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_thumb_proximal_base.stl": "9ee662ae36cd0203f3b2517a9057b86a7d3345e8586abb3a449866e03a050b0a",
+    "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_thumb_proximal.stl": "0ba9999aaf8ef936fd1f636639419fd07f960226cd30c185ea946fec36837bac",
+    "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_thumb_intermediate.stl": "ea968025b1f65856df24f5b259932718ade5002af1b890024ee020e365976829",
+    "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_thumb_distal.stl": "e2b9cdaeb1040324090e09eb9e4c5bc3564e0caed57b4df08ab139cc2b612742",
+    "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_index_proximal.stl": "45f93c17388a4c5f8f771a88d92ea2fd34dbbaf77d8477963a24261c49a0a627",
+    "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_index_intermediate.stl": "cb5f9967afe55faed1e213fde5fd7e8df64fe7baa3e558b19c269662fe70a414",
+    "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_middle_intermediate.stl": "a2fd03681008487e240d7f9934d652d53668bb92430413fea5eca06ad9a9a5c3",
+    "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_pinky_intermediate.stl": "c39e9b99aa99b2f7ad9620cb263ab3b42e04f536cb919959a2bd9ccef3ee55ef",
+    "/home/ace/i10_rh56_refueling_ws/src/fuel_cap_task/fixed_contact_kinematics.py": "dbebcbf9b6e9789a9a6e370c16ed5a75f36ca03aea2fc52b5b6bb83024927e69",
+    "/home/ace/i10_rh56_refueling_ws/src/fuel_cap_task/observed_hand_geometry.py": "9d23ca2c82d381da0b6cd93bcd6c9c3e8365b9308b54d0f7970c45c9312e7e99",
+    "/home/ace/i10_rh56_refueling_ws/src/fuel_cap_task/signed_hand_clearance.py": "ba06c2a31c406cc33b8ff71ee4076914943a98ef12b67261d7d051f57b0fc542",
+    "/home/ace/i10_rh56_refueling_ws/src/fuel_cap_task/joint_collision_update.py": "f2d25838d0cf2b006e10e7c1716545960c59212d62a36fa48128da9919569525"
+  },
+  "source_run": "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_confirmed_grasps_20261112_002/run_candidates",
+  "candidate_budget": 1,
+  "geometric_update_budget": 24,
+  "closure_budget": 1,
+  "network_forwards": 0,
+  "hardware_execution_performed": false,
+  "mujoco_version": "3.13.0",
+  "contact_attraction_cutoff_m": 0.02,
+  "initial_thumb_outward_gap_m": 0.0013,
+  "physics_hypotheses": {
+    "grip_fixed": true,
+    "no_hand_grip_weld": true,
+    "gravity": [
+      0,
+      0,
+      0
+    ],
+    "friction": [
+      1,
+      0.005,
+      0.001
+    ],
+    "actuator_force_limit_nm": 1.0,
+    "servo_kp": 300.0,
+    "calibrated": false
+  },
+  "only_changed_experiment_factor": "拇指网络目标换到长轴另一端",
+  "previous_result": "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_thumb_optional_targets_spike_20261112_001/result.json"
+}

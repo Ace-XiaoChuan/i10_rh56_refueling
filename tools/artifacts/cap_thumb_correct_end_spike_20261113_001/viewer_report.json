@@ -1,0 +1,20 @@
+{
+  "html": "index.html",
+  "html_bytes": 6701936,
+  "source_result_sha256": "68f0b1dae397c3faa00a756920796287bef18ba1a26522c5ad12a6d66049c6b9",
+  "source_verification_sha256": "8c7588bbca12179f00e8d034b52147701d11b5f62a49f143cc1f70def8099867",
+  "exporter_sha256": "4af55c4cbdedb20ad0c43ec29bf3fcec0c3fd268451c3827c9c53efab9863cb7",
+  "plotly_js_sha256": "0a17719a72751704861215da0e5c5cdb3f9a8d50eff5cb84cb6f8b80786682b0",
+  "display_frames": 3,
+  "source_geometric_steps": 24,
+  "unique_poses": 3,
+  "scene_check_points": 667868,
+  "displayed_environment_points": 32430,
+  "all_collision_points_displayed": true,
+  "final_collision_points": 0,
+  "embedded_library": true,
+  "external_requests_required": false,
+  "new_candidates": 0,
+  "export_new_physics_steps": 0,
+  "source_physics_steps": 1750
+}

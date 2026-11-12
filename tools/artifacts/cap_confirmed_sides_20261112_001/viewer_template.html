@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>确认占据的握梁双侧高分位置</title>
+<style>
+body{margin:0;background:#f0f3f6;color:#203044;font:15px system-ui,"Microsoft YaHei",sans-serif}main{max-width:1500px;margin:auto;padding:24px}h1{font-size:26px;margin:0 0 12px}p{line-height:1.7}.controls,.card{background:#fff;border:1px solid #dce3ea;border-radius:10px;padding:16px;margin:16px 0}.controls{display:flex;flex-wrap:wrap;gap:22px;align-items:center}select,button{font:inherit;padding:6px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.grid .card{margin:0;min-width:0}h2{font-size:19px;margin:0 0 9px}.plot{height:330px}.scene{height:590px}.stats{font-size:14px;color:#4a5c70;min-height:24px}.links a{color:#155f99;margin-right:18px}.status{color:#a23b28}table{border-collapse:collapse}td,th{padding:9px 20px 9px 0;text-align:left;border-bottom:1px solid #e0e6ed}.note{color:#4a5c70;font-size:13px}@media(max-width:900px){.grid{grid-template-columns:1fr}.scene{height:450px}}
+</style><script>__PLOTLY__</script></head><body><main>
+<h1>握梁两侧已按人工确认占据采用</h1>
+<p>两侧原有表面格全部采用。彩色点显示该位置已有的网络接触分数，灰色为完整侧面范围。默认阈值为 <b>&gt;0.01</b>，两侧共 <b>541格</b>。</p>
+<div class="controls"><label>显示分数 &gt; <select id="threshold"><option value="0.1">0.1</option><option value="0.01" selected>0.01</option><option value="0.001">0.001</option><option value="0.0001">0.0001</option></select></label>
+<label>三维图侧别 <select id="side"><option value="both">两侧</option><option value="-1">Y&lt;0侧</option><option value="1">Y&gt;0侧</option></select></label>
+<label><input id="context" type="checkbox" checked>显示侧面与实测顶面</label><button id="reset">重置三维视角</button><span id="status" class="status"></span></div>
+<div class="grid"><section class="card"><h2>左图：Y&lt;0侧</h2><div class="stats" id="statNeg"></div><div class="plot" id="plotNeg"></div></section>
+<section class="card"><h2>右图：Y&gt;0侧</h2><div class="stats" id="statPos"></div><div class="plot" id="plotPos"></div></section></div>
+<section class="card"><h2>三维位置</h2><div class="stats" id="stat3d"></div><div class="scene" id="plot3d"></div><p class="note">拖动旋转，滚轮缩放，悬停查看原始分数与1mm网格索引。左右指上面两图的排列；实际侧别以握梁坐标Y的正负标识。</p></section>
+<section class="card"><h2>本次采用规则</h2><table><thead><tr><th>侧别</th><th>确认占据表面格</th><th>原采用高分格</th><th>本次高分格（&gt;0.01）</th></tr></thead><tbody id="table"></tbody></table>
+<p>确认占据来自用户对握梁侧面的肉眼确认。原射线空闲证据仍单独保留，在这两侧表面格上采用人工确认结果。</p>
+<p class="note">分数直接读取此次占据更新之前保存的网络输出。位置沿用“网格索引×1mm”，没有插值、邻格借分或网络重新推理。本页为接触位置展示，尚未生成新的手部抓姿。</p>
+<p class="links"><a href="sides_above_001.png">并排静态图</a><a href="high_scores.csv">全部541格明细</a><a href="report.json">来源与统计</a><a href="confirmed_geometry.npz">确认占据几何</a><a href="verification.json">核对结果</a></p></section>
+</main><script>
+const DATA=__DATA__;
+const state={version:0};
+function selected(sign,threshold){return DATA.scores.map((q,i)=>i).filter(i=>(sign===0||DATA.sides[i]===sign)&&DATA.scores[i]>threshold);}
+function xyz(points){return {x:points.map(p=>p[0]),y:points.map(p=>p[1]),z:points.map(p=>p[2])};}
+function positions(ids){return xyz(ids.map(i=>DATA.points[i]));}
+function colors(ids){return {color:ids.map(i=>Math.log10(DATA.scores[i])),cmin:Math.log10(+document.getElementById('threshold').value),cmax:0,colorscale:'Viridis'};}
+function details(ids){return ids.map(i=>[DATA.scores[i],...DATA.indices[i],DATA.was_free[i]?'原空闲分类，本次确认占据':'本次确认占据']);}
+function planar(sign,threshold){const ids=selected(sign,threshold);const background=DATA.points.filter((p,i)=>DATA.sides[i]===sign);return [
+ {type:'scatter',mode:'markers',name:'完整确认侧面',x:background.map(p=>p[0]),y:background.map(p=>p[2]),marker:{size:4,color:'#e1e5ea'},hoverinfo:'skip'},
+ {type:'scatter',mode:'lines',name:'侧面范围',x:[-30,30,30,-30,-30],y:[-17,-17,0,0,-17],line:{color:'#687582',width:1},hoverinfo:'skip'},
+ {type:'scatter',mode:'markers',name:'高分位置',x:ids.map(i=>DATA.points[i][0]),y:ids.map(i=>DATA.points[i][2]),customdata:details(ids),marker:{size:7,...colors(ids)},hovertemplate:'X=%{x:.2f} mm；Z=%{y:.2f} mm<br>原始分数=%{customdata[0]:.8g}<br>网格=[%{customdata[1]},%{customdata[2]},%{customdata[3]}]<br>%{customdata[4]}<extra></extra>'}];}
+function scene(sign,threshold,context){const traces=[];if(context){traces.push({type:'mesh3d',name:'确认占据侧面',...xyz(DATA.vertices),i:DATA.faces.map(f=>f[0]),j:DATA.faces.map(f=>f[1]),k:DATA.faces.map(f=>f[2]),color:'#a38bc5',opacity:.25,flatshading:true,hoverinfo:'skip'});traces.push({type:'scatter3d',mode:'markers',name:'实测顶面',...xyz(DATA.top),marker:{color:'#9faab5',size:2,opacity:.35},hoverinfo:'skip'});}for(const s of [-1,1]){if(sign&&s!==sign)continue;const ids=selected(s,threshold);traces.push({type:'scatter3d',mode:'markers',name:s<0?'Y<0高分':'Y>0高分',...positions(ids),customdata:details(ids),marker:{size:4,symbol:s<0?'circle':'diamond',...colors(ids),showscale:s===-1||sign===1,colorbar:{title:'原始分数',tickvals:[-4,-3,-2,-1,0],ticktext:['0.0001','0.001','0.01','0.1','1']}},hovertemplate:'X=%{x:.2f}；Y=%{y:.2f}；Z=%{z:.2f} mm<br>原始分数=%{customdata[0]:.8g}<br>网格=[%{customdata[1]},%{customdata[2]},%{customdata[3]}]<br>%{customdata[4]}<extra></extra>'});}return traces;}
+function planarLayout(){return {margin:{l:55,r:14,t:10,b:45},showlegend:false,xaxis:{title:'握梁长轴 X / mm',range:[-33,33],zeroline:false},yaxis:{title:'相对顶面 Z / mm',range:[-20,3],scaleanchor:'x',scaleratio:1,zeroline:false},paper_bgcolor:'#fff',plot_bgcolor:'#fff'};}
+async function render(){try{const threshold=+document.getElementById('threshold').value;const side=document.getElementById('side').value;const sign=side==='both'?0:+side;const context=document.getElementById('context').checked;for(const [s,id,stat] of [[-1,'plotNeg','statNeg'],[1,'plotPos','statPos']]){const ids=selected(s,threshold);document.getElementById(stat).textContent='原始分数 > '+threshold+'：'+ids.length+'格；完整侧面 '+DATA.report.groups[String(s)].surface_cells+'格';await Plotly.react(id,planar(s,threshold),planarLayout(),{responsive:true,displaylogo:false});}document.getElementById('stat3d').textContent='当前显示高分位置：'+selected(sign,threshold).length+'格';await Plotly.react('plot3d',scene(sign,threshold,context),{margin:{l:0,r:0,t:0,b:0},uirevision:'scene'+state.version,legend:{x:0,y:1},scene:{aspectmode:'data',camera:{eye:{x:1.3,y:1.8,z:1.2},up:{x:0,y:0,z:1}},xaxis:{title:'长轴 X / mm',range:[-33,33]},yaxis:{title:'横向 Y / mm',range:[-13,13]},zaxis:{title:'朝外 Z / mm',range:[-20,3]}}},{responsive:true,displaylogo:false,scrollZoom:true});document.getElementById('status').textContent='';}catch(error){document.getElementById('status').textContent='绘图失败：'+error.message;throw error;}}
+document.getElementById('table').innerHTML=[-1,1].map(s=>{const g=DATA.report.groups[String(s)];return '<tr><td>'+(s<0?'Y<0侧':'Y>0侧')+'</td><td>'+g.surface_cells+'</td><td>'+g.previous_high_score_cells+'</td><td>'+g.high_score_cells+'</td></tr>';}).join('');
+for(const id of ['threshold','side','context'])document.getElementById(id).addEventListener('change',render);
+document.getElementById('reset').addEventListener('click',()=>{state.version++;render();});
+render();
+</script></body></html>

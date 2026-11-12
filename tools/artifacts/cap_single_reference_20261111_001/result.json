@@ -1,0 +1,768 @@
+{
+  "mode": "single_confirmed_reference_local_static_fit",
+  "passes": true,
+  "source_run": "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_five_finger_guard_20261111_001/cases/guarded/run_candidates",
+  "model_dir": "/home/ace/i10_rh56_refueling_ws/artifacts/rh56_spahybgen/cap_roi_002_1mm_20261106_001/hand_model",
+  "manual_file": "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_grip_scores_20261111_001/manual_sides.npz",
+  "original_volume_from_manual": [
+    [
+      -0.7150021117743564,
+      -0.6432514299823303,
+      0.27386055826352573,
+      0.08181869189441113
+    ],
+    [
+      0.6817239901230139,
+      -0.7283365554192476,
+      0.06912482005618059,
+      0.08086331787073375
+    ],
+    [
+      0.15499801237452704,
+      0.23612169898918778,
+      0.959282081980928,
+      0.09353706701493358
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "volume_from_manual": [
+    [
+      -0.7150021019706446,
+      -0.6432514211484933,
+      0.27386055460398717,
+      0.08181869189441113
+    ],
+    [
+      0.6817239978344193,
+      -0.7283365636239268,
+      0.06912482090498365,
+      0.08086331787073375
+    ],
+    [
+      0.15499801596864501,
+      0.23612170437918914,
+      0.9592821043712065,
+      0.09353706701493358
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "frame_rotation_maximum_change": 2.2390278520134643e-08,
+  "reference_from_volume": [
+    [
+      -0.24618411761052567,
+      -0.1876579013140685,
+      -0.9508827129229026,
+      1.5905179064491721
+    ],
+    [
+      0.08067799923022967,
+      -0.9816401087620557,
+      0.1728403316444156,
+      0.41125438078178567
+    ],
+    [
+      -0.9658594169381085,
+      -0.03416477026122231,
+      0.25680407441894787,
+      -0.19673987674883342
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "historical_qpos_by_joint": {
+    "thumb_proximal_yaw_joint": 1.3080290581607403,
+    "thumb_proximal_pitch_joint": 0.21406935078023423,
+    "thumb_intermediate_joint": 0.43382040805401156,
+    "thumb_distal_joint": 0.2908263272203194,
+    "index_proximal_joint": 0.6711504948562227,
+    "index_intermediate_joint": 0.6982842827147231,
+    "middle_proximal_joint": 0.6946525242621244,
+    "middle_intermediate_joint": 0.6244817782285575,
+    "ring_proximal_joint": 1.5310229784973792,
+    "ring_intermediate_joint": 1.5599994985672436,
+    "pinky_proximal_joint": 1.53102271555098,
+    "pinky_intermediate_joint": 1.5599991627938117
+  },
+  "historical_full_in_drive_order": [
+    1.3080290581607403,
+    0.6711504948562227,
+    0.6946525242621244,
+    1.5310229784973792,
+    1.53102271555098,
+    0.21406935078023423,
+    0.6982842827147231,
+    0.6244817782285575,
+    1.5599994985672436,
+    1.5599991627938117,
+    0.43382040805401156,
+    0.2908263272203194
+  ],
+  "coupled_reference_full": [
+    1.3079999999999998,
+    0.6704926667244074,
+    0.6939688934175061,
+    1.5310229208866661,
+    1.5310226561385263,
+    0.21360457776797642,
+    0.6988732594644906,
+    0.6250938570580126,
+    1.5599995003383176,
+    1.5599992046411202,
+    0.4340940884314086,
+    0.29097902132686443
+  ],
+  "historical_projection_maximum_change_rad": 0.0006836308446183104,
+  "contacts": [
+    {
+      "link": "thumb_distal",
+      "point_link_m": [
+        0.019731717940447487,
+        0.014048041730400883,
+        -0.004633120828213128
+      ],
+      "normal_link": [
+        0.5934830020165783,
+        0.8048465234510793,
+        2.470142477507595e-06
+      ],
+      "face_id": 1305,
+      "barycentric": [
+        0.05432344513062337,
+        0.6541117542423192,
+        0.2915648006270574
+      ],
+      "sample_id": 94,
+      "finger": "thumb",
+      "feature_id": "manual_thumb",
+      "target_m": [
+        0.07746936008543578,
+        0.07319704102257857,
+        0.09428871286131695
+      ],
+      "surface_point_m": [
+        0.07746936008543578,
+        0.07319704102257857,
+        0.09428871286131695
+      ],
+      "target_normal": [
+        -0.6260597637418404,
+        -0.7230205772615323,
+        0.29204523122268544
+      ],
+      "side": 1,
+      "geometry_source": "hypothetical_manual_side",
+      "network_feature": false
+    },
+    {
+      "link": "index_intermediate",
+      "point_link_m": [
+        -0.003689131096288419,
+        0.04281469883610991,
+        -0.0047998752750536885
+      ],
+      "normal_link": [
+        -0.8413882922145054,
+        0.5397974993288831,
+        0.02616106730702441
+      ],
+      "face_id": 5540,
+      "barycentric": [
+        0.7427321110795111,
+        0.23885884394187606,
+        0.018409044978612787
+      ],
+      "sample_id": 105,
+      "finger": "index",
+      "feature_id": "manual_index",
+      "target_m": [
+        0.08097972425554206,
+        0.09206198254465271,
+        0.08879983129158975
+      ],
+      "surface_point_m": [
+        0.08097972425554206,
+        0.09206198254465271,
+        0.08879983129158975
+      ],
+      "target_normal": [
+        0.6582230547400346,
+        0.73113887576268,
+        -0.17938326164160806
+      ],
+      "side": -1,
+      "geometry_source": "hypothetical_manual_side",
+      "network_feature": false
+    },
+    {
+      "link": "middle_intermediate",
+      "point_link_m": [
+        -0.0035236449589346104,
+        0.04697284349145061,
+        -0.004797320579681538
+      ],
+      "normal_link": [
+        -0.8832076490088845,
+        0.46862069225280767,
+        0.018409115261150643
+      ],
+      "face_id": 4608,
+      "barycentric": [
+        0.05243674254108155,
+        0.12500281865600021,
+        0.8225604388029182
+      ],
+      "sample_id": 406,
+      "finger": "middle",
+      "feature_id": "manual_middle",
+      "target_m": [
+        0.09421940026499558,
+        0.07811909390501091,
+        0.08055197067415315
+      ],
+      "surface_point_m": [
+        0.09421940026499558,
+        0.07811909390501091,
+        0.08055197067415315
+      ],
+      "target_normal": [
+        0.6582230547400346,
+        0.73113887576268,
+        -0.17938326164160806
+      ],
+      "side": -1,
+      "geometry_source": "hypothetical_manual_side",
+      "network_feature": false
+    }
+  ],
+  "preform": {
+    "label": "650预张开（静态对照）",
+    "pose": [
+      [
+        -0.6232633994713753,
+        -0.7150021019706446,
+        0.31672500541786197,
+        0.08936475137019108
+      ],
+      [
+        -0.5211184037149892,
+        0.6817239978344193,
+        0.5135055988849567,
+        0.02307600600935588
+      ],
+      [
+        -0.5830766194840318,
+        0.15499801596864501,
+        -0.7974943704233011,
+        0.25347747333623766
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "drivers": [
+      1.53102336825141,
+      1.53102336825141,
+      0.5858447488584474,
+      0.5686475960247112,
+      0.1388721804511278,
+      1.308
+    ],
+    "metrics": [
+      {
+        "feature_id": "manual_thumb",
+        "finger": "thumb",
+        "distance_m": 0.01406910476701683,
+        "angle_deg": 32.05937954831365,
+        "point_m": [
+          0.06786822731665043,
+          0.06304725951902046,
+          0.09263345036507006
+        ],
+        "normal": [
+          0.3642751840904245,
+          0.5545224779337088,
+          -0.7482034561014459
+        ]
+      },
+      {
+        "feature_id": "manual_index",
+        "finger": "index",
+        "distance_m": 0.013345382096958664,
+        "angle_deg": 13.18807296313269,
+        "point_m": [
+          0.08800211636868033,
+          0.10140761148992258,
+          0.08236209473745115
+        ],
+        "normal": [
+          -0.6995487569837526,
+          -0.7131146311111616,
+          -0.04581549407873392
+        ]
+      },
+      {
+        "feature_id": "manual_middle",
+        "finger": "middle",
+        "distance_m": 0.01479281198718708,
+        "angle_deg": 12.166201524915001,
+        "point_m": [
+          0.10249649527702592,
+          0.08823382078364866,
+          0.07362309740206546
+        ],
+        "normal": [
+          -0.7060668311799623,
+          -0.7076768730879625,
+          -0.025750207842469324
+        ]
+      }
+    ],
+    "collision": {
+      "environment": 0.00035376730207367586,
+      "target": 0.0,
+      "assumed_side": 0.0,
+      "self": 0.0
+    },
+    "counts": {
+      "environment": 7,
+      "target": 0,
+      "assumed_side": 0,
+      "self": 0
+    },
+    "geometry_pass": false
+  },
+  "states": [
+    {
+      "label": "闭合参考（严格六驱动耦合）",
+      "pose": [
+        [
+          -0.6232633994713753,
+          -0.7150021019706446,
+          0.31672500541786197,
+          0.08936475137019108
+        ],
+        [
+          -0.5211184037149892,
+          0.6817239978344193,
+          0.5135055988849567,
+          0.02307600600935588
+        ],
+        [
+          -0.5830766194840318,
+          0.15499801596864501,
+          -0.7974943704233011,
+          0.25347747333623766
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "drivers": [
+        1.5310226561385263,
+        1.5310229208866661,
+        0.6939688934175061,
+        0.6704926667244074,
+        0.21360457776797642,
+        1.3079999999999998
+      ],
+      "metrics": [
+        {
+          "feature_id": "manual_thumb",
+          "finger": "thumb",
+          "distance_m": 0.001482032167605025,
+          "angle_deg": 19.26185863747674,
+          "point_m": [
+            0.07682364443286291,
+            0.07220892094906411,
+            0.09518486539417964
+          ],
+          "normal": [
+            0.4840911729195915,
+            0.6497713766822714,
+            -0.586048542653047
+          ]
+        },
+        {
+          "feature_id": "manual_index",
+          "finger": "index",
+          "distance_m": 0.0014039885451597768,
+          "angle_deg": 0.8406154271817617,
+          "point_m": [
+            0.08192344618118637,
+            0.09306283743269148,
+            0.0885190070492477
+          ],
+          "normal": [
+            -0.6624188073651219,
+            -0.7306616238597242,
+            0.16533274045887186
+          ]
+        },
+        {
+          "feature_id": "manual_middle",
+          "finger": "middle",
+          "distance_m": 0.0010224574509978522,
+          "angle_deg": 1.448781466173521,
+          "point_m": [
+            0.09495176669923377,
+            0.0787964244480921,
+            0.0803277342352954
+          ],
+          "normal": [
+            -0.6670911234417131,
+            -0.7179010115661375,
+            0.19901650840467874
+          ]
+        }
+      ],
+      "collision": {
+        "environment": 0.0,
+        "target": 0.0,
+        "assumed_side": 0.0,
+        "self": 0.0
+      },
+      "counts": {
+        "environment": 0,
+        "target": 0,
+        "assumed_side": 0,
+        "self": 0
+      },
+      "geometry_pass": true
+    },
+    {
+      "label": "本组最终抓姿",
+      "pose": [
+        [
+          -0.6177724684359462,
+          -0.7191608770553601,
+          0.3180641604386184,
+          0.08886475137019108
+        ],
+        [
+          -0.5220919663830632,
+          0.6775769314070215,
+          0.5179859850066513,
+          0.022606242778211914
+        ],
+        [
+          -0.5880281931003175,
+          0.15393873761340754,
+          -0.7940564899181709,
+          0.25297747333623766
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "drivers": [
+        1.5310226561385263,
+        1.5310229208866661,
+        0.698827217074608,
+        0.6755902749960687,
+        0.21612382232385838,
+        1.306462509727036
+      ],
+      "metrics": [
+        {
+          "feature_id": "manual_thumb",
+          "finger": "thumb",
+          "distance_m": 0.0009572757957082295,
+          "angle_deg": 18.540187162006237,
+          "point_m": [
+            0.07708561863973717,
+            0.07260832889250349,
+            0.09493874169129637
+          ],
+          "normal": [
+            0.4876551989186193,
+            0.6566656099414212,
+            -0.5753109452182388
+          ]
+        },
+        {
+          "feature_id": "manual_index",
+          "finger": "index",
+          "distance_m": 0.0009619489026344665,
+          "angle_deg": 0.583042771465497,
+          "point_m": [
+            0.0816107161561185,
+            0.09275725994919065,
+            0.08859058444352372
+          ],
+          "normal": [
+            -0.6569450313858035,
+            -0.7345498493225927,
+            0.16988156049925748
+          ]
+        },
+        {
+          "feature_id": "manual_middle",
+          "finger": "middle",
+          "distance_m": 0.0006923929148824985,
+          "angle_deg": 1.48058187239147,
+          "point_m": [
+            0.09471672274050558,
+            0.07857989430573148,
+            0.08041146695666548
+          ],
+          "normal": [
+            -0.6619336793959727,
+            -0.7215275317090935,
+            0.203080833825087
+          ]
+        }
+      ],
+      "collision": {
+        "environment": 0.0,
+        "target": 0.0,
+        "assumed_side": 0.0,
+        "self": 0.0
+      },
+      "counts": {
+        "environment": 0,
+        "target": 0,
+        "assumed_side": 0,
+        "self": 0
+      },
+      "geometry_pass": true
+    }
+  ],
+  "iterations": [
+    {
+      "iteration": 0,
+      "qp": {
+        "feasible": true,
+        "solver_success": true,
+        "message": "Optimization terminated successfully",
+        "minimum_linear_gap": -2.220446049250313e-16,
+        "objective_scale": 12.141948890321434
+      },
+      "accepted": true,
+      "trials": [
+        {
+          "scale": 1.0,
+          "collision": {
+            "environment": 0.0,
+            "target": 0.0,
+            "assumed_side": 3.2162068453218403e-06,
+            "self": 0.0
+          },
+          "score": 3.0472555307551397
+        },
+        {
+          "scale": 0.5,
+          "collision": {
+            "environment": 0.0,
+            "target": 0.0,
+            "assumed_side": 0.0,
+            "self": 0.0
+          },
+          "score": 4.935369138496276
+        }
+      ]
+    }
+  ],
+  "final": {
+    "label": "本组最终抓姿",
+    "pose": [
+      [
+        -0.6177724684359462,
+        -0.7191608770553601,
+        0.3180641604386184,
+        0.08886475137019108
+      ],
+      [
+        -0.5220919663830632,
+        0.6775769314070215,
+        0.5179859850066513,
+        0.022606242778211914
+      ],
+      [
+        -0.5880281931003175,
+        0.15393873761340754,
+        -0.7940564899181709,
+        0.25297747333623766
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "drivers": [
+      1.5310226561385263,
+      1.5310229208866661,
+      0.698827217074608,
+      0.6755902749960687,
+      0.21612382232385838,
+      1.306462509727036
+    ],
+    "metrics": [
+      {
+        "feature_id": "manual_thumb",
+        "finger": "thumb",
+        "distance_m": 0.0009572757957082295,
+        "angle_deg": 18.540187162006237,
+        "point_m": [
+          0.07708561863973717,
+          0.07260832889250349,
+          0.09493874169129637
+        ],
+        "normal": [
+          0.4876551989186193,
+          0.6566656099414212,
+          -0.5753109452182388
+        ]
+      },
+      {
+        "feature_id": "manual_index",
+        "finger": "index",
+        "distance_m": 0.0009619489026344665,
+        "angle_deg": 0.583042771465497,
+        "point_m": [
+          0.0816107161561185,
+          0.09275725994919065,
+          0.08859058444352372
+        ],
+        "normal": [
+          -0.6569450313858035,
+          -0.7345498493225927,
+          0.16988156049925748
+        ]
+      },
+      {
+        "feature_id": "manual_middle",
+        "finger": "middle",
+        "distance_m": 0.0006923929148824985,
+        "angle_deg": 1.48058187239147,
+        "point_m": [
+          0.09471672274050558,
+          0.07857989430573148,
+          0.08041146695666548
+        ],
+        "normal": [
+          -0.6619336793959727,
+          -0.7215275317090935,
+          0.203080833825087
+        ]
+      }
+    ],
+    "collision": {
+      "environment": 0.0,
+      "target": 0.0,
+      "assumed_side": 0.0,
+      "self": 0.0
+    },
+    "counts": {
+      "environment": 0,
+      "target": 0,
+      "assumed_side": 0,
+      "self": 0
+    },
+    "geometry_pass": true
+  },
+  "translation_change_manual_mm": [
+    -0.04024682497007923,
+    0.5457105958729214,
+    -0.6490436287081706
+  ],
+  "rotation_change_deg": 0.452815651231337,
+  "driver_changes_rad": [
+    0.0,
+    0.0,
+    0.004858323657101926,
+    0.00509760827166128,
+    0.0025192445558819554,
+    -0.001537490272963904
+  ],
+  "driver_names": [
+    "pinky_proximal_joint",
+    "ring_proximal_joint",
+    "middle_proximal_joint",
+    "index_proximal_joint",
+    "thumb_proximal_pitch_joint",
+    "thumb_proximal_yaw_joint"
+  ],
+  "scene_point_count": 634610,
+  "target_point_count": 3724,
+  "assumed_sample_count": 27879,
+  "contact_distance_m": 0.001,
+  "maximum_angle_deg": 45.0,
+  "penetration_tolerance_m": 0.0001,
+  "physical_grasp_verified": false,
+  "motion_target_valid": false,
+  "network_features_used": false,
+  "hardware_execution_performed": false,
+  "physics_steps": 0,
+  "sources_sha256": {
+    "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_single_reference_20261111_001/fit_reference.py": "468f846d837ed746898a1fdb39382f12ccdf7c91f7216c3ccfb4c5593e08190a",
+    "/home/ace/i10_rh56_refueling_ws/config/fixed_grasp.json": "24e44a2ee6fadd55aefc38e52f8f38496cd977877385c9332eaba01390105888",
+    "/home/ace/i10_rh56_refueling_ws/assets/scenes/i10_rh56_fuel_cap_preview.xml": "b376bb512b2d176dd4159d78228e70546b4681cc90e6757e081ac9d4a54d30d4",
+    "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_grip_scores_20261111_001/manual_sides.npz": "5e67e5d0a2fda7b9e94d528963551cf052a2dc31016dde3e42b38b592c80522e",
+    "/home/ace/i10_rh56_refueling_ws/artifacts/rh56_spahybgen/cap_roi_002_1mm_20261106_001/hand_model/model.json": "ca8f367dcf6e7ffa71c72981ba393c7d0907c59ee15148bb8903534b9b15349f",
+    "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_thumb_proximal_base.stl": "9ee662ae36cd0203f3b2517a9057b86a7d3345e8586abb3a449866e03a050b0a",
+    "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_thumb_proximal.stl": "0ba9999aaf8ef936fd1f636639419fd07f960226cd30c185ea946fec36837bac",
+    "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_thumb_intermediate.stl": "ea968025b1f65856df24f5b259932718ade5002af1b890024ee020e365976829",
+    "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_thumb_distal.stl": "e2b9cdaeb1040324090e09eb9e4c5bc3564e0caed57b4df08ab139cc2b612742",
+    "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_index_proximal.stl": "45f93c17388a4c5f8f771a88d92ea2fd34dbbaf77d8477963a24261c49a0a627",
+    "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_index_intermediate.stl": "cb5f9967afe55faed1e213fde5fd7e8df64fe7baa3e558b19c269662fe70a414",
+    "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_middle_intermediate.stl": "a2fd03681008487e240d7f9934d652d53668bb92430413fea5eca06ad9a9a5c3",
+    "/home/ace/i10_rh56_refueling_ws/assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/collision/right_pinky_intermediate.stl": "c39e9b99aa99b2f7ad9620cb263ab3b42e04f536cb919959a2bd9ccef3ee55ef",
+    "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_five_finger_guard_20261111_001/cases/guarded/run_candidates/observation.json": "50ad93cfa59e4631037345dc08edde023ef2f6414c0d379248772463d4e90e96",
+    "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_five_finger_guard_20261111_001/cases/guarded/run_candidates/volume.json": "bbba98a11b49119040d342f5e2cbd4bc3a63316cdc91d26b66ecc20f70c1630f",
+    "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_five_finger_guard_20261111_001/cases/guarded/run_candidates/contacts.json": "ef712f9181b0edaff9c810b85a10804af7bb9ee60b2a6b0d9eb7069c34ef1a29",
+    "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_five_finger_guard_20261111_001/cases/guarded/run_candidates/candidates.json": "5bf6f8519c8048ff5227243ddc990c78f40f3593696619f7b663377a2b55b719",
+    "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_five_finger_guard_20261111_001/cases/guarded/run_candidates/geometry_1mm.npz": "cac402c46414306e6f9b45b3287af1ab9f30d934d36b89f652230aaf87e881b3",
+    "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_five_finger_guard_20261111_001/cases/guarded/run_candidates/network_volume.npz": "5ea1fc135ceba473e348cae1c5f14295e43002a7447a7637622d3a6d9334ff54",
+    "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_five_finger_guard_20261111_001/cases/guarded/run_candidates/contacts.npz": "6fec555a1caa7961f2a3a32eb9b8ff87d08699930cdf23f0f2626774e8b6e7ba",
+    "/home/ace/i10_rh56_refueling_ws/src/fuel_cap_task/fixed_grasp.py": "59d55e2c8d52206fdffe54752172cf3bf6241485bb12079b5829325b4869ac35",
+    "/home/ace/i10_rh56_refueling_ws/src/fuel_cap_task/cap_hand_overlay.py": "94e578b01eff3b0eb2e521c828960ae73a9bd417f08ac9888062e4e5dc0f7a6c",
+    "/home/ace/i10_rh56_refueling_ws/src/fuel_cap_task/mujoco_scene.py": "922acf68959e235a1a8960d6a33f1775ff46f6f208ff1a342e6623fe3124eb70",
+    "/home/ace/i10_rh56_refueling_ws/src/fuel_cap_task/fixed_contact_kinematics.py": "dbebcbf9b6e9789a9a6e370c16ed5a75f36ca03aea2fc52b5b6bb83024927e69",
+    "/home/ace/i10_rh56_refueling_ws/src/fuel_cap_task/fixed_contact_ik.py": "52411f60840eaf6155bf8a55680506fda17482e1877d585589d826b3744d505a",
+    "/home/ace/i10_rh56_refueling_ws/src/fuel_cap_task/signed_hand_clearance.py": "ba06c2a31c406cc33b8ff71ee4076914943a98ef12b67261d7d051f57b0fc542",
+    "/home/ace/i10_rh56_refueling_ws/src/fuel_cap_task/observed_hand_geometry.py": "9d23ca2c82d381da0b6cd93bcd6c9c3e8365b9308b54d0f7970c45c9312e7e99",
+    "/home/ace/i10_rh56_refueling_ws/src/fuel_cap_task/rh56_drive_map.py": "e7d06568bbc5cc41dcf50f9af2c81c587018cd2adb3d97528039a21b5285c6f5",
+    "/home/ace/i10_rh56_refueling_ws/tools/run_fixed_contact_ik.py": "ada9b0abaf9da8db9a6bdaa2e932134d77286d76f4c325db9a0d3a5a20a92cb0",
+    "/home/ace/i10_rh56_refueling_ws/artifacts/rh56_spahybgen/cap_roi_002_1mm_20261106_001/hand_model/hand.urdf": "3e91e6e81eed02803a50549072f53b877aaec84b01d8c2d7dd0fc146d37869d8",
+    "/home/ace/i10_rh56_refueling_ws/artifacts/rh56_spahybgen/cap_roi_002_1mm_20261106_001/hand_model/contacts.json": "4d9c5a4f8b96868d713f81323ffd61d54bd1cfdd6f4998fff405467d664e8375",
+    "/home/ace/i10_rh56_refueling_ws/artifacts/rh56_spahybgen/cap_roi_002_1mm_20261106_001/hand_model/fk_reference.npz": "23a80ad7cea4b86f502915876dbdcf3492f5c76fdc2edad5f5afd09bdcda1703",
+    "/home/ace/i10_rh56_refueling_ws/artifacts/rh56_spahybgen/cap_roi_002_1mm_20261106_001/hand_model/meshes/index_proximal.obj": "46ba4371baff07a45a59cf7aadcfe7adfcf1c0a934a3c9f242cbf69b0d468ebd",
+    "/home/ace/i10_rh56_refueling_ws/artifacts/rh56_spahybgen/cap_roi_002_1mm_20261106_001/hand_model/meshes/thumb_distal.obj": "148449b14a5d3c8c886a6469c9107e2e703e3092a7226c22ed878488b287630e",
+    "/home/ace/i10_rh56_refueling_ws/artifacts/rh56_spahybgen/cap_roi_002_1mm_20261106_001/hand_model/meshes/thumb_proximal_base.obj": "dc9fffe324b8f62a932b70faa214e52140dd2fbd4bea411e359b60f7fae1de5f",
+    "/home/ace/i10_rh56_refueling_ws/artifacts/rh56_spahybgen/cap_roi_002_1mm_20261106_001/hand_model/meshes/middle_intermediate.obj": "c3082897de4ed079624d1a4f3e7af4b1893b0d56d9e1e3384c258643702592b6",
+    "/home/ace/i10_rh56_refueling_ws/artifacts/rh56_spahybgen/cap_roi_002_1mm_20261106_001/hand_model/meshes/index_intermediate.obj": "4b210051d3bf30273dd9a5579301fc713494436b07e17eb352d0146fd0a73d10",
+    "/home/ace/i10_rh56_refueling_ws/artifacts/rh56_spahybgen/cap_roi_002_1mm_20261106_001/hand_model/meshes/pinky_proximal.obj": "46ba4371baff07a45a59cf7aadcfe7adfcf1c0a934a3c9f242cbf69b0d468ebd",
+    "/home/ace/i10_rh56_refueling_ws/artifacts/rh56_spahybgen/cap_roi_002_1mm_20261106_001/hand_model/meshes/thumb_intermediate.obj": "0cb40f6e5d8f009b1fbca548d021afc0265e04adb844115bc1288c7bfe393a77",
+    "/home/ace/i10_rh56_refueling_ws/artifacts/rh56_spahybgen/cap_roi_002_1mm_20261106_001/hand_model/meshes/ring_proximal.obj": "46ba4371baff07a45a59cf7aadcfe7adfcf1c0a934a3c9f242cbf69b0d468ebd",
+    "/home/ace/i10_rh56_refueling_ws/artifacts/rh56_spahybgen/cap_roi_002_1mm_20261106_001/hand_model/meshes/pinky_intermediate.obj": "385dacf256da037c59a513d49710a0dc0cc1b28d73bc13fb69a0694c0f433741",
+    "/home/ace/i10_rh56_refueling_ws/artifacts/rh56_spahybgen/cap_roi_002_1mm_20261106_001/hand_model/meshes/thumb_proximal.obj": "41088165dbff121ddb2a78d0eedab2f466f6639621077fee8f2e6d1c493e7d4a",
+    "/home/ace/i10_rh56_refueling_ws/artifacts/rh56_spahybgen/cap_roi_002_1mm_20261106_001/hand_model/meshes/middle_proximal.obj": "46ba4371baff07a45a59cf7aadcfe7adfcf1c0a934a3c9f242cbf69b0d468ebd",
+    "/home/ace/i10_rh56_refueling_ws/artifacts/rh56_spahybgen/cap_roi_002_1mm_20261106_001/hand_model/meshes/base.obj": "cef832b5aa44d39cad7d3a31a7c86dfbc2f46f3cb5254a9bd6c6fd83d441038b",
+    "/home/ace/i10_rh56_refueling_ws/artifacts/rh56_spahybgen/cap_roi_002_1mm_20261106_001/hand_model/meshes/ring_intermediate.obj": "4b210051d3bf30273dd9a5579301fc713494436b07e17eb352d0146fd0a73d10"
+  }
+}

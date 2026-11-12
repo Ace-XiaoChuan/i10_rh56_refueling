@@ -1,0 +1,13 @@
+{
+  "run_dir": "tools/artifacts/cap_confirmed_grasps_20261112_002/run_candidates",
+  "template_reference": "tools/artifacts/cap_single_reference_20261111_001/result.json",
+  "confirmed_geometry": "tools/artifacts/cap_confirmed_sides_20261112_001/confirmed_geometry.npz",
+  "candidate_budget": 3,
+  "update_budget": 24,
+  "grip_shape": {
+    "half_length_m": 0.03,
+    "top_half_width_m": 0.0085,
+    "bottom_half_width_m": 0.0095,
+    "height_m": 0.017
+  }
+}

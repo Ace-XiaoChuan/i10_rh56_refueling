@@ -1,0 +1,48 @@
+{
+  "html_references_valid": true,
+  "registered_rows": 8,
+  "plotly_schemas": [
+    {
+      "group": 0,
+      "frame_count": 5,
+      "schema_valid": true
+    },
+    {
+      "group": 1,
+      "frame_count": 5,
+      "schema_valid": true
+    },
+    {
+      "group": 2,
+      "frame_count": 3,
+      "schema_valid": true
+    },
+    {
+      "group": 3,
+      "frame_count": 5,
+      "schema_valid": true
+    },
+    {
+      "group": 4,
+      "frame_count": 5,
+      "schema_valid": true
+    },
+    {
+      "group": 5,
+      "frame_count": 5,
+      "schema_valid": true
+    },
+    {
+      "group": 6,
+      "frame_count": 4,
+      "schema_valid": true
+    },
+    {
+      "group": 7,
+      "frame_count": 4,
+      "schema_valid": true
+    }
+  ],
+  "frame_count": 36,
+  "real_browser_rendered": false
+}

@@ -1,0 +1,59 @@
+{
+  "threshold": 0.01,
+  "comparison": "greater_than",
+  "scores_exactly_equal_threshold": 0,
+  "occupancy_source": "user_visual_confirmation",
+  "confirmation": "用户肉眼确认握梁双侧存在实体，未扫出点云来自观测角度；本次双侧按确认占据采用。",
+  "confirmed_surface_cells": 3134,
+  "overridden_free_cells": 521,
+  "overlap_measured_surface_cells": 38,
+  "grid_spacing_m": 0.001,
+  "grid_position_convention": "voxel_index_times_voxel_size",
+  "network_scores_source": "saved quality_raw before this occupancy update",
+  "network_forwards": 0,
+  "network_training_steps": 0,
+  "grasp_optimization_steps": 0,
+  "generated_grasp_candidates": 0,
+  "source_sha256": {
+    "tools/artifacts/cap_grip_scores_20261111_001/manual_sides.npz": "5e67e5d0a2fda7b9e94d528963551cf052a2dc31016dde3e42b38b592c80522e",
+    "tools/artifacts/cap_grip_scores_20261111_001/cases/network/run_candidates/network_volume.npz": "5ea1fc135ceba473e348cae1c5f14295e43002a7447a7637622d3a6d9334ff54",
+    "tools/artifacts/cap_grip_scores_20261111_001/cases/network/run_candidates/contacts.npz": "6fec555a1caa7961f2a3a32eb9b8ff87d08699930cdf23f0f2626774e8b6e7ba",
+    "tools/artifacts/cap_grip_scores_20261111_001/target_masks.npz": "f5adb2c335b4e5d82586228f3d2f4f75dbfb4293d33681313699af814aca8c13"
+  },
+  "groups": {
+    "-1": {
+      "surface_cells": 1538,
+      "high_score_cells": 278,
+      "previous_high_score_cells": 15,
+      "restored_from_free_high_score_cells": 263,
+      "maximum_raw_score": 0.8650266528129578,
+      "thresholds": {
+        "0.1": 250,
+        "0.01": 278,
+        "0.001": 313,
+        "0.0001": 378
+      },
+      "high_x_min_max_mm": [
+        -30.175599145889887,
+        28.45844311737226
+      ]
+    },
+    "1": {
+      "surface_cells": 1596,
+      "high_score_cells": 263,
+      "previous_high_score_cells": 8,
+      "restored_from_free_high_score_cells": 255,
+      "maximum_raw_score": 0.809524655342102,
+      "thresholds": {
+        "0.1": 246,
+        "0.01": 263,
+        "0.001": 265,
+        "0.0001": 276
+      },
+      "high_x_min_max_mm": [
+        -30.484696031008195,
+        30.5294802853949
+      ]
+    }
+  }
+}

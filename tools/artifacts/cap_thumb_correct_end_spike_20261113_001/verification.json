@@ -1,0 +1,39 @@
+{
+  "passes": true,
+  "input_hashes_checked": 27,
+  "candidate_count": 1,
+  "geometric_steps": 24,
+  "corrected_anchor_manual_m": [
+    0.022554129897082054,
+    0.008582675363353673,
+    -0.0014054811770124465
+  ],
+  "original_network_scores_unchanged": true,
+  "fixed_grip_has_no_dofs": true,
+  "no_hand_object_weld": true,
+  "independent_full_scene_states": [
+    {
+      "time_s": 0.6749999999999811,
+      "checked_scene_points": 667868,
+      "occupied_points": 0,
+      "self_collisions": 0
+    },
+    {
+      "time_s": 0.874999999999959,
+      "checked_scene_points": 667868,
+      "occupied_points": 0,
+      "self_collisions": 0
+    }
+  ],
+  "physics_checkpoint_count": 35,
+  "sustained_opposed_duration_s": 0.19999999999997797,
+  "exact_replay_max_qpos_error": 0.0,
+  "contact_forces_reproduced": true,
+  "final_normal_forces_n": {
+    "thumb": 8.373089602326056,
+    "middle": 4.14506324954533
+  },
+  "physical_forces_calibrated": false,
+  "physical_grasp_verified": false,
+  "motion_target_valid": false
+}

@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><title>当前握梁：一组参考抓姿</title>
+<style>
+body{font:16px/1.65 system-ui;max-width:1300px;margin:20px auto;padding:0 20px;color:#263b49}h1{font-size:26px}#status{padding:12px 18px;background:#e9f3ee;border-radius:8px}#plot{height:730px}label,button{margin-right:14px}button,select{padding:6px 10px}table{border-collapse:collapse;margin:12px 0}td,th{padding:5px 22px 5px 0;text-align:left}img{width:100%}.note{color:#546875;font-size:14px}
+</style>
+<h1>当前握梁上的一组参考抓姿</h1>
+<p>沿用以前确认的整手抓姿，手根微移约0.85毫米、转动0.45°，做了一次局部修正。</p>
+<div id="status"></div><table><thead><tr><th>手指</th><th>参考手型距离</th><th>修正后距离</th><th>修正后朝向偏差</th></tr></thead><tbody id="metrics"></tbody></table>
+<p>金色点是实测握梁，紫色点是人工假设侧面；三个大彩点是实际指面位置，同色小菱形是各指参考目标。可关闭手部，单独看三对点。</p>
+<label>查看 <select id="state"><option value="2" selected>本组最终抓姿</option><option value="1">闭合参考（耦合换算）</option><option value="0">650预张开（静态对照）</option></select></label>
+<label><input type="checkbox" id="hand" checked>整手</label><label><input type="checkbox" id="env" checked>实测环境</label><label><input type="checkbox" id="assumed" checked>假设侧面</label>
+<p><button id="overview">整手总览</button><button id="close">近看握梁</button><button id="reverse">看另一侧</button></p>
+<div id="plot"></div>
+<p class="note">距离要求≤1mm，朝向偏差要求≤45°（0°为正对）。碰撞检查覆盖全部634610个实测点、自碰和已接受的假设侧面，侵入容差0.1mm；页面环境为局部1mm格代表点。这里只验证静态几何，实际接触、抓稳与接近路径仍待验证。预张开与闭合是独立构型对照，切换不表示验证了两者间的运动。</p>
+<img src="single_grasp.png" alt="最终抓姿总览和两侧近景">
+<p><a href="README.md">结果说明</a> · <a href="result.json">完整数值</a> · <a href="verification.json">独立复核</a></p>
+<script src="../cap_grip_scores_20261111_001/plotly.min.js"></script><script src="scene_data.js"></script><script src="viewer.js"></script></html>

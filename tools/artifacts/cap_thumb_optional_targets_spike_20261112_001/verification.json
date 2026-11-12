@@ -1,0 +1,193 @@
+{
+  "passes": true,
+  "result_is_negative": true,
+  "candidate_count": 1,
+  "network_forwards": 0,
+  "independent_scene_checks": [
+    {
+      "iteration": 0,
+      "checked_scene_points": 667868,
+      "occupied_scene_points": 19,
+      "max_inside_depth_m": 0.0012737914699318606,
+      "excess_over_tolerance_m": 0.0011737914699318606,
+      "self_collisions": 0,
+      "hits": [
+        {
+          "geom_id": 10,
+          "body": "thumb_intermediate",
+          "target_points": 0,
+          "environment_points": 11,
+          "maximum_inside_depth_m": 0.0004273750102260377,
+          "evidence_source_indices": [
+            153309,
+            153310,
+            153858,
+            152761,
+            153857,
+            152760,
+            153859,
+            152762,
+            153311,
+            153308,
+            152207
+          ],
+          "evidence_inside_depth_m": [
+            0.0004273750102260377,
+            0.0004248065696654032,
+            0.00037642658746487277,
+            0.0003473652272738253,
+            0.00027973924727997534,
+            0.00027695032271527094,
+            0.0002711625258933134,
+            0.00023964551235450444,
+            0.0002302008229367932,
+            0.00018435720213782342,
+            0.00014502520422878147
+          ]
+        },
+        {
+          "geom_id": 11,
+          "body": "thumb_distal",
+          "target_points": 0,
+          "environment_points": 1,
+          "maximum_inside_depth_m": 0.0012737914699318606,
+          "evidence_source_indices": [
+            160465
+          ],
+          "evidence_inside_depth_m": [
+            0.0012737914699318606
+          ]
+        },
+        {
+          "geom_id": 15,
+          "body": "middle_intermediate",
+          "target_points": 0,
+          "environment_points": 7,
+          "maximum_inside_depth_m": 0.0006167283388348946,
+          "evidence_source_indices": [
+            489827,
+            489828,
+            489826,
+            489829,
+            489830,
+            489825,
+            489824
+          ],
+          "evidence_inside_depth_m": [
+            0.0006167283388348946,
+            0.0005198593539982848,
+            0.00047653443697795103,
+            0.00043973075297213185,
+            0.000372803824178777,
+            0.0002585131442768302,
+            0.0002159997873406056
+          ]
+        }
+      ]
+    },
+    {
+      "iteration": 4,
+      "checked_scene_points": 667868,
+      "occupied_scene_points": 43,
+      "max_inside_depth_m": 0.0012686906541269482,
+      "excess_over_tolerance_m": 0.0011686906541269481,
+      "self_collisions": 0,
+      "hits": [
+        {
+          "geom_id": 10,
+          "body": "thumb_intermediate",
+          "target_points": 0,
+          "environment_points": 11,
+          "maximum_inside_depth_m": 0.000408122101224798,
+          "evidence_source_indices": [
+            153309,
+            153310,
+            153858,
+            152761,
+            152760,
+            153857,
+            153859,
+            152762,
+            153311,
+            153308,
+            152207
+          ],
+          "evidence_inside_depth_m": [
+            0.000408122101224798,
+            0.0004055998829332261,
+            0.0003423900366417935,
+            0.0003296321612039684,
+            0.0002602713359363823,
+            0.0002511580803693115,
+            0.00023658166500105902,
+            0.00022163924050545153,
+            0.0002072271002874198,
+            0.00016663512352725618,
+            0.00012464482827354365
+          ]
+        },
+        {
+          "geom_id": 11,
+          "body": "thumb_distal",
+          "target_points": 0,
+          "environment_points": 1,
+          "maximum_inside_depth_m": 0.0012686906541269482,
+          "evidence_source_indices": [
+            160465
+          ],
+          "evidence_inside_depth_m": [
+            0.0012686906541269482
+          ]
+        },
+        {
+          "geom_id": 15,
+          "body": "middle_intermediate",
+          "target_points": 0,
+          "environment_points": 31,
+          "maximum_inside_depth_m": 0.0006694567819875846,
+          "evidence_source_indices": [
+            492610,
+            492609,
+            492611,
+            489827,
+            492612,
+            492608,
+            489828,
+            490524,
+            489826,
+            490523,
+            492613,
+            489829
+          ],
+          "evidence_inside_depth_m": [
+            0.0006694567819875846,
+            0.0006141473149798918,
+            0.0005759148724866527,
+            0.0005380451471745495,
+            0.00047653211185543984,
+            0.0004737297975126141,
+            0.00045291479030890036,
+            0.00043902627648025397,
+            0.0004191989133337168,
+            0.00039715841213136885,
+            0.00039473071610349186,
+            0.0003667518886520671
+          ]
+        }
+      ]
+    }
+  ],
+  "accepted_updates": 2,
+  "attempted_updates": 5,
+  "fingers_outside_local_attraction_band": [
+    "pinky",
+    "ring"
+  ],
+  "physics_executed": false,
+  "force_claim_permitted": false,
+  "input_hashes_checked": 23,
+  "original_network_scores_unchanged": true,
+  "thumb_material_point_fixed_during_geometry": true,
+  "physical_grasp_verified": false,
+  "motion_target_valid": false
+}

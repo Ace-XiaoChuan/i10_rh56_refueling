@@ -1,0 +1,105 @@
+{
+  "mode": "offline_single_reference_static_candidate",
+  "frame_id": "left_base",
+  "left_base_from_hand": [
+    [
+      0.8092062962607429,
+      -0.09648436343454647,
+      0.5795480818098652,
+      1.3238466698157243
+    ],
+    [
+      0.361030780019408,
+      -0.696550330864508,
+      -0.6200600256299764,
+      0.43995732689492073
+    ],
+    [
+      0.4635104723892928,
+      0.7109911402315964,
+      -0.5288190786562327,
+      -0.21837742489562662
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "volume_from_hand": [
+    [
+      -0.6177724684359462,
+      -0.7191608770553601,
+      0.3180641604386184,
+      0.08886475137019108
+    ],
+    [
+      -0.5220919663830632,
+      0.6775769314070215,
+      0.5179859850066513,
+      0.022606242778211914
+    ],
+    [
+      -0.5880281931003175,
+      0.15393873761340754,
+      -0.7940564899181709,
+      0.25297747333623766
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "driver_names": [
+    "pinky_proximal_joint",
+    "ring_proximal_joint",
+    "middle_proximal_joint",
+    "index_proximal_joint",
+    "thumb_proximal_pitch_joint",
+    "thumb_proximal_yaw_joint"
+  ],
+  "driver_angles_rad": [
+    1.5310226561385263,
+    1.5310229208866661,
+    0.698827217074608,
+    0.6755902749960687,
+    0.21612382232385838,
+    1.306462509727036
+  ],
+  "joint_names": [
+    "thumb_proximal_yaw_joint",
+    "index_proximal_joint",
+    "middle_proximal_joint",
+    "ring_proximal_joint",
+    "pinky_proximal_joint",
+    "thumb_proximal_pitch_joint",
+    "index_intermediate_joint",
+    "middle_intermediate_joint",
+    "ring_intermediate_joint",
+    "pinky_intermediate_joint",
+    "thumb_intermediate_joint",
+    "thumb_distal_joint"
+  ],
+  "joint_angles_rad": [
+    1.306462509727036,
+    0.6755902749960687,
+    0.698827217074608,
+    1.5310229208866661,
+    1.5310226561385263,
+    0.21612382232385838,
+    0.7045667781431091,
+    0.6305201187506297,
+    1.5599995003383176,
+    1.5599992046411202,
+    0.43744468369073164,
+    0.29264172273374656
+  ],
+  "source_result_sha256": "88230d763257bd695950534b532d8fb2ae2eff0c8b4d0c1ef5fe252627a10647",
+  "geometry_pass": true,
+  "contact_geometry_source": "hypothetical_manual_side",
+  "physical_grasp_verified": false,
+  "motion_target_valid": false
+}

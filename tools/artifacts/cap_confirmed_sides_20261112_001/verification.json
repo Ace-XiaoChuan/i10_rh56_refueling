@@ -1,0 +1,18 @@
+{
+  "source_hashes_unchanged": true,
+  "full_confirmed_sides_occupied": true,
+  "effective_classification_disjoint_and_complete": true,
+  "high_scores_exactly_from_saved_quality_raw": true,
+  "expected_side_counts_match": true,
+  "network_forwards": 0,
+  "grasp_optimization_steps": 0,
+  "generated_grasp_candidates": 0,
+  "independent_continuous_surface_rasterization_passed": true,
+  "independent_homogeneous_coordinate_check_passed": true,
+  "binary_input_unchanged_outside_confirmed_sides": true,
+  "original_observations_preserved": true,
+  "csv_all_541_scores_checked": true,
+  "standalone_html_no_remote_script_dependency": true,
+  "static_plot_visually_checked": true,
+  "real_browser_webgl_checked": false
+}

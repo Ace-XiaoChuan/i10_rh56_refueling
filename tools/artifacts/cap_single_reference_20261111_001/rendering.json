@@ -1,0 +1,8 @@
+{
+  "backend": "Matplotlib Agg",
+  "geometry": "all_exported_visual_mesh_triangles",
+  "triangle_count": 89627,
+  "projection_markers_overlaid": true,
+  "opengl_available": false,
+  "fallback_reason": "EGL device absent and X11 display unavailable in this session"
+}

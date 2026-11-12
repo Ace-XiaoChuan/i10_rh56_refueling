@@ -1,0 +1,54 @@
+{
+  "passes": true,
+  "input_hashes_checked": 27,
+  "candidates_tried": 1,
+  "network_forwards": 0,
+  "exact_replay_max_qpos_error": 0.0,
+  "force_replay_matches": true,
+  "all_geometry_checkpoints_passed": 45,
+  "independent_full_scene_checks": [
+    {
+      "time_s": 0.22500000000000017,
+      "points_checked": 667868,
+      "excess_points": 0,
+      "self_collisions": 0
+    },
+    {
+      "time_s": 0.8999999999999563,
+      "points_checked": 667868,
+      "excess_points": 0,
+      "self_collisions": 0
+    },
+    {
+      "time_s": 1.1249999999999316,
+      "points_checked": 667868,
+      "excess_points": 0,
+      "self_collisions": 0
+    }
+  ],
+  "thumb_first_contact_s": 0.22500000000000017,
+  "first_opposed_s": 0.8999999999999563,
+  "opposed_duration_s": 0.22499999999997533,
+  "final_contact_forces": [
+    {
+      "finger": "thumb",
+      "normal_force_n": 2.1037449565818327
+    },
+    {
+      "finger": "middle",
+      "normal_force_n": 6.1384924009920026
+    },
+    {
+      "finger": "pinky",
+      "normal_force_n": 20.05523628920745
+    }
+  ],
+  "physical_forces_calibrated": false,
+  "physical_grasp_verified": false,
+  "hardware_execution_performed": false,
+  "motion_target_valid": false,
+  "source_sha256": {
+    "/home/ace/i10_rh56_refueling_ws/tools/artifacts/cap_auto_thumb_anchor_20261113_003/result.json": "a64b0868ef56fdcf5f5ae1a5f9184957b2a7bd7a26223e8fbad4a146b920c928",
+    "/home/ace/i10_rh56_refueling_ws/tools/verify_thumb_anchor.py": "afbc5eed897ac7caf042b31d898024caf4b0827822b95beee018b1b107459f21"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "html_structure": "passed",
+  "plotly_trace_schema": "passed",
+  "mesh_indices_and_coordinate_array_lengths": "passed",
+  "display_frames": 3,
+  "default_frame_is_actual_physics_state": true,
+  "actual_load_bearing_contacts_displayed": 2,
+  "v8_and_dom_stub_checks": {
+    "initialization": true,
+    "force_readout": true,
+    "geometry_and_physics_frame_labels": true,
+    "layer_visibility": true,
+    "hand_opacity": true,
+    "camera_and_closeup": true
+  },
+  "real_browser_rendered": false,
+  "external_requests_required": false,
+  "new_candidates": 0,
+  "new_physics_steps": 0
+}
