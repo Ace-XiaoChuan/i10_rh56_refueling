@@ -56,6 +56,28 @@ class SceneTests(unittest.TestCase):
         for c in self.scene.hand.channels:
             self.assertAlmostEqual(self.data.ctrl[c.actuator_id], self.data.qpos[self.model.jnt_qposadr[c.joint_id]])
 
+    def test_hand_base_meets_actual_adapter_top(self):
+        """用实际 adapter 网格顶面核对手根接合面，且安装关系不随臂姿态变化。"""
+        geom = self.model.geom('adapter_visual').id
+        mesh = int(self.model.geom_dataid[geom])
+        start, count = int(self.model.mesh_vertadr[mesh]), int(self.model.mesh_vertnum[mesh])
+        vertices = self.model.mesh_vert[start:start + count]
+        for angles in ([0] * 6, [.2, -.5, 1.2, -.7, .3, -.1]):
+            for name, value in zip(('shoulder_joint', 'upperArm_joint', 'foreArm_joint',
+                                    'wrist1_joint', 'wrist2_joint', 'wrist3_joint'), angles):
+                self.data.joint(name).qpos[0] = value
+            mujoco.mj_forward(self.model, self.data)
+            adapter = self.data.body('adapter')
+            rotation = adapter.xmat.reshape(3, 3)
+            world_vertices = vertices @ self.data.geom_xmat[geom].reshape(3, 3).T + self.data.geom_xpos[geom]
+            local_vertices = (world_vertices - adapter.xpos) @ rotation
+            hand_origin = (self.data.body('base').xpos - adapter.xpos) @ rotation
+            np.testing.assert_allclose(hand_origin, [0, 0, local_vertices[:, 2].max()], atol=1e-7)
+            np.testing.assert_allclose(self.data.body('base').xmat.reshape(3, 3), rotation, atol=1e-12)
+            flange = self.data.body('wrist3_Link')
+            local_hand = (self.data.body('base').xpos - flange.xpos) @ flange.xmat.reshape(3, 3)
+            np.testing.assert_allclose(local_hand, [0, 0, .0805], atol=1e-12)
+
     def test_reference_offsets_are_included_in_linear_couplings(self):
         # MuJoCo equality is expressed relative to qpos0, not absolute zero.
         driver = self.model.joint("index_proximal_joint").id

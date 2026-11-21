@@ -198,7 +198,7 @@
   </joint>
   <link name="adapter">
     <visual name="geom_16_visual">
-      <origin xyz="-1.0130922736248006e-06 -5.1436421737335973e-09 0.0091676637252199548" rpy="-3.1415926535897931 -1.5707963267948966 0" />
+      <origin xyz="-1.0577973622947162e-06 -4.7728078037341794e-09 0.017365625258111406" rpy="-3.1415926535897931 -1.5707963267948966 0" />
       <geometry>
         <mesh filename="package://i10_rh56_moveit_config/meshes/mesh_225_surface.stl" />
       </geometry>
@@ -207,7 +207,7 @@
       </material>
     </visual>
     <collision name="geom_16_collision">
-      <origin xyz="-1.0130922736248006e-06 -5.1436421737335973e-09 0.0091676637252199548" rpy="-3.1415926535897931 -1.5707963267948966 0" />
+      <origin xyz="-1.0577973622947162e-06 -4.7728078037341794e-09 0.017365625258111406" rpy="-3.1415926535897931 -1.5707963267948966 0" />
       <geometry>
         <mesh filename="package://i10_rh56_moveit_config/meshes/mesh_225_surface.stl" />
       </geometry>
@@ -222,7 +222,7 @@
   <joint name="rh56_provisional_mount_fixed" type="fixed">
     <child link="rh56_provisional_mount" />
     <parent link="adapter" />
-    <origin xyz="0 0 0.01" rpy="0 -0 0" />
+    <origin xyz="0 0 0.047" rpy="0 -0 0" />
   </joint>
   <link name="base">
     <visual name="geom_17_visual">

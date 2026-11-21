@@ -1,7 +1,8 @@
 {
   "generator": "tools/build_moveit_model.py",
   "mujoco_version": "3.13.0",
-  "python_environment": "project .venv (candidate-compatible)",
+  "python_environment": "project .venv",
+  "geometry_only": true,
   "numpy_version": "2.2.6",
   "trimesh_version": "5.1.0",
   "system_scipy_version": "1.8.0",
@@ -220,7 +221,7 @@
     "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_thumb_intermediate_visual.stl": "a1148e5e4092f58cc4121e96231107ad8cce0c8fcd4c48314f2d5b3596beab8a",
     "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_thumb_proximal_base_visual.stl": "d28d68945bdcbcd4e1014f3697e40e23998542c87bf0bd4d9c6d7df39928f5df",
     "assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/assets/visual/right_thumb_proximal_visual.stl": "2be9bf3251ab6d1dc61403e49152e1544c47640b7aa9c2bcb4cb6a7296ca0b48",
-    "assets/robots/adapter/meshes/adapter.stl": "6c84b57f1c439dee38598484554c1e7f47a119b1e3b651b58f1a562a39a67aa2",
+    "assets/robots/adapter/meshes/adapter.stl": "9ccaf2d4ef8c782b26602f161888ea1b7d8753f07015fe97eac3f1026c4a240d",
     "assets/robots/aubo_i10/meshes/aubo_i10_JY/collision/link0.STL": "d0b4eab7e1e4e7be3ce71b0339b14802745a1da70c82f8cfa9ade1b13251da09",
     "assets/robots/aubo_i10/meshes/aubo_i10_JY/collision/link1.STL": "5d7fa8b0edc29e5ff2183fe2fb1c3846c721cd7fd3ba34bd782c3e09feae1462",
     "assets/robots/aubo_i10/meshes/aubo_i10_JY/collision/link2.STL": "46e451a71e0f7d1878c67205e66532d1fe988212b97117cae39166b5424f0bef",
@@ -237,17 +238,17 @@
     "assets/robots/aubo_i10/mjcf/meshes/visual_link6.obj": "26e66016f547e820c5857684b3c40b6d72c0c4bf9f41a3044ac35b78287fac70",
     "assets/robots/aubo_i10/urdf/aubo_i10_JY.urdf": "5722135ce4a2abb8549e92c43ea6802b7d06a0fa7f207beb35f7994e57e5baa2",
     "assets/robots/sensor/meshes/sensor.stl": "4aa8d4dd99ed5c74449843db9c796428305341960267cc88c0386623a5658b37",
-    "assets/scenes/i10_rh56_fuel_cap_preview.xml": "b376bb512b2d176dd4159d78228e70546b4681cc90e6757e081ac9d4a54d30d4",
-    "config/arm_ik_current.json": "45802c851df55ace6d207113a04bcfa91c10ef2ba22f263b0ada5d2702ca1fec",
-    "config/fixed_grasp.json": "60d98d006c9e3484e2cfaaacb969ab652318167dbc7a1a6bdb05adf0124c43e8",
+    "assets/scenes/i10_rh56_fuel_cap_preview.xml": "5c466e04c41c5c9897d373a31bbbc1a2bb644db7c63450f6e2e52bc1ca101043",
     "src/fuel_cap_task/arm_ik.py": "f13f2721c5788ea33499956e74a74bfe9c3a45b8341465c420bd9efe17f5def1",
+    "src/fuel_cap_task/cap_reference.py": "cc6d3ceb139e42997d6a2eb82bcc864c5c788499d611a37381115309b7f8d45a",
     "src/fuel_cap_task/fixed_grasp.py": "7bfa81edc377c15d099b4ccc0a500f6805ab8c737685b173f4e2a6f0bda4515f",
     "src/fuel_cap_task/grasp_preparation.py": "a11e0451e29fe39228379ae21eaffea8e1ce84d2797ddcc7074963da5ccd53fc",
     "src/fuel_cap_task/grasp_search.py": "a9d89f33f5e2e102bf655284fd2a9f34415219ab0d6ce1293a7495ab4e4de970",
     "src/fuel_cap_task/grasp_targets.py": "d798b181ed6dac8718eff3a170f7279a3ece0a2f8fa7e1d223a8f4bdc25003ed",
     "src/fuel_cap_task/interfaces.py": "02ff0fee271650786f947243c444048d6ed8be8b3429304c4f7c8f62de1ea110",
     "src/fuel_cap_task/mujoco_scene.py": "c5a0854e74c181903300ac208f30d99b9d2195ddf693cf685f892ead0ca75e1b",
-    "tools/build_moveit_model.py": "ffc57b656e38de65536b6364e5ce07ce618c66af3f10bb03fa415d1803520f66"
+    "src/fuel_cap_task/validation.py": "5cc83a81da75eb575f0f8ae091105ae1e2c1d6b8461ef1ffeb2b080c5cf67dbe",
+    "tools/build_moveit_model.py": "309efe7e814db8a28c529883110ad7f1862a9309cfd3e9fa22f9659c65c360a4"
   },
   "source_arm_differences": [
     {

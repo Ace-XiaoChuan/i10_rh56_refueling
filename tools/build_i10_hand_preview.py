@@ -58,8 +58,8 @@ def main():
     hand = read_model('assets/reference/aviation/third_party/correlllab_rh56_controller_h12/mujoco_inspire/inspire_right.xml')
     scene = ET.Element('mujoco', model='i10_rh56_fuel_cap_provisional_preview')
     scene.append(ET.Comment(' PREVIEW ONLY: sensor diameter 75 mm, height 33.5 mm; '
-                            'supplied adapter mesh, diameter 63 mm, height 25 mm; '
-                            'adapter spigot inserted 15 mm into hand; hand base at adapter Z=10 mm. '
+                            'adapter mesh, diameter 63 mm, height 47 mm, base thickness 20 mm; '
+                            'hand base meets adapter spigot top at adapter Z=47 mm. '
                             'Hand mounted along wrist3_Link +Z with no rotation. '
                             'Installation remains uncalibrated; use mj_forward only. '))
     ET.SubElement(scene, 'compiler', angle='radian')
@@ -92,8 +92,8 @@ def main():
     ET.SubElement(adapter, 'geom', name='adapter_visual', type='mesh',
                   mesh='adapter_mesh', rgba='.85 .55 .15 1',
                   group='1', contype='0', conaffinity='0', density='0')
-    # Fully seat the hand on the 10 mm shoulder: 25 - 10 = 15 mm insertion.
-    hand_mount = ET.SubElement(adapter, 'body', name='rh56_provisional_mount', pos='0 0 .010')
+    # 手 base 接合面与凸台顶面重合；安装参数见 doc/assembly_contract.md。
+    hand_mount = ET.SubElement(adapter, 'body', name='rh56_provisional_mount', pos='0 0 .047')
     hand_mount.extend(copy.deepcopy(hand.findall('./worldbody/body')))
     # The upstream world-level end-effector marker follows the hand mount.
     hand_mount.extend(copy.deepcopy(hand.findall('./worldbody/site')))

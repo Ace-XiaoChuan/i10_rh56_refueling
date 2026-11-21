@@ -25,6 +25,18 @@ python3 tools/view_dual_arm.py --view
 
 ## 单臂规划模型生成、构建与检查
 
+仅更新传感器、adapter 或手根安装时，使用纯几何入口，随后同步双臂模型：
+
+```bash
+.venv/bin/python tools/build_i10_hand_preview.py
+.venv/bin/python tools/build_moveit_model.py --geometry-only
+python3 tools/check_moveit_model_sources.py
+python3 tools/build_dual_arm_model.py
+python3 tools/build_dual_arm_model.py --check
+```
+
+该入口以张手姿态生成当前模型的 FK 检查参考，不读取或重新绑定旧抓姿、IK 报告。安装变换及旧轨迹复核要求见[当前装配变换](../../doc/assembly_contract.md#当前装配变换)。下列入口用于已有抓姿与场景来源一致时重新计算端点 IK：
+
 ```bash
 .venv/bin/python tools/preview_cap_ik.py
 .venv/bin/python tools/build_moveit_model.py

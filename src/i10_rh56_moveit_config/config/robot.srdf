@@ -12,13 +12,13 @@
     <joint name="thumb_proximal_yaw_joint" />
   </group>
   <end_effector name="rh56" parent_link="base" group="hand" parent_group="arm" />
-  <group_state name="candidate_pregrasp" group="hand">
-    <joint name="pinky_proximal_joint" value="1.53102336825141" />
-    <joint name="ring_proximal_joint" value="1.53102336825141" />
-    <joint name="middle_proximal_joint" value="0.5858447488584474" />
-    <joint name="index_proximal_joint" value="0.5686475960247112" />
-    <joint name="thumb_proximal_pitch_joint" value="0.1388721804511278" />
-    <joint name="thumb_proximal_yaw_joint" value="1.308" />
+  <group_state name="model_preview" group="hand">
+    <joint name="pinky_proximal_joint" value="0.09360730593607307" />
+    <joint name="ring_proximal_joint" value="0.09360730593607307" />
+    <joint name="middle_proximal_joint" value="0.09360730593607307" />
+    <joint name="index_proximal_joint" value="0.06715014773032502" />
+    <joint name="thumb_proximal_pitch_joint" value="0.1" />
+    <joint name="thumb_proximal_yaw_joint" value="0.0" />
   </group_state>
   <disable_collisions link1="adapter" link2="base" reason="Fixed mounting interface; internal fit unverified" />
   <disable_collisions link1="adapter" link2="sensor_link" reason="Fixed mounting interface; internal fit unverified" />

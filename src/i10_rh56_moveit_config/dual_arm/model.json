@@ -138,8 +138,8 @@
     "artifacts/hardware/aubo_sdk_readonly_20261023_002/configuration.json": "ced427c9f9df0a8c572f5613746666a0b8ec65658a71ea455d7351c797fda2c6",
     "config/dual_arm_mount.json": "d8a86f5ea84fe4cac31af04d18243016a2ba59a19869584bd2e2f32b64820e9f",
     "src/i10_rh56_moveit_config/config/kinematics.json": "e7f57774641f6886a7d82172a676b5d3b225df07974394d089f4a807fa6664cf",
-    "src/i10_rh56_moveit_config/config/robot.srdf": "65844781f6d6c0aa9a1891c5d3fa44e18abb21cd411e7c871d1a9b58266341b7",
-    "src/i10_rh56_moveit_config/config/robot.urdf": "3e781ded72bd8b2388e10d7960f3b12c155e12d787b50849a052063e6a0101da",
+    "src/i10_rh56_moveit_config/config/robot.srdf": "d8be51233f2b44a21a8fed2d6fa898243d696a8bf02db5cb859352748186d538",
+    "src/i10_rh56_moveit_config/config/robot.urdf": "f1ac381f779cb85b6368cc8cf59a48a79c93a2c6d35c01f366a530de62e447bd",
     "src/i10_rh56_moveit_config/meshes/mesh_000_surface.stl": "80926b6b5e7318f1d5a3f2990e33632a99cbbb69ebd5663fb99dafff5c084c46",
     "src/i10_rh56_moveit_config/meshes/mesh_001_hull.stl": "69d87aa74bae878089e93a6e4eb60fd48598fc4a0e5d70ff14e504af34c51ad8",
     "src/i10_rh56_moveit_config/meshes/mesh_002_surface.stl": "d4872ec01929e41593f33e2ce90dd8a4d4b3d53f7b93b79372b43017a1ea78bc",
@@ -171,13 +171,13 @@
     "src/i10_rh56_moveit_config/meshes/mesh_028_surface.stl": "e1b4092ec3cc128ced6b28f3ffe521226529f0a8ba241cb80a9763b03a67e872",
     "src/i10_rh56_moveit_config/meshes/mesh_029_surface.stl": "31015b5d3cc407e88deac45406b144e0c1c3a09dc2b5b0e63ac8e41e132dabcd",
     "src/i10_rh56_moveit_config/meshes/mesh_030_surface.stl": "4f715fed51944914c902bc7d15fbe6c4079049f7c5c6cd8b2db4208c78c4ca34",
-    "src/i10_rh56_moveit_config/meshes/mesh_225_surface.stl": "4e751d48eceb1321b26addae30cc36099f68cd1a5065b74eae7ba58c95ad8627",
+    "src/i10_rh56_moveit_config/meshes/mesh_225_surface.stl": "d9451fd3cef3dce82e5feeca94ee608a43b0d16d1fd00b36015ac2525edda216",
     "src/i10_rh56_moveit_config/meshes/mesh_226_surface.stl": "45e1af0a8d45f40c2d973a55d08bad42f79e1ec7f0e9dd49c6665000b67d87d3",
     "tools/build_dual_arm_model.py": "6b93c2f77fe1c592c4baa344fb94cbda366cce8df1d667c904bdc99e209c7579"
   },
   "generated_sha256": {
-    "robot.urdf": "218b4cf456afb676d56861c5331f76e7afd7691d51d4ca279894346a47b49d1c",
-    "robot.srdf": "1634279e878848f8e7cd892005465d049cb8c29d22ff438b9f98782ff3955e7b",
+    "robot.urdf": "5c88f6c92c88bde13440901bbf3c5692f56e24bf4a317163fde9896cd17d49b7",
+    "robot.srdf": "1f38014b8a507c5e002eff91890f979f2acf67c85ac5fb3def5e51a08d9bbc57",
     "kinematics.json": "a9e8b91d749bad0b229fb0db87a57689fe05eb9bd11f49ac1306118e6b635392"
   },
   "limitations": [

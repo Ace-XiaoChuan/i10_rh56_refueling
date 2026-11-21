@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <mujoco model="i10_rh56_fuel_cap_provisional_preview">
-  <!-- PREVIEW ONLY: sensor diameter 75 mm, height 33.5 mm; supplied adapter mesh, diameter 63 mm, height 25 mm; adapter spigot inserted 15 mm into hand; hand base at adapter Z=10 mm. Hand mounted along wrist3_Link +Z with no rotation. Installation remains uncalibrated; use mj_forward only. -->
+  <!-- PREVIEW ONLY: sensor diameter 75 mm, height 33.5 mm; adapter mesh, diameter 63 mm, height 47 mm, base thickness 20 mm; hand base meets adapter spigot top at adapter Z=47 mm. Hand mounted along wrist3_Link +Z with no rotation. Installation remains uncalibrated; use mj_forward only. -->
   <compiler angle="radian" />
   <default>
     <default class="inspire">
@@ -299,7 +299,7 @@
                       <body name="sensor_output_frame" pos="0 0 .0335" euler="0 0 0">
                         <body name="adapter">
                           <geom name="adapter_visual" type="mesh" mesh="adapter_mesh" rgba=".85 .55 .15 1" group="1" contype="0" conaffinity="0" density="0" />
-                          <body name="rh56_provisional_mount" pos="0 0 .010">
+                          <body name="rh56_provisional_mount" pos="0 0 .047">
                             <body name="base" pos="0.00 0 0.0" childclass="inspire">
                               <geom type="mesh" quat="9.38189e-07 -9.38183e-07 -0.707105 0.707109" mesh="right_base_link_visual" class="visual" />
                               <geom size="0.028 0.0139" pos="0 8.60444e-08 0.0136" quat="1.32679e-06 0 0 1" type="cylinder" class="collision" />

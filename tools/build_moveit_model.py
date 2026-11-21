@@ -10,6 +10,7 @@ import json
 from pathlib import Path
 import subprocess
 import sys
+from types import SimpleNamespace
 import xml.etree.ElementTree as ET
 
 import mujoco
@@ -18,9 +19,9 @@ import trimesh
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src'))
-from fuel_cap_task.arm_ik import ArmIKPreview, body_transform
+from fuel_cap_task.arm_ik import ArmIKPreview, IKSettings, body_transform
 from fuel_cap_task.fixed_grasp import DEFAULT_FIXED_GRASP
-from fuel_cap_task.mujoco_scene import ARM_JOINTS
+from fuel_cap_task.mujoco_scene import ARM_JOINTS, DEFAULT_SCENE, MujocoCapScene
 
 PACKAGE = ROOT / 'src/i10_rh56_moveit_config'
 CANDIDATE = DEFAULT_FIXED_GRASP
@@ -57,8 +58,29 @@ def write_xml(path, tree):
     ET.ElementTree(tree).write(path, encoding='utf-8', xml_declaration=True)
 
 
-def generate(output):
-    p = ArmIKPreview(CANDIDATE)
+def geometry_preview():
+    """纯装配重建只读取当前模型，不依赖或重新绑定历史抓姿与 IK 结果。"""
+    scene = MujocoCapScene()
+    model, data = scene.model, scene.data
+    # 全张开仅作几何检查姿态，不命名为候选抓姿，也不向设备下发。
+    scene.hand.apply(data, [1000] * 6)
+    base = model.body('base_link').id
+    bodies = set()
+    for body in range(model.nbody):
+        parent = body
+        while parent and parent != base:
+            parent = int(model.body_parentid[parent])
+        if parent == base:
+            bodies.add(body)
+    addresses = model.jnt_qposadr[[model.joint(name).id for name in ARM_JOINTS]]
+    return SimpleNamespace(scene=scene, model=model, data=data, robot_bodies=bodies,
+                           addresses=addresses, initial=data.qpos[addresses].copy(),
+                           settings=IKSettings(), scene_path=DEFAULT_SCENE)
+
+
+def generate(output, *, geometry_only=False):
+    """从当前场景派生规划模型；纯几何模式独立于历史抓姿来源。"""
+    p = geometry_preview() if geometry_only else ArmIKPreview(CANDIDATE)
     m, d = p.model, p.data
     config, meshes = output / 'config', output / 'meshes'
     config.mkdir(parents=True, exist_ok=True)
@@ -206,7 +228,7 @@ json.dump(result, sys.stdout)
     hand=ET.SubElement(srdf,'group',name='hand')
     for c in p.scene.hand.channels: ET.SubElement(hand,'joint',name=c.joint)
     ET.SubElement(srdf,'end_effector',name='rh56',parent_link='base',group='hand',parent_group='arm')
-    state=ET.SubElement(srdf,'group_state',name='candidate_pregrasp',group='hand')
+    state=ET.SubElement(srdf,'group_state',name='model_preview' if geometry_only else 'candidate_pregrasp',group='hand')
     for c in p.scene.hand.channels:
         ET.SubElement(state,'joint',name=c.joint,value=str(d.qpos[m.jnt_qposadr[c.joint_id]]))
     exclusions={}
@@ -250,11 +272,14 @@ json.dump(result, sys.stdout)
     dump(config/'kinematics.json',{'arm':{'kinematics_solver':'kdl_kinematics_plugin/KDLKinematicsPlugin',
         'kinematics_solver_search_resolution':0.005,'kinematics_solver_timeout':0.05}})
 
-    report=json.loads(IK_REPORT.read_text())
-    if report['source_scene_sha256'] != p.scene_hash or report['candidate_sha256'] != hashlib.sha256(CANDIDATE.read_bytes()).hexdigest():
-        raise ValueError('Stale IK report')
-    samples=[('initial_pregrasp',p.initial.copy(),p.candidate['pregrasp_channels'])]
-    samples += [(f'ik_{i:02d}',np.array(sol['arm_qpos_rad']),p.candidate['pregrasp_channels']) for i,sol in enumerate(report['solutions'])]
+    if geometry_only:
+        samples=[('initial_model_pose',p.initial.copy(),[1000]*6)]
+    else:
+        report=json.loads(IK_REPORT.read_text())
+        if report['source_scene_sha256'] != p.scene_hash or report['candidate_sha256'] != hashlib.sha256(CANDIDATE.read_bytes()).hexdigest():
+            raise ValueError('Stale IK report')
+        samples=[('initial_pregrasp',p.initial.copy(),p.candidate['pregrasp_channels'])]
+        samples += [(f'ik_{i:02d}',np.array(sol['arm_qpos_rad']),p.candidate['pregrasp_channels']) for i,sol in enumerate(report['solutions'])]
     rng=np.random.default_rng(7)
     for i in range(6): samples.append((f'kinematic_sample_{i}',rng.uniform(-1,1,6),rng.integers(0,1001,6).tolist()))
     refs=[]
@@ -266,17 +291,20 @@ json.dump(result, sys.stdout)
     dump(config/'audit_reference.json',{'mode':'kinematic_model_reference_not_execution','arm_joints':list(ARM_JOINTS),
         'mimic_count':len(coupling),'fk_tolerance':1e-8,'penetration_diagnostic_m':p.settings.penetration_diagnostic_m,
         'joint_bounds':{m.joint(j).name:list(map(float,driver_limits.get(j,m.jnt_range[j]))) for j in range(m.njnt) if int(m.jnt_bodyid[j]) in p.robot_bodies},
-        'cases':refs,'target_world_from_hand':p.world_from_hand.tolist()})
-    source_paths={p.scene_path,CANDIDATE,IK_REPORT,Path(__file__).resolve(),ROOT/'assets/robots/aubo_i10/urdf/aubo_i10_JY.urdf'}
+        'cases':refs,'target_world_from_hand':None if geometry_only else p.world_from_hand.tolist(),
+        'geometry_only':geometry_only})
+    source_paths={p.scene_path,Path(__file__).resolve(),ROOT/'assets/robots/aubo_i10/urdf/aubo_i10_JY.urdf'}
+    if not geometry_only:
+        source_paths.update((CANDIDATE,IK_REPORT))
     source_paths.update(ROOT/'src/fuel_cap_task'/name for name in (
         'arm_ik.py', 'mujoco_scene.py', 'grasp_search.py', 'interfaces.py', 'fixed_grasp.py',
-        'grasp_targets.py', 'grasp_preparation.py',
+        'grasp_targets.py', 'grasp_preparation.py', 'cap_reference.py', 'validation.py',
     ))
     for mesh in mesh_audit:
         if mesh['source_path']: source_paths.add((p.scene_path.parent/mesh['source_path']).resolve())
     versions=subprocess.run(['dpkg-query','-W','-f=${Package}=${Version}\n','ros-humble-moveit-core','ros-humble-moveit-kinematics','ros-humble-moveit-task-constructor-core'],text=True,capture_output=True,check=True).stdout.splitlines()
     dump(config/'provenance.json',{'generator':'tools/build_moveit_model.py','mujoco_version':mujoco.__version__,
-        'python_environment':'project .venv (candidate-compatible)','numpy_version':np.__version__,
+        'python_environment':'project .venv','geometry_only':geometry_only,'numpy_version':np.__version__,
         'trimesh_version':trimesh.__version__,'system_scipy_version':subprocess.check_output(['/usr/bin/python3','-c','import scipy; print(scipy.__version__)'],text=True).strip(),'ros_packages':versions,
         'sources':{str(path.relative_to(ROOT)):hashlib.sha256(path.read_bytes()).hexdigest() for path in sorted(source_paths)},
         'source_arm_differences':source_differences,'meshes':mesh_audit,'geometries':geometry_records,
@@ -293,5 +321,6 @@ json.dump(result, sys.stdout)
 if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output',type=Path,default=PACKAGE)
+    parser.add_argument('--geometry-only',action='store_true',help='仅重建当前装配几何与 FK 参考，不读取历史候选或 IK 报告')
     args=parser.parse_args()
-    generate(args.output.resolve())
+    generate(args.output.resolve(),geometry_only=args.geometry_only)

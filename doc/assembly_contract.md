@@ -577,10 +577,12 @@ MTC 请求保留既有位置、朝向、距离及来源字段，增加 `target_f
 | `wrist3_Link` | `sensor_link` | `[0, 0, 0]` | `[0, 0, 0]` |
 | `sensor_link` | `sensor_output_frame` | `[0, 0, 0.0335]` | `[0, 0, 0]` |
 | `sensor_output_frame` | `adapter` | `[0, 0, 0]` | `[0, 0, 0]` |
-| `adapter` | `rh56_provisional_mount` | `[0, 0, 0.010]` | `[0, 0, 0]` |
+| `adapter` | `rh56_provisional_mount` | `[0, 0, 0.047]` | `[0, 0, 0]` |
 | `rh56_provisional_mount` | 手模型 `base` | `[0, 0, 0]` | `[0, 0, 0]` |
 
-凸台插入深度为 25 − 10 = 15 mm，手安装原点距法兰沿局部 +Z 为 43.5 mm。这个原点还不是标定后的 TCP。
+adapter 当前唯一目标尺寸为底盘厚 20 mm、凸台高 27 mm、总高 47 mm。按用户确认的连接方式，手模型 `base` 原点与 `rh56_provisional_mount` 重合，位于 adapter 轴线和凸台顶面（adapter 局部 Z=47 mm）的交点；手最下缘的接合参考平面与凸台顶面重合，二者刚体固定。手安装原点距法兰沿局部 +Z 为 80.5 mm，这个原点还不是标定后的 TCP。生成位置见 `tools/build_i10_hand_preview.py`，MoveIt 单臂和双臂 URDF 沿生成链同步；旧轨迹须按更新后的安装变换重新复核。
+
+手根显示网格底部具有中央开口／凹部，入口直径约 38 mm，周围为接合端面，并非完整实心平面。当前模型将凸台顶面放在手 `base` 的接合参考平面，不按凹部设置插入深度；凹部有效深度、装配间隙及实物配合尚未核对。手根碰撞模型使用简化实心圆柱等几何，不表达该凹部。
 
 传感器与 adapter 在 MuJoCo 中只有显示几何，质量惯量及碰撞模型待补；MoveIt 已增加两者的表面碰撞网格和地面。
 
